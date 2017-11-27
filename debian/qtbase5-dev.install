@@ -44,8 +44,10 @@ usr/include/*/qt5/QtCore/QAssociativeIterable
 usr/include/*/qt5/QtCore/QAtomicInt
 usr/include/*/qt5/QtCore/QAtomicInteger
 usr/include/*/qt5/QtCore/QAtomicPointer
+usr/include/*/qt5/QtCore/QBEInteger
 usr/include/*/qt5/QtCore/QBasicMutex
 usr/include/*/qt5/QtCore/QBasicTimer
+usr/include/*/qt5/QtCore/QBigEndianStorageType
 usr/include/*/qt5/QtCore/QBitArray
 usr/include/*/qt5/QtCore/QBitRef
 usr/include/*/qt5/QtCore/QBuffer
@@ -134,6 +136,8 @@ usr/include/*/qt5/QtCore/QJsonValue
 usr/include/*/qt5/QtCore/QJsonValuePtr
 usr/include/*/qt5/QtCore/QJsonValueRef
 usr/include/*/qt5/QtCore/QJsonValueRefPtr
+usr/include/*/qt5/QtCore/QKeyValueIterator
+usr/include/*/qt5/QtCore/QLEInteger
 usr/include/*/qt5/QtCore/QLatin1Char
 usr/include/*/qt5/QtCore/QLatin1Literal
 usr/include/*/qt5/QtCore/QLatin1String
@@ -149,6 +153,7 @@ usr/include/*/qt5/QtCore/QList
 usr/include/*/qt5/QtCore/QListData
 usr/include/*/qt5/QtCore/QListIterator
 usr/include/*/qt5/QtCore/QListSpecialMethods
+usr/include/*/qt5/QtCore/QLittleEndianStorageType
 usr/include/*/qt5/QtCore/QLocale
 usr/include/*/qt5/QtCore/QLockFile
 usr/include/*/qt5/QtCore/QLoggingCategory
@@ -207,6 +212,8 @@ usr/include/*/qt5/QtCore/QProcess
 usr/include/*/qt5/QtCore/QProcessEnvironment
 usr/include/*/qt5/QtCore/QPropertyAnimation
 usr/include/*/qt5/QtCore/QQueue
+usr/include/*/qt5/QtCore/QRandomGenerator
+usr/include/*/qt5/QtCore/QRandomGenerator64
 usr/include/*/qt5/QtCore/QReadLocker
 usr/include/*/qt5/QtCore/QReadWriteLock
 usr/include/*/qt5/QtCore/QRect
@@ -228,6 +235,7 @@ usr/include/*/qt5/QtCore/QScopedPointerObjectDeleteLater
 usr/include/*/qt5/QtCore/QScopedPointerPodDeleter
 usr/include/*/qt5/QtCore/QScopedValueRollback
 usr/include/*/qt5/QtCore/QSemaphore
+usr/include/*/qt5/QtCore/QSemaphoreReleaser
 usr/include/*/qt5/QtCore/QSequentialAnimationGroup
 usr/include/*/qt5/QtCore/QSequentialIterable
 usr/include/*/qt5/QtCore/QSet
@@ -244,6 +252,7 @@ usr/include/*/qt5/QtCore/QSize
 usr/include/*/qt5/QtCore/QSizeF
 usr/include/*/qt5/QtCore/QSocketNotifier
 usr/include/*/qt5/QtCore/QSortFilterProxyModel
+usr/include/*/qt5/QtCore/QSpecialInteger
 usr/include/*/qt5/QtCore/QStack
 usr/include/*/qt5/QtCore/QStandardPaths
 usr/include/*/qt5/QtCore/QState
@@ -256,14 +265,17 @@ usr/include/*/qt5/QtCore/QStaticPlugin
 usr/include/*/qt5/QtCore/QStaticStringData
 usr/include/*/qt5/QtCore/QStorageInfo
 usr/include/*/qt5/QtCore/QString
+usr/include/*/qt5/QtCore/QStringAlgorithms
 usr/include/*/qt5/QtCore/QStringBuilder
 usr/include/*/qt5/QtCore/QStringData
 usr/include/*/qt5/QtCore/QStringDataPtr
 usr/include/*/qt5/QtCore/QStringList
 usr/include/*/qt5/QtCore/QStringListIterator
 usr/include/*/qt5/QtCore/QStringListModel
+usr/include/*/qt5/QtCore/QStringLiteral
 usr/include/*/qt5/QtCore/QStringMatcher
 usr/include/*/qt5/QtCore/QStringRef
+usr/include/*/qt5/QtCore/QStringView
 usr/include/*/qt5/QtCore/QSysInfo
 usr/include/*/qt5/QtCore/QSystemSemaphore
 usr/include/*/qt5/QtCore/QTemporaryDir
@@ -457,6 +469,7 @@ usr/include/*/qt5/QtCore/qprocess.h
 usr/include/*/qt5/QtCore/qprocessordetection.h
 usr/include/*/qt5/QtCore/qpropertyanimation.h
 usr/include/*/qt5/QtCore/qqueue.h
+usr/include/*/qt5/QtCore/qrandom.h
 usr/include/*/qt5/QtCore/qreadwritelock.h
 usr/include/*/qt5/QtCore/qrect.h
 usr/include/*/qt5/QtCore/qrefcount.h
@@ -487,10 +500,13 @@ usr/include/*/qt5/QtCore/qstate.h
 usr/include/*/qt5/QtCore/qstatemachine.h
 usr/include/*/qt5/QtCore/qstorageinfo.h
 usr/include/*/qt5/QtCore/qstring.h
+usr/include/*/qt5/QtCore/qstringalgorithms.h
 usr/include/*/qt5/QtCore/qstringbuilder.h
 usr/include/*/qt5/QtCore/qstringlist.h
 usr/include/*/qt5/QtCore/qstringlistmodel.h
+usr/include/*/qt5/QtCore/qstringliteral.h
 usr/include/*/qt5/QtCore/qstringmatcher.h
+usr/include/*/qt5/QtCore/qstringview.h
 usr/include/*/qt5/QtCore/qsysinfo.h
 usr/include/*/qt5/QtCore/qsystemdetection.h
 usr/include/*/qt5/QtCore/qsystemsemaphore.h
@@ -807,6 +823,14 @@ usr/include/*/qt5/QtGui/QValidator
 usr/include/*/qt5/QtGui/QVector2D
 usr/include/*/qt5/QtGui/QVector3D
 usr/include/*/qt5/QtGui/QVector4D
+usr/include/*/qt5/QtGui/QVulkanDeviceFunctions
+usr/include/*/qt5/QtGui/QVulkanExtension
+usr/include/*/qt5/QtGui/QVulkanFunctions
+usr/include/*/qt5/QtGui/QVulkanInfoVector
+usr/include/*/qt5/QtGui/QVulkanInstance
+usr/include/*/qt5/QtGui/QVulkanLayer
+usr/include/*/qt5/QtGui/QVulkanWindow
+usr/include/*/qt5/QtGui/QVulkanWindowRenderer
 usr/include/*/qt5/QtGui/QWhatsThisClickedEvent
 usr/include/*/qt5/QtGui/QWheelEvent
 usr/include/*/qt5/QtGui/QWidgetList
@@ -950,6 +974,9 @@ usr/include/*/qt5/QtGui/qvalidator.h
 usr/include/*/qt5/QtGui/qvector2d.h
 usr/include/*/qt5/QtGui/qvector3d.h
 usr/include/*/qt5/QtGui/qvector4d.h
+usr/include/*/qt5/QtGui/qvulkanfunctions.h
+usr/include/*/qt5/QtGui/qvulkaninstance.h
+usr/include/*/qt5/QtGui/qvulkanwindow.h
 usr/include/*/qt5/QtGui/qwindow.h
 usr/include/*/qt5/QtGui/qwindowdefs.h
 usr/include/*/qt5/QtGui/qwindowdefs_win.h

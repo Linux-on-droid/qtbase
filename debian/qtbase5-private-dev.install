@@ -39,6 +39,11 @@ usr/include/*/qt5/QtDeviceDiscoverySupport/QtDeviceDiscoverySupport
 usr/include/*/qt5/QtDeviceDiscoverySupport/QtDeviceDiscoverySupportDepends
 usr/include/*/qt5/QtDeviceDiscoverySupport/QtDeviceDiscoverySupportVersion
 usr/include/*/qt5/QtDeviceDiscoverySupport/qtdevicediscoverysupportversion.h
+usr/include/*/qt5/QtEdidSupport/5.*/*
+usr/include/*/qt5/QtEdidSupport/QtEdidSupport
+usr/include/*/qt5/QtEdidSupport/QtEdidSupportDepends
+usr/include/*/qt5/QtEdidSupport/QtEdidSupportVersion
+usr/include/*/qt5/QtEdidSupport/qtedidsupportversion.h
 usr/include/*/qt5/QtEglSupport/5.*/*
 usr/include/*/qt5/QtEglSupport/QtEglSupport
 usr/include/*/qt5/QtEglSupport/QtEglSupportDepends
@@ -91,6 +96,8 @@ usr/lib/*/libQt5AccessibilitySupport.a
 usr/lib/*/libQt5AccessibilitySupport.prl
 usr/lib/*/libQt5DeviceDiscoverySupport.a
 usr/lib/*/libQt5DeviceDiscoverySupport.prl
+usr/lib/*/libQt5EdidSupport.a
+usr/lib/*/libQt5EdidSupport.prl
 usr/lib/*/libQt5EglSupport.a
 usr/lib/*/libQt5EglSupport.prl
 usr/lib/*/libQt5EventDispatcherSupport.a
