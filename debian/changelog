@@ -4,6 +4,7 @@ qtbase-opensource-src (5.10.0~rc1+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release candidate.
   * Update debian/watch to track 5.10 development releases.
   * Drop qglxconvenience_nullptr.diff, included upstream.
+  * Build with OpenSSL 1.1 (closes: #859671).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 03 Nov 2017 14:12:28 +0300
 
