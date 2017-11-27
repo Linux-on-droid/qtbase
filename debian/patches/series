@@ -1,5 +1,4 @@
 # Backported from upstream.
-qglxconvenience_nullptr.diff
 
 # Debian specific.
 gnukfreebsd.diff
