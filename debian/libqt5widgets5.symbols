@@ -1,8 +1,9 @@
-# SymbolsHelper-Confirmed: 5.9.1 amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mipsel powerpc powerpcspe x32
+# SymbolsHelper-Confirmed: 5.10.0 amd64 i386
 libQt5Widgets.so.5 libqt5widgets5 #MINVER#
 | libqt5widgets5 #MINVER#, qtbase-abi-5-9-2
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
+ Qt_5.10@Qt_5.10 5.10.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -40,6 +41,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _Z15qDrawShadePanelP8QPainteriiiiRK8QPalettebiPK6QBrush@Qt_5 5.0.2
  _Z15qt_qwidget_dataP7QWidget@Qt_5 5.0.2
  _Z17qDrawBorderPixmapP8QPainterRK5QRectRK8QMarginsRK7QPixmapS3_S6_RK10QTileRules6QFlagsIN17QDrawBorderPixmap11DrawingHintEE@Qt_5 5.0.2
+ _Z17qt_app_fonts_hashv@Qt_5 5.10.0
  _Z17qt_tryModalHelperP7QWidgetPS0_@Qt_5 5.0.2
  _Z17qt_widget_privateP7QWidget@Qt_5 5.0.2
  _Z18qt_tab_all_widgetsv@Qt_5 5.0.2
@@ -1117,13 +1119,28 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN12QCommonStyle6polishER8QPalette@Qt_5 5.0.2
  _ZN12QCommonStyle8unpolishEP12QApplication@Qt_5 5.0.2
  _ZN12QCommonStyle8unpolishEP7QWidget@Qt_5 5.0.2
- _ZN12QCommonStyleC1ER19QCommonStylePrivate@Qt_5 5.0.2
+ _ZN12QCommonStyleC1ER19QCommonStylePrivate@Qt_5_PRIVATE_API 5.10.0
  _ZN12QCommonStyleC1Ev@Qt_5 5.0.2
- _ZN12QCommonStyleC2ER19QCommonStylePrivate@Qt_5 5.0.2
+ _ZN12QCommonStyleC2ER19QCommonStylePrivate@Qt_5_PRIVATE_API 5.10.0
  _ZN12QCommonStyleC2Ev@Qt_5 5.0.2
  _ZN12QCommonStyleD0Ev@Qt_5 5.0.2
  _ZN12QCommonStyleD1Ev@Qt_5 5.0.2
  _ZN12QCommonStyleD2Ev@Qt_5 5.0.2
+ _ZN12QFusionStyle11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyle11qt_metacastEPKc@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyle16staticMetaObjectE@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyle6polishEP12QApplication@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyle6polishEP7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyle6polishER8QPalette@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyle8unpolishEP12QApplication@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyle8unpolishEP7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyleC1ER19QFusionStylePrivate@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyleC1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyleC2ER19QFusionStylePrivate@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyleC2Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyleD0Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyleD1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN12QFusionStyleD2Ev@Qt_5_PRIVATE_API 5.10.0
  _ZN12QInputDialog10setIntStepEi@Qt_5 5.0.2
  _ZN12QInputDialog10setOptionsE6QFlagsINS_17InputDialogOptionEE@Qt_5 5.0.2
  _ZN12QInputDialog10setVisibleEb@Qt_5 5.0.2
@@ -1134,6 +1151,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN12QInputDialog12setInputModeENS_9InputModeE@Qt_5 5.0.2
  _ZN12QInputDialog12setLabelTextERK7QString@Qt_5 5.0.2
  _ZN12QInputDialog12setTextValueERK7QString@Qt_5 5.0.2
+ _ZN12QInputDialog13setDoubleStepEd@Qt_5 5.10.0
  _ZN12QInputDialog13setIntMaximumEi@Qt_5 5.0.2
  _ZN12QInputDialog13setIntMinimumEi@Qt_5 5.0.2
  _ZN12QInputDialog14setDoubleRangeEdd@Qt_5 5.0.2
@@ -1160,6 +1178,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN12QInputDialog7getItemEP7QWidgetRK7QStringS4_RK11QStringListibPb6QFlagsIN2Qt10WindowTypeEES9_INSA_15InputMethodHintEE@Qt_5 5.0.2
  _ZN12QInputDialog7getTextEP7QWidgetRK7QStringS4_N9QLineEdit8EchoModeES4_Pb6QFlagsIN2Qt10WindowTypeEES8_INS9_15InputMethodHintEE@Qt_5 5.0.2
  _ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEE@Qt_5 5.0.2
+ _ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEEd@Qt_5 5.10.0
  _ZN12QInputDialog9setOptionENS_17InputDialogOptionEb@Qt_5 5.0.2
  _ZN12QInputDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE@Qt_5 5.0.2
  _ZN12QInputDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE@Qt_5 5.0.2
@@ -1222,6 +1241,14 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN12QRadioButtonD0Ev@Qt_5 5.0.2
  _ZN12QRadioButtonD1Ev@Qt_5 5.0.2
  _ZN12QRadioButtonD2Ev@Qt_5 5.0.2
+ _ZN12QStyleHelper11hasAncestorEP7QObjectN11QAccessible4RoleE@Qt_5 5.10.0
+ _ZN12QStyleHelper12isInstanceOfEP7QObjectN11QAccessible4RoleE@Qt_5 5.10.0
+ _ZN12QStyleHelper15backgroundColorERK8QPalettePK7QWidget@Qt_5 5.10.0
+ _ZN12QStyleHelper16drawBorderPixmapERK7QPixmapP8QPainterRK5QRectiiii@Qt_5 5.10.0
+ _ZN12QStyleHelper16widgetSizePolicyEPK7QWidgetPK12QStyleOption@Qt_5 5.10.0
+ _ZN12QStyleHelper17styleObjectWindowEP7QObject@Qt_5 5.10.0
+ _ZN12QStyleHelper8drawDialEPK18QStyleOptionSliderP8QPainter@Qt_5 5.10.0
+ _ZN12QStyleHelper9dpiScaledEd@Qt_5 5.10.0
  _ZN12QStyleOption4initEPK7QWidget@Qt_5 5.0.2
  _ZN12QStyleOptionC1ERKS_@Qt_5 5.0.2
  _ZN12QStyleOptionC1Eii@Qt_5 5.0.2
@@ -1666,6 +1693,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN13QOpenGLWidget13aboutToResizeEv@Qt_5 5.4.0
  _ZN13QOpenGLWidget14aboutToComposeEv@Qt_5 5.4.0
  _ZN13QOpenGLWidget15grabFramebufferEv@Qt_5 5.4.0
+ _ZN13QOpenGLWidget16setTextureFormatEj@Qt_5 5.10.0
  _ZN13QOpenGLWidget16staticMetaObjectE@Qt_5 5.3.0
  _ZN13QOpenGLWidget17setUpdateBehaviorENS_14UpdateBehaviorE@Qt_5 5.5.0
  _ZN13QOpenGLWidget5eventEP6QEvent@Qt_5 5.4.0
@@ -1757,6 +1785,22 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN13QWidgetItemV2D0Ev@Qt_5 5.0.2
  _ZN13QWidgetItemV2D1Ev@Qt_5 5.0.2
  _ZN13QWidgetItemV2D2Ev@Qt_5 5.0.2
+ _ZN13QWindowsStyle11eventFilterEP7QObjectP6QEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyle11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyle11qt_metacastEPKc@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyle16staticMetaObjectE@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyle6polishEP12QApplication@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyle6polishEP7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyle6polishER8QPalette@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyle8unpolishEP12QApplication@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyle8unpolishEP7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyleC1ER20QWindowsStylePrivate@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyleC1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyleC2ER20QWindowsStylePrivate@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyleC2Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyleD0Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyleD1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QWindowsStyleD2Ev@Qt_5_PRIVATE_API 5.10.0
  _ZN14QActionPrivate14showStatusTextEP7QWidgetRK7QString@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QActionPrivate15sendDataChangedEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QActionPrivate17redoGrabAlternateER12QShortcutMap@Qt_5_PRIVATE_API 5.0.2 1
@@ -1960,6 +2004,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN14QPlainTextEdit18setExtraSelectionsERK5QListIN9QTextEdit14ExtraSelectionEE@Qt_5 5.0.2
  _ZN14QPlainTextEdit18setPlaceholderTextERK7QString@Qt_5 5.3.0
  _ZN14QPlainTextEdit18setTabChangesFocusEb@Qt_5 5.0.2
+ _ZN14QPlainTextEdit18setTabStopDistanceEd@Qt_5 5.10.0
  _ZN14QPlainTextEdit19ensureCursorVisibleEv@Qt_5 5.0.2
  _ZN14QPlainTextEdit19modificationChangedEb@Qt_5 5.0.2
  _ZN14QPlainTextEdit20setBackgroundVisibleEb@Qt_5 5.0.2
@@ -2032,6 +2077,26 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN14QStackedWidgetD0Ev@Qt_5 5.0.2
  _ZN14QStackedWidgetD1Ev@Qt_5 5.0.2
  _ZN14QStackedWidgetD2Ev@Qt_5 5.0.2
+ _ZN14QTabBarPrivate10layoutTabsEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate11_q_closeTabEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate11makeVisibleEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate12autoHideTabsEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate13_q_scrollTabsEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate13layoutWidgetsEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate15moveTabFinishedEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate15setupMovableTabEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate18killSwitchTabTimerEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate20normalizedScrollRectEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate22updateMacBorderMetricsEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate26setCurrentNextEnabledIndexEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate2atEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate3Tab15TabBarAnimation11updateStateEN18QAbstractAnimation5StateES3_@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate3Tab15TabBarAnimation18updateCurrentValueERK8QVariant@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate4initEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate5slideEii@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate7moveTabEii@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate7refreshEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN14QTabBarPrivate9layoutTabEi@Qt_5_PRIVATE_API 5.10.0
  _ZN14QWidgetPrivate10allWidgetsE@Qt_5_PRIVATE_API 5.0.2 1
  (subst)_ZN14QWidgetPrivate10create_sysE{quintptr}bb@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate10drawWidgetEP12QPaintDeviceRK7QRegionRK6QPointiP8QPainterP19QWidgetBackingStore@Qt_5_PRIVATE_API 5.0.2 1
@@ -2061,7 +2126,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN14QWidgetPrivate13resolveLocaleEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate13setCursor_sysERK7QCursor@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate13setParent_sysEP7QWidget6QFlagsIN2Qt10WindowTypeEE@Qt_5_PRIVATE_API 5.0.2 1
- _ZN14QWidgetPrivate13setSystemClipEP12QPaintDeviceRK7QRegion@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN14QWidgetPrivate13setSystemClipEP12QPaintEnginedRK7QRegion@Qt_5_PRIVATE_API 5.10.0
  _ZN14QWidgetPrivate13setWSGeometryEv@Qt_5_PRIVATE_API 5.3.1 1
  _ZN14QWidgetPrivate14createSysExtraEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate14deleteSysExtraEv@Qt_5_PRIVATE_API 5.0.2 1
@@ -2457,6 +2522,21 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN15QSplitterHandleD0Ev@Qt_5 5.0.2
  _ZN15QSplitterHandleD1Ev@Qt_5 5.0.2
  _ZN15QSplitterHandleD2Ev@Qt_5 5.0.2
+ _ZN15QStyleAnimation11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimation11qt_metacastEPKc@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimation11setDurationEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimation12setFrameRateENS_9FrameRateE@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimation12setStartTimeERK5QTime@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimation12updateTargetEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimation16staticMetaObjectE@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimation17updateCurrentTimeEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimation5startEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimation8setDelayEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimationC1EP7QObject@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimationC2EP7QObject@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimationD0Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimationD1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QStyleAnimationD2Ev@Qt_5_PRIVATE_API 5.10.0
  _ZN15QStyleOptionTabC1Ei@Qt_5 5.0.2
  _ZN15QStyleOptionTabC1Ev@Qt_5 5.0.2
  _ZN15QStyleOptionTabC2Ei@Qt_5 5.0.2
@@ -3307,6 +3387,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN19QApplicationPrivateD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN19QApplicationPrivateD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN19QApplicationPrivateD2Ev@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN19QCommonStylePrivate18_q_removeAnimationEv@Qt_5_PRIVATE_API 5.10.0
  _ZN19QGraphicsBlurEffect11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.0.2
  _ZN19QGraphicsBlurEffect11qt_metacastEPKc@Qt_5 5.0.2
  _ZN19QGraphicsBlurEffect12setBlurHintsE6QFlagsINS_8BlurHintEE@Qt_5 5.0.2
@@ -3442,6 +3523,14 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN19QStyledItemDelegateD0Ev@Qt_5 5.0.2
  _ZN19QStyledItemDelegateD1Ev@Qt_5 5.0.2
  _ZN19QStyledItemDelegateD2Ev@Qt_5 5.0.2
+ _ZN20QBlendStyleAnimation11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QBlendStyleAnimation11qt_metacastEPKc@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QBlendStyleAnimation11setEndImageERK6QImage@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QBlendStyleAnimation13setStartImageERK6QImage@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QBlendStyleAnimation16staticMetaObjectE@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QBlendStyleAnimation17updateCurrentTimeEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QBlendStyleAnimationC1ENS_4TypeEP7QObject@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QBlendStyleAnimationC2ENS_4TypeEP7QObject@Qt_5_PRIVATE_API 5.10.0
  _ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant@Qt_5 5.0.2
  _ZN20QGraphicsEllipseItem12setSpanAngleEi@Qt_5 5.0.2
  _ZN20QGraphicsEllipseItem13setStartAngleEi@Qt_5 5.0.2
@@ -3620,6 +3709,12 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN20QWidgetResizeHandler9setActiveENS_6ActionEb@Qt_5_PRIVATE_API 5.0.2 1
  _ZN20QWidgetResizeHandlerC1EP7QWidgetS1_@Qt_5_PRIVATE_API 5.0.2 1
  _ZN20QWidgetResizeHandlerC2EP7QWidgetS1_@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN20QWindowsStylePrivate16fixedPixelMetricEN6QStyle11PixelMetricE@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QWindowsStylePrivate19appDevicePixelRatioEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QWindowsStylePrivate23nativeMetricScaleFactorEPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QWindowsStylePrivate23pixelMetricFromSystemDpEN6QStyle11PixelMetricEPK12QStyleOptionPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QWindowsStylePrivateC1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN20QWindowsStylePrivateC2Ev@Qt_5_PRIVATE_API 5.10.0
  _ZN21QAbstractItemDelegate10commitDataEP7QWidget@Qt_5 5.0.2
  _ZN21QAbstractItemDelegate10elidedTextERK12QFontMetricsiN2Qt13TextElideModeERK7QString@Qt_5 5.0.2
  _ZN21QAbstractItemDelegate11closeEditorEP7QWidgetNS_11EndEditHintE@Qt_5 5.0.2
@@ -3694,6 +3789,13 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN21QMouseEventTransitionD0Ev@Qt_5 5.0.2
  _ZN21QMouseEventTransitionD1Ev@Qt_5 5.0.2
  _ZN21QMouseEventTransitionD2Ev@Qt_5 5.0.2
+ _ZN21QNumberStyleAnimation11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.10.0
+ _ZN21QNumberStyleAnimation11qt_metacastEPKc@Qt_5_PRIVATE_API 5.10.0
+ _ZN21QNumberStyleAnimation11setEndValueEd@Qt_5_PRIVATE_API 5.10.0
+ _ZN21QNumberStyleAnimation13setStartValueEd@Qt_5_PRIVATE_API 5.10.0
+ _ZN21QNumberStyleAnimation16staticMetaObjectE@Qt_5_PRIVATE_API 5.10.0
+ _ZN21QNumberStyleAnimationC1EP7QObject@Qt_5_PRIVATE_API 5.10.0
+ _ZN21QNumberStyleAnimationC2EP7QObject@Qt_5_PRIVATE_API 5.10.0
  _ZN21QPixmapColorizeFilter11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN21QPixmapColorizeFilter11qt_metacastEPKc@Qt_5_PRIVATE_API 5.0.2 1
  _ZN21QPixmapColorizeFilter11setStrengthEd@Qt_5_PRIVATE_API 5.2.0 1
@@ -3812,6 +3914,12 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN23QPixmapDropShadowFilterD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN23QPixmapDropShadowFilterD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN23QPixmapDropShadowFilterD2Ev@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN23QProgressStyleAnimation11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.10.0
+ _ZN23QProgressStyleAnimation11qt_metacastEPKc@Qt_5_PRIVATE_API 5.10.0
+ _ZN23QProgressStyleAnimation16staticMetaObjectE@Qt_5_PRIVATE_API 5.10.0
+ _ZN23QProgressStyleAnimation8setSpeedEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN23QProgressStyleAnimationC1EiP7QObject@Qt_5_PRIVATE_API 5.10.0
+ _ZN23QProgressStyleAnimationC2EiP7QObject@Qt_5_PRIVATE_API 5.10.0
  _ZN23QStyleHintReturnVariantC1Ev@Qt_5 5.0.2
  _ZN23QStyleHintReturnVariantC2Ev@Qt_5 5.0.2
  _ZN23QStyleHintReturnVariantD1Ev@Qt_5 5.0.2
@@ -3898,11 +4006,41 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN24QPlainTextDocumentLayoutD0Ev@Qt_5 5.0.2
  _ZN24QPlainTextDocumentLayoutD1Ev@Qt_5 5.0.2
  _ZN24QPlainTextDocumentLayoutD2Ev@Qt_5 5.0.2
+ _ZN24QScrollbarStyleAnimation11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.10.0
+ _ZN24QScrollbarStyleAnimation11qt_metacastEPKc@Qt_5_PRIVATE_API 5.10.0
+ _ZN24QScrollbarStyleAnimation16staticMetaObjectE@Qt_5_PRIVATE_API 5.10.0
+ _ZN24QScrollbarStyleAnimation17updateCurrentTimeEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN24QScrollbarStyleAnimation9setActiveEb@Qt_5_PRIVATE_API 5.10.0
+ _ZN24QScrollbarStyleAnimationC1ENS_4ModeEP7QObject@Qt_5_PRIVATE_API 5.10.0
+ _ZN24QScrollbarStyleAnimationC2ENS_4ModeEP7QObject@Qt_5_PRIVATE_API 5.10.0
  _ZN24QStyleOptionGraphicsItem26levelOfDetailFromTransformERK10QTransform@Qt_5 5.0.2
  _ZN24QStyleOptionGraphicsItemC1Ei@Qt_5 5.0.2
  _ZN24QStyleOptionGraphicsItemC1Ev@Qt_5 5.0.2
  _ZN24QStyleOptionGraphicsItemC2Ei@Qt_5 5.0.2
  _ZN24QStyleOptionGraphicsItemC2Ev@Qt_5 5.0.2
+ _ZN25QComboBoxPrivateContainer10leaveEventEP6QEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer10paintEventEP11QPaintEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer10timerEventEP11QTimerEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer11changeEventEP6QEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer11eventFilterEP7QObjectP6QEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer11qt_metacastEPKc@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer11resetButtonEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer11resizeEventEP12QResizeEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer11setItemViewEP17QAbstractItemView@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer12itemSelectedERK11QModelIndex@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer13hideScrollersEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer13viewDestroyedEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer14scrollItemViewEi@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer15mousePressEventEP11QMouseEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer15updateScrollersEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer16staticMetaObjectE@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer17mouseReleaseEventEP11QMouseEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer21updateTopBottomMarginEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer9hideEventEP10QHideEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainer9showEventEP10QShowEvent@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainerC1EP17QAbstractItemViewP9QComboBox@Qt_5_PRIVATE_API 5.10.0
+ _ZN25QComboBoxPrivateContainerC2EP17QAbstractItemViewP9QComboBox@Qt_5_PRIVATE_API 5.10.0
  _ZN25QGraphicsDropShadowEffect11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.0.2
  _ZN25QGraphicsDropShadowEffect11qt_metacastEPKc@Qt_5 5.0.2
  _ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor@Qt_5 5.0.2
@@ -4176,6 +4314,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN7QAction16staticMetaObjectE@Qt_5 5.0.2
  _ZN7QAction18setShortcutContextEN2Qt15ShortcutContextE@Qt_5 5.0.2
  _ZN7QAction20setIconVisibleInMenuEb@Qt_5 5.0.2
+ _ZN7QAction31setShortcutVisibleInContextMenuEb@Qt_5 5.10.0
  _ZN7QAction5eventEP6QEvent@Qt_5 5.0.2
  _ZN7QAction6toggleEv@Qt_5 5.0.2
  _ZN7QAction7changedEv@Qt_5 5.0.2
@@ -5154,6 +5293,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN9QTextEdit18setExtraSelectionsERK5QListINS_14ExtraSelectionEE@Qt_5 5.0.2
  _ZN9QTextEdit18setPlaceholderTextERK7QString@Qt_5 5.2.0~alpha1
  _ZN9QTextEdit18setTabChangesFocusEb@Qt_5 5.0.2
+ _ZN9QTextEdit18setTabStopDistanceEd@Qt_5 5.10.0
  _ZN9QTextEdit19ensureCursorVisibleEv@Qt_5 5.0.2
  _ZN9QTextEdit20setCurrentCharFormatERK15QTextCharFormat@Qt_5 5.0.2
  _ZN9QTextEdit21cursorPositionChangedEv@Qt_5 5.0.2
@@ -5583,6 +5723,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK11QListWidget14visualItemRectEPK15QListWidgetItem@Qt_5 5.0.2
  _ZNK11QListWidget16isSortingEnabledEv@Qt_5 5.0.2
  _ZNK11QListWidget20supportedDropActionsEv@Qt_5 5.0.2
+ _ZNK11QListWidget22isPersistentEditorOpenEP15QListWidgetItem@Qt_5 5.10.0
  _ZNK11QListWidget3rowEPK15QListWidgetItem@Qt_5 5.0.2
  _ZNK11QListWidget4itemEi@Qt_5 5.0.2
  _ZNK11QListWidget5countEv@Qt_5 5.0.2
@@ -5714,6 +5855,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK11QTreeWidget17topLevelItemCountEv@Qt_5 5.0.2
  _ZNK11QTreeWidget19indexOfTopLevelItemEP15QTreeWidgetItem@Qt_5 5.0.2
  _ZNK11QTreeWidget20supportedDropActionsEv@Qt_5 5.0.2
+ _ZNK11QTreeWidget22isPersistentEditorOpenEP15QTreeWidgetItemi@Qt_5 5.10.0
  _ZNK11QTreeWidget24isFirstItemColumnSpannedEPK15QTreeWidgetItem@Qt_5 5.0.2
  _ZNK11QTreeWidget5itemsEPK9QMimeData@Qt_5 5.0.2
  _ZNK11QTreeWidget6itemAtERK6QPoint@Qt_5 5.0.2
@@ -5780,6 +5922,24 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK12QCommonStyle9styleHintEN6QStyle9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn@Qt_5 5.0.2
  _ZNK12QFSCompleter13pathFromIndexERK11QModelIndex@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK12QFSCompleter9splitPathERK7QString@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK12QFusionStyle10metaObjectEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle11drawControlEN6QStyle14ControlElementEPK12QStyleOptionP8QPainterPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle11pixelMetricEN6QStyle11PixelMetricEPK12QStyleOptionPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle12drawItemTextEP8QPainterRK5QRectiRK8QPalettebRK7QStringNS5_9ColorRoleE@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle12standardIconEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle13drawPrimitiveEN6QStyle16PrimitiveElementEPK12QStyleOptionP8QPainterPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle14drawItemPixmapEP8QPainterRK5QRectiRK7QPixmap@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle14itemPixmapRectERK5QRectiRK7QPixmap@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle14standardPixmapEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle14subControlRectEN6QStyle14ComplexControlEPK19QStyleOptionComplexNS0_10SubControlEPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle14subElementRectEN6QStyle10SubElementEPK12QStyleOptionPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle15standardPaletteEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle18drawComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexP8QPainterPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QFusionStyle9styleHintEN6QStyle9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn@Qt_5_PRIVATE_API 5.10.0
+ _ZNK12QInputDialog10doubleStepEv@Qt_5 5.10.0
  _ZNK12QInputDialog10intMaximumEv@Qt_5 5.0.2
  _ZNK12QInputDialog10intMinimumEv@Qt_5 5.0.2
  _ZNK12QInputDialog10metaObjectEv@Qt_5 5.0.2
@@ -5870,6 +6030,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK12QTableWidget18verticalHeaderItemEi@Qt_5 5.0.2
  _ZNK12QTableWidget20horizontalHeaderItemEi@Qt_5 5.0.2
  _ZNK12QTableWidget20supportedDropActionsEv@Qt_5 5.0.2
+ _ZNK12QTableWidget22isPersistentEditorOpenEP16QTableWidgetItem@Qt_5 5.10.0
  _ZNK12QTableWidget3rowEPK16QTableWidgetItem@Qt_5 5.0.2
  _ZNK12QTableWidget4itemEii@Qt_5 5.0.2
  _ZNK12QTableWidget5itemsEPK9QMimeData@Qt_5 5.0.2
@@ -6116,6 +6277,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK13QOpenGLWidget10metaObjectEv@Qt_5 5.3.0
  _ZNK13QOpenGLWidget10redirectedEP6QPoint@Qt_5 5.4.0
  _ZNK13QOpenGLWidget11paintEngineEv@Qt_5 5.4.0
+ _ZNK13QOpenGLWidget13textureFormatEv@Qt_5 5.10.0
  _ZNK13QOpenGLWidget14updateBehaviorEv@Qt_5 5.5.0
  _ZNK13QOpenGLWidget24defaultFramebufferObjectEv@Qt_5 5.3.0
  _ZNK13QOpenGLWidget6formatEv@Qt_5 5.3.0
@@ -6152,6 +6314,16 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK13QWidgetItemV214heightForWidthEi@Qt_5 5.0.2
  _ZNK13QWidgetItemV222updateCacheIfNecessaryEv@Qt_5 5.0.2
  _ZNK13QWidgetItemV28sizeHintEv@Qt_5 5.0.2
+ _ZNK13QWindowsStyle10metaObjectEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK13QWindowsStyle11drawControlEN6QStyle14ControlElementEPK12QStyleOptionP8QPainterPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK13QWindowsStyle11pixelMetricEN6QStyle11PixelMetricEPK12QStyleOptionPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK13QWindowsStyle12standardIconEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK13QWindowsStyle13drawPrimitiveEN6QStyle16PrimitiveElementEPK12QStyleOptionP8QPainterPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK13QWindowsStyle14standardPixmapEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK13QWindowsStyle14subElementRectEN6QStyle10SubElementEPK12QStyleOptionPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK13QWindowsStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK13QWindowsStyle18drawComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexP8QPainterPK7QWidget@Qt_5_PRIVATE_API 5.10.0
+ _ZNK13QWindowsStyle9styleHintEN6QStyle9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn@Qt_5_PRIVATE_API 5.10.0
  _ZNK14QDesktopWidget10metaObjectEv@Qt_5 5.0.2
  _ZNK14QDesktopWidget10numScreensEv@Qt_5 5.0.2
  _ZNK14QDesktopWidget12screenNumberEPK7QWidget@Qt_5 5.0.2
@@ -6235,6 +6407,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK14QPlainTextEdit15getPaintContextEv@Qt_5 5.0.2
  _ZNK14QPlainTextEdit15placeholderTextEv@Qt_5 5.3.0
  _ZNK14QPlainTextEdit15tabChangesFocusEv@Qt_5 5.0.2
+ _ZNK14QPlainTextEdit15tabStopDistanceEv@Qt_5 5.10.0
  _ZNK14QPlainTextEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant@Qt_5 5.3.0
  _ZNK14QPlainTextEdit16inputMethodQueryEN2Qt16InputMethodQueryE@Qt_5 5.0.2
  _ZNK14QPlainTextEdit17backgroundVisibleEv@Qt_5 5.0.2
@@ -6267,6 +6440,11 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK14QStackedWidget5countEv@Qt_5 5.0.2
  _ZNK14QStackedWidget6widgetEi@Qt_5 5.0.2
  _ZNK14QStackedWidget7indexOfEP7QWidget@Qt_5 5.0.2
+ _ZNK14QTabBarPrivate10indexAtPosERK6QPoint@Qt_5_PRIVATE_API 5.10.0
+ _ZNK14QTabBarPrivate15hoveredTabIndexEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK14QTabBarPrivate20calculateNewPositionEiii@Qt_5_PRIVATE_API 5.10.0
+ _ZNK14QTabBarPrivate20initBasicStyleOptionEP15QStyleOptionTabi@Qt_5_PRIVATE_API 5.10.0
+ _ZNK14QTabBarPrivate2atEi@Qt_5_PRIVATE_API 5.10.0
  _ZNK14QWidgetPrivate10clipRegionEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK14QWidgetPrivate10frameStrutEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK14QWidgetPrivate12adjustedSizeEv@Qt_5_PRIVATE_API 5.0.2 1
@@ -6276,6 +6454,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK14QWidgetPrivate13paintOnScreenEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK14QWidgetPrivate14childAt_helperERK6QPointb@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK14QWidgetPrivate15paintBackgroundEP8QPainterRK7QRegioni@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK14QWidgetPrivate17deepestFocusProxyEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK14QWidgetPrivate17getOpaqueChildrenEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK14QWidgetPrivate17naturalWidgetFontEj@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK14QWidgetPrivate19clipToEffectiveMaskER7QRegion@Qt_5_PRIVATE_API 5.0.2 1
@@ -6392,6 +6571,13 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK15QSplitterHandle12opaqueResizeEv@Qt_5 5.0.2
  _ZNK15QSplitterHandle8sizeHintEv@Qt_5 5.0.2
  _ZNK15QSplitterHandle8splitterEv@Qt_5 5.0.2
+ _ZNK15QStyleAnimation10metaObjectEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK15QStyleAnimation14isUpdateNeededEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK15QStyleAnimation5delayEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK15QStyleAnimation6targetEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK15QStyleAnimation8durationEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK15QStyleAnimation9frameRateEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK15QStyleAnimation9startTimeEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK15QSystemTrayIcon10metaObjectEv@Qt_5 5.0.2
  _ZNK15QSystemTrayIcon11contextMenuEv@Qt_5 5.0.2
  _ZNK15QSystemTrayIcon4iconEv@Qt_5 5.0.2
@@ -6534,6 +6720,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK17QAbstractItemView21dropIndicatorPositionEv@Qt_5 5.0.2
  _ZNK17QAbstractItemView21itemDelegateForColumnEi@Qt_5 5.0.2
  _ZNK17QAbstractItemView22horizontalStepsPerItemEv@Qt_5 5.0.2
+ _ZNK17QAbstractItemView22isPersistentEditorOpenERK11QModelIndex@Qt_5 5.10.0
  _ZNK17QAbstractItemView5modelEv@Qt_5 5.0.2
  _ZNK17QAbstractItemView5stateEv@Qt_5 5.0.2
  _ZNK17QAbstractItemView8iconSizeEv@Qt_5 5.0.2
@@ -6727,6 +6914,14 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK19QAbstractScrollArea8viewportEv@Qt_5 5.0.2
  _ZNK19QApplicationPrivate15isWindowBlockedEP7QWindowPS1_@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK19QApplicationPrivate21applyQIconStyleHelperEN5QIcon4ModeERK7QPixmap@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK19QCommonStylePrivate12viewItemSizeEPK20QStyleOptionViewItemi@Qt_5_PRIVATE_API 5.10.0
+ _ZNK19QCommonStylePrivate13stopAnimationEPK7QObject@Qt_5_PRIVATE_API 5.10.0
+ _ZNK19QCommonStylePrivate14startAnimationEP15QStyleAnimation@Qt_5_PRIVATE_API 5.10.0
+ _ZNK19QCommonStylePrivate14viewItemLayoutEPK20QStyleOptionViewItemP5QRectS4_S4_b@Qt_5_PRIVATE_API 5.10.0
+ _ZNK19QCommonStylePrivate16animationTargetsEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK19QCommonStylePrivate16viewItemDrawTextEP8QPainterPK20QStyleOptionViewItemRK5QRect@Qt_5_PRIVATE_API 5.10.0
+ _ZNK19QCommonStylePrivate9animationEPK7QObject@Qt_5_PRIVATE_API 5.10.0
+ _ZNK19QCommonStylePrivate9tabLayoutEPK15QStyleOptionTabPK7QWidgetP5QRectS7_@Qt_5_PRIVATE_API 5.10.0
  _ZNK19QGraphicsBlurEffect10blurRadiusEv@Qt_5 5.0.2
  _ZNK19QGraphicsBlurEffect10metaObjectEv@Qt_5 5.0.2
  _ZNK19QGraphicsBlurEffect15boundingRectForERK6QRectF@Qt_5 5.0.2
@@ -6793,6 +6988,10 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK19QStyledItemDelegate20updateEditorGeometryEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex@Qt_5 5.0.2
  _ZNK19QStyledItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex@Qt_5 5.0.2
  _ZNK19QStyledItemDelegate8sizeHintERK20QStyleOptionViewItemRK11QModelIndex@Qt_5 5.0.2
+ _ZNK20QBlendStyleAnimation10metaObjectEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK20QBlendStyleAnimation10startImageEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK20QBlendStyleAnimation12currentImageEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK20QBlendStyleAnimation8endImageEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK20QGraphicsEllipseItem10opaqueAreaEv@Qt_5 5.0.2
  _ZNK20QGraphicsEllipseItem10startAngleEv@Qt_5 5.0.2
  _ZNK20QGraphicsEllipseItem12boundingRectEv@Qt_5 5.0.2
@@ -6846,6 +7045,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK20QGraphicsViewPrivate9findItemsERK7QRegionPbRK10QTransform@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK20QWidgetResizeHandler10metaObjectEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK20QWidgetResizeHandler8isActiveENS_6ActionE@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK20QWindowsStylePrivate10hasSeenAltEPK7QWidget@Qt_5_PRIVATE_API 5.10.0
  _ZNK21QAbstractItemDelegate10metaObjectEv@Qt_5 5.0.2
  _ZNK21QAbstractItemDelegate12createEditorEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex@Qt_5 5.0.2
  _ZNK21QAbstractItemDelegate12setModelDataEP7QWidgetP18QAbstractItemModelRK11QModelIndex@Qt_5 5.0.2
@@ -6878,6 +7078,11 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK21QMouseEventTransition11hitTestPathEv@Qt_5 5.0.2
  _ZNK21QMouseEventTransition12modifierMaskEv@Qt_5 5.0.2
  _ZNK21QMouseEventTransition6buttonEv@Qt_5 5.0.2
+ _ZNK21QNumberStyleAnimation10metaObjectEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK21QNumberStyleAnimation10startValueEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK21QNumberStyleAnimation12currentValueEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK21QNumberStyleAnimation14isUpdateNeededEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK21QNumberStyleAnimation8endValueEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK21QPixmapColorizeFilter10metaObjectEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK21QPixmapColorizeFilter4drawEP8QPainterRK7QPointFRK7QPixmapRK6QRectF@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK21QPixmapColorizeFilter5colorEv@Qt_5_PRIVATE_API 5.0.2 1
@@ -6925,6 +7130,11 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK23QPixmapDropShadowFilter4drawEP8QPainterRK7QPointFRK7QPixmapRK6QRectF@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK23QPixmapDropShadowFilter5colorEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK23QPixmapDropShadowFilter6offsetEv@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK23QProgressStyleAnimation10metaObjectEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK23QProgressStyleAnimation12progressStepEi@Qt_5_PRIVATE_API 5.10.0
+ _ZNK23QProgressStyleAnimation13animationStepEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK23QProgressStyleAnimation14isUpdateNeededEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK23QProgressStyleAnimation5speedEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK23QTreeWidgetItemIterator12matchesFlagsEPK15QTreeWidgetItem@Qt_5 5.0.2
  _ZNK24QGraphicsSceneHoverEvent12lastScenePosEv@Qt_5 5.0.2
  _ZNK24QGraphicsSceneHoverEvent13lastScreenPosEv@Qt_5 5.0.2
@@ -6970,6 +7180,14 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK24QPlainTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE@Qt_5 5.0.2
  _ZNK24QPlainTextDocumentLayout9pageCountEv@Qt_5 5.0.2
  _ZNK24QPlainTextDocumentLayout9textWidthEv@Qt_5 5.0.2
+ _ZNK24QScrollbarStyleAnimation10metaObjectEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK24QScrollbarStyleAnimation4modeEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK24QScrollbarStyleAnimation9wasActiveEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK25QComboBoxPrivateContainer10metaObjectEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK25QComboBoxPrivateContainer16comboStyleOptionEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK25QComboBoxPrivateContainer7spacingEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK25QComboBoxPrivateContainer8itemViewEv@Qt_5_PRIVATE_API 5.10.0
+ _ZNK25QComboBoxPrivateContainer9topMarginEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK25QGraphicsDropShadowEffect10blurRadiusEv@Qt_5 5.0.2
  _ZNK25QGraphicsDropShadowEffect10metaObjectEv@Qt_5 5.0.2
  _ZNK25QGraphicsDropShadowEffect15boundingRectForERK6QRectF@Qt_5 5.0.2
@@ -7069,6 +7287,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK7QAction17associatedWidgetsEv@Qt_5 5.0.2
  _ZNK7QAction19isIconVisibleInMenuEv@Qt_5 5.0.2
  _ZNK7QAction25associatedGraphicsWidgetsEv@Qt_5 5.0.2
+ _ZNK7QAction30isShortcutVisibleInContextMenuEv@Qt_5 5.10.0
  _ZNK7QAction4dataEv@Qt_5 5.0.2
  _ZNK7QAction4fontEv@Qt_5 5.0.2
  _ZNK7QAction4iconEv@Qt_5 5.0.2
@@ -7417,6 +7636,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK9QLineEdit11dragEnabledEv@Qt_5 5.0.2
  _ZNK9QLineEdit11textMarginsEv@Qt_5 5.0.2
  _ZNK9QLineEdit12selectedTextEv@Qt_5 5.0.2
+ _ZNK9QLineEdit12selectionEndEv@Qt_5 5.10.0
  _ZNK9QLineEdit14cursorPositionEv@Qt_5 5.0.2
  _ZNK9QLineEdit14getTextMarginsEPiS0_S0_S0_@Qt_5 5.0.2
  _ZNK9QLineEdit14selectionStartEv@Qt_5 5.0.2
@@ -7427,6 +7647,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK9QLineEdit15isUndoAvailableEv@Qt_5 5.0.2
  _ZNK9QLineEdit15minimumSizeHintEv@Qt_5 5.0.2
  _ZNK9QLineEdit15placeholderTextEv@Qt_5 5.0.2
+ _ZNK9QLineEdit15selectionLengthEv@Qt_5 5.10.0
  _ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant@Qt_5 5.7.0
  _ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE@Qt_5 5.0.2
  _ZNK9QLineEdit18hasAcceptableInputEv@Qt_5 5.0.2
@@ -7521,6 +7742,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK9QTextEdit15extraSelectionsEv@Qt_5 5.0.2
  _ZNK9QTextEdit15placeholderTextEv@Qt_5 5.2.0~alpha1
  _ZNK9QTextEdit15tabChangesFocusEv@Qt_5 5.0.2
+ _ZNK9QTextEdit15tabStopDistanceEv@Qt_5 5.10.0
  _ZNK9QTextEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant@Qt_5 5.3.0
  _ZNK9QTextEdit16inputMethodQueryEN2Qt16InputMethodQueryE@Qt_5 5.0.2
  _ZNK9QTextEdit17currentCharFormatEv@Qt_5 5.0.2
@@ -7628,6 +7850,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTI12QColorDialog@Qt_5 5.0.2
  _ZTI12QCommonStyle@Qt_5 5.0.2
  _ZTI12QFSCompleter@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTI12QFusionStyle@Qt_5_PRIVATE_API 5.10.0
  _ZTI12QInputDialog@Qt_5 5.0.2
  _ZTI12QPixmapStyle@Qt_5_PRIVATE_API 5.7.0 1
  _ZTI12QProgressBar@Qt_5 5.0.2
@@ -7653,6 +7876,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTI13QSwipeGesture@Qt_5 5.0.2
  _ZTI13QWidgetAction@Qt_5 5.0.2
  _ZTI13QWidgetItemV2@Qt_5 5.0.2
+ _ZTI13QWindowsStyle@Qt_5_PRIVATE_API 5.10.0
  _ZTI14QActionPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI14QDesktopWidget@Qt_5 5.0.2
  _ZTI14QDialogPrivate@Qt_5_PRIVATE_API 5.2.0~rc1 1
@@ -7663,6 +7887,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTI14QPlainTextEdit@Qt_5 5.0.2
  _ZTI14QStackedLayout@Qt_5 5.0.2
  _ZTI14QStackedWidget@Qt_5 5.0.2
+ _ZTI14QTabBarPrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTI14QWidgetPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI15QAbstractButton@Qt_5 5.0.2
  _ZTI15QAbstractSlider@Qt_5 5.0.2
@@ -7675,6 +7900,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTI15QListWidgetItem@Qt_5 5.0.2
  _ZTI15QProgressDialog@Qt_5 5.0.2
  _ZTI15QSplitterHandle@Qt_5 5.0.2
+ _ZTI15QStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTI15QSystemTrayIcon@Qt_5 5.0.2
  _ZTI15QTreeWidgetItem@Qt_5 5.0.2
  _ZTI16QAbstractSpinBox@Qt_5 5.0.2
@@ -7706,6 +7932,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTI18QWidgetTextControl@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI19QAbstractScrollArea@Qt_5 5.0.2
  _ZTI19QApplicationPrivate@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTI19QCommonStylePrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTI19QGraphicsBlurEffect@Qt_5 5.0.2
  _ZTI19QGraphicsGridLayout@Qt_5 5.0.2
  _ZTI19QGraphicsLayoutItem@Qt_5 5.0.2
@@ -7714,17 +7941,20 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTI19QKeyEventTransition@Qt_5 5.0.2
  _ZTI19QScrollerProperties@Qt_5 5.0.2
  _ZTI19QStyledItemDelegate@Qt_5 5.0.2
+ _ZTI20QBlendStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTI20QGraphicsEllipseItem@Qt_5 5.0.2
  _ZTI20QGraphicsItemPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI20QGraphicsPolygonItem@Qt_5 5.0.2
  _ZTI20QGraphicsProxyWidget@Qt_5 5.0.2
  _ZTI20QGraphicsViewPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI20QWidgetResizeHandler@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTI20QWindowsStylePrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTI21QAbstractItemDelegate@Qt_5 5.0.2
  _ZTI21QGraphicsAnchorLayout@Qt_5 5.0.2
  _ZTI21QGraphicsEffectSource@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI21QGraphicsLinearLayout@Qt_5 5.0.2
  _ZTI21QMouseEventTransition@Qt_5 5.0.2
+ _ZTI21QNumberStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTI21QPixmapColorizeFilter@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI22QGraphicsEffectPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI22QGraphicsItemAnimation@Qt_5 5.0.2
@@ -7735,12 +7965,15 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTI23QGraphicsSceneMoveEvent@Qt_5 5.0.2
  _ZTI23QGraphicsSimpleTextItem@Qt_5 5.0.2
  _ZTI23QPixmapDropShadowFilter@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTI23QProgressStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTI24QAbstractLayoutStyleInfo@Qt_5 5.3.0
  _ZTI24QGraphicsSceneHoverEvent@Qt_5 5.0.2
  _ZTI24QGraphicsSceneMouseEvent@Qt_5 5.0.2
  _ZTI24QGraphicsSceneWheelEvent@Qt_5 5.0.2
  _ZTI24QPixmapConvolutionFilter@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI24QPlainTextDocumentLayout@Qt_5 5.0.2
+ _ZTI24QScrollbarStyleAnimation@Qt_5_PRIVATE_API 5.10.0
+ _ZTI25QComboBoxPrivateContainer@Qt_5_PRIVATE_API 5.10.0
  _ZTI25QGraphicsDropShadowEffect@Qt_5 5.0.2
  _ZTI25QGraphicsSceneResizeEvent@Qt_5 5.0.2
  _ZTI25QGraphicsTransformPrivate@Qt_5_PRIVATE_API 5.6.0~beta 1
@@ -7781,6 +8014,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTI9QTimeEdit@Qt_5 5.0.2
  _ZTI9QTreeView@Qt_5 5.0.2
  _ZTI9QUndoView@Qt_5 5.0.2
+ _ZTIN14QTabBarPrivate3Tab15TabBarAnimationE@Qt_5_PRIVATE_API 5.10.0
  _ZTIN16QTreeViewPrivate17AnimatedOperationE@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS10QBoxLayout@Qt_5 5.0.2
  _ZTS10QCompleter@Qt_5 5.0.2
@@ -7822,6 +8056,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTS12QColorDialog@Qt_5 5.0.2
  _ZTS12QCommonStyle@Qt_5 5.0.2
  _ZTS12QFSCompleter@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTS12QFusionStyle@Qt_5_PRIVATE_API 5.10.0
  _ZTS12QInputDialog@Qt_5 5.0.2
  _ZTS12QPixmapStyle@Qt_5_PRIVATE_API 5.7.0 1
  _ZTS12QProgressBar@Qt_5 5.0.2
@@ -7847,6 +8082,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTS13QSwipeGesture@Qt_5 5.0.2
  _ZTS13QWidgetAction@Qt_5 5.0.2
  _ZTS13QWidgetItemV2@Qt_5 5.0.2
+ _ZTS13QWindowsStyle@Qt_5_PRIVATE_API 5.10.0
  _ZTS14QActionPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS14QDesktopWidget@Qt_5 5.0.2
  _ZTS14QDialogPrivate@Qt_5_PRIVATE_API 5.2.0~rc1 1
@@ -7857,6 +8093,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTS14QPlainTextEdit@Qt_5 5.0.2
  _ZTS14QStackedLayout@Qt_5 5.0.2
  _ZTS14QStackedWidget@Qt_5 5.0.2
+ _ZTS14QTabBarPrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTS14QWidgetPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS15QAbstractButton@Qt_5 5.0.2
  _ZTS15QAbstractSlider@Qt_5 5.0.2
@@ -7869,6 +8106,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTS15QListWidgetItem@Qt_5 5.0.2
  _ZTS15QProgressDialog@Qt_5 5.0.2
  _ZTS15QSplitterHandle@Qt_5 5.0.2
+ _ZTS15QStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTS15QSystemTrayIcon@Qt_5 5.0.2
  _ZTS15QTreeWidgetItem@Qt_5 5.0.2
  _ZTS16QAbstractSpinBox@Qt_5 5.0.2
@@ -7900,6 +8138,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTS18QWidgetTextControl@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS19QAbstractScrollArea@Qt_5 5.0.2
  _ZTS19QApplicationPrivate@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTS19QCommonStylePrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTS19QGraphicsBlurEffect@Qt_5 5.0.2
  _ZTS19QGraphicsGridLayout@Qt_5 5.0.2
  _ZTS19QGraphicsLayoutItem@Qt_5 5.0.2
@@ -7908,17 +8147,20 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTS19QKeyEventTransition@Qt_5 5.0.2
  _ZTS19QScrollerProperties@Qt_5 5.0.2
  _ZTS19QStyledItemDelegate@Qt_5 5.0.2
+ _ZTS20QBlendStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTS20QGraphicsEllipseItem@Qt_5 5.0.2
  _ZTS20QGraphicsItemPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS20QGraphicsPolygonItem@Qt_5 5.0.2
  _ZTS20QGraphicsProxyWidget@Qt_5 5.0.2
  _ZTS20QGraphicsViewPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS20QWidgetResizeHandler@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTS20QWindowsStylePrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTS21QAbstractItemDelegate@Qt_5 5.0.2
  _ZTS21QGraphicsAnchorLayout@Qt_5 5.0.2
  _ZTS21QGraphicsEffectSource@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS21QGraphicsLinearLayout@Qt_5 5.0.2
  _ZTS21QMouseEventTransition@Qt_5 5.0.2
+ _ZTS21QNumberStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTS21QPixmapColorizeFilter@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS22QGraphicsEffectPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS22QGraphicsItemAnimation@Qt_5 5.0.2
@@ -7929,12 +8171,15 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTS23QGraphicsSceneMoveEvent@Qt_5 5.0.2
  _ZTS23QGraphicsSimpleTextItem@Qt_5 5.0.2
  _ZTS23QPixmapDropShadowFilter@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTS23QProgressStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTS24QAbstractLayoutStyleInfo@Qt_5 5.3.0
  _ZTS24QGraphicsSceneHoverEvent@Qt_5 5.0.2
  _ZTS24QGraphicsSceneMouseEvent@Qt_5 5.0.2
  _ZTS24QGraphicsSceneWheelEvent@Qt_5 5.0.2
  _ZTS24QPixmapConvolutionFilter@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS24QPlainTextDocumentLayout@Qt_5 5.0.2
+ _ZTS24QScrollbarStyleAnimation@Qt_5_PRIVATE_API 5.10.0
+ _ZTS25QComboBoxPrivateContainer@Qt_5_PRIVATE_API 5.10.0
  _ZTS25QGraphicsDropShadowEffect@Qt_5 5.0.2
  _ZTS25QGraphicsSceneResizeEvent@Qt_5 5.0.2
  _ZTS25QGraphicsTransformPrivate@Qt_5_PRIVATE_API 5.6.0~beta 1
@@ -7975,6 +8220,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTS9QTimeEdit@Qt_5 5.0.2
  _ZTS9QTreeView@Qt_5 5.0.2
  _ZTS9QUndoView@Qt_5 5.0.2
+ _ZTSN14QTabBarPrivate3Tab15TabBarAnimationE@Qt_5_PRIVATE_API 5.10.0
  _ZTSN16QTreeViewPrivate17AnimatedOperationE@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV10QBoxLayout@Qt_5 5.0.2
  _ZTV10QCompleter@Qt_5 5.0.2
@@ -8016,6 +8262,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTV12QColorDialog@Qt_5 5.0.2
  _ZTV12QCommonStyle@Qt_5 5.0.2
  _ZTV12QFSCompleter@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTV12QFusionStyle@Qt_5_PRIVATE_API 5.10.0
  _ZTV12QInputDialog@Qt_5 5.0.2
  _ZTV12QPixmapStyle@Qt_5_PRIVATE_API 5.7.0 1
  _ZTV12QProgressBar@Qt_5 5.0.2
@@ -8041,6 +8288,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTV13QSwipeGesture@Qt_5 5.0.2
  _ZTV13QWidgetAction@Qt_5 5.0.2
  _ZTV13QWidgetItemV2@Qt_5 5.0.2
+ _ZTV13QWindowsStyle@Qt_5_PRIVATE_API 5.10.0
  _ZTV14QActionPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV14QDesktopWidget@Qt_5 5.0.2
  _ZTV14QDialogPrivate@Qt_5_PRIVATE_API 5.2.0~rc1 1
@@ -8051,6 +8299,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTV14QPlainTextEdit@Qt_5 5.0.2
  _ZTV14QStackedLayout@Qt_5 5.0.2
  _ZTV14QStackedWidget@Qt_5 5.0.2
+ _ZTV14QTabBarPrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTV14QWidgetPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV15QAbstractButton@Qt_5 5.0.2
  _ZTV15QAbstractSlider@Qt_5 5.0.2
@@ -8063,6 +8312,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTV15QListWidgetItem@Qt_5 5.0.2
  _ZTV15QProgressDialog@Qt_5 5.0.2
  _ZTV15QSplitterHandle@Qt_5 5.0.2
+ _ZTV15QStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTV15QSystemTrayIcon@Qt_5 5.0.2
  _ZTV15QTreeWidgetItem@Qt_5 5.0.2
  _ZTV16QAbstractSpinBox@Qt_5 5.0.2
@@ -8094,6 +8344,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTV18QWidgetTextControl@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV19QAbstractScrollArea@Qt_5 5.0.2
  _ZTV19QApplicationPrivate@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTV19QCommonStylePrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTV19QGraphicsBlurEffect@Qt_5 5.0.2
  _ZTV19QGraphicsGridLayout@Qt_5 5.0.2
  _ZTV19QGraphicsLayoutItem@Qt_5 5.0.2
@@ -8102,17 +8353,20 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTV19QKeyEventTransition@Qt_5 5.0.2
  _ZTV19QScrollerProperties@Qt_5 5.0.2
  _ZTV19QStyledItemDelegate@Qt_5 5.0.2
+ _ZTV20QBlendStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTV20QGraphicsEllipseItem@Qt_5 5.0.2
  _ZTV20QGraphicsItemPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV20QGraphicsPolygonItem@Qt_5 5.0.2
  _ZTV20QGraphicsProxyWidget@Qt_5 5.0.2
  _ZTV20QGraphicsViewPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV20QWidgetResizeHandler@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTV20QWindowsStylePrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTV21QAbstractItemDelegate@Qt_5 5.0.2
  _ZTV21QGraphicsAnchorLayout@Qt_5 5.0.2
  _ZTV21QGraphicsEffectSource@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV21QGraphicsLinearLayout@Qt_5 5.0.2
  _ZTV21QMouseEventTransition@Qt_5 5.0.2
+ _ZTV21QNumberStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTV21QPixmapColorizeFilter@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV22QGraphicsEffectPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV22QGraphicsItemAnimation@Qt_5 5.0.2
@@ -8123,11 +8377,14 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTV23QGraphicsSceneMoveEvent@Qt_5 5.0.2
  _ZTV23QGraphicsSimpleTextItem@Qt_5 5.0.2
  _ZTV23QPixmapDropShadowFilter@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTV23QProgressStyleAnimation@Qt_5_PRIVATE_API 5.10.0
  _ZTV24QGraphicsSceneHoverEvent@Qt_5 5.0.2
  _ZTV24QGraphicsSceneMouseEvent@Qt_5 5.0.2
  _ZTV24QGraphicsSceneWheelEvent@Qt_5 5.0.2
  _ZTV24QPixmapConvolutionFilter@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV24QPlainTextDocumentLayout@Qt_5 5.0.2
+ _ZTV24QScrollbarStyleAnimation@Qt_5_PRIVATE_API 5.10.0
+ _ZTV25QComboBoxPrivateContainer@Qt_5_PRIVATE_API 5.10.0
  _ZTV25QGraphicsDropShadowEffect@Qt_5 5.0.2
  _ZTV25QGraphicsSceneResizeEvent@Qt_5 5.0.2
  _ZTV25QGraphicsTransformPrivate@Qt_5_PRIVATE_API 5.6.0~beta 1
@@ -8168,6 +8425,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZTV9QTimeEdit@Qt_5 5.0.2
  _ZTV9QTreeView@Qt_5 5.0.2
  _ZTV9QUndoView@Qt_5 5.0.2
+ _ZTVN14QTabBarPrivate3Tab15TabBarAnimationE@Qt_5_PRIVATE_API 5.10.0
  _ZTVN16QTreeViewPrivate17AnimatedOperationE@Qt_5_PRIVATE_API 5.0.2 1
  _ZZZNK18QFileDialogPrivate8rootPathEvENKUlvE_clEvE15qstring_literal@Qt_5_PRIVATE_API 5.2.0~beta1 1
  _Zls6QDebug6QFlagsIN13QGraphicsItem16GraphicsItemFlagEE@Qt_5 5.0.2
@@ -8403,3 +8661,4 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  (c++)"non-virtual thunk to QWindowContainer::~QWindowContainer()@Qt_5_PRIVATE_API" 5.3.0 1
  (c++)"non-virtual thunk to QWizard::~QWizard()@Qt_5" 5.0.2
  (c++)"non-virtual thunk to QWizardPage::~QWizardPage()@Qt_5" 5.0.2
+ qt_button_down@Qt_5 5.10.0

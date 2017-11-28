@@ -1,8 +1,9 @@
-# SymbolsHelper-Confirmed: 5.9.1 amd64 i386
+# SymbolsHelper-Confirmed: 5.10.0 amd64 i386
 libQt5Test.so.5 libqt5test5 #MINVER#
 | libqt5test5 #MINVER#, qtbase-abi-5-9-2
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
+ Qt_5.10@Qt_5.10 5.10.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -88,6 +89,7 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN5QTest15defaultKeyDelayEv@Qt_5 5.0.2
  _ZN5QTest15lastMouseButtonE@Qt_5 5.6.0~beta
  _ZN5QTest15toPrettyCStringEPKci@Qt_5 5.5.0
+ _ZN5QTest15toPrettyUnicodeE11QStringView@Qt_5 5.10.0
  _ZN5QTest15toPrettyUnicodeEPKti@Qt_5 5.3.0
  _ZN5QTest16qExtractTestDataERK7QString@Qt_5 5.5.0
  _ZN5QTest16qtest_qParseArgsEiPPcb@Qt_5 5.0.2
@@ -111,16 +113,19 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN5QTest29QBenchmarkIterationControllerC2Ev@Qt_5 5.0.2
  _ZN5QTest29QBenchmarkIterationControllerD1Ev@Qt_5 5.0.2
  _ZN5QTest29QBenchmarkIterationControllerD2Ev@Qt_5 5.0.2
+ _ZN5QTest4qRunEv@Qt_5 5.10.0
  _ZN5QTest5qDataEPKci@Qt_5 5.0.2
  _ZN5QTest5qExecEP7QObjectRK11QStringList@Qt_5 5.0.2
  _ZN5QTest5qExecEP7QObjectiPPc@Qt_5 5.0.2
  _ZN5QTest5qFailEPKcS1_i@Qt_5 5.0.2
+ _ZN5QTest5qInitEP7QObjectiPPc@Qt_5 5.10.0
  _ZN5QTest5qSkipEPKcS1_i@Qt_5 5.0.2
  _ZN5QTest5qWarnEPKcS1_i@Qt_5 5.0.2
  _ZN5QTest6addRowEPKcz@Qt_5 5.9.0~beta
  _ZN5QTest6newRowEPKc@Qt_5 5.0.2
  _ZN5QTest6qSleepEi@Qt_5 5.0.2
  _ZN5QTest7qVerifyEbPKcS1_S1_i@Qt_5 5.0.2
+ _ZN5QTest8qCleanupEv@Qt_5 5.10.0
  _ZN5QTest8qCompareERKdS1_PKcS3_S3_i@Qt_5 5.0.2
  _ZN5QTest8qCompareERKfS1_PKcS3_S3_i@Qt_5 5.0.2
  _ZN5QTest8testTagsE@Qt_5 5.0.2

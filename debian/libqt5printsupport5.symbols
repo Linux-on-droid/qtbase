@@ -1,8 +1,9 @@
-# SymbolsHelper-Confirmed: 5.9.2 amd64
+# SymbolsHelper-Confirmed: 5.10.0 amd64 i386
 libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
 | libqt5printsupport5 #MINVER#, qtbase-abi-5-9-2
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
+ Qt_5.10@Qt_5.10 5.10.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -76,9 +77,9 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZN15QPdfPrintEngine3endEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN15QPdfPrintEngine5beginEP12QPaintDevice@Qt_5_PRIVATE_API 5.0.2 1
  _ZN15QPdfPrintEngine7newPageEv@Qt_5_PRIVATE_API 5.0.2 1
- _ZN15QPdfPrintEngineC1EN8QPrinter11PrinterModeE@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN15QPdfPrintEngineC1EN8QPrinter11PrinterModeEN10QPdfEngine10PdfVersionE@Qt_5_PRIVATE_API 5.10.0
  _ZN15QPdfPrintEngineC1ER22QPdfPrintEnginePrivate@Qt_5_PRIVATE_API 5.0.2 1
- _ZN15QPdfPrintEngineC2EN8QPrinter11PrinterModeE@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN15QPdfPrintEngineC2EN8QPrinter11PrinterModeEN10QPdfEngine10PdfVersionE@Qt_5_PRIVATE_API 5.10.0
  _ZN15QPdfPrintEngineC2ER22QPdfPrintEnginePrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZN15QPdfPrintEngineD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN15QPdfPrintEngineD1Ev@Qt_5_PRIVATE_API 5.0.2 1
@@ -228,6 +229,7 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZN8QPrinter12setPaperSizeEN17QPagedPaintDevice8PageSizeE@Qt_5 5.0.2
  _ZN8QPrinter12setPaperSizeERK6QSizeFNS_4UnitE@Qt_5 5.0.2
  _ZN8QPrinter13setPageSizeMMERK6QSizeF@Qt_5 5.0.2
+ _ZN8QPrinter13setPdfVersionEN17QPagedPaintDevice10PdfVersionE@Qt_5 5.10.0
  _ZN8QPrinter13setPrintRangeENS_10PrintRangeE@Qt_5 5.0.2
  _ZN8QPrinter13setResolutionEi@Qt_5 5.0.2
  _ZN8QPrinter14setOrientationENS_11OrientationE@Qt_5 5.0.2
@@ -376,6 +378,7 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZNK23QPlatformPrinterSupport20defaultPrintDeviceIdEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK23QPlatformPrinterSupport23availablePrintDeviceIdsEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK29QPlatformPrinterSupportPlugin10metaObjectEv@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZNK8QPrinter10pdfVersionEv@Qt_5 5.10.0
  _ZNK8QPrinter10printRangeEv@Qt_5 5.0.2
  _ZNK8QPrinter10resolutionEv@Qt_5 5.0.2
  _ZNK8QPrinter11orientationEv@Qt_5 5.0.2

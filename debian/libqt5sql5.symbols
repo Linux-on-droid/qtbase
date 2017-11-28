@@ -1,8 +1,9 @@
-# SymbolsHelper-Confirmed: 5.9.0~beta amd64
+# SymbolsHelper-Confirmed: 5.10.0 amd64 i386
 libQt5Sql.so.5 libqt5sql5 #MINVER#
 | libqt5sql5 #MINVER#, qtbase-abi-5-9-2
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
+ Qt_5.10@Qt_5.10 5.10.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -254,6 +255,7 @@ libQt5Sql.so.5 libqt5sql5 #MINVER#
  _ZN9QSqlField12setAutoValueEb@Qt_5 5.0.2
  _ZN9QSqlField12setGeneratedEb@Qt_5 5.0.2
  _ZN9QSqlField12setPrecisionEi@Qt_5 5.0.2
+ _ZN9QSqlField12setTableNameERK7QString@Qt_5 5.10.0
  _ZN9QSqlField15setDefaultValueERK8QVariant@Qt_5 5.0.2
  _ZN9QSqlField17setRequiredStatusENS_14RequiredStatusE@Qt_5 5.0.2
  _ZN9QSqlField5clearEv@Qt_5 5.0.2
@@ -263,8 +265,10 @@ libQt5Sql.so.5 libqt5sql5 #MINVER#
  _ZN9QSqlField8setValueERK8QVariant@Qt_5 5.0.2
  _ZN9QSqlField9setLengthEi@Qt_5 5.0.2
  _ZN9QSqlFieldC1ERK7QStringN8QVariant4TypeE@Qt_5 5.0.2
+ _ZN9QSqlFieldC1ERK7QStringN8QVariant4TypeES2_@Qt_5 5.10.0
  _ZN9QSqlFieldC1ERKS_@Qt_5 5.0.2
  _ZN9QSqlFieldC2ERK7QStringN8QVariant4TypeE@Qt_5 5.0.2
+ _ZN9QSqlFieldC2ERK7QStringN8QVariant4TypeES2_@Qt_5 5.10.0
  _ZN9QSqlFieldC2ERKS_@Qt_5 5.0.2
  _ZN9QSqlFieldD1Ev@Qt_5 5.0.2
  _ZN9QSqlFieldD2Ev@Qt_5 5.0.2
@@ -391,6 +395,7 @@ libQt5Sql.so.5 libqt5sql5 #MINVER#
  _ZNK14QSqlQueryModel6recordEv@Qt_5 5.0.2
  _ZNK14QSqlQueryModel8rowCountERK11QModelIndex@Qt_5 5.0.2
  _ZNK14QSqlQueryModel9lastErrorEv@Qt_5 5.0.2
+ _ZNK14QSqlQueryModel9roleNamesEv@Qt_5 5.10.0
  _ZNK14QSqlTableModel10fieldIndexERK7QString@Qt_5 5.0.2
  _ZNK14QSqlTableModel10headerDataEiN2Qt11OrientationEi@Qt_5 5.0.2
  _ZNK14QSqlTableModel10metaObjectEv@Qt_5 5.0.2
@@ -443,6 +448,7 @@ libQt5Sql.so.5 libqt5sql5 #MINVER#
  _ZNK9QSqlField6typeIDEv@Qt_5 5.0.2
  _ZNK9QSqlField7isValidEv@Qt_5 5.0.2
  _ZNK9QSqlField9precisionEv@Qt_5 5.0.2
+ _ZNK9QSqlField9tableNameEv@Qt_5 5.10.0
  _ZNK9QSqlFieldeqERKS_@Qt_5 5.0.2
  _ZNK9QSqlIndex11createFieldEiRK7QStringb@Qt_5 5.0.2
  _ZNK9QSqlIndex12isDescendingEi@Qt_5 5.0.2

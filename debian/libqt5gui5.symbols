@@ -1,8 +1,9 @@
-# SymbolsHelper-Confirmed: 5.9.1 amd64 armel armhf hurd-i386 i386 kfreebsd-i386 m68k mips mipsel powerpc powerpcspe
+# SymbolsHelper-Confirmed: 5.10.0 amd64 i386
 libQt5Gui.so.5 libqt5gui5 #MINVER#
 | libqt5gui5 #MINVER#, qtbase-abi-5-9-2
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
+ Qt_5.10@Qt_5.10 5.10.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -18,6 +19,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _Z12qTriangulatePKdijRK10QTransformb@Qt_5 5.9.0~beta
  _Z12qTriangulateRK11QVectorPathRK10QTransformdb@Qt_5_PRIVATE_API 5.9.0~beta 1
  _Z12qTriangulateRK12QPainterPathRK10QTransformdb@Qt_5 5.9.0~beta
+ _Z12qt_draw_tileP12QPaintEngineddddRK7QPixmapdd@Qt_5 5.10.0
  _Z13qgpu_featuresRK7QString@Qt_5 5.5.0
  _Z13qt_defaultDpiv@Qt_5 5.0.2
  _Z14qt_defaultDpiXv@Qt_5 5.0.2
@@ -39,12 +41,14 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _Z15qt_memrotate270PKjiiiPji@Qt_5 5.0.2
  _Z15qt_memrotate270PKtiiiPti@Qt_5 5.0.2
  _Z15qt_regionToPathRK7QRegion@Qt_5 5.0.2
+ _Z15qt_xForm_helperRK10QTransformiiiPhiiiPKhiii@Qt_5 5.10.0
  _Z16qt_fusionPalettev@Qt_5 5.1.0
  _Z16qt_imageForBrushib@Qt_5 5.0.2
  _Z17qHasPixmapTextureRK6QBrush@Qt_5 5.0.2
  _Z17qt_convertMarginsRK9QMarginsFN11QPageLayout4UnitES3_@Qt_5 5.3.0
  _Z17qt_handleKeyEventP7QWindowN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Qt_5 5.0.2
  _Z17qt_imageTransformR6QImage6QFlagsIN15QImageIOHandler14TransformationEE@Qt_5 5.5.0
+ _Z17qt_pixmapForBrushib@Qt_5 5.10.0
  _Z17qt_window_privateP7QWindow@Qt_5 5.0.2
  _Z18qt_addBitmapToPathddPKhiiiP12QPainterPath@Qt_5 5.2.0
  _Z18qt_pixelMultiplieri@Qt_5 5.3.0
@@ -220,6 +224,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN10QPdfEngine12drawTextItemERK7QPointFRK9QTextItem@Qt_5_PRIVATE_API 5.0.2 1
  _ZN10QPdfEngine13drawHyperlinkERK6QRectFRK4QUrl@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN10QPdfEngine13setPageLayoutERK11QPageLayout@Qt_5_PRIVATE_API 5.3.0 1
+ _ZN10QPdfEngine13setPdfVersionENS_10PdfVersionE@Qt_5_PRIVATE_API 5.10.0
  _ZN10QPdfEngine13setResolutionEi@Qt_5_PRIVATE_API 5.3.0 1
  _ZN10QPdfEngine14setPageMarginsERK9QMarginsFN11QPageLayout4UnitE@Qt_5_PRIVATE_API 5.3.0 1
  _ZN10QPdfEngine14updateClipPathERK12QPainterPathN2Qt13ClipOperationE@Qt_5_PRIVATE_API 5.0.2 1
@@ -246,6 +251,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN10QPdfWriter11qt_metacastEPKc@Qt_5 5.0.2
  _ZN10QPdfWriter11setPageSizeEN17QPagedPaintDevice8PageSizeE@Qt_5 5.0.2
  _ZN10QPdfWriter13setPageSizeMMERK6QSizeF@Qt_5 5.0.2
+ _ZN10QPdfWriter13setPdfVersionEN17QPagedPaintDevice10PdfVersionE@Qt_5 5.10.0
  _ZN10QPdfWriter13setResolutionEi@Qt_5 5.3.0
  _ZN10QPdfWriter16staticMetaObjectE@Qt_5 5.0.2
  _ZN10QPdfWriter7newPageEv@Qt_5 5.0.2
@@ -543,7 +549,16 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN11QQuaternion5slerpERKS_S1_f@Qt_5 5.0.2
  _ZN11QQuaternion8fromAxesERK9QVector3DS2_S2_@Qt_5 5.5.0
  _ZN11QQuaternion9normalizeEv@Qt_5 5.0.2
- _ZN11QSimpleDrag16platformDropDataEv@Qt_5_PRIVATE_API 5.1.0 1
+ _ZN11QShaderNode10removePortERK15QShaderNodePort@Qt_5 5.10.0
+ _ZN11QShaderNode10removeRuleERK13QShaderFormat@Qt_5 5.10.0
+ _ZN11QShaderNode12setParameterERK7QStringRK8QVariant@Qt_5 5.10.0
+ _ZN11QShaderNode14clearParameterERK7QString@Qt_5 5.10.0
+ _ZN11QShaderNode4RuleC1ERK10QByteArrayRK5QListIS1_E@Qt_5 5.10.0
+ _ZN11QShaderNode4RuleC2ERK10QByteArrayRK5QListIS1_E@Qt_5 5.10.0
+ _ZN11QShaderNode7addPortERK15QShaderNodePort@Qt_5 5.10.0
+ _ZN11QShaderNode7addRuleERK13QShaderFormatRKNS_4RuleE@Qt_5 5.10.0
+ _ZN11QShaderNode7setUuidERK5QUuid@Qt_5 5.10.0
+ _ZN11QShaderNode9setLayersERK11QStringList@Qt_5 5.10.0
  _ZN11QSimpleDrag4dropERK6QPoint@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN11QSimpleDrag4moveERK6QPoint@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN11QSimpleDrag6cancelEv@Qt_5_PRIVATE_API 5.1.0 1
@@ -1069,6 +1084,10 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN12QScrollEventD0Ev@Qt_5 5.0.2
  _ZN12QScrollEventD1Ev@Qt_5 5.0.2
  _ZN12QScrollEventD2Ev@Qt_5 5.0.2
+ _ZN12QShaderGraph10removeEdgeERKNS_4EdgeE@Qt_5 5.10.0
+ _ZN12QShaderGraph10removeNodeERK11QShaderNode@Qt_5 5.10.0
+ _ZN12QShaderGraph7addEdgeERKNS_4EdgeE@Qt_5 5.10.0
+ _ZN12QShaderGraph7addNodeERK11QShaderNode@Qt_5 5.10.0
  _ZN12QShortcutMap10resetStateEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN12QShortcutMap11addShortcutEP7QObjectRK12QKeySequenceN2Qt15ShortcutContextEPFbS1_S6_E@Qt_5_PRIVATE_API 5.0.2 1
  _ZN12QShortcutMap11tryShortcutEP9QKeyEvent@Qt_5_PRIVATE_API 5.6.0~beta 1
@@ -1256,6 +1275,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN13QPlatformMenu11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN13QPlatformMenu11qt_metacastEPKc@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN13QPlatformMenu16staticMetaObjectE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (subst)_ZN13QPlatformMenu6setTagE{quintptr}@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QPlatformMenuC1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN13QPlatformMenuC2Ev@Qt_5_PRIVATE_API 5.10.0
  _ZN13QRasterWindow11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.4.0
  _ZN13QRasterWindow11qt_metacastEPKc@Qt_5 5.4.0
  _ZN13QRasterWindow16staticMetaObjectE@Qt_5 5.4.0
@@ -1264,6 +1286,12 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN13QRasterWindowD0Ev@Qt_5 5.9.0~beta3
  _ZN13QRasterWindowD1Ev@Qt_5 5.9.0~beta3
  _ZN13QRasterWindowD2Ev@Qt_5 5.9.0~beta3
+ _ZN13QShaderFormat10setVersionERK14QVersionNumber@Qt_5 5.10.0
+ _ZN13QShaderFormat13setExtensionsERK11QStringList@Qt_5 5.10.0
+ _ZN13QShaderFormat6setApiENS_3ApiE@Qt_5 5.10.0
+ _ZN13QShaderFormat9setVendorERK7QString@Qt_5 5.10.0
+ _ZN13QShaderFormatC1Ev@Qt_5 5.10.0
+ _ZN13QShaderFormatC2Ev@Qt_5 5.10.0
  _ZN13QStandardItem10insertRowsEiRK5QListIPS_E@Qt_5 5.0.2
  _ZN13QStandardItem10insertRowsEii@Qt_5 5.0.2
  _ZN13QStandardItem10removeRowsEii@Qt_5 5.0.2
@@ -1563,6 +1591,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN14QSurfaceFormat10setSamplesEi@Qt_5 5.0.2
  _ZN14QSurfaceFormat10setVersionEii@Qt_5 5.1.0
  _ZN14QSurfaceFormat13defaultFormatEv@Qt_5 5.4.0
+ _ZN14QSurfaceFormat13setColorSpaceENS_10ColorSpaceE@Qt_5 5.10.0
  _ZN14QSurfaceFormat15setMajorVersionEi@Qt_5 5.0.2
  _ZN14QSurfaceFormat15setMinorVersionEi@Qt_5 5.0.2
  _ZN14QSurfaceFormat15setSwapBehaviorENS_12SwapBehaviorE@Qt_5 5.0.2
@@ -1590,8 +1619,10 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN14QSurfaceFormatD2Ev@Qt_5 5.0.2
  _ZN14QSurfaceFormataSERKS_@Qt_5 5.0.2
  _ZN14QTextTableCell9setFormatERK15QTextCharFormat@Qt_5 5.0.2
+ _ZN14QWindowPrivate10setVisibleEb@Qt_5_PRIVATE_API 5.10.0
  _ZN14QWindowPrivate11applyCursorEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWindowPrivate13_q_clearAlertEv@Qt_5_PRIVATE_API 5.1.0 1
+ _ZN14QWindowPrivate14effectiveStateE6QFlagsIN2Qt11WindowStateEE@Qt_5_PRIVATE_API 5.10.0
  _ZN14QWindowPrivate15connectToScreenEP7QScreen@Qt_5_PRIVATE_API 5.4.0 1
  _ZN14QWindowPrivate16clearFocusObjectEv@Qt_5_PRIVATE_API 5.2.0~rc1 1
  _ZN14QWindowPrivate16updateVisibilityEv@Qt_5_PRIVATE_API 5.1.0 1
@@ -1693,6 +1724,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN15QGuiApplication7paletteEv@Qt_5 5.0.2
  _ZN15QGuiApplication7screensEv@Qt_5 5.0.2
  _ZN15QGuiApplication7setFontERK5QFont@Qt_5 5.0.2
+ _ZN15QGuiApplication8screenAtERK6QPoint@Qt_5 5.10.0
  _ZN15QGuiApplication9clipboardEv@Qt_5 5.0.2
  _ZN15QGuiApplicationC1ER22QGuiApplicationPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZN15QGuiApplicationC1ERiPPci@Qt_5 5.0.2
@@ -1742,6 +1774,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN15QLinearGradientC2ERK7QPointFS2_@Qt_5 5.0.2
  _ZN15QLinearGradientC2Edddd@Qt_5 5.2.0
  _ZN15QLinearGradientC2Ev@Qt_5 5.0.2
+ _ZN15QPlatformCursor14m_capabilitiesE@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QPlatformCursor17setOverrideCursorERK7QCursor@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QPlatformCursor19clearOverrideCursorEv@Qt_5_PRIVATE_API 5.10.0
  _ZN15QPlatformCursor6setPosERK6QPoint@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformCursorC1Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformCursorC2Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -1752,6 +1787,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN15QPlatformPixmap6bufferEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformPixmap6createEiiNS_9PixelTypeE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformPixmap6scrollEiiRK5QRect@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN15QPlatformPixmap7setMaskERK7QBitmap@Qt_5_PRIVATE_API 5.10.0
  _ZN15QPlatformPixmap8fromDataEPKhjPKc6QFlagsIN2Qt19ImageConversionFlagEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformPixmap8fromFileERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformPixmapC1ENS_9PixelTypeEi@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -1771,6 +1807,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN15QPlatformScreenD0Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformScreenD1Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformScreenD2Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN15QPlatformWindow10initializeEv@Qt_5_PRIVATE_API 5.10.0
  _ZN15QPlatformWindow10setOpacityEd@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformWindow10setVisibleEb@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformWindow11setGeometryERK5QRect@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -1779,7 +1816,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN15QPlatformWindow13setAlertStateEb@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformWindow13setWindowIconERK5QIcon@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformWindow14setWindowFlagsE6QFlagsIN2Qt10WindowTypeEE@Qt_5_PRIVATE_API 5.9.0~beta 1
- _ZN15QPlatformWindow14setWindowStateEN2Qt11WindowStateE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN15QPlatformWindow14setWindowStateE6QFlagsIN2Qt11WindowStateEE@Qt_5_PRIVATE_API 5.10.0
  _ZN15QPlatformWindow14setWindowTitleERK7QString@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformWindow15initialGeometryEPK7QWindowRK5QRectii@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformWindow17formatWindowTitleERK7QStringS2_@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -1842,6 +1879,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN15QSessionManagerD0Ev@Qt_5 5.0.2
  _ZN15QSessionManagerD1Ev@Qt_5 5.0.2
  _ZN15QSessionManagerD2Ev@Qt_5 5.0.2
+ _ZN15QShaderLanguage16staticMetaObjectE@Qt_5 5.10.0
+ _ZN15QShaderNodePortC1Ev@Qt_5 5.10.0
+ _ZN15QShaderNodePortC2Ev@Qt_5 5.10.0
  _ZN15QStatusTipEventC1ERK7QString@Qt_5 5.0.2
  _ZN15QStatusTipEventC2ERK7QString@Qt_5 5.0.2
  _ZN15QStatusTipEventD0Ev@Qt_5 5.0.2
@@ -2024,6 +2064,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN17QIconEnginePluginD0Ev@Qt_5 5.0.2
  _ZN17QIconEnginePluginD1Ev@Qt_5 5.0.2
  _ZN17QIconEnginePluginD2Ev@Qt_5 5.0.2
+ _ZN17QIconLoaderEngine12entryForSizeERK14QThemeIconInfoRK5QSizei@Qt_5 5.10.0
  _ZN17QInputMethodEvent15setCommitStringERK7QStringii@Qt_5 5.0.2
  _ZN17QInputMethodEventC1ERK7QStringRK5QListINS_9AttributeEE@Qt_5 5.0.2
  _ZN17QInputMethodEventC1ERKS_@Qt_5 5.0.2
@@ -2057,7 +2098,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN17QOffscreenSurface9setFormatERK14QSurfaceFormat@Qt_5 5.1.0
  _ZN17QOffscreenSurface9setScreenEP7QScreen@Qt_5 5.1.0
  _ZN17QOffscreenSurfaceC1EP7QScreen@Qt_5 5.1.0
+ _ZN17QOffscreenSurfaceC1EP7QScreenP7QObject@Qt_5 5.10.0
  _ZN17QOffscreenSurfaceC2EP7QScreen@Qt_5 5.1.0
+ _ZN17QOffscreenSurfaceC2EP7QScreenP7QObject@Qt_5 5.10.0
  _ZN17QOffscreenSurfaceD0Ev@Qt_5 5.1.0
  _ZN17QOffscreenSurfaceD1Ev@Qt_5 5.1.0
  _ZN17QOffscreenSurfaceD2Ev@Qt_5 5.1.0
@@ -2108,6 +2151,8 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN17QPdfEnginePrivate15addBrushPatternERK10QTransformPbPi@Qt_5_PRIVATE_API 5.0.2 1
  _ZN17QPdfEnginePrivate15writeCompressedEP9QIODevice@Qt_5_PRIVATE_API 5.0.2 1
  _ZN17QPdfEnginePrivate15writeCompressedEPKci@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN17QPdfEnginePrivate16writeXmpMetaDataEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN17QPdfEnginePrivate17writeOutputIntentEv@Qt_5_PRIVATE_API 5.10.0
  _ZN17QPdfEnginePrivate21createShadingFunctionEPK9QGradientiibb@Qt_5_PRIVATE_API 5.5.0 1
  _ZN17QPdfEnginePrivate22addConstantAlphaObjectEii@Qt_5_PRIVATE_API 5.0.2 1
  _ZN17QPdfEnginePrivate22generateGradientShaderEPK9QGradientRK10QTransformb@Qt_5_PRIVATE_API 5.5.0 1
@@ -2144,8 +2189,11 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN17QPlatformMenuItem11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN17QPlatformMenuItem11qt_metacastEPKc@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN17QPlatformMenuItem16staticMetaObjectE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (subst)_ZN17QPlatformMenuItem6setTagE{quintptr}@Qt_5_PRIVATE_API 5.10.0
  _ZN17QPlatformMenuItem7hoveredEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN17QPlatformMenuItem9activatedEv@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN17QPlatformMenuItemC1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN17QPlatformMenuItemC2Ev@Qt_5_PRIVATE_API 5.10.0
  _ZN17QPlatformServices12openDocumentERK4QUrl@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN17QPlatformServices7openUrlERK4QUrl@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN17QPlatformServicesC1Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -2326,6 +2374,15 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN18QRasterPaintEngineD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN18QRasterPaintEngineD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN18QRasterPaintEngineD2Ev@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN18QShaderGraphLoader13setPrototypesERK5QHashI7QString11QShaderNodeE@Qt_5 5.10.0
+ _ZN18QShaderGraphLoader4loadEv@Qt_5 5.10.0
+ _ZN18QShaderGraphLoader9setDeviceEP9QIODevice@Qt_5 5.10.0
+ _ZN18QShaderGraphLoaderC1Ev@Qt_5 5.10.0
+ _ZN18QShaderGraphLoaderC2Ev@Qt_5 5.10.0
+ _ZN18QShaderNodesLoader4loadEv@Qt_5 5.10.0
+ _ZN18QShaderNodesLoader9setDeviceEP9QIODevice@Qt_5 5.10.0
+ _ZN18QShaderNodesLoaderC1Ev@Qt_5 5.10.0
+ _ZN18QShaderNodesLoaderC2Ev@Qt_5 5.10.0
  _ZN18QStandardItemModel10insertRowsEiiRK11QModelIndex@Qt_5 5.0.2
  _ZN18QStandardItemModel10removeRowsEiiRK11QModelIndex@Qt_5 5.0.2
  _ZN18QStandardItemModel10takeColumnEi@Qt_5 5.0.2
@@ -2469,8 +2526,13 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN19QInputDeviceManagerC1EP7QObject@Qt_5_PRIVATE_API 5.5.0 1
  _ZN19QInputDeviceManagerC2EP7QObject@Qt_5_PRIVATE_API 5.5.0 1
  _ZN19QKeySequencePrivate7keyNameEiN12QKeySequence14SequenceFormatE@Qt_5 5.6.1
+ _ZN19QNativeGestureEventC1EN2Qt17NativeGestureTypeEPK12QTouchDeviceRK7QPointFS7_S7_dmy@Qt_5 5.10.0
  _ZN19QNativeGestureEventC1EN2Qt17NativeGestureTypeERK7QPointFS4_S4_dmy@Qt_5 5.2.0~beta1
+ _ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeEPK12QTouchDeviceRK7QPointFS7_S7_dmy@Qt_5 5.10.0
  _ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeERK7QPointFS4_S4_dmy@Qt_5 5.2.0~beta1
+ _ZN19QNativeGestureEventD0Ev@Qt_5 5.10.0
+ _ZN19QNativeGestureEventD1Ev@Qt_5 5.10.0
+ _ZN19QNativeGestureEventD2Ev@Qt_5 5.10.0
  _ZN19QOpenGLContextGroup11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.0.2
  _ZN19QOpenGLContextGroup11qt_metacastEPKc@Qt_5 5.0.2
  _ZN19QOpenGLContextGroup16staticMetaObjectE@Qt_5 5.0.2
@@ -3001,7 +3063,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN21QPaintEngineExPrivateD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN21QPaintEngineExPrivateD2Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN21QPlatformBackingStore10beginPaintERK7QRegion@Qt_5_PRIVATE_API 5.9.0~beta 1
- _ZN21QPlatformBackingStore15composeAndFlushEP7QWindowRK7QRegionRK6QPointP20QPlatformTextureListP14QOpenGLContextb@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN21QPlatformBackingStore15composeAndFlushEP7QWindowRK7QRegionRK6QPointP20QPlatformTextureListb@Qt_5_PRIVATE_API 5.10.0
  _ZN21QPlatformBackingStore15setBackingStoreEP13QBackingStore@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN21QPlatformBackingStore6scrollERK7QRegionii@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN21QPlatformBackingStore8endPaintEv@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -3224,7 +3286,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QGuiApplicationPrivate4initEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate4selfE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate7app_palE@Qt_5_PRIVATE_API 5.0.2 1
- _ZN22QGuiApplicationPrivate7buttonsE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate8app_fontE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate8app_iconE@Qt_5_PRIVATE_API 5.3.0 1
  _ZN22QGuiApplicationPrivate9saveStateEv@Qt_5_PRIVATE_API 5.2.0~alpha1 1
@@ -3302,14 +3363,14 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QWindowSystemInterface17handleTabletEventEP7QWindowmRK7QPointFS4_ii6QFlagsIN2Qt11MouseButtonEEdiiddixS5_INS6_16KeyboardModifierEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface17handleTabletEventEP7QWindowmbRK7QPointFS4_iidiiddix6QFlagsIN2Qt16KeyboardModifierEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface17handleThemeChangeEP7QWindow@Qt_5_PRIVATE_API 5.9.0~beta 1
- _ZN22QWindowSystemInterface18handleGestureEventEP7QWindowmN2Qt17NativeGestureTypeER7QPointFS5_@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN22QWindowSystemInterface18handleGestureEventEP7QWindowP12QTouchDevicemN2Qt17NativeGestureTypeER7QPointFS7_@Qt_5_PRIVATE_API 5.10.0
  _ZN22QWindowSystemInterface19handleFileOpenEventERK4QUrl@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface19handleFileOpenEventERK7QString@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface19handleShortcutEventEP7QWindowmi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface19registerTouchDeviceEPK12QTouchDevice@Qt_5_PRIVATE_API 5.9.0~beta 1
- (optional=templinst)_ZN22QWindowSystemInterface20handleGeometryChangeINS_15DefaultDeliveryEEEvP7QWindowRK5QRectS6_@Qt_5_PRIVATE_API 5.9.0~beta 1
- (optional=templinst)_ZN22QWindowSystemInterface20handleGeometryChangeINS_19SynchronousDeliveryEEEvP7QWindowRK5QRectS6_@Qt_5_PRIVATE_API 5.9.0~beta 1
- (optional=templinst)_ZN22QWindowSystemInterface20handleGeometryChangeINS_20AsynchronousDeliveryEEEvP7QWindowRK5QRectS6_@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (optional=templinst)_ZN22QWindowSystemInterface20handleGeometryChangeINS_15DefaultDeliveryEEEvP7QWindowRK5QRect@Qt_5_PRIVATE_API 5.10.0
+ (optional=templinst)_ZN22QWindowSystemInterface20handleGeometryChangeINS_19SynchronousDeliveryEEEvP7QWindowRK5QRect@Qt_5_PRIVATE_API 5.10.0
+ (optional=templinst)_ZN22QWindowSystemInterface20handleGeometryChangeINS_20AsynchronousDeliveryEEEvP7QWindowRK5QRect@Qt_5_PRIVATE_API 5.10.0
  _ZN22QWindowSystemInterface21handleEnterLeaveEventEP7QWindowS1_RK7QPointFS4_@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface21handleWindowActivatedINS_15DefaultDeliveryEEEvP7QWindowN2Qt11FocusReasonE@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface21handleWindowActivatedINS_19SynchronousDeliveryEEEvP7QWindowN2Qt11FocusReasonE@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -3328,9 +3389,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QWindowSystemInterface23flushWindowSystemEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface23isTouchDeviceRegisteredEPK12QTouchDevice@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface24handlePlatformPanelEventEP7QWindow@Qt_5_PRIVATE_API 5.9.0~beta 1
- (optional=templinst)_ZN22QWindowSystemInterface24handleWindowStateChangedINS_15DefaultDeliveryEEEvP7QWindowN2Qt11WindowStateEi@Qt_5_PRIVATE_API 5.9.0~beta 1
- (optional=templinst)_ZN22QWindowSystemInterface24handleWindowStateChangedINS_19SynchronousDeliveryEEEvP7QWindowN2Qt11WindowStateEi@Qt_5_PRIVATE_API 5.9.0~beta 1
- (optional=templinst)_ZN22QWindowSystemInterface24handleWindowStateChangedINS_20AsynchronousDeliveryEEEvP7QWindowN2Qt11WindowStateEi@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (optional=templinst)_ZN22QWindowSystemInterface24handleWindowStateChangedINS_15DefaultDeliveryEEEvP7QWindow6QFlagsIN2Qt11WindowStateEEi@Qt_5_PRIVATE_API 5.10.0
+ (optional=templinst)_ZN22QWindowSystemInterface24handleWindowStateChangedINS_19SynchronousDeliveryEEEvP7QWindow6QFlagsIN2Qt11WindowStateEEi@Qt_5_PRIVATE_API 5.10.0
+ (optional=templinst)_ZN22QWindowSystemInterface24handleWindowStateChangedINS_20AsynchronousDeliveryEEEvP7QWindow6QFlagsIN2Qt11WindowStateEEi@Qt_5_PRIVATE_API 5.10.0
  _ZN22QWindowSystemInterface24nonUserInputEventsQueuedEv@Qt_5_PRIVATE_API 5.9.0 1
  _ZN22QWindowSystemInterface24windowSystemEventsQueuedEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface25handleEnterWhatsThisEventEv@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -3342,14 +3403,14 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QWindowSystemInterface29handleScreenOrientationChangeEP7QScreenN2Qt17ScreenOrientationE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface29handleScreenRefreshRateChangeEP7QScreend@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface31deferredFlushWindowSystemEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE@Qt_5_PRIVATE_API 5.9.0~beta 1
- _ZN22QWindowSystemInterface31handleGestureEventWithRealValueEP7QWindowmN2Qt17NativeGestureTypeEdR7QPointFS5_@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN22QWindowSystemInterface31handleGestureEventWithRealValueEP7QWindowP12QTouchDevicemN2Qt17NativeGestureTypeEdR7QPointFS7_@Qt_5_PRIVATE_API 5.10.0
  _ZN22QWindowSystemInterface31handleTabletEnterProximityEventEiix@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface31handleTabletEnterProximityEventEmiix@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface31handleTabletLeaveProximityEventEiix@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface31handleTabletLeaveProximityEventEmiix@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface32setSynchronousWindowSystemEventsEb@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface36handleScreenLogicalDotsPerInchChangeEP7QScreendd@Qt_5_PRIVATE_API 5.9.0~beta 1
- _ZN22QWindowSystemInterface40handleGestureEventWithSequenceIdAndValueEP7QWindowmN2Qt17NativeGestureTypeEmyR7QPointFS5_@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN22QWindowSystemInterface40handleGestureEventWithSequenceIdAndValueEP7QWindowP12QTouchDevicemN2Qt17NativeGestureTypeEmyR7QPointFS7_@Qt_5_PRIVATE_API 5.10.0
  _ZN23QAccessibleBridgePlugin11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.0.2
  _ZN23QAccessibleBridgePlugin11qt_metacastEPKc@Qt_5 5.0.2
  _ZN23QAccessibleBridgePlugin16staticMetaObjectE@Qt_5 5.0.2
@@ -3403,6 +3464,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN23QPlatformSystemTrayIcon11qt_metacastEPKc@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformSystemTrayIcon14messageClickedEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformSystemTrayIcon16staticMetaObjectE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN23QPlatformSystemTrayIcon20contextMenuRequestedE6QPointPK15QPlatformScreen@Qt_5_PRIVATE_API 5.10.0
  _ZN23QPlatformSystemTrayIcon9activatedENS_16ActivationReasonE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformSystemTrayIconC1Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformSystemTrayIconC2Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -3834,6 +3896,8 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN29QWindowSystemInterfacePrivate13eventAcceptedE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN29QWindowSystemInterfacePrivate13eventsFlushedE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN29QWindowSystemInterfacePrivate15flushEventMutexE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN29QWindowSystemInterfacePrivate19GeometryChangeEventC1EP7QWindowRK5QRect@Qt_5_PRIVATE_API 5.10.0
+ _ZN29QWindowSystemInterfacePrivate19GeometryChangeEventC2EP7QWindowRK5QRect@Qt_5_PRIVATE_API 5.10.0
  _ZN29QWindowSystemInterfacePrivate19toNativeTouchPointsERK5QListIN11QTouchEvent10TouchPointEEPK7QWindow@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN29QWindowSystemInterfacePrivate20getWindowSystemEventEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN29QWindowSystemInterfacePrivate21fromNativeTouchPointsERK5QListIN22QWindowSystemInterface10TouchPointEEPK7QWindowhPN6QEvent4TypeE@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -4165,8 +4229,10 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN6QColor10fromRgba64E7QRgba64@Qt_5 5.6.0~beta
  _ZN6QColor10fromRgba64Etttt@Qt_5 5.6.0~beta
  _ZN6QColor10invalidateEv@Qt_5 5.0.2
+ _ZN6QColor12isValidColorE11QStringView@Qt_5 5.10.0
  _ZN6QColor12isValidColorE13QLatin1String@Qt_5 5.8.0
  _ZN6QColor12isValidColorERK7QString@Qt_5 5.0.2
+ _ZN6QColor13setNamedColorE11QStringView@Qt_5 5.10.0
  _ZN6QColor13setNamedColorE13QLatin1String@Qt_5 5.8.0
  _ZN6QColor13setNamedColorERK7QString@Qt_5 5.0.2
  _ZN6QColor6setHslEiiii@Qt_5 5.0.2
@@ -4475,6 +4541,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN7QWindow15requestActivateEv@Qt_5 5.2.0
  _ZN7QWindow15setMaximumWidthEi@Qt_5 5.2.0
  _ZN7QWindow15setMinimumWidthEi@Qt_5 5.2.0
+ _ZN7QWindow15setWindowStatesE6QFlagsIN2Qt11WindowStateEE@Qt_5 5.10.0
  _ZN7QWindow16setFramePositionERK6QPoint@Qt_5 5.2.0
  _ZN7QWindow16setMaximumHeightEi@Qt_5 5.2.0
  _ZN7QWindow16setMinimumHeightEi@Qt_5 5.2.0
@@ -4880,6 +4947,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK10QPdfEngine4typeEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK10QPdfEngine6metricEN12QPaintDevice17PaintDeviceMetricE@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK10QPdfWriter10metaObjectEv@Qt_5 5.0.2
+ _ZNK10QPdfWriter10pdfVersionEv@Qt_5 5.10.0
  _ZNK10QPdfWriter10resolutionEv@Qt_5 5.3.0
  _ZNK10QPdfWriter11paintEngineEv@Qt_5 5.0.2
  _ZNK10QPdfWriter5titleEv@Qt_5 5.0.2
@@ -5042,6 +5110,14 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK11QQuaternion6lengthEv@Qt_5 5.0.2
  _ZNK11QQuaternion7getAxesEP9QVector3DS1_S1_@Qt_5 5.5.0
  _ZNK11QQuaternioncv8QVariantEv@Qt_5 5.0.2
+ _ZNK11QShaderNode14parameterNamesEv@Qt_5 5.10.0
+ _ZNK11QShaderNode16availableFormatsEv@Qt_5 5.10.0
+ _ZNK11QShaderNode4ruleERK13QShaderFormat@Qt_5 5.10.0
+ _ZNK11QShaderNode4typeEv@Qt_5 5.10.0
+ _ZNK11QShaderNode4uuidEv@Qt_5 5.10.0
+ _ZNK11QShaderNode5portsEv@Qt_5 5.10.0
+ _ZNK11QShaderNode6layersEv@Qt_5 5.10.0
+ _ZNK11QShaderNode9parameterERK7QString@Qt_5 5.10.0
  _ZNK11QStaticText10textFormatEv@Qt_5 5.0.2
  _ZNK11QStaticText10textOptionEv@Qt_5 5.0.2
  _ZNK11QStaticText15performanceHintEv@Qt_5 5.0.2
@@ -5070,6 +5146,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK11QStyleHints22setFocusOnTouchReleaseEv@Qt_5 5.2.0~alpha1
  _ZNK11QStyleHints24mouseDoubleClickIntervalEv@Qt_5 5.0.2
  _ZNK11QStyleHints25mousePressAndHoldIntervalEv@Qt_5 5.3.0
+ _ZNK11QStyleHints27showShortcutsInContextMenusEv@Qt_5 5.10.0
  _ZNK11QTextCursor10atBlockEndEv@Qt_5 5.0.2
  _ZNK11QTextCursor10charFormatEv@Qt_5 5.0.2
  _ZNK11QTextCursor11blockFormatEv@Qt_5 5.0.2
@@ -5367,6 +5444,11 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK12QScrollEvent10contentPosEv@Qt_5 5.0.2
  _ZNK12QScrollEvent11scrollStateEv@Qt_5 5.0.2
  _ZNK12QScrollEvent17overshootDistanceEv@Qt_5 5.0.2
+ _ZNK12QShaderGraph16createStatementsERK11QStringList@Qt_5 5.10.0
+ _ZNK12QShaderGraph5edgesEv@Qt_5 5.10.0
+ _ZNK12QShaderGraph5nodesEv@Qt_5 5.10.0
+ _ZNK12QShaderGraph9Statement4uuidEv@Qt_5 5.10.0
+ _ZNK12QShaderGraph9Statement9portIndexEN15QShaderNodePort9DirectionERK7QString@Qt_5 5.10.0
  _ZNK12QShortcutMap25hasShortcutForKeySequenceERK12QKeySequence@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK12QShortcutMap7matchesERK12QKeySequenceS2_@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK12QShortcutMap7matchesEv@Qt_5_PRIVATE_API 5.0.2 1
@@ -5454,9 +5536,16 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK13QPlatformMenu10metaObjectEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK13QPlatformMenu13createSubMenuEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK13QPlatformMenu14createMenuItemEv@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZNK13QPlatformMenu3tagEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK13QRasterWindow10metaObjectEv@Qt_5 5.4.0
  _ZNK13QRasterWindow10redirectedEP6QPoint@Qt_5 5.4.0
  _ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE@Qt_5 5.4.0
+ _ZNK13QShaderFormat10extensionsEv@Qt_5 5.10.0
+ _ZNK13QShaderFormat3apiEv@Qt_5 5.10.0
+ _ZNK13QShaderFormat6vendorEv@Qt_5 5.10.0
+ _ZNK13QShaderFormat7isValidEv@Qt_5 5.10.0
+ _ZNK13QShaderFormat7versionEv@Qt_5 5.10.0
+ _ZNK13QShaderFormat8supportsERKS_@Qt_5 5.10.0
  _ZNK13QStandardItem11columnCountEv@Qt_5 5.0.2
  _ZNK13QStandardItem11hasChildrenEv@Qt_5 5.0.2
  _ZNK13QStandardItem3rowEv@Qt_5 5.0.2
@@ -5624,6 +5713,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK14QPlatformTheme7paletteENS_7PaletteE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK14QPlatformTheme8fileIconERK9QFileInfo6QFlagsINS_10IconOptionEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK14QPlatformTheme9themeHintENS_9ThemeHintE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZNK14QSurfaceFormat10colorSpaceEv@Qt_5 5.10.0
  _ZNK14QSurfaceFormat10testOptionE6QFlagsINS_12FormatOptionEE@Qt_5 5.0.2
  _ZNK14QSurfaceFormat10testOptionENS_12FormatOptionE@Qt_5 5.3.0
  _ZNK14QSurfaceFormat12majorVersionEv@Qt_5 5.0.2
@@ -5654,6 +5744,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK14QTextTableCell6columnEv@Qt_5 5.0.2
  _ZNK14QTextTableCell6formatEv@Qt_5 5.0.2
  _ZNK14QTextTableCell7rowSpanEv@Qt_5 5.0.2
+ _ZNK14QWindowPrivate12shareContextEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK14QWindowPrivate14globalPositionEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK14QWindowPrivate14topLevelWindowEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK14QWindowPrivate25closestAcceptableGeometryERK6QRectF@Qt_5_PRIVATE_API 5.4.1 1
@@ -5705,6 +5796,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK15QPlatformCursor3posEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK15QPlatformPixmap11transformedERK10QTransformN2Qt18TransformationModeE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK15QPlatformPixmap30createCompatiblePlatformPixmapEv@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZNK15QPlatformPixmap4maskEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK15QPlatformPixmap7toImageERK5QRect@Qt_5_PRIVATE_API 5.9.0~beta 1
  (subst)_ZNK15QPlatformScreen10grabWindowE{quintptr}iiii@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK15QPlatformScreen10logicalDpiEv@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -5808,6 +5900,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK16QPlatformSurface7surfaceEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK16QRegExpValidator10metaObjectEv@Qt_5 5.0.2
  _ZNK16QRegExpValidator8validateER7QStringRi@Qt_5 5.0.2
+ _ZNK16QShaderGenerator16createShaderCodeERK11QStringList@Qt_5 5.10.0
  _ZNK16QTextBlockFormat12tabPositionsEv@Qt_5 5.0.2
  _ZNK16QTextFrameFormat10leftMarginEv@Qt_5 5.0.2
  _ZNK16QTextFrameFormat11rightMarginEv@Qt_5 5.0.2
@@ -5892,6 +5985,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK17QPixmapIconEngine5cloneEv@Qt_5_PRIVATE_API 5.5.0 1
  _ZNK17QPixmapIconEngine5writeER11QDataStream@Qt_5_PRIVATE_API 5.5.0 1
  _ZNK17QPlatformMenuItem10metaObjectEv@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZNK17QPlatformMenuItem3tagEv@Qt_5_PRIVATE_API 5.10.0
  _ZNK17QPlatformServices18desktopEnvironmentEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK17QTextImageHandler10metaObjectEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK17QTextInlineObject11formatIndexEv@Qt_5 5.0.2
@@ -5958,6 +6052,13 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK18QRasterPaintEngine36requiresPretransformedGlyphPositionsEP11QFontEngineRK10QTransform@Qt_5_PRIVATE_API 5.1.0 1
  _ZNK18QRasterPaintEngine4sizeEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK18QRasterPaintEngine8clipTypeEv@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK18QShaderGraphLoader10prototypesEv@Qt_5 5.10.0
+ _ZNK18QShaderGraphLoader5graphEv@Qt_5 5.10.0
+ _ZNK18QShaderGraphLoader6deviceEv@Qt_5 5.10.0
+ _ZNK18QShaderGraphLoader6statusEv@Qt_5 5.10.0
+ _ZNK18QShaderNodesLoader5nodesEv@Qt_5 5.10.0
+ _ZNK18QShaderNodesLoader6deviceEv@Qt_5 5.10.0
+ _ZNK18QShaderNodesLoader6statusEv@Qt_5 5.10.0
  _ZNK18QStandardItemModel10headerDataEiN2Qt11OrientationEi@Qt_5 5.0.2
  _ZNK18QStandardItemModel10metaObjectEv@Qt_5 5.0.2
  _ZNK18QStandardItemModel11columnCountERK11QModelIndex@Qt_5 5.0.2
@@ -6000,6 +6101,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK19QColorDialogOptions7optionsEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK19QInputDeviceManager10metaObjectEv@Qt_5_PRIVATE_API 5.5.0 1
  _ZNK19QInputDeviceManager11deviceCountENS_10DeviceTypeE@Qt_5_PRIVATE_API 5.5.0 1
+ _ZNK19QNativeGestureEvent6deviceEv@Qt_5 5.10.0
  _ZNK19QOpenGLContextGroup10metaObjectEv@Qt_5 5.0.2
  _ZNK19QOpenGLContextGroup6sharesEv@Qt_5 5.0.2
  _ZNK19QOpenGLDebugMessage2idEv@Qt_5 5.1.0
@@ -6437,6 +6539,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK6QImage11isGrayscaleEv@Qt_5 5.0.2
  _ZNK6QImage11paintEngineEv@Qt_5 5.0.2
  _ZNK6QImage11pixelFormatEv@Qt_5 5.4.0
+ _ZNK6QImage11sizeInBytesEv@Qt_5 5.10.0
  _ZNK6QImage11transformedERK10QTransformN2Qt18TransformationModeE@Qt_5 5.0.2
  _ZNK6QImage11transformedERK7QMatrixN2Qt18TransformationModeE@Qt_5 5.0.2
  _ZNK6QImage12alphaChannelEv@Qt_5 5.0.2
@@ -6493,6 +6596,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK6QMovie13currentPixmapEv@Qt_5 5.0.2
  _ZNK6QMovie14nextFrameDelayEv@Qt_5 5.0.2
  _ZNK6QMovie15backgroundColorEv@Qt_5 5.0.2
+ _ZNK6QMovie15lastErrorStringEv@Qt_5 5.10.0
  _ZNK6QMovie18currentFrameNumberEv@Qt_5 5.0.2
  _ZNK6QMovie5speedEv@Qt_5 5.0.2
  _ZNK6QMovie5stateEv@Qt_5 5.0.2
@@ -6502,6 +6606,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK6QMovie8fileNameEv@Qt_5 5.0.2
  _ZNK6QMovie9cacheModeEv@Qt_5 5.0.2
  _ZNK6QMovie9frameRectEv@Qt_5 5.0.2
+ _ZNK6QMovie9lastErrorEv@Qt_5 5.10.0
  _ZNK6QMovie9loopCountEv@Qt_5 5.0.2
  _ZNK7QBezier10addIfCloseEPdd@Qt_5_PRIVATE_API 5.2.0 1
  _ZNK7QBezier11getSubRangeEdd@Qt_5_PRIVATE_API 5.2.0 1
@@ -6646,6 +6751,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK7QWindow11windowStateEv@Qt_5 5.0.2
  _ZNK7QWindow12frameMarginsEv@Qt_5 5.0.2
  _ZNK7QWindow12isAncestorOfEPKS_NS_12AncestorModeE@Qt_5 5.0.2
+ _ZNK7QWindow12windowStatesEv@Qt_5 5.10.0
  _ZNK7QWindow13frameGeometryEv@Qt_5 5.0.2
  _ZNK7QWindow13framePositionEv@Qt_5 5.0.2
  _ZNK7QWindow13mapFromGlobalERK6QPoint@Qt_5 5.0.2
@@ -6725,6 +6831,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK8QPicture6isNullEv@Qt_5 5.0.2
  _ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE@Qt_5 5.0.2
  _ZNK8QPicture7devTypeEv@Qt_5 5.0.2
+ _ZNK8QPolygon10intersectsERKS_@Qt_5 5.10.0
  _ZNK8QPolygon10subtractedERKS_@Qt_5 5.0.2
  _ZNK8QPolygon10translatedEii@Qt_5 5.0.2
  _ZNK8QPolygon11intersectedERKS_@Qt_5 5.0.2
@@ -6810,6 +6917,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK9QPageSize4sizeENS_4UnitE@Qt_5 5.3.0
  _ZNK9QPageSize7isValidEv@Qt_5 5.3.0
  _ZNK9QPageSize9windowsIdEv@Qt_5 5.3.0
+ _ZNK9QPolygonF10intersectsERKS_@Qt_5 5.10.0
  _ZNK9QPolygonF10subtractedERKS_@Qt_5 5.0.2
  _ZNK9QPolygonF10translatedERK7QPointF@Qt_5 5.0.2
  _ZNK9QPolygonF11intersectedERKS_@Qt_5 5.0.2
@@ -7663,14 +7771,23 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZdvRK10QMatrix4x4f@Qt_5 5.0.2
  _Zeq23QPointingDeviceUniqueIdS_@Qt_5 5.8.0
  _ZeqRK11QPageLayoutS1_@Qt_5 5.3.0
+ _ZeqRK13QShaderFormatS1_@Qt_5 5.10.0
  _ZeqRK14QSurfaceFormatS1_@Qt_5 5.0.2
+ _ZeqRK15QShaderNodePortS1_@Qt_5 5.10.0
+ _ZeqRK7QCursorS1_@Qt_5 5.10.0
  _ZeqRK9QPageSizeS1_@Qt_5 5.3.0
  _ZeqRKN11QAccessible5StateES2_@Qt_5 5.0.2
+ _ZeqRKN11QShaderNode4RuleES2_@Qt_5 5.10.0
+ _ZeqRKN12QShaderGraph4EdgeES2_@Qt_5 5.10.0
+ _ZeqRKN12QShaderGraph9StatementES2_@Qt_5 5.10.0
  _ZeqRKN22QGuiApplicationPrivate20ActiveTouchPointsKeyES2_@Qt_5_PRIVATE_API 5.0.2 1
  _Zls6QDebugN19QOpenGLDebugMessage4TypeE@Qt_5 5.1.0
  _Zls6QDebugN19QOpenGLDebugMessage6SourceE@Qt_5 5.1.0
  _Zls6QDebugN19QOpenGLDebugMessage8SeverityE@Qt_5 5.1.0
  _Zls6QDebugPK12QTouchDevice@Qt_5 5.5.0
+ _Zls6QDebugPK14QOpenGLContext@Qt_5 5.10.0
+ _Zls6QDebugPK14QOpenGLTexture@Qt_5 5.10.0
+ _Zls6QDebugPK19QOpenGLContextGroup@Qt_5 5.10.0
  _Zls6QDebugPK20QAccessibleInterface@Qt_5 5.0.2
  _Zls6QDebugPK6QEvent@Qt_5 5.0.2
  _Zls6QDebugPK7QScreen@Qt_5 5.6.0~beta
@@ -7686,6 +7803,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _Zls6QDebugRK14QSurfaceFormat@Qt_5 5.0.2
  _Zls6QDebugRK16QAccessibleEvent@Qt_5 5.0.2
  _Zls6QDebugRK19QOpenGLDebugMessage@Qt_5 5.1.0
+ _Zls6QDebugRK21QOpenGLVersionProfile@Qt_5 5.10.0
  _Zls6QDebugRK24QSupportedWritingSystems@Qt_5_PRIVATE_API 5.9.0~beta3 1
  _Zls6QDebugRK4QPen@Qt_5 5.0.2
  _Zls6QDebugRK5QFont@Qt_5 5.0.2

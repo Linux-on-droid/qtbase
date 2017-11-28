@@ -1,8 +1,9 @@
-# SymbolsHelper-Confirmed: 5.9.1 alpha amd64 armel armhf hurd-i386 i386 kfreebsd-i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sparc64
+# SymbolsHelper-Confirmed: 5.10.0 amd64 i386
 libQt5Network.so.5 libqt5network5 #MINVER#
 | libqt5network5 #MINVER#, qtbase-abi-5-9-2
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
+ Qt_5.10@Qt_5.10 5.10.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -135,9 +136,9 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN10QTcpServer5closeEv@Qt_5 5.0.2
  _ZN10QTcpServer6listenERK12QHostAddresst@Qt_5 5.0.2
  _ZN10QTcpServer8setProxyERK13QNetworkProxy@Qt_5 5.0.2
- _ZN10QTcpServerC1EN15QAbstractSocket10SocketTypeER17QTcpServerPrivateP7QObject@Qt_5 5.8.0
+ _ZN10QTcpServerC1EN15QAbstractSocket10SocketTypeER17QTcpServerPrivateP7QObject@Qt_5_PRIVATE_API 5.10.0
  _ZN10QTcpServerC1EP7QObject@Qt_5 5.0.2
- _ZN10QTcpServerC2EN15QAbstractSocket10SocketTypeER17QTcpServerPrivateP7QObject@Qt_5 5.8.0
+ _ZN10QTcpServerC2EN15QAbstractSocket10SocketTypeER17QTcpServerPrivateP7QObject@Qt_5_PRIVATE_API 5.10.0
  _ZN10QTcpServerC2EP7QObject@Qt_5 5.0.2
  _ZN10QTcpServerD0Ev@Qt_5 5.0.2
  _ZN10QTcpServerD1Ev@Qt_5 5.0.2
@@ -577,6 +578,14 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN17QSslConfigurationaSERKS_@Qt_5 5.0.2
  _ZN17QSslEllipticCurve12fromLongNameERK7QString@Qt_5 5.5.0
  _ZN17QSslEllipticCurve13fromShortNameERK7QString@Qt_5 5.5.0
+ _ZN17QTcpServerPrivate12resolveProxyERK12QHostAddresst@Qt_5_PRIVATE_API 5.10.0
+ _ZN17QTcpServerPrivate16readNotificationEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN17QTcpServerPrivate22configureCreatedSocketEv@Qt_5_PRIVATE_API 5.10.0
+ _ZN17QTcpServerPrivateC1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN17QTcpServerPrivateC2Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN17QTcpServerPrivateD0Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN17QTcpServerPrivateD1Ev@Qt_5_PRIVATE_API 5.10.0
+ _ZN17QTcpServerPrivateD2Ev@Qt_5_PRIVATE_API 5.10.0
  _ZN18QNetworkProxyQuery11setPeerPortEi@Qt_5 5.0.2
  _ZN18QNetworkProxyQuery12setLocalPortEi@Qt_5 5.0.2
  _ZN18QNetworkProxyQuery12setQueryTypeENS_9QueryTypeE@Qt_5 5.0.2
@@ -680,6 +689,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN21QNetworkAccessManager27proxyAuthenticationRequiredERK13QNetworkProxyP14QAuthenticator@Qt_5 5.0.2
  _ZN21QNetworkAccessManager31addStrictTransportSecurityHostsERK7QVectorI11QHstsPolicyE@Qt_5 5.9.0~beta
  _ZN21QNetworkAccessManager33setStrictTransportSecurityEnabledEb@Qt_5 5.9.0~beta
+ _ZN21QNetworkAccessManager34enableStrictTransportSecurityStoreEbRK7QString@Qt_5 5.10.0
  _ZN21QNetworkAccessManager34preSharedKeyAuthenticationRequiredEP13QNetworkReplyP29QSslPreSharedKeyAuthenticator@Qt_5 5.5.0
  _ZN21QNetworkAccessManager3getERK15QNetworkRequest@Qt_5 5.0.2
  _ZN21QNetworkAccessManager3putERK15QNetworkRequestP14QHttpMultiPart@Qt_5 5.0.2
@@ -972,6 +982,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK12QLocalServer11serverErrorEv@Qt_5 5.0.2
  _ZNK12QLocalServer13socketOptionsEv@Qt_5 5.0.2
  _ZNK12QLocalServer14fullServerNameEv@Qt_5 5.0.2
+ _ZNK12QLocalServer16socketDescriptorEv@Qt_5 5.10.0
  _ZNK12QLocalServer21hasPendingConnectionsEv@Qt_5 5.0.2
  _ZNK12QLocalServer21maxPendingConnectionsEv@Qt_5 5.0.2
  _ZNK12QLocalSocket10metaObjectEv@Qt_5 5.0.2
@@ -1196,6 +1207,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK21QNetworkAccessManager28strictTransportSecurityHostsEv@Qt_5 5.9.0~beta
  _ZNK21QNetworkAccessManager30supportedSchemesImplementationEv@Qt_5 5.2.0~alpha1
  _ZNK21QNetworkAccessManager32isStrictTransportSecurityEnabledEv@Qt_5 5.9.0~beta
+ _ZNK21QNetworkAccessManager37isStrictTransportSecurityStoreEnabledEv@Qt_5 5.10.0
  _ZNK21QNetworkAccessManager5cacheEv@Qt_5 5.0.2
  _ZNK21QNetworkAccessManager5proxyEv@Qt_5 5.0.2
  _ZNK21QNetworkAccessManager9cookieJarEv@Qt_5 5.0.2
@@ -1298,8 +1310,10 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  (optional=templinst)_ZNSt6vectorIhSaIhEE15_M_range_insertIPKcEEvN9__gnu_cxx17__normal_iteratorIPhS1_EET_S9_St20forward_iterator_tag@Qt_5 5.8.0
  (optional=templinst)_ZNSt6vectorIhSaIhEE15_M_range_insertIPKhEEvN9__gnu_cxx17__normal_iteratorIPhS1_EET_S9_St20forward_iterator_tag@Qt_5 5.8.0
  (optional=templinst|subst)_ZNSt6vectorIhSaIhEE17_M_default_appendE{size_t}@Qt_5 5.8.0
+ (optional=templinst)_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Qt_5 5.10.0
  (optional=templinst)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.9.1
  (optional=templinst|arch=alpha armel armhf hurd-i386 i386 kfreebsd-i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sparc64)_ZSt13move_backwardIjESt15_Deque_iteratorIT_RS1_PS1_ES4_S4_S4_@Qt_5 5.8.0
+ (optional=templinst|arch=i386)_ZSt4moveIjESt15_Deque_iteratorIT_RS1_PS1_ES4_S4_S4_@Qt_5 5.10.0
  _ZTI10QDnsLookup@Qt_5 5.0.2
  _ZTI10QSslSocket@Qt_5 5.0.2
  _ZTI10QTcpServer@Qt_5 5.0.2
@@ -1315,6 +1329,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZTI15QNetworkSession@Qt_5 5.0.2
  _ZTI17QNetworkCookieJar@Qt_5 5.0.2
  _ZTI17QNetworkDiskCache@Qt_5 5.0.2
+ _ZTI17QTcpServerPrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTI19QBearerEnginePlugin@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI20QNetworkProxyFactory@Qt_5 5.0.2
  _ZTI21QAbstractNetworkCache@Qt_5 5.0.2
@@ -1338,6 +1353,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZTS15QNetworkSession@Qt_5 5.0.2
  _ZTS17QNetworkCookieJar@Qt_5 5.0.2
  _ZTS17QNetworkDiskCache@Qt_5 5.0.2
+ _ZTS17QTcpServerPrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTS19QBearerEnginePlugin@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS20QNetworkProxyFactory@Qt_5 5.0.2
  _ZTS21QAbstractNetworkCache@Qt_5 5.0.2
@@ -1360,6 +1376,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZTV15QNetworkSession@Qt_5 5.0.2
  _ZTV17QNetworkCookieJar@Qt_5 5.0.2
  _ZTV17QNetworkDiskCache@Qt_5 5.0.2
+ _ZTV17QTcpServerPrivate@Qt_5_PRIVATE_API 5.10.0
  _ZTV19QBearerEnginePlugin@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV20QNetworkProxyFactory@Qt_5 5.0.2
  _ZTV21QAbstractNetworkCache@Qt_5 5.0.2
@@ -1392,3 +1409,5 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZlsR11QDataStreamRK21QNetworkCacheMetaData@Qt_5 5.0.2
  _ZrsR11QDataStreamR12QHostAddress@Qt_5 5.0.2
  _ZrsR11QDataStreamR21QNetworkCacheMetaData@Qt_5 5.0.2
+ (c++)"non-virtual thunk to QTcpServerPrivate::readNotification()@Qt_5_PRIVATE_API" 5.10.0
+ (c++)"non-virtual thunk to QTcpServerPrivate::~QTcpServerPrivate()@Qt_5_PRIVATE_API" 5.10.0
