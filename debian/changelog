@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.10.0~rc1+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.10.0~rc1+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release candidate.
   * Update debian/watch to track 5.10 development releases.
   * Drop qglxconvenience_nullptr.diff, included upstream.
@@ -9,7 +8,7 @@ qtbase-opensource-src (5.10.0~rc1+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files from the current build logs.
   * Update debian/copyright using debian/scripts/update-copyright.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 03 Nov 2017 14:12:28 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 28 Nov 2017 16:43:35 +0300
 
 qtbase-opensource-src (5.9.2+dfsg-4) unstable; urgency=medium
 
