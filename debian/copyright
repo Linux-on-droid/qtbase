@@ -263,7 +263,11 @@ Files: tests/manual/qstorageinfo/main.cpp
 Copyright: 2016 Intel Corporation
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/corelib/io/qipaddress/tst_qipaddress.cpp
+Files: config.tests/unix/cxx11_random/cxx11_random.cpp
+       config.tests/unix/getauxval/getauxval.cpp
+       config.tests/unix/getentropy/getentropy.cpp
+       tests/auto/corelib/global/qrandomgenerator/tst_qrandomgenerator.cpp
+       tests/auto/corelib/io/qipaddress/tst_qipaddress.cpp
        tests/auto/corelib/io/qprocess-noapplication/tst_qprocessnoapplication.cpp
        tests/auto/corelib/io/qprocess/testProcessHang/main.cpp
        tests/auto/corelib/io/qurlquery/tst_qurlquery.cpp
@@ -309,11 +313,13 @@ Files: configure
        src/tools/moc/main.cpp
        tests/auto/corelib/codecs/qtextcodec/tst_qtextcodec.cpp
        tests/auto/corelib/codecs/utf8/tst_utf8.cpp
+       tests/auto/corelib/global/qgetputenv/tst_qgetputenv.cpp
        tests/auto/corelib/global/qnumeric/tst_qnumeric.cpp
        tests/auto/corelib/io/qdebug/tst_qdebug.cpp
        tests/auto/corelib/io/qdir/tst_qdir.cpp
        tests/auto/corelib/io/qfile/tst_qfile.cpp
        tests/auto/corelib/io/qprocess/tst_qprocess.cpp
+       tests/auto/corelib/io/qtemporaryfile/tst_qtemporaryfile.cpp
        tests/auto/corelib/io/qurl/tst_qurl.cpp
        tests/auto/corelib/io/qurlinternal/tst_qurlinternal.cpp
        tests/auto/corelib/kernel/qcoreapplication/tst_qcoreapplication.cpp
@@ -427,11 +433,17 @@ Files: tests/auto/cmake/test(needsquoting)dirname/mywidget.cpp
        tests/auto/corelib/global/qhooks/tst_qhooks.cpp
        tests/auto/corelib/itemmodels/qidentityproxymodel/tst_qidentityproxymodel.cpp
        tests/auto/corelib/kernel/qsignalblocker/tst_qsignalblocker.cpp
+       tests/auto/corelib/tools/containerapisymmetry/tst_containerapisymmetry.cpp
        tests/auto/corelib/tools/qlatin1string/tst_qlatin1string.cpp
        tests/auto/corelib/tools/qpair/tst_qpair.cpp
        tests/auto/corelib/tools/qregularexpression/forceoptimize/tst_qregularexpression_forceoptimize.cpp
        tests/auto/corelib/tools/qstringapisymmetry/tst_qstringapisymmetry.cpp
        tests/auto/corelib/tools/qstringiterator/tst_qstringiterator.cpp
+       tests/auto/gui/util/qshadergenerator/tst_qshadergenerator.cpp
+       tests/auto/gui/util/qshadergraph/tst_qshadergraph.cpp
+       tests/auto/gui/util/qshadergraphloader/tst_qshadergraphloader.cpp
+       tests/auto/gui/util/qshadernodes/tst_qshadernodes.cpp
+       tests/auto/gui/util/qshadernodesloader/tst_qshadernodesloader.cpp
        tests/auto/tools/moc/cxx11-explicit-override-control.h
        tests/auto/tools/moc/cxx11-final-classes.h
        tests/auto/tools/moc/single-quote-digit-separator-n3781.h
@@ -458,7 +470,7 @@ Files: tests/auto/cmake/test(needsquoting)dirname/mywidget.cpp
        util/glgen/specparser.h
        util/glgen/xmlspecparser.cpp
        util/glgen/xmlspecparser.h
-Copyright: 2011-2016 Klarälvdalens Datakonsult AB, a KDAB Group company
+Copyright: 2011-2017 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/gui/util/qregularexpressionvalidator/tst_qregularexpressionvalidator.cpp
@@ -500,6 +512,10 @@ License: GPL-3 with Qt-1.0 exception
 Files: tests/auto/corelib/tools/qdatetime/tst_qdatetime_mac.mm
 Copyright: 2014 Petroules Corporation.
            2016 The Qt Company Ltd.
+License: GPL-3 with Qt-1.0 exception
+
+Files: util/edid/qedidvendortable.py
+Copyright: 2017 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/benchmarks/corelib/kernel/qcoreapplication/main.cpp
@@ -570,8 +586,26 @@ License: GPL-3 with Qt-1.0 exception
 
 ## LGPL-2.1-or-3 with Qt-1.1 exception
 
-Files: tests/auto/tools/qmake/testdata/rawString/object2.h
-Copyright: 2015 The Qt Company Ltd.
+Files: tests/auto/corelib/itemmodels/qsortfilterproxymodel_recursive/tst_qsortfilterproxymodel_recursive.cpp
+       tests/auto/corelib/tools/qstringview/tst_qstringview.cpp
+Copyright: 2016-2017 Klarälvdalens Datakonsult AB, a KDAB Group company
+License: LGPL-2.1-or-3 with Qt-1.1 exception
+
+Files: src/plugins/platforms/xcb/nativepainting/qbackingstore_x11.cpp
+       src/plugins/platforms/xcb/nativepainting/qbackingstore_x11_p.h
+       src/plugins/platforms/xcb/nativepainting/qcolormap_x11.cpp
+       src/plugins/platforms/xcb/nativepainting/qcolormap_x11_p.h
+       src/plugins/platforms/xcb/nativepainting/qpaintengine_x11.cpp
+       src/plugins/platforms/xcb/nativepainting/qpaintengine_x11_p.h
+       src/plugins/platforms/xcb/nativepainting/qpixmap_x11.cpp
+       src/plugins/platforms/xcb/nativepainting/qpixmap_x11_p.h
+       src/plugins/platforms/xcb/nativepainting/qt_x11_p.h
+       src/plugins/platforms/xcb/nativepainting/qtessellator.cpp
+       src/plugins/platforms/xcb/nativepainting/qtessellator_p.h
+       src/plugins/platforms/xcb/nativepainting/qxcbnativepainting.cpp
+       src/plugins/platforms/xcb/nativepainting/qxcbnativepainting.h
+       tests/auto/tools/qmake/testdata/rawString/object2.h
+Copyright: 2015-2016 The Qt Company Ltd.
 License: LGPL-2.1-or-3 with Qt-1.1 exception
 
 ## LGPL-3 or GPL-2
@@ -605,7 +639,8 @@ Copyright: 2015-2016 Alex Trotsenko <alex1973tr@gmail.com>
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
-Files: src/3rdparty/libpng/import_from_libpng_tarball.sh
+Files: src/3rdparty/libjpeg/import_from_libjpeg_tarball.sh
+       src/3rdparty/libpng/import_from_libpng_tarball.sh
        src/3rdparty/zlib/import_from_zlib_tarball.sh
 Copyright: 2017 André Klitzing
 License: LGPL-3 or GPL-2
@@ -676,10 +711,18 @@ Files: mkspecs/common/qnx/qplatformdefs.h
 Copyright: 2011-2014 BlackBerry Limited (formerly Research In Motion)
 License: LGPL-3 or GPL-2
 
-Files: src/network/ssl/qsslcontext_openssl.cpp
+Files: src/network/ssl/qsslcontext_openssl11.cpp
 Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
            2014 Governikus GmbH & Co. KG.
-           2016 The Qt Company Ltd.
+           2016 Richard J. Moore <rich@kde.org>
+           2017 The Qt Company Ltd.
+License: LGPL-3 or GPL-2
+
+Files: src/network/ssl/qsslcontext_openssl.cpp
+       src/network/ssl/qsslcontext_opensslpre11.cpp
+Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
+           2014 Governikus GmbH & Co. KG.
+           2017 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/io/qfileselector.cpp
@@ -694,6 +737,13 @@ Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
+Files: src/network/ssl/qsslsocket_openssl11_symbols_p.h
+       src/network/ssl/qsslsocket_openssl_symbols.cpp
+Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
+           2016 Richard J. Moore <rich@kde.org>
+           2017 The Qt Company Ltd.
+License: LGPL-3 or GPL-2
+
 Files: src/network/access/qhttpnetworkconnectionchannel.cpp
        src/network/access/qhttpprotocolhandler.cpp
        src/network/access/qhttpprotocolhandler_p.h
@@ -703,10 +753,10 @@ Files: src/network/access/qhttpnetworkconnectionchannel.cpp
        src/network/ssl/qsslconfiguration_p.h
        src/network/ssl/qsslcontext_openssl_p.h
        src/network/ssl/qsslsocket.cpp
-       src/network/ssl/qsslsocket_openssl_symbols.cpp
        src/network/ssl/qsslsocket_openssl_symbols_p.h
+       src/network/ssl/qsslsocket_opensslpre11_symbols_p.h
 Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
-           2016 The Qt Company Ltd.
+           2016-2017 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/android/jar/src/org/qtproject/qt5/android/ExtractStyle.java
@@ -740,8 +790,8 @@ Files: src/android/jar/src/org/qtproject/qt5/android/ExtractStyle.java
        src/plugins/platforms/android/qandroidplatformservices.h
        src/plugins/platforms/android/qandroidplatformtheme.cpp
        src/plugins/platforms/android/qandroidplatformtheme.h
-       src/widgets/styles/qandroidstyle.cpp
-       src/widgets/styles/qandroidstyle_p.h
+       src/plugins/styles/android/qandroidstyle.cpp
+       src/plugins/styles/android/qandroidstyle_p.h
 Copyright: 2012-2014 BogDan Vatra <bogdan@kde.org>
 License: LGPL-3 or GPL-2
 
@@ -835,15 +885,11 @@ Files: src/corelib/io/qlockfile.h
 Copyright: 2013 David Faure <faure+bluesystems@kde.org>
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/io/qlockfile_unix.cpp
-Copyright: 2013 David Faure <faure+bluesystems@kde.org>
-           2016 Intel Corporation.
-           2016 The Qt Company Ltd.
-License: LGPL-3 or GPL-2
-
 Files: src/corelib/io/qlockfile.cpp
+       src/corelib/io/qlockfile_unix.cpp
        src/corelib/io/qlockfile_win.cpp
 Copyright: 2013 David Faure <faure+bluesystems@kde.org>
+           2017 Intel Corporation.
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
@@ -887,19 +933,30 @@ Copyright: 2016 Giuseppe D'Angelo <dangelog@gmail.com>.
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
-Files: src/network/ssl/qsslsocket_openssl.cpp
+Files: src/network/ssl/qsslsocket_openssl11.cpp
 Copyright: 2014 Governikus GmbH & Co. KG
-           2016 The Qt Company Ltd.
+           2016 Richard J. Moore <rich@kde.org>
+           2017 The Qt Company Ltd.
+License: LGPL-3 or GPL-2
+
+Files: src/network/ssl/qsslsocket_openssl.cpp
+       src/network/ssl/qsslsocket_opensslpre11.cpp
+Copyright: 2014 Governikus GmbH & Co. KG
+           2017 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/network/ssl/qsslellipticcurve.cpp
        src/network/ssl/qsslellipticcurve.h
        src/network/ssl/qsslellipticcurve_dummy.cpp
-       src/network/ssl/qsslellipticcurve_openssl.cpp
        src/network/ssl/qsslpresharedkeyauthenticator.cpp
        src/network/ssl/qsslpresharedkeyauthenticator.h
        src/network/ssl/qsslpresharedkeyauthenticator_p.h
 Copyright: 2014 Governikus GmbH & Co. KG.
+License: LGPL-3 or GPL-2
+
+Files: src/network/ssl/qsslellipticcurve_openssl.cpp
+Copyright: 2014 Governikus GmbH & Co. KG.
+           2016 Richard J. Moore <rich@kde.org>
 License: LGPL-3 or GPL-2
 
 Files: mkspecs/common/integrity/qplatformdefs.h
@@ -925,10 +982,17 @@ Copyright: 2013 Imagination Technologies Limited, www.imgtec.com
 License: LGPL-3 or GPL-2
 
 Files: config.tests/avx512/avx512.cpp
+       config.tests/common/aesni/aesni.cpp
+       config.tests/common/rdrnd/rdrnd.cpp
+       config.tests/common/shani/shani.cpp
        mkspecs/features/data/unix/findclasslist.pl
-       src/corelib/global/qglobal_p.h
+       src/corelib/global/minimum-linux.S
+       src/corelib/global/minimum-linux_p.h
        src/corelib/global/qglobalstatic.h
        src/corelib/global/qglobalstatic.qdoc
+       src/corelib/global/qrandom.cpp
+       src/corelib/global/qrandom.h
+       src/corelib/global/qrandom_p.h
        src/corelib/global/qversiontagging.cpp
        src/corelib/global/qversiontagging.h
        src/corelib/io/forkfd_qt.cpp
@@ -955,7 +1019,7 @@ Files: config.tests/avx512/avx512.cpp
        src/testlib/qcsvbenchmarklogger.cpp
        src/testlib/qcsvbenchmarklogger_p.h
        src/xml/qtxmlglobal.h
-Copyright: 2015-2016 Intel Corporation.
+Copyright: 2015-2017 Intel Corporation.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/io/qstorageinfo_unix.cpp
@@ -997,6 +1061,7 @@ Files: bin/syncqt.pl
        src/corelib/global/qendian.h
        src/corelib/global/qglobal.cpp
        src/corelib/global/qglobal.h
+       src/corelib/global/qglobal_p.h
        src/corelib/global/qlibraryinfo.cpp
        src/corelib/global/qnumeric_p.h
        src/corelib/global/qprocessordetection.h
@@ -1004,6 +1069,7 @@ Files: bin/syncqt.pl
        src/corelib/global/qtypeinfo.h
        src/corelib/io/qdebug.cpp
        src/corelib/io/qdebug.h
+       src/corelib/io/qfile.cpp
        src/corelib/io/qfile.h
        src/corelib/io/qfsfileengine.cpp
        src/corelib/io/qprocess.cpp
@@ -1012,6 +1078,7 @@ Files: bin/syncqt.pl
        src/corelib/io/qprocess_win.cpp
        src/corelib/io/qstandardpaths.cpp
        src/corelib/io/qtemporarydir.cpp
+       src/corelib/io/qtemporaryfile.cpp
        src/corelib/io/qtextstream.cpp
        src/corelib/io/qtextstream_p.h
        src/corelib/io/qurl.cpp
@@ -1060,6 +1127,7 @@ Files: bin/syncqt.pl
        src/corelib/tools/qstring.cpp
        src/corelib/tools/qstring.h
        src/corelib/tools/qstringlist.h
+       src/corelib/tools/qstringliteral.h
        src/dbus/qdbus_symbols.cpp
        src/dbus/qdbus_symbols_p.h
        src/dbus/qdbusabstractadaptor.cpp
@@ -1102,7 +1170,7 @@ Files: bin/syncqt.pl
        src/testlib/qtest.h
        src/testlib/qtestcase.cpp
        src/widgets/kernel/qwidget.cpp
-Copyright: 2016-2017 Intel Corporation.
+Copyright: 2015-2017 Intel Corporation.
            2016-2017 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
@@ -1201,7 +1269,10 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/corelib/io/qstandardpaths_haiku.cpp
        src/corelib/itemmodels/qidentityproxymodel.cpp
        src/corelib/itemmodels/qidentityproxymodel.h
+       src/corelib/tools/qstringalgorithms.h
        src/corelib/tools/qstringiterator.qdoc
+       src/corelib/tools/qstringview.cpp
+       src/corelib/tools/qstringview.h
        src/gui/opengl/qopengldebug.cpp
        src/gui/opengl/qopengldebug.h
        src/gui/opengl/qopenglfunctions_1_0.cpp
@@ -1247,6 +1318,22 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/gui/opengl/qopenglvertexarrayobject.cpp
        src/gui/opengl/qopenglvertexarrayobject.h
        src/gui/opengl/qopenglvertexarrayobject_p.h
+       src/gui/util/qshaderformat.cpp
+       src/gui/util/qshaderformat_p.h
+       src/gui/util/qshadergenerator.cpp
+       src/gui/util/qshadergenerator_p.h
+       src/gui/util/qshadergraph.cpp
+       src/gui/util/qshadergraph_p.h
+       src/gui/util/qshadergraphloader.cpp
+       src/gui/util/qshadergraphloader_p.h
+       src/gui/util/qshaderlanguage.cpp
+       src/gui/util/qshaderlanguage_p.h
+       src/gui/util/qshadernode.cpp
+       src/gui/util/qshadernode_p.h
+       src/gui/util/qshadernodeport.cpp
+       src/gui/util/qshadernodeport_p.h
+       src/gui/util/qshadernodesloader.cpp
+       src/gui/util/qshadernodesloader_p.h
        src/plugins/platforms/cocoa/qcocoamenu.mm
        src/plugins/platforms/cocoa/qcocoamenubar.mm
        src/plugins/platforms/cocoa/qcocoamenuitem.mm
@@ -1276,7 +1363,7 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/plugins/platforms/haiku/qhaikuutils.h
        src/plugins/platforms/haiku/qhaikuwindow.cpp
        src/plugins/platforms/haiku/qhaikuwindow.h
-Copyright: 2011-2016 Klarälvdalens Datakonsult AB, a KDAB Group company
+Copyright: 2011-2017 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/kernel/qsharedmemory_posix.cpp
@@ -1293,6 +1380,8 @@ Files: src/corelib/mimetypes/qmimedatabase.cpp
        src/corelib/mimetypes/qmimeprovider_p.h
        src/corelib/mimetypes/qmimetype.cpp
        src/corelib/mimetypes/qmimetype.h
+       src/corelib/plugin/quuid.cpp
+       src/corelib/thread/qthread.h
        src/corelib/tools/qhash.h
        src/corelib/tools/qhashfunctions.h
        src/corelib/tools/qstringiterator_p.h
@@ -1334,7 +1423,7 @@ Files: src/corelib/mimetypes/qmimedatabase.cpp
        src/plugins/platforms/cocoa/qcocoamenuitem.h
        src/plugins/platforms/cocoa/qcocoasystemtrayicon.h
        src/plugins/platforms/cocoa/qcocoasystemtrayicon.mm
-Copyright: 2012-2015 Klarälvdalens Datakonsult AB, a KDAB Group company
+Copyright: 2012-2017 Klarälvdalens Datakonsult AB, a KDAB Group company
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
@@ -1372,9 +1461,13 @@ License: LGPL-3 or GPL-2
 Files: src/network/ssl/qssldiffiehellmanparameters.cpp
        src/network/ssl/qssldiffiehellmanparameters.h
        src/network/ssl/qssldiffiehellmanparameters_dummy.cpp
-       src/network/ssl/qssldiffiehellmanparameters_openssl.cpp
        src/network/ssl/qssldiffiehellmanparameters_p.h
 Copyright: 2015 Mikkel Krautz <mikkel@krautz.dk>
+License: LGPL-3 or GPL-2
+
+Files: src/network/ssl/qssldiffiehellmanparameters_openssl.cpp
+Copyright: 2015 Mikkel Krautz <mikkel@krautz.dk>
+           2016 Richard J. Moore <rich@kde.org>
 License: LGPL-3 or GPL-2
 
 Files: src/plugins/generic/bsdkeyboard/main.cpp
@@ -1438,7 +1531,7 @@ Files: src/platformsupport/kmsconvenience/qkmsdevice.cpp
        src/plugins/platforms/eglfs/deviceintegration/eglfs_kms_support/qeglfskmsscreen.cpp
        src/plugins/platforms/eglfs/deviceintegration/eglfs_kms_support/qeglfskmsscreen.h
 Copyright: 2016 Pelagicore AG
-           2015 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
+           2015-2017 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
@@ -1457,15 +1550,32 @@ Copyright: 2014 Petroules Corporation.
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
+Files: src/platformsupport/edid/qedidparser.cpp
+       src/platformsupport/edid/qedidparser_p.h
+       src/platformsupport/edid/qedidvendortable_p.h
+Copyright: 2017 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
+License: LGPL-3 or GPL-2
+
 Files: mkspecs/qnx-aarch64le-qcc/qplatformdefs.h
        mkspecs/qnx-x86-64-qcc/qplatformdefs.h
 Copyright: 2016 QNX Software Systems. All rights reserved.
+License: LGPL-3 or GPL-2
+
+Files: config.tests/unix/futimens/futimens.cpp
+       config.tests/unix/futimes/futimes.cpp
+Copyright: 2015 Raphael Gozzo <raphael.rg91@gmail.com>
 License: LGPL-3 or GPL-2
 
 Files: src/network/ssl/qsslcertificateextension.cpp
        src/network/ssl/qsslcertificateextension.h
        src/network/ssl/qsslcertificateextension_p.h
 Copyright: 2011 Richard J. Moore <rich@kde.org>
+License: LGPL-3 or GPL-2
+
+Files: src/network/ssl/qsslcertificate_openssl.cpp
+       src/network/ssl/qsslkey_openssl.cpp
+Copyright: 2016 Richard J. Moore <rich@kde.org>
+           2017 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/tools/qcryptographichash.cpp

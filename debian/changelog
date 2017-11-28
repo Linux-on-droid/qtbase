@@ -7,6 +7,7 @@ qtbase-opensource-src (5.10.0~rc1+dfsg-1) UNRELEASED; urgency=medium
   * Build with OpenSSL 1.1 (closes: #859671).
   * Update install files for the new version.
   * Update symbols files from the current build logs.
+  * Update debian/copyright using debian/scripts/update-copyright.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 03 Nov 2017 14:12:28 +0300
 
