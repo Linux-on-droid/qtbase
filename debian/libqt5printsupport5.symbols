@@ -77,9 +77,9 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZN15QPdfPrintEngine3endEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN15QPdfPrintEngine5beginEP12QPaintDevice@Qt_5_PRIVATE_API 5.0.2 1
  _ZN15QPdfPrintEngine7newPageEv@Qt_5_PRIVATE_API 5.0.2 1
- _ZN15QPdfPrintEngineC1EN8QPrinter11PrinterModeEN10QPdfEngine10PdfVersionE@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QPdfPrintEngineC1EN8QPrinter11PrinterModeEN10QPdfEngine10PdfVersionE@Qt_5_PRIVATE_API 5.10.0 1
  _ZN15QPdfPrintEngineC1ER22QPdfPrintEnginePrivate@Qt_5_PRIVATE_API 5.0.2 1
- _ZN15QPdfPrintEngineC2EN8QPrinter11PrinterModeEN10QPdfEngine10PdfVersionE@Qt_5_PRIVATE_API 5.10.0
+ _ZN15QPdfPrintEngineC2EN8QPrinter11PrinterModeEN10QPdfEngine10PdfVersionE@Qt_5_PRIVATE_API 5.10.0 1
  _ZN15QPdfPrintEngineC2ER22QPdfPrintEnginePrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZN15QPdfPrintEngineD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN15QPdfPrintEngineD1Ev@Qt_5_PRIVATE_API 5.0.2 1
