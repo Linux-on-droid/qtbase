@@ -2176,6 +2176,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN21QSortFilterProxyModel21setRecursiveFilteringEb@Qt_5 5.10.0
  _ZN21QSortFilterProxyModel22setSortCaseSensitivityEN2Qt15CaseSensitivityE@Qt_5 5.0.2
  _ZN21QSortFilterProxyModel24setFilterCaseSensitivityEN2Qt15CaseSensitivityE@Qt_5 5.0.2
+ _ZN21QSortFilterProxyModel28setRecursiveFilteringEnabledEb@Qt_5 5.10.0
  _ZN21QSortFilterProxyModel4sortEiN2Qt9SortOrderE@Qt_5 5.0.2
  _ZN21QSortFilterProxyModel5clearEv@Qt_5 5.0.2
  _ZN21QSortFilterProxyModel7setDataERK11QModelIndexRK8QVarianti@Qt_5 5.0.2
@@ -4502,6 +4503,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK21QSortFilterProxyModel20supportedDropActionsEv@Qt_5 5.0.2
  _ZNK21QSortFilterProxyModel21filterCaseSensitivityEv@Qt_5 5.0.2
  _ZNK21QSortFilterProxyModel22mapSelectionFromSourceERK14QItemSelection@Qt_5 5.0.2
+ _ZNK21QSortFilterProxyModel27isRecursiveFilteringEnabledEv@Qt_5 5.10.0
  _ZNK21QSortFilterProxyModel4dataERK11QModelIndexi@Qt_5 5.0.2
  _ZNK21QSortFilterProxyModel4spanERK11QModelIndex@Qt_5 5.0.2
  _ZNK21QSortFilterProxyModel5buddyERK11QModelIndex@Qt_5 5.0.2
