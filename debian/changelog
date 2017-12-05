@@ -1,8 +1,7 @@
 qtbase-opensource-src (5.10.0~rc2+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Merge branch master into experimental. This brings in the changes in
-    5.9.2+dfsg-5.
+  * Merge 5.9.2+dfsg-6 upload from unstable.
 
   [ Dmitry Shachnev ]
   * New upstream release candidate.
@@ -21,6 +20,17 @@ qtbase-opensource-src (5.10.0~rc1+dfsg-1) experimental; urgency=medium
   * Update debian/copyright using debian/scripts/update-copyright.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Tue, 28 Nov 2017 16:43:35 +0300
+
+qtbase-opensource-src (5.9.2+dfsg-6) unstable; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Make libqt5opengl5-dev provide libqt5opengl5-desktop-dev and not
+    libqt5opengl5. Thanks Adrian Bunk for noticing.
+
+  [ Dmitry Shachnev ]
+  * Fix the name of installed qt.conf file (it should not be qmake.conf).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 04 Dec 2017 09:31:27 -0300
 
 qtbase-opensource-src (5.9.2+dfsg-5) unstable; urgency=medium
 
