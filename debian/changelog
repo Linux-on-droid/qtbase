@@ -7,6 +7,7 @@ qtbase-opensource-src (5.10.0+dfsg-1) UNRELEASED; urgency=medium
   * New upstream stable release.
   * Update symbols files from buildds’ logs.
   * Update debian/watch to track 5.10.0 official releases.
+  * Exclude licheck binaries from the tarball, they have no source.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Dec 2017 10:37:03 -0300
 
