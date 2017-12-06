@@ -1,11 +1,12 @@
-qtbase-opensource-src (5.10.0~rc2+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.10.0+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Merge 5.9.2+dfsg-6 upload from unstable.
 
   [ Dmitry Shachnev ]
-  * New upstream release candidate.
+  * New upstream stable release.
   * Update symbols files from buildds’ logs.
+  * Update debian/watch to track 5.10.0 official releases.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Dec 2017 10:37:03 -0300
 
