@@ -1,0 +1,25 @@
+Description: do not use arc4random_buf() on GNU/kFreeBSD
+Author: Dmitry Shachnev <mitya57@debian.org>
+Forwarded: not-yet
+Last-Update: 2017-12-07
+
+--- a/src/corelib/global/qrandom.cpp
++++ b/src/corelib/global/qrandom.cpp
+@@ -50,7 +50,7 @@
+ 
+ #if QT_CONFIG(getentropy)
+ #  include <sys/random.h>
+-#elif !defined(Q_OS_BSD4) && !defined(Q_OS_WIN)
++#elif (!defined(Q_OS_BSD4) || defined(__GLIBC__)) && !defined(Q_OS_WIN)
+ #  include "qdeadlinetimer.h"
+ #  include "qhashfunctions.h"
+ 
+@@ -260,7 +260,7 @@
+     // no fallback necessary, getentropy cannot fail under normal circumstances
+     Q_UNREACHABLE();
+ }
+-#elif defined(Q_OS_BSD4)
++#elif defined(Q_OS_BSD4) && !defined(__GLIBC__)
+ static void fallback_update_seed(unsigned) {}
+ static void fallback_fill(quint32 *ptr, qsizetype left) Q_DECL_NOTHROW
+ {

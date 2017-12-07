@@ -9,3 +9,4 @@ link_fbclient.diff
 gnukfreebsd_cloexec.diff
 armv4.diff
 nonlinux_utime.diff
+no_arc4random_buf.diff
