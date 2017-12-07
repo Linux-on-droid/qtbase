@@ -1,11 +1,10 @@
-qtbase-opensource-src (5.10.0+dfsg-2) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.10.0+dfsg-2) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Bump qtbase-abi to 5-10-0, as in 5.10 there were removed symbols.
   * Do not attempt to use arc4random_buf() on GNU/kFreeBSD, it is missing
     there (no_arc4random_buf.diff).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 07 Dec 2017 16:42:20 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 07 Dec 2017 17:27:40 +0300
 
 qtbase-opensource-src (5.10.0+dfsg-1) experimental; urgency=medium
 
