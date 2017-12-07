@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.10.0+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.10.0+dfsg-1) experimental; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Merge 5.9.2+dfsg-6 upload from unstable.
@@ -9,7 +9,7 @@ qtbase-opensource-src (5.10.0+dfsg-1) UNRELEASED; urgency=medium
   * Update debian/watch to track 5.10.0 official releases.
   * Exclude licheck binaries from the tarball, they have no source.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Dec 2017 10:37:03 -0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 07 Dec 2017 11:17:10 +0300
 
 qtbase-opensource-src (5.10.0~rc1+dfsg-1) experimental; urgency=medium
 
