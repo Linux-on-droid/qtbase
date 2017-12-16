@@ -3,6 +3,8 @@ qtbase-opensource-src (5.10.0+dfsg-3) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Rename gnukfreebsd_cloexec.diff to gnukfreebsd_linker_warnings.diff.
     Add two more places where config tests are currently false positives.
+  * Make ${DEB_HOST_GNU_TYPE}-qmake script set QMAKE_QMAKE to itself.
+    This is needed for properly building configuration tests.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 07 Dec 2017 19:16:38 +0300
 
