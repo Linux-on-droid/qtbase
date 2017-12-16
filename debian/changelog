@@ -6,7 +6,7 @@ qtbase-opensource-src (5.10.0+dfsg-3) UNRELEASED; urgency=medium
   * Make ${DEB_HOST_GNU_TYPE}-qmake script set QMAKE_QMAKE to itself.
     This is needed for properly building configuration tests.
   * Pass toolchain-related variable assignments as early flags to qmake.
-    Switch to default model after passing them.
+    Switch to default mode after passing them.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 07 Dec 2017 19:16:38 +0300
 
