@@ -66,7 +66,7 @@ Build-Depends: debhelper (>= 10.3),
                zlib1g-dev
 Build-Depends-Indep: libqt5sql5-sqlite (>= 5.8.0+dfsg~) <!nodoc>,
                      qttools5-dev-tools (>= 5.9.2-2~) <!nodoc>
-Standards-Version: 4.1.1
+Standards-Version: 4.1.3
 Homepage: http://qt-project.org/
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtbase.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/qt/qtbase.git
@@ -427,7 +427,7 @@ Description: Qt 5 qmake Makefile generator tool
 
 Package: qtbase5-examples
 Architecture: any
-Multi-Arch: foreign
+Multi-Arch: same
 Section: x11
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 base examples
@@ -438,6 +438,7 @@ Description: Qt 5 base examples
 
 Package: qt5-default
 Architecture: any
+Multi-Arch: same
 Section: libdevel
 Depends: qtbase5-dev, qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}
 Conflicts: qt4-default
