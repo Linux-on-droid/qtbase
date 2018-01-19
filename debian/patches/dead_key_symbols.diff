@@ -4,7 +4,7 @@ Last-Update: 2018-01-19
 
 --- a/src/corelib/global/qnamespace.h
 +++ b/src/corelib/global/qnamespace.h
-@@ -840,6 +840,36 @@
+@@ -846,6 +846,36 @@
          Key_Dead_Belowdot       = 0x01001260,
          Key_Dead_Hook           = 0x01001261,
          Key_Dead_Horn           = 0x01001262,
@@ -43,7 +43,7 @@ Last-Update: 2018-01-19
          Key_Back  = 0x01000061,
 --- a/src/corelib/global/qnamespace.qdoc
 +++ b/src/corelib/global/qnamespace.qdoc
-@@ -1594,6 +1594,36 @@
+@@ -1613,6 +1613,36 @@
      \value Key_Dead_Belowdot
      \value Key_Dead_Hook
      \value Key_Dead_Horn
@@ -290,7 +290,7 @@ Last-Update: 2018-01-19
  
      // Special keys from X.org - This include multimedia keys,
          // wireless/bluetooth/uwb keys, special launcher keys, etc.
-@@ -1124,7 +1215,7 @@
+@@ -1117,7 +1208,7 @@
          modifiers |= Qt::KeypadModifier;
      } else if (text.length() == 1 && text.unicode()->unicode() > 0x1f
                                    && text.unicode()->unicode() != 0x7f
