@@ -1,6 +1,7 @@
-qtbase-opensource-src (5.10.0+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.10.1+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
+  * New upstream release.
   * Rename gnukfreebsd_cloexec.diff to gnukfreebsd_linker_warnings.diff.
     Add two more places where config tests are currently false positives.
   * Merge 5.9.2+dfsg-8 upload from unstable.
