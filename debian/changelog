@@ -6,6 +6,8 @@ qtbase-opensource-src (5.10.1+dfsg-1) UNRELEASED; urgency=medium
     Add two more places where config tests are currently false positives.
   * Merge 5.9.2+dfsg-8 upload from unstable.
   * Update symbols files from buildds’ logs.
+  * Drop qdnslookup_crash.diff, included in the new release.
+  * Refresh other patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 07 Dec 2017 19:16:38 +0300
 

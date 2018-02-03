@@ -4,7 +4,7 @@ Last-Update: 2018-01-19
 
 --- a/src/corelib/global/qnamespace.h
 +++ b/src/corelib/global/qnamespace.h
-@@ -846,6 +846,36 @@
+@@ -848,6 +848,36 @@
          Key_Dead_Belowdot       = 0x01001260,
          Key_Dead_Hook           = 0x01001261,
          Key_Dead_Horn           = 0x01001262,
@@ -82,7 +82,7 @@ Last-Update: 2018-01-19
      \value Key_Stop
 --- a/src/platformsupport/input/libinput/qlibinputkeyboard.cpp
 +++ b/src/platformsupport/input/libinput/qlibinputkeyboard.cpp
-@@ -281,7 +281,7 @@
+@@ -287,7 +287,7 @@
          *modifiers |= Qt::KeypadModifier;
      } else if (text.length() == 1 && text.unicode()->unicode() > 0x1f
                                    && text.unicode()->unicode() != 0x7f

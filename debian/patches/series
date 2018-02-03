@@ -1,5 +1,4 @@
 # Backported from upstream.
-qdnslookup_crash.diff
 dead_key_symbols.diff
 
 # Debian specific.
