@@ -4,6 +4,7 @@ qtbase-opensource-src (5.10.0+dfsg-3) UNRELEASED; urgency=medium
   * Rename gnukfreebsd_cloexec.diff to gnukfreebsd_linker_warnings.diff.
     Add two more places where config tests are currently false positives.
   * Merge 5.9.2+dfsg-8 upload from unstable.
+  * Update symbols files from buildds’ logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 07 Dec 2017 19:16:38 +0300
 
