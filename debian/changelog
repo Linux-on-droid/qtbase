@@ -4,7 +4,7 @@ qtbase-opensource-src (5.10.1+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Rename gnukfreebsd_cloexec.diff to gnukfreebsd_linker_warnings.diff.
     Add two more places where config tests are currently false positives.
-  * Merge 5.9.2+dfsg-8 upload from unstable.
+  * Merge 5.9.2+dfsg-9 upload from unstable.
   * Update symbols files from buildds’ logs.
   * Drop qdnslookup_crash.diff, included in the new release.
   * Refresh other patches.
@@ -43,6 +43,13 @@ qtbase-opensource-src (5.10.0~rc1+dfsg-1) experimental; urgency=medium
   * Update debian/copyright using debian/scripts/update-copyright.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Tue, 28 Nov 2017 16:43:35 +0300
+
+qtbase-opensource-src (5.9.2+dfsg-9) unstable; urgency=medium
+
+  * Check the existance of /etc/xdg/QtProject before trying to remove it
+    (Closes: #889504).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 03 Feb 2018 22:12:49 -0300
 
 qtbase-opensource-src (5.9.2+dfsg-8) unstable; urgency=medium
 
