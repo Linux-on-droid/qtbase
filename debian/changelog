@@ -9,6 +9,7 @@ qtbase-opensource-src (5.10.1+dfsg-1) UNRELEASED; urgency=medium
   * Drop qdnslookup_crash.diff and http2_headers.diff, included in the new
     release.
   * Refresh other patches.
+  * Update Vcs fields for migration to salsa.debian.org.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 07 Dec 2017 19:16:38 +0300
 
