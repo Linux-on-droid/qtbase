@@ -4,9 +4,13 @@ Bug: https://bugreports.qt.io/browse/QTBUG-61344
 Forwarded: no
 Last-Update: 2017-07-04
 
+---
+ qmake/library/ioutils.cpp |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/qmake/library/ioutils.cpp
 +++ b/qmake/library/ioutils.cpp
-@@ -222,7 +222,7 @@
+@@ -215,7 +215,7 @@ bool IoUtils::touchFile(const QString &t
          *errorString = fL1S("Cannot stat() reference file %1: %2.").arg(referenceFileName, fL1S(strerror(errno)));
          return false;
      }

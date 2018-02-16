@@ -11,12 +11,12 @@ Forwarded: no
 
 --- a/src/plugins/platforms/xcb/qxcbscreen.cpp
 +++ b/src/plugins/platforms/xcb/qxcbscreen.cpp
-@@ -620,7 +620,7 @@ void QXcbScreen::updateGeometry(const QR
-         m_sizeMillimeters = sizeInMillimeters(xGeometry.size(), virtualDpi());
+@@ -747,7 +747,7 @@ void QXcbScreen::updateGeometry(const QR
+         m_sizeMillimeters = sizeInMillimeters(geometry.size(), virtualDpi());
  
-     qreal dpi = xGeometry.width() / physicalSize().width() * qreal(25.4);
+     qreal dpi = geometry.width() / physicalSize().width() * qreal(25.4);
 -    m_pixelDensity = qMax(1, qRound(dpi/96));
-+    m_pixelDensity = qMax(1, (int) (dpi/96)); // instead of rounding at 1.5, round at 2.0 (same as GNOME)
-     m_geometry = QRect(xGeometry.topLeft(), xGeometry.size());
-     m_availableGeometry = xGeometry & m_virtualDesktop->workArea();
++    m_pixelDensity = qMax(1, (int) (dpi/96));
+     m_geometry = geometry;
+     m_availableGeometry = geometry & m_virtualDesktop->workArea();
      QWindowSystemInterface::handleScreenGeometryChange(QPlatformScreen::screen(), m_geometry, m_availableGeometry);
