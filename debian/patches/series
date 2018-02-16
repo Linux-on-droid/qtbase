@@ -10,3 +10,6 @@ gnukfreebsd_linker_warnings.diff
 armv4.diff
 nonlinux_utime.diff
 no_arc4random_buf.diff
+
+# Not yet forwarded.
+hidpi_scale_at_192.diff
