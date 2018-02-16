@@ -46,6 +46,14 @@ qtbase-opensource-src (5.10.0~rc1+dfsg-1) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Tue, 28 Nov 2017 16:43:35 +0300
 
+qtbase-opensource-src (5.9.2+dfsg-12) unstable; urgency=medium
+
+  * Add patch to extend MariaDB define checks. It seems that this codes makes
+    akonadi not fail on long time running sessions. Thanks Luigi Toscano for
+    the pointer.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 16 Feb 2018 15:36:32 -0300
+
 qtbase-opensource-src (5.9.2+dfsg-11) unstable; urgency=medium
 
   * Add Martin Briza's hidpi_scale_at_192.diff to solve wrong HiDPI scalling
