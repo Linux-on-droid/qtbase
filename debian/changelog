@@ -10,6 +10,7 @@ qtbase-opensource-src (5.10.1+dfsg-1) UNRELEASED; urgency=medium
     release.
   * Refresh other patches.
   * Update Vcs fields for migration to salsa.debian.org.
+  * Update debian/copyright with help of debian/scripts/update-copyright.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 07 Dec 2017 19:16:38 +0300
 
