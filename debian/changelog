@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.10.1+dfsg-2) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.10.1+dfsg-2) experimental; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Merge 5.9.2+dfsg-12 upload from unstable.
@@ -13,7 +13,7 @@ qtbase-opensource-src (5.10.1+dfsg-2) UNRELEASED; urgency=medium
   * Add upstream patch to fix rendering issues with Mesa 18.
   * Update debian/libqt5network5.symbols for powerpc.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 16 Feb 2018 17:50:47 -0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 23 Feb 2018 00:04:29 +0300
 
 qtbase-opensource-src (5.10.1+dfsg-1) experimental; urgency=medium
 
