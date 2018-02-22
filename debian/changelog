@@ -10,6 +10,7 @@ qtbase-opensource-src (5.10.1+dfsg-2) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Add upstream patch to fix installation of resources for example sources.
     Thanks to Alexander Volkov.
+  * Add upstream patch to fix rendering issues with Mesa 18.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 16 Feb 2018 17:50:47 -0300
 
