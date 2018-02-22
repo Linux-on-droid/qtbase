@@ -1,16 +1,12 @@
-Description: make the utimensat check stricter to fail on kFreeBSD and Hurd
+Description: guard UTIME_NOW/UTIME_OMIT usages
 Author: Dmitry Shachnev <mitya57@debian.org>
-Bug: https://bugreports.qt.io/browse/QTBUG-61344
+Author: Pino Toscano <pino@debian.org>
 Forwarded: no
-Last-Update: 2017-07-04
-
----
- qmake/library/ioutils.cpp |    2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+Last-Update: 2018-02-22
 
 --- a/qmake/library/ioutils.cpp
 +++ b/qmake/library/ioutils.cpp
-@@ -215,7 +215,7 @@ bool IoUtils::touchFile(const QString &t
+@@ -222,7 +222,7 @@ bool IoUtils::touchFile(const QString &t
          *errorString = fL1S("Cannot stat() reference file %1: %2.").arg(referenceFileName, fL1S(strerror(errno)));
          return false;
      }
@@ -19,3 +15,14 @@ Last-Update: 2017-07-04
      const struct timespec times[2] = { { 0, UTIME_NOW }, st.st_mtim };
      const bool utimeError = utimensat(AT_FDCWD, targetFileName.toLocal8Bit().constData(), times, 0) < 0;
  #    else
+--- a/src/corelib/io/qfilesystemengine_unix.cpp
++++ b/src/corelib/io/qfilesystemengine_unix.cpp
+@@ -1438,7 +1438,7 @@ bool QFileSystemEngine::setFileTime(int
+         return false;
+     }
+ 
+-#if QT_CONFIG(futimens)
++#if QT_CONFIG(futimens) && defined(UTIME_OMIT)
+     struct timespec ts[2];
+ 
+     ts[0].tv_sec = ts[1].tv_sec = 0;
