@@ -11,13 +11,13 @@ Change-Id: Ide89b4e07feb116bf152cbf3f5630d313e8ba0f1
 
 --- a/src/plugins/sqldrivers/mysql/qsql_mysql.cpp
 +++ b/src/plugins/sqldrivers/mysql/qsql_mysql.cpp
-@@ -1160,14 +1160,14 @@ static void qLibraryInit()
+@@ -1160,14 +1160,14 @@
  # endif // MYSQL_VERSION_ID
  #endif // Q_NO_MYSQL_EMBEDDED
  
 -#ifdef MARIADB_BASE_VERSION
 +#if defined(MARIADB_BASE_VERSION) || defined(MARIADB_VERSION_ID)
-     qAddPostRoutine(mysql_server_end);
+     qAddPostRoutine([]() { mysql_server_end(); });
  #endif
  }
  
