@@ -1,6 +1,7 @@
 # Backported from upstream.
 dead_key_symbols.diff
 extend_mariadb_define_check.diff
+resources_for_examples.diff
 
 # Debian specific.
 gnukfreebsd.diff
