@@ -1,7 +1,8 @@
 qtbase-opensource-src (5.10.1+dfsg-2) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Refresh patches, specially those coming from mergin master.
+  * Merge 5.9.2+dfsg-12 upload from unstable.
+  * Refresh patches, specially those coming from merging master.
 
   [ Pino Toscano ]
   * Update patch nonlinux_utime.diff with a new UTIME_OMIT usage in 5.10.
