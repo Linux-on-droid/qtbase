@@ -1,5 +1,7 @@
 qtbase-opensource-src (5.10.1+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Update list of Qt WebKit build-dependencies in debian/README.source.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 Feb 2018 19:29:52 +0300
 
