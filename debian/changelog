@@ -3,6 +3,9 @@ qtbase-opensource-src (5.10.1+dfsg-3) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Update list of Qt WebKit build-dependencies in debian/README.source.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport support_legacy_x11_keymaps.patch (Closes: #814959, #818232).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 Feb 2018 19:29:52 +0300
 
 qtbase-opensource-src (5.10.1+dfsg-2) experimental; urgency=medium
