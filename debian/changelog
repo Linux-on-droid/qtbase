@@ -1,5 +1,10 @@
 qtbase-opensource-src (5.10.1+dfsg-4) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Brown paperbag release: remove support_legacy_x11_keymaps.patch which I
+    included in the previous upload. It clearly does not builds. Sadly this
+    also means that backporting the fixes might not be easy to achieve.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 17 Mar 2018 15:25:46 -0300
 
 qtbase-opensource-src (5.10.1+dfsg-3) experimental; urgency=medium
