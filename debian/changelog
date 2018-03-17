@@ -5,6 +5,7 @@ qtbase-opensource-src (5.10.1+dfsg-3) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Backport support_legacy_x11_keymaps.patch (Closes: #814959, #818232).
+  * Update symbols files with buildds' logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 Feb 2018 19:29:52 +0300
 
