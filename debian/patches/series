@@ -3,6 +3,7 @@ dead_key_symbols.diff
 extend_mariadb_define_check.diff
 resources_for_examples.diff
 mesa_18.diff
+fix_loading_opengl.diff
 
 # Debian specific.
 gnukfreebsd.diff

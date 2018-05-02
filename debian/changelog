@@ -3,6 +3,10 @@ qtbase-opensource-src (5.10.1+dfsg-6) UNRELEASED; urgency=medium
   [ Simon Quigley ]
   * Add my name to Uploaders.
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix loading OpenGL library in the GLX
+    integration plugin (closes: #886400).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Apr 2018 11:21:11 -0500
 
 qtbase-opensource-src (5.10.1+dfsg-5) unstable; urgency=medium
