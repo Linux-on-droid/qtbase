@@ -10,6 +10,7 @@ qtbase-opensource-src (5.10.1+dfsg-6) UNRELEASED; urgency=medium
     upstream (closes: #884956).
   * Update symbols files from buildds’ logs.
   * Bump qttools5-dev-tools (indep-)build-dependency to 5.10.1.
+  * Bump Standards-Version to 4.1.4, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Apr 2018 11:21:11 -0500
 
