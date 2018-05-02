@@ -6,6 +6,8 @@ qtbase-opensource-src (5.10.1+dfsg-6) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Backport upstream patch to fix loading OpenGL library in the GLX
     integration plugin (closes: #886400).
+  * Replace hidpi_scale_at_192.diff with a version that has been applied
+    upstream (closes: #884956).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Apr 2018 11:21:11 -0500
 
