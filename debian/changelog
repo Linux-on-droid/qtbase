@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.10.1+dfsg-6) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.10.1+dfsg-6) unstable; urgency=medium
 
   [ Simon Quigley ]
   * Add my name to Uploaders.
@@ -12,7 +12,7 @@ qtbase-opensource-src (5.10.1+dfsg-6) UNRELEASED; urgency=medium
   * Bump qttools5-dev-tools (indep-)build-dependency to 5.10.1.
   * Bump Standards-Version to 4.1.4, no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Apr 2018 11:21:11 -0500
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 02 May 2018 20:50:22 +0300
 
 qtbase-opensource-src (5.10.1+dfsg-5) unstable; urgency=medium
 
