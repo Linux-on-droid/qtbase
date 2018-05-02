@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.10.1 hurd-i386 ia64
+# SymbolsHelper-Confirmed: 5.10.1 hurd-i386 ia64 kfreebsd-amd64 kfreebsd-i386
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-10-0
 * Build-Depends-Package: qtbase5-dev
@@ -5240,13 +5240,14 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  (optional=templinst|arch=!armel)_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv@Qt_5 5.10.0
  (optional=templinst)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_ED1Ev@Qt_5 5.9.1
  (optional=templinst)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_ED2Ev@Qt_5 5.9.1
- (optional=templinst|arch=hurd-i386)_ZNSt23mersenne_twister_engineIjLj32ELj624ELj397ELj31ELj2567483615ELj11ELj4294967295ELj7ELj2636928640ELj15ELj4022730752ELj18ELj1812433253EEclEv@Qt_5 5.10.1
+ (optional=templinst|arch=hurd-i386 kfreebsd-i386)_ZNSt23mersenne_twister_engineIjLj32ELj624ELj397ELj31ELj2567483615ELj11ELj4294967295ELj7ELj2636928640ELj15ELj4022730752ELj18ELj1812433253EEclEv@Qt_5 5.10.1
  (optional=templinst|subst)_ZNSt23mersenne_twister_engineIjL{size_t}32EL{size_t}624EL{size_t}397EL{size_t}31ELj2567483615EL{size_t}11ELj4294967295EL{size_t}7ELj2636928640EL{size_t}15ELj4022730752EL{size_t}18ELj1812433253EE4seedIN16QRandomGenerator15SystemGeneratorEEENSt9enable_ifIXsrSt8is_classIT_E5valueEvE4typeERS6_@Qt_5 5.10.0
  (optional=templinst|subst)_ZNSt23mersenne_twister_engineIjL{size_t}32EL{size_t}624EL{size_t}397EL{size_t}31ELj2567483615EL{size_t}11ELj4294967295EL{size_t}7ELj2636928640EL{size_t}15ELj4022730752EL{size_t}18ELj1812433253EE4seedISt8seed_seqEENSt9enable_ifIXsrSt8is_classIT_E5valueEvE4typeERS5_@Qt_5 5.10.0
  (optional=templinst)_ZNSt3_V28__rotateIP21QPersistentModelIndexEET_S3_S3_S3_St26random_access_iterator_tag@Qt_5 5.5.0
  (optional=templinst)_ZNSt3_V28__rotateIPiEET_S2_S2_S2_St26random_access_iterator_tag@Qt_5 5.5.0
- (optional=templinst|arch=hurd-i386)_ZNSt8seed_seqC1IPjEET_S2_@Qt_5 5.10.1
- (optional=templinst|arch=hurd-i386)_ZNSt8seed_seqC2IPjEET_S2_@Qt_5 5.10.1
+ (optional=templinst|arch=hurd-i386)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.10.1
+ (optional=templinst|arch=kfreebsd-amd64 kfreebsd-i386)_ZNSt8seed_seqC1IPjEET_S2_@Qt_5 5.10.1
+ (optional=templinst|arch=kfreebsd-amd64 kfreebsd-i386)_ZNSt8seed_seqC2IPjEET_S2_@Qt_5 5.10.1
  (optional=templinst|subst)_ZSt17__rotate_adaptiveIP21QPersistentModelIndexS1_{ssize_t}ET_S2_S2_S2_T1_S3_T0_S3_@Qt_5 5.0.2
  (optional=templinst|subst)_ZSt17__rotate_adaptiveIPiS0_{ssize_t}ET_S1_S1_S1_T1_S2_T0_S2_@Qt_5 5.0.2
  (optional=templinst|arch=armel armhf hurd-i386 i386 kfreebsd-i386 m68k mips mipsel powerpc powerpcspe)_ZSt4swapIN8QVariant7PrivateEENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS6_ESt18is_move_assignableIS6_EEE5valueEvE4typeERS6_SG_@Qt_5 5.9.1
