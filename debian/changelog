@@ -9,6 +9,7 @@ qtbase-opensource-src (5.10.1+dfsg-6) UNRELEASED; urgency=medium
   * Replace hidpi_scale_at_192.diff with a version that has been applied
     upstream (closes: #884956).
   * Update symbols files from buildds’ logs.
+  * Bump qttools5-dev-tools (indep-)build-dependency to 5.10.1.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Apr 2018 11:21:11 -0500
 
