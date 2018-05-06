@@ -1,5 +1,7 @@
 qtbase-opensource-src (5.10.1+dfsg-7) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Remove gdb from Build-Depends (closes: #897940).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 May 2018 23:47:27 +0300
 
