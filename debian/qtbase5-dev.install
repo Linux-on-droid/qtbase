@@ -258,7 +258,6 @@ usr/include/*/qt5/QtCore/QStandardPaths
 usr/include/*/qt5/QtCore/QState
 usr/include/*/qt5/QtCore/QStateMachine
 usr/include/*/qt5/QtCore/QStaticArrayData
-usr/include/*/qt5/QtCore/QStaticAssertFailure
 usr/include/*/qt5/QtCore/QStaticByteArrayData
 usr/include/*/qt5/QtCore/QStaticByteArrayMatcherBase
 usr/include/*/qt5/QtCore/QStaticPlugin
@@ -367,7 +366,6 @@ usr/include/*/qt5/QtCore/qarraydatapointer.h
 usr/include/*/qt5/QtCore/qatomic.h
 usr/include/*/qt5/QtCore/qatomic_bootstrap.h
 usr/include/*/qt5/QtCore/qatomic_cxx11.h
-usr/include/*/qt5/QtCore/qatomic_msvc.h
 usr/include/*/qt5/QtCore/qbasicatomic.h
 usr/include/*/qt5/QtCore/qbasictimer.h
 usr/include/*/qt5/QtCore/qbitarray.h
@@ -1166,6 +1164,7 @@ usr/include/*/qt5/QtSql/qsqlresult.h
 usr/include/*/qt5/QtSql/qsqltablemodel.h
 usr/include/*/qt5/QtSql/qtsqlglobal.h
 usr/include/*/qt5/QtSql/qtsqlversion.h
+usr/include/*/qt5/QtTest/QAbstractItemModelTester
 usr/include/*/qt5/QtTest/QEventSizeOfChecker
 usr/include/*/qt5/QtTest/QSignalSpy
 usr/include/*/qt5/QtTest/QSpontaneKeyEvent
@@ -1185,6 +1184,7 @@ usr/include/*/qt5/QtTest/QtTestGui
 usr/include/*/qt5/QtTest/QtTestNetwork
 usr/include/*/qt5/QtTest/QtTestVersion
 usr/include/*/qt5/QtTest/QtTestWidgets
+usr/include/*/qt5/QtTest/qabstractitemmodeltester.h
 usr/include/*/qt5/QtTest/qbenchmark.h
 usr/include/*/qt5/QtTest/qbenchmarkmetric.h
 usr/include/*/qt5/QtTest/qsignalspy.h
@@ -1204,6 +1204,8 @@ usr/include/*/qt5/QtTest/qtestmouse.h
 usr/include/*/qt5/QtTest/qtestspontaneevent.h
 usr/include/*/qt5/QtTest/qtestsystem.h
 usr/include/*/qt5/QtTest/qtesttouch.h
+usr/include/*/qt5/QtTest/qttestlib-config.h
+usr/include/*/qt5/QtTest/qttestglobal.h
 usr/include/*/qt5/QtTest/qttestversion.h
 usr/include/*/qt5/QtWidgets/QAbstractButton
 usr/include/*/qt5/QtWidgets/QAbstractGraphicsShapeItem

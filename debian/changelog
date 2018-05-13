@@ -9,6 +9,8 @@ qtbase-opensource-src (5.11.0~rc1+dfsg-1) UNRELEASED; urgency=medium
     - fix_loading_opengl.diff
     - mesa_18.diff
     - resources_for_examples.diff
+  * Update install files for new upstream files.
+    - Add new binary package qt5-flatpak-platformtheme.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 12 May 2018 20:23:24 -0500
 
