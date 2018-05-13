@@ -2,6 +2,13 @@ qtbase-opensource-src (5.11.0~rc1+dfsg-1) UNRELEASED; urgency=medium
 
   [ Simon Quigley ]
   * New upstream release candidate.
+  * Refresh patches for the new upstream release, and remove
+    reverse-applicable ones:
+    - dead_key_symbols.diff
+    - extend_mariadb_define_check.diff
+    - fix_loading_opengl.diff
+    - mesa_18.diff
+    - resources_for_examples.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 12 May 2018 20:23:24 -0500
 

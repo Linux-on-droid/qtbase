@@ -10,7 +10,7 @@ Last-Update: 2017-12-07
 
 --- a/config.tests/unix/futimens/futimens.pro
 +++ b/config.tests/unix/futimens/futimens.pro
-@@ -4,3 +4,4 @@
+@@ -4,3 +4,4 @@ SOURCES += futimens.cpp
  # targets. This simplifies the logic at the call site dramatically, as it isn't
  # strictly needed compared to futimes().
  darwin: QMAKE_CXXFLAGS += -Werror=unguarded-availability
@@ -22,7 +22,7 @@ Last-Update: 2017-12-07
 +QMAKE_LFLAGS += -Wl,--fatal-warnings
 --- a/src/corelib/configure.json
 +++ b/src/corelib/configure.json
-@@ -236,6 +236,7 @@
+@@ -254,6 +254,7 @@
              "label": "O_CLOEXEC",
              "type": "compile",
              "test": {
