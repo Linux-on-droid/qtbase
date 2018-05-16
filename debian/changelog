@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.11.0~rc1+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.0~rc1+dfsg-1) experimental; urgency=medium
 
-  [ Simon Quigley ]
   * New upstream release candidate.
   * Refresh patches for the new upstream release, and remove
     reverse-applicable ones:
@@ -16,7 +15,7 @@ qtbase-opensource-src (5.11.0~rc1+dfsg-1) UNRELEASED; urgency=medium
   * Update copyright using debian/scripts/update-copyright.
   * Update symbols from amd64 build logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 12 May 2018 20:23:24 -0500
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 15 May 2018 23:08:16 -0500
 
 qtbase-opensource-src (5.10.1+dfsg-6) unstable; urgency=medium
 
