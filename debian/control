@@ -125,7 +125,7 @@ Description: Qt 5 Flatpak platform theme
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package provides the Flatpak platform theme, which makes Qt use
- native icon themes, fonts, and dialogs on Flatpak-based environments.
+ native file dialogs on Flatpak-based environments.
 
 Package: libqt5network5
 Architecture: any
