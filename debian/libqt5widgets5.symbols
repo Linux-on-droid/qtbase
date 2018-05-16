@@ -1,9 +1,10 @@
-# SymbolsHelper-Confirmed: 5.10.1 amd64 arm64 armel armhf hurd-i386 i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sh4 sparc64 x32
+# SymbolsHelper-Confirmed: 5.11.0~rc1 amd64
 libQt5Widgets.so.5 libqt5widgets5 #MINVER#
 | libqt5widgets5 #MINVER#, qtbase-abi-5-10-0
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
+ Qt_5.11@Qt_5.11 5.11.0~rc1
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -607,6 +608,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN11QHeaderView21setMinimumSectionSizeEi@Qt_5 5.0.2
  _ZN11QHeaderView21setSortIndicatorShownEb@Qt_5 5.0.2
  _ZN11QHeaderView21setStretchLastSectionEb@Qt_5 5.0.2
+ _ZN11QHeaderView22setFirstSectionMovableEb@Qt_5 5.11.0~rc1
  _ZN11QHeaderView22setOffsetToLastSectionEv@Qt_5 5.0.2
  _ZN11QHeaderView23resetDefaultSectionSizeEv@Qt_5 5.5.0
  _ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii@Qt_5 5.0.2
@@ -2780,6 +2782,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN17QAbstractItemView10timerEventEP11QTimerEvent@Qt_5 5.0.2
  _ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE@Qt_5 5.0.2
  _ZN17QAbstractItemView11dataChangedERK11QModelIndexS2_RK7QVectorIiE@Qt_5 5.0.2
+ _ZN17QAbstractItemView11eventFilterEP7QObjectP6QEvent@Qt_5 5.11.0~rc1
  _ZN17QAbstractItemView11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.0.2
  _ZN17QAbstractItemView11qt_metacastEPKc@Qt_5 5.0.2
  _ZN17QAbstractItemView11resizeEventEP12QResizeEvent@Qt_5 5.0.2
@@ -3362,7 +3365,6 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN19QApplicationPrivate20translateTouchCancelEP12QTouchDevicem@Qt_5_PRIVATE_API 5.0.2 1
  _ZN19QApplicationPrivate21cleanupMultitouch_sysEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN19QApplicationPrivate21createEventDispatcherEv@Qt_5_PRIVATE_API 5.0.2 1
- _ZN19QApplicationPrivate22overrides_native_styleE@Qt_5_PRIVATE_API 5.3.1 1
  _ZN19QApplicationPrivate22translateRawTouchEventEP7QWidgetP12QTouchDeviceRK5QListIN11QTouchEvent10TouchPointEEm@Qt_5_PRIVATE_API 5.0.2 1
  _ZN19QApplicationPrivate23notifyWindowIconChangedEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZN19QApplicationPrivate23sendSyntheticEnterLeaveEP7QWidget@Qt_5_PRIVATE_API 5.0.2 1
@@ -5403,6 +5405,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN9QTreeView22setAllColumnsShowFocusEb@Qt_5 5.0.2
  _ZN9QTreeView23setExpandsOnDoubleClickEb@Qt_5 5.0.2
  _ZN9QTreeView25horizontalScrollbarActionEi@Qt_5 5.0.2
+ _ZN9QTreeView29verticalScrollbarValueChangedEi@Qt_5 5.11.0~rc1
  _ZN9QTreeView5resetEv@Qt_5 5.0.2
  _ZN9QTreeView6expandERK11QModelIndex@Qt_5 5.0.2
  _ZN9QTreeView8collapseERK11QModelIndex@Qt_5 5.0.2
@@ -5701,6 +5704,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK11QHeaderView19stretchSectionCountEv@Qt_5 5.0.2
  _ZNK11QHeaderView20isSortIndicatorShownEv@Qt_5 5.0.2
  _ZNK11QHeaderView20sortIndicatorSectionEv@Qt_5 5.0.2
+ _ZNK11QHeaderView21isFirstSectionMovableEv@Qt_5 5.11.0~rc1
  _ZNK11QHeaderView23cascadingSectionResizesEv@Qt_5 5.0.2
  _ZNK11QHeaderView23resizeContentsPrecisionEv@Qt_5 5.2.0~alpha1
  _ZNK11QHeaderView23sectionSizeFromContentsEi@Qt_5 5.0.2
@@ -5722,6 +5726,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK11QListWidget11currentItemEv@Qt_5 5.0.2
  _ZNK11QListWidget12isItemHiddenEPK15QListWidgetItem@Qt_5 5.0.2
  _ZNK11QListWidget13indexFromItemEP15QListWidgetItem@Qt_5 5.0.2
+ _ZNK11QListWidget13indexFromItemEPK15QListWidgetItem@Qt_5 5.11.0~rc1
  _ZNK11QListWidget13itemFromIndexERK11QModelIndex@Qt_5 5.0.2
  _ZNK11QListWidget13selectedItemsEv@Qt_5 5.0.2
  _ZNK11QListWidget14isItemSelectedEPK15QListWidgetItem@Qt_5 5.0.2
@@ -6025,6 +6030,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK12QTableWidget12visualColumnEi@Qt_5 5.0.2
  _ZNK12QTableWidget13currentColumnEv@Qt_5 5.0.2
  _ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem@Qt_5 5.0.2
+ _ZNK12QTableWidget13indexFromItemEPK16QTableWidgetItem@Qt_5 5.11.0~rc1
  _ZNK12QTableWidget13itemFromIndexERK11QModelIndex@Qt_5 5.0.2
  _ZNK12QTableWidget13itemPrototypeEv@Qt_5 5.0.2
  _ZNK12QTableWidget13selectedItemsEv@Qt_5 5.0.2
@@ -6858,10 +6864,10 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK18QWidgetLineControl10anchorRectEv@Qt_5_PRIVATE_API 5.7.0 1
  _ZNK18QWidgetLineControl10cursorRectEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK18QWidgetLineControl10findInMaskEibb5QChar@Qt_5_PRIVATE_API 5.0.2 1
- _ZNK18QWidgetLineControl10maskStringEjRK7QStringb@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK18QWidgetLineControl10maskStringEiRK7QStringb@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZNK18QWidgetLineControl10metaObjectEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK18QWidgetLineControl10rectForPosEi@Qt_5_PRIVATE_API 5.7.0 1
- _ZNK18QWidgetLineControl11clearStringEjj@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK18QWidgetLineControl11clearStringEii@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZNK18QWidgetLineControl11stripStringERK7QString@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK18QWidgetLineControl12isValidInputE5QCharS0_@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK18QWidgetLineControl14redoTextLayoutEv@Qt_5_PRIVATE_API 5.0.2 1
@@ -7020,6 +7026,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK20QGraphicsItemPrivate24combineTransformToParentEP10QTransformPKS0_@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK20QGraphicsItemPrivate26combineTransformFromParentEP10QTransformPKS0_@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK20QGraphicsItemPrivate26sceneEffectiveBoundingRectEv@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK20QGraphicsItemPrivate28genericMapFromSceneTransformEPK7QWidget@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZNK20QGraphicsItemPrivate5depthEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK20QGraphicsItemPrivate5widthEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK20QGraphicsItemPrivate6heightEv@Qt_5_PRIVATE_API 5.0.2 1

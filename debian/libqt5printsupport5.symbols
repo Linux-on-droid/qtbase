@@ -1,9 +1,10 @@
-# SymbolsHelper-Confirmed: 5.10.0 amd64 i386
+# SymbolsHelper-Confirmed: 5.11.0~rc1 amd64
 libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
 | libqt5printsupport5 #MINVER#, qtbase-abi-5-10-0
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
+ Qt_5.11@Qt_5.11 5.11.0~rc1
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -17,17 +18,21 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.0~beta 1
  _Z19qt_printerPaperSizeN8QPrinter11OrientationEN17QPagedPaintDevice8PageSizeENS_4UnitEi@Qt_5 5.0.2
  _Z20qt_multiplierForUnitN8QPrinter4UnitEi@Qt_5 5.0.2
+ _ZGVZN9QMetaType24registerEqualsComparatorI9QPageSizeEEbvE1f@Qt_5 5.11.0~rc1
  _ZN12QCUPSSupport10setJobHoldEP8QPrinterNS_12JobHoldUntilERK5QTime@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN12QCUPSSupport10setPageSetEP8QPrinterNS_7PageSetE@Qt_5_PRIVATE_API 5.2.0~alpha1 1
+ _ZN12QCUPSSupport12setPageRangeEP8QPrinterRK7QString@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN12QCUPSSupport12setPageRangeEP8QPrinterii@Qt_5_PRIVATE_API 5.2.0~alpha1 1
- _ZN12QCUPSSupport13setCupsOptionER11QStringListRK7QStringS4_@Qt_5_PRIVATE_API 5.2.0~alpha1 1
+ _ZN12QCUPSSupport13setCupsOptionEP8QPrinterRK7QStringS4_@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN12QCUPSSupport13setJobBillingEP8QPrinterRK7QString@Qt_5_PRIVATE_API 5.2.0~alpha1 1
+ _ZN12QCUPSSupport14parseJobSheetsERK7QString@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN12QCUPSSupport14setBannerPagesEP8QPrinterNS_10BannerPageES2_@Qt_5_PRIVATE_API 5.2.0~alpha1 1
- _ZN12QCUPSSupport14setCupsOptionsEP8QPrinterRK11QStringList@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN12QCUPSSupport14setJobPriorityEP8QPrinteri@Qt_5_PRIVATE_API 5.2.0~alpha1 1
- _ZN12QCUPSSupport15clearCupsOptionER11QStringListRK7QString@Qt_5_PRIVATE_API 5.6.0~beta 1
- _ZN12QCUPSSupport15cupsOptionsListEP8QPrinter@Qt_5_PRIVATE_API 5.2.0~alpha1 1
+ _ZN12QCUPSSupport15clearCupsOptionEP8QPrinterRK7QString@Qt_5_PRIVATE_API 5.11.0~rc1 1
+ _ZN12QCUPSSupport16clearCupsOptionsEP8QPrinter@Qt_5_PRIVATE_API 5.11.0~rc1 1
+ _ZN12QCUPSSupport17parseJobHoldUntilERK7QString@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN12QCUPSSupport22setPagesPerSheetLayoutEP8QPrinterNS_13PagesPerSheetENS_19PagesPerSheetLayoutE@Qt_5_PRIVATE_API 5.2.0~alpha1 1
+ _ZN12QPrintDevice11setPropertyENS_22PrintDevicePropertyKeyERK8QVariant@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN12QPrintDeviceC1EP20QPlatformPrintDevice@Qt_5_PRIVATE_API 5.3.0 1
  _ZN12QPrintDeviceC1ERK7QString@Qt_5_PRIVATE_API 5.3.0 1
  _ZN12QPrintDeviceC1ERKS_@Qt_5_PRIVATE_API 5.3.0 1
@@ -179,6 +184,7 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZN20QAbstractPrintDialogD0Ev@Qt_5 5.0.2
  _ZN20QAbstractPrintDialogD1Ev@Qt_5 5.0.2
  _ZN20QAbstractPrintDialogD2Ev@Qt_5 5.0.2
+ _ZN20QPlatformPrintDevice11setPropertyEN12QPrintDevice22PrintDevicePropertyKeyERK8QVariant@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN20QPlatformPrintDevice14createPageSizeERK7QStringRK5QSizeS2_@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN20QPlatformPrintDevice14createPageSizeEiRK5QSizeRK7QString@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN20QPlatformPrintDeviceC1ERK7QString@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -200,7 +206,6 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZN23QPlatformPrinterSupport17createPrintDeviceEP20QPlatformPrintDevice@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformPrinterSupport17createPrintDeviceERK7QString@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformPrinterSupport23createNativePrintEngineEN8QPrinter11PrinterModeERK7QString@Qt_5_PRIVATE_API 5.9.2 1
- _ZN23QPlatformPrinterSupport24createDefaultPrintDeviceEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformPrinterSupportC1Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformPrinterSupportC2Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformPrinterSupportD0Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -269,6 +274,7 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZNK12QPrintDevice17supportedPageSizeERK6QSizeFN9QPageSize4UnitE@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK12QPrintDevice17supportedPageSizeERK7QString@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK12QPrintDevice17supportedPageSizeERK9QPageSize@Qt_5_PRIVATE_API 5.3.0 1
+ _ZNK12QPrintDevice18isFeatureAvailableENS_22PrintDevicePropertyKeyERK8QVariant@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZNK12QPrintDevice18supportedMimeTypesEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK12QPrintDevice18supportedPageSizesEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK12QPrintDevice19supportedColorModesEv@Qt_5_PRIVATE_API 5.3.0 1
@@ -288,6 +294,7 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZNK12QPrintDevice7isValidEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK12QPrintDevice8isRemoteEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK12QPrintDevice8locationEv@Qt_5_PRIVATE_API 5.3.0 1
+ _ZNK12QPrintDevice8propertyENS_22PrintDevicePropertyKeyE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZNK12QPrintDevice9isDefaultEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK12QPrintDeviceeqERKS_@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK12QPrintDialog10metaObjectEv@Qt_5 5.0.2
@@ -355,6 +362,7 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZNK20QPlatformPrintDevice17supportedPageSizeERK6QSizeFN9QPageSize4UnitE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformPrintDevice17supportedPageSizeERK7QString@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformPrintDevice17supportedPageSizeERK9QPageSize@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZNK20QPlatformPrintDevice18isFeatureAvailableEN12QPrintDevice22PrintDevicePropertyKeyERK8QVariant@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZNK20QPlatformPrintDevice18supportedMimeTypesEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformPrintDevice18supportedPageSizesEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformPrintDevice19supportedColorModesEv@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -374,6 +382,7 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZNK20QPlatformPrintDevice7isValidEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformPrintDevice8isRemoteEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformPrintDevice8locationEv@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZNK20QPlatformPrintDevice8propertyEN12QPrintDevice22PrintDevicePropertyKeyE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZNK20QPlatformPrintDevice9isDefaultEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK23QPlatformPrinterSupport20defaultPrintDeviceIdEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK23QPlatformPrinterSupport23availablePrintDeviceIdsEv@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -420,6 +429,8 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZNK8QPrinter9paperRectEv@Qt_5 5.0.2
  _ZNK8QPrinter9paperSizeENS_4UnitE@Qt_5 5.0.2
  _ZNK8QPrinter9paperSizeEv@Qt_5 5.0.2
+ (optional=templinst)_ZNSt6vectorISt4pairIiiESaIS1_EE12emplace_backIJS1_EEERS1_DpOT_@Qt_5 5.11.0~rc1
+ (optional=templinst)_ZNSt6vectorISt4pairIiiESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5 5.11.0~rc1
  _ZTI12QPrintDialog@Qt_5 5.0.2
  _ZTI12QPrintEngine@Qt_5 5.0.2
  _ZTI15QPdfPrintEngine@Qt_5_PRIVATE_API 5.0.2 1
@@ -458,6 +469,7 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZTV23QPlatformPrinterSupport@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTV29QPlatformPrinterSupportPlugin@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTV8QPrinter@Qt_5 5.0.2
+ (optional=templinst)_ZZN9QMetaType24registerEqualsComparatorI9QPageSizeEEbvE1f@Qt_5 5.11.0~rc1
  _Zls6QDebugRK12QPrintDevice@Qt_5_PRIVATE_API 5.5.0 1
  _Zls6QDebugRK12QPrinterInfo@Qt_5 5.5.0
  (c++)"non-virtual thunk to QAbstractPrintDialog::~QAbstractPrintDialog()@Qt_5" 5.0.2

@@ -1,9 +1,10 @@
-# SymbolsHelper-Confirmed: 5.10.1 amd64 arm64 hurd-i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc powerpcspe x32
+# SymbolsHelper-Confirmed: 5.11.0~rc1 amd64
 libQt5Network.so.5 libqt5network5 #MINVER#
 | libqt5network5 #MINVER#, qtbase-abi-5-10-0
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
+ Qt_5.11@Qt_5.11 5.11.0~rc1
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -536,6 +537,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN17QNetworkDiskCacheD2Ev@Qt_5 5.0.2
  _ZN17QNetworkInterface12allAddressesEv@Qt_5 5.0.2
  _ZN17QNetworkInterface13allInterfacesEv@Qt_5 5.0.2
+ _ZN17QNetworkInterface16staticMetaObjectE@Qt_5 5.11.0~rc1
  _ZN17QNetworkInterface17interfaceFromNameERK7QString@Qt_5 5.0.2
  _ZN17QNetworkInterface18interfaceFromIndexEi@Qt_5 5.0.2
  _ZN17QNetworkInterface22interfaceIndexFromNameERK7QString@Qt_5 5.7.0
@@ -564,11 +566,13 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN17QSslConfiguration20defaultConfigurationEv@Qt_5 5.0.2
  _ZN17QSslConfiguration20systemCaCertificatesEv@Qt_5 5.5.0
  _ZN17QSslConfiguration23setAllowedNextProtocolsE5QListI10QByteArrayE@Qt_5 5.3.0
+ _ZN17QSslConfiguration23setBackendConfigurationERK4QMapI10QByteArray8QVariantE@Qt_5 5.11.0~rc1
  _ZN17QSslConfiguration23setDefaultConfigurationERKS_@Qt_5 5.0.2
  _ZN17QSslConfiguration23supportedEllipticCurvesEv@Qt_5 5.5.0
  _ZN17QSslConfiguration24setLocalCertificateChainERK5QListI15QSslCertificateE@Qt_5 5.1.0
  _ZN17QSslConfiguration26setDiffieHellmanParametersERK27QSslDiffieHellmanParameters@Qt_5 5.8.0
  _ZN17QSslConfiguration27setPreSharedKeyIdentityHintERK10QByteArray@Qt_5 5.8.0
+ _ZN17QSslConfiguration29setBackendConfigurationOptionERK10QByteArrayRK8QVariant@Qt_5 5.11.0~rc1
  _ZN17QSslConfigurationC1ERKS_@Qt_5 5.0.2
  _ZN17QSslConfigurationC1Ev@Qt_5 5.0.2
  _ZN17QSslConfigurationC2ERKS_@Qt_5 5.0.2
@@ -631,6 +635,9 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN20QNetworkAddressEntry10setNetmaskERK12QHostAddress@Qt_5 5.0.2
  _ZN20QNetworkAddressEntry12setBroadcastERK12QHostAddress@Qt_5 5.0.2
  _ZN20QNetworkAddressEntry15setPrefixLengthEi@Qt_5 5.0.2
+ _ZN20QNetworkAddressEntry17setDnsEligibilityENS_20DnsEligibilityStatusE@Qt_5 5.11.0~rc1
+ _ZN20QNetworkAddressEntry18setAddressLifetimeE14QDeadlineTimerS0_@Qt_5 5.11.0~rc1
+ _ZN20QNetworkAddressEntry20clearAddressLifetimeEv@Qt_5 5.11.0~rc1
  _ZN20QNetworkAddressEntry5setIpERK12QHostAddress@Qt_5 5.0.2
  _ZN20QNetworkAddressEntryC1ERKS_@Qt_5 5.0.2
  _ZN20QNetworkAddressEntryC1Ev@Qt_5 5.0.2
@@ -964,13 +971,18 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK12QHostAddress10isInSubnetERK5QPairIS_iE@Qt_5 5.0.2
  _ZNK12QHostAddress10isInSubnetERKS_i@Qt_5 5.0.2
  _ZNK12QHostAddress10isLoopbackEv@Qt_5 5.0.2
+ _ZNK12QHostAddress11isBroadcastEv@Qt_5 5.11.0~rc1
+ _ZNK12QHostAddress11isLinkLocalEv@Qt_5 5.11.0~rc1
  _ZNK12QHostAddress11isMulticastEv@Qt_5 5.6.0~beta
+ _ZNK12QHostAddress11isSiteLocalEv@Qt_5 5.11.0~rc1
  _ZNK12QHostAddress13toIPv4AddressEPb@Qt_5 5.5.0
  _ZNK12QHostAddress13toIPv4AddressEv@Qt_5 5.0.2
  _ZNK12QHostAddress13toIPv6AddressEv@Qt_5 5.0.2
+ _ZNK12QHostAddress20isUniqueLocalUnicastEv@Qt_5 5.11.0~rc1
  _ZNK12QHostAddress6isNullEv@Qt_5 5.0.2
  _ZNK12QHostAddress7isEqualERKS_6QFlagsINS_18ConversionModeFlagEE@Qt_5 5.8.0
  _ZNK12QHostAddress7scopeIdEv@Qt_5 5.0.2
+ _ZNK12QHostAddress8isGlobalEv@Qt_5 5.11.0~rc1
  _ZNK12QHostAddress8protocolEv@Qt_5 5.0.2
  _ZNK12QHostAddress8toStringEv@Qt_5 5.0.2
  _ZNK12QHostAddresseqENS_14SpecialAddressE@Qt_5 5.0.2
@@ -1145,7 +1157,9 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK17QNetworkInterface14addressEntriesEv@Qt_5 5.0.2
  _ZNK17QNetworkInterface15hardwareAddressEv@Qt_5 5.0.2
  _ZNK17QNetworkInterface17humanReadableNameEv@Qt_5 5.0.2
+ _ZNK17QNetworkInterface23maximumTransmissionUnitEv@Qt_5 5.11.0~rc1
  _ZNK17QNetworkInterface4nameEv@Qt_5 5.0.2
+ _ZNK17QNetworkInterface4typeEv@Qt_5 5.11.0~rc1
  _ZNK17QNetworkInterface5flagsEv@Qt_5 5.0.2
  _ZNK17QNetworkInterface5indexEv@Qt_5 5.0.2
  _ZNK17QNetworkInterface7isValidEv@Qt_5 5.0.2
@@ -1162,6 +1176,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK17QSslConfiguration16localCertificateEv@Qt_5 5.0.2
  _ZNK17QSslConfiguration18ephemeralServerKeyEv@Qt_5 5.7.0
  _ZNK17QSslConfiguration20allowedNextProtocolsEv@Qt_5 5.3.0
+ _ZNK17QSslConfiguration20backendConfigurationEv@Qt_5 5.11.0~rc1
  _ZNK17QSslConfiguration20peerCertificateChainEv@Qt_5 5.0.2
  _ZNK17QSslConfiguration21localCertificateChainEv@Qt_5 5.1.0
  _ZNK17QSslConfiguration22nextNegotiatedProtocolEv@Qt_5 5.3.0
@@ -1188,7 +1203,12 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK20QDnsDomainNameRecord10timeToLiveEv@Qt_5 5.0.2
  _ZNK20QDnsDomainNameRecord4nameEv@Qt_5 5.0.2
  _ZNK20QDnsDomainNameRecord5valueEv@Qt_5 5.0.2
+ _ZNK20QNetworkAddressEntry11isPermanentEv@Qt_5 5.11.0~rc1
  _ZNK20QNetworkAddressEntry12prefixLengthEv@Qt_5 5.0.2
+ _ZNK20QNetworkAddressEntry14dnsEligibilityEv@Qt_5 5.11.0~rc1
+ _ZNK20QNetworkAddressEntry15isLifetimeKnownEv@Qt_5 5.11.0~rc1
+ _ZNK20QNetworkAddressEntry16validityLifetimeEv@Qt_5 5.11.0~rc1
+ _ZNK20QNetworkAddressEntry17preferredLifetimeEv@Qt_5 5.11.0~rc1
  _ZNK20QNetworkAddressEntry2ipEv@Qt_5 5.0.2
  _ZNK20QNetworkAddressEntry7netmaskEv@Qt_5 5.0.2
  _ZNK20QNetworkAddressEntry9broadcastEv@Qt_5 5.0.2
@@ -1312,7 +1332,6 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  (optional=templinst|subst)_ZNSt6vectorIhSaIhEE17_M_default_appendE{size_t}@Qt_5 5.8.0
  (optional=templinst)_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Qt_5 5.10.0
  (optional=templinst)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.9.1
- (optional=templinst|arch=!kfreebsd-amd64 !x32)_ZSt13move_backwardIjESt15_Deque_iteratorIT_RS1_PS1_ES4_S4_S4_@Qt_5 5.8.0
  (optional=templinst|arch=armel armhf hurd-i386 i386 ia64 kfreebsd-i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sparc64)_ZSt4moveIjESt15_Deque_iteratorIT_RS1_PS1_ES4_S4_S4_@Qt_5 5.10.0
  _ZTI10QDnsLookup@Qt_5 5.0.2
  _ZTI10QSslSocket@Qt_5 5.0.2

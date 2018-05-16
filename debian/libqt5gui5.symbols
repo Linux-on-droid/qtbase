@@ -1,9 +1,10 @@
-# SymbolsHelper-Confirmed: 5.10.1 amd64
+# SymbolsHelper-Confirmed: 5.11.0~rc1 amd64
 libQt5Gui.so.5 libqt5gui5 #MINVER#
 | libqt5gui5 #MINVER#, qtbase-abi-5-10-0
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
+ Qt_5.11@Qt_5.11 5.11.0~rc1
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -56,6 +57,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _Z19qtVectorPathForPathRK12QPainterPath@Qt_5 5.0.2
  _Z19qt_handleMouseEventP7QWindowRK7QPointFS3_6QFlagsIN2Qt11MouseButtonEES4_INS5_16KeyboardModifierEE@Qt_5 5.9.0~beta
  _Z19qt_handleMouseEventP7QWindowRK7QPointFS3_6QFlagsIN2Qt11MouseButtonEES4_INS5_16KeyboardModifierEEi@Qt_5 5.6.0~beta
+ _Z19qt_handleMouseEventP7QWindowRK7QPointFS3_6QFlagsIN2Qt11MouseButtonEES6_N6QEvent4TypeES4_INS5_16KeyboardModifierEEi@Qt_5 5.11.0~rc1
  _Z19qt_handleTouchEventP7QWindowP12QTouchDeviceRK5QListIN11QTouchEvent10TouchPointEE6QFlagsIN2Qt16KeyboardModifierEE@Qt_5 5.0.2
  _Z20hb_qt_get_font_funcsv@Qt_5 5.2.0
  _Z20qt_scaleForTransformRK10QTransformPd@Qt_5 5.2.0
@@ -105,6 +107,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _Z5qHashRK8QRawFontj@Qt_5 5.8.0
  _Z5qHashRKN22QGuiApplicationPrivate20ActiveTouchPointsKeyE@Qt_5_PRIVATE_API 5.0.2 1
  _Z9qPolylineRK12QPainterPathRK10QTransformdb@Qt_5 5.9.0~beta
+ _ZGVZNK29QWindowSystemInterfacePrivate10MouseEvent18enhancedMouseEventEvE15disableEnhanced@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN10QBasicDrag10cancelDragEv@Qt_5_PRIVATE_API 5.7.0 1
  _ZN10QBasicDrag11eventFilterEP7QObjectP6QEvent@Qt_5_PRIVATE_API 5.1.0 1
  _ZN10QBasicDrag12updateCursorEN2Qt10DropActionE@Qt_5_PRIVATE_API 5.1.0 1
@@ -495,6 +498,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN11QIconLoader17ensureInitializedEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QIconLoader17updateSystemThemeEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QIconLoader18setThemeSearchPathERK11QStringList@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN11QIconLoader22setFallbackSearchPathsERK11QStringList@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN11QIconLoader8instanceEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QIconLoaderC1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QIconLoaderC2Ev@Qt_5_PRIVATE_API 5.0.2 1
@@ -612,7 +616,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN11QStyleHints28keyboardInputIntervalChangedEi@Qt_5 5.5.0
  _ZN11QStyleHints28setMousePressAndHoldIntervalEi@Qt_5 5.7.0
  _ZN11QStyleHints31mouseDoubleClickIntervalChangedEi@Qt_5 5.5.0
+ _ZN11QStyleHints31setMouseQuickSelectionThresholdEi@Qt_5 5.11.0~rc1
  _ZN11QStyleHints32mousePressAndHoldIntervalChangedEi@Qt_5 5.7.0
+ _ZN11QStyleHints35mouseQuickSelectionThresholdChangedEi@Qt_5 5.11.0~rc1
  _ZN11QStyleHintsC1Ev@Qt_5 5.0.2
  _ZN11QStyleHintsC2Ev@Qt_5 5.0.2
  _ZN11QTextCursor10createListEN15QTextListFormat5StyleE@Qt_5 5.0.2
@@ -1672,6 +1678,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN15QGuiApplication10windowIconEv@Qt_5 5.3.0
  _ZN15QGuiApplication11focusObjectEv@Qt_5 5.0.2
  _ZN15QGuiApplication11focusWindowEv@Qt_5 5.0.2
+ _ZN15QGuiApplication11fontChangedERK5QFont@Qt_5 5.11.0~rc1
  _ZN15QGuiApplication11inputMethodEv@Qt_5 5.0.2
  _ZN15QGuiApplication11modalWindowEv@Qt_5 5.0.2
  _ZN15QGuiApplication11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.0.2
@@ -1820,6 +1827,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN15QPlatformWindow14setWindowStateE6QFlagsIN2Qt11WindowStateEE@Qt_5_PRIVATE_API 5.10.0 1
  _ZN15QPlatformWindow14setWindowTitleERK7QString@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformWindow15initialGeometryEPK7QWindowRK5QRectii@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN15QPlatformWindow15startSystemMoveERK6QPoint@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN15QPlatformWindow17formatWindowTitleERK7QStringS2_@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformWindow17invalidateSurfaceEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN15QPlatformWindow17setWindowFilePathERK7QString@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -3144,7 +3152,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN21QPlatformThemePrivateD2Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN21QRasterPlatformPixmap15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN21QRasterPlatformPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE@Qt_5_PRIVATE_API 5.3.0 1
- _ZN21QRasterPlatformPixmap18systemOpaqueFormatEv@Qt_5_PRIVATE_API 5.8.0 1
+ _ZN21QRasterPlatformPixmap18systemNativeFormatEv@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN21QRasterPlatformPixmap19setDevicePixelRatioEd@Qt_5_PRIVATE_API 5.2.0 1
  _ZN21QRasterPlatformPixmap20createPixmapForImageE6QImage6QFlagsIN2Qt19ImageConversionFlagEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN21QRasterPlatformPixmap4copyEPK15QPlatformPixmapRK5QRect@Qt_5_PRIVATE_API 5.0.2 1
@@ -3342,11 +3350,17 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  (optional=templinst)_ZN22QWindowSystemInterface16handleLeaveEventINS_19SynchronousDeliveryEEEvP7QWindow@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleLeaveEventINS_20AsynchronousDeliveryEEEvP7QWindow@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_15DefaultDeliveryEEEvP7QWindowRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_15DefaultDeliveryEEEvP7QWindowRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES9_N6QEvent4TypeES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_15DefaultDeliveryEEEvP7QWindowmRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_15DefaultDeliveryEEEvP7QWindowmRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES9_N6QEvent4TypeES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_19SynchronousDeliveryEEEvP7QWindowRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_19SynchronousDeliveryEEEvP7QWindowRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES9_N6QEvent4TypeES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_19SynchronousDeliveryEEEvP7QWindowmRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_19SynchronousDeliveryEEEvP7QWindowmRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES9_N6QEvent4TypeES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_20AsynchronousDeliveryEEEvP7QWindowRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_20AsynchronousDeliveryEEEvP7QWindowRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES9_N6QEvent4TypeES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_20AsynchronousDeliveryEEEvP7QWindowmRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (optional=templinst)_ZN22QWindowSystemInterface16handleMouseEventINS_20AsynchronousDeliveryEEEvP7QWindowmRK7QPointFS6_6QFlagsIN2Qt11MouseButtonEES9_N6QEvent4TypeES7_INS8_16KeyboardModifierEENS8_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleTouchEventINS_15DefaultDeliveryEEEvP7QWindowP12QTouchDeviceRK5QListINS_10TouchPointEE6QFlagsIN2Qt16KeyboardModifierEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleTouchEventINS_15DefaultDeliveryEEEvP7QWindowmP12QTouchDeviceRK5QListINS_10TouchPointEE6QFlagsIN2Qt16KeyboardModifierEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface16handleTouchEventINS_19SynchronousDeliveryEEEvP7QWindowP12QTouchDeviceRK5QListINS_10TouchPointEE6QFlagsIN2Qt16KeyboardModifierEE@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -3400,7 +3414,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QWindowSystemInterface25handleEnterWhatsThisEventEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface25handleWindowScreenChangedEP7QWindowP7QScreen@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface26handleFrameStrutMouseEventEP7QWindowRK7QPointFS4_6QFlagsIN2Qt11MouseButtonEES5_INS6_16KeyboardModifierEENS6_16MouseEventSourceE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN22QWindowSystemInterface26handleFrameStrutMouseEventEP7QWindowRK7QPointFS4_6QFlagsIN2Qt11MouseButtonEES7_N6QEvent4TypeES5_INS6_16KeyboardModifierEENS6_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN22QWindowSystemInterface26handleFrameStrutMouseEventEP7QWindowmRK7QPointFS4_6QFlagsIN2Qt11MouseButtonEES5_INS6_16KeyboardModifierEENS6_16MouseEventSourceE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN22QWindowSystemInterface26handleFrameStrutMouseEventEP7QWindowmRK7QPointFS4_6QFlagsIN2Qt11MouseButtonEES7_N6QEvent4TypeES5_INS6_16KeyboardModifierEENS6_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN22QWindowSystemInterface26handleScreenGeometryChangeEP7QScreenRK5QRectS4_@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface28handleSafeAreaMarginsChangedINS_15DefaultDeliveryEEEvP7QWindow@Qt_5_PRIVATE_API 5.10.1 1
  (optional=templinst)_ZN22QWindowSystemInterface28handleSafeAreaMarginsChangedINS_19SynchronousDeliveryEEEvP7QWindow@Qt_5_PRIVATE_API 5.10.1 1
@@ -4179,7 +4195,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN5QIcon12hasThemeIconERK7QString@Qt_5 5.0.2
  _ZN5QIcon12setThemeNameERK7QString@Qt_5 5.0.2
  _ZN5QIcon16themeSearchPathsEv@Qt_5 5.0.2
+ _ZN5QIcon19fallbackSearchPathsEv@Qt_5 5.11.0~rc1
  _ZN5QIcon19setThemeSearchPathsERK11QStringList@Qt_5 5.0.2
+ _ZN5QIcon22setFallbackSearchPathsERK11QStringList@Qt_5 5.11.0~rc1
  _ZN5QIcon6detachEv@Qt_5 5.0.2
  _ZN5QIcon7addFileERK7QStringRK5QSizeNS_4ModeENS_5StateE@Qt_5 5.0.2
  _ZN5QIcon9addPixmapERK7QPixmapNS_4ModeENS_5StateE@Qt_5 5.0.2
@@ -5086,6 +5104,8 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK11QIconEngine8iconNameEv@Qt_5 5.0.2
  _ZNK11QIconLoader14findIconHelperERK7QStringS2_R11QStringList@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK11QIconLoader16themeSearchPathsEv@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK11QIconLoader18lookupFallbackIconERK7QString@Qt_5_PRIVATE_API 5.11.0~rc1 1
+ _ZNK11QIconLoader19fallbackSearchPathsEv@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZNK11QIconLoader8loadIconERK7QString@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK11QMouseEvent5flagsEv@Qt_5 5.3.0
  _ZNK11QMouseEvent6sourceEv@Qt_5 5.3.0
@@ -5155,6 +5175,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK11QStyleHints24mouseDoubleClickIntervalEv@Qt_5 5.0.2
  _ZNK11QStyleHints25mousePressAndHoldIntervalEv@Qt_5 5.3.0
  _ZNK11QStyleHints27showShortcutsInContextMenusEv@Qt_5 5.10.0
+ _ZNK11QStyleHints28mouseQuickSelectionThresholdEv@Qt_5 5.11.0~rc1
  _ZNK11QTextCursor10atBlockEndEv@Qt_5 5.0.2
  _ZNK11QTextCursor10charFormatEv@Qt_5 5.0.2
  _ZNK11QTextCursor11blockFormatEv@Qt_5 5.0.2
@@ -5315,6 +5336,8 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK12QFontMetrics14minLeftBearingEv@Qt_5 5.0.2
  _ZNK12QFontMetrics15minRightBearingEv@Qt_5 5.0.2
  _ZNK12QFontMetrics16averageCharWidthEv@Qt_5 5.0.2
+ _ZNK12QFontMetrics17horizontalAdvanceE5QChar@Qt_5 5.11.0~rc1
+ _ZNK12QFontMetrics17horizontalAdvanceERK7QStringi@Qt_5 5.11.0~rc1
  _ZNK12QFontMetrics17tightBoundingRectERK7QString@Qt_5 5.0.2
  _ZNK12QFontMetrics4sizeEiRK7QStringiPi@Qt_5 5.0.2
  _ZNK12QFontMetrics5widthE5QChar@Qt_5 5.0.2
@@ -5499,6 +5522,8 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK13QFontMetricsF14minLeftBearingEv@Qt_5 5.0.2
  _ZNK13QFontMetricsF15minRightBearingEv@Qt_5 5.0.2
  _ZNK13QFontMetricsF16averageCharWidthEv@Qt_5 5.0.2
+ _ZNK13QFontMetricsF17horizontalAdvanceE5QChar@Qt_5 5.11.0~rc1
+ _ZNK13QFontMetricsF17horizontalAdvanceERK7QStringi@Qt_5 5.11.0~rc1
  _ZNK13QFontMetricsF17tightBoundingRectERK7QString@Qt_5 5.0.2
  _ZNK13QFontMetricsF4sizeEiRK7QStringiPi@Qt_5 5.0.2
  _ZNK13QFontMetricsF5widthE5QChar@Qt_5 5.0.2
@@ -7781,6 +7806,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTVN29QWindowSystemInterfacePrivate8KeyEventE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTVN29QWindowSystemInterfacePrivate9UserEventE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTVN4QCss13StyleSelectorE@Qt_5_PRIVATE_API 5.0.2 1
+ _ZZNK29QWindowSystemInterfacePrivate10MouseEvent18enhancedMouseEventEvE15disableEnhanced@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZdvRK10QMatrix4x4f@Qt_5 5.0.2
  _Zeq23QPointingDeviceUniqueIdS_@Qt_5 5.8.0
  _ZeqRK11QPageLayoutS1_@Qt_5 5.3.0

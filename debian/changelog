@@ -14,6 +14,7 @@ qtbase-opensource-src (5.11.0~rc1+dfsg-1) UNRELEASED; urgency=medium
   * Bump debhelper compat to 11, no changes needed.
   * Add my name to the copyright for the Debian packaging.
   * Update copyright using debian/scripts/update-copyright.
+  * Update symbols from amd64 build logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 12 May 2018 20:23:24 -0500
 

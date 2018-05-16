@@ -1,9 +1,10 @@
-# SymbolsHelper-Confirmed: 5.10.1 hurd-i386 ia64 kfreebsd-amd64 kfreebsd-i386
+# SymbolsHelper-Confirmed: 5.11.0~rc1 amd64
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-10-0
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
+ Qt_5.11@Qt_5.11 5.11.0~rc1
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -52,6 +53,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  (subst)_Z14qMallocAligned{size_t}{size_t}@Qt_5 5.0.2
  _Z15lowercasedigitsR11QTextStream@Qt_5 5.0.2
  _Z15qAddPostRoutinePFvvE@Qt_5 5.0.2
+ _Z15qFloatToFloat16P8qfloat16PKfx@Qt_5 5.11.0~rc1
  _Z15qIsEffectiveTLDRK10QStringRef@Qt_5 5.7.0
  (subst)_Z15qReallocAlignedPv{size_t}{size_t}{size_t}@Qt_5 5.0.2
  _Z15qTopLevelDomainRK7QString@Qt_5 5.0.2
@@ -59,6 +61,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _Z15uppercasedigitsR11QTextStream@Qt_5 5.0.2
  _Z16qGlobalQHashSeedv@Qt_5 5.6.0~beta
  _Z16qt_check_pointerPKci@Qt_5 5.0.2
+ _Z17qFloatFromFloat16PfPK8qfloat16x@Qt_5 5.11.0~rc1
  _Z17qFormatLogMessage9QtMsgTypeRK18QMessageLogContextRK7QString@Qt_5 5.4.0
  _Z17qt_message_output9QtMsgTypeRK18QMessageLogContextRK7QString@Qt_5 5.0.2
  _Z18qDetectCpuFeaturesv@Qt_5 5.0.2
@@ -74,7 +77,6 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _Z21qDeleteInEventHandlerP7QObject@Qt_5 5.0.2
  _Z21qRegisterResourceDataiPKhS0_S0_@Qt_5 5.0.2
  _Z21qt_call_post_routinesv@Qt_5 5.0.2
- _Z21qt_logging_to_consolev@Qt_5 5.4.0
  _Z21qt_regexp_toCanonicalRK7QStringN7QRegExp13PatternSyntaxE@Qt_5 5.0.2
  _Z22qInstallMessageHandlerPFv9QtMsgTypeRK18QMessageLogContextRK7QStringE@Qt_5 5.0.2
  _Z23qUnregisterResourceDataiPKhS0_S0_@Qt_5 5.0.2
@@ -312,6 +314,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN10QMutexPoolC2EN6QMutex13RecursionModeEi@Qt_5_PRIVATE_API 5.0.2 1
  _ZN10QMutexPoolD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN10QMutexPoolD2Ev@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN10QRingChunk6detachEv@Qt_5 5.11.0~rc1
  _ZN10QSemaphore10tryAcquireEi@Qt_5 5.0.2
  _ZN10QSemaphore10tryAcquireEii@Qt_5 5.0.2
  _ZN10QSemaphore7acquireEi@Qt_5 5.0.2
@@ -658,8 +661,8 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN12QStorageInfoD1Ev@Qt_5 5.4.0
  _ZN12QStorageInfoD2Ev@Qt_5 5.4.0
  _ZN12QStorageInfoaSERKS_@Qt_5 5.4.0
- _ZN12QSystemError6stringENS_10ErrorScopeEi@Qt_5_PRIVATE_API 5.9.2 1
- _ZN12QSystemError9stdStringEi@Qt_5_PRIVATE_API 5.9.2 1
+ _ZN12QSystemError6stringENS_10ErrorScopeEi@Qt_5 5.11.0~rc1
+ _ZN12QSystemError9stdStringEi@Qt_5 5.11.0~rc1
  _ZN12QTextDecoder9toUnicodeEP7QStringPKci@Qt_5 5.0.2
  _ZN12QTextDecoder9toUnicodeEPKci@Qt_5 5.0.2
  _ZN12QTextDecoder9toUnicodeERK10QByteArray@Qt_5 5.0.2
@@ -2853,6 +2856,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN7QString6numberEmi@Qt_5 5.0.2
  _ZN7QString6numberExi@Qt_5 5.0.2
  _ZN7QString6numberEyi@Qt_5 5.0.2
+ _ZN7QString6removeE13QLatin1StringN2Qt15CaseSensitivityE@Qt_5 5.11.0~rc1
  _ZN7QString6removeE5QCharN2Qt15CaseSensitivityE@Qt_5 5.0.2
  _ZN7QString6removeERKS_N2Qt15CaseSensitivityE@Qt_5 5.0.2
  _ZN7QString6removeEii@Qt_5 5.0.2
@@ -3016,9 +3020,11 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN8QProcessD2Ev@Qt_5 5.0.2
  _ZN8QSysInfo10kernelTypeEv@Qt_5 5.4.0
  _ZN8QSysInfo11productTypeEv@Qt_5 5.4.0
+ _ZN8QSysInfo12bootUniqueIdEv@Qt_5 5.11.0~rc1
  _ZN8QSysInfo13kernelVersionEv@Qt_5 5.4.0
  _ZN8QSysInfo14productVersionEv@Qt_5 5.4.0
  _ZN8QSysInfo15machineHostNameEv@Qt_5 5.6.0~beta
+ _ZN8QSysInfo15machineUniqueIdEv@Qt_5 5.11.0~rc1
  _ZN8QSysInfo17prettyProductNameEv@Qt_5 5.4.0
  _ZN8QSysInfo20buildCpuArchitectureEv@Qt_5 5.4.0
  _ZN8QSysInfo22currentCpuArchitectureEv@Qt_5 5.4.0
@@ -3131,6 +3137,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN8qfloat169basetableE@Qt_5 5.10.0
  _ZN9QBitArray4fillEbii@Qt_5 5.0.2
  _ZN9QBitArray6resizeEi@Qt_5 5.0.2
+ _ZN9QBitArray8fromBitsEPKcx@Qt_5 5.11.0~rc1
  _ZN9QBitArrayC1Eib@Qt_5 5.0.2
  _ZN9QBitArrayC2Eib@Qt_5 5.0.2
  _ZN9QBitArrayaNERKS_@Qt_5 5.0.2
@@ -3527,6 +3534,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN9QtPrivate13convertToUcs4E11QStringView@Qt_5 5.10.0
  _ZN9QtPrivate13convertToUtf8E11QStringView@Qt_5 5.10.0
  _ZN9QtPrivate13isBuiltinTypeERK10QByteArray@Qt_5 5.0.2
+ _ZN9QtPrivate13isRightToLeftE11QStringView@Qt_5 5.11.0~rc1
  _ZN9QtPrivate14ExceptionStore12setExceptionERK10QException@Qt_5 5.0.2
  _ZN9QtPrivate14ExceptionStore22throwPossibleExceptionEv@Qt_5 5.0.2
  _ZN9QtPrivate14ExceptionStore9exceptionEv@Qt_5 5.0.2
@@ -3558,6 +3566,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN9QtPrivate16QStringList_joinEPK11QStringListPK5QChari@Qt_5 5.0.2
  _ZN9QtPrivate16QStringList_joinERK11QStringList13QLatin1String@Qt_5 5.8.0
  _ZN9QtPrivate16QStringList_sortEP11QStringListN2Qt15CaseSensitivityE@Qt_5 5.0.2
+ _ZN9QtPrivate17shouldLogToStderrEv@Qt_5 5.11.0~rc1
  _ZN9QtPrivate18QStringList_filterEPK11QStringListRK18QRegularExpression@Qt_5 5.0.2
  _ZN9QtPrivate18QStringList_filterEPK11QStringListRK7QRegExp@Qt_5 5.0.2
  _ZN9QtPrivate18QStringList_filterEPK11QStringListRK7QStringN2Qt15CaseSensitivityE@Qt_5 5.0.2
@@ -3582,12 +3591,15 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN9QtPrivate28QStringList_replaceInStringsEP11QStringListRK18QRegularExpressionRK7QString@Qt_5 5.0.2
  _ZN9QtPrivate28QStringList_replaceInStringsEP11QStringListRK7QRegExpRK7QString@Qt_5 5.0.2
  _ZN9QtPrivate28QStringList_replaceInStringsEP11QStringListRK7QStringS4_N2Qt15CaseSensitivityE@Qt_5 5.0.2
+ _ZN9QtPrivate7isAsciiE11QStringView@Qt_5 5.11.0~rc1
+ _ZN9QtPrivate7isAsciiE13QLatin1String@Qt_5 5.11.0~rc1
  _ZN9QtPrivate7trimmedE11QStringView@Qt_5 5.10.0
  _ZN9QtPrivate7trimmedE13QLatin1String@Qt_5 5.10.0
  _ZN9QtPrivate8endsWithE11QStringView13QLatin1StringN2Qt15CaseSensitivityE@Qt_5 5.10.0
  _ZN9QtPrivate8endsWithE11QStringViewS0_N2Qt15CaseSensitivityE@Qt_5 5.10.0
  _ZN9QtPrivate8endsWithE13QLatin1String11QStringViewN2Qt15CaseSensitivityE@Qt_5 5.10.0
  _ZN9QtPrivate8endsWithE13QLatin1StringS0_N2Qt15CaseSensitivityE@Qt_5 5.10.0
+ _ZN9QtPrivate8isLatin1E11QStringView@Qt_5 5.11.0~rc1
  _ZN9QtPrivate8qustrlenEPKt@Qt_5 5.10.0
  _ZNK10QByteArray10simplifiedEv@Qt_5 5.0.2
  _ZNK10QByteArray10startsWithEPKc@Qt_5 5.0.2
@@ -4181,6 +4193,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK18QAbstractAnimation5stateEv@Qt_5 5.0.2
  _ZNK18QAbstractAnimation9directionEv@Qt_5 5.0.2
  _ZNK18QAbstractAnimation9loopCountEv@Qt_5 5.0.2
+ _ZNK18QAbstractItemModel10checkIndexERK11QModelIndex6QFlagsINS_16CheckIndexOptionEE@Qt_5 5.11.0~rc1
  _ZNK18QAbstractItemModel10encodeDataERK5QListI11QModelIndexER11QDataStream@Qt_5 5.0.2
  _ZNK18QAbstractItemModel10headerDataEiN2Qt11OrientationEi@Qt_5 5.0.2
  _ZNK18QAbstractItemModel10metaObjectEv@Qt_5 5.0.2
@@ -4673,10 +4686,12 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK5QTime8toStringE11QStringView@Qt_5 5.10.0
  _ZNK5QTime8toStringEN2Qt10DateFormatE@Qt_5 5.0.2
  _ZNK5QTime8toStringERK7QString@Qt_5 5.0.2
+ _ZNK5QUuid11toByteArrayENS_12StringFormatE@Qt_5 5.11.0~rc1
  _ZNK5QUuid11toByteArrayEv@Qt_5 5.0.2
  _ZNK5QUuid6isNullEv@Qt_5 5.0.2
  _ZNK5QUuid7variantEv@Qt_5 5.0.2
  _ZNK5QUuid7versionEv@Qt_5 5.0.2
+ _ZNK5QUuid8toStringENS_12StringFormatE@Qt_5 5.11.0~rc1
  _ZNK5QUuid8toStringEv@Qt_5 5.0.2
  _ZNK5QUuid9toRfc4122Ev@Qt_5 5.0.2
  _ZNK5QUuidgtERKS_@Qt_5 5.0.2
@@ -5675,7 +5690,6 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  qMetaTypeGuiHelper@Qt_5 5.0.2
  qMetaTypeWidgetsHelper@Qt_5 5.0.2
  qVersion@Qt_5 5.0.2
- qmime_secondsBetweenChecks@Qt_5 5.0.2
  qtHookData@Qt_5 5.4.0
  qt_addObject@Qt_5 5.0.2
  qt_cpu_features@Qt_5 5.0.2
@@ -5687,6 +5701,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  qt_version_tag@Qt_5.0 5.6.0~beta
  qt_version_tag@Qt_5.1 5.6.0~beta
  qt_version_tag@Qt_5.10 5.10.0
+ qt_version_tag@Qt_5.11 5.11.0~rc1
  qt_version_tag@Qt_5.2 5.6.0~beta
  qt_version_tag@Qt_5.3 5.6.0~beta
  qt_version_tag@Qt_5.4 5.6.0~beta
@@ -5697,6 +5712,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  qt_version_tag@Qt_5.9 5.9.0~beta
  qt_version_tag_5_0@Qt_5 5.6.0~beta
  qt_version_tag_5_10@Qt_5 5.10.0
+ qt_version_tag_5_11@Qt_5 5.11.0~rc1
  qt_version_tag_5_1@Qt_5 5.6.0~beta
  qt_version_tag_5_2@Qt_5 5.6.0~beta
  qt_version_tag_5_3@Qt_5 5.6.0~beta
