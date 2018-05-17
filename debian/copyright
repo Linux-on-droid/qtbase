@@ -3,7 +3,7 @@ Upstream-Name: qtbase-opensource-src
 Source: https://download.qt.io/official_releases/qt/*/submodules/
 Files-Excluded: bin/licheck*
                 examples/xml/htmlinfo
-                tests/auto/corelib/io/qtextstream/rfc3261.txt
+                tests/auto/corelib/serialization/qtextstream/rfc3261.txt
                 tests/auto/corelib/tools/qbytearray/rfc3252.txt
                 tests/auto/network/access/qftp/rfc3252.txt
                 tests/auto/network/access/qnetworkreply/bigfile
@@ -1679,7 +1679,7 @@ License: LGPL-3 or GPL-2
 
 # Manual rules for some files with non-standard licenses
 
-Files: tests/auto/corelib/xml/qxmlstream/XML-Test-Suite/*
+Files: tests/auto/corelib/serialization/qxmlstream/XML-Test-Suite/*
 Copyright: 1994-2002 World Wide Web Consortium
                      (Massachusetts Institute of Technology,
                      Institut National de Recherche en Informatique et en Automatique,
@@ -2050,7 +2050,6 @@ License: public-domain
  placed in the public domain
 
 Files: src/3rdparty/android/extract.h
-       mkspecs/features/data/android/dx.bat
 Copyright: 2005 The Android Open Source Project
 License: Apache-2.0
 
