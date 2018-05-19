@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.11.0~rc1 amd64
+# SymbolsHelper-Confirmed: 5.11.0~rc1 amd64 armel armhf hurd-i386 i386 mips mipsel powerpc
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-10-0
 * Build-Depends-Package: qtbase5-dev
@@ -53,7 +53,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  (subst)_Z14qMallocAligned{size_t}{size_t}@Qt_5 5.0.2
  _Z15lowercasedigitsR11QTextStream@Qt_5 5.0.2
  _Z15qAddPostRoutinePFvvE@Qt_5 5.0.2
- _Z15qFloatToFloat16P8qfloat16PKfx@Qt_5 5.11.0~rc1
+ (subst)_Z15qFloatToFloat16P8qfloat16PKf{qptrdiff}@Qt_5 5.11.0~rc1
  _Z15qIsEffectiveTLDRK10QStringRef@Qt_5 5.7.0
  (subst)_Z15qReallocAlignedPv{size_t}{size_t}{size_t}@Qt_5 5.0.2
  _Z15qTopLevelDomainRK7QString@Qt_5 5.0.2
@@ -61,7 +61,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _Z15uppercasedigitsR11QTextStream@Qt_5 5.0.2
  _Z16qGlobalQHashSeedv@Qt_5 5.6.0~beta
  _Z16qt_check_pointerPKci@Qt_5 5.0.2
- _Z17qFloatFromFloat16PfPK8qfloat16x@Qt_5 5.11.0~rc1
+ (subst)_Z17qFloatFromFloat16PfPK8qfloat16{qptrdiff}@Qt_5 5.11.0~rc1
  _Z17qFormatLogMessage9QtMsgTypeRK18QMessageLogContextRK7QString@Qt_5 5.4.0
  _Z17qt_message_output9QtMsgTypeRK18QMessageLogContextRK7QString@Qt_5 5.0.2
  _Z18qDetectCpuFeaturesv@Qt_5 5.0.2
@@ -3137,7 +3137,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN8qfloat169basetableE@Qt_5 5.10.0
  _ZN9QBitArray4fillEbii@Qt_5 5.0.2
  _ZN9QBitArray6resizeEi@Qt_5 5.0.2
- _ZN9QBitArray8fromBitsEPKcx@Qt_5 5.11.0~rc1
+ (subst)_ZN9QBitArray8fromBitsEPKc{qptrdiff}@Qt_5 5.11.0~rc1
  _ZN9QBitArrayC1Eib@Qt_5 5.0.2
  _ZN9QBitArrayC2Eib@Qt_5 5.0.2
  _ZN9QBitArrayaNERKS_@Qt_5 5.0.2
