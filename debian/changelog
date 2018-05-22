@@ -9,6 +9,7 @@ qtbase-opensource-src (5.11.0+dfsg-1) UNRELEASED; urgency=medium
   [ Simon Quigley ]
   * Update symbols from buildd logs.
   * New upstream release.
+  * Bump build dependencies to 5.11.0.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 17 May 2018 12:26:51 +0300
 
