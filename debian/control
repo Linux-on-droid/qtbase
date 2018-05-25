@@ -346,7 +346,7 @@ Description: Qt 5 base development files
  applications.
  .
  If you are interested in packaging Qt 5 stuff please take a look at
- http://pkg-kde.alioth.debian.org/packagingqtbasedstuff.html
+ https://qt-kde-team.pages.debian.net/packagingqtbasedstuff.html
 
 Package: qtbase5-private-dev
 Architecture: any
@@ -464,7 +464,7 @@ Description: Qt 5 development defaults package
  installations from being used.
  .
  This package should not be used for building Debian packages. Take a
- look at http://pkg-kde.alioth.debian.org/packagingqtbasedstuff.html for
+ look at https://qt-kde-team.pages.debian.net/packagingqtbasedstuff.html for
  more information.
 
 Package: qtbase5-doc

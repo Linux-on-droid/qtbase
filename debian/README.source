@@ -184,8 +184,8 @@ then Debian package upstream version part of this snapshot could be
 Cloning public packaging repository
 -----------------------------------
 
-    # For users with ssh access to alioth:
-    $ git clone git.debian.org:/git/path/to/the/remote/repository.git
+    # For users with ssh access to salsa.debian.org:
+    $ git clone git@salsa.debian.org:qt-kde-team/subgroup/repository.git
 
     # For anonymous users:
     $ git clone <Vcs-Git URL from debian/control>

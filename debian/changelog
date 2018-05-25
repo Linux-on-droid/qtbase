@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.11.0+dfsg-2) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Change references to alioth/git.debian.org to salsa.debian.org.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 May 2018 09:37:40 -0300
 
 qtbase-opensource-src (5.11.0+dfsg-1) experimental; urgency=medium
