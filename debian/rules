@@ -10,6 +10,7 @@ export PATH := $(PATH):$(shell pwd)/bin
 export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell getconf LFS_CFLAGS)
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell getconf LFS_CFLAGS)
 export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
+export PKG_CONFIG := /usr/bin/$(DEB_HOST_GNU_TYPE)-pkg-config
 
 # Upstream changelog
 upstream_changes := dist/changes-$(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | cut -f1 -d '-' | sed -e 's/+dfsg//' | sed -e 's/+git.*//')
