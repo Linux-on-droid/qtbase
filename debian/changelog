@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.11.1+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.1+dfsg-1) experimental; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Change references to alioth/git.debian.org to salsa.debian.org.
@@ -12,7 +12,7 @@ qtbase-opensource-src (5.11.1+dfsg-1) UNRELEASED; urgency=medium
   * Add new file to debian/qtbase5-dev.install.
   * Update symbols from build logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 May 2018 09:37:40 -0300
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 19 Jun 2018 14:29:27 -0500
 
 qtbase-opensource-src (5.11.0+dfsg-1) experimental; urgency=medium
 
