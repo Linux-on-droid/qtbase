@@ -366,6 +366,7 @@ usr/include/*/qt5/QtCore/qarraydatapointer.h
 usr/include/*/qt5/QtCore/qatomic.h
 usr/include/*/qt5/QtCore/qatomic_bootstrap.h
 usr/include/*/qt5/QtCore/qatomic_cxx11.h
+usr/include/*/qt5/QtCore/qatomic_msvc.h
 usr/include/*/qt5/QtCore/qbasicatomic.h
 usr/include/*/qt5/QtCore/qbasictimer.h
 usr/include/*/qt5/QtCore/qbitarray.h
