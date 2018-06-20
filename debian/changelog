@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.11.1+dfsg-2) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.1+dfsg-2) experimental; urgency=medium
 
   [ Dmitry Shachnev ]
   * Fix version of qttools5-dev-tools build-dependency.
@@ -10,7 +10,7 @@ qtbase-opensource-src (5.11.1+dfsg-2) UNRELEASED; urgency=medium
     were retracted.
   * Update symbols from buildd logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 20 Jun 2018 19:40:04 +0300
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 20 Jun 2018 14:14:42 -0500
 
 qtbase-opensource-src (5.11.1+dfsg-1) experimental; urgency=medium
 
