@@ -1,5 +1,7 @@
 qtbase-opensource-src (5.11.1+dfsg-2) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Fix version of qttools5-dev-tools build-dependency.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 20 Jun 2018 19:40:04 +0300
 
