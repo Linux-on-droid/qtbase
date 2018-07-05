@@ -1,13 +1,12 @@
-qtbase-opensource-src (5.11.1+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.1+dfsg-3) experimental; urgency=medium
 
-  [ Simon Quigley ]
   * Bump Standards-version to 4.1.5, no changes needed.
   * Revert an upstream commit which causes KMainWindow to save an invalid
     window/widget state. This is per advice from upstream KDE and other
     distributors who have done the same, but patches are being sent upstream
     fixing the issue.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 05 Jul 2018 02:30:27 -0500
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Thu, 05 Jul 2018 14:48:31 -0500
 
 qtbase-opensource-src (5.11.1+dfsg-2) experimental; urgency=medium
 
