@@ -1,0 +1,110 @@
+From d517d5428c30d1e9ae4b6413116ea147a8b64f3c Mon Sep 17 00:00:00 2001
+From: Allan Sandfeld Jensen <allan.jensen@qt.io>
+Date: Mon, 23 Apr 2018 13:46:55 +0200
+Subject: [PATCH] Use qFuzzyCompare instead of qFuzzyIsNull in QPointF ==
+
+qFuzzyIsNull has a fixed range, where qFuzzyCompare can tell if numbers
+are different in a more relative range. Without it QPointFs that are
+heavily scaled will be interpreted as identical, when they are quite
+different at their own scale.
+
+Task-number: QTBUG-60359
+Task-number: QTBUG-62161
+Change-Id: Ic4ba90e9e994aedff5548d690f053eb309b0a60b
+Reviewed-by: Edward Welbourne <edward.welbourne@qt.io>
+Reviewed-by: Thiago Macieira <thiago.macieira@intel.com>
+---
+ src/corelib/tools/qpoint.h                    | 12 +++++-
+ .../corelib/tools/qpointf/tst_qpointf.cpp     | 39 +++++++++++++++++++
+ 2 files changed, 49 insertions(+), 2 deletions(-)
+
+diff --git a/src/corelib/tools/qpoint.h b/src/corelib/tools/qpoint.h
+index 0f3e0c3517..ae46f0d39f 100644
+--- a/src/corelib/tools/qpoint.h
++++ b/src/corelib/tools/qpoint.h
+@@ -345,16 +345,24 @@ Q_DECL_RELAXED_CONSTEXPR inline QPointF &QPointF::operator*=(qreal c)
+     xp*=c; yp*=c; return *this;
+ }
+ 
++QT_WARNING_PUSH
++QT_WARNING_DISABLE_CLANG("-Wfloat-equal")
++QT_WARNING_DISABLE_GCC("-Wfloat-equal")
++
+ Q_DECL_CONSTEXPR inline bool operator==(const QPointF &p1, const QPointF &p2)
+ {
+-    return qFuzzyIsNull(p1.xp - p2.xp) && qFuzzyIsNull(p1.yp - p2.yp);
++    return ((!p1.xp && !p1.yp) || (!p2.xp && !p2.yp))
++         ? (qFuzzyIsNull(p1.xp - p2.xp) && qFuzzyIsNull(p1.yp - p2.yp))
++         : (qFuzzyCompare(p1.xp, p2.xp) && qFuzzyCompare(p1.yp, p2.yp));
+ }
+ 
+ Q_DECL_CONSTEXPR inline bool operator!=(const QPointF &p1, const QPointF &p2)
+ {
+-    return !qFuzzyIsNull(p1.xp - p2.xp) || !qFuzzyIsNull(p1.yp - p2.yp);
++    return !(p1 == p2);
+ }
+ 
++QT_WARNING_POP
++
+ Q_DECL_CONSTEXPR inline const QPointF operator+(const QPointF &p1, const QPointF &p2)
+ {
+     return QPointF(p1.xp+p2.xp, p1.yp+p2.yp);
+diff --git a/tests/auto/corelib/tools/qpointf/tst_qpointf.cpp b/tests/auto/corelib/tools/qpointf/tst_qpointf.cpp
+index 17a43af58c..579991a912 100644
+--- a/tests/auto/corelib/tools/qpointf/tst_qpointf.cpp
++++ b/tests/auto/corelib/tools/qpointf/tst_qpointf.cpp
+@@ -77,6 +77,8 @@ private slots:
+     void toPoint_data();
+     void toPoint();
+ 
++    void compare();
++
+ #ifndef QT_NO_DATASTREAM
+     void stream_data();
+     void stream();
+@@ -413,5 +415,42 @@ void tst_QPointF::stream()
+ }
+ #endif
+ 
++void tst_QPointF::compare()
++{
++    // First test we can scale and maintain difference.
++    QPointF p1(2.0, 2.0);
++    QPointF p2(3.0, 3.0);
++
++    QVERIFY(p1 != p2);
++
++    p1 /= 1e5;
++    p2 /= 1e5;
++
++    QVERIFY(!(p1 == p2));
++
++    p1 /= 1e5;
++    p2 /= 1e5;
++
++    QVERIFY(p1 != p2);
++
++    p1 /= 1e5;
++    p2 /= 1e5;
++
++    QVERIFY(!(p1 == p2));
++
++    p1 /= 2;
++    p2 /= 3;
++
++    QVERIFY(p1 == p2);
++
++    // Test we can compare with zero after inexact math
++    QPointF p3(3.0, 3.0);
++    p3 *= 0.1;
++    p3 /= 3;
++    p3 -= QPointF(0.1, 0.1);
++
++    QVERIFY(p3 == QPointF());
++}
++
+ QTEST_MAIN(tst_QPointF)
+ #include "tst_qpointf.moc"
+-- 
+2.18.0
+
