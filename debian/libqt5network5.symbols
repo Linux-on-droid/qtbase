@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.11.1 amd64 arm64 riscv64 x32
+# SymbolsHelper-Confirmed: 5.11.1 amd64 arm64 riscv64 sh4 x32
 libQt5Network.so.5 libqt5network5 #MINVER#
 | libqt5network5 #MINVER#, qtbase-abi-5-11-0
 * Build-Depends-Package: qtbase5-dev
@@ -1332,7 +1332,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  (optional=templinst|subst)_ZNSt6vectorIhSaIhEE17_M_default_appendE{size_t}@Qt_5 5.8.0
  (optional=templinst)_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Qt_5 5.10.0
  (optional=templinst)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.9.1
- (optional=templinst|arch=!amd64 !arm64 !x32)_ZSt13move_backwardIjESt15_Deque_iteratorIT_RS1_PS1_ES4_S4_S4_@Qt_5 5.11.0~rc1
+ (optional=templinst|arch=!amd64 !arm64 !sh4 !x32)_ZSt13move_backwardIjESt15_Deque_iteratorIT_RS1_PS1_ES4_S4_S4_@Qt_5 5.11.0~rc1
  (optional=templinst|arch=armel armhf hurd-i386 i386 ia64 kfreebsd-i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64el riscv64 sparc64)_ZSt4moveIjESt15_Deque_iteratorIT_RS1_PS1_ES4_S4_S4_@Qt_5 5.10.0
  _ZTI10QDnsLookup@Qt_5 5.0.2
  _ZTI10QSslSocket@Qt_5 5.0.2
