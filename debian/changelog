@@ -1,3 +1,7 @@
+qtbase-opensource-src (5.11.1+dfsg-4) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 10 Jul 2018 10:01:42 -0300
+
 qtbase-opensource-src (5.11.1+dfsg-3) experimental; urgency=medium
 
   * Bump Standards-version to 4.1.5, no changes needed.
