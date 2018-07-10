@@ -1,8 +1,8 @@
 qtbase-opensource-src (5.11.1+dfsg-4) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Add use_qfuzzycompare_instead_of_qfuzzyisnull_in_qpointf.patch to fix wrong
-    check in QPointF (Closes: #903237).
+  * Add fix_regresion_in_QPointF_operator_equals.patch to fix wrong check in
+    QPointF (Closes: #903237).
   * Update symbols files with buildds' logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 10 Jul 2018 10:01:42 -0300

@@ -1,7 +1,7 @@
 # Backported from upstream.
 hidpi_scale_at_192.diff
 Revert-QWidgetWindow-Immediately-forward-close-event.patch
-use_qfuzzycompare_instead_of_qfuzzyisnull_in_qpointf.patch
+fix_regresion_in_QPointF_operator_equals.patch
 
 # Debian specific.
 gnukfreebsd.diff
