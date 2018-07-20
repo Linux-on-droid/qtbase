@@ -3,6 +3,10 @@ qtbase-opensource-src (5.11.1+dfsg-5) UNRELEASED; urgency=medium
   [ Rohan Garg ]
   * Update watch url to a better path.
 
+  [ Simon Quigley ]
+  * Add patch fixing selection rendering issues if rounding leads to left-out
+    pixels.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 19 Jul 2018 23:25:31 -0500
 
 qtbase-opensource-src (5.11.1+dfsg-4) experimental; urgency=medium

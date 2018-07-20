@@ -2,6 +2,7 @@
 hidpi_scale_at_192.diff
 Revert-QWidgetWindow-Immediately-forward-close-event.patch
 fix_regresion_in_QPointF_operator_equals.patch
+fix-selection-rendering.patch
 
 # Debian specific.
 gnukfreebsd.diff
