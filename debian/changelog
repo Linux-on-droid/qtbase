@@ -1,5 +1,9 @@
 qtbase-opensource-src (5.11.1+dfsg-7) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Build depend upon libharfbuzz >= 1.6.0~ as required by the code
+    (Closes: #905660). Thanks Andreas Ferber for the bug report.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 15 Aug 2018 19:44:38 -0300
 
 qtbase-opensource-src (5.11.1+dfsg-6) unstable; urgency=medium
