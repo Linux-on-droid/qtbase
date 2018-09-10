@@ -282,3 +282,5 @@ override_dh_installchangelogs:
 
 override_dh_makeshlibs:
 	dh_makeshlibs -V -XlibQt5EglFSDeviceIntegration -XlibQt5EglFsKmsSupport -XlibQt5XcbQpa
+
+override_dh_auto_test:
