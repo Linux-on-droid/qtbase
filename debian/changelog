@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.11.1+dfsg-8) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.1+dfsg-8) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Override dh_auto_test to avoid compiling in indep builds.
   * Refresh nonlinux_utime.diff.
   * Update symbols files from buildds’ logs.
@@ -10,7 +9,7 @@ qtbase-opensource-src (5.11.1+dfsg-8) UNRELEASED; urgency=medium
   * Temporarily use TLS1_2_VERSION instead of TLS_MAX_VERSION, to make
     Qt Network work with OpenSSL 1.1.0 in testing (closes: #907774).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 10 Sep 2018 14:43:05 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 11 Sep 2018 13:29:28 +0300
 
 qtbase-opensource-src (5.11.1+dfsg-7) unstable; urgency=medium
 
