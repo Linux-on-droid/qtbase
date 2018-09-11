@@ -5,6 +5,8 @@ qtbase-opensource-src (5.11.1+dfsg-8) UNRELEASED; urgency=medium
   * Refresh nonlinux_utime.diff.
   * Make libqt5network5 require libssl 1.1.1 or newer (closes: #907774).
   * Update symbols files from buildds’ logs.
+  * Bump required qttools-dev-tools version to 5.11.1-6, where a bug in
+    qdoc was fixed (closes: #908328).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 10 Sep 2018 14:43:05 +0300
 
