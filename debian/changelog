@@ -4,6 +4,7 @@ qtbase-opensource-src (5.11.1+dfsg-8) UNRELEASED; urgency=medium
   * Override dh_auto_test to avoid compiling in indep builds.
   * Refresh nonlinux_utime.diff.
   * Make libqt5network5 require libssl 1.1.1 or newer (closes: #907774).
+  * Update symbols files from buildds’ logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 10 Sep 2018 14:43:05 +0300
 
