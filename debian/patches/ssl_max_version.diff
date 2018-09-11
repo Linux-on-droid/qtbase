@@ -1,0 +1,37 @@
+Description: temporarily use TLS1_2_VERSION instead of TLS_MAX_VERSION
+ This is a temporary patch to make Qt work with OpenSSL 1.1.0 (in testing)
+ when compiled against OpenSSL 1.1.1 (in unstable).
+ .
+ It can be dropped when OpenSSL 1.1.1 migrates to testing, at the same
+ time the libqt5network5 dependency on it needs to be bumped to 1.1.1.
+Author: Dmitry Shachnev <mitya57@debian.org>
+Forwarded: not-needed
+Last-Update: 2018-09-11
+
+--- a/src/network/ssl/qsslcontext_openssl11.cpp
++++ b/src/network/ssl/qsslcontext_openssl11.cpp
+@@ -124,20 +124,20 @@ init_context:
+     case QSsl::TlsV1SslV3:
+     case QSsl::AnyProtocol:
+         minVersion = SSL3_VERSION;
+-        maxVersion = TLS_MAX_VERSION;
++        maxVersion = TLS1_2_VERSION;
+         break;
+     case QSsl::SecureProtocols:
+     case QSsl::TlsV1_0OrLater:
+         minVersion = TLS1_VERSION;
+-        maxVersion = TLS_MAX_VERSION;
++        maxVersion = TLS1_2_VERSION;
+         break;
+     case QSsl::TlsV1_1OrLater:
+         minVersion = TLS1_1_VERSION;
+-        maxVersion = TLS_MAX_VERSION;
++        maxVersion = TLS1_2_VERSION;
+         break;
+     case QSsl::TlsV1_2OrLater:
+         minVersion = TLS1_2_VERSION;
+-        maxVersion = TLS_MAX_VERSION;
++        maxVersion = TLS1_2_VERSION;
+         break;
+     case QSsl::SslV2:
+         // This protocol is not supported by OpenSSL 1.1 and we handle

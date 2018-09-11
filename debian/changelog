@@ -7,6 +7,8 @@ qtbase-opensource-src (5.11.1+dfsg-8) UNRELEASED; urgency=medium
   * Bump required qttools-dev-tools version to 5.11.1-6, where a bug in
     qdoc was fixed (closes: #908328).
   * Bump Standards-Version to 4.2.1, no changes needed.
+  * Temporarily use TLS1_2_VERSION instead of TLS_MAX_VERSION, to make
+    Qt Network work with OpenSSL 1.1.0 in testing (closes: #907774).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 10 Sep 2018 14:43:05 +0300
 
