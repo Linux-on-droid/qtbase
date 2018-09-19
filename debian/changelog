@@ -1,3 +1,10 @@
+qtbase-opensource-src (5.11.2+dfsg-1) UNRELEASED; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstreaam release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Sep 2018 14:18:51 +0300
+
 qtbase-opensource-src (5.11.1+dfsg-8) unstable; urgency=medium
 
   * Override dh_auto_test to avoid compiling in indep builds.
