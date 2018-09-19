@@ -1,7 +1,8 @@
 Description: xcb: round down the scale factor for values < N + 0.8
-Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=23b139038a1dc9a7
+Author: Mathieu Velten <matmaul@gmail.com>
+Forwarded: https://codereview.qt-project.org/231719
 Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=884956
-Last-Update: 2018-05-02
+Last-Update: 2018-09-19
 
 --- a/src/plugins/platforms/xcb/qxcbscreen.cpp
 +++ b/src/plugins/platforms/xcb/qxcbscreen.cpp

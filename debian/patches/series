@@ -1,7 +1,8 @@
 # Backported from upstream.
-hidpi_scale_at_192.diff
-Revert-QWidgetWindow-Immediately-forward-close-event.patch
 fix-selection-rendering.patch
+
+# Forwarded upstream.
+hidpi_scale_at_192.diff
 
 # Debian specific.
 gnukfreebsd.diff
@@ -13,3 +14,4 @@ armv4.diff
 nonlinux_utime.diff
 no_arc4random_buf.diff
 ssl_max_version.diff
+Revert-QWidgetWindow-Immediately-forward-close-event.patch

@@ -6,6 +6,7 @@ qtbase-opensource-src (5.11.2+dfsg-1) UNRELEASED; urgency=medium
     - fix_regresion_in_QPointF_operator_equals.patch
     - fix-glibc-2.28-build.patch
   * Refresh other patches.
+  * Update metadata for two patches wrongly marked as applied upstream.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Sep 2018 14:18:51 +0300
 
