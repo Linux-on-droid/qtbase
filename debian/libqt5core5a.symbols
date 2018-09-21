@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.11.1 amd64 arm64 armel armhf hppa hurd-i386 i386 ia64 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el riscv64 s390x sh4 sparc64 x32
+# SymbolsHelper-Confirmed: 5.11.2 amd64
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-11-0
 * Build-Depends-Package: qtbase5-dev
@@ -2238,6 +2238,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN23QEventTransitionPrivateD2Ev@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN23QOperatingSystemVersion10Windows8_1E@Qt_5 5.9.0~beta
  _ZN23QOperatingSystemVersion11AndroidOreoE@Qt_5 5.9.2
+ _ZN23QOperatingSystemVersion11MacOSMojaveE@Qt_5 5.11.2
  _ZN23QOperatingSystemVersion11MacOSSierraE@Qt_5 5.9.0~beta
  _ZN23QOperatingSystemVersion11OSXYosemiteE@Qt_5 5.9.0~beta
  _ZN23QOperatingSystemVersion12OSXElCapitanE@Qt_5 5.9.0~beta

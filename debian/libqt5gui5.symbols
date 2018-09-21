@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.11.1 amd64 arm64 hppa sh4 x32
+# SymbolsHelper-Confirmed: 5.11.2 amd64
 libQt5Gui.so.5 libqt5gui5 #MINVER#
 | libqt5gui5 #MINVER#, qtbase-abi-5-11-0
 * Build-Depends-Package: qtbase5-dev
@@ -3261,7 +3261,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QGuiApplicationPrivate20m_inputDeviceManagerE@Qt_5_PRIVATE_API 5.5.0 1
  _ZN22QGuiApplicationPrivate20platform_integrationE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate20processFileOpenEventEPN29QWindowSystemInterfacePrivate13FileOpenEventE@Qt_5_PRIVATE_API 5.0.2 1
- _ZN22QGuiApplicationPrivate20reportGeometryChangeEPN29QWindowSystemInterfacePrivate19ScreenGeometryEventE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate21colorProfileForA8TextEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QGuiApplicationPrivate21createEventDispatcherEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate21highDpiScalingUpdatedE@Qt_5_PRIVATE_API 5.6.0~beta 1
@@ -3271,7 +3270,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QGuiApplicationPrivate23currentMousePressWindowE@Qt_5_PRIVATE_API 5.5.0 1
  _ZN22QGuiApplicationPrivate23notifyWindowIconChangedEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZN22QGuiApplicationPrivate23processContextMenuEventEPN29QWindowSystemInterfacePrivate16ContextMenuEventE@Qt_5_PRIVATE_API 5.0.2 1
- _ZN22QGuiApplicationPrivate23reportRefreshRateChangeEPN29QWindowSystemInterfacePrivate22ScreenRefreshRateEventE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate24m_fakeMouseSourcePointIdE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate24notifyActiveWindowChangeEP7QWindow@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate24processWindowSystemEventEPN29QWindowSystemInterfacePrivate17WindowSystemEventE@Qt_5_PRIVATE_API 5.0.2 1
@@ -3281,11 +3279,12 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QGuiApplicationPrivate26processGeometryChangeEventEPN29QWindowSystemInterfacePrivate19GeometryChangeEventE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate27mouse_double_click_distanceE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate27notifyLayoutDirectionChangeEv@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN22QGuiApplicationPrivate27processScreenGeometryChangeEPN29QWindowSystemInterfacePrivate19ScreenGeometryEventE@Qt_5_PRIVATE_API 5.11.2 1
  _ZN22QGuiApplicationPrivate28setMouseEventCapsAndVelocityEP11QMouseEventiRK9QVector2D@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate29reportScreenOrientationChangeEP7QScreen@Qt_5_PRIVATE_API 5.0.2 1
- _ZN22QGuiApplicationPrivate29reportScreenOrientationChangeEPN29QWindowSystemInterfacePrivate22ScreenOrientationEventE@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN22QGuiApplicationPrivate30processScreenOrientationChangeEPN29QWindowSystemInterfacePrivate22ScreenOrientationEventE@Qt_5_PRIVATE_API 5.11.2 1
+ _ZN22QGuiApplicationPrivate30processScreenRefreshRateChangeEPN29QWindowSystemInterfacePrivate22ScreenRefreshRateEventE@Qt_5_PRIVATE_API 5.11.2 1
  _ZN22QGuiApplicationPrivate30processWindowStateChangedEventEPN29QWindowSystemInterfacePrivate23WindowStateChangedEventE@Qt_5_PRIVATE_API 5.0.2 1
- _ZN22QGuiApplicationPrivate30reportLogicalDotsPerInchChangeEPN29QWindowSystemInterfacePrivate29ScreenLogicalDotsPerInchEventE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate31processWindowScreenChangedEventEPN29QWindowSystemInterfacePrivate24WindowScreenChangedEventE@Qt_5_PRIVATE_API 5.1.0 1
  _ZN22QGuiApplicationPrivate31updateFilteredScreenOrientationEP7QScreen@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate32processTabletEnterProximityEventEPN29QWindowSystemInterfacePrivate25TabletEnterProximityEventE@Qt_5_PRIVATE_API 5.0.2 1
@@ -3293,6 +3292,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QGuiApplicationPrivate33sendQWindowEventToQPlatformWindowEP7QWindowP6QEvent@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate34applyWindowGeometrySpecificationToEP7QWindow@Qt_5_PRIVATE_API 5.4.2 1
  _ZN22QGuiApplicationPrivate34processSafeAreaMarginsChangedEventEPN29QWindowSystemInterfacePrivate27SafeAreaMarginsChangedEventE@Qt_5_PRIVATE_API 5.10.1 1
+ _ZN22QGuiApplicationPrivate37processScreenLogicalDotsPerInchChangeEPN29QWindowSystemInterfacePrivate29ScreenLogicalDotsPerInchEventE@Qt_5_PRIVATE_API 5.11.2 1
  _ZN22QGuiApplicationPrivate38is_fallback_session_management_enabledE@Qt_5_PRIVATE_API 5.6.0~rc 1
  _ZN22QGuiApplicationPrivate4initEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate4selfE@Qt_5_PRIVATE_API 5.0.2 1
@@ -5855,6 +5855,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK15QPlatformScreen5modesEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK15QPlatformScreen6cursorEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK15QPlatformScreen6screenEv@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZNK15QPlatformScreen7windowsEv@Qt_5_PRIVATE_API 5.11.2 1
  _ZNK15QPlatformWindow10isEmbeddedEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK15QPlatformWindow11mapToGlobalERK6QPoint@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK15QPlatformWindow12frameMarginsEv@Qt_5_PRIVATE_API 5.9.0~beta 1
