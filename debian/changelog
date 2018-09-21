@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.11.2+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.2+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstreaam release.
   * Drop patches, applied upstream:
     - fix_regresion_in_QPointF_operator_equals.patch
@@ -10,7 +9,7 @@ qtbase-opensource-src (5.11.2+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files from buildds’ and the current build logs.
   * Update debian/copyright.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Sep 2018 14:18:51 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 21 Sep 2018 10:57:47 +0300
 
 qtbase-opensource-src (5.11.1+dfsg-8) unstable; urgency=medium
 
