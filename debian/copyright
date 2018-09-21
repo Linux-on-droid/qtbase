@@ -171,9 +171,17 @@ License: BSD-3-clause
 
 ## GFDL-NIV-1.3
 
+Files: src/corelib/global/qglobalstatic.qdoc
+Copyright: 2016 Intel Corporation.
+License: GFDL-NIV-1.3
+
 Files: src/testlib/doc/src/qttestlib-manual.qdoc
 Copyright: 2016 Intel Corporation.
            2016 The Qt Company Ltd.
+License: GFDL-NIV-1.3
+
+Files: src/corelib/tools/qstringiterator.qdoc
+Copyright: 2014 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: GFDL-NIV-1.3
 
 Files: examples/widgets/doc/mousebuttons.qdoc
@@ -276,6 +284,7 @@ Files: config.tests/unix/cxx11_random/cxx11_random.cpp
        tests/auto/corelib/io/qprocess/testProcessHang/main.cpp
        tests/auto/corelib/io/qurlquery/tst_qurlquery.cpp
        tests/auto/corelib/kernel/qdeadlinetimer/tst_qdeadlinetimer.cpp
+       tests/auto/corelib/plugin/qplugin/invalidplugin/main.cpp
        tests/auto/corelib/plugin/qpluginloader/fakeplugin.cpp
        tests/auto/corelib/plugin/qpluginloader/machtest/generate-bad.pl
        tests/auto/corelib/plugin/qpluginloader/machtest/ppcconverter.pl
@@ -295,7 +304,7 @@ Files: config.tests/unix/cxx11_random/cxx11_random.cpp
        tests/manual/qdesktopservices/tst_qdesktopservices.cpp
        tests/manual/qsysinfo/main.cpp
        util/includemocs/includemocs.pl
-Copyright: 2016-2017 Intel Corporation.
+Copyright: 2016-2018 Intel Corporation.
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/network/kernel/qdnslookup/tst_qdnslookup.cpp
@@ -430,6 +439,8 @@ Files: tests/auto/cmake/test(needsquoting)dirname/mywidget.cpp
        tests/auto/cmake/test_qtmainwin_library/myobject.cpp
        tests/auto/cmake/test_qtmainwin_library/myobject.h
        tests/auto/cmake/test_testlib_definitions/main.cpp
+       tests/auto/cmake/test_use_modules_function/three.cpp
+       tests/auto/cmake/test_use_modules_function/two.cpp
        tests/auto/cmake/test_wrap_cpp_and_resources/myobject.cpp
        tests/auto/cmake/test_wrap_cpp_and_resources/myobject.h
        tests/auto/cmake/test_wrap_cpp_options/myobject.cpp
@@ -481,10 +492,9 @@ Files: tests/auto/cmake/test(needsquoting)dirname/mywidget.cpp
 Copyright: 2011-2018 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: GPL-3 with Qt-1.0 exception
 
-Files: src/testlib/qabstractitemmodeltester.cpp
-       tests/auto/gui/util/qregularexpressionvalidator/tst_qregularexpressionvalidator.cpp
+Files: tests/auto/gui/util/qregularexpressionvalidator/tst_qregularexpressionvalidator.cpp
        tests/auto/widgets/widgets/qframe/tst_qframe.cpp
-Copyright: 2012-2017 Klarälvdalens Datakonsult AB, a KDAB Group company
+Copyright: 2012-2014 Klarälvdalens Datakonsult AB, a KDAB Group company
            2016 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
@@ -977,7 +987,6 @@ Files: config.tests/avx512/avx512.cpp
        src/corelib/global/minimum-linux.S
        src/corelib/global/minimum-linux_p.h
        src/corelib/global/qglobalstatic.h
-       src/corelib/global/qglobalstatic.qdoc
        src/corelib/global/qrandom.cpp
        src/corelib/global/qrandom.h
        src/corelib/global/qrandom_p.h
@@ -1083,8 +1092,10 @@ Files: bin/syncqt.pl
        src/corelib/kernel/qtimer.cpp
        src/corelib/kernel/qtimerinfo_unix.cpp
        src/corelib/kernel/qvariant_p.h
+       src/corelib/plugin/qfactoryloader.cpp
        src/corelib/plugin/qlibrary.cpp
        src/corelib/plugin/qlibrary_p.h
+       src/corelib/plugin/qpluginloader.cpp
        src/corelib/serialization/qjson_p.h
        src/corelib/serialization/qjsonparser.cpp
        src/corelib/serialization/qjsonwriter.cpp
@@ -1092,6 +1103,7 @@ Files: bin/syncqt.pl
        src/corelib/serialization/qtextstream_p.h
        src/corelib/thread/qatomic.cpp
        src/corelib/thread/qatomic.h
+       src/corelib/thread/qatomic_msvc.h
        src/corelib/thread/qmutex_linux.cpp
        src/corelib/thread/qsemaphore.cpp
        src/corelib/thread/qthread.cpp
@@ -1262,7 +1274,6 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/corelib/itemmodels/qidentityproxymodel.cpp
        src/corelib/itemmodels/qidentityproxymodel.h
        src/corelib/tools/qstringalgorithms.h
-       src/corelib/tools/qstringiterator.qdoc
        src/corelib/tools/qstringview.cpp
        src/corelib/tools/qstringview.h
        src/gui/opengl/qopengldebug.cpp
@@ -1428,6 +1439,7 @@ Files: src/corelib/mimetypes/qmimedatabase.cpp
        src/plugins/platforms/cocoa/qcocoamenuitem.h
        src/plugins/platforms/cocoa/qcocoasystemtrayicon.h
        src/plugins/platforms/cocoa/qcocoasystemtrayicon.mm
+       src/testlib/qabstractitemmodeltester.cpp
 Copyright: 2012-2017 Klarälvdalens Datakonsult AB, a KDAB Group company
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
