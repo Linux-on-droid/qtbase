@@ -1,11 +1,11 @@
-qtbase-opensource-src (5.11.1+dfsg-9) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.1+dfsg-9) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add libvulkan-dev to provide Vulkan support (Closes:#909579).
   * Backport fix_possible_heap_corruption_in_qxmlstream.patch to solve
     possible heap corruption on QXmlStream.
+  * Update symbols files with buildds' logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Sep 2018 12:11:06 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 25 Sep 2018 16:33:30 -0300
 
 qtbase-opensource-src (5.11.1+dfsg-8) unstable; urgency=medium
 
