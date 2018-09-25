@@ -2,6 +2,8 @@ qtbase-opensource-src (5.11.1+dfsg-9) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add libvulkan-dev to provide Vulkan support (Closes:#909579).
+  * Backport export_qt_open64_from_qtcore.patch solving probable FTBFS on
+    i386.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Sep 2018 12:11:06 -0300
 
