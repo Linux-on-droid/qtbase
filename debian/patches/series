@@ -4,7 +4,6 @@ Revert-QWidgetWindow-Immediately-forward-close-event.patch
 fix_regresion_in_QPointF_operator_equals.patch
 fix-selection-rendering.patch
 fix-glibc-2.28-build.patch
-export_qt_open64_from_qtcore.patch
 fix_possible_heap_corruption_in_qxmlstream.patch
 
 # Debian specific.
