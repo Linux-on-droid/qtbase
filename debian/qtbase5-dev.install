@@ -1208,6 +1208,10 @@ usr/include/*/qt5/QtTest/qtesttouch.h
 usr/include/*/qt5/QtTest/qttestlib-config.h
 usr/include/*/qt5/QtTest/qttestglobal.h
 usr/include/*/qt5/QtTest/qttestversion.h
+usr/include/*/qt5/QtVulkanSupport/qtvulkansupportversion.h
+usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportDepends
+usr/include/*/qt5/QtVulkanSupport/QtVulkanSupport
+usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportVersion
 usr/include/*/qt5/QtWidgets/QAbstractButton
 usr/include/*/qt5/QtWidgets/QAbstractGraphicsShapeItem
 usr/include/*/qt5/QtWidgets/QAbstractItemDelegate

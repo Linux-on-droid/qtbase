@@ -30,6 +30,15 @@ qtbase-opensource-src (5.11.2+dfsg-1) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Fri, 21 Sep 2018 10:57:47 +0300
 
+qtbase-opensource-src (5.11.1+dfsg-9) unstable; urgency=medium
+
+  * Add libvulkan-dev to provide Vulkan support (Closes:#909579).
+  * Backport fix_possible_heap_corruption_in_qxmlstream.patch to solve
+    possible heap corruption on QXmlStream.
+  * Update symbols files with buildds' and current logs.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 25 Sep 2018 18:26:54 -0300
+
 qtbase-opensource-src (5.11.1+dfsg-8) unstable; urgency=medium
 
   * Override dh_auto_test to avoid compiling in indep builds.
