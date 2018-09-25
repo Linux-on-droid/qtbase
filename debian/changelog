@@ -5,7 +5,7 @@ qtbase-opensource-src (5.11.1+dfsg-9) unstable; urgency=medium
     possible heap corruption on QXmlStream.
   * Update symbols files with buildds' and current logs.
 
- -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 25 Sep 2018 16:33:30 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 25 Sep 2018 18:26:54 -0300
 
 qtbase-opensource-src (5.11.1+dfsg-8) unstable; urgency=medium
 
