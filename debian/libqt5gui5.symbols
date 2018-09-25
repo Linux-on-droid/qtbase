@@ -1396,6 +1396,30 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN13QTextDocumentD0Ev@Qt_5 5.0.2
  _ZN13QTextDocumentD1Ev@Qt_5 5.0.2
  _ZN13QTextDocumentD2Ev@Qt_5 5.0.2
+ (arch=amd64)_ZN13QVulkanWindow10frameReadyEv@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow11exposeEventEP12QExposeEvent@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow11qt_metacastEPKc@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow11resizeEventEP12QResizeEvent@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow12frameGrabbedERK6QImage@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow14createRendererEv@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow14setSampleCountEi@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow16staticMetaObjectE@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow19setDeviceExtensionsERK5QListI10QByteArrayE@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow20clipCorrectionMatrixEv@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow21supportedSampleCountsEv@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow22setPhysicalDeviceIndexEi@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow24availablePhysicalDevicesEv@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow24setPreferredColorFormatsERK7QVectorI8VkFormatE@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow25supportedDeviceExtensionsEv@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow4grabEv@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow5eventEP6QEvent@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindow8setFlagsE6QFlagsINS_4FlagEE@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindowC1EP7QWindow@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindowC2EP7QWindow@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindowD0Ev@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindowD1Ev@Qt_5 5.11.1
+ (arch=amd64)_ZN13QVulkanWindowD2Ev@Qt_5 5.11.1
  _ZN14QDistanceField4bitsEv@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceField8scanLineEi@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceField8setGlyphEP11QFontEnginejb@Qt_5_PRIVATE_API 5.2.0~alpha1 1
@@ -1920,6 +1944,25 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN15QTextListFormatC1Ev@Qt_5 5.0.2
  _ZN15QTextListFormatC2ERK11QTextFormat@Qt_5 5.0.2
  _ZN15QTextListFormatC2Ev@Qt_5 5.0.2
+ (arch=amd64)_ZN15QVulkanInstance13presentQueuedEP7QWindow@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance13setApiVersionERK14QVersionNumber@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance13setExtensionsERK5QListI10QByteArrayE@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance13setVkInstanceEP12VkInstance_T@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance15deviceFunctionsEP10VkDevice_T@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance15supportedLayersEv@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance15supportsPresentEP18VkPhysicalDevice_TjP7QWindow@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance16surfaceForWindowEP7QWindow@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance19getInstanceProcAddrEPKc@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance19supportedExtensionsEv@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance20resetDeviceFunctionsEP10VkDevice_T@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance6createEv@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance7destroyEv@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance8setFlagsE6QFlagsINS_4FlagEE@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstance9setLayersERK5QListI10QByteArrayE@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstanceC1Ev@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstanceC2Ev@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstanceD1Ev@Qt_5 5.11.1
+ (arch=amd64)_ZN15QVulkanInstanceD2Ev@Qt_5 5.11.1
  _ZN16QAccessibleCache11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.3.0 1
  _ZN16QAccessibleCache11qt_metacastEPKc@Qt_5_PRIVATE_API 5.3.0 1
  _ZN16QAccessibleCache15deleteInterfaceEjP7QObject@Qt_5_PRIVATE_API 5.3.0 1
@@ -2024,6 +2067,24 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN16QTextTableFormatC1Ev@Qt_5 5.0.2
  _ZN16QTextTableFormatC2ERK11QTextFormat@Qt_5 5.0.2
  _ZN16QTextTableFormatC2Ev@Qt_5 5.0.2
+ (arch=amd64)_ZN16QVulkanFunctions14vkCreateDeviceEP18VkPhysicalDevice_TPK18VkDeviceCreateInfoPK21VkAllocationCallbacksPP10VkDevice_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions19vkGetDeviceProcAddrEP10VkDevice_TPKc@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions26vkEnumeratePhysicalDevicesEP12VkInstance_TPjPP18VkPhysicalDevice_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions27vkGetPhysicalDeviceFeaturesEP18VkPhysicalDevice_TP24VkPhysicalDeviceFeatures@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions29vkGetPhysicalDevicePropertiesEP18VkPhysicalDevice_TP26VkPhysicalDeviceProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions32vkEnumerateDeviceLayerPropertiesEP18VkPhysicalDevice_TPjP17VkLayerProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions34vkEnumerateInstanceLayerPropertiesEPjP17VkLayerProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions35vkGetPhysicalDeviceFormatPropertiesEP18VkPhysicalDevice_T8VkFormatP18VkFormatProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions35vkGetPhysicalDeviceMemoryPropertiesEP18VkPhysicalDevice_TP32VkPhysicalDeviceMemoryProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions36vkEnumerateDeviceExtensionPropertiesEP18VkPhysicalDevice_TPKcPjP21VkExtensionProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions38vkEnumerateInstanceExtensionPropertiesEPKcPjP21VkExtensionProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions40vkGetPhysicalDeviceImageFormatPropertiesEP18VkPhysicalDevice_T8VkFormat11VkImageType13VkImageTilingjjP23VkImageFormatProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions40vkGetPhysicalDeviceQueueFamilyPropertiesEP18VkPhysicalDevice_TPjP23VkQueueFamilyProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctions46vkGetPhysicalDeviceSparseImageFormatPropertiesEP18VkPhysicalDevice_T8VkFormat11VkImageType21VkSampleCountFlagBitsj13VkImageTilingPjP29VkSparseImageFormatProperties@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctionsC1EP15QVulkanInstance@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctionsC2EP15QVulkanInstance@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctionsD1Ev@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN16QVulkanFunctionsD2Ev@Qt_5_PRIVATE_API 5.11.1 1
  _ZN17QAccessibleObject7setTextEN11QAccessible4TextERK7QString@Qt_5 5.0.2
  _ZN17QAccessibleObjectC1EP7QObject@Qt_5 5.0.2
  _ZN17QAccessibleObjectC2EP7QObject@Qt_5 5.0.2
@@ -3195,6 +3256,16 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN21QTriangulatingStroker7cubicToEPKd@Qt_5_PRIVATE_API 5.2.0 1
  _ZN21QTriangulatingStroker7processERK11QVectorPathRK4QPenRK6QRectF6QFlagsIN8QPainter10RenderHintEE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN21QTriangulatingStroker9arcPointsEffffffR15QVarLengthArrayIfLi256EE@Qt_5_PRIVATE_API 5.0.2 1
+ (arch=amd64)_ZN21QVulkanWindowRenderer13initResourcesEv@Qt_5 5.11.1
+ (arch=amd64)_ZN21QVulkanWindowRenderer16preInitResourcesEv@Qt_5 5.11.1
+ (arch=amd64)_ZN21QVulkanWindowRenderer16releaseResourcesEv@Qt_5 5.11.1
+ (arch=amd64)_ZN21QVulkanWindowRenderer17logicalDeviceLostEv@Qt_5 5.11.1
+ (arch=amd64)_ZN21QVulkanWindowRenderer18physicalDeviceLostEv@Qt_5 5.11.1
+ (arch=amd64)_ZN21QVulkanWindowRenderer22initSwapChainResourcesEv@Qt_5 5.11.1
+ (arch=amd64)_ZN21QVulkanWindowRenderer25releaseSwapChainResourcesEv@Qt_5 5.11.1
+ (arch=amd64)_ZN21QVulkanWindowRendererD0Ev@Qt_5 5.11.1
+ (arch=amd64)_ZN21QVulkanWindowRendererD1Ev@Qt_5 5.11.1
+ (arch=amd64)_ZN21QVulkanWindowRendererD2Ev@Qt_5 5.11.1
  _ZN22QAccessibleApplicationC1Ev@Qt_5 5.0.2
  _ZN22QAccessibleApplicationC2Ev@Qt_5 5.0.2
  _ZN22QDashedStrokeProcessor7processERK11QVectorPathRK4QPenRK6QRectF6QFlagsIN8QPainter10RenderHintEE@Qt_5_PRIVATE_API 5.0.2 1
@@ -3329,6 +3400,130 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN22QPlatformOpenGLContextD0Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QPlatformOpenGLContextD1Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QPlatformOpenGLContextD2Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions10vkSetEventEP10VkDevice_TP9VkEvent_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions11vkMapMemoryEP10VkDevice_TP16VkDeviceMemory_TmmjPPv@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions12vkFreeMemoryEP10VkDevice_TP16VkDeviceMemory_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions12vkResetEventEP10VkDevice_TP9VkEvent_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions13vkCmdDispatchEP17VkCommandBuffer_Tjjj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions13vkCmdEndQueryEP17VkCommandBuffer_TP13VkQueryPool_Tj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions13vkCmdSetEventEP17VkCommandBuffer_TP9VkEvent_Tj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions13vkCreateEventEP10VkDevice_TPK17VkEventCreateInfoPK21VkAllocationCallbacksPP9VkEvent_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions13vkCreateFenceEP10VkDevice_TPK17VkFenceCreateInfoPK21VkAllocationCallbacksPP9VkFence_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions13vkCreateImageEP10VkDevice_TPK17VkImageCreateInfoPK21VkAllocationCallbacksPP9VkImage_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions13vkQueueSubmitEP9VkQueue_TjPK12VkSubmitInfoP9VkFence_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions13vkResetFencesEP10VkDevice_TjPKP9VkFence_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions13vkUnmapMemoryEP10VkDevice_TP16VkDeviceMemory_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions14vkCmdBlitImageEP17VkCommandBuffer_TP9VkImage_T13VkImageLayoutS3_S4_jPK11VkImageBlit8VkFilter@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions14vkCmdCopyImageEP17VkCommandBuffer_TP9VkImage_T13VkImageLayoutS3_S4_jPK11VkImageCopy@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions14vkCreateBufferEP10VkDevice_TPK18VkBufferCreateInfoPK21VkAllocationCallbacksPP10VkBuffer_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions14vkDestroyEventEP10VkDevice_TP9VkEvent_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions14vkDestroyFenceEP10VkDevice_TP9VkFence_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions14vkDestroyImageEP10VkDevice_TP9VkImage_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkCmdBeginQueryEP17VkCommandBuffer_TP13VkQueryPool_Tjj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkCmdCopyBufferEP17VkCommandBuffer_TP10VkBuffer_TS3_jPK12VkBufferCopy@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkCmdFillBufferEP17VkCommandBuffer_TP10VkBuffer_Tmmj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkCmdResetEventEP17VkCommandBuffer_TP9VkEvent_Tj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkCmdSetScissorEP17VkCommandBuffer_TjjPK8VkRect2D@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkCmdWaitEventsEP17VkCommandBuffer_TjPKP9VkEvent_TjjjPK15VkMemoryBarrierjPK21VkBufferMemoryBarrierjPK20VkImageMemoryBarrier@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkCreateSamplerEP10VkDevice_TPK19VkSamplerCreateInfoPK21VkAllocationCallbacksPP11VkSampler_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkDestroyBufferEP10VkDevice_TP10VkBuffer_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkDestroyDeviceEP10VkDevice_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkQueueWaitIdleEP9VkQueue_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions15vkWaitForFencesEP10VkDevice_TjPKP9VkFence_Tjm@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions16vkAllocateMemoryEP10VkDevice_TPK20VkMemoryAllocateInfoPK21VkAllocationCallbacksPP16VkDeviceMemory_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions16vkCmdDrawIndexedEP17VkCommandBuffer_Tjjjij@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions16vkCmdNextSubpassEP17VkCommandBuffer_T17VkSubpassContents@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions16vkCmdSetViewportEP17VkCommandBuffer_TjjPK10VkViewport@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions16vkDestroySamplerEP10VkDevice_TP11VkSampler_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions16vkDeviceWaitIdleEP10VkDevice_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions16vkGetDeviceQueueEP10VkDevice_TjjPP9VkQueue_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions16vkGetEventStatusEP10VkDevice_TP9VkEvent_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions16vkGetFenceStatusEP10VkDevice_TP9VkFence_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkBindImageMemoryEP10VkDevice_TP9VkImage_TP16VkDeviceMemory_Tm@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkCmdBindPipelineEP17VkCommandBuffer_T19VkPipelineBindPointP12VkPipeline_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkCmdDrawIndirectEP17VkCommandBuffer_TP10VkBuffer_Tmjj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkCmdResolveImageEP17VkCommandBuffer_TP9VkImage_T13VkImageLayoutS3_S4_jPK14VkImageResolve@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkCmdSetDepthBiasEP17VkCommandBuffer_Tfff@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkCmdSetLineWidthEP17VkCommandBuffer_Tf@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkCmdUpdateBufferEP17VkCommandBuffer_TP10VkBuffer_TmmPKv@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkCreateImageViewEP10VkDevice_TPK21VkImageViewCreateInfoPK21VkAllocationCallbacksPP13VkImageView_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkCreateQueryPoolEP10VkDevice_TPK21VkQueryPoolCreateInfoPK21VkAllocationCallbacksPP13VkQueryPool_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkCreateSemaphoreEP10VkDevice_TPK21VkSemaphoreCreateInfoPK21VkAllocationCallbacksPP13VkSemaphore_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkDestroyPipelineEP10VkDevice_TP12VkPipeline_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions17vkQueueBindSparseEP9VkQueue_TjPK16VkBindSparseInfoP9VkFence_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkBindBufferMemoryEP10VkDevice_TP10VkBuffer_TP16VkDeviceMemory_Tm@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkCmdEndRenderPassEP17VkCommandBuffer_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkCmdPushConstantsEP17VkCommandBuffer_TP18VkPipelineLayout_TjjjPKv@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkCreateBufferViewEP10VkDevice_TPK22VkBufferViewCreateInfoPK21VkAllocationCallbacksPP14VkBufferView_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkCreateRenderPassEP10VkDevice_TPK22VkRenderPassCreateInfoPK21VkAllocationCallbacksPP14VkRenderPass_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkDestroyImageViewEP10VkDevice_TP13VkImageView_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkDestroyQueryPoolEP10VkDevice_TP13VkQueryPool_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkDestroySemaphoreEP10VkDevice_TP13VkSemaphore_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkEndCommandBufferEP17VkCommandBuffer_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions18vkResetCommandPoolEP10VkDevice_TP15VkCommandPool_Tj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions19vkCmdResetQueryPoolEP17VkCommandBuffer_TP13VkQueryPool_Tjj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions19vkCmdSetDepthBoundsEP17VkCommandBuffer_Tff@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions19vkCmdWriteTimestampEP17VkCommandBuffer_T23VkPipelineStageFlagBitsP13VkQueryPool_Tj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions19vkCreateCommandPoolEP10VkDevice_TPK23VkCommandPoolCreateInfoPK21VkAllocationCallbacksPP15VkCommandPool_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions19vkCreateFramebufferEP10VkDevice_TPK23VkFramebufferCreateInfoPK21VkAllocationCallbacksPP15VkFramebuffer_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions19vkDestroyBufferViewEP10VkDevice_TP14VkBufferView_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions19vkDestroyRenderPassEP10VkDevice_TP14VkRenderPass_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkBeginCommandBufferEP17VkCommandBuffer_TPK24VkCommandBufferBeginInfo@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkCmdBeginRenderPassEP17VkCommandBuffer_TPK21VkRenderPassBeginInfo17VkSubpassContents@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkCmdBindIndexBufferEP17VkCommandBuffer_TP10VkBuffer_Tm11VkIndexType@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkCmdClearColorImageEP17VkCommandBuffer_TP9VkImage_T13VkImageLayoutPK17VkClearColorValuejPK23VkImageSubresourceRange@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkCmdExecuteCommandsEP17VkCommandBuffer_TjPKS1_@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkCmdPipelineBarrierEP17VkCommandBuffer_TjjjjPK15VkMemoryBarrierjPK21VkBufferMemoryBarrierjPK20VkImageMemoryBarrier@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkCreateShaderModuleEP10VkDevice_TPK24VkShaderModuleCreateInfoPK21VkAllocationCallbacksPP16VkShaderModule_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkDestroyCommandPoolEP10VkDevice_TP15VkCommandPool_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkDestroyFramebufferEP10VkDevice_TP15VkFramebuffer_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkFreeCommandBuffersEP10VkDevice_TP15VkCommandPool_TjPKP17VkCommandBuffer_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkFreeDescriptorSetsEP10VkDevice_TP18VkDescriptorPool_TjPKP17VkDescriptorSet_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions20vkResetCommandBufferEP17VkCommandBuffer_Tj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions21vkCmdClearAttachmentsEP17VkCommandBuffer_TjPK17VkClearAttachmentjPK11VkClearRect@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions21vkCmdDispatchIndirectEP17VkCommandBuffer_TP10VkBuffer_Tm@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions21vkCreatePipelineCacheEP10VkDevice_TPK25VkPipelineCacheCreateInfoPK21VkAllocationCallbacksPP17VkPipelineCache_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions21vkDestroyShaderModuleEP10VkDevice_TP16VkShaderModule_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions21vkGetQueryPoolResultsEP10VkDevice_TP13VkQueryPool_TjjmPvmj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions21vkMergePipelineCachesEP10VkDevice_TP17VkPipelineCache_TjPKS3_@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions21vkResetDescriptorPoolEP10VkDevice_TP18VkDescriptorPool_Tj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions22vkCmdBindVertexBuffersEP17VkCommandBuffer_TjjPKP10VkBuffer_TPKm@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions22vkCmdCopyBufferToImageEP17VkCommandBuffer_TP10VkBuffer_TP9VkImage_T13VkImageLayoutjPK17VkBufferImageCopy@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions22vkCmdCopyImageToBufferEP17VkCommandBuffer_TP9VkImage_T13VkImageLayoutP10VkBuffer_TjPK17VkBufferImageCopy@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions22vkCmdSetBlendConstantsEP17VkCommandBuffer_TPKf@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions22vkCreateDescriptorPoolEP10VkDevice_TPK26VkDescriptorPoolCreateInfoPK21VkAllocationCallbacksPP18VkDescriptorPool_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions22vkCreatePipelineLayoutEP10VkDevice_TPK26VkPipelineLayoutCreateInfoPK21VkAllocationCallbacksPP18VkPipelineLayout_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions22vkDestroyPipelineCacheEP10VkDevice_TP17VkPipelineCache_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions22vkGetPipelineCacheDataEP10VkDevice_TP17VkPipelineCache_TPmPv@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions22vkUpdateDescriptorSetsEP10VkDevice_TjPK20VkWriteDescriptorSetjPK19VkCopyDescriptorSet@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions23vkCmdBindDescriptorSetsEP17VkCommandBuffer_T19VkPipelineBindPointP18VkPipelineLayout_TjjPKP17VkDescriptorSet_TjPKj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions23vkDestroyDescriptorPoolEP10VkDevice_TP18VkDescriptorPool_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions23vkDestroyPipelineLayoutEP10VkDevice_TP18VkPipelineLayout_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions24vkAllocateCommandBuffersEP10VkDevice_TPK27VkCommandBufferAllocateInfoPP17VkCommandBuffer_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions24vkAllocateDescriptorSetsEP10VkDevice_TPK27VkDescriptorSetAllocateInfoPP17VkDescriptorSet_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions24vkCmdDrawIndexedIndirectEP17VkCommandBuffer_TP10VkBuffer_Tmjj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions24vkCmdSetStencilReferenceEP17VkCommandBuffer_Tjj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions24vkCmdSetStencilWriteMaskEP17VkCommandBuffer_Tjj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions24vkCreateComputePipelinesEP10VkDevice_TP17VkPipelineCache_TjPK27VkComputePipelineCreateInfoPK21VkAllocationCallbacksPP12VkPipeline_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions25vkCmdCopyQueryPoolResultsEP17VkCommandBuffer_TP13VkQueryPool_TjjP10VkBuffer_Tmmj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions25vkCreateGraphicsPipelinesEP10VkDevice_TP17VkPipelineCache_TjPK28VkGraphicsPipelineCreateInfoPK21VkAllocationCallbacksPP12VkPipeline_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions25vkFlushMappedMemoryRangesEP10VkDevice_TjPK19VkMappedMemoryRange@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions26vkCmdSetStencilCompareMaskEP17VkCommandBuffer_Tjj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions26vkGetRenderAreaGranularityEP10VkDevice_TP14VkRenderPass_TP10VkExtent2D@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions27vkCmdClearDepthStencilImageEP17VkCommandBuffer_TP9VkImage_T13VkImageLayoutPK24VkClearDepthStencilValuejPK23VkImageSubresourceRange@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions27vkCreateDescriptorSetLayoutEP10VkDevice_TPK31VkDescriptorSetLayoutCreateInfoPK21VkAllocationCallbacksPP23VkDescriptorSetLayout_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions27vkGetDeviceMemoryCommitmentEP10VkDevice_TP16VkDeviceMemory_TPm@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions27vkGetImageSubresourceLayoutEP10VkDevice_TP9VkImage_TPK18VkImageSubresourceP19VkSubresourceLayout@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions28vkDestroyDescriptorSetLayoutEP10VkDevice_TP23VkDescriptorSetLayout_TPK21VkAllocationCallbacks@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions28vkGetImageMemoryRequirementsEP10VkDevice_TP9VkImage_TP20VkMemoryRequirements@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions29vkGetBufferMemoryRequirementsEP10VkDevice_TP10VkBuffer_TP20VkMemoryRequirements@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions30vkInvalidateMappedMemoryRangesEP10VkDevice_TjPK19VkMappedMemoryRange@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions34vkGetImageSparseMemoryRequirementsEP10VkDevice_TP9VkImage_TPjP31VkSparseImageMemoryRequirements@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctions9vkCmdDrawEP17VkCommandBuffer_Tjjjj@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctionsC1EP15QVulkanInstanceP10VkDevice_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctionsC2EP15QVulkanInstanceP10VkDevice_T@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctionsD1Ev@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN22QVulkanDeviceFunctionsD2Ev@Qt_5_PRIVATE_API 5.11.1 1
  _ZN22QWhatsThisClickedEventC1ERK7QString@Qt_5 5.0.2
  _ZN22QWhatsThisClickedEventC2ERK7QString@Qt_5 5.0.2
  _ZN22QWhatsThisClickedEventD0Ev@Qt_5 5.0.2
@@ -3497,6 +3692,12 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN23QPlatformSystemTrayIconD0Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformSystemTrayIconD1Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformSystemTrayIconD2Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (arch=amd64)_ZN23QPlatformVulkanInstance13presentQueuedEP7QWindow@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN23QPlatformVulkanInstanceC1Ev@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN23QPlatformVulkanInstanceC2Ev@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN23QPlatformVulkanInstanceD0Ev@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN23QPlatformVulkanInstanceD1Ev@Qt_5_PRIVATE_API 5.11.1 1
+ (arch=amd64)_ZN23QPlatformVulkanInstanceD2Ev@Qt_5_PRIVATE_API 5.11.1 1
  _ZN23QPointingDeviceUniqueId13fromNumericIdEx@Qt_5 5.8.0
  _ZN23QPointingDeviceUniqueId16staticMetaObjectE@Qt_5 5.8.0
  _ZN23QWindowStateChangeEventC1E6QFlagsIN2Qt11WindowStateEEb@Qt_5 5.0.2
@@ -4576,6 +4777,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZN7QWindow16setSizeIncrementERK5QSize@Qt_5 5.2.0
  _ZN7QWindow16staticMetaObjectE@Qt_5 5.2.0
  _ZN7QWindow17mouseReleaseEventEP11QMouseEvent@Qt_5 5.2.0
+ (arch=amd64)_ZN7QWindow17setVulkanInstanceEP15QVulkanInstance@Qt_5 5.11.1
  _ZN7QWindow17visibilityChangedENS_10VisibilityE@Qt_5 5.2.0
  _ZN7QWindow18focusObjectChangedEP7QObject@Qt_5 5.2.0
  _ZN7QWindow18setTransientParentEPS_@Qt_5 5.2.0
@@ -5657,6 +5859,34 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK13QTextFragment8containsEi@Qt_5 5.0.2
  _ZNK13QTextFragment8positionEv@Qt_5 5.0.2
  _ZNK13QTextFragment9glyphRunsEii@Qt_5 5.0.2
+ (arch=amd64)_ZNK13QVulkanWindow10metaObjectEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow11colorFormatEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow12currentFrameEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow12supportsGrabEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow13graphicsQueueEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow14msaaColorImageEi@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow14physicalDeviceEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow14swapChainImageEi@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow17defaultRenderPassEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow17depthStencilImageEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow18currentFramebufferEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow18depthStencilFormatEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow18msaaColorImageViewEi@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow18swapChainImageSizeEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow18swapChainImageViewEi@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow19graphicsCommandPoolEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow19sampleCountFlagBitsEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow19swapChainImageCountEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow20concurrentFrameCountEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow20currentCommandBufferEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow21depthStencilImageViewEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow22deviceLocalMemoryIndexEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow22hostVisibleMemoryIndexEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow24physicalDevicePropertiesEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow26currentSwapChainImageIndexEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow5flagsEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow6deviceEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK13QVulkanWindow7isValidEv@Qt_5 5.11.1
  _ZNK14QDistanceField13constScanLineEi@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZNK14QDistanceField4bitsEv@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZNK14QDistanceField4copyERK5QRect@Qt_5_PRIVATE_API 5.2.0~alpha1 1
@@ -5899,6 +6129,15 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK15QTextCharFormat11anchorNamesEv@Qt_5 5.0.2
  _ZNK15QTextCharFormat13fontUnderlineEv@Qt_5 5.0.2
  _ZNK15QTextCharFormat4fontEv@Qt_5 5.0.2
+ (arch=amd64)_ZNK15QVulkanInstance10apiVersionEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK15QVulkanInstance10extensionsEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK15QVulkanInstance10vkInstanceEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK15QVulkanInstance5flagsEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK15QVulkanInstance6handleEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK15QVulkanInstance6layersEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK15QVulkanInstance7isValidEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK15QVulkanInstance9errorCodeEv@Qt_5 5.11.1
+ (arch=amd64)_ZNK15QVulkanInstance9functionsEv@Qt_5 5.11.1
  _ZNK15glyph_metrics_t11transformedERK10QTransform@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK16QAccessibleCache10metaObjectEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZNK16QAccessibleCache14idForInterfaceEP20QAccessibleInterface@Qt_5_PRIVATE_API 5.7.1 1
@@ -6213,6 +6452,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK20QPlatformIntegration22queryKeyboardModifiersEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformIntegration27createPlatformOpenGLContextEP14QOpenGLContext@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformIntegration28createPlatformSessionManagerERK7QStringS2_@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (arch=amd64)_ZNK20QPlatformIntegration28createPlatformVulkanInstanceEP15QVulkanInstance@Qt_5_PRIVATE_API 5.11.1 1
  _ZNK20QPlatformIntegration30createPlatformOffscreenSurfaceEP17QOffscreenSurface@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformIntegration33createPlatformSharedGraphicsCacheEPKc@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK20QPlatformIntegration4beepEv@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -6795,6 +7035,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZNK7QWindow13sizeIncrementEv@Qt_5 5.0.2
  _ZNK7QWindow13surfaceHandleEv@Qt_5 5.0.2
  _ZNK7QWindow14accessibleRootEv@Qt_5 5.0.2
+ (arch=amd64)_ZNK7QWindow14vulkanInstanceEv@Qt_5 5.11.1
  _ZNK7QWindow15requestedFormatEv@Qt_5 5.0.2
  _ZNK7QWindow15transientParentEv@Qt_5 5.0.2
  _ZNK7QWindow16devicePixelRatioEv@Qt_5 5.0.2
@@ -7073,6 +7314,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTI13QRasterWindow@Qt_5 5.4.0
  _ZTI13QStandardItem@Qt_5 5.0.2
  _ZTI13QTextDocument@Qt_5 5.0.2
+ (arch=amd64)_ZTI13QVulkanWindow@Qt_5 5.11.1
  _ZTI14QDragMoveEvent@Qt_5 5.0.2
  _ZTI14QFileOpenEvent@Qt_5 5.0.2
  _ZTI14QGenericPlugin@Qt_5 5.0.2
@@ -7170,6 +7412,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTI21QPlatformSurfaceEvent@Qt_5 5.5.0
  _ZTI21QPlatformThemePrivate@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTI21QRasterPlatformPixmap@Qt_5_PRIVATE_API 5.0.2 1
+ (arch=amd64)_ZTI21QVulkanWindowRenderer@Qt_5 5.11.1
  _ZTI22QAccessibleApplication@Qt_5 5.0.2
  _ZTI22QGuiApplicationPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI22QInputMethodQueryEvent@Qt_5 5.0.2
@@ -7181,6 +7424,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTI23QPlatformGraphicsBuffer@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTI23QPlatformSessionManager@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTI23QPlatformSystemTrayIcon@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (arch=amd64)_ZTI23QPlatformVulkanInstance@Qt_5_PRIVATE_API 5.11.1 1
  _ZTI23QWindowStateChangeEvent@Qt_5 5.0.2
  _ZTI24QAbstractOpenGLFunctions@Qt_5 5.5.0
  _ZTI24QAccessibleTextInterface@Qt_5 5.0.2
@@ -7336,6 +7580,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTS13QRasterWindow@Qt_5 5.4.0
  _ZTS13QStandardItem@Qt_5 5.0.2
  _ZTS13QTextDocument@Qt_5 5.0.2
+ (arch=amd64)_ZTS13QVulkanWindow@Qt_5 5.11.1
  _ZTS14QDragMoveEvent@Qt_5 5.0.2
  _ZTS14QFileOpenEvent@Qt_5 5.0.2
  _ZTS14QGenericPlugin@Qt_5 5.0.2
@@ -7433,6 +7678,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTS21QPlatformSurfaceEvent@Qt_5 5.5.0
  _ZTS21QPlatformThemePrivate@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTS21QRasterPlatformPixmap@Qt_5_PRIVATE_API 5.0.2 1
+ (arch=amd64)_ZTS21QVulkanWindowRenderer@Qt_5 5.11.1
  _ZTS22QAccessibleApplication@Qt_5 5.0.2
  _ZTS22QGuiApplicationPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS22QInputMethodQueryEvent@Qt_5 5.0.2
@@ -7444,6 +7690,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTS23QPlatformGraphicsBuffer@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTS23QPlatformSessionManager@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTS23QPlatformSystemTrayIcon@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (arch=amd64)_ZTS23QPlatformVulkanInstance@Qt_5_PRIVATE_API 5.11.1 1
  _ZTS23QWindowStateChangeEvent@Qt_5 5.0.2
  _ZTS24QAbstractOpenGLFunctions@Qt_5 5.5.0
  _ZTS24QAccessibleTextInterface@Qt_5 5.0.2
@@ -7598,6 +7845,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTV13QRasterWindow@Qt_5 5.4.0
  _ZTV13QStandardItem@Qt_5 5.0.2
  _ZTV13QTextDocument@Qt_5 5.0.2
+ (arch=amd64)_ZTV13QVulkanWindow@Qt_5 5.11.1
  _ZTV14QDragMoveEvent@Qt_5 5.0.2
  _ZTV14QFileOpenEvent@Qt_5 5.0.2
  _ZTV14QGenericPlugin@Qt_5 5.0.2
@@ -7694,6 +7942,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTV21QPlatformSurfaceEvent@Qt_5 5.5.0
  _ZTV21QPlatformThemePrivate@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTV21QRasterPlatformPixmap@Qt_5_PRIVATE_API 5.0.2 1
+ (arch=amd64)_ZTV21QVulkanWindowRenderer@Qt_5 5.11.1
  _ZTV22QAccessibleApplication@Qt_5 5.0.2
  _ZTV22QGuiApplicationPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV22QInputMethodQueryEvent@Qt_5 5.0.2
@@ -7705,6 +7954,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _ZTV23QPlatformGraphicsBuffer@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTV23QPlatformSessionManager@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZTV23QPlatformSystemTrayIcon@Qt_5_PRIVATE_API 5.9.0~beta 1
+ (arch=amd64)_ZTV23QPlatformVulkanInstance@Qt_5_PRIVATE_API 5.11.1 1
  _ZTV23QWindowStateChangeEvent@Qt_5 5.0.2
  _ZTV24QAbstractOpenGLFunctions@Qt_5 5.5.0
  _ZTV24QAccessibleTextInterface@Qt_5 5.0.2
@@ -7842,8 +8092,10 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  _Zls6QDebugRK11QTextLength@Qt_5 5.0.2
  _Zls6QDebugRK12QKeySequence@Qt_5 5.0.2
  _Zls6QDebugRK12QPainterPath@Qt_5 5.0.2
+ (arch=amd64)_Zls6QDebugRK12QVulkanLayer@Qt_5 5.11.1
  _Zls6QDebugRK14QSurfaceFormat@Qt_5 5.0.2
  _Zls6QDebugRK16QAccessibleEvent@Qt_5 5.0.2
+ (arch=amd64)_Zls6QDebugRK16QVulkanExtension@Qt_5 5.11.1
  _Zls6QDebugRK19QOpenGLDebugMessage@Qt_5 5.1.0
  _Zls6QDebugRK21QOpenGLVersionProfile@Qt_5 5.10.0
  _Zls6QDebugRK24QSupportedWritingSystems@Qt_5_PRIVATE_API 5.9.0~beta3 1
@@ -7943,6 +8195,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER#
  (c++)"non-virtual thunk to QRasterWindow::~QRasterWindow()@Qt_5" 5.9.0~beta3
  (c++)"non-virtual thunk to QTextImageHandler::drawObject(QPainter*, QRectF const&, QTextDocument*, int, QTextFormat const&)@Qt_5_PRIVATE_API" 5.0.2 1
  (c++)"non-virtual thunk to QTextImageHandler::intrinsicSize(QTextDocument*, int, QTextFormat const&)@Qt_5_PRIVATE_API" 5.0.2 1
+ (c++|arch=amd64)"non-virtual thunk to QVulkanWindow::~QVulkanWindow()@Qt_5" 5.11.1
  (c++)"non-virtual thunk to QWindow::format() const@Qt_5" 5.0.2
  (c++)"non-virtual thunk to QWindow::surfaceHandle() const@Qt_5" 5.0.2
  (c++)"non-virtual thunk to QWindow::surfaceType() const@Qt_5" 5.0.2

@@ -3,7 +3,7 @@ qtbase-opensource-src (5.11.1+dfsg-9) unstable; urgency=medium
   * Add libvulkan-dev to provide Vulkan support (Closes:#909579).
   * Backport fix_possible_heap_corruption_in_qxmlstream.patch to solve
     possible heap corruption on QXmlStream.
-  * Update symbols files with buildds' logs.
+  * Update symbols files with buildds' and current logs.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 25 Sep 2018 16:33:30 -0300
 
