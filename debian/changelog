@@ -1,5 +1,13 @@
 qtbase-opensource-src (5.11.2+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Make `pkg-config --variable=host_bins Qt5Core`/qmake work with cross
+    compilation (closes: #909575):
+    - Patch Qt5Core.pc to make host_bins variable point to the multi-arch
+      location (/usr/lib/${DEB_HOST_MULTIARCH}/qt5/bin).
+    - Make /usr/lib/${DEB_HOST_MULTIARCH}/qt5/bin/qmake point to
+      /usr/bin/${DEB_HOST_GNU_TYPE}-qmake. Also move this symlink from
+      qt5-qmake-bin to qt5-qmake.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Sep 2018 17:13:59 +0300
 

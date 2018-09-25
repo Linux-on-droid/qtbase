@@ -421,6 +421,7 @@ Section: devel
 Depends: qt5-qmake-bin (= ${binary:Version}),
          qtchooser (>= 55-gc9562a1-1~),
          ${misc:Depends}
+Replaces: qt5-qmake-bin (<< 5.11.2+dfsg-3~)
 Description: Qt 5 qmake Makefile generator tool
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.

@@ -225,6 +225,10 @@ endif
 	find $(CURDIR)/debian/tmp/usr/lib/*/pkgconfig -type f -name '*.pc' \
 		-exec perl -pi -e "s, -L$(CURDIR)/?\S+,,g" {} \;
 
+	# Use multiarched directory for host_bins variable (see #909575)
+	sed -i "s,lib/qt5/bin,lib/$(DEB_HOST_MULTIARCH)/qt5/bin," \
+		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/pkgconfig/Qt5Core.pc
+
 	# Configuration file for qt5-default package
 	mkdir -p $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser
 	ln -s /usr/share/qtchooser/qt5-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/default.conf
