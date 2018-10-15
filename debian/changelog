@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.11.2+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.2+dfsg-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Make `pkg-config --variable=host_bins Qt5Core`/qmake work with cross
     compilation (closes: #909575):
     - Patch Qt5Core.pc to make host_bins variable point to the multi-arch
@@ -10,8 +9,9 @@ qtbase-opensource-src (5.11.2+dfsg-3) UNRELEASED; urgency=medium
       qt5-qmake-bin to qt5-qmake.
   * Correctly update symbols files for Vulkan symbols introduction.
     Use arch-bits=32/64 where appropriate.
+  * Upload to unstable.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Sep 2018 17:13:59 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 15 Oct 2018 20:45:46 +0300
 
 qtbase-opensource-src (5.11.2+dfsg-2) experimental; urgency=medium
 
