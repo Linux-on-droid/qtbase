@@ -3,6 +3,10 @@
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFSDeviceIntegration.so
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.prl
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.so
+[linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupport
+[linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportDepends
+[linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportVersion
+[linux-any] usr/include/*/qt5/QtVulkanSupport/qtvulkansupportversion.h
 usr/include/*/qt5/QtConcurrent/QtConcurrent
 usr/include/*/qt5/QtConcurrent/QtConcurrentDepends
 usr/include/*/qt5/QtConcurrent/QtConcurrentFilter
@@ -1208,10 +1212,6 @@ usr/include/*/qt5/QtTest/qtesttouch.h
 usr/include/*/qt5/QtTest/qttestlib-config.h
 usr/include/*/qt5/QtTest/qttestglobal.h
 usr/include/*/qt5/QtTest/qttestversion.h
-usr/include/*/qt5/QtVulkanSupport/qtvulkansupportversion.h
-usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportDepends
-usr/include/*/qt5/QtVulkanSupport/QtVulkanSupport
-usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportVersion
 usr/include/*/qt5/QtWidgets/QAbstractButton
 usr/include/*/qt5/QtWidgets/QAbstractGraphicsShapeItem
 usr/include/*/qt5/QtWidgets/QAbstractItemDelegate

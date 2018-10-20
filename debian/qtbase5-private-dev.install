@@ -25,8 +25,11 @@
 [linux-any] usr/include/*/qt5/QtInputSupport/QtInputSupportVersion
 [linux-any] usr/include/*/qt5/QtInputSupport/qintegrityhidmanager.h
 [linux-any] usr/include/*/qt5/QtInputSupport/qtinputsupportversion.h
+[linux-any] usr/include/*/qt5/QtVulkanSupport/5.*/*
 [linux-any] usr/lib/*/libQt5InputSupport.a
 [linux-any] usr/lib/*/libQt5InputSupport.prl
+[linux-any] usr/lib/*/libQt5VulkanSupport.a
+[linux-any] usr/lib/*/libQt5VulkanSupport.prl
 usr/include/*/qt5/QtAccessibilitySupport/5.*/*
 usr/include/*/qt5/QtAccessibilitySupport/QtAccessibilitySupport
 usr/include/*/qt5/QtAccessibilitySupport/QtAccessibilitySupportDepends
@@ -90,7 +93,6 @@ usr/include/*/qt5/QtThemeSupport/QtThemeSupport
 usr/include/*/qt5/QtThemeSupport/QtThemeSupportDepends
 usr/include/*/qt5/QtThemeSupport/QtThemeSupportVersion
 usr/include/*/qt5/QtThemeSupport/qtthemesupportversion.h
-usr/include/*/qt5/QtVulkanSupport/5.*/*
 usr/include/*/qt5/QtWidgets/5.*/*
 usr/include/*/qt5/QtXml/5.*/*
 usr/lib/*/libQt5AccessibilitySupport.a
@@ -115,5 +117,3 @@ usr/lib/*/libQt5ServiceSupport.a
 usr/lib/*/libQt5ServiceSupport.prl
 usr/lib/*/libQt5ThemeSupport.a
 usr/lib/*/libQt5ThemeSupport.prl
-usr/lib/*/libQt5VulkanSupport.a
-usr/lib/*/libQt5VulkanSupport.prl
