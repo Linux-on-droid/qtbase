@@ -26,6 +26,10 @@
 [linux-any] usr/include/*/qt5/QtInputSupport/qintegrityhidmanager.h
 [linux-any] usr/include/*/qt5/QtInputSupport/qtinputsupportversion.h
 [linux-any] usr/include/*/qt5/QtVulkanSupport/5.*/*
+[linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupport
+[linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportDepends
+[linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportVersion
+[linux-any] usr/include/*/qt5/QtVulkanSupport/qtvulkansupportversion.h
 [linux-any] usr/lib/*/libQt5InputSupport.a
 [linux-any] usr/lib/*/libQt5InputSupport.prl
 [linux-any] usr/lib/*/libQt5VulkanSupport.a

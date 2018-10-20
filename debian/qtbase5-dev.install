@@ -3,10 +3,6 @@
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFSDeviceIntegration.so
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.prl
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.so
-[linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupport
-[linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportDepends
-[linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportVersion
-[linux-any] usr/include/*/qt5/QtVulkanSupport/qtvulkansupportversion.h
 usr/include/*/qt5/QtConcurrent/QtConcurrent
 usr/include/*/qt5/QtConcurrent/QtConcurrentDepends
 usr/include/*/qt5/QtConcurrent/QtConcurrentFilter

@@ -357,8 +357,8 @@ Depends: libinput-dev [linux-any],
          libxkbcommon-dev,
          qtbase5-dev (= ${binary:Version}),
          ${misc:Depends}
-Breaks: qtbase5-dev (<< 5.4.0+dfsg-6~)
-Replaces: qtbase5-dev (<< 5.4.0+dfsg-6~)
+Breaks: qtbase5-dev (<< 5.11.2+dfsg-4~)
+Replaces: qtbase5-dev (<< 5.11.2+dfsg-4~)
 Description: Qt 5 base private development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
