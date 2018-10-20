@@ -5,6 +5,7 @@ qtbase-opensource-src (5.11.2+dfsg-4) UNRELEASED; urgency=medium
     Thanks to Samuel Thibault for the initial patch.
   * Move all QtVulkanSupport headers to qtbase5-private-dev package.
     The static library is there, so the headers should also be there.
+  * Sort debian/qtbase5-dev.install using wrap-and-sort.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 20 Oct 2018 14:57:18 +0300
 

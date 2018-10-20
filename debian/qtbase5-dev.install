@@ -883,8 +883,8 @@ usr/include/*/qt5/QtGui/qopenglbuffer.h
 usr/include/*/qt5/QtGui/qopenglcontext.h
 usr/include/*/qt5/QtGui/qopengldebug.h
 usr/include/*/qt5/QtGui/qopengles2ext.h
-usr/include/*/qt5/QtGui/qopenglextrafunctions.h
 usr/include/*/qt5/QtGui/qopenglext.h
+usr/include/*/qt5/QtGui/qopenglextrafunctions.h
 usr/include/*/qt5/QtGui/qopenglframebufferobject.h
 usr/include/*/qt5/QtGui/qopenglfunctions.h
 usr/include/*/qt5/QtGui/qopenglfunctions_1_0.h
@@ -1205,8 +1205,8 @@ usr/include/*/qt5/QtTest/qtestmouse.h
 usr/include/*/qt5/QtTest/qtestspontaneevent.h
 usr/include/*/qt5/QtTest/qtestsystem.h
 usr/include/*/qt5/QtTest/qtesttouch.h
-usr/include/*/qt5/QtTest/qttestlib-config.h
 usr/include/*/qt5/QtTest/qttestglobal.h
+usr/include/*/qt5/QtTest/qttestlib-config.h
 usr/include/*/qt5/QtTest/qttestversion.h
 usr/include/*/qt5/QtWidgets/QAbstractButton
 usr/include/*/qt5/QtWidgets/QAbstractGraphicsShapeItem
@@ -1684,8 +1684,8 @@ usr/share/qt5/doc/global/includes/examples-run.qdocinc
 usr/share/qt5/doc/global/macros.qdocconf
 usr/share/qt5/doc/global/manifest-meta.qdocconf
 usr/share/qt5/doc/global/qt-cpp-defines.qdocconf
-usr/share/qt5/doc/global/qt-html-templates-offline.qdocconf
 usr/share/qt5/doc/global/qt-html-templates-offline-simple.qdocconf
+usr/share/qt5/doc/global/qt-html-templates-offline.qdocconf
 usr/share/qt5/doc/global/qt-html-templates-online.qdocconf
 usr/share/qt5/doc/global/qt-module-defaults-offline.qdocconf
 usr/share/qt5/doc/global/qt-module-defaults-online-commercial.qdocconf
@@ -1738,7 +1738,7 @@ usr/share/qt5/doc/global/template/style/icomoon.ttf
 usr/share/qt5/doc/global/template/style/icomoon.woff
 usr/share/qt5/doc/global/template/style/list_arrow.png
 usr/share/qt5/doc/global/template/style/list_expand.png
-usr/share/qt5/doc/global/template/style/offline.css
 usr/share/qt5/doc/global/template/style/offline-simple.css
+usr/share/qt5/doc/global/template/style/offline.css
 usr/share/qt5/doc/global/template/style/online.css
 usr/share/qt5/doc/global/template/style/theqtcompany.png
