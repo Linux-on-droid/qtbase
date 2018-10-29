@@ -14,6 +14,8 @@ qtbase-opensource-src (5.11.2+dfsg-4) UNRELEASED; urgency=medium
     The issue was fixed in kxmlgui v5.49.0, no need to patch Qt anymore.
   * Replace hidpi_scale_at_192.diff with a version that has been applied
     upstream (reference_dpi.diff).
+  * Backport upstream patch to fix freezes when opening applications
+    (dont_get_screen_rotation.diff).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 20 Oct 2018 14:57:18 +0300
 

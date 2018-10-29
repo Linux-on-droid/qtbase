@@ -1,8 +1,7 @@
 # Backported from upstream.
 fix-selection-rendering.patch
-
-# Forwarded upstream.
 reference_dpi.diff
+dont_get_screen_rotation.diff
 
 # Debian specific.
 gnukfreebsd.diff
