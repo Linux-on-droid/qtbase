@@ -2,7 +2,7 @@
 fix-selection-rendering.patch
 
 # Forwarded upstream.
-hidpi_scale_at_192.diff
+reference_dpi.diff
 
 # Debian specific.
 gnukfreebsd.diff

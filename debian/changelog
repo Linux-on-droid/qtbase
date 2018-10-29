@@ -12,6 +12,8 @@ qtbase-opensource-src (5.11.2+dfsg-4) UNRELEASED; urgency=medium
   * Bump qttools build-dependency to 5.11.2-4 (to get unpatched qdoc).
   * Drop Revert-QWidgetWindow-Immediately-forward-close-event.patch.
     The issue was fixed in kxmlgui v5.49.0, no need to patch Qt anymore.
+  * Replace hidpi_scale_at_192.diff with a version that has been applied
+    upstream (reference_dpi.diff).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 20 Oct 2018 14:57:18 +0300
 
