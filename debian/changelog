@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.11.2+dfsg-4) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.2+dfsg-4) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Mark libvulkan-dev build-dependency as linux-any (closes: #911422).
     Thanks to Samuel Thibault for the initial patch.
   * Move all QtVulkanSupport headers to qtbase5-private-dev package.
@@ -17,7 +16,7 @@ qtbase-opensource-src (5.11.2+dfsg-4) UNRELEASED; urgency=medium
   * Backport upstream patch to fix freezes when opening applications
     (dont_get_screen_rotation.diff).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 20 Oct 2018 14:57:18 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 29 Oct 2018 22:59:29 +0300
 
 qtbase-opensource-src (5.11.2+dfsg-3) unstable; urgency=medium
 
