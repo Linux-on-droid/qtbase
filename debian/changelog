@@ -9,6 +9,7 @@ qtbase-opensource-src (5.11.2+dfsg-4) UNRELEASED; urgency=medium
   * Make qtbase5-dev depend on libvulkan-dev on linux, as Qt headers
     include Vulkan headers.
   * Add a patch to pass default include directories to qdoc.
+  * Bump qttools build-dependency to 5.11.2-4 (to get unpatched qdoc).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 20 Oct 2018 14:57:18 +0300
 
