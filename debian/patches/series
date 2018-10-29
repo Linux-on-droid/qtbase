@@ -14,5 +14,4 @@ armv4.diff
 nonlinux_utime.diff
 no_arc4random_buf.diff
 ssl_max_version.diff
-Revert-QWidgetWindow-Immediately-forward-close-event.patch
 qdoc_default_incdirs.diff

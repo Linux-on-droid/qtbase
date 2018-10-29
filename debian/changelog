@@ -10,6 +10,8 @@ qtbase-opensource-src (5.11.2+dfsg-4) UNRELEASED; urgency=medium
     include Vulkan headers.
   * Add a patch to pass default include directories to qdoc.
   * Bump qttools build-dependency to 5.11.2-4 (to get unpatched qdoc).
+  * Drop Revert-QWidgetWindow-Immediately-forward-close-event.patch.
+    The issue was fixed in kxmlgui v5.49.0, no need to patch Qt anymore.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 20 Oct 2018 14:57:18 +0300
 
