@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.11.2+dfsg-5) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 31 Oct 2018 20:18:07 +0300
+
 qtbase-opensource-src (5.11.2+dfsg-4) unstable; urgency=medium
 
   * Mark libvulkan-dev build-dependency as linux-any (closes: #911422).
