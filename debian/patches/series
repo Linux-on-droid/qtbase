@@ -14,3 +14,4 @@ nonlinux_utime.diff
 no_arc4random_buf.diff
 ssl_max_version.diff
 qdoc_default_incdirs.diff
+kfreebsd_qstrncpy.diff
