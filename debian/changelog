@@ -5,6 +5,8 @@ qtbase-opensource-src (5.11.2+dfsg-5) UNRELEASED; urgency=medium
     (kfreebsd_qstrncpy.diff).
   * Add a patch to fix ambiguous definition of atime/mtime/ctime
     on alpha, thanks Michael Cree (closes: #896658).
+  * debian/rules: Use qmake cross wrapper in Qt5CoreConfigExtras.cmake
+    (closes: #913499).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 31 Oct 2018 20:18:07 +0300
 
