@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.11.2+dfsg-5) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.2+dfsg-5) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Add a patch to use qstrncpy instead of strlcpy on GNU/kFreeBSD
     (kfreebsd_qstrncpy.diff).
   * Add a patch to fix ambiguous definition of atime/mtime/ctime
@@ -8,7 +7,7 @@ qtbase-opensource-src (5.11.2+dfsg-5) UNRELEASED; urgency=medium
   * debian/rules: Use qmake cross wrapper in Qt5CoreConfigExtras.cmake
     (closes: #913499).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 31 Oct 2018 20:18:07 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 12 Nov 2018 10:08:10 +0300
 
 qtbase-opensource-src (5.11.2+dfsg-4) unstable; urgency=medium
 
