@@ -1,5 +1,9 @@
 qtbase-opensource-src (5.11.2+dfsg-6) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Stop patching mkspecs/qmodule.pri in override_dh_auto_configure.
+    The condition has changed to !host_build|!cross_compile in Qt 5.9,
+    which is always true for us.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 16 Nov 2018 11:18:16 +0300
 
