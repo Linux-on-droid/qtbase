@@ -6,6 +6,9 @@
 # Use already defined DEB_HOST_* variables.
 include /usr/share/dpkg/architecture.mk
 
+# Use already defined upstream version as DEB_VERSION_UPSTREAM.
+include /usr/share/dpkg/pkg-info.mk
+
 export PATH := $(PATH):$(shell pwd)/bin
 export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell getconf LFS_CFLAGS)
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell getconf LFS_CFLAGS)
@@ -13,7 +16,7 @@ export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 export PKG_CONFIG := /usr/bin/$(DEB_HOST_GNU_TYPE)-pkg-config
 
 # Upstream changelog
-upstream_changes := dist/changes-$(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | cut -f1 -d '-' | sed -e 's/+dfsg//' | sed -e 's/+git.*//')
+upstream_changes := dist/changes-$(shell echo $(DEB_VERSION_UPSTREAM) | sed -e 's/+dfsg//' | sed -e 's/+git.*//')
 
 ifneq (,$(filter libqt5sql5-ibase,$(shell dh_listpackages)))
 	extra_configure_opts += -plugin-sql-ibase

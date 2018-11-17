@@ -15,6 +15,9 @@ qtbase-opensource-src (5.11.2+dfsg-6) UNRELEASED; urgency=medium
   * Backport remove_need_for_glXGetProcAddressARB.patch. This removes the
     need for using dlopen() and thus libGL.so.1 should be used instead of
     libGL.so (Closes: #913287).
+  * Include /usr/share/dpkg/pkg-info.mk and replace the call to
+    dpkg-parsechangelog with DEB_VERSION_UPTREAM. According to lintian this
+    should handle more corner cases.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 16 Nov 2018 11:18:16 +0300
 
