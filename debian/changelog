@@ -9,6 +9,7 @@ qtbase-opensource-src (5.11.2+dfsg-6) UNRELEASED; urgency=medium
     Thanks to Helmut Grohne for noticing it!
   * Build corelib and gui without -O3 on ia64 as a workaround for GCC bug
     (PR rtl-optimization/85412).
+  * Update symbols files with buildds’ logs (alpha and kfreebsd-i386).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 16 Nov 2018 11:18:16 +0300
 
