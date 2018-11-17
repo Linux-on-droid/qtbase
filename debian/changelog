@@ -11,6 +11,11 @@ qtbase-opensource-src (5.11.2+dfsg-6) UNRELEASED; urgency=medium
     (PR rtl-optimization/85412).
   * Update symbols files with buildds’ logs (alpha and kfreebsd-i386).
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport remove_need_for_glXGetProcAddressARB.patch. This removes the
+    need for using dlopen() and thus libGL.so.1 should be used instead of
+    libGL.so (Closes: #913287).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 16 Nov 2018 11:18:16 +0300
 
 qtbase-opensource-src (5.11.2+dfsg-5) unstable; urgency=medium

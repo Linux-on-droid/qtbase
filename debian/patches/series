@@ -2,6 +2,7 @@
 fix-selection-rendering.patch
 reference_dpi.diff
 dont_get_screen_rotation.diff
+remove_need_for_glXGetProcAddressARB.patch
 
 # Debian specific.
 gnukfreebsd.diff
