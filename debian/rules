@@ -270,6 +270,9 @@ endif
 	sed -i 's,lib/qt5/bin/qmake,bin/$(DEB_HOST_GNU_TYPE)-qmake,' \
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
 
+	sed -i 's,-fdebug-prefix-map=$(CURDIR)=. ,,' \
+		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/qmodule.pri
+
 override_dh_auto_install-indep:
 	dh_auto_build -- INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
