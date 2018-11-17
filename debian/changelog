@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.11.2+dfsg-6) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.2+dfsg-6) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Stop patching mkspecs/qmodule.pri in override_dh_auto_configure.
@@ -19,7 +19,7 @@ qtbase-opensource-src (5.11.2+dfsg-6) UNRELEASED; urgency=medium
     dpkg-parsechangelog with DEB_VERSION_UPTREAM. According to lintian this
     should handle more corner cases.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 16 Nov 2018 11:18:16 +0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 17 Nov 2018 19:24:49 -0300
 
 qtbase-opensource-src (5.11.2+dfsg-5) unstable; urgency=medium
 
