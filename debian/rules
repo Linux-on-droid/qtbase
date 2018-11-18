@@ -275,7 +275,7 @@ endif
 	chmod +x debian/tmp/usr/bin/$(DEB_HOST_GNU_TYPE)-qmake
 
 	# See https://bugs.debian.org/913499
-	sed -i 's,lib/qt5/bin/qmake,bin/$(DEB_HOST_GNU_TYPE)-qmake,' \
+	sed -i 's,lib/qt5/bin/qmake,lib/$(DEB_HOST_MULTIARCH)/qt5/bin/qmake,' \
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
 
 	sed -i 's,-fdebug-prefix-map=$(CURDIR)=. ,,' \
