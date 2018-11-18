@@ -1,10 +1,9 @@
-qtbase-opensource-src (5.11.2+dfsg-7) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.2+dfsg-7) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Change the fix for #913499 to not break FindQHelpGenerator.cmake
     that is shipped by extra-cmake-modules (closes: #914045).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Nov 2018 00:30:55 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 19 Nov 2018 00:36:29 +0300
 
 qtbase-opensource-src (5.11.2+dfsg-6) unstable; urgency=medium
 
