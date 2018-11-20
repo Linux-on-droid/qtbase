@@ -1,6 +1,9 @@
 # This dependency has been added to track external packages building against
 # our private headers. It is ok if internal packages depend on the ABI one.
 libqt5gui5a: symbols-declares-dependency-on-other-package qtbase-abi-*
+# We renamed libqt5gui5 to libqt5gui5a in order to allow arm64 use OpenGL ES
+# instead of Desktop OpenGL.
+libqt5gui5a: package-name-doesnt-match-sonames libQt5Gui5
 # libQt5EglDeviceIntegration and libQt5XcbQpa are actually private libraries
 # *only* used by their respective platforms plugins. Sadly instead of being
 # installed into a proper place like /usr/lib/<arch-triplet>/qt5/ they are

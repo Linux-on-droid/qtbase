@@ -6,6 +6,7 @@ qtbase-opensource-src (5.11.2+dfsg-8) UNRELEASED; urgency=medium
       - Add Breaks+Replaces against libqt5gui5 << 5.11.2+dfsg-8~. This
         avoids co-installation of the library.
       - Change all related dependencies to new binary name.
+      - Add a lintian override for package name doe snot match soname warning.
     - Adjust arch qualifications for required packages.
     - debian/rules: add arm64 to gles2_architectures.
     - Rename debian/libqt5gui5 files to their libqt5gui5a counterparts,
