@@ -8,6 +8,8 @@ qtbase-opensource-src (5.11.2+dfsg+arm64egl-1) UNRELEASED; urgency=medium
       - Change all related dependencies to new binary name.
     - Adjust arch qualifications for required packages.
     - debian/rules: add arm64 to gles2_architectures.
+    - Rename debian/libqt5gui5 files to their libqt5gui5a counterparts,
+      modifying them when necessary.
   * Update symbols files with buildds' logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 20 Nov 2018 17:05:28 -0300
