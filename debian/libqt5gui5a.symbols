@@ -1,5 +1,5 @@
 # SymbolsHelper-Confirmed: 5.11.2 amd64
-libQt5Gui.so.5 libqt5gui5 #MINVER#
+libQt5Gui.so.5 libqt5gui5a #MINVER#
 | libqt5gui5a #MINVER#, qtbase-abi-5-11-2
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
