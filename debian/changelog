@@ -1,9 +1,9 @@
-qtbase-opensource-src (5.11.2+dfsg+arm64egl-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.2+dfsg-8) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Switch arm64 to use OpenGL ES instead of desktop OpenGL (Closes: #881333).
     - Rename libqt5gui5 to libqt5gui5a.
-      - Add Breaks+Replaces against libqt5gui5 << 5.11.2+dfsg+arm64elg-1~. This
+      - Add Breaks+Replaces against libqt5gui5 << 5.11.2+dfsg-8~. This
         avoids co-installation of the library.
       - Change all related dependencies to new binary name.
     - Adjust arch qualifications for required packages.
