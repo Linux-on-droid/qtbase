@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.11.2+dfsg+arm64egl-1) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 20 Nov 2018 17:05:28 -0300
+
 qtbase-opensource-src (5.11.2+dfsg-7) unstable; urgency=medium
 
   * Change the fix for #913499 to not break FindQHelpGenerator.cmake
