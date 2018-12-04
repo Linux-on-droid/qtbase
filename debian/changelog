@@ -6,6 +6,7 @@ qtbase-opensource-src (5.11.3+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
     - Bump Qt build dependencies.
     - Bump qtbase-abi to 5-11-3.
+  * Fix typo in previous changelog entry.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Dec 2018 13:21:13 -0300
 
@@ -16,7 +17,7 @@ qtbase-opensource-src (5.11.2+dfsg-8) experimental; urgency=medium
       - Add Breaks+Replaces against libqt5gui5 << 5.11.2+dfsg-8~. This
         avoids co-installation of the library.
       - Change all related dependencies to new binary name.
-      - Add a lintian override for package name doe snot match soname warning.
+      - Add a lintian override for package name does not match soname warning.
     - Adjust arch qualifications for required packages.
     - debian/rules: add arm64 to gles2_architectures.
     - Rename debian/libqt5gui5 files to their libqt5gui5a counterparts,
