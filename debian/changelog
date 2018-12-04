@@ -1,3 +1,7 @@
+qtbase-opensource-src (5.11.3+dfsg-1) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Dec 2018 13:21:13 -0300
+
 qtbase-opensource-src (5.11.2+dfsg-8) experimental; urgency=medium
 
   * Switch arm64 to use OpenGL ES instead of desktop OpenGL (Closes: #881333).
