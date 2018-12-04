@@ -15,3 +15,4 @@ no_arc4random_buf.diff
 qdoc_default_incdirs.diff
 kfreebsd_qstrncpy.diff
 alpha_atimensec.diff
+revert_remove_our_use_of_syscall_for-statx.patch

@@ -10,6 +10,9 @@ qtbase-opensource-src (5.11.3+dfsg-1) UNRELEASED; urgency=medium
   * Delete dont_get_screen_rotation.diff, already applied upstream.
   * Refresh patches.
   * Delete ssl_max_version.diff. Applied upstream with some changes.
+  * Create and apply revert_remove_our_use_of_syscall_for-statx.patch. This is
+    needed for Qt to work with Stretch machines running testing/unstable
+    chroots but Stretch's kernel.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Dec 2018 13:21:13 -0300
 
