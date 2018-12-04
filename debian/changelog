@@ -9,6 +9,7 @@ qtbase-opensource-src (5.11.3+dfsg-1) UNRELEASED; urgency=medium
   * Fix typo in previous changelog entry.
   * Delete dont_get_screen_rotation.diff, already applied upstream.
   * Refresh patches.
+  * Delete ssl_max_version.diff. Applied upstream with some changes.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Dec 2018 13:21:13 -0300
 
