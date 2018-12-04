@@ -1,5 +1,9 @@
 qtbase-opensource-src (5.11.3+dfsg-1) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Revert the switch of arm64 to OpenGL ES as a result of
+    <https://lists.debian.org/debian-devel/2018/11/msg00457.html>
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Dec 2018 13:21:13 -0300
 
 qtbase-opensource-src (5.11.2+dfsg-8) experimental; urgency=medium
