@@ -13,9 +13,13 @@ Author: Michael Cree <mcree@orcon.net.nz>
 Forwarded: https://codereview.qt-project.org/245230
 Last-Update: 2018-11-11
 
+---
+ src/corelib/io/qfilesystemengine_unix.cpp |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/src/corelib/io/qfilesystemengine_unix.cpp
 +++ b/src/corelib/io/qfilesystemengine_unix.cpp
-@@ -303,7 +303,7 @@ mtime(const T &statBuffer, int)
+@@ -287,7 +287,7 @@ mtime(const T &statBuffer, int)
  { return timespecToMSecs(statBuffer.st_mtimespec); }
  #endif
  
