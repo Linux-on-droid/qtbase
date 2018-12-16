@@ -3,6 +3,8 @@
 import os
 import sys
 
+verbose = '--verbose' in sys.argv
+
 default_copyright = 'The Qt Company Ltd.'
 default_licenses = (
     'BSD-3-clause',
@@ -83,14 +85,14 @@ def canonicalize_author_name(author):
 
 
 def parse_file(filename):
-    print(filename, file=sys.stderr)
     license = None
     authors = []
     with open(filename) as file:
         try:
             data = file.readlines(500)
         except UnicodeDecodeError:
-            return None, None
+            data = []
+            authors = None
     for line in data:
         if line[3:16] == 'Copyright (C)' and line[0] != ' ':
             copyright = line[17:-1]
@@ -107,6 +109,15 @@ def parse_file(filename):
             authors.append((min_year, max_year, author))
         if line[3:21] == '$QT_BEGIN_LICENSE:':
             license = licenses_map[line[21:-2]]
+    if license and not authors:
+        print(f'{filename} ({license}): No authors!', file=sys.stderr)
+    elif verbose:
+        if authors is None:
+            print(f'{filename} (binary)')
+        elif license is None:
+            print(f'{filename} (unknown)')
+        else:
+            print(f'{filename} ({license})')
     return license, authors
 
 
