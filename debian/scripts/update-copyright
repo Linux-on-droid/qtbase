@@ -151,12 +151,16 @@ def main(root_directory):
         start_data = current_copyright[:start_pos]
         end_pos = current_copyright.find(end_header) - 1
         end_data = current_copyright[end_pos:]
+
+    data = read_input(root_directory)
+
     with open('debian/copyright', 'w') as output_file:
         output_file.write(start_data)
-        write_output(root_directory, output_file)
+        write_output(data, output_file)
         output_file.write(end_data)
 
-def write_output(root_directory, output_file):
+
+def read_input(root_directory):
     data = {}
 
     for filename in get_source_files(root_directory):
@@ -170,7 +174,10 @@ def write_output(root_directory, output_file):
         if authors_tuple not in license_dict:
             license_dict[authors_tuple] = CopyrightInfo()
         license_dict[authors_tuple].add_file(authors, filename)
+    return data
 
+
+def write_output(data, output_file):
     for license in sorted(data.keys()):
         output_file.write('\n## ' + license + '\n')
         license_dict = data[license]
