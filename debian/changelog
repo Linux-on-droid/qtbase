@@ -5,6 +5,7 @@ qtbase-opensource-src (5.11.3+dfsg-3) UNRELEASED; urgency=medium
     - Update licenses_map for Qt 5.12.
     - Don’t output filenames unless --verbose flag is given.
     - Add license information to printed filenames.
+    - Rewrite canonicalize_author_name(), add more author rules.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
 
