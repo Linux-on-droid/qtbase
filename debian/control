@@ -7,7 +7,7 @@ Uploaders: Sune Vuorela <sune@debian.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
            Timo Jyrinki <timo@debian.org>,
            Dmitry Shachnev <mitya57@debian.org>,
-           Simon Quigley <tsimonq2@ubuntu.com>
+           Simon Quigley <tsimonq2@debian.org>
 Build-Depends: debhelper (>= 11),
                default-libmysqlclient-dev,
                dh-exec,
