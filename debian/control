@@ -70,7 +70,7 @@ Homepage: http://qt-project.org/
 Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qtbase.git
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtbase
 
-Package: libqt5gui5
+Package: libqt5gui5-gles
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -87,7 +87,7 @@ Description: Qt 5 GUI module
  .
  The QtGui module extends QtCore with GUI functionality.
 
-Package: libqt5opengl5
+Package: libqt5opengl5-gles
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -102,7 +102,7 @@ Description: Qt 5 OpenGL module
  OpenGL is a standard API for rendering 3D graphics. OpenGL only deals with 3D
  rendering and provides little or no support for GUI programming issues.
 
-Package: qtbase5-dev
+Package: qtbase5-gles-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
@@ -145,7 +145,7 @@ Description: Qt 5 base development files
  If you are interested in packaging Qt 5 stuff please take a look at
  https://qt-kde-team.pages.debian.net/packagingqtbasedstuff.html
 
-Package: qtbase5-private-dev
+Package: qtbase5-private-gles-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
@@ -164,7 +164,7 @@ Description: Qt 5 base private development files
  .
  Use at your own risk.
 
-Package: libqt5opengl5-dev
+Package: libqt5opengl5-gles-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
