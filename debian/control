@@ -72,6 +72,7 @@ Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtbase
 
 Package: libqt5gui5-gles
 Architecture: any
+Conflicts: libqt5gui5
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: fontconfig, ${misc:Depends}, ${shlibs:Depends}
@@ -89,6 +90,7 @@ Description: Qt 5 GUI module
 
 Package: libqt5opengl5-gles
 Architecture: any
+Conflicts: libqt5opengl5
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -104,6 +106,7 @@ Description: Qt 5 OpenGL module
 
 Package: qtbase5-gles-dev
 Architecture: any
+Conflicts: qtbase5-dev
 Multi-Arch: same
 Section: libdevel
 Depends: libgles2-mesa-dev | libgles2-dev,
@@ -145,6 +148,7 @@ Description: Qt 5 base development files
 
 Package: qtbase5-private-gles-dev
 Architecture: any
+Conflicts: qtbase5-private-dev
 Multi-Arch: same
 Section: libdevel
 Depends: libinput-dev [linux-any],
@@ -164,6 +168,7 @@ Description: Qt 5 base private development files
 
 Package: libqt5opengl5-gles-dev
 Architecture: any
+Conflicts: libqt5opengl5-dev
 Multi-Arch: same
 Section: libdevel
 Depends: libqt5opengl5 (= ${binary:Version}),
