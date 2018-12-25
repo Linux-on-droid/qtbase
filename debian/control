@@ -82,11 +82,14 @@ Breaks: libqt5egldeviceintegration5 (<< 5.6.0~beta+dfsg-5~),
 Replaces: libqt5egldeviceintegration5 (<< 5.6.0~beta+dfsg-5~),
           libqt5xcbqpa5 (<< 5.6.0~beta+dfsg-5~)
 Suggests: qt5-image-formats-plugins, qtwayland5
-Description: Qt 5 GUI module
+Description: Qt 5 GUI module — OpenGL ES variant
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  The QtGui module extends QtCore with GUI functionality.
+ .
+ This package provides a version of Qt GUI library built against OpenGL ES,
+ for use on embedded/mobile devices.
 
 Package: libqt5opengl5-gles
 Architecture: any
@@ -94,7 +97,7 @@ Conflicts: libqt5opengl5
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Qt 5 OpenGL module
+Description: Qt 5 OpenGL module — OpenGL ES variant
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
@@ -136,12 +139,16 @@ Suggests: default-libmysqlclient-dev,
           unixodbc-dev
 Breaks: qt5-qmake (<< 5.11.3+dfsg-3~)
 Replaces: qt5-qmake (<< 5.11.3+dfsg-3~)
-Description: Qt 5 base development files
+Description: Qt 5 base development files — OpenGL ES variant
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the header development files used for building Qt 5
  applications.
+ .
+ Normally you should use the qtbase5-dev package. Use this one only if
+ your software supports only OpenGL ES or if you want to make use of some
+ OpenGL ES specific API.
  .
  If you are interested in packaging Qt 5 stuff please take a look at
  https://qt-kde-team.pages.debian.net/packagingqtbasedstuff.html
@@ -157,14 +164,16 @@ Depends: libinput-dev [linux-any],
          ${misc:Depends}
 Breaks: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
 Replaces: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
-Description: Qt 5 base private development files
+Description: Qt 5 base private development files — OpenGL ES variant
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the private header development files for building some
  Qt 5 applications like Qt Creator QML Designer plugin.
  .
- Use at your own risk.
+ Normally you should use qtbase5-dev or qtbase5-private-dev package. Use this
+ one only if your software supports only OpenGL ES or if you want to make use
+ of some OpenGL ES specific API. Use at your own risk.
 
 Package: libqt5opengl5-gles-dev
 Architecture: any
@@ -176,7 +185,7 @@ Depends: libqt5opengl5 (= ${binary:Version}),
          ${misc:Depends}
 Breaks: qtbase5-dev (<< 5.4.0+dfsg-6~)
 Replaces: qtbase5-dev (<< 5.4.0+dfsg-6~)
-Description: Qt 5 OpenGL library development files
+Description: Qt 5 OpenGL library development files — OpenGL ES variant
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
