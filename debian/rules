@@ -29,13 +29,6 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(no_pch_architectures)))
 	extra_configure_opts += -no-pch
 endif
 
-gles2_architectures := armel armhf
-ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(gles2_architectures)))
-	extra_configure_opts += -opengl es2
-else
-	extra_configure_opts += -opengl desktop
-endif
-
 ifneq ($(DEB_HOST_ARCH_OS),$(findstring $(DEB_HOST_ARCH_OS), linux kfreebsd))
 	extra_configure_opts += -no-eglfs
 endif
@@ -118,6 +111,7 @@ override_dh_auto_configure:
 	            -compile-examples \
 	            -no-directfb \
 	            -no-use-gold-linker \
+	            -opengl es2 \
 	            $(extra_configure_opts) \
 	            $(cpu_opt) \
 	            QMAKE_CFLAGS="$(CFLAGS)" \
