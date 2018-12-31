@@ -108,7 +108,6 @@ override_dh_auto_configure:
 	            -glib \
 	            -icu \
 	            -accessibility \
-	            -compile-examples \
 	            -no-directfb \
 	            -no-use-gold-linker \
 	            -opengl es2 \
@@ -196,10 +195,13 @@ override_dh_auto_build-arch:
 	LC_ALL=C.UTF-8 sh debian/generateTLDs.sh
 	# Rebuild only the object file that used the generated header.
 	rm src/corelib/.obj/qtldurl.o
-	dh_auto_build
+	dh_auto_build -- sub-src
 
 override_dh_auto_install-arch:
-	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/
+	INSTALL_ROOT=$(CURDIR)/debian/tmp $(MAKE) \
+		install_mkspecs \
+		sub-src-install_subtargets \
+		sub-doc-install_subtargets
 
 ifeq ($(DEB_HOST_ARCH_CPU),i386)
 	# Rebuild the necessary libs with SSE2 support.
@@ -223,10 +225,6 @@ endif
 	sed -i "s,lib/qt5/bin,lib/$(DEB_HOST_MULTIARCH)/qt5/bin," \
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/pkgconfig/Qt5Core.pc
 
-	# Configuration file for qt5-default package
-	mkdir -p $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser
-	ln -s /usr/share/qtchooser/qt5-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/default.conf
-
 	# Remove leftover directories
 	find $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5 -depth -type d \( -false \
 	  -o -name .moc\* \
@@ -248,8 +246,7 @@ endif
 	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/pkgconfig/Qt5Bootstrap.pc
 
 	# Remove bogus exec bits from some data files in mkspecs, docs, examples
-	find debian/tmp/usr/share/qt5/ debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/ \
-	     debian/tmp/usr/share/qt5/doc/ \
+	find debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/ \
 		-perm /u+x,g+x,o+x -type f \
 		-regex '.*\.\(app\|conf\|cpp\|h\|js\|php\|png\|pro\|xml\|xsl\)$$' \
 		-exec chmod a-x {} \;
@@ -272,9 +269,6 @@ endif
 	# See https://bugs.debian.org/914019
 	sed -i 's,-fdebug-prefix-map=$(CURDIR)=. ,,' \
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/qmodule.pri
-
-override_dh_missing:
-	dh_missing --fail-missing
 
 override_dh_installchangelogs:
 	if [ -f $(upstream_changes) ] ; then \
