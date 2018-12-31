@@ -1,3 +1,10 @@
+qtbase-opensource-src-gles (5.11.3+dfsg-1) UNRELEASED; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Create a new source package for OpenGL ES build.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 09 Jan 2019 13:51:29 +0300
+
 qtbase-opensource-src (5.11.3+dfsg-3) experimental; urgency=medium
 
   [ Kai Pastor ]
