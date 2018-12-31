@@ -1,6 +1,6 @@
 # SymbolsHelper-Confirmed: 5.11.0~rc1 amd64
-libQt5OpenGL.so.5 libqt5opengl5 #MINVER#
-| libqt5opengl5 #MINVER#, qtbase-abi-5-11-3
+libQt5OpenGL.so.5 libqt5opengl5 #MINVER# | libqt5opengl5-gles #MINVER#
+| libqt5opengl5 #MINVER# | libqt5opengl5-gles #MINVER#, qtbase-abi-5-11-3
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
