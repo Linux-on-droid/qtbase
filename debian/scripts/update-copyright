@@ -13,6 +13,8 @@ default_licenses = (
     'GPL-3 with Qt-1.0 exception',
     'GFDL-NIV-1.3',
 )
+header_re = re.compile(r"\$QT_BEGIN_LICENSE:([\w\-]+)\$")
+copyright_re = re.compile("Copyright \(C\) (\d\d.+)")
 
 author_map = {
     re.compile('^BlackBerry|^Research [Ii]n Motion'): 'BlackBerry Limited (formerly Research In Motion)',
@@ -102,8 +104,9 @@ def parse_file(filename):
             data = []
             authors = None
     for line in data:
-        if line[3:16] == 'Copyright (C)' and line[0] != ' ':
-            copyright = line[17:-1]
+        match = copyright_re.search(line)
+        if match:
+            copyright = match.group(1)
             max_year = min_year = int(copyright[:4])
             if copyright[4] == '-':
                 max_year = int(copyright[5:9])
@@ -115,8 +118,9 @@ def parse_file(filename):
                 author = copyright[5:]
             author = canonicalize_author_name(author)
             authors.append((min_year, max_year, author))
-        if line[3:21] == '$QT_BEGIN_LICENSE:':
-            license = licenses_map[line[21:-2]]
+        match = header_re.search(line)
+        if match:
+            license = licenses_map[match.group(1)]
     if license and not authors:
         print(f'{filename} ({license}): No authors!', file=sys.stderr)
     elif verbose:

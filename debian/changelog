@@ -8,6 +8,10 @@ qtbase-opensource-src (5.11.3+dfsg-3) UNRELEASED; urgency=medium
     - Rewrite canonicalize_author_name(), add more author rules.
     - Factor out read_input().
 
+  [ Dmitry Shachnev ]
+  * debian/scripts/update-copyright:
+    - Use regular expressions for parsing license and copyright lines.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
 
 qtbase-opensource-src (5.11.3+dfsg-2) unstable; urgency=medium
