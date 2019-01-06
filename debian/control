@@ -39,7 +39,6 @@ Build-Depends: debhelper (>= 11),
                libqt5core5a (>= 5.11.3),
                libqt5dbus5 (>= 5.11.3),
                libqt5network5 (>= 5.11.3),
-               libqt5widgets5 (>= 5.11.3),
                libsqlite3-dev,
                libssl-dev,
                libudev-dev [linux-any],
@@ -94,22 +93,6 @@ Description: Qt 5 GUI module — OpenGL ES variant
  This package provides a version of Qt GUI library built against OpenGL ES,
  for use on embedded/mobile devices.
 
-Package: libqt5opengl5-gles
-Architecture: any
-Conflicts: libqt5opengl5
-Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Qt 5 OpenGL module — OpenGL ES variant
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- The QtOpenGL module offers classes that make it easy to use OpenGL in Qt
- applications.
- .
- OpenGL is a standard API for rendering 3D graphics. OpenGL only deals with 3D
- rendering and provides little or no support for GUI programming issues.
-
 Package: qtbase5-gles-dev
 Architecture: any
 Conflicts: qtbase5-dev
@@ -132,7 +115,7 @@ Depends: libgles2-mesa-dev | libgles2-dev,
          qtbase5-dev-tools (>= ${source:Upstream-Version}),
          qtchooser,
          ${misc:Depends}
-Recommends: libqt5opengl5-gles-dev (= ${binary:Version})
+Recommends: libqt5opengl5-dev (>= ${source:Upstream-Version})
 Suggests: default-libmysqlclient-dev,
           firebird-dev,
           libegl1-mesa-dev,
@@ -177,20 +160,3 @@ Description: Qt 5 base private development files — OpenGL ES variant
  Normally you should use qtbase5-dev or qtbase5-private-dev package. Use this
  one only if your software supports only OpenGL ES or if you want to make use
  of some OpenGL ES specific API. Use at your own risk.
-
-Package: libqt5opengl5-gles-dev
-Architecture: any
-Conflicts: libqt5opengl5-dev
-Multi-Arch: same
-Section: libdevel
-Depends: libqt5opengl5-gles (= ${binary:Version}),
-         qtbase5-gles-dev (= ${binary:Version}),
-         ${misc:Depends}
-Breaks: qtbase5-dev (<< 5.4.0+dfsg-6~)
-Replaces: qtbase5-dev (<< 5.4.0+dfsg-6~)
-Description: Qt 5 OpenGL library development files — OpenGL ES variant
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the development files needed to build Qt 5 applications
- using QtOpenGL library.
