@@ -12,6 +12,8 @@ qtbase-opensource-src (5.11.3+dfsg-3) UNRELEASED; urgency=medium
   * debian/scripts/update-copyright:
     - Use regular expressions for parsing license and copyright lines.
   * Regenerate debian/copyright.
+  * Update libqt5gui5.symbols to add an alternative dependency on
+    libqt5gui5-gles for symbols that are present in both libraries.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
 
