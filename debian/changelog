@@ -14,6 +14,8 @@ qtbase-opensource-src (5.11.3+dfsg-3) UNRELEASED; urgency=medium
   * Regenerate debian/copyright.
   * Update libqt5gui5.symbols to add an alternative dependency on
     libqt5gui5-gles for symbols that are present in both libraries.
+  * Expand debian/qt5-qmake.install to allow us to split that package,
+    and to track upstream file additions and deletions.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
 
