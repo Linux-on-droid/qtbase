@@ -1,0 +1,66 @@
+Qt GLES packages for Debian
+===========================
+
+These packages provide Qt libraries that are built against [OpenGL ES][1] API.
+
+You can use them on embedded/mobile systems or on systems where the driver
+works with OpenGL ES better than with desktop OpenGL.
+
+These packages cannot be co-installed with the normal Qt packages, as they
+provide the same files.
+
+Note that the default Qt packages use OpenGL ES on armel and armhf, and
+desktop OpenGL on all other architectures.
+
+[1]: https://www.khronos.org/opengles/
+
+How to use them?
+----------------
+
+If you are a user, simply install `libqt5gui5-gles` via your package manager.
+This operation will remove `libqt5gui5` and maybe replace other packages with
+their -gles variants.
+
+If you are a package maintainer, there is no need to do anything to specially
+support these libraries — if your package does not use any symbols specific
+to the desktop OpenGL build, it will automatically get a dependency on
+`libqt5gui5 | libqt5gui5-gles`.
+
+If your package works only with OpenGL ES, or if you want to use some Qt API
+specific to OpenGL ES, then add `qtbase5-gles-dev` to your list of build
+dependencies instead of `qtbase5-gles`.
+
+How does it work?
+-----------------
+
+We use the “alternative dependency templates” feature of symbols files:
+
+* By default, symbols get a dependency on `libqt5gui5 | libqt5gui5-gles`.
+
+* Some symbols are private and they are marked with dependency template 1, so
+  they will additionally depend on the `qtbase-abi-X-Y-Z` virtual package.
+
+* Some symbols are specific to the desktop OpenGL build. For example, the
+  symbols related to [QOpenGLTimerQuery][2] class. These symbols in libqt5gui5
+  package are marked with dependency template 2 and will depend only on
+  `libqt5gui5`.
+
+* Some symbols are specific to the OpenGL ES build. For example, the symbols
+  related to [QOpenGLFunctions_ES2][3] class. These symbols are marked with
+  dependency template 3 and will depend only on `libqt5gui5-gles`.
+
+[2]: https://doc.qt.io/qt-5/qopengltimerquery.html
+[3]: https://doc.qt.io/qt-5/qopenglfunctions-es2.html
+
+Updating this package
+---------------------
+
+The packaging is maintained on salsa.debian.org, in the same repository as
+the main qtbase package, but in different branches.
+
+Use the `gles/master` branch for work targeting Debian unstable, and the
+`gles/experimental` branch for work targeting experimental.
+
+To synchronize the packaging, merge the main branch into the correspoding
+gles branch, resolve any conflicts and remove rules or files that are
+unneeded in the OpenGL ES build.
