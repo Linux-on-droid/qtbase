@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.11.3+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.3+dfsg-3) experimental; urgency=medium
 
   [ Kai Pastor ]
   * debian/scripts/update-copyright:
@@ -19,7 +19,7 @@ qtbase-opensource-src (5.11.3+dfsg-3) UNRELEASED; urgency=medium
   * Move /usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_*.pri
     files from qt5-qmake to qtbase5-dev and qtbase5-private-dev.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 09 Jan 2019 12:13:49 +0300
 
 qtbase-opensource-src (5.11.3+dfsg-2) unstable; urgency=medium
 
