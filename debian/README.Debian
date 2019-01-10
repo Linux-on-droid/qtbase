@@ -28,7 +28,7 @@ to the desktop OpenGL build, it will automatically get a dependency on
 
 If your package works only with OpenGL ES, or if you want to use some Qt API
 specific to OpenGL ES, then add `qtbase5-gles-dev` to your list of build
-dependencies instead of `qtbase5-gles`.
+dependencies instead of `qtbase5-dev`.
 
 How does it work?
 -----------------

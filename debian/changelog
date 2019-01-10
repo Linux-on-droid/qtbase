@@ -1,5 +1,7 @@
 qtbase-opensource-src-gles (5.11.3+dfsg-2) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Fix a typo in debian/README.Debian.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 10 Jan 2019 12:03:05 +0300
 
