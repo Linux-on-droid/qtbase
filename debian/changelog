@@ -18,6 +18,10 @@ qtbase-opensource-src (5.12.2+dfsg-1) UNRELEASED; urgency=medium
   * Also drop revert_remove_our_use_of_syscall_for-statx.patch. No need
     to support old kernels as we are not targetting Buster anymore.
 
+  [ Simon Quigley ]
+  * Move the Flatpak platform theme to a generic XDG Desktop Portal platform
+    theme.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 09 Feb 2019 11:19:39 +0300
 
 qtbase-opensource-src (5.11.3+dfsg-5) unstable; urgency=medium
