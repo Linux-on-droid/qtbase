@@ -21,6 +21,7 @@ qtbase-opensource-src (5.12.2+dfsg-1) UNRELEASED; urgency=medium
   [ Simon Quigley ]
   * Move the Flatpak platform theme to a generic XDG Desktop Portal platform
     theme.
+  * Remove qxcbintegrationfunctions.h which is no longer provided by upstream.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 09 Feb 2019 11:19:39 +0300
 

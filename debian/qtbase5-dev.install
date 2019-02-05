@@ -1094,7 +1094,6 @@ usr/include/*/qt5/QtPlatformHeaders/QPlatformHeaderHelper
 usr/include/*/qt5/QtPlatformHeaders/QWGLNativeContext
 usr/include/*/qt5/QtPlatformHeaders/QWaylandWindowFunctions
 usr/include/*/qt5/QtPlatformHeaders/QWindowsWindowFunctions
-usr/include/*/qt5/QtPlatformHeaders/QXcbIntegrationFunctions
 usr/include/*/qt5/QtPlatformHeaders/QXcbScreenFunctions
 usr/include/*/qt5/QtPlatformHeaders/QXcbWindowFunctions
 usr/include/*/qt5/QtPlatformHeaders/QtPlatformHeaders
@@ -1110,7 +1109,6 @@ usr/include/*/qt5/QtPlatformHeaders/qtplatformheadersversion.h
 usr/include/*/qt5/QtPlatformHeaders/qwaylandwindowfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qwglnativecontext.h
 usr/include/*/qt5/QtPlatformHeaders/qwindowswindowfunctions.h
-usr/include/*/qt5/QtPlatformHeaders/qxcbintegrationfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qxcbscreenfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qxcbwindowfunctions.h
 usr/include/*/qt5/QtPrintSupport/QAbstractPrintDialog
