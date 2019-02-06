@@ -2,6 +2,7 @@
 fix-selection-rendering.patch
 reference_dpi.diff
 remove_need_for_glXGetProcAddressARB.patch
+mysql_free_results_when_qsqlquery_finished_is_called.patch
 
 # Debian specific.
 gnukfreebsd.diff
