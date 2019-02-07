@@ -1,4 +1,15 @@
-qtbase-opensource-src (5.11.3+dfsg-3) unstable; urgency=medium
+qtbase-opensource-src (5.11.3+dfsg-4) UNRELEASED; urgency=medium
+
+  * Revert the GLES-related symbols changes from the previous upload.
+    These changes were only for experimental and not yet for unstable.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport mysql_free_results_when_qsqlquery_finished_is_called.patch,
+    required by akonadi.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
+
+qtbase-opensource-src (5.11.3+dfsg-3) experimental; urgency=medium
 
   [ Kai Pastor ]
   * debian/scripts/update-copyright:
@@ -12,12 +23,14 @@ qtbase-opensource-src (5.11.3+dfsg-3) unstable; urgency=medium
   * debian/scripts/update-copyright:
     - Use regular expressions for parsing license and copyright lines.
   * Regenerate debian/copyright.
+  * Update libqt5gui5.symbols to add an alternative dependency on
+    libqt5gui5-gles for symbols that are present in both libraries.
+  * Expand debian/qt5-qmake.install to allow us to split that package,
+    and to track upstream file additions and deletions.
+  * Move /usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_*.pri
+    files from qt5-qmake to qtbase5-dev and qtbase5-private-dev.
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Backport mysql_free_results_when_qsqlquery_finished_is_called.patch,
-    required by akonadi.
-
- -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 06 Feb 2019 20:42:54 -0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 09 Jan 2019 12:13:49 +0300
 
 qtbase-opensource-src (5.11.3+dfsg-2) unstable; urgency=medium
 
