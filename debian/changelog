@@ -13,6 +13,8 @@ qtbase-opensource-src (5.11.3+dfsg-4) UNRELEASED; urgency=medium
   * Move qt_lib_opengl.pri from qtbase5-dev to libqt5opengl5-dev.
   * Backport upstream commit to fix duplex printing (LP: #1776173).
     Thanks to Robert Bredereck for the initial patch!
+  * Add missing features.h include to hurd-g++ mkspec (closes: #920613).
+    Thanks to Samuel Thibault for the patch!
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
 
