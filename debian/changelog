@@ -7,6 +7,10 @@ qtbase-opensource-src (5.11.3+dfsg-4) UNRELEASED; urgency=medium
   * Backport mysql_free_results_when_qsqlquery_finished_is_called.patch,
     required by akonadi.
 
+  [ Dmitry Shachnev ]
+  * Fix installed files list on hurd and kfreebsd (closes: #920236).
+    Thanks to Samuel Thibault!
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
 
 qtbase-opensource-src (5.11.3+dfsg-3) experimental; urgency=medium
