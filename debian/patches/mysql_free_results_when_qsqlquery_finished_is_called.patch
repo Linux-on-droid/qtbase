@@ -5,7 +5,7 @@ Subject: [PATCH] MySQL: Free the results when QSqlQuery::finished() is called
 
 Calling mysql_stmt_free_result() frees the results of the last
 executed query while keeping the prepared statement valid. This
-allows to keep around prepared QSqlQueries without the overhead
+allows one to keep around prepared QSqlQueries without the overhead
 of keeping all the results in memory.
 
 Change-Id: I4589e90857cc4e9a6f9612799bfca967a67e2ab2
