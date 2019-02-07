@@ -1674,7 +1674,6 @@ usr/lib/*/qt5/mkspecs/modules/qt_lib_core.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_dbus.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_gui.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_network.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_opengl.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_openglextensions.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_printsupport.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_sql.pri
