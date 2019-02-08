@@ -1,7 +1,8 @@
-qtbase-opensource-src (5.11.3+dfsg-4) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.3+dfsg-4) unstable; urgency=medium
 
   * Revert the GLES-related symbols changes from the previous upload.
     These changes were only for experimental and not yet for unstable.
+  * Upload to unstable.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Backport mysql_free_results_when_qsqlquery_finished_is_called.patch,
@@ -17,7 +18,7 @@ qtbase-opensource-src (5.11.3+dfsg-4) UNRELEASED; urgency=medium
     Thanks to Samuel Thibault for the patch!
   * Update symbols files from ia64 build logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 08 Feb 2019 17:11:47 +0300
 
 qtbase-opensource-src (5.11.3+dfsg-3) experimental; urgency=medium
 
