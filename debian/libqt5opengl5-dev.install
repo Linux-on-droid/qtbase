@@ -28,3 +28,4 @@ usr/lib/*/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake
 usr/lib/*/libQt5OpenGL.prl
 usr/lib/*/libQt5OpenGL.so
 usr/lib/*/pkgconfig/Qt5OpenGL.pc
+usr/lib/*/qt5/mkspecs/modules/qt_lib_opengl.pri

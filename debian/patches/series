@@ -2,6 +2,8 @@
 fix-selection-rendering.patch
 reference_dpi.diff
 remove_need_for_glXGetProcAddressARB.patch
+mysql_free_results_when_qsqlquery_finished_is_called.patch
+qprintdialog_duplex.diff
 
 # Debian specific.
 gnukfreebsd.diff
@@ -16,3 +18,4 @@ qdoc_default_incdirs.diff
 kfreebsd_qstrncpy.diff
 alpha_atimensec.diff
 revert_remove_our_use_of_syscall_for-statx.patch
+hurd_missing_include.diff
