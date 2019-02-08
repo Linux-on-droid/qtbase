@@ -15,6 +15,7 @@ qtbase-opensource-src (5.11.3+dfsg-4) UNRELEASED; urgency=medium
     Thanks to Robert Bredereck for the initial patch!
   * Add missing features.h include to hurd-g++ mkspec (closes: #920613).
     Thanks to Samuel Thibault for the patch!
+  * Update symbols files from ia64 build logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jan 2019 13:12:51 +0300
 

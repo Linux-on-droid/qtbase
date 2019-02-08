@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.11.2 alpha amd64 kfreebsd-i386 riscv64
+# SymbolsHelper-Confirmed: 5.11.3 amd64 ia64
 libQt5Widgets.so.5 libqt5widgets5 #MINVER#
 | libqt5widgets5 #MINVER#, qtbase-abi-5-11-3
 * Build-Depends-Package: qtbase5-dev
@@ -7820,7 +7820,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  (optional=templinst|arch=!kfreebsd-amd64 !x32)_ZNSt17_Temporary_bufferIP5QRectS0_EC2ES1_S1_@Qt_5 5.7.0
  (optional=templinst)_ZNSt3_V28__rotateIP5QRectEET_S3_S3_S3_St26random_access_iterator_tag@Qt_5 5.7.0
  (optional=templinst)_ZNSt3_V28__rotateIPiEET_S2_S2_S2_St26random_access_iterator_tag@Qt_5 5.7.0
- (optional=templinst|arch=alpha hppa mips64el riscv64 sh4 sparc64 x32)_ZNSt6vectorIN18QWidgetLineControl7CommandESaIS1_EE12emplace_backIJS1_EEERS1_DpOT_@Qt_5_PRIVATE_API 5.11.1 1
+ (optional=templinst|arch=alpha hppa ia64 mips64el riscv64 sh4 sparc64 x32)_ZNSt6vectorIN18QWidgetLineControl7CommandESaIS1_EE12emplace_backIJS1_EEERS1_DpOT_@Qt_5_PRIVATE_API 5.11.1 1
  (optional=templinst|arch=!x32)_ZNSt6vectorIN18QWidgetLineControl7CommandESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5_PRIVATE_API 5.9.1 1
  (optional=templinst|arch=amd64 arm64 armel armhf hurd-i386 i386 kfreebsd-i386 m68k mips mipsel powerpc powerpcspe ppc64 ppc64el s390x)_ZNSt6vectorIN18QWidgetLineControl7CommandESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5_PRIVATE_API 5.10.1 1
  (optional=templinst|arch=!amd64 !arm64 !x32)_ZNSt6vectorIN18QWidgetLineControl7CommandESaIS1_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS1_S3_EES7_@Qt_5_PRIVATE_API 5.7.1 1
