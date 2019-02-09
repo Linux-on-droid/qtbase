@@ -2,6 +2,9 @@ qtbase-opensource-src (5.11.3+dfsg-5) UNRELEASED; urgency=medium
 
   * Restore GLES-related changes that were dropped in 5.11.3+dfsg-4.
 
+  [ Dmitry Shachnev ]
+  * Add libqt5gui5-gles alternative dependency to platformtheme packages.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 09 Feb 2019 11:19:39 +0300
 
 qtbase-opensource-src (5.11.3+dfsg-4) unstable; urgency=medium
