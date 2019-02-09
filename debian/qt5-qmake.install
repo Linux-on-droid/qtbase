@@ -29,6 +29,7 @@ usr/lib/*/qt5/mkspecs/common/ghs-base.conf
 usr/lib/*/qt5/mkspecs/common/ghs-integrity-armv7.conf
 usr/lib/*/qt5/mkspecs/common/ghs-integrity-armv8.conf
 usr/lib/*/qt5/mkspecs/common/ghs-integrity-x86.conf
+usr/lib/*/qt5/mkspecs/common/icc-base-unix.conf
 usr/lib/*/qt5/mkspecs/common/integrity/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/common/ios.conf
 usr/lib/*/qt5/mkspecs/common/linux.conf
@@ -36,6 +37,7 @@ usr/lib/*/qt5/mkspecs/common/llvm.conf
 usr/lib/*/qt5/mkspecs/common/mac.conf
 usr/lib/*/qt5/mkspecs/common/mac/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/common/macx.conf
+usr/lib/*/qt5/mkspecs/common/msvc-based-version.conf
 usr/lib/*/qt5/mkspecs/common/msvc-desktop.conf
 usr/lib/*/qt5/mkspecs/common/msvc-version.conf
 usr/lib/*/qt5/mkspecs/common/nacl/g++-nacl32.conf
@@ -176,6 +178,7 @@ usr/lib/*/qt5/mkspecs/features/data/cmake/Qt5ConfigVersion.cmake.in
 usr/lib/*/qt5/mkspecs/features/data/cmake/Qt5PluginTarget.cmake.in
 usr/lib/*/qt5/mkspecs/features/data/configure.json
 usr/lib/*/qt5/mkspecs/features/data/dummy.cpp
+usr/lib/*/qt5/mkspecs/features/data/dumpvcvars.bat
 usr/lib/*/qt5/mkspecs/features/data/mac/objc_namespace.sh
 usr/lib/*/qt5/mkspecs/features/data/macros.cpp
 usr/lib/*/qt5/mkspecs/features/data/unix/findclasslist.pl
@@ -193,6 +196,7 @@ usr/lib/*/qt5/mkspecs/features/exceptions_off.prf
 usr/lib/*/qt5/mkspecs/features/exclusive_builds.prf
 usr/lib/*/qt5/mkspecs/features/exclusive_builds_post.prf
 usr/lib/*/qt5/mkspecs/features/file_copies.prf
+usr/lib/*/qt5/mkspecs/features/gc_binaries.prf
 usr/lib/*/qt5/mkspecs/features/gcov.prf
 usr/lib/*/qt5/mkspecs/features/include_source_dir.prf
 usr/lib/*/qt5/mkspecs/features/incredibuild_xge.prf
@@ -200,6 +204,7 @@ usr/lib/*/qt5/mkspecs/features/java.prf
 usr/lib/*/qt5/mkspecs/features/lex.prf
 usr/lib/*/qt5/mkspecs/features/link_ltcg.prf
 usr/lib/*/qt5/mkspecs/features/link_pkgconfig.prf
+usr/lib/*/qt5/mkspecs/features/lrelease.prf
 usr/lib/*/qt5/mkspecs/features/ltcg.prf
 usr/lib/*/qt5/mkspecs/features/mac/asset_catalogs.prf
 usr/lib/*/qt5/mkspecs/features/mac/default_post.prf
@@ -218,8 +223,6 @@ usr/lib/*/qt5/mkspecs/features/precompile_header.prf
 usr/lib/*/qt5/mkspecs/features/qgltf.prf
 usr/lib/*/qt5/mkspecs/features/qlalr.prf
 usr/lib/*/qt5/mkspecs/features/qmake_use.prf
-usr/lib/*/qt5/mkspecs/features/qml1_module.prf
-usr/lib/*/qt5/mkspecs/features/qml1_plugin.prf
 usr/lib/*/qt5/mkspecs/features/qml_debug.prf
 usr/lib/*/qt5/mkspecs/features/qml_module.prf
 usr/lib/*/qt5/mkspecs/features/qml_plugin.prf
@@ -246,6 +249,7 @@ usr/lib/*/qt5/mkspecs/features/qt_module_pris.prf
 usr/lib/*/qt5/mkspecs/features/qt_parts.prf
 usr/lib/*/qt5/mkspecs/features/qt_plugin.prf
 usr/lib/*/qt5/mkspecs/features/qt_targets.prf
+usr/lib/*/qt5/mkspecs/features/qt_test_helper.prf
 usr/lib/*/qt5/mkspecs/features/qt_tool.prf
 usr/lib/*/qt5/mkspecs/features/qt_tracepoints.prf
 usr/lib/*/qt5/mkspecs/features/resolve_config.prf
@@ -269,6 +273,7 @@ usr/lib/*/qt5/mkspecs/features/uikit/default_pre.prf
 usr/lib/*/qt5/mkspecs/features/uikit/device_destinations.sh
 usr/lib/*/qt5/mkspecs/features/uikit/devices.py
 usr/lib/*/qt5/mkspecs/features/uikit/exclusive_builds_post.prf
+usr/lib/*/qt5/mkspecs/features/uikit/gc_binaries.prf
 usr/lib/*/qt5/mkspecs/features/uikit/qt.prf
 usr/lib/*/qt5/mkspecs/features/uikit/qt_parts.prf
 usr/lib/*/qt5/mkspecs/features/uikit/resolve_config.prf
@@ -293,6 +298,7 @@ usr/lib/*/qt5/mkspecs/features/use_c_linker.prf
 usr/lib/*/qt5/mkspecs/features/vxworks.prf
 usr/lib/*/qt5/mkspecs/features/warn_off.prf
 usr/lib/*/qt5/mkspecs/features/warn_on.prf
+usr/lib/*/qt5/mkspecs/features/wasm/wasm.prf
 usr/lib/*/qt5/mkspecs/features/wayland-scanner.prf
 usr/lib/*/qt5/mkspecs/features/win32/console.prf
 usr/lib/*/qt5/mkspecs/features/win32/default_pre.prf
@@ -363,6 +369,7 @@ usr/lib/*/qt5/mkspecs/lynxos-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/lynxos-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/macx-clang/Info.plist.app
 usr/lib/*/qt5/mkspecs/macx-clang/Info.plist.dSYM.in
+usr/lib/*/qt5/mkspecs/macx-clang/Info.plist.disable_highdpi
 usr/lib/*/qt5/mkspecs/macx-clang/Info.plist.lib
 usr/lib/*/qt5/mkspecs/macx-clang/qmake.conf
 usr/lib/*/qt5/mkspecs/macx-clang/qplatformdefs.h
@@ -442,6 +449,10 @@ usr/lib/*/qt5/mkspecs/unsupported/vxworks-simpentium-dcc/qmake.conf
 usr/lib/*/qt5/mkspecs/unsupported/vxworks-simpentium-dcc/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/unsupported/vxworks-simpentium-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/unsupported/vxworks-simpentium-g++/qplatformdefs.h
+usr/lib/*/qt5/mkspecs/wasm-emscripten/qmake.conf
+usr/lib/*/qt5/mkspecs/wasm-emscripten/qplatformdefs.h
+usr/lib/*/qt5/mkspecs/win32-arm64-msvc2017/qmake.conf
+usr/lib/*/qt5/mkspecs/win32-arm64-msvc2017/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/win32-clang-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/win32-clang-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/win32-clang-msvc/qmake.conf

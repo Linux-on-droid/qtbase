@@ -65,6 +65,14 @@ usr/include/*/qt5/QtCore/QByteArrayListIterator
 usr/include/*/qt5/QtCore/QByteArrayMatcher
 usr/include/*/qt5/QtCore/QByteRef
 usr/include/*/qt5/QtCore/QCache
+usr/include/*/qt5/QtCore/QCborArray
+usr/include/*/qt5/QtCore/QCborError
+usr/include/*/qt5/QtCore/QCborMap
+usr/include/*/qt5/QtCore/QCborParserError
+usr/include/*/qt5/QtCore/QCborStreamReader
+usr/include/*/qt5/QtCore/QCborStreamWriter
+usr/include/*/qt5/QtCore/QCborValue
+usr/include/*/qt5/QtCore/QCborValueRef
 usr/include/*/qt5/QtCore/QChar
 usr/include/*/qt5/QtCore/QCharRef
 usr/include/*/qt5/QtCore/QChildEvent
@@ -232,6 +240,7 @@ usr/include/*/qt5/QtCore/QResource
 usr/include/*/qt5/QtCore/QReturnArgument
 usr/include/*/qt5/QtCore/QRunnable
 usr/include/*/qt5/QtCore/QSaveFile
+usr/include/*/qt5/QtCore/QScopeGuard
 usr/include/*/qt5/QtCore/QScopedArrayPointer
 usr/include/*/qt5/QtCore/QScopedPointer
 usr/include/*/qt5/QtCore/QScopedPointerArrayDeleter
@@ -341,6 +350,7 @@ usr/include/*/qt5/QtCore/Q_SECURITY_ATTRIBUTES
 usr/include/*/qt5/QtCore/Q_STARTUPINFO
 usr/include/*/qt5/QtCore/Qt
 usr/include/*/qt5/QtCore/QtAlgorithms
+usr/include/*/qt5/QtCore/QtCborCommon
 usr/include/*/qt5/QtCore/QtCleanUpFunction
 usr/include/*/qt5/QtCore/QtConfig
 usr/include/*/qt5/QtCore/QtContainerFwd
@@ -381,6 +391,11 @@ usr/include/*/qt5/QtCore/qbytearray.h
 usr/include/*/qt5/QtCore/qbytearraylist.h
 usr/include/*/qt5/QtCore/qbytearraymatcher.h
 usr/include/*/qt5/QtCore/qcache.h
+usr/include/*/qt5/QtCore/qcborarray.h
+usr/include/*/qt5/QtCore/qcborcommon.h
+usr/include/*/qt5/QtCore/qcbormap.h
+usr/include/*/qt5/QtCore/qcborstream.h
+usr/include/*/qt5/QtCore/qcborvalue.h
 usr/include/*/qt5/QtCore/qchar.h
 usr/include/*/qt5/QtCore/qcollator.h
 usr/include/*/qt5/QtCore/qcommandlineoption.h
@@ -486,6 +501,7 @@ usr/include/*/qt5/QtCore/qrunnable.h
 usr/include/*/qt5/QtCore/qsavefile.h
 usr/include/*/qt5/QtCore/qscopedpointer.h
 usr/include/*/qt5/QtCore/qscopedvaluerollback.h
+usr/include/*/qt5/QtCore/qscopeguard.h
 usr/include/*/qt5/QtCore/qsemaphore.h
 usr/include/*/qt5/QtCore/qsequentialanimationgroup.h
 usr/include/*/qt5/QtCore/qset.h
@@ -520,6 +536,7 @@ usr/include/*/qt5/QtCore/qtcore-config.h
 usr/include/*/qt5/QtCore/qtcoreversion.h
 usr/include/*/qt5/QtCore/qtemporarydir.h
 usr/include/*/qt5/QtCore/qtemporaryfile.h
+usr/include/*/qt5/QtCore/qtestsupport_core.h
 usr/include/*/qt5/QtCore/qtextboundaryfinder.h
 usr/include/*/qt5/QtCore/qtextcodec.h
 usr/include/*/qt5/QtCore/qtextstream.h
@@ -960,6 +977,7 @@ usr/include/*/qt5/QtGui/qstylehints.h
 usr/include/*/qt5/QtGui/qsurface.h
 usr/include/*/qt5/QtGui/qsurfaceformat.h
 usr/include/*/qt5/QtGui/qsyntaxhighlighter.h
+usr/include/*/qt5/QtGui/qtestsupport_gui.h
 usr/include/*/qt5/QtGui/qtextcursor.h
 usr/include/*/qt5/QtGui/qtextdocument.h
 usr/include/*/qt5/QtGui/qtextdocumentfragment.h
@@ -994,6 +1012,8 @@ usr/include/*/qt5/QtNetwork/QDnsLookup
 usr/include/*/qt5/QtNetwork/QDnsMailExchangeRecord
 usr/include/*/qt5/QtNetwork/QDnsServiceRecord
 usr/include/*/qt5/QtNetwork/QDnsTextRecord
+usr/include/*/qt5/QtNetwork/QDtls
+usr/include/*/qt5/QtNetwork/QDtlsClientVerifier
 usr/include/*/qt5/QtNetwork/QHostAddress
 usr/include/*/qt5/QtNetwork/QHostInfo
 usr/include/*/qt5/QtNetwork/QHstsPolicy
@@ -1042,6 +1062,7 @@ usr/include/*/qt5/QtNetwork/qabstractnetworkcache.h
 usr/include/*/qt5/QtNetwork/qabstractsocket.h
 usr/include/*/qt5/QtNetwork/qauthenticator.h
 usr/include/*/qt5/QtNetwork/qdnslookup.h
+usr/include/*/qt5/QtNetwork/qdtls.h
 usr/include/*/qt5/QtNetwork/qhostaddress.h
 usr/include/*/qt5/QtNetwork/qhostinfo.h
 usr/include/*/qt5/QtNetwork/qhstspolicy.h
@@ -1060,6 +1081,7 @@ usr/include/*/qt5/QtNetwork/qnetworkproxy.h
 usr/include/*/qt5/QtNetwork/qnetworkreply.h
 usr/include/*/qt5/QtNetwork/qnetworkrequest.h
 usr/include/*/qt5/QtNetwork/qnetworksession.h
+usr/include/*/qt5/QtNetwork/qpassworddigestor.h
 usr/include/*/qt5/QtNetwork/qsctpserver.h
 usr/include/*/qt5/QtNetwork/qsctpsocket.h
 usr/include/*/qt5/QtNetwork/qssl.h
@@ -1167,6 +1189,7 @@ usr/include/*/qt5/QtSql/qsqlrelationaldelegate.h
 usr/include/*/qt5/QtSql/qsqlrelationaltablemodel.h
 usr/include/*/qt5/QtSql/qsqlresult.h
 usr/include/*/qt5/QtSql/qsqltablemodel.h
+usr/include/*/qt5/QtSql/qtsql-config.h
 usr/include/*/qt5/QtSql/qtsqlglobal.h
 usr/include/*/qt5/QtSql/qtsqlversion.h
 usr/include/*/qt5/QtTest/QAbstractItemModelTester
@@ -1545,6 +1568,7 @@ usr/include/*/qt5/QtWidgets/qtabbar.h
 usr/include/*/qt5/QtWidgets/qtableview.h
 usr/include/*/qt5/QtWidgets/qtablewidget.h
 usr/include/*/qt5/QtWidgets/qtabwidget.h
+usr/include/*/qt5/QtWidgets/qtestsupport_widgets.h
 usr/include/*/qt5/QtWidgets/qtextbrowser.h
 usr/include/*/qt5/QtWidgets/qtextedit.h
 usr/include/*/qt5/QtWidgets/qtoolbar.h
@@ -1769,6 +1793,7 @@ usr/share/qt5/doc/global/template/images/spinner.gif
 usr/share/qt5/doc/global/template/images/sprites-combined.png
 usr/share/qt5/doc/global/template/scripts/extras.js
 usr/share/qt5/doc/global/template/scripts/main.js
+usr/share/qt5/doc/global/template/style/cookie-confirm.css
 usr/share/qt5/doc/global/template/style/cookiebar-x.png
 usr/share/qt5/doc/global/template/style/doc_search.png
 usr/share/qt5/doc/global/template/style/gsc.css
