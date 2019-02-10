@@ -340,8 +340,8 @@ Suggests: default-libmysqlclient-dev,
           libpq-dev,
           libsqlite3-dev,
           unixodbc-dev
-Breaks: qt5-qmake (<< 5.11.3+dfsg-3~)
-Replaces: qt5-qmake (<< 5.11.3+dfsg-3~)
+Breaks: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-private-dev (<< 5.11.3+dfsg-4)
+Replaces: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-private-dev (<< 5.11.3+dfsg-4)
 Description: Qt 5 base development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
