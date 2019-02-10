@@ -1,3 +1,7 @@
+qtbase-opensource-src (5.11.3+dfsg-5) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 10 Feb 2019 10:28:27 -0300
+
 qtbase-opensource-src (5.11.3+dfsg-4) unstable; urgency=medium
 
   * Revert the GLES-related symbols changes from the previous upload.
