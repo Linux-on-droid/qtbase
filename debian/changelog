@@ -1,7 +1,7 @@
 qtbase-opensource-src (5.11.3+dfsg-5) unstable; urgency=medium
 
   * Revert part of the mkspecs movements between packages. The private ones
-    where put into qtbase5-private-dev, but it seems that they are not ready
+    were put into qtbase5-private-dev, but it seems that they are not ready
     for that (Closes: #921930).
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 10 Feb 2019 11:47:21 -0300
