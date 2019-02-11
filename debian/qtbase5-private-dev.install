@@ -6,7 +6,6 @@
 [!armel !armhf] usr/include/*/qt5/QtGlxSupport/qtglxsupportversion.h
 [!armel !armhf] usr/lib/*/libQt5GlxSupport.a
 [!armel !armhf] usr/lib/*/libQt5GlxSupport.prl
-[!armel !armhf] usr/lib/*/qt5/mkspecs/modules/qt_lib_glx_support_private.pri
 [kfreebsd-any linux-any] usr/include/*/qt5/QtEglFSDeviceIntegration/5.*/*
 [kfreebsd-any linux-any] usr/include/*/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegration
 [kfreebsd-any linux-any] usr/include/*/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegrationDepends
@@ -19,9 +18,6 @@
 [kfreebsd-any linux-any] usr/include/*/qt5/QtKmsSupport/qtkmssupportversion.h
 [kfreebsd-any linux-any] usr/lib/*/libQt5KmsSupport.a
 [kfreebsd-any linux-any] usr/lib/*/libQt5KmsSupport.prl
-[kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri
-[kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri
-[kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_kms_support_private.pri
 [linux-any] usr/include/*/qt5/QtInputSupport/5.*/*
 [linux-any] usr/include/*/qt5/QtInputSupport/QIntegrityHIDManager
 [linux-any] usr/include/*/qt5/QtInputSupport/QtInputSupport
@@ -38,8 +34,6 @@
 [linux-any] usr/lib/*/libQt5InputSupport.prl
 [linux-any] usr/lib/*/libQt5VulkanSupport.a
 [linux-any] usr/lib/*/libQt5VulkanSupport.prl
-[linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_input_support_private.pri
-[linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri
 usr/include/*/qt5/QtAccessibilitySupport/5.*/*
 usr/include/*/qt5/QtAccessibilitySupport/QtAccessibilitySupport
 usr/include/*/qt5/QtAccessibilitySupport/QtAccessibilitySupportDepends
@@ -127,28 +121,3 @@ usr/lib/*/libQt5ServiceSupport.a
 usr/lib/*/libQt5ServiceSupport.prl
 usr/lib/*/libQt5ThemeSupport.a
 usr/lib/*/libQt5ThemeSupport.prl
-usr/lib/*/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_concurrent_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_core_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_dbus_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_edid_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_egl_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_fb_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_fontdatabase_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_gui_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_network_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_opengl_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_openglextensions_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_platformcompositor_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_printsupport_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_service_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_sql_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_testlib_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_theme_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_widgets_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_xml_private.pri
