@@ -5,6 +5,16 @@ qtbase-opensource-src (5.12.2+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Add libqt5gui5-gles alternative dependency to platformtheme packages.
   * New upstream release.
+  * Drop patches, applied upstream:
+    - fix-selection-rendering.patch
+    - reference_dpi.diff
+    - remove_need_for_glXGetProcAddressARB.patch
+    - qprintdialog_duplex.diff
+    - no_arc4random_buf.diff
+    - kfreebsd_qstrncpy.diff
+    - alpha_atimensec.diff
+    - hurd_missing_include.diff
+  * Refresh and rebase other patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 09 Feb 2019 11:19:39 +0300
 

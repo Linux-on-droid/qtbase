@@ -11,7 +11,7 @@ Last-Update: 2018-02-22
 
 --- a/qmake/library/ioutils.cpp
 +++ b/qmake/library/ioutils.cpp
-@@ -222,7 +222,7 @@ bool IoUtils::touchFile(const QString &t
+@@ -227,7 +227,7 @@ bool IoUtils::touchFile(const QString &t
          *errorString = fL1S("Cannot stat() reference file %1: %2.").arg(referenceFileName, fL1S(strerror(errno)));
          return false;
      }
@@ -22,7 +22,7 @@ Last-Update: 2018-02-22
  #    else
 --- a/src/corelib/io/qfilesystemengine_unix.cpp
 +++ b/src/corelib/io/qfilesystemengine_unix.cpp
-@@ -1407,7 +1407,7 @@ bool QFileSystemEngine::setFileTime(int
+@@ -1401,7 +1401,7 @@ bool QFileSystemEngine::setFileTime(int
          return false;
      }
  

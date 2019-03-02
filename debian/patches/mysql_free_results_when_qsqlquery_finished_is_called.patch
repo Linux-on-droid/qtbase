@@ -17,7 +17,7 @@ Reviewed-by: Andy Shaw <andy.shaw@qt.io>
 
 --- a/src/plugins/sqldrivers/mysql/qsql_mysql.cpp
 +++ b/src/plugins/sqldrivers/mysql/qsql_mysql.cpp
-@@ -193,6 +193,7 @@ protected:
+@@ -197,6 +197,7 @@ protected:
      QSqlRecord record() const override;
      void virtual_hook(int id, void *data) override;
      bool nextResult() override;
@@ -25,7 +25,7 @@ Reviewed-by: Andy Shaw <andy.shaw@qt.io>
  
  #if MYSQL_VERSION_ID >= 40108
      bool prepare(const QString &stmt) override;
-@@ -798,6 +799,15 @@ int QMYSQLResult::numRowsAffected()
+@@ -804,6 +805,15 @@ int QMYSQLResult::numRowsAffected()
      return d->rowsAffected;
  }
  
