@@ -166,6 +166,7 @@ usr/lib/*/qt5/mkspecs/features/android/sdk.prf
 usr/lib/*/qt5/mkspecs/features/benchmark.prf
 usr/lib/*/qt5/mkspecs/features/build_pass.prf
 usr/lib/*/qt5/mkspecs/features/cmake_functions.prf
+usr/lib/*/qt5/mkspecs/features/cmdline.prf
 usr/lib/*/qt5/mkspecs/features/configure.prf
 usr/lib/*/qt5/mkspecs/features/configure_base.prf
 usr/lib/*/qt5/mkspecs/features/create_cmake.prf
@@ -469,6 +470,8 @@ usr/lib/*/qt5/mkspecs/winrt-arm-msvc2015/qmake.conf
 usr/lib/*/qt5/mkspecs/winrt-arm-msvc2015/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/winrt-arm-msvc2017/qmake.conf
 usr/lib/*/qt5/mkspecs/winrt-arm-msvc2017/qplatformdefs.h
+usr/lib/*/qt5/mkspecs/winrt-arm64-msvc2017/qmake.conf
+usr/lib/*/qt5/mkspecs/winrt-arm64-msvc2017/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/winrt-x64-msvc2015/qmake.conf
 usr/lib/*/qt5/mkspecs/winrt-x64-msvc2015/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/winrt-x64-msvc2017/qmake.conf

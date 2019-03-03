@@ -1112,6 +1112,7 @@ usr/include/*/qt5/QtPlatformHeaders/QCocoaWindowFunctions
 usr/include/*/qt5/QtPlatformHeaders/QEGLNativeContext
 usr/include/*/qt5/QtPlatformHeaders/QEglFSFunctions
 usr/include/*/qt5/QtPlatformHeaders/QGLXNativeContext
+usr/include/*/qt5/QtPlatformHeaders/QLinuxFbFunctions
 usr/include/*/qt5/QtPlatformHeaders/QPlatformHeaderHelper
 usr/include/*/qt5/QtPlatformHeaders/QWGLNativeContext
 usr/include/*/qt5/QtPlatformHeaders/QWaylandWindowFunctions
@@ -1126,6 +1127,7 @@ usr/include/*/qt5/QtPlatformHeaders/qcocoawindowfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qeglfsfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qeglnativecontext.h
 usr/include/*/qt5/QtPlatformHeaders/qglxnativecontext.h
+usr/include/*/qt5/QtPlatformHeaders/qlinuxfbfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qplatformheaderhelper.h
 usr/include/*/qt5/QtPlatformHeaders/qtplatformheadersversion.h
 usr/include/*/qt5/QtPlatformHeaders/qwaylandwindowfunctions.h
