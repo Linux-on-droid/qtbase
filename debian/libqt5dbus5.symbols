@@ -1,10 +1,11 @@
-# SymbolsHelper-Confirmed: 5.11.1 armel armhf hurd-i386 i386 m68k mips mipsel powerpc powerpcspe
+# SymbolsHelper-Confirmed: 5.12.2 amd64
 libQt5DBus.so.5 libqt5dbus5 #MINVER#
 | libqt5dbus5 #MINVER#, qtbase-abi-5-11-3
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
  Qt_5.11@Qt_5.11 5.11.0~rc1
+ Qt_5.12@Qt_5.12 5.12.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -57,6 +58,7 @@ libQt5DBus.so.5 libqt5dbus5 #MINVER#
  _ZN12QDBusMessage16createMethodCallERK7QStringS2_S2_S2_@Qt_5 5.0.2
  _ZN12QDBusMessage19setAutoStartServiceEb@Qt_5 5.0.2
  _ZN12QDBusMessage20createTargetedSignalERK7QStringS2_S2_S2_@Qt_5 5.6.0~beta
+ _ZN12QDBusMessage34setInteractiveAuthorizationAllowedEb@Qt_5 5.12.2
  _ZN12QDBusMessageC1ERKS_@Qt_5 5.0.2
  _ZN12QDBusMessageC1Ev@Qt_5 5.0.2
  _ZN12QDBusMessageC2ERKS_@Qt_5 5.0.2
@@ -305,6 +307,7 @@ libQt5DBus.so.5 libqt5dbus5 #MINVER#
  _ZNK12QDBusMessage16autoStartServiceEv@Qt_5 5.0.2
  _ZNK12QDBusMessage16createErrorReplyE7QStringRKS0_@Qt_5 5.0.2
  _ZNK12QDBusMessage16createErrorReplyEN10QDBusError9ErrorTypeERK7QString@Qt_5 5.0.2
+ _ZNK12QDBusMessage33isInteractiveAuthorizationAllowedEv@Qt_5 5.12.2
  _ZNK12QDBusMessage4pathEv@Qt_5 5.0.2
  _ZNK12QDBusMessage4typeEv@Qt_5 5.0.2
  _ZNK12QDBusMessage6memberEv@Qt_5 5.0.2

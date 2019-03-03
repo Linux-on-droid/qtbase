@@ -1,10 +1,11 @@
-# SymbolsHelper-Confirmed: 5.11.2 amd64 kfreebsd-i386
+# SymbolsHelper-Confirmed: 5.12.2 amd64
 libQt5Network.so.5 libqt5network5 #MINVER#
 | libqt5network5 #MINVER#, qtbase-abi-5-11-3
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
  Qt_5.11@Qt_5.11 5.11.0~rc1
+ Qt_5.12@Qt_5.12 5.12.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -549,6 +550,8 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN17QNetworkInterfaceD1Ev@Qt_5 5.0.2
  _ZN17QNetworkInterfaceD2Ev@Qt_5 5.0.2
  _ZN17QNetworkInterfaceaSERKS_@Qt_5 5.0.2
+ _ZN17QPasswordDigestor15deriveKeyPbkdf1EN18QCryptographicHash9AlgorithmERK10QByteArrayS4_iy@Qt_5 5.12.2
+ _ZN17QPasswordDigestor15deriveKeyPbkdf2EN18QCryptographicHash9AlgorithmERK10QByteArrayS4_iy@Qt_5 5.12.2
  _ZN17QSslConfiguration10setCiphersERK5QListI10QSslCipherE@Qt_5 5.0.2
  _ZN17QSslConfiguration11setProtocolEN4QSsl11SslProtocolE@Qt_5 5.0.2
  _ZN17QSslConfiguration12setSslOptionEN4QSsl9SslOptionEb@Qt_5 5.0.2
@@ -569,10 +572,13 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN17QSslConfiguration23setBackendConfigurationERK4QMapI10QByteArray8QVariantE@Qt_5 5.11.0~rc1
  _ZN17QSslConfiguration23setDefaultConfigurationERKS_@Qt_5 5.0.2
  _ZN17QSslConfiguration23supportedEllipticCurvesEv@Qt_5 5.5.0
+ _ZN17QSslConfiguration24defaultDtlsConfigurationEv@Qt_5 5.12.2
  _ZN17QSslConfiguration24setLocalCertificateChainERK5QListI15QSslCertificateE@Qt_5 5.1.0
  _ZN17QSslConfiguration26setDiffieHellmanParametersERK27QSslDiffieHellmanParameters@Qt_5 5.8.0
+ _ZN17QSslConfiguration27setDefaultDtlsConfigurationERKS_@Qt_5 5.12.2
  _ZN17QSslConfiguration27setPreSharedKeyIdentityHintERK10QByteArray@Qt_5 5.8.0
  _ZN17QSslConfiguration29setBackendConfigurationOptionERK10QByteArrayRK8QVariant@Qt_5 5.11.0~rc1
+ _ZN17QSslConfiguration32setDtlsCookieVerificationEnabledEb@Qt_5 5.12.2
  _ZN17QSslConfigurationC1ERKS_@Qt_5 5.0.2
  _ZN17QSslConfigurationC1Ev@Qt_5 5.0.2
  _ZN17QSslConfigurationC2ERKS_@Qt_5 5.0.2
@@ -625,6 +631,20 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN19QBearerEnginePluginD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN19QBearerEnginePluginD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN19QBearerEnginePluginD2Ev@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN19QDtlsClientVerifier11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifier11qt_metacastEPKc@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifier12verifyClientEP10QUdpSocketRK10QByteArrayRK12QHostAddresst@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifier16staticMetaObjectE@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifier19GeneratorParametersC1EN18QCryptographicHash9AlgorithmERK10QByteArray@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifier19GeneratorParametersC1Ev@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifier19GeneratorParametersC2EN18QCryptographicHash9AlgorithmERK10QByteArray@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifier19GeneratorParametersC2Ev@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifier28setCookieGeneratorParametersERKNS_19GeneratorParametersE@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifierC1EP7QObject@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifierC2EP7QObject@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifierD0Ev@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifierD1Ev@Qt_5 5.12.2
+ _ZN19QDtlsClientVerifierD2Ev@Qt_5 5.12.2
  _ZN20QDnsDomainNameRecordC1ERKS_@Qt_5 5.0.2
  _ZN20QDnsDomainNameRecordC1Ev@Qt_5 5.0.2
  _ZN20QDnsDomainNameRecordC2ERKS_@Qt_5 5.0.2
@@ -820,6 +840,31 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZN35QNetworkConfigurationManagerPrivateD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN35QNetworkConfigurationManagerPrivateD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN35QNetworkConfigurationManagerPrivateD2Ev@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN5QDtls10setMtuHintEt@Qt_5 5.12.2
+ _ZN5QDtls11doHandshakeEP10QUdpSocketRK10QByteArray@Qt_5 5.12.2
+ _ZN5QDtls11pskRequiredEP29QSslPreSharedKeyAuthenticator@Qt_5 5.12.2
+ _ZN5QDtls11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.12.2
+ _ZN5QDtls11qt_metacastEPKc@Qt_5 5.12.2
+ _ZN5QDtls13handleTimeoutEP10QUdpSocket@Qt_5 5.12.2
+ _ZN5QDtls14abortHandshakeEP10QUdpSocket@Qt_5 5.12.2
+ _ZN5QDtls14startHandshakeEP10QUdpSocketRK10QByteArray@Qt_5 5.12.2
+ _ZN5QDtls15decryptDatagramEP10QUdpSocketRK10QByteArray@Qt_5 5.12.2
+ _ZN5QDtls15resumeHandshakeEP10QUdpSocket@Qt_5 5.12.2
+ _ZN5QDtls16handshakeTimeoutEv@Qt_5 5.12.2
+ _ZN5QDtls16staticMetaObjectE@Qt_5 5.12.2
+ _ZN5QDtls17continueHandshakeEP10QUdpSocketRK10QByteArray@Qt_5 5.12.2
+ _ZN5QDtls20setDtlsConfigurationERK17QSslConfiguration@Qt_5 5.12.2
+ _ZN5QDtls22writeDatagramEncryptedEP10QUdpSocketRK10QByteArray@Qt_5 5.12.2
+ _ZN5QDtls23setPeerVerificationNameERK7QString@Qt_5 5.12.2
+ _ZN5QDtls24ignoreVerificationErrorsERK7QVectorI9QSslErrorE@Qt_5 5.12.2
+ _ZN5QDtls28setCookieGeneratorParametersERKN19QDtlsClientVerifier19GeneratorParametersE@Qt_5 5.12.2
+ _ZN5QDtls7setPeerERK12QHostAddresstRK7QString@Qt_5 5.12.2
+ _ZN5QDtls8shutdownEP10QUdpSocket@Qt_5 5.12.2
+ _ZN5QDtlsC1EN10QSslSocket7SslModeEP7QObject@Qt_5 5.12.2
+ _ZN5QDtlsC2EN10QSslSocket7SslModeEP7QObject@Qt_5 5.12.2
+ _ZN5QDtlsD0Ev@Qt_5 5.12.2
+ _ZN5QDtlsD1Ev@Qt_5 5.12.2
+ _ZN5QDtlsD2Ev@Qt_5 5.12.2
  _ZN7QSslKey5clearEv@Qt_5 5.0.2
  _ZN7QSslKeyC1EP9QIODeviceN4QSsl12KeyAlgorithmENS2_14EncodingFormatENS2_7KeyTypeERK10QByteArray@Qt_5 5.0.2
  _ZN7QSslKeyC1EPvN4QSsl7KeyTypeE@Qt_5 5.0.2
@@ -1118,6 +1163,8 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK15QSslCertificate12serialNumberEv@Qt_5 5.0.2
  _ZNK15QSslCertificate13effectiveDateEv@Qt_5 5.0.2
  _ZNK15QSslCertificate13isBlacklistedEv@Qt_5 5.0.2
+ _ZNK15QSslCertificate17issuerDisplayNameEv@Qt_5 5.12.2
+ _ZNK15QSslCertificate18subjectDisplayNameEv@Qt_5 5.12.2
  _ZNK15QSslCertificate20issuerInfoAttributesEv@Qt_5 5.0.2
  _ZNK15QSslCertificate21subjectInfoAttributesEv@Qt_5 5.0.2
  _ZNK15QSslCertificate23subjectAlternativeNamesEv@Qt_5 5.0.2
@@ -1183,6 +1230,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK17QSslConfiguration23diffieHellmanParametersEv@Qt_5 5.8.0
  _ZNK17QSslConfiguration24preSharedKeyIdentityHintEv@Qt_5 5.8.0
  _ZNK17QSslConfiguration25sessionTicketLifeTimeHintEv@Qt_5 5.2.0~alpha1
+ _ZNK17QSslConfiguration29dtlsCookieVerificationEnabledEv@Qt_5 5.12.2
  _ZNK17QSslConfiguration29nextProtocolNegotiationStatusEv@Qt_5 5.3.0
  _ZNK17QSslConfiguration6isNullEv@Qt_5 5.0.2
  _ZNK17QSslConfiguration7ciphersEv@Qt_5 5.0.2
@@ -1200,6 +1248,11 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK18QNetworkProxyQuery9queryTypeEv@Qt_5 5.0.2
  _ZNK18QNetworkProxyQueryeqERKS_@Qt_5 5.0.2
  _ZNK19QBearerEnginePlugin10metaObjectEv@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK19QDtlsClientVerifier10metaObjectEv@Qt_5 5.12.2
+ _ZNK19QDtlsClientVerifier13verifiedHelloEv@Qt_5 5.12.2
+ _ZNK19QDtlsClientVerifier15dtlsErrorStringEv@Qt_5 5.12.2
+ _ZNK19QDtlsClientVerifier25cookieGeneratorParametersEv@Qt_5 5.12.2
+ _ZNK19QDtlsClientVerifier9dtlsErrorEv@Qt_5 5.12.2
  _ZNK20QDnsDomainNameRecord10timeToLiveEv@Qt_5 5.0.2
  _ZNK20QDnsDomainNameRecord4nameEv@Qt_5 5.0.2
  _ZNK20QDnsDomainNameRecord5valueEv@Qt_5 5.0.2
@@ -1284,6 +1337,21 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZNK35QNetworkConfigurationManagerPrivate27configurationFromIdentifierERK7QString@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK35QNetworkConfigurationManagerPrivate7enginesEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK35QNetworkConfigurationManagerPrivate8isOnlineEv@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK5QDtls10metaObjectEv@Qt_5 5.12.2
+ _ZNK5QDtls11peerAddressEv@Qt_5 5.12.2
+ _ZNK5QDtls13sessionCipherEv@Qt_5 5.12.2
+ _ZNK5QDtls14handshakeStateEv@Qt_5 5.12.2
+ _ZNK5QDtls15dtlsErrorStringEv@Qt_5 5.12.2
+ _ZNK5QDtls15sessionProtocolEv@Qt_5 5.12.2
+ _ZNK5QDtls17dtlsConfigurationEv@Qt_5 5.12.2
+ _ZNK5QDtls20peerVerificationNameEv@Qt_5 5.12.2
+ _ZNK5QDtls21isConnectionEncryptedEv@Qt_5 5.12.2
+ _ZNK5QDtls22peerVerificationErrorsEv@Qt_5 5.12.2
+ _ZNK5QDtls25cookieGeneratorParametersEv@Qt_5 5.12.2
+ _ZNK5QDtls7mtuHintEv@Qt_5 5.12.2
+ _ZNK5QDtls7sslModeEv@Qt_5 5.12.2
+ _ZNK5QDtls8peerPortEv@Qt_5 5.12.2
+ _ZNK5QDtls9dtlsErrorEv@Qt_5 5.12.2
  _ZNK7QSslKey4typeEv@Qt_5 5.0.2
  _ZNK7QSslKey5toDerERK10QByteArray@Qt_5 5.0.2
  _ZNK7QSslKey5toPemERK10QByteArray@Qt_5 5.0.2
@@ -1350,12 +1418,14 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZTI17QNetworkDiskCache@Qt_5 5.0.2
  _ZTI17QTcpServerPrivate@Qt_5_PRIVATE_API 5.10.0 1
  _ZTI19QBearerEnginePlugin@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTI19QDtlsClientVerifier@Qt_5 5.12.2
  _ZTI20QNetworkProxyFactory@Qt_5 5.0.2
  _ZTI21QAbstractNetworkCache@Qt_5 5.0.2
  _ZTI21QNetworkAccessManager@Qt_5 5.0.2
  _ZTI22QNetworkSessionPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI28QNetworkConfigurationManager@Qt_5 5.0.2
  _ZTI35QNetworkConfigurationManagerPrivate@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTI5QDtls@Qt_5 5.12.2
  _ZTI8QUrlInfo@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS10QDnsLookup@Qt_5 5.0.2
  _ZTS10QSslSocket@Qt_5 5.0.2
@@ -1374,12 +1444,14 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZTS17QNetworkDiskCache@Qt_5 5.0.2
  _ZTS17QTcpServerPrivate@Qt_5_PRIVATE_API 5.10.0 1
  _ZTS19QBearerEnginePlugin@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTS19QDtlsClientVerifier@Qt_5 5.12.2
  _ZTS20QNetworkProxyFactory@Qt_5 5.0.2
  _ZTS21QAbstractNetworkCache@Qt_5 5.0.2
  _ZTS21QNetworkAccessManager@Qt_5 5.0.2
  _ZTS22QNetworkSessionPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTS28QNetworkConfigurationManager@Qt_5 5.0.2
  _ZTS35QNetworkConfigurationManagerPrivate@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTS5QDtls@Qt_5 5.12.2
  _ZTS8QUrlInfo@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV10QDnsLookup@Qt_5 5.0.2
  _ZTV10QSslSocket@Qt_5 5.0.2
@@ -1397,12 +1469,14 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  _ZTV17QNetworkDiskCache@Qt_5 5.0.2
  _ZTV17QTcpServerPrivate@Qt_5_PRIVATE_API 5.10.0 1
  _ZTV19QBearerEnginePlugin@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTV19QDtlsClientVerifier@Qt_5 5.12.2
  _ZTV20QNetworkProxyFactory@Qt_5 5.0.2
  _ZTV21QAbstractNetworkCache@Qt_5 5.0.2
  _ZTV21QNetworkAccessManager@Qt_5 5.0.2
  _ZTV22QNetworkSessionPrivate@Qt_5_PRIVATE_API 5.0.2 1
  _ZTV28QNetworkConfigurationManager@Qt_5 5.0.2
  _ZTV35QNetworkConfigurationManagerPrivate@Qt_5_PRIVATE_API 5.0.2 1
+ _ZTV5QDtls@Qt_5 5.12.2
  _ZTV8QUrlInfo@Qt_5_PRIVATE_API 5.0.2 1
  _ZeqRK11QHstsPolicyS1_@Qt_5 5.9.0~beta
  _ZeqRK27QSslDiffieHellmanParametersS1_@Qt_5 5.8.0

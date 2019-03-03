@@ -1,10 +1,11 @@
-# SymbolsHelper-Confirmed: 5.11.0~rc1 amd64
+# SymbolsHelper-Confirmed: 5.12.2 amd64
 libQt5OpenGL.so.5 libqt5opengl5 #MINVER#
 | libqt5opengl5 #MINVER#, qtbase-abi-5-11-3
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
  Qt_5.11@Qt_5.11 5.11.0~rc1
+ Qt_5.12@Qt_5.12 5.12.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -250,6 +251,7 @@ libQt5OpenGL.so.5 libqt5opengl5 #MINVER#
  _ZN16QGLShaderProgramD2Ev@Qt_5 5.0.2
  _ZN16QGLWidgetPrivate10renderCxPmEP7QPixmap@Qt_5_PRIVATE_API 5.0.2 1
  _ZN16QGLWidgetPrivate11initContextEP10QGLContextPK9QGLWidget@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN16QGLWidgetPrivate11makeCurrentEv@Qt_5_PRIVATE_API 5.12.2 1
  _ZN16QGLWidgetPrivate16cleanupColormapsEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN16QGLWidgetPrivate4initEP10QGLContextPK9QGLWidget@Qt_5_PRIVATE_API 5.0.2 1
  _ZN17QGL2PaintEngineEx10drawPixmapERK6QRectFRK7QPixmapS2_@Qt_5_PRIVATE_API 5.0.2 1

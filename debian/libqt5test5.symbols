@@ -1,10 +1,11 @@
-# SymbolsHelper-Confirmed: 5.11.0~rc1 amd64
+# SymbolsHelper-Confirmed: 5.12.2 amd64
 libQt5Test.so.5 libqt5test5 #MINVER#
 | libqt5test5 #MINVER#, qtbase-abi-5-11-3
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
  Qt_5.11@Qt_5.11 5.11.0~rc1
+ Qt_5.12@Qt_5.12 5.12.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -86,6 +87,7 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN5QTest10testObjectEv@Qt_5 5.0.2
  _ZN5QTest11qExpectFailEPKcS1_NS_12TestFailModeES1_i@Qt_5 5.0.2
  _ZN5QTest11qGlobalDataEPKci@Qt_5 5.0.2
+ _ZN5QTest12formatStringEPKcS1_mz@Qt_5 5.12.2
  _ZN5QTest12qElementDataEPKci@Qt_5 5.0.2
  _ZN5QTest13ignoreMessageE9QtMsgTypePKc@Qt_5 5.0.2
  _ZN5QTest13ignoreMessageE9QtMsgTypeRK18QRegularExpression@Qt_5 5.3.0
@@ -154,10 +156,12 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  (optional=templinst)_ZN5QTest8toStringItEEPcRKT_@Qt_5 5.0.2
  (optional=templinst)_ZN5QTest8toStringIxEEPcRKT_@Qt_5 5.0.2
  (optional=templinst)_ZN5QTest8toStringIyEEPcRKT_@Qt_5 5.0.2
+ _ZN8QTestLog10totalCountEv@Qt_5_PRIVATE_API 5.12.2 1
  _ZN8QTestLog11loggerCountEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN8QTestLog11stopLoggingEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN8QTestLog12startLoggingEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN8QTestLog12verboseLevelEv@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN8QTestLog13enterTestDataEP9QTestData@Qt_5_PRIVATE_API 5.12.2 1
  _ZN8QTestLog13ignoreMessageE9QtMsgTypePKc@Qt_5_PRIVATE_API 5.0.2 1
  _ZN8QTestLog13ignoreMessageE9QtMsgTypeRK18QRegularExpression@Qt_5_PRIVATE_API 5.3.0 1
  _ZN8QTestLog13resetCountersEv@Qt_5_PRIVATE_API 5.0.2 1
@@ -186,6 +190,8 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN8QTestLog8addBPassEPKc@Qt_5_PRIVATE_API 5.4.0 1
  _ZN8QTestLog8addXFailEPKcS1_i@Qt_5_PRIVATE_API 5.0.2 1
  _ZN8QTestLog8addXPassEPKcS1_i@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN8QTestLog9addBXFailEPKcS1_i@Qt_5_PRIVATE_API 5.12.2 1
+ _ZN8QTestLog9addBXPassEPKcS1_i@Qt_5_PRIVATE_API 5.12.2 1
  _ZN8QTestLog9addLoggerENS_7LogModeEPKc@Qt_5_PRIVATE_API 5.0.2 1
  _ZN8QTestLog9failCountEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN8QTestLog9passCountEv@Qt_5_PRIVATE_API 5.0.2 1
