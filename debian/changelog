@@ -20,6 +20,7 @@ qtbase-opensource-src (5.12.2+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files from the current build log.
   * Bump ABI version to qtbase-abi-5-12-2.
   * debian/scripts/update-copyright: Map upstream MIT license to Expat.
+  * Regenerate debian/copyright.
 
   [ Simon Quigley ]
   * Move the Flatpak platform theme to a generic XDG Desktop Portal platform
