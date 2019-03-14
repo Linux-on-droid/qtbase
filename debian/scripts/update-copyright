@@ -47,7 +47,7 @@ licenses_map = {
     'LGPL21': 'LGPL-2.1-or-3 with Qt-1.1 exception',
     'LGPL3': 'LGPL-3 or GPL-2+',
     'LGPL3-COMM': 'LGPL-3',
-    'MIT': 'MIT',
+    'MIT': 'Expat',
 }
 
 exclude_prefixes = (
