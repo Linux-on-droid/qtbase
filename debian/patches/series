@@ -10,3 +10,4 @@ gnukfreebsd_linker_warnings.diff
 armv4.diff
 nonlinux_utime.diff
 qdoc_default_incdirs.diff
+revert_remove_our_use_of_syscall_for-statx.patch
