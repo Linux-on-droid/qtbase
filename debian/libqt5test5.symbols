@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.2 amd64
+# SymbolsHelper-Confirmed: 5.12.2 amd64 armhf i386
 libQt5Test.so.5 libqt5test5 #MINVER#
 | libqt5test5 #MINVER#, qtbase-abi-5-12-2
 * Build-Depends-Package: qtbase5-dev
@@ -87,7 +87,7 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN5QTest10testObjectEv@Qt_5 5.0.2
  _ZN5QTest11qExpectFailEPKcS1_NS_12TestFailModeES1_i@Qt_5 5.0.2
  _ZN5QTest11qGlobalDataEPKci@Qt_5 5.0.2
- _ZN5QTest12formatStringEPKcS1_mz@Qt_5 5.12.2
+ (subst)_ZN5QTest12formatStringEPKcS1_{size_t}z@Qt_5 5.12.2
  _ZN5QTest12qElementDataEPKci@Qt_5 5.0.2
  _ZN5QTest13ignoreMessageE9QtMsgTypePKc@Qt_5 5.0.2
  _ZN5QTest13ignoreMessageE9QtMsgTypeRK18QRegularExpression@Qt_5 5.3.0
