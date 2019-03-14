@@ -17,6 +17,10 @@ Files-Excluded: bin/licheck*
 # Removed non-free files:
 # * RFCs (see QTBUG-30544 and QTBUG-30545)
 # * htmlinfo example which contains non-free websites snapshots
+# * src/3rdparty/gradle — built .jar file without source code
+# * src/3rdparty/iaccessible2 — not preferred form of modification
+# * src/3rdparty/sqlite — not preferred form of modification
+# * src/3rdparty/wintab — license does not permit modification
 
 # Manual rules for The Qt Company copyrights
 
