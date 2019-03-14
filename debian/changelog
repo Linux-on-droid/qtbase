@@ -1,9 +1,6 @@
 qtbase-opensource-src (5.12.2+dfsg-1) UNRELEASED; urgency=medium
 
-  * Restore GLES-related changes that were dropped in 5.11.3+dfsg-4.
-
   [ Dmitry Shachnev ]
-  * Add libqt5gui5-gles alternative dependency to platformtheme packages.
   * New upstream release.
   * Drop patches, applied upstream:
     - fix-selection-rendering.patch
@@ -17,6 +14,8 @@ qtbase-opensource-src (5.12.2+dfsg-1) UNRELEASED; urgency=medium
   * Refresh and rebase other patches.
   * Also drop revert_remove_our_use_of_syscall_for-statx.patch. No need
     to support old kernels as we are not targetting Buster anymore.
+  * Restore GLES-related changes that were dropped in 5.11.3+dfsg-4.
+  * Add libqt5gui5-gles alternative dependency to platformtheme packages.
   * Update symbols files from the current build log.
   * Bump ABI version to qtbase-abi-5-12-2.
   * debian/scripts/update-copyright: Map upstream MIT license to Expat.
