@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.11.3+dfsg1-1) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Repack the tarball and strip some files and directories with copyright
+    issues (closes: #924599).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 14 Mar 2019 23:23:35 +0300
 
