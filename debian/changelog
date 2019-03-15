@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.12.2+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.2+dfsg-1) experimental; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
@@ -26,7 +26,7 @@ qtbase-opensource-src (5.12.2+dfsg-1) UNRELEASED; urgency=medium
   * Remove qxcbintegrationfunctions.h which is no longer provided by upstream.
   * Add new files from upstream.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 09 Feb 2019 11:19:39 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 15 Mar 2019 20:47:10 +0300
 
 qtbase-opensource-src (5.11.3+dfsg1-1) unstable; urgency=medium
 
