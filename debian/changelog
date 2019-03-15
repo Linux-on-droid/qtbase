@@ -1,10 +1,9 @@
-qtbase-opensource-src (5.11.3+dfsg1-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.11.3+dfsg1-1) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Repack the tarball and strip some files and directories with copyright
     issues (closes: #924599).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 14 Mar 2019 23:23:35 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 15 Mar 2019 10:20:39 +0300
 
 qtbase-opensource-src (5.11.3+dfsg-5) unstable; urgency=medium
 
