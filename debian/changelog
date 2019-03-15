@@ -27,6 +27,13 @@ qtbase-opensource-src (5.12.2+dfsg-1) UNRELEASED; urgency=medium
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 09 Feb 2019 11:19:39 +0300
 
+qtbase-opensource-src (5.11.3+dfsg1-1) unstable; urgency=medium
+
+  * Repack the tarball and strip some files and directories with copyright
+    issues (closes: #924599).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 15 Mar 2019 10:20:39 +0300
+
 qtbase-opensource-src (5.11.3+dfsg-5) unstable; urgency=medium
 
   * Revert part of the mkspecs movements between packages. The private ones

@@ -3,6 +3,10 @@ Upstream-Name: qtbase-opensource-src
 Source: https://download.qt.io/official_releases/qt/*/submodules/
 Files-Excluded: bin/licheck*
                 examples/xml/htmlinfo
+                src/3rdparty/gradle/gradle/wrapper/gradle-wrapper.jar
+                src/3rdparty/iaccessible2
+                src/3rdparty/sqlite
+                src/3rdparty/wintab
                 tests/auto/corelib/serialization/qtextstream/rfc3261.txt
                 tests/auto/corelib/tools/qbytearray/rfc3252.txt
                 tests/auto/network/access/qftp/rfc3252.txt
@@ -13,6 +17,10 @@ Files-Excluded: bin/licheck*
 # Removed non-free files:
 # * RFCs (see QTBUG-30544 and QTBUG-30545)
 # * htmlinfo example which contains non-free websites snapshots
+# * src/3rdparty/gradle — built .jar file without source code
+# * src/3rdparty/iaccessible2 — not preferred form of modification
+# * src/3rdparty/sqlite — not preferred form of modification
+# * src/3rdparty/wintab — license does not permit modification
 
 # Manual rules for The Qt Company copyrights
 
@@ -1916,10 +1924,6 @@ Copyright: 2014 Intel Corporation
            2015 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com
 License: Expat
 
-Files: src/3rdparty/iaccessible2/idl/*
-Copyright: 2006 IBM Corporation
-License: BSD-3-clause
-
 Files: src/3rdparty/harfbuzz/*
 Copyright: 1998-2005 David Turner
            1998-2004 Werner Lemberg
@@ -2150,17 +2154,6 @@ License: brg-endian
  This software is provided 'as is' with no explicit or implied warranties
  in respect of its properties, including, but not limited to, correctness
  and/or fitness for purpose.
-
-Files: src/3rdparty/sqlite/*
-Copyright: -
-License: public-domain
- The author disclaims copyright to this source code.
-
-Files: src/3rdparty/wintab/*
-Copyright: 1991-1998 by LCS/Telegraphics
-License: wintab
- The text and information contained in this file may be freely used,
- copied, or distributed without compensation or licensing restrictions.
 
 Files: src/3rdparty/zlib/src/*
 Copyright: 1995-2017 Jean-loup Gailly
