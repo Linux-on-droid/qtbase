@@ -13,7 +13,7 @@ Files-Excluded: bin/licheck*
                 tests/auto/network/access/qnetworkreply/bigfile
                 tests/auto/network/access/qnetworkreply/resource
                 tests/auto/network/access/qnetworkreply/rfc3252.txt
-                tests/manual/network_stresstest/qtest/bigfile
+                tests/manual/network_stresstest/qtest
 # Removed non-free files:
 # * RFCs (see QTBUG-30544 and QTBUG-30545)
 # * htmlinfo example which contains non-free websites snapshots
