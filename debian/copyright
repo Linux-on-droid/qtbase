@@ -1891,36 +1891,72 @@ Copyright: 2003-2007 Josef Weidendorfer
            2000-2008 Julian Seward
 License: Hybrid-BSD
 
-Files: src/3rdparty/xcb/xcb-util-keysyms/keysyms.c
-       src/3rdparty/xcb/xcb-util/xcb_aux.c
-       src/3rdparty/xcb/include/xcb/xcb_renderutil.h
-       src/3rdparty/xcb/xcb-util-renderutil/util.c
-       src/3rdparty/xcb/xcb-util/xcb_aux.c
-       src/3rdparty/xcb/include/xcb/xcb_bitops.h
-       src/3rdparty/xcb/include/xcb/xcb_image.h
-       src/3rdparty/xcb/include/xcb/xcb_pixel.h
-       src/3rdparty/xcb/xcb-util-image/xcb_image.c
-       src/3rdparty/xcb/xcb-util/event.c
+Files: src/3rdparty/xcb/include/xcb/xcb_bitops.h
        src/3rdparty/xcb/include/xcb/xcb_event.h
        src/3rdparty/xcb/include/xcb/xcb_icccm.h
+       src/3rdparty/xcb/include/xcb/xcb_image.h
+       src/3rdparty/xcb/include/xcb/xcb_pixel.h
+       src/3rdparty/xcb/include/xcb/xcb_renderutil.h
+       src/3rdparty/xcb/xcb-util/event.c
+       src/3rdparty/xcb/xcb-util/xcb_aux.c
+       src/3rdparty/xcb/xcb-util-image/xcb_image.c
+       src/3rdparty/xcb/xcb-util-keysyms/keysyms.c
+       src/3rdparty/xcb/xcb-util-renderutil/util.c
        src/3rdparty/xcb/xcb-util-wm/icccm.c
-Copyright: 2006-2008 Jamey Sharp
-           2008 Josh Triplett
+Copyright: 2000 Keith Packard
+           2006 Jamey Sharp
+           2007-2008 Vincent Torri <vtorri@univ-evry.fr>
            2007 Bart Massey
-           2008 Ian Osgood
-           2000 Keith Packard
-           2008-2009 Julien Danjou
-           2007-2008 Vincent Torri
+           2008-2009 Julien Danjou <julien@danjou.info>
+           2008 Arnaud Fontaine <arnau@debian.org>
+           2008 Bart Massey <bart@cs.pdx.edu>
+           2008 Ian Osgood <iano@quirkster.com>
+           2008 Jamey Sharp <jamey@minilop.net>
+           2008 Josh Triplett <josh@freedesktop.org>
+           2008 Ulrich Eckhardt <doomster@knuut.de>
 License: Expat
 
 Files: src/3rdparty/angle/*
-Copyright: 2002-2010 The ANGLE Project Authors.
-           2007-2012 The Khronos Group Inc.
-           2002 NVIDIA Corporation
+Copyright: 2002-2017 The ANGLE Project Authors.
+License: BSD-3-clause
+
+Files: src/3rdparty/angle/include/EGL/*
+       src/3rdparty/angle/include/GLES2/*
+       src/3rdparty/angle/include/GLES3/*
+       src/3rdparty/angle/include/KHR/*
+Copyright: 2007-2017 The Khronos Group Inc.
+License: Expat
+
+Files: src/3rdparty/angle/src/common/third_party/base/anglebase/containers/mru_cache.h
+       src/3rdparty/angle/src/common/third_party/base/anglebase/numerics/*
+       src/3rdparty/angle/src/common/third_party/base/anglebase/sha1.*
+       src/3rdparty/angle/src/third_party/trace_event/trace_event.h
+Copyright: 2011-2014 The Chromium Authors.
+License: BSD-3-clause
+
+Files: src/3rdparty/angle/src/third_party/compiler/*
+       src/3rdparty/angle/src/third_party/systeminfo/*
+Copyright: 2009-2012 Apple Inc.
+License: BSD-2-clause
+
+Files: src/3rdparty/angle/src/third_party/libXNVCtrl/*
+Copyright: 2008-2010 NVIDIA, Corporation
+License: Expat
+
+Files: src/3rdparty/angle/src/common/third_party/smhasher/*
+Copyright: 2011 Google, Inc.
+License: Expat
+
+Files: src/3rdparty/double-conversion/*
+Copyright: 2006-2012 the V8 project authors
+License: BSD-3-clause
+
+Files: src/3rdparty/easing/*
+Copyright: 2001 Robert Penner
 License: BSD-3-clause
 
 Files: src/3rdparty/forkfd/*
-Copyright: 2014 Intel Corporation
+Copyright: 2016 Intel Corporation
            2015 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com
 License: Expat
 
@@ -1929,22 +1965,23 @@ Copyright: 1998-2005 David Turner
            1998-2004 Werner Lemberg
            2000-2007 Red Hat, Inc
            2006 Behdad Esfahbod
-           2008-2012 Nokia Corporation and/or its subsidiary(-ies)
-           2012-2013 The Qt Company Ltd.
+           2015 The Qt Company Ltd.
 License: Harfbuzz
 
 Files: src/3rdparty/harfbuzz-ng/*
-Copyright: 2010-2012 Google, Inc.
-           2012 Mozilla Foundation
+Copyright: 2010-2013 Google, Inc.
+           2012-2015 Mozilla Foundation
            2011 Codethink Limited
            2008-2010 Nokia Corporation and/or its subsidiary(-ies)
            2009 Keith Stribley
            2009 Martin Hosken and SIL International
            2007 Chris Wilson
            2006 Behdad Esfahbod
-           2005 David Turner
+           1998-2005 David Turner
+           1998-2004 Werner Lemberg
            2004-2010 Red Hat, Inc.
-           1998-2004 David Turner and Werner Lemberg
+           2015 The Qt Company Ltd.
+           2015 Konstantin Ritt
 License: Harfbuzz
 
 License: Harfbuzz
@@ -1967,7 +2004,7 @@ License: Harfbuzz
  PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 Files: src/3rdparty/freetype/*
-Copyright: 1996-2012 David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright: 1996-2018 David Turner, Robert Wilhelm, and Werner Lemberg
            1996-2009 Just van Rossum
            2002-2012 Roberto Alameda
            2003 Huw D M Davies for Codeweavers
@@ -1981,12 +2018,16 @@ Copyright: 1996-2012 David Turner, Robert Wilhelm, and Werner Lemberg
            2010, 2012 Joel Klinghed
 License: GPL-2+ or FTL
 
+Files: src/3rdparty/freetype/src/pcf/*
+Copyright: 2000-2014 Francesco Zappa Nardelli
+License: Expat
+
 Files: src/3rdparty/freetype/src/pcf/pcfutil.c
 Copyright: 1990-1998 The Open Group
 License: Expat
 
 Files: src/3rdparty/freetype/src/bdf/*
-Copyright: 2001-2002 Francesco Zappa Nardelli
+Copyright: 2001-2014 Francesco Zappa Nardelli
            2000 Computing Research Labs, New Mexico State University
 License: Expat
 
@@ -1998,91 +2039,51 @@ Copyright: 1992-1993 The Regents of the University of California
            2005, 2007, 2008, 2013 George Williams
 License: BSD-3-clause
 
+Files: src/3rdparty/icc/sRGB2014.icc
+Copyright: 2015 International Color Consortium
+License: ICC
+ This profile is made available by the International Color Consortium, and may
+ be copied, distributed, embedded, made, used, and sold without restriction.
+ Altered versions of this profile shall have the original identification and
+ copyright information removed and shall not be misrepresented as the original
+ profile.
+
 Files: src/3rdparty/libjpeg/*
-Copyright: 1991-2011, Thomas G. Lane
-           1991-2011, Guido Vollbeding
-License: libjpeg
- In plain English:
- .
- 1. We don't promise that this software works.  (But if you find any bugs,
-    please let us know!)
- 2. You can use this software for whatever you want.  You don't have to pay us.
- 3. You may not pretend that you wrote this software.  If you use it in a
-    program, you must acknowledge somewhere in your documentation that
-    you've used the IJG code.
- .
- In legalese:
- .
- The authors make NO WARRANTY or representation, either express or implied,
- with respect to this software, its quality, accuracy, merchantability, or
- fitness for a particular purpose.  This software is provided "AS IS", and you,
- its user, assume the entire risk as to its quality and accuracy.
- .
- This software is copyright (C) 1991-2011, Thomas G. Lane, Guido Vollbeding.
- All Rights Reserved except as specified below.
- .
- Permission is hereby granted to use, copy, modify, and distribute this
- software (or portions thereof) for any purpose, without fee, subject to these
- conditions:
- (1) If any part of the source code for this software is distributed, then this
- README file must be included, with this copyright and no-warranty notice
- unaltered; and any additions, deletions, or changes to the original files
- must be clearly indicated in accompanying documentation.
- (2) If only executable code is distributed, then the accompanying
- documentation must state that "this software is based in part on the work of
- the Independent JPEG Group".
- (3) Permission for use of this software is granted only if the user accepts
- full responsibility for any undesirable consequences; the authors accept
- NO LIABILITY for damages of any kind.
- .
- These conditions apply to any software derived from or based on the IJG code,
- not just to the unmodified library.  If you use our work, you ought to
- acknowledge us.
- .
- Permission is NOT granted for the use of any IJG author's name or company name
- in advertising or publicity relating to this software or products derived from
- it.  This software may be referred to only as "the Independent JPEG Group's
- software".
- .
- We specifically permit and encourage the use of this software as the basis of
- commercial products, provided that all warranty or liability claims are
- assumed by the product vendor.
- .
- .
- ansi2knr.c is included in this distribution by permission of L. Peter Deutsch,
- sole proprietor of its copyright holder, Aladdin Enterprises of Menlo Park, CA.
- ansi2knr.c is NOT covered by the above copyright and conditions, but instead
- by the usual distribution terms of the Free Software Foundation; principally,
- that you must include source code if you redistribute it.  (See the file
- ansi2knr.c for full details.)  However, since ansi2knr.c is not needed as part
- of any program generated from the IJG code, this does not limit you more than
- the foregoing paragraphs do.
- .
- The Unix configuration script "configure" was produced with GNU Autoconf.
- It is copyright by the Free Software Foundation but is freely distributable.
- The same holds for its supporting scripts (config.guess, config.sub,
- ltmain.sh).  Another support script, install-sh, is copyright by X Consortium
- but is also freely distributable.
- .
- The IJG distribution formerly included code to read and write GIF files.
- To avoid entanglement with the Unisys LZW patent, GIF reading support has
- been removed altogether, and the GIF writer has been simplified to produce
- "uncompressed GIFs".  This technique does not use the LZW algorithm; the
- resulting GIF files are larger than usual, but are readable by all standard
- GIF decoders.
- .
- We are required to state that
-     "The Graphics Interchange Format(c) is the Copyright property of
-     CompuServe Incorporated.  GIF(sm) is a Service Mark property of
-     CompuServe Incorporated."
+Copyright: 2009-2018 D. R. Commander
+           2011-2016 Siarhei Siamashka
+           2015-2016, 2018 Matthieu Darbois
+           2015 Intel Corporation
+           2015 Google, Inc.
+           2013-2014 MIPS Technologies, Inc.
+           2013 Linaro Limited
+           2009-2011 Nokia Corporation and/or its subsidiary(-ies)
+           2009 Pierre Ossman for Cendio AB
+           1999-2006 MIYASAKA Masaru
+           1991-2016 Thomas G. Lane, Guido Vollbeding
+License: libjpeg and BSD-3-clause and Zlib
 
 Files: src/3rdparty/libpng/*
-Copyright: 1998-2015 Glenn Randers-Pehrson
-           Andreas Dilger
-           Dave Martindale
-           Guy Eric Schalnat
-           Paul Schmidt
-           Tim Wegner
+Copyright: 1998-2018 Glenn Randers-Pehrson
+           2000-2017 Simon-Pierre Cadieux
+           2000-2017 Eric S. Raymond
+           2000-2017 Mans Rullgard
+           2000-2017 Cosmin Truta
+           2000-2017 Gilles Vollant
+           2000-2017 James Yu
+           2000-2017 Mandar Sahastrabuddhe
+           1998-2000 Tom Lane
+           1998-2000 Willem van Schaik
+           1996-1997 Andreas Dilger
+           1996-1997 John Bowler
+           1996-1997 Kevin Bracey
+           1996-1997 Sam Bushell
+           1996-1997 Magnus Holmgren
+           1996-1997 Greg Roelofs
+           1996-1997 Tom Tanner
+           1995-1996 Dave Martindale
+           1995-1996 Paul Schmidt
+           1995-1996 Tim Wegner
+           1995-1996 Guy Eric Schalnat, Group 42, Inc.
 License: libpng
  The PNG Reference Library is supplied "AS IS".  The Contributing Authors
  and Group 42, Inc. disclaim all warranties, expressed or implied,
@@ -2126,6 +2127,11 @@ Copyright: 1997-2018 University of Cambridge
            2013-2013 Tilera Corporation
 License: BSD-3-clause
 
+Files: src/3rdparty/pcre2/src/sljit/*
+Copyright: 2013 Tilera Corporation (jiwang@tilera.com)
+           2009-2018 Zoltan Herczeg (hzmester@freemail.hu)
+License: BSD-2-clause
+
 Files: src/3rdparty/pixman/*
 Copyright: 2009 Nokia Corporation
 License: Expat
@@ -2133,6 +2139,15 @@ License: Expat
 Files: src/3rdparty/rfc6234/*
 Copyright: 2011 IETF Trust
 License: BSD-3-clause
+
+Files: src/3rdparty/sha1/sha1.cpp
+Copyright: Dominik Reichl <dominik.reichl@t-online.de>
+           2016 The Qt Company Ltd
+License: LGPL-3 or GPL-2
+
+Files: src/3rdparty/sha3/*
+Copyright: Guido Bertoni, Joan Daemen, Michaël Peeters and Gilles Van Assche
+License: CC0-1.0
 
 Files: src/3rdparty/sha3/brg_endian.h
 Copyright: 1998-2008, Brian Gladman, Worcester, UK
@@ -2155,25 +2170,25 @@ License: brg-endian
  in respect of its properties, including, but not limited to, correctness
  and/or fitness for purpose.
 
-Files: src/3rdparty/zlib/src/*
+Files: src/3rdparty/tinycbor/*
+Copyright: 2016-2018 Intel Corporation
+License: Expat
+
+Files: src/3rdparty/wasm/DejaVuSans.ttf
+Copyright: 2003 Bitstream, Inc.
+           2006 Tavmjong Bah
+           American Mathematical Society
+License: Bitstream
+
+Files: src/3rdparty/wasm/Vera.ttf
+Copyright: 2003 Bitstream, Inc.
+License: Bitstream
+
+Files: src/3rdparty/freetype/src/gzip/*
+       src/3rdparty/zlib/src/*
 Copyright: 1995-2017 Jean-loup Gailly
            1995-2017 Mark Adler
 License: Zlib
- This software is provided 'as-is', without any express or implied
- warranty.  In no event will the authors be held liable for any damages
- arising from the use of this software.
- .
- Permission is granted to anyone to use this software for any purpose,
- including commercial applications, and to alter it and redistribute it
- freely, subject to the following restrictions:
- .
- 1. The origin of this software must not be misrepresented; you must not
-    claim that you wrote the original software. If you use this software
-    in a product, an acknowledgment in the product documentation would be
-    appreciated but is not required.
- 2. Altered source versions must be plainly marked as such, and must not be
-    misrepresented as being the original software.
- 3. This notice may not be removed or altered from any source distribution.
 
 # License texts
 
@@ -2236,6 +2251,29 @@ License: GPL-3 with Qt-1.0 exception
  source code to this application, excluding the source code of the
  independent modules, but including any changes you have made to this
  application, under the terms of this license.
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY APPLE, INC. ``AS IS'' AND ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL APPLE, INC. OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 License: BSD-3-clause
  You may use this file under the terms of the BSD license as follows:
@@ -2537,3 +2575,228 @@ License: Apache-2.0
  .
  On Debian systems, the complete text of the Apache License 2.0 can
  be found in "/usr/share/common-licenses/Apache-2.0"
+
+License: libjpeg
+ The authors make NO WARRANTY or representation, either express or implied,
+ with respect to this software, its quality, accuracy, merchantability, or
+ fitness for a particular purpose.  This software is provided "AS IS", and you,
+ its user, assume the entire risk as to its quality and accuracy.
+ .
+ This software is copyright (C) 1991-2016, Thomas G. Lane, Guido Vollbeding.
+ All Rights Reserved except as specified below.
+ .
+ Permission is hereby granted to use, copy, modify, and distribute this
+ software (or portions thereof) for any purpose, without fee, subject to these
+ conditions:
+ .
+ (1) If any part of the source code for this software is distributed, then this
+ README file must be included, with this copyright and no-warranty notice
+ unaltered; and any additions, deletions, or changes to the original files
+ must be clearly indicated in accompanying documentation.
+ .
+ (2) If only executable code is distributed, then the accompanying
+ documentation must state that "this software is based in part on the work of
+ the Independent JPEG Group".
+ .
+ (3) Permission for use of this software is granted only if the user accepts
+ full responsibility for any undesirable consequences; the authors accept
+ NO LIABILITY for damages of any kind.
+ .
+ These conditions apply to any software derived from or based on the IJG code,
+ not just to the unmodified library.  If you use our work, you ought to
+ acknowledge us.
+ .
+ Permission is NOT granted for the use of any IJG author's name or company name
+ in advertising or publicity relating to this software or products derived from
+ it.  This software may be referred to only as "the Independent JPEG Group's
+ software".
+ .
+ We specifically permit and encourage the use of this software as the basis of
+ commercial products, provided that all warranty or liability claims are
+ assumed by the product vendor.
+ .
+ The IJG distribution formerly included code to read and write GIF files.
+ To avoid entanglement with the Unisys LZW patent (now expired), GIF reading
+ support has been removed altogether, and the GIF writer has been simplified
+ to produce "uncompressed GIFs".  This technique does not use the LZW
+ algorithm; the resulting GIF files are larger than usual, but are readable
+ by all standard GIF decoders.
+ .
+ We are required to state that
+    "The Graphics Interchange Format(c) is the Copyright property of
+    CompuServe Incorporated.  GIF(sm) is a Service Mark property of
+    CompuServe Incorporated."
+
+License: CC0-1.0
+ CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL
+ SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN ATTORNEY-CLIENT
+ RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN "AS-IS" BASIS.
+ CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE USE OF THIS DOCUMENT OR
+ THE INFORMATION OR WORKS PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR
+ DAMAGES RESULTING FROM THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+ PROVIDED HEREUNDER.
+ .
+ Statement of Purpose
+ .
+ The laws of most jurisdictions throughout the world automatically confer
+ exclusive Copyright and Related Rights (defined below) upon the creator and
+ subsequent owner(s) (each and all, an "owner") of an original work of
+ authorship and/or a database (each, a "Work").
+ .
+ Certain owners wish to permanently relinquish those rights to a Work for the
+ purpose of contributing to a commons of creative, cultural and scientific
+ works ("Commons") that the public can reliably and without fear of later
+ claims of infringement build upon, modify, incorporate in other works, reuse
+ and redistribute as freely as possible in any form whatsoever and for any
+ purposes, including without limitation commercial purposes. These owners may
+ contribute to the Commons to promote the ideal of a free culture and the
+ further production of creative, cultural and scientific works, or to gain
+ reputation or greater distribution for their Work in part through the use and
+ efforts of others.
+ .
+ For these and/or other purposes and motivations, and without any expectation
+ of additional consideration or compensation, the person associating CC0 with
+ a Work (the "Affirmer"), to the extent that he or she is an owner of
+ Copyright and Related Rights in the Work, voluntarily elects to apply CC0 to
+ the Work and publicly distribute the Work under its terms, with knowledge of
+ his or her Copyright and Related Rights in the Work and the meaning and
+ intended legal effect of CC0 on those rights.
+ .
+ 1. Copyright and Related Rights. A Work made available under CC0 may be
+ protected by copyright and related or neighboring rights ("Copyright and
+ Related Rights"). Copyright and Related Rights include, but are not limited
+ to, the following:
+ .
+ i.   the right to reproduce, adapt, distribute, perform, display, communicate,
+      and translate a Work;
+ ii.  moral rights retained by the original author(s) and/or performer(s);
+ iii. publicity and privacy rights pertaining to a person's image or likeness
+      depicted in a Work;
+ iv.  rights protecting against unfair competition in regards to a Work,
+      subject to the limitations in paragraph 4(a), below;
+ v.   rights protecting the extraction, dissemination, use and reuse of data
+      in a Work;
+ vi.  database rights (such as those arising under Directive 96/9/EC of the
+      European Parliament and of the Council of 11 March 1996 on the legal
+      protection of databases, and under any national implementation thereof,
+      including any amended or successor version of such directive); and
+ vii. other similar, equivalent or corresponding rights throughout the world
+      based on applicable law or treaty, and any national implementations
+      thereof.
+ .
+ 2. Waiver. To the greatest extent permitted by, but not in contravention of,
+ applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and
+ unconditionally waives, abandons, and surrenders all of Affirmer's Copyright
+ and Related Rights and associated claims and causes of action, whether now
+ known or unknown (including existing as well as future claims and causes of
+ action), in the Work (i) in all territories worldwide, (ii) for the maximum
+ duration provided by applicable law or treaty (including future time
+ extensions), (iii) in any current or future medium and for any number of
+ copies, and (iv) for any purpose whatsoever, including without limitation
+ commercial, advertising or promotional purposes (the "Waiver"). Affirmer
+ makes the Waiver for the benefit of each member of the public at large and to
+ the detriment of Affirmer's heirs and successors, fully intending that such
+ Waiver shall not be subject to revocation, rescission, cancellation,
+ termination, or any other legal or equitable action to disrupt the quiet
+ enjoyment of the Work by the public as contemplated by Affirmer's express
+ Statement of Purpose.
+ .
+ 3. Public License Fallback. Should any part of the Waiver for any reason be
+ judged legally invalid or ineffective under applicable law, then the Waiver
+ shall be preserved to the maximum extent permitted taking into account
+ Affirmer's express Statement of Purpose. In addition, to the extent the
+ Waiver is so judged Affirmer hereby grants to each affected person a
+ royalty-free, non transferable, non sublicensable, non exclusive, irrevocable
+ and unconditional license to exercise Affirmer's Copyright and Related Rights
+ in the Work (i) in all territories worldwide, (ii) for the maximum duration
+ provided by applicable law or treaty (including future time extensions),
+ (iii) in any current or future medium and for any number of copies, and (iv)
+ for any purpose whatsoever, including without limitation commercial,
+ advertising or promotional purposes (the "License"). The License shall be
+ deemed effective as of the date CC0 was applied by Affirmer to the Work.
+ Should any part of the License for any reason be judged legally invalid or
+ ineffective under applicable law, such partial invalidity or ineffectiveness
+ shall not invalidate the remainder of the License, and in such case Affirmer
+ hereby affirms that he or she will not (i) exercise any of his or her
+ remaining Copyright and Related Rights in the Work or (ii) assert any
+ associated claims and causes of action with respect to the Work, in either
+ case contrary to Affirmer's express Statement of Purpose.
+ .
+ 4. Limitations and Disclaimers.
+ .
+ a. No trademark or patent rights held by Affirmer are waived, abandoned,
+    surrendered, licensed or otherwise affected by this document.
+ b. Affirmer offers the Work as-is and makes no representations or warranties
+    of any kind concerning the Work, express, implied, statutory or otherwise,
+    including without limitation warranties of title, merchantability, fitness
+    for a particular purpose, non infringement, or the absence of latent or
+    other defects, accuracy, or the present or absence of errors, whether or
+    not discoverable, all to the greatest extent permissible under applicable
+    law.
+ c. Affirmer disclaims responsibility for clearing rights of other persons
+    that may apply to the Work or any use thereof, including without limitation
+    any person's Copyright and Related Rights in the Work. Further, Affirmer
+    disclaims responsibility for obtaining any necessary consents, permissions
+    or other rights required for any use of the Work.
+ d. Affirmer understands and acknowledges that Creative Commons is not a
+    party to this document and has no duty or obligation with respect to this
+    CC0 or use of the Work.
+
+License: Bitstream
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of the fonts accompanying this license ("Fonts") and associated
+ documentation files (the "Font Software"), to reproduce and distribute the
+ Font Software, including without limitation the rights to use, copy, merge,
+ publish, distribute, and/or sell copies of the Font Software, and to permit
+ persons to whom the Font Software is furnished to do so, subject to the
+ following conditions:
+ .
+ The above copyright and trademark notices and this permission notice shall
+ be included in all copies of one or more of the Font Software typefaces.
+ .
+ The Font Software may be modified, altered, or added to, and in particular
+ the designs of glyphs or characters in the Fonts may be modified and
+ additional glyphs or characters may be added to the Fonts, only if the fonts
+ are renamed to names not containing either the words "Bitstream" or the word
+ "Vera".
+ .
+ This License becomes null and void to the extent applicable to Fonts or Font
+ Software that has been modified and is distributed under the "Bitstream
+ Vera" names.
+ .
+ The Font Software may be sold as part of a larger software package but no
+ copy of one or more of the Font Software typefaces may be sold by itself.
+ .
+ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT,
+ TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL BITSTREAM OR THE GNOME
+ FOUNDATION BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING
+ ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+ THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE
+ FONT SOFTWARE.
+ .
+ Except as contained in this notice, the names of Gnome, the Gnome
+ Foundation, and Bitstream Inc., shall not be used in advertising or
+ otherwise to promote the sale, use or other dealings in this Font Software
+ without prior written authorization from the Gnome Foundation or Bitstream
+ Inc., respectively. For further information, contact: fonts at gnome dot
+ org.
+
+License: Zlib
+ This software is provided 'as-is', without any express or implied
+ warranty.  In no event will the authors be held liable for any damages
+ arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not
+    claim that you wrote the original software. If you use this software
+    in a product, an acknowledgment in the product documentation would be
+    appreciated but is not required.
+ 2. Altered source versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.
+ 3. This notice may not be removed or altered from any source distribution.
