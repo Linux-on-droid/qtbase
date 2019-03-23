@@ -282,6 +282,9 @@ endif
 	sed -i 's,-fdebug-prefix-map=$(CURDIR)=. ,,' \
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/qmodule.pri
 
+	# Policy § 10.4. Remove this if https://bugs.debian.org/904409 gets fixed.
+	sed -i 's,bin/env perl,bin/perl,' debian/tmp/usr/lib/qt5/bin/*.pl
+
 override_dh_auto_install-indep:
 	dh_auto_build -- INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
