@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.2 amd64 armhf i386
+# SymbolsHelper-Confirmed: 5.12.2 amd64 armhf i386 ia64
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-12-2
 * Build-Depends-Package: qtbase5-dev
@@ -5464,6 +5464,10 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK9QtPrivate18ResultIteratorBaseneERKS0_@Qt_5 5.0.2
  (optional=templinst|arch=armel riscv64)_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv@Qt_5 5.10.0
  (optional=templinst|arch=!armel !riscv64)_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv@Qt_5 5.11.1
+ (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_EC1ES1_S1_@Qt_5 5.12.2
+ (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_EC2ES1_S1_@Qt_5 5.12.2
+ (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_ED1Ev@Qt_5 5.12.2
+ (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_ED2Ev@Qt_5 5.12.2
  (optional=templinst|arch=hurd-i386 kfreebsd-i386)_ZNSt23mersenne_twister_engineIjLj32ELj624ELj397ELj31ELj2567483615ELj11ELj4294967295ELj7ELj2636928640ELj15ELj4022730752ELj18ELj1812433253EE11_M_gen_randEv@Qt_5 5.11.1
  (optional=templinst|arch=ia64)_ZNSt23mersenne_twister_engineIjLm32ELm624ELm397ELm31ELj2567483615ELm11ELj4294967295ELm7ELj2636928640ELm15ELj4022730752ELm18ELj1812433253EE11_M_gen_randEv@Qt_5 5.11.3
  (optional=templinst|subst)_ZNSt23mersenne_twister_engineIjL{size_t}32EL{size_t}624EL{size_t}397EL{size_t}31ELj2567483615EL{size_t}11ELj4294967295EL{size_t}7ELj2636928640EL{size_t}15ELj4022730752EL{size_t}18ELj1812433253EE4seedIN16QRandomGenerator15SystemGeneratorEEENSt9enable_ifIXsrSt8is_classIT_E5valueEvE4typeERS6_@Qt_5 5.10.0
