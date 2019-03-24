@@ -1,11 +1,10 @@
-qtbase-opensource-src (5.12.2+dfsg-2) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.2+dfsg-2) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport upstream patch to fix generation of Qt5::GLESv2 target on ARM.
   * Change Perl shebangs to /usr/bin/perl as required by Policy § 10.4.
   * Update symbols files from buildds’ logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 19 Mar 2019 18:26:47 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 24 Mar 2019 12:39:25 +0300
 
 qtbase-opensource-src (5.12.2+dfsg-1) experimental; urgency=medium
 
