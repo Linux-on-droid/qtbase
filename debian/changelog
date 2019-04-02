@@ -1,3 +1,84 @@
+qtbase-opensource-src-gles (5.12.2+dfsg-1) UNRELEASED; urgency=medium
+
+  * Merge qtbase-opensource-src 5.12.2+dfsg-2 upload.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 02 Apr 2019 19:39:20 +0300
+
+qtbase-opensource-src (5.12.2+dfsg-2) experimental; urgency=medium
+
+  * Backport upstream patch to fix generation of Qt5::GLESv2 target on ARM.
+  * Change Perl shebangs to /usr/bin/perl as required by Policy § 10.4.
+  * Update symbols files from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 24 Mar 2019 12:39:25 +0300
+
+qtbase-opensource-src (5.12.2+dfsg-1) experimental; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+  * Drop patches, applied upstream:
+    - fix-selection-rendering.patch
+    - reference_dpi.diff
+    - remove_need_for_glXGetProcAddressARB.patch
+    - qprintdialog_duplex.diff
+    - no_arc4random_buf.diff
+    - kfreebsd_qstrncpy.diff
+    - alpha_atimensec.diff
+    - hurd_missing_include.diff
+  * Refresh and rebase other patches.
+  * Restore GLES-related changes that were dropped in 5.11.3+dfsg-4.
+  * Add libqt5gui5-gles alternative dependency to platformtheme packages.
+  * Update symbols files from the current build log.
+  * Bump ABI version to qtbase-abi-5-12-2.
+  * debian/scripts/update-copyright: Map upstream MIT license to Expat.
+  * Regenerate the Qt part of debian/copyright.
+  * Manually update the 3rdparty part of debian/copyright.
+
+  [ Simon Quigley ]
+  * Move the Flatpak platform theme to a generic XDG Desktop Portal platform
+    theme.
+  * Remove qxcbintegrationfunctions.h which is no longer provided by upstream.
+  * Add new files from upstream.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 15 Mar 2019 20:47:10 +0300
+
+qtbase-opensource-src (5.11.3+dfsg1-1) unstable; urgency=medium
+
+  * Repack the tarball and strip some files and directories with copyright
+    issues (closes: #924599).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 15 Mar 2019 10:20:39 +0300
+
+qtbase-opensource-src (5.11.3+dfsg-5) unstable; urgency=medium
+
+  * Revert part of the mkspecs movements between packages. The private ones
+    were put into qtbase5-private-dev, but it seems that they are not ready
+    for that (Closes: #921930).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 10 Feb 2019 11:47:21 -0300
+
+qtbase-opensource-src (5.11.3+dfsg-4) unstable; urgency=medium
+
+  * Revert the GLES-related symbols changes from the previous upload.
+    These changes were only for experimental and not yet for unstable.
+  * Upload to unstable.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport mysql_free_results_when_qsqlquery_finished_is_called.patch,
+    required by akonadi (closes: #921584).
+
+  [ Dmitry Shachnev ]
+  * Fix installed files list on hurd and kfreebsd (closes: #920236).
+    Thanks to Samuel Thibault!
+  * Move qt_lib_opengl.pri from qtbase5-dev to libqt5opengl5-dev.
+  * Backport upstream commit to fix duplex printing (LP: #1776173).
+    Thanks to Robert Bredereck for the initial patch!
+  * Add missing features.h include to hurd-g++ mkspec (closes: #920613).
+    Thanks to Samuel Thibault for the patch!
+  * Update symbols files from ia64 build logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 08 Feb 2019 17:11:47 +0300
+
 qtbase-opensource-src-gles (5.11.3+dfsg-2) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]

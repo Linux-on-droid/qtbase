@@ -3,6 +3,11 @@
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFSDeviceIntegration.so
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.prl
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.so
+[kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri
+[kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri
+[kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_kms_support_private.pri
+[linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_input_support_private.pri
+[linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri
 usr/include/*/qt5/QtConcurrent/QtConcurrent
 usr/include/*/qt5/QtConcurrent/QtConcurrentDepends
 usr/include/*/qt5/QtConcurrent/QtConcurrentFilter
@@ -59,6 +64,14 @@ usr/include/*/qt5/QtCore/QByteArrayListIterator
 usr/include/*/qt5/QtCore/QByteArrayMatcher
 usr/include/*/qt5/QtCore/QByteRef
 usr/include/*/qt5/QtCore/QCache
+usr/include/*/qt5/QtCore/QCborArray
+usr/include/*/qt5/QtCore/QCborError
+usr/include/*/qt5/QtCore/QCborMap
+usr/include/*/qt5/QtCore/QCborParserError
+usr/include/*/qt5/QtCore/QCborStreamReader
+usr/include/*/qt5/QtCore/QCborStreamWriter
+usr/include/*/qt5/QtCore/QCborValue
+usr/include/*/qt5/QtCore/QCborValueRef
 usr/include/*/qt5/QtCore/QChar
 usr/include/*/qt5/QtCore/QCharRef
 usr/include/*/qt5/QtCore/QChildEvent
@@ -226,6 +239,7 @@ usr/include/*/qt5/QtCore/QResource
 usr/include/*/qt5/QtCore/QReturnArgument
 usr/include/*/qt5/QtCore/QRunnable
 usr/include/*/qt5/QtCore/QSaveFile
+usr/include/*/qt5/QtCore/QScopeGuard
 usr/include/*/qt5/QtCore/QScopedArrayPointer
 usr/include/*/qt5/QtCore/QScopedPointer
 usr/include/*/qt5/QtCore/QScopedPointerArrayDeleter
@@ -335,6 +349,7 @@ usr/include/*/qt5/QtCore/Q_SECURITY_ATTRIBUTES
 usr/include/*/qt5/QtCore/Q_STARTUPINFO
 usr/include/*/qt5/QtCore/Qt
 usr/include/*/qt5/QtCore/QtAlgorithms
+usr/include/*/qt5/QtCore/QtCborCommon
 usr/include/*/qt5/QtCore/QtCleanUpFunction
 usr/include/*/qt5/QtCore/QtConfig
 usr/include/*/qt5/QtCore/QtContainerFwd
@@ -375,6 +390,11 @@ usr/include/*/qt5/QtCore/qbytearray.h
 usr/include/*/qt5/QtCore/qbytearraylist.h
 usr/include/*/qt5/QtCore/qbytearraymatcher.h
 usr/include/*/qt5/QtCore/qcache.h
+usr/include/*/qt5/QtCore/qcborarray.h
+usr/include/*/qt5/QtCore/qcborcommon.h
+usr/include/*/qt5/QtCore/qcbormap.h
+usr/include/*/qt5/QtCore/qcborstream.h
+usr/include/*/qt5/QtCore/qcborvalue.h
 usr/include/*/qt5/QtCore/qchar.h
 usr/include/*/qt5/QtCore/qcollator.h
 usr/include/*/qt5/QtCore/qcommandlineoption.h
@@ -480,6 +500,7 @@ usr/include/*/qt5/QtCore/qrunnable.h
 usr/include/*/qt5/QtCore/qsavefile.h
 usr/include/*/qt5/QtCore/qscopedpointer.h
 usr/include/*/qt5/QtCore/qscopedvaluerollback.h
+usr/include/*/qt5/QtCore/qscopeguard.h
 usr/include/*/qt5/QtCore/qsemaphore.h
 usr/include/*/qt5/QtCore/qsequentialanimationgroup.h
 usr/include/*/qt5/QtCore/qset.h
@@ -514,6 +535,7 @@ usr/include/*/qt5/QtCore/qtcore-config.h
 usr/include/*/qt5/QtCore/qtcoreversion.h
 usr/include/*/qt5/QtCore/qtemporarydir.h
 usr/include/*/qt5/QtCore/qtemporaryfile.h
+usr/include/*/qt5/QtCore/qtestsupport_core.h
 usr/include/*/qt5/QtCore/qtextboundaryfinder.h
 usr/include/*/qt5/QtCore/qtextcodec.h
 usr/include/*/qt5/QtCore/qtextstream.h
@@ -954,6 +976,7 @@ usr/include/*/qt5/QtGui/qstylehints.h
 usr/include/*/qt5/QtGui/qsurface.h
 usr/include/*/qt5/QtGui/qsurfaceformat.h
 usr/include/*/qt5/QtGui/qsyntaxhighlighter.h
+usr/include/*/qt5/QtGui/qtestsupport_gui.h
 usr/include/*/qt5/QtGui/qtextcursor.h
 usr/include/*/qt5/QtGui/qtextdocument.h
 usr/include/*/qt5/QtGui/qtextdocumentfragment.h
@@ -988,6 +1011,8 @@ usr/include/*/qt5/QtNetwork/QDnsLookup
 usr/include/*/qt5/QtNetwork/QDnsMailExchangeRecord
 usr/include/*/qt5/QtNetwork/QDnsServiceRecord
 usr/include/*/qt5/QtNetwork/QDnsTextRecord
+usr/include/*/qt5/QtNetwork/QDtls
+usr/include/*/qt5/QtNetwork/QDtlsClientVerifier
 usr/include/*/qt5/QtNetwork/QHostAddress
 usr/include/*/qt5/QtNetwork/QHostInfo
 usr/include/*/qt5/QtNetwork/QHstsPolicy
@@ -1036,6 +1061,7 @@ usr/include/*/qt5/QtNetwork/qabstractnetworkcache.h
 usr/include/*/qt5/QtNetwork/qabstractsocket.h
 usr/include/*/qt5/QtNetwork/qauthenticator.h
 usr/include/*/qt5/QtNetwork/qdnslookup.h
+usr/include/*/qt5/QtNetwork/qdtls.h
 usr/include/*/qt5/QtNetwork/qhostaddress.h
 usr/include/*/qt5/QtNetwork/qhostinfo.h
 usr/include/*/qt5/QtNetwork/qhstspolicy.h
@@ -1054,6 +1080,7 @@ usr/include/*/qt5/QtNetwork/qnetworkproxy.h
 usr/include/*/qt5/QtNetwork/qnetworkreply.h
 usr/include/*/qt5/QtNetwork/qnetworkrequest.h
 usr/include/*/qt5/QtNetwork/qnetworksession.h
+usr/include/*/qt5/QtNetwork/qpassworddigestor.h
 usr/include/*/qt5/QtNetwork/qsctpserver.h
 usr/include/*/qt5/QtNetwork/qsctpsocket.h
 usr/include/*/qt5/QtNetwork/qssl.h
@@ -1084,11 +1111,11 @@ usr/include/*/qt5/QtPlatformHeaders/QCocoaWindowFunctions
 usr/include/*/qt5/QtPlatformHeaders/QEGLNativeContext
 usr/include/*/qt5/QtPlatformHeaders/QEglFSFunctions
 usr/include/*/qt5/QtPlatformHeaders/QGLXNativeContext
+usr/include/*/qt5/QtPlatformHeaders/QLinuxFbFunctions
 usr/include/*/qt5/QtPlatformHeaders/QPlatformHeaderHelper
 usr/include/*/qt5/QtPlatformHeaders/QWGLNativeContext
 usr/include/*/qt5/QtPlatformHeaders/QWaylandWindowFunctions
 usr/include/*/qt5/QtPlatformHeaders/QWindowsWindowFunctions
-usr/include/*/qt5/QtPlatformHeaders/QXcbIntegrationFunctions
 usr/include/*/qt5/QtPlatformHeaders/QXcbScreenFunctions
 usr/include/*/qt5/QtPlatformHeaders/QXcbWindowFunctions
 usr/include/*/qt5/QtPlatformHeaders/QtPlatformHeaders
@@ -1099,12 +1126,12 @@ usr/include/*/qt5/QtPlatformHeaders/qcocoawindowfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qeglfsfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qeglnativecontext.h
 usr/include/*/qt5/QtPlatformHeaders/qglxnativecontext.h
+usr/include/*/qt5/QtPlatformHeaders/qlinuxfbfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qplatformheaderhelper.h
 usr/include/*/qt5/QtPlatformHeaders/qtplatformheadersversion.h
 usr/include/*/qt5/QtPlatformHeaders/qwaylandwindowfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qwglnativecontext.h
 usr/include/*/qt5/QtPlatformHeaders/qwindowswindowfunctions.h
-usr/include/*/qt5/QtPlatformHeaders/qxcbintegrationfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qxcbscreenfunctions.h
 usr/include/*/qt5/QtPlatformHeaders/qxcbwindowfunctions.h
 usr/include/*/qt5/QtPrintSupport/QAbstractPrintDialog
@@ -1163,6 +1190,7 @@ usr/include/*/qt5/QtSql/qsqlrelationaldelegate.h
 usr/include/*/qt5/QtSql/qsqlrelationaltablemodel.h
 usr/include/*/qt5/QtSql/qsqlresult.h
 usr/include/*/qt5/QtSql/qsqltablemodel.h
+usr/include/*/qt5/QtSql/qtsql-config.h
 usr/include/*/qt5/QtSql/qtsqlglobal.h
 usr/include/*/qt5/QtSql/qtsqlversion.h
 usr/include/*/qt5/QtTest/QAbstractItemModelTester
@@ -1541,6 +1569,7 @@ usr/include/*/qt5/QtWidgets/qtabbar.h
 usr/include/*/qt5/QtWidgets/qtableview.h
 usr/include/*/qt5/QtWidgets/qtablewidget.h
 usr/include/*/qt5/QtWidgets/qtabwidget.h
+usr/include/*/qt5/QtWidgets/qtestsupport_widgets.h
 usr/include/*/qt5/QtWidgets/qtextbrowser.h
 usr/include/*/qt5/QtWidgets/qtextedit.h
 usr/include/*/qt5/QtWidgets/qtoolbar.h
@@ -1669,17 +1698,41 @@ usr/lib/*/pkgconfig/Qt5Sql.pc
 usr/lib/*/pkgconfig/Qt5Test.pc
 usr/lib/*/pkgconfig/Qt5Widgets.pc
 usr/lib/*/pkgconfig/Qt5Xml.pc
+usr/lib/*/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_concurrent.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_concurrent_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_core.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_core_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_dbus.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_dbus_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_edid_support_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_egl_support_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_fb_support_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_fontdatabase_support_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_gui.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_gui_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_network.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_network_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_openglextensions.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_openglextensions_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_platformcompositor_support_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_printsupport.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_printsupport_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_service_support_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_sql.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_sql_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_testlib.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_testlib_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_theme_support_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_widgets.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_widgets_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_xml.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_xml_private.pri
 usr/share/qt5/doc/global/compat.qdocconf
 usr/share/qt5/doc/global/config.qdocconf
 usr/share/qt5/doc/global/externalsites.qdocconf
@@ -1740,6 +1793,7 @@ usr/share/qt5/doc/global/template/images/spinner.gif
 usr/share/qt5/doc/global/template/images/sprites-combined.png
 usr/share/qt5/doc/global/template/scripts/extras.js
 usr/share/qt5/doc/global/template/scripts/main.js
+usr/share/qt5/doc/global/template/style/cookie-confirm.css
 usr/share/qt5/doc/global/template/style/cookiebar-x.png
 usr/share/qt5/doc/global/template/style/doc_search.png
 usr/share/qt5/doc/global/template/style/gsc.css

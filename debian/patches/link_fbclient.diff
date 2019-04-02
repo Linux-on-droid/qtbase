@@ -6,8 +6,8 @@ Last-Update: 2017-06-30
 
 --- a/src/plugins/sqldrivers/configure.json
 +++ b/src/plugins/sqldrivers/configure.json
-@@ -54,7 +54,7 @@
-             },
+@@ -52,7 +52,7 @@
+             "headers": "ibase.h",
              "sources": [
                  { "libs": "-lgds32_ms", "condition": "config.win32" },
 -                { "libs": "-lgds", "condition": "!config.win32" }

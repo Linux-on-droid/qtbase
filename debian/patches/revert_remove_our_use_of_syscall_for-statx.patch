@@ -32,15 +32,7 @@ Forwarded: not-needed
  #  define MINLINUX_PATCH        0
 --- a/src/corelib/io/qfilesystemengine_unix.cpp
 +++ b/src/corelib/io/qfilesystemengine_unix.cpp
-@@ -1,6 +1,6 @@
- /****************************************************************************
- **
--** Copyright (C) 2018 Intel Corporation.
-+** Copyright (C) 2017 Intel Corporation.
- ** Copyright (C) 2016 The Qt Company Ltd.
- ** Copyright (C) 2013 Samuel Gaist <samuel.gaist@edeltech.ch>
- ** Contact: https://www.qt.io/licensing/
-@@ -88,6 +88,7 @@ extern "C" NSString *NSTemporaryDirector
+@@ -86,6 +86,7 @@ extern "C" NSString *NSTemporaryDirector
  
  #if defined(Q_OS_LINUX)
  #  include <sys/ioctl.h>
@@ -48,7 +40,7 @@ Forwarded: not-needed
  #  include <sys/sendfile.h>
  #  include <linux/fs.h>
  
-@@ -95,6 +96,28 @@ extern "C" NSString *NSTemporaryDirector
+@@ -93,6 +94,28 @@ extern "C" NSString *NSTemporaryDirector
  #ifndef FICLONE
  #  define FICLONE       _IOW(0x94, 9, int)
  #endif
@@ -77,7 +69,7 @@ Forwarded: not-needed
  #endif
  
  #if defined(Q_OS_ANDROID)
-@@ -315,8 +338,22 @@ mtime(const T &statBuffer, int)
+@@ -313,8 +336,22 @@ mtime(const T &statBuffer, int)
  #ifdef STATX_BASIC_STATS
  static int qt_real_statx(int fd, const char *pathname, int flags, struct statx *statxBuffer)
  {
@@ -100,7 +92,7 @@ Forwarded: not-needed
      return ret == -1 ? -errno : 0;
  }
  
-@@ -1252,12 +1289,14 @@ bool QFileSystemEngine::renameFile(const
+@@ -1248,12 +1285,14 @@ bool QFileSystemEngine::renameFile(const
      if (Q_UNLIKELY(srcPath.isEmpty() || tgtPath.isEmpty()))
          return emptyFileEntryWarning(), false;
  

@@ -1,7 +1,6 @@
 # Backported from upstream.
-fix-selection-rendering.patch
-reference_dpi.diff
-remove_need_for_glXGetProcAddressARB.patch
+mysql_free_results_when_qsqlquery_finished_is_called.patch
+glesv2_absolute.diff
 
 # Debian specific.
 gnukfreebsd.diff
@@ -11,8 +10,5 @@ link_fbclient.diff
 gnukfreebsd_linker_warnings.diff
 armv4.diff
 nonlinux_utime.diff
-no_arc4random_buf.diff
 qdoc_default_incdirs.diff
-kfreebsd_qstrncpy.diff
-alpha_atimensec.diff
 revert_remove_our_use_of_syscall_for-statx.patch
