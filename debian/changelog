@@ -1,6 +1,7 @@
 qtbase-opensource-src-gles (5.12.2+dfsg-1) UNRELEASED; urgency=medium
 
   * Merge qtbase-opensource-src 5.12.2+dfsg-2 upload.
+  * Bump qtbase build-dependencies to 5.12.2.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Tue, 02 Apr 2019 19:39:20 +0300
 
