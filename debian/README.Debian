@@ -61,6 +61,6 @@ the main qtbase package, but in different branches.
 Use the `gles/master` branch for work targeting Debian unstable, and the
 `gles/experimental` branch for work targeting experimental.
 
-To synchronize the packaging, merge the main branch into the correspoding
+To synchronize the packaging, merge the main branch into the corresponding
 gles branch, resolve any conflicts and remove rules or files that are
 unneeded in the OpenGL ES build.
