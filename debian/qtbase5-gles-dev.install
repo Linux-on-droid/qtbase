@@ -1717,6 +1717,7 @@ usr/lib/*/qt5/mkspecs/modules/qt_lib_gui_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_network.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_network_private.pri
+usr/lib/*/qt5/mkspecs/modules/qt_lib_opengl_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_openglextensions.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_openglextensions_private.pri
 usr/lib/*/qt5/mkspecs/modules/qt_lib_platformcompositor_support_private.pri
