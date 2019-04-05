@@ -1,6 +1,7 @@
 # Backported from upstream.
 mysql_free_results_when_qsqlquery_finished_is_called.patch
 glesv2_absolute.diff
+qt_is_ascii_big_endian.diff
 
 # Debian specific.
 gnukfreebsd.diff

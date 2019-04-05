@@ -2,6 +2,7 @@ qtbase-opensource-src (5.12.2+dfsg-3) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Update symbols files from buildds’ logs.
+  * Add a patch to make qt_is_ascii function work properly on big endian.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 05 Apr 2019 11:34:36 +0300
 
