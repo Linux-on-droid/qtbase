@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.12.2+dfsg-3) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 05 Apr 2019 11:34:36 +0300
+
 qtbase-opensource-src (5.12.2+dfsg-2) experimental; urgency=medium
 
   * Backport upstream patch to fix generation of Qt5::GLESv2 target on ARM.
