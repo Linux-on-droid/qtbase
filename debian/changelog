@@ -1,9 +1,8 @@
-qtbase-opensource-src (5.12.2+dfsg-4) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.2+dfsg-4) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Build-depend on libxcb-xinput-dev, to fix mouse events handling.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 07 Apr 2019 10:54:56 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 07 Apr 2019 13:36:04 +0300
 
 qtbase-opensource-src (5.12.2+dfsg-3) experimental; urgency=medium
 
