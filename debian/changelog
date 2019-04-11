@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.12.2+dfsg-4) UNRELEASED; urgency=medium
+
+
+ -- Scarlett Moore <sgmoore@kde.org>  Thu, 11 Apr 2019 09:05:54 -0700
+
 qtbase-opensource-src (5.12.2+dfsg-4) experimental; urgency=medium
 
   * Build-depend on libxcb-xinput-dev, to fix mouse events handling.
