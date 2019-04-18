@@ -5,6 +5,9 @@ qtbase-opensource-src (5.12.3+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
+  * Drop glesv2_absolute.diff, included in the new release.
+  * Drop revert_remove_our_use_of_syscall_for-statx.patch, no longer
+    needed with the new version (see QTBUG-74526).
 
  -- Scarlett Moore <sgmoore@kde.org>  Thu, 11 Apr 2019 09:05:54 -0700
 
