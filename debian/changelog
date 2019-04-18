@@ -1,6 +1,10 @@
-qtbase-opensource-src (5.12.2+dfsg-4) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.3+dfsg-1) UNRELEASED; urgency=medium
 
+  [ Scarlett Moore ]
   * Update packaging to use doc-base as per policy 9.10.
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
 
  -- Scarlett Moore <sgmoore@kde.org>  Thu, 11 Apr 2019 09:05:54 -0700
 
