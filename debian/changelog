@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.12.3+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.3+dfsg-1) experimental; urgency=medium
 
   [ Scarlett Moore ]
   * Update packaging to use doc-base as per policy 9.10.
@@ -14,7 +14,7 @@ qtbase-opensource-src (5.12.3+dfsg-1) UNRELEASED; urgency=medium
   * Backport upstream patch to fix an endianness issue in TinyCBOR.
   * Fix Perl shebang also in findclasslist.pl.
 
- -- Scarlett Moore <sgmoore@kde.org>  Thu, 11 Apr 2019 09:05:54 -0700
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 19 Apr 2019 22:51:39 +0300
 
 qtbase-opensource-src (5.12.2+dfsg-4) experimental; urgency=medium
 
