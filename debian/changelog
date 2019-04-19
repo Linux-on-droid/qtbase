@@ -12,6 +12,7 @@ qtbase-opensource-src (5.12.3+dfsg-1) UNRELEASED; urgency=medium
   * Update debian/libqt5gui5.symbols from the current build log.
   * Bump ABI version to qtbase-abi-5-12-3.
   * Backport upstream patch to fix an endianness issue in TinyCBOR.
+  * Fix Perl shebang also in findclasslist.pl.
 
  -- Scarlett Moore <sgmoore@kde.org>  Thu, 11 Apr 2019 09:05:54 -0700
 
