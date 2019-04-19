@@ -9,6 +9,7 @@ qtbase-opensource-src (5.12.3+dfsg-1) UNRELEASED; urgency=medium
   * Drop revert_remove_our_use_of_syscall_for-statx.patch, no longer
     needed with the new version (see QTBUG-74526).
   * Install some new winrt-msvc2019 mkspecs.
+  * Update debian/libqt5gui5.symbols from the current build log.
 
  -- Scarlett Moore <sgmoore@kde.org>  Thu, 11 Apr 2019 09:05:54 -0700
 
