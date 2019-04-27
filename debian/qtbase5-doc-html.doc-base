@@ -1,7 +1,8 @@
 Document: qtbase5-doc-html
 Title: HTML files for qtbase5
 Author: The Qt Company Ltd
-Abstract: This is the HTML documentation for qtbase
+Abstract: This is the HTML documentation for Qt 5 Core, Concurrent,
+Dbus, Gui, Network, OpenGL, Printsupport, Sql, Test, Widgets, Xml
 Section: Programming/C++
 
 Format: HTML
