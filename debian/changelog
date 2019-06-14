@@ -5,6 +5,7 @@ qtbase-opensource-src (5.12.4+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
+  * Drop the two big-endian patches, both applied upstream.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 13 May 2019 12:50:39 +0300
 
