@@ -9,6 +9,8 @@ qtbase-opensource-src (5.12.4+dfsg-1) UNRELEASED; urgency=medium
   * Build-Depend-Indep on individual qdoc-qt5, qhelpgenerator-qt5 and
     qtattributionsscanner-qt5 packages, instead of qttools5-doc-tools.
   * Fix a typo in patch name (breachs → breaches).
+  * Backport upstream patch to fix notification of QDockWidget when it gets
+    undocked (needed for Krita).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 13 May 2019 12:50:39 +0300
 

@@ -1,5 +1,6 @@
 # Backported from upstream.
 mysql_free_results_when_qsqlquery_finished_is_called.patch
+qdockwidget_undocked_notification.diff
 
 # Debian specific.
 gnukfreebsd.diff
