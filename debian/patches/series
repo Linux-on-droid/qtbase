@@ -4,7 +4,7 @@ mysql_free_results_when_qsqlquery_finished_is_called.patch
 # Debian specific.
 gnukfreebsd.diff
 no_htmlinfo_example.diff
-remove_privacy_breachs.diff
+remove_privacy_breaches.diff
 link_fbclient.diff
 gnukfreebsd_linker_warnings.diff
 armv4.diff
