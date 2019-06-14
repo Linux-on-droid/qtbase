@@ -5,6 +5,7 @@ qtbase-opensource-src (5.12.4+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
+    - Added an X11 system tray watcher (closes: #867794).
   * Drop the two big-endian patches, both applied upstream.
   * Build-Depend-Indep on individual qdoc-qt5, qhelpgenerator-qt5 and
     qtattributionsscanner-qt5 packages, instead of qttools5-doc-tools.
