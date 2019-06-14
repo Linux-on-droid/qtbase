@@ -315,6 +315,7 @@ usr/lib/*/qt5/mkspecs/features/win32/stl.prf
 usr/lib/*/qt5/mkspecs/features/win32/stl_off.prf
 usr/lib/*/qt5/mkspecs/features/win32/windeployqt.prf
 usr/lib/*/qt5/mkspecs/features/win32/windows.prf
+usr/lib/*/qt5/mkspecs/features/win32/windows_vulkan_sdk.prf
 usr/lib/*/qt5/mkspecs/features/winrt/console.prf
 usr/lib/*/qt5/mkspecs/features/winrt/default_pre.prf
 usr/lib/*/qt5/mkspecs/features/winrt/package_manifest.prf

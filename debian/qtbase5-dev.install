@@ -1747,6 +1747,7 @@ usr/share/qt5/doc/global/html-header-offline.qdocconf
 usr/share/qt5/doc/global/html-header-online.qdocconf
 usr/share/qt5/doc/global/includes-online/search.qdoc
 usr/share/qt5/doc/global/includes/examples-run.qdocinc
+usr/share/qt5/doc/global/includes/module-use.qdocinc
 usr/share/qt5/doc/global/macros.qdocconf
 usr/share/qt5/doc/global/manifest-meta.qdocconf
 usr/share/qt5/doc/global/qt-cpp-defines.qdocconf
