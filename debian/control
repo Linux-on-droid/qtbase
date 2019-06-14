@@ -67,7 +67,7 @@ Build-Depends: debhelper (>= 11),
                unixodbc-dev,
                zlib1g-dev
 Build-Depends-Indep: qdoc-qt5 (>= 5.12) <!nodoc>,
-                     qhelpgenerator-qt5 <!nodoc>,
+                     qhelpgenerator-qt5 (>= 5.12.4~) <!nodoc>,
                      qtattributionsscanner-qt5 <!nodoc>
 Standards-Version: 4.3.0
 Homepage: http://qt-project.org/
