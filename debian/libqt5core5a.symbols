@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.3 ia64
+# SymbolsHelper-Confirmed: 5.12.4 amd64 i386
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-12-3
 * Build-Depends-Package: qtbase5-dev
@@ -5876,6 +5876,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZltRK13QElapsedTimerS1_@Qt_5 5.0.2
  _ZltRK7QStringS1_@Qt_5 5.0.2
  _ZorRK9QBitArrayS1_@Qt_5 5.0.2
+ _Zpl14QDeadlineTimerx@Qt_5 5.12.4
  _ZrsR11QDataStreamR10QByteArray@Qt_5 5.0.2
  _ZrsR11QDataStreamR12QEasingCurve@Qt_5 5.0.2
  _ZrsR11QDataStreamR14QVersionNumber@Qt_5 5.4.0
