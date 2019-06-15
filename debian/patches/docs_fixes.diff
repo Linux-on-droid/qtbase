@@ -1,0 +1,1152 @@
+Description: backport some fixes related to documentation building
+ These changes help us to eliminate most of the warnings like this:
+ (qdoc) warning: No documentation for 'QRect::bottom() const'
+ .
+ There were 3603 such warnings without this patch, with it only 76
+ are left.
+Origin: upstream, this is a backport of four commits:
+ - https://code.qt.io/cgit/qt/qtbase.git/commit/?id=0014d81b1907621e
+   doc: Revert to documenting the actual functions
+ - https://code.qt.io/cgit/qt/qtbase.git/commit/?id=81d8319276f26d39
+   doc: Fix all clang parse errors in QtBase during PCH build
+ - https://code.qt.io/cgit/qt/qtbase.git/commit/?id=c306663990ba8681
+   Fix qdoc errors in QProcess header
+ - https://code.qt.io/cgit/qt/qtbase.git/commit/?id=98cb9275d064d8b9
+   doc: clang reported two fake declarations to be the same
+Last-Update: 2019-06-15
+
+--- a/src/corelib/global/qfloat16.h
++++ b/src/corelib/global/qfloat16.h
+@@ -67,11 +67,9 @@ QT_BEGIN_NAMESPACE
+ class qfloat16
+ {
+ public:
+-#ifndef Q_QDOC
+     Q_DECL_CONSTEXPR inline qfloat16() Q_DECL_NOTHROW : b16(0) { }
+     inline qfloat16(float f) Q_DECL_NOTHROW;
+     inline operator float() const Q_DECL_NOTHROW;
+-#endif
+ 
+ private:
+     quint16 b16;
+--- a/src/corelib/io/qprocess.h
++++ b/src/corelib/io/qprocess.h
+@@ -48,22 +48,24 @@
+ 
+ QT_REQUIRE_CONFIG(processenvironment);
+ 
+-QT_BEGIN_NAMESPACE
+-
+-class QProcessPrivate;
+-
+-#if !defined(Q_OS_WIN) || defined(Q_CLANG_QDOC)
+-typedef qint64 Q_PID;
+-#else
+-QT_END_NAMESPACE
++#ifdef Q_OS_WIN
+ typedef struct _PROCESS_INFORMATION *Q_PID;
++#endif
++
++#if defined(Q_OS_WIN) || defined(Q_CLANG_QDOC)
+ typedef struct _SECURITY_ATTRIBUTES Q_SECURITY_ATTRIBUTES;
+ typedef struct _STARTUPINFOW Q_STARTUPINFO;
+-QT_BEGIN_NAMESPACE
+ #endif
+ 
++QT_BEGIN_NAMESPACE
++
++class QProcessPrivate;
+ class QProcessEnvironmentPrivate;
+ 
++#ifndef Q_OS_WIN
++typedef qint64 Q_PID;
++#endif
++
+ class Q_CORE_EXPORT QProcessEnvironment
+ {
+ public:
+--- a/src/corelib/kernel/qmetatype.h
++++ b/src/corelib/kernel/qmetatype.h
+@@ -1976,7 +1976,9 @@ QT_FOR_EACH_STATIC_WIDGETS_CLASS(QT_FORW
+ typedef QList<QVariant> QVariantList;
+ typedef QMap<QString, QVariant> QVariantMap;
+ typedef QHash<QString, QVariant> QVariantHash;
+-#ifndef Q_CLANG_QDOC
++#ifdef Q_CLANG_QDOC
++class QByteArrayList;
++#else
+ typedef QList<QByteArray> QByteArrayList;
+ #endif
+ 
+--- a/src/corelib/kernel/qtimer.cpp
++++ b/src/corelib/kernel/qtimer.cpp
+@@ -599,7 +599,7 @@ void QTimer::singleShot(int msec, Qt::Ti
+ */
+ 
+ /*!
+-    \fn template <typename PointerToMemberFunction> QMetaObject::Connection QTimer::callOnTimeout(const QObject *receiver, PointerToMemberFunction slot, Qt::ConnectionType connectionType = Qt::AutoConnection)
++    \fn template <typename MemberFunction> QMetaObject::Connection QTimer::callOnTimeout(const QObject *receiver, MemberFunction *slot, Qt::ConnectionType connectionType = Qt::AutoConnection)
+     \since 5.12
+     \overload callOnTimeout()
+ 
+--- a/src/corelib/kernel/qtimer.h
++++ b/src/corelib/kernel/qtimer.h
+@@ -100,8 +100,8 @@ public:
+     QMetaObject::Connection callOnTimeout(Functor slot, Qt::ConnectionType connectionType = Qt::AutoConnection);
+     template <typename Functor>
+     QMetaObject::Connection callOnTimeout(const QObject *context, Functor slot, Qt::ConnectionType connectionType = Qt::AutoConnection);
+-    template <typename PointerToMemberFunction>
+-    QMetaObject::Connection callOnTimeout(const QObject *receiver, PointerToMemberFunction slot, Qt::ConnectionType connectionType = Qt::AutoConnection);
++    template <typename MemberFunction>
++    QMetaObject::Connection callOnTimeout(const QObject *receiver, MemberFunction *slot, Qt::ConnectionType connectionType = Qt::AutoConnection);
+ #else
+     // singleShot to a QObject slot
+     template <typename Duration, typename Func1>
+--- a/src/corelib/kernel/qvariant.h
++++ b/src/corelib/kernel/qvariant.h
+@@ -55,6 +55,8 @@
+ 
+ #if QT_HAS_INCLUDE(<variant>) && __cplusplus >= 201703L
+ #include <variant>
++#elif defined(Q_CLANG_QDOC)
++namespace std { template<typename...> struct variant; }
+ #endif
+ 
+ QT_BEGIN_NAMESPACE
+@@ -365,7 +367,7 @@ class Q_CORE_EXPORT QVariant
+     static inline QVariant fromValue(const T &value)
+     { return qVariantFromValue(value); }
+ 
+-#if defined(Q_CLANG_QDOC) || (QT_HAS_INCLUDE(<variant>) && __cplusplus >= 201703L)
++#if QT_HAS_INCLUDE(<variant>) && __cplusplus >= 201703L
+     template<typename... Types>
+     static inline QVariant fromStdVariant(const std::variant<Types...> &value)
+     {
+--- a/src/corelib/plugin/qfactoryinterface.h
++++ b/src/corelib/plugin/qfactoryinterface.h
+@@ -52,8 +52,9 @@ struct Q_CORE_EXPORT QFactoryInterface
+     virtual QStringList keys() const = 0;
+ };
+ 
+-
++#ifndef Q_CLANG_QDOC
+ Q_DECLARE_INTERFACE(QFactoryInterface, "org.qt-project.Qt.QFactoryInterface")
++#endif
+ 
+ QT_END_NAMESPACE
+ 
+--- a/src/corelib/serialization/qcborvalue.cpp
++++ b/src/corelib/serialization/qcborvalue.cpp
+@@ -1986,12 +1986,24 @@ QUuid QCborValue::toUuid(const QUuid &de
+     return QUuid::fromRfc4122(byteData->asByteArrayView());
+ }
+ 
+-QCborArray QCborValue::toArray() const
+-{
+-    return toArray(QCborArray());
+-}
++/*!
++    \fn QCborArray QCborValue::toArray() const
++    \fn QCborArray QCborValue::toArray(const QCborArray &defaultValue) const
++
++    Returns the array value stored in this QCborValue, if it is of the array
++    type. Otherwise, it returns \a defaultValue.
++
++    Note that this function performs no conversion from other types to
++    QCborArray.
++
++    \sa isArray(), isByteArray(), isMap(), isContainer(), toMap()
++ */
+ 
+ /*!
++    \fn QCborArray QCborValueRef::toArray() const
++    \fn QCborArray QCborValueRef::toArray(const QCborArray &defaultValue) const
++    \internal
++
+     Returns the array value stored in this QCborValue, if it is of the array
+     type. Otherwise, it returns \a defaultValue.
+ 
+@@ -2000,6 +2012,11 @@ QCborArray QCborValue::toArray() const
+ 
+     \sa isArray(), isByteArray(), isMap(), isContainer(), toMap()
+  */
++QCborArray QCborValue::toArray() const
++{
++    return toArray(QCborArray());
++}
++
+ QCborArray QCborValue::toArray(const QCborArray &defaultValue) const
+ {
+     if (!isArray())
+@@ -2011,12 +2028,24 @@ QCborArray QCborValue::toArray(const QCb
+     return dd ? QCborArray(*dd) : defaultValue;
+ }
+ 
+-QCborMap QCborValue::toMap() const
+-{
+-    return toMap(QCborMap());
+-}
++/*!
++    \fn QCborMap QCborValue::toMap() const
++    \fn QCborMap QCborValue::toMap(const QCborMap &defaultValue) const
++
++    Returns the map value stored in this QCborValue, if it is of the map type.
++    Otherwise, it returns \a defaultValue.
++
++    Note that this function performs no conversion from other types to
++    QCborMap.
++
++    \sa isMap(), isArray(), isContainer(), toArray()
++ */
+ 
+ /*!
++    \fn QCborMap QCborValueRef::toMap() const
++    \fn QCborMap QCborValueRef::toMap(const QCborMap &defaultValue) const
++    \internal
++
+     Returns the map value stored in this QCborValue, if it is of the map type.
+     Otherwise, it returns \a defaultValue.
+ 
+@@ -2025,6 +2054,11 @@ QCborMap QCborValue::toMap() const
+ 
+     \sa isMap(), isArray(), isContainer(), toArray()
+  */
++QCborMap QCborValue::toMap() const
++{
++    return toMap(QCborMap());
++}
++
+ QCborMap QCborValue::toMap(const QCborMap &defaultValue) const
+ {
+     if (!isMap())
+--- a/src/corelib/serialization/qcborvalue.h
++++ b/src/corelib/serialization/qcborvalue.h
+@@ -242,16 +242,11 @@ public:
+ #endif
+     QUuid toUuid(const QUuid &defaultValue = {}) const;
+ 
+-#ifdef Q_QDOC
+-    QCborArray toArray(const QCborArray &a = {}) const;
+-    QCborMap toMap(const QCborMap &m = {}) const;
+-#else
+     // only forward-declared, need split functions
+     QCborArray toArray() const;
+     QCborArray toArray(const QCborArray &defaultValue) const;
+     QCborMap toMap() const;
+     QCborMap toMap(const QCborMap &defaultValue) const;
+-#endif
+ 
+     const QCborValue operator[](const QString &key) const;
+     const QCborValue operator[](QLatin1String key) const;
+@@ -393,16 +388,11 @@ public:
+     QUuid toUuid(const QUuid &defaultValue = {}) const
+     { return concrete().toUuid(defaultValue); }
+ 
+-#ifdef Q_QDOC
+-    QCborArray toArray(const QCborArray &a = {}) const;
+-    QCborMap toMap(const QCborMap &m = {}) const;
+-#else
+     // only forward-declared, need split functions. Implemented in qcbor{array,map}.h
+     QCborArray toArray() const;
+     QCborArray toArray(const QCborArray &a) const;
+     QCborMap toMap() const;
+     QCborMap toMap(const QCborMap &m) const;
+-#endif
+ 
+     int compare(const QCborValue &other) const
+     { return concrete().compare(other); }
+--- a/src/corelib/serialization/qjsonvalue.h
++++ b/src/corelib/serialization/qjsonvalue.h
+@@ -218,7 +218,6 @@ private:
+     uint index : 31;
+ };
+ 
+-#ifndef Q_QDOC
+ // ### Qt 6: Get rid of these fake pointer classes
+ class QJsonValuePtr
+ {
+@@ -243,7 +242,6 @@ public:
+     QJsonValueRef& operator*() { return valueRef; }
+     QJsonValueRef* operator->() { return &valueRef; }
+ };
+-#endif
+ 
+ Q_DECLARE_SHARED_NOT_MOVABLE_UNTIL_QT6(QJsonValue)
+ 
+--- a/src/corelib/thread/qresultstore.cpp
++++ b/src/corelib/thread/qresultstore.cpp
+@@ -43,6 +43,21 @@ QT_BEGIN_NAMESPACE
+ 
+ namespace QtPrivate {
+ 
++/*!
++  \class QtPrivate::ResultItem
++  \internal
++ */
++
++/*!
++  \class QtPrivate::ResultIteratorBase
++  \internal
++ */
++
++/*!
++  \class QtPrivate::ResultStoreBase
++  \internal
++ */
++
+ ResultIteratorBase::ResultIteratorBase()
+  : mapIterator(QMap<int, ResultItem>::const_iterator()), m_vectorIndex(0) { }
+ ResultIteratorBase::ResultIteratorBase(QMap<int, ResultItem>::const_iterator _mapIterator, int _vectorIndex)
+--- a/src/corelib/thread/qresultstore.h
++++ b/src/corelib/thread/qresultstore.h
+@@ -56,7 +56,6 @@ QT_BEGIN_NAMESPACE
+     either individually or in batches.
+ */
+ 
+-#ifndef Q_QDOC
+ 
+ namespace QtPrivate {
+ 
+@@ -196,7 +195,6 @@ public:
+ 
+ Q_DECLARE_TYPEINFO(QtPrivate::ResultItem, Q_PRIMITIVE_TYPE);
+ 
+-#endif //Q_QDOC
+ 
+ QT_END_NAMESPACE
+ 
+--- a/src/corelib/tools/qbytearraylist.h
++++ b/src/corelib/tools/qbytearraylist.h
+@@ -50,7 +50,7 @@ QT_BEGIN_NAMESPACE
+ 
+ typedef QListIterator<QByteArray> QByteArrayListIterator;
+ typedef QMutableListIterator<QByteArray> QMutableByteArrayListIterator;
+-#ifndef Q_QDOC
++#ifndef Q_CLANG_QDOC
+ typedef QList<QByteArray> QByteArrayList;
+ 
+ namespace QtPrivate {
+@@ -58,13 +58,13 @@ namespace QtPrivate {
+ }
+ #endif
+ 
+-#ifdef Q_QDOC
++#ifdef Q_CLANG_QDOC
+ class QByteArrayList : public QList<QByteArray>
+ #else
+ template <> struct QListSpecialMethods<QByteArray>
+ #endif
+ {
+-#ifndef Q_QDOC
++#ifndef Q_CLANG_QDOC
+ protected:
+     ~QListSpecialMethods() {}
+ #endif
+--- a/src/dbus/qdbusargument.cpp
++++ b/src/dbus/qdbusargument.cpp
+@@ -267,7 +267,7 @@ bool QDBusArgumentPrivate::checkReadAndD
+ */
+ 
+ /*!
+-    \fn qdbus_cast(const QDBusArgument &arg)
++    \fn template<typename T> T qdbus_cast(const QDBusArgument &arg, T*)
+     \relates QDBusArgument
+     \since 4.2
+ 
+--- a/src/dbus/qdbusargument.h
++++ b/src/dbus/qdbusargument.h
+@@ -158,22 +158,14 @@ QT_END_NAMESPACE
+ Q_DECLARE_METATYPE(QDBusArgument)
+ QT_BEGIN_NAMESPACE
+ 
+-template<typename T> inline T qdbus_cast(const QDBusArgument &arg
+-#ifndef Q_QDOC
+-, T * = nullptr
+-#endif
+-    )
++template<typename T> inline T qdbus_cast(const QDBusArgument &arg, T * = nullptr)
+ {
+     T item;
+     arg >> item;
+     return item;
+ }
+ 
+-template<typename T> inline T qdbus_cast(const QVariant &v
+-#ifndef Q_QDOC
+-, T * = nullptr
+-#endif
+-    )
++template<typename T> inline T qdbus_cast(const QVariant &v, T * = nullptr)
+ {
+     int id = v.userType();
+     if (id == qMetaTypeId<QDBusArgument>())
+--- a/src/dbus/qdbusconnection.h
++++ b/src/dbus/qdbusconnection.h
+@@ -122,9 +122,7 @@ public:
+         SubPath = 0x1
+         // Reserved = 0xff000000
+     };
+-#ifndef Q_QDOC
+     Q_DECLARE_FLAGS(VirtualObjectRegisterOptions, VirtualObjectRegisterOption)
+-#endif
+ 
+     enum ConnectionCapability {
+         UnixFileDescriptorPassing = 0x0001
+--- a/src/dbus/qdbuspendingcall.cpp
++++ b/src/dbus/qdbuspendingcall.cpp
+@@ -311,7 +311,7 @@ QDBusPendingCall &QDBusPendingCall::oper
+     \sa QDBusPendingReply::isFinished()
+ */
+ /*!
+-    \fn bool QDBusPendingReply::isFinished() const
++    \fn template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> bool QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::isFinished() const
+ 
+     Returns \c true if the pending call has finished processing and the
+     reply has been received. If this function returns \c true, the
+@@ -340,7 +340,7 @@ void QDBusPendingCall::waitForFinished()
+ }
+ 
+ /*!
+-    \fn bool QDBusPendingReply::isValid() const
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> bool QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::isValid() const
+ 
+     Returns \c true if the reply contains a normal reply message, false
+     if it contains anything else.
+@@ -357,7 +357,7 @@ bool QDBusPendingCall::isValid() const
+ }
+ 
+ /*!
+-    \fn bool QDBusPendingReply::isError() const
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> bool QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::isError() const
+ 
+     Returns \c true if the reply contains an error message, false if it
+     contains a normal method reply.
+@@ -374,7 +374,7 @@ bool QDBusPendingCall::isError() const
+ }
+ 
+ /*!
+-    \fn QDBusError QDBusPendingReply::error() const
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusError QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::error() const
+ 
+     Retrieves the error content of the reply message, if it has
+     finished processing. If the reply message has not finished
+@@ -395,7 +395,7 @@ QDBusError QDBusPendingCall::error() con
+ }
+ 
+ /*!
+-    \fn QDBusMessage QDBusPendingReply::reply() const
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusMessage QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::reply() const
+ 
+     Retrieves the reply message received for the asynchronous call
+     that was sent, if it has finished processing. If the pending call
+@@ -445,7 +445,7 @@ bool QDBusPendingCall::setReplyCallback(
+     \since 4.6
+     Creates a QDBusPendingCall object based on the error condition
+     \a error. The resulting pending call object will be in the
+-    "finished" state and QDBusPendingReply::isError() will return true.
++    "finished" state and QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::isError() will return true.
+ 
+     \sa fromCompletedCall()
+ */
+--- a/src/dbus/qdbuspendingcall.h
++++ b/src/dbus/qdbuspendingcall.h
+@@ -67,7 +67,7 @@ public:
+ 
+     void swap(QDBusPendingCall &other) Q_DECL_NOTHROW { qSwap(d, other.d); }
+ 
+-#ifndef Q_QDOC
++#ifndef Q_CLANG_QDOC
+     // pretend that they aren't here
+     bool isFinished() const;
+     void waitForFinished();
+--- a/src/dbus/qdbuspendingreply.cpp
++++ b/src/dbus/qdbuspendingreply.cpp
+@@ -94,7 +94,7 @@
+ */
+ 
+ /*!
+-    \fn QDBusPendingReply::QDBusPendingReply()
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::QDBusPendingReply()
+ 
+     Creates an empty QDBusPendingReply object. Without assigning a
+     QDBusPendingCall object to this reply, QDBusPendingReply cannot do
+@@ -102,7 +102,7 @@
+ */
+ 
+ /*!
+-    \fn QDBusPendingReply::QDBusPendingReply(const QDBusPendingReply &other)
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::QDBusPendingReply(const QDBusPendingReply &other)
+ 
+     Creates a copy of the \a other QDBusPendingReply object. Just like
+     QDBusPendingCall and QDBusPendingCallWatcher, this QDBusPendingReply
+@@ -111,7 +111,7 @@
+ */
+ 
+ /*!
+-    \fn QDBusPendingReply::QDBusPendingReply(const QDBusPendingCall &call)
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::QDBusPendingReply(const QDBusPendingCall &call)
+ 
+     Creates a QDBusPendingReply object that will take its contents from
+     the \a call pending asynchronous call. This QDBusPendingReply object
+@@ -119,7 +119,7 @@
+ */
+ 
+ /*!
+-    \fn QDBusPendingReply::QDBusPendingReply(const QDBusMessage &message)
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::QDBusPendingReply(const QDBusMessage &message)
+ 
+     Creates a QDBusPendingReply object that will take its contents from
+     the message \a message. In this case, this object will be already
+@@ -129,7 +129,7 @@
+ */
+ 
+ /*!
+-    \fn QDBusPendingReply &QDBusPendingReply::operator=(const QDBusPendingReply &other)
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusPendingReply &QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::operator=(const QDBusPendingReply &other)
+ 
+     Makes a copy of \a other and drops the reference to the current
+     pending call. If the current reference is to an unfinished pending
+@@ -139,7 +139,7 @@
+ */
+ 
+ /*!
+-    \fn QDBusPendingReply &QDBusPendingReply::operator=(const QDBusPendingCall &call)
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusPendingReply &QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::operator=(const QDBusPendingCall &call)
+ 
+     Makes this object take its contents from the \a call pending call
+     and drops the reference to the current pending call. If the
+@@ -149,7 +149,7 @@
+ */
+ 
+ /*!
+-    \fn QDBusPendingReply &QDBusPendingReply::operator=(const QDBusMessage &message)
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusPendingReply &QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::operator=(const QDBusMessage &message)
+ 
+     Makes this object take its contents from the \a message message
+     and drops the reference to the current pending call. If the
+@@ -171,7 +171,7 @@
+  */
+ 
+ /*!
+-    \fn int QDBusPendingReply::count() const
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> int QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::count() const
+ 
+     Return the number of arguments the reply is supposed to have. This
+     number matches the number of non-void template parameters in this
+@@ -183,7 +183,7 @@
+ */
+ 
+ /*!
+-    \fn QVariant QDBusPendingReply::argumentAt(int index) const
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QVariant QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::argumentAt(int index) const
+ 
+     Returns the argument at position \a index in the reply's
+     contents. If the reply doesn't have that many elements, this
+@@ -198,12 +198,7 @@
+ */
+ 
+ /*!
+-  \typedef QDBusPendingReply::T1
+-  \internal
+- */
+-
+-/*!
+-    \fn T1 QDBusPendingReply::value() const
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> T1 QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::value() const
+ 
+     Returns the first argument in this reply, cast to type \c T1 (the
+     first template parameter of this class). This is equivalent to
+@@ -221,7 +216,7 @@
+ */
+ 
+ /*!
+-    \fn QDBusPendingReply::operator T1() const
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::operator T1() const
+ 
+     Returns the first argument in this reply, cast to type \c T1 (the
+     first template parameter of this class). This is equivalent to
+@@ -239,7 +234,7 @@
+ */
+ 
+ /*!
+-    \fn void QDBusPendingReply::waitForFinished()
++    \fn template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8> void QDBusPendingReply<T1, T2, T3, T4, T5, T6, T7, T8>::waitForFinished()
+ 
+     Suspends the execution of the calling thread until the reply is
+     received and processed. After this function returns, isFinished()
+--- a/src/dbus/qdbuspendingreply.h
++++ b/src/dbus/qdbuspendingreply.h
+@@ -108,10 +108,8 @@ namespace QDBusPendingReplyTypes {
+     template <>           struct NotVoid<void> { typedef TypeIsVoid Type; };
+ } // namespace QDBusPendingReplyTypes
+ 
+-#ifndef Q_CLANG_QDOC
+ template<typename T1 = void, typename T2 = void, typename T3 = void, typename T4 = void,
+          typename T5 = void, typename T6 = void, typename T7 = void, typename T8 = void>
+-#endif
+ class QDBusPendingReply:
+ #ifdef Q_CLANG_QDOC
+     public QDBusPendingCall
+@@ -171,7 +169,6 @@ public:
+     QDBusError error() const;
+     QDBusMessage reply() const;
+ 
+-    typedef QVariant T1;
+     inline T1 value() const;
+     inline operator T1() const;
+ #else
+--- a/src/dbus/qdbusreply.cpp
++++ b/src/dbus/qdbusreply.cpp
+@@ -81,7 +81,7 @@ QT_BEGIN_NAMESPACE
+ */
+ 
+ /*!
+-    \fn template<typename T> QDBusReply<T>::QDBusReply(const QDBusPendingReply &reply)
++    \fn template<typename T> QDBusReply<T>::QDBusReply(const QDBusPendingReply<T> &reply)
+     Constructs a QDBusReply object from the pending reply message, \a reply.
+ */
+ 
+--- a/src/dbus/qdbusreply.h
++++ b/src/dbus/qdbusreply.h
+@@ -82,14 +82,10 @@ public:
+         other.waitForFinished();
+         return *this = other.reply();
+     }
+-#if defined(Q_CLANG_QDOC)
+-    inline QDBusReply(const QDBusPendingReply &reply) { }
+-#else
+     inline QDBusReply(const QDBusPendingReply<T> &reply)
+     {
+         *this = static_cast<QDBusPendingCall>(reply);
+     }
+-#endif
+ 
+     inline QDBusReply(const QDBusError &dbusError = QDBusError())
+         : m_error(dbusError), m_data(Type())
+--- a/src/dbus/qdbusutil.cpp
++++ b/src/dbus/qdbusutil.cpp
+@@ -331,8 +331,8 @@ namespace QDBusUtil
+ 
+     /*!
+         \internal
+-        \fn bool QDBusUtil::isValidPartOfObjectPath(const QStringRef &part)
+-        See QDBusUtil::isValidObjectPath
++        \fn bool isValidPartOfObjectPath(const QStringRef &part)
++        See isValidObjectPath
+     */
+     bool isValidPartOfObjectPath(const QStringRef &part)
+     {
+@@ -349,13 +349,13 @@ namespace QDBusUtil
+ 
+     /*!
+         \internal
+-        \fn bool QDBusUtil::isValidPartOfObjectPath(const QString &part)
++        \fn bool isValidPartOfObjectPath(const QString &part)
+ 
+         \overload
+     */
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidInterfaceName(const QString &ifaceName)
++        \fn bool isValidInterfaceName(const QString &ifaceName)
+         Returns \c true if this is \a ifaceName is a valid interface name.
+ 
+         Valid interface names must:
+@@ -384,7 +384,7 @@ namespace QDBusUtil
+     }
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidUniqueConnectionName(const QStringRef &connName)
++        \fn bool isValidUniqueConnectionName(const QStringRef &connName)
+         Returns \c true if \a connName is a valid unique connection name.
+ 
+         Unique connection names start with a colon (":") and are followed by a list of dot-separated
+@@ -414,13 +414,13 @@ namespace QDBusUtil
+     }
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidUniqueConnectionName(const QString &connName)
++        \fn bool isValidUniqueConnectionName(const QString &connName)
+ 
+         \overload
+     */
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidBusName(const QString &busName)
++        \fn bool isValidBusName(const QString &busName)
+         Returns \c true if \a busName is a valid bus name.
+ 
+         A valid bus name is either a valid unique connection name or follows the rules:
+@@ -462,7 +462,7 @@ namespace QDBusUtil
+     }
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidMemberName(const QStringRef &memberName)
++        \fn bool isValidMemberName(const QStringRef &memberName)
+         Returns \c true if \a memberName is a valid member name. A valid member name does not exceed
+         255 characters in length, is not empty, is composed only of ASCII letters, digits and
+         underscores, but does not start with a digit.
+@@ -482,13 +482,13 @@ namespace QDBusUtil
+     }
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidMemberName(const QString &memberName)
++        \fn bool isValidMemberName(const QString &memberName)
+ 
+         \overload
+     */
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidErrorName(const QString &errorName)
++        \fn bool isValidErrorName(const QString &errorName)
+         Returns \c true if \a errorName is a valid error name. Valid error names are valid interface
+         names and vice-versa, so this function is actually an alias for isValidInterfaceName.
+     */
+@@ -498,7 +498,7 @@ namespace QDBusUtil
+     }
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidObjectPath(const QString &path)
++        \fn bool isValidObjectPath(const QString &path)
+         Returns \c true if \a path is valid object path.
+ 
+         Valid object paths follow the rules:
+@@ -529,7 +529,7 @@ namespace QDBusUtil
+     }
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidBasicType(int type)
++        \fn bool isValidBasicType(int type)
+         Returns \c true if \a c is a valid, basic D-Bus type.
+      */
+     bool isValidBasicType(int c)
+@@ -538,7 +538,7 @@ namespace QDBusUtil
+     }
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidFixedType(int type)
++        \fn bool isValidFixedType(int type)
+         Returns \c true if \a c is a valid, fixed D-Bus type.
+      */
+     bool isValidFixedType(int c)
+@@ -548,7 +548,7 @@ namespace QDBusUtil
+ 
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidSignature(const QString &signature)
++        \fn bool isValidSignature(const QString &signature)
+         Returns \c true if \a signature is a valid D-Bus type signature for one or more types.
+         This function returns \c true if it can all of \a signature into valid, individual types and no
+         characters remain in \a signature.
+@@ -569,7 +569,7 @@ namespace QDBusUtil
+     }
+ 
+     /*!
+-        \fn bool QDBusUtil::isValidSingleSignature(const QString &signature)
++        \fn bool isValidSingleSignature(const QString &signature)
+         Returns \c true if \a signature is a valid D-Bus type signature for exactly one full type. This
+         function tries to convert the type signature into a D-Bus type and, if it succeeds and no
+         characters remain in the signature, it returns \c true.
+--- a/src/gui/accessible/qaccessible.h
++++ b/src/gui/accessible/qaccessible.h
+@@ -966,8 +966,10 @@ protected:
+     int m_lastColumn;
+ };
+ 
++#ifndef Q_CLANG_QDOC
+ #define QAccessibleInterface_iid "org.qt-project.Qt.QAccessibleInterface"
+ Q_DECLARE_INTERFACE(QAccessibleInterface, QAccessibleInterface_iid)
++#endif
+ 
+ Q_GUI_EXPORT const char *qAccessibleRoleString(QAccessible::Role role);
+ Q_GUI_EXPORT const char *qAccessibleEventString(QAccessible::Event event);
+--- a/src/gui/opengl/qopenglfunctions.h
++++ b/src/gui/opengl/qopenglfunctions.h
+@@ -228,26 +228,8 @@ struct QOpenGLFunctionsPrivate;
+ #undef glTexLevelParameteriv
+ 
+ #if defined(Q_CLANG_QDOC)
+-#undef GLint
+-typedef int GLint;
+-#undef GLsizei
+-typedef int GLsizei;
+-#undef GLuint
+-typedef unsigned int GLuint;
+-#undef GLubyte
+-typedef unsigned int GLubyte;
+-#undef GLenum
+-typedef unsigned int GLenum;
+ #undef GLbitfield
+ typedef unsigned int GLbitfield;
+-#undef GLfloat
+-typedef float GLfloat;
+-#undef GLclampf
+-typedef float GLclampf;
+-#undef GLboolean
+-typedef bool GLboolean;
+-#undef GLvoid
+-typedef void GLvoid;
+ #undef GLchar
+ typedef char GLchar;
+ #endif
+--- a/src/gui/opengl/qopenglshaderprogram.h
++++ b/src/gui/opengl/qopenglshaderprogram.h
+@@ -50,13 +50,6 @@
+ #include <QtGui/qvector4d.h>
+ #include <QtGui/qmatrix4x4.h>
+ 
+-#if defined(Q_CLANG_QDOC)
+-#undef GLint
+-typedef int GLint;
+-#undef GLfloat
+-typedef double GLfloat;
+-#endif
+-
+ QT_BEGIN_NAMESPACE
+ 
+ 
+--- a/src/gui/text/qabstracttextdocumentlayout.h
++++ b/src/gui/text/qabstracttextdocumentlayout.h
+@@ -143,7 +143,9 @@ public:
+     virtual void drawObject(QPainter *painter, const QRectF &rect, QTextDocument *doc, int posInDocument, const QTextFormat &format) = 0;
+ };
+ 
++#ifndef Q_CLANG_QDOC
+ Q_DECLARE_INTERFACE(QTextObjectInterface, "org.qt-project.Qt.QTextObjectInterface")
++#endif
+ 
+ QT_END_NAMESPACE
+ 
+--- a/src/network/kernel/qhostinfo.cpp
++++ b/src/network/kernel/qhostinfo.cpp
+@@ -305,25 +305,6 @@ int QHostInfo::lookupHost(const QString
+ */
+ 
+ /*!
+-    \fn template<typename PointerToMemberFunction> int QHostInfo::lookupHost(const QString &name, const QObject *receiver, PointerToMemberFunction function)
+-
+-    \since 5.9
+-
+-    \overload
+-
+-    Looks up the IP address(es) associated with host name \a name, and
+-    returns an ID for the lookup. When the result of the lookup is
+-    ready, the slot or signal \a function in \a receiver is called with
+-    a QHostInfo argument. The QHostInfo object can then be inspected
+-    to get the results of the lookup.
+-
+-    \note There is no guarantee on the order the signals will be emitted
+-    if you start multiple requests with lookupHost().
+-
+-    \sa abortHostLookup(), addresses(), error(), fromName()
+-*/
+-
+-/*!
+     \fn template<typename Functor> int QHostInfo::lookupHost(const QString &name, Functor functor)
+ 
+     \since 5.9
+@@ -359,6 +340,16 @@ int QHostInfo::lookupHost(const QString
+     thread of \a context. The context's thread must have a running Qt
+     event loop.
+ 
++    Here is an alternative signature for the function:
++    \code
++    lookupHost(const QString &name, const QObject *receiver, PointerToMemberFunction function)
++    \endcode
++
++    In this case, when the result of the lookup is ready, the slot or
++    signal \c{function} in \c{receiver} is called with a QHostInfo
++    argument. The QHostInfo object can then be inspected to get the
++    results of the lookup.
++
+     \note There is no guarantee on the order the signals will be emitted
+     if you start multiple requests with lookupHost().
+ 
+--- a/src/network/kernel/qhostinfo.h
++++ b/src/network/kernel/qhostinfo.h
+@@ -91,13 +91,10 @@ public:
+     static QString localDomainName();
+ 
+ #ifdef Q_CLANG_QDOC
+-    template<typename PointerToMemberFunction>
+-    static int QHostInfo::lookupHost(const QString &name, const QObject *receiver,
+-                              PointerToMemberFunction function);
+     template<typename Functor>
+-    static int QHostInfo::lookupHost(const QString &name, Functor functor);
++    static int lookupHost(const QString &name, Functor functor);
+     template<typename Functor>
+-    static int QHostInfo::lookupHost(const QString &name, const QObject *context, Functor functor);
++    static int lookupHost(const QString &name, const QObject *context, Functor functor);
+ #else
+     // lookupHost to a QObject slot
+     template <typename Func>
+--- a/src/opengl/qgl.h
++++ b/src/opengl/qgl.h
+@@ -51,22 +51,6 @@
+ 
+ #include <QtGui/QSurfaceFormat>
+ 
+-#if defined(Q_CLANG_QDOC)
+-#undef GLint
+-typedef int GLint;
+-#undef GLuint
+-typedef unsigned int GLuint;
+-#undef GLenum
+-typedef unsigned int GLenum;
+-#undef GLclampf
+-typedef float GLclampf;
+-#undef GLsizei
+-typedef int GLsizei;
+-#undef GLboolean
+-typedef bool GLboolean;
+-#endif
+-
+-
+ QT_BEGIN_NAMESPACE
+ 
+ 
+--- a/src/opengl/qglshaderprogram.h
++++ b/src/opengl/qglshaderprogram.h
+@@ -46,17 +46,6 @@
+ #include <QtGui/qvector4d.h>
+ #include <QtGui/qmatrix4x4.h>
+ 
+-#if defined(Q_CLANG_QDOC)
+-#undef GLfloat
+-typedef double GLfloat;
+-#undef GLint
+-typedef int GLint;
+-#undef GLuint
+-typedef unsigned int GLuint;
+-#undef GLenum
+-typedef unsigned int GLenum;
+-#endif
+-
+ QT_BEGIN_NAMESPACE
+ 
+ 
+--- a/src/widgets/dialogs/qmessagebox.h
++++ b/src/widgets/dialogs/qmessagebox.h
+@@ -284,9 +284,9 @@ public:
+ Q_SIGNALS:
+     void buttonClicked(QAbstractButton *button);
+ 
+-#ifdef Q_QDOC
++#ifdef Q_CLANG_QDOC
+ public Q_SLOTS:
+-    int exec();
++    int exec() override;
+ #endif
+ 
+ protected:
+--- a/src/widgets/graphicsview/qgraphicsitem.h
++++ b/src/widgets/graphicsview/qgraphicsitem.h
+@@ -487,7 +487,9 @@ private:
+ };
+ 
+ Q_DECLARE_OPERATORS_FOR_FLAGS(QGraphicsItem::GraphicsItemFlags)
++#ifndef Q_CLANG_QDOC
+ Q_DECLARE_INTERFACE(QGraphicsItem, "org.qt-project.Qt.QGraphicsItem")
++#endif
+ 
+ inline void QGraphicsItem::setPos(qreal ax, qreal ay)
+ { setPos(QPointF(ax, ay)); }
+--- a/src/widgets/graphicsview/qgraphicslayout.h
++++ b/src/widgets/graphicsview/qgraphicslayout.h
+@@ -83,7 +83,9 @@ private:
+     friend class QGraphicsWidget;
+ };
+ 
++#ifndef Q_CLANG_QDOC
+ Q_DECLARE_INTERFACE(QGraphicsLayout, "org.qt-project.Qt.QGraphicsLayout")
++#endif
+ 
+ QT_END_NAMESPACE
+ 
+--- a/src/widgets/graphicsview/qgraphicslayoutitem.h
++++ b/src/widgets/graphicsview/qgraphicslayoutitem.h
+@@ -116,7 +116,9 @@ private:
+     friend class QGraphicsLayout;
+ };
+ 
++#ifndef Q_CLANG_QDOC
+ Q_DECLARE_INTERFACE(QGraphicsLayoutItem, "org.qt-project.Qt.QGraphicsLayoutItem")
++#endif
+ 
+ inline void QGraphicsLayoutItem::setMinimumSize(qreal aw, qreal ah)
+ { setMinimumSize(QSizeF(aw, ah)); }
+--- a/src/widgets/widgets/qmenu.cpp
++++ b/src/widgets/widgets/qmenu.cpp
+@@ -1782,21 +1782,6 @@ QAction *QMenu::addAction(const QString
+     return action;
+ }
+ 
+-/*!\fn template<typename PointerToMemberFunction> QAction *QMenu::addAction(const QString &text, const QObject *receiver, PointerToMemberFunction method, const QKeySequence &shortcut = 0)
+-
+-    \since 5.6
+-
+-    \overload
+-
+-    This convenience function creates a new action with the text \a
+-    text and an optional shortcut \a shortcut. The action's
+-    \l{QAction::triggered()}{triggered()} signal is connected to the
+-    \a method of the \a receiver. The function adds the newly created
+-    action to the menu's list of actions and returns it.
+-
+-    QMenu takes ownership of the returned QAction.
+-*/
+-
+ /*!\fn template<typename Functor> QAction *QMenu::addAction(const QString &text, Functor functor, const QKeySequence &shortcut = 0)
+ 
+     \since 5.6
+@@ -1821,25 +1806,11 @@ QAction *QMenu::addAction(const QString
+     This convenience function creates a new action with the text \a
+     text and an optional shortcut \a shortcut. The action's
+     \l{QAction::triggered()}{triggered()} signal is connected to the
+-    \a functor. The function adds the newly created
+-    action to the menu's list of actions and returns it.
++    \a functor. The functor can be a pointer to a member function of
++    the \a context object. The newly created action is added to the
++    menu's list of actions and a pointer to it is returned.
+ 
+-    If \a context is destroyed, the functor will not be called.
+-
+-    QMenu takes ownership of the returned QAction.
+-*/
+-
+-/*!\fn template<typename PointerToMemberFunction> QAction *QMenu::addAction(const QIcon &icon, const QString &text, const QObject *receiver, PointerToMemberFunction method, const QKeySequence &shortcut = 0)
+-
+-    \since 5.6
+-
+-    \overload
+-
+-    This convenience function creates a new action with an \a icon
+-    and some \a text and an optional shortcut \a shortcut. The action's
+-    \l{QAction::triggered()}{triggered()} signal is connected to the
+-    \a method of the \a receiver. The function adds the newly created
+-    action to the menu's list of actions and returns it.
++    If the \a context object is destroyed, the functor will not be called.
+ 
+     QMenu takes ownership of the returned QAction.
+ */
+@@ -1868,8 +1839,9 @@ QAction *QMenu::addAction(const QString
+     This convenience function creates a new action with an \a icon
+     and some \a text and an optional shortcut \a shortcut. The action's
+     \l{QAction::triggered()}{triggered()} signal is connected to the
+-    \a functor. The function adds the newly created
+-    action to the menu's list of actions and returns it.
++    \a functor. The \a functor can be a pointer to a member function
++    of the \a context object. The newly created action is added to the
++    menu's list of actions and a pointer to it is returned.
+ 
+     If \a context is destroyed, the functor will not be called.
+ 
+--- a/src/widgets/widgets/qmenu.h
++++ b/src/widgets/widgets/qmenu.h
+@@ -82,14 +82,10 @@ public:
+     QAction *addAction(const QIcon &icon, const QString &text, const QObject *receiver, const char* member, const QKeySequence &shortcut = 0);
+ 
+ #ifdef Q_CLANG_QDOC
+-    template<typename PointerToMemberFunction>
+-    QAction *addAction(const QString &text, const QObject *receiver, PointerToMemberFunction method, const QKeySequence &shortcut = 0);
+     template<typename Functor>
+     QAction *addAction(const QString &text, Functor functor, const QKeySequence &shortcut = 0);
+     template<typename Functor>
+     QAction *addAction(const QString &text, const QObject *context, Functor functor, const QKeySequence &shortcut = 0);
+-    template<typename PointerToMemberFunction>
+-    QAction *addAction(const QIcon &icon, const QString &text, const QObject *receiver, PointerToMemberFunction method, const QKeySequence &shortcut = 0);
+     template<typename Functor>
+     QAction *addAction(const QIcon &icon, const QString &text, Functor functor, const QKeySequence &shortcut = 0);
+     template<typename Functor>
+--- a/src/widgets/widgets/qtoolbar.cpp
++++ b/src/widgets/widgets/qtoolbar.cpp
+@@ -799,18 +799,6 @@ QAction *QToolBar::addAction(const QIcon
+     return action;
+ }
+ 
+-/*!\fn template<typename PointerToMemberFunction> QAction *QToolBar::addAction(const QString &text, const QObject *receiver, PointerToMemberFunction method)
+-
+-    \since 5.6
+-
+-    \overload
+-
+-    Creates a new action with the given \a text. This action is added to
+-    the end of the toolbar. The action's
+-    \l{QAction::triggered()}{triggered()} signal is connected to the
+-    \a method of the \a receiver.
+-*/
+-
+ /*!\fn template<typename Functor> QAction *QToolBar::addAction(const QString &text, Functor functor)
+ 
+     \since 5.6
+@@ -829,24 +817,13 @@ QAction *QToolBar::addAction(const QIcon
+ 
+     \overload
+ 
+-    Creates a new action with the given \a text. This action is added to
+-    the end of the toolbar. The action's
++    Creates a new action with the given \a text. This action is added
++    to the end of the toolbar. The action's
+     \l{QAction::triggered()}{triggered()} signal is connected to the
+-    \a functor.
+-
+-    If \a context is destroyed, the functor will not be called.
+-*/
+-
+-/*!\fn template<typename PointerToMemberFunction> QAction *QToolBar::addAction(const QIcon &icon, const QString &text, const QObject *receiver, PointerToMemberFunction method)
+-
+-    \since 5.6
++    \a functor. The \a functor can be a pointer to a member function
++    in the \a context object.
+ 
+-    \overload
+-
+-    Creates a new action with the given \a icon and \a text. This
+-    action is added to the end of the toolbar. The action's
+-    \l{QAction::triggered()}{triggered()} signal is connected to the
+-    \a method of the \a receiver.
++    If the \a context object is destroyed, the \a functor will not be called.
+ */
+ 
+ /*!\fn template<typename Functor> QAction *QToolBar::addAction(const QIcon &icon, const QString &text, Functor functor)
+@@ -870,9 +847,10 @@ QAction *QToolBar::addAction(const QIcon
+     Creates a new action with the given \a icon and \a text. This
+     action is added to the end of the toolbar. The action's
+     \l{QAction::triggered()}{triggered()} signal is connected to the
+-    \a functor.
++    \a functor. The \a functor can be a pointer to a member function
++    of the \a context object.
+ 
+-    If \a context is destroyed, the functor will not be called.
++    If the \a context object is destroyed, the \a functor will not be called.
+ */
+ 
+ /*!
+--- a/src/widgets/widgets/qtoolbar.h
++++ b/src/widgets/widgets/qtoolbar.h
+@@ -99,15 +99,11 @@ public:
+     QAction *addAction(const QString &text, const QObject *receiver, const char* member);
+     QAction *addAction(const QIcon &icon, const QString &text,
+                        const QObject *receiver, const char* member);
+-#ifdef Q_QDOC
+-    template<typename PointerToMemberFunction>
+-    QAction *addAction(const QString &text, const QObject *receiver, PointerToMemberFunction method);
++#ifdef Q_CLANG_QDOC
+     template<typename Functor>
+     QAction *addAction(const QString &text, Functor functor);
+     template<typename Functor>
+     QAction *addAction(const QString &text, const QObject *context, Functor functor);
+-    template<typename PointerToMemberFunction>
+-    QAction *addAction(const QIcon &icon, const QString &text, const QObject *receiver, PointerToMemberFunction method);
+     template<typename Functor>
+     QAction *addAction(const QIcon &icon, const QString &text, Functor functor);
+     template<typename Functor>
+@@ -149,7 +145,7 @@ public:
+         connect(result, &QAction::triggered, slot);
+         return result;
+     }
+-#endif // !Q_QDOC
++#endif // !Q_CLANG_QDOC
+ 
+     QAction *addSeparator();
+     QAction *insertSeparator(QAction *before);

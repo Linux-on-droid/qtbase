@@ -17,6 +17,7 @@ qtbase-opensource-src (5.12.4+dfsg-1) UNRELEASED; urgency=medium
   * Update Upstream-Name and Source headers in debian/copyright (closes:
     #916556).
   * Update symbols files from buildds’ and the current build logs.
+  * Backport four upstream commits to fix various errors from qdoc.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 13 May 2019 12:50:39 +0300
 
