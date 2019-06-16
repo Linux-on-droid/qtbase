@@ -90,6 +90,13 @@ qtbase-opensource-src (5.12.2+dfsg-1) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Fri, 15 Mar 2019 20:47:10 +0300
 
+qtbase-opensource-src (5.11.3+dfsg1-2) unstable; urgency=medium
+
+  * Backport upstream patch to add support for non-PPD printers and avoid
+    silent fallback to a printer supporting PPD (closes: #911844).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 16 Jun 2019 18:22:58 +0300
+
 qtbase-opensource-src (5.11.3+dfsg1-1) unstable; urgency=medium
 
   * Repack the tarball and strip some files and directories with copyright
