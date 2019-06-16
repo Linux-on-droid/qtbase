@@ -4,6 +4,7 @@ reference_dpi.diff
 remove_need_for_glXGetProcAddressARB.patch
 mysql_free_results_when_qsqlquery_finished_is_called.patch
 qprintdialog_duplex.diff
+raw_printers.diff
 
 # Debian specific.
 gnukfreebsd.diff
