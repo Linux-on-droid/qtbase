@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.12.4+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.4+dfsg-1) experimental; urgency=medium
 
   [ Scarlett Moore ]
   * Split the single doc-base file into per-submodule files.
@@ -19,7 +19,7 @@ qtbase-opensource-src (5.12.4+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files from buildds’ and the current build logs.
   * Backport four upstream commits to fix various errors from qdoc.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 13 May 2019 12:50:39 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 17 Jun 2019 17:46:27 +0300
 
 qtbase-opensource-src (5.12.3+dfsg-1) experimental; urgency=medium
 
