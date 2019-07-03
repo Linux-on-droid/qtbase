@@ -7,6 +7,7 @@ qtbase-opensource-src (5.12.4+dfsg-3) UNRELEASED; urgency=medium
     can use these plugins to detect presence of certain features in Qt
     (e.g. Qt WebKit uses it to detect X11 support). Skip SQL plugins and
     theme plugins, to avoid introducing new dependencies for qtbase5-dev.
+  * Make debian/libqt5gui5.install a bit more verbose.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Jul 2019 16:06:41 +0300
 

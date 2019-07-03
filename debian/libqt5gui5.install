@@ -2,7 +2,10 @@
 [any-i386] usr/lib/*/sse2/libQt5Gui.so.*
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFSDeviceIntegration.so.*
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.so.*
-[kfreebsd-any linux-any] usr/lib/*/qt5/plugins/egldeviceintegrations/*
+[kfreebsd-any linux-any] usr/lib/*/qt5/plugins/egldeviceintegrations/libqeglfs-emu-integration.so
+[kfreebsd-any linux-any] usr/lib/*/qt5/plugins/egldeviceintegrations/libqeglfs-kms-egldevice-integration.so
+[kfreebsd-any linux-any] usr/lib/*/qt5/plugins/egldeviceintegrations/libqeglfs-kms-integration.so
+[kfreebsd-any linux-any] usr/lib/*/qt5/plugins/egldeviceintegrations/libqeglfs-x11-integration.so
 [kfreebsd-any linux-any] usr/lib/*/qt5/plugins/platforms/libqeglfs.so
 [kfreebsd-any linux-any] usr/lib/*/qt5/plugins/platforms/libqminimalegl.so
 [linux-any] usr/lib/*/qt5/plugins/generic/libqevdevkeyboardplugin.so
@@ -23,4 +26,5 @@ usr/lib/*/qt5/plugins/platforms/libqminimal.so
 usr/lib/*/qt5/plugins/platforms/libqoffscreen.so
 usr/lib/*/qt5/plugins/platforms/libqvnc.so
 usr/lib/*/qt5/plugins/platforms/libqxcb.so
-usr/lib/*/qt5/plugins/xcbglintegrations/*
+usr/lib/*/qt5/plugins/xcbglintegrations/libqxcb-egl-integration.so
+usr/lib/*/qt5/plugins/xcbglintegrations/libqxcb-glx-integration.so
