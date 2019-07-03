@@ -1,5 +1,11 @@
 #! /usr/bin/dh-exec
 [!armel !armhf] usr/lib/*/qt5/mkspecs/modules/qt_lib_glx_support_private.pri
+[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFSDeviceIntegration.prl
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFSDeviceIntegration.so
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.prl
@@ -7,6 +13,14 @@
 [kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri
 [kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri
 [kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_kms_support_private.pri
+[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake
+[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake
+[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake
+[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake
+[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake
+[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake
+[linux-any] usr/lib/*/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake
+[linux-any] usr/lib/*/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake
 [linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_input_support_private.pri
 [linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri
 usr/include/*/qt5/QtConcurrent/QtConcurrent
@@ -1647,12 +1661,26 @@ usr/lib/*/cmake/Qt5DBus/Qt5DBusMacros.cmake
 usr/lib/*/cmake/Qt5Gui/Qt5GuiConfig.cmake
 usr/lib/*/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake
 usr/lib/*/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake
+usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake
 usr/lib/*/cmake/Qt5Network/Qt5NetworkConfig.cmake
 usr/lib/*/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake
+usr/lib/*/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake
 usr/lib/*/cmake/Qt5OpenGLExtensions/Qt5OpenGLExtensionsConfig.cmake
 usr/lib/*/cmake/Qt5OpenGLExtensions/Qt5OpenGLExtensionsConfigVersion.cmake
 usr/lib/*/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake
 usr/lib/*/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake
+usr/lib/*/cmake/Qt5PrintSupport/Qt5PrintSupport_QCupsPrinterSupportPlugin.cmake
 usr/lib/*/cmake/Qt5Sql/Qt5SqlConfig.cmake
 usr/lib/*/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake
 usr/lib/*/cmake/Qt5Test/Qt5TestConfig.cmake

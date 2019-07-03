@@ -3,6 +3,10 @@ qtbase-opensource-src (5.12.4+dfsg-3) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Backport upstream patch to fix Qt WebEngine segfault with multiple
     screens and HighDPI scaling (hidpi_crash.diff).
+  * Install most of the CMake files for plugins. Third-party software
+    can use these plugins to detect presence of certain features in Qt
+    (e.g. Qt WebKit uses it to detect X11 support). Skip SQL plugins and
+    theme plugins, to avoid introducing new dependencies for qtbase5-dev.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Jul 2019 16:06:41 +0300
 
