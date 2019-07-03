@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.12.4+dfsg-3) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Jul 2019 16:06:41 +0300
+
 qtbase-opensource-src (5.12.4+dfsg-2) experimental; urgency=medium
 
   * Bump ABI version to qtbase-abi-5-12-4.
