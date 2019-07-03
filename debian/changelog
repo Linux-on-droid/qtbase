@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.12.4+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix Qt WebEngine segfault with multiple
+    screens and HighDPI scaling (hidpi_crash.diff).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Jul 2019 16:06:41 +0300
 
