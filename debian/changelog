@@ -1,10 +1,9 @@
-qtbase-opensource-src (5.12.4+dfsg-4) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.4+dfsg-4) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Mark libqxcb-glx-integration.so and the corresponding CMake file as
     not installed on armel and armhf.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Jul 2019 22:29:41 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 04 Jul 2019 22:35:09 +0300
 
 qtbase-opensource-src (5.12.4+dfsg-3) experimental; urgency=medium
 
