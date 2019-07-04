@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.12.4+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.4+dfsg-3) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport upstream patch to fix Qt WebEngine segfault with multiple
     screens and HighDPI scaling (hidpi_crash.diff).
   * Install most of the CMake files for plugins. Third-party software
@@ -9,7 +8,7 @@ qtbase-opensource-src (5.12.4+dfsg-3) UNRELEASED; urgency=medium
     theme plugins, to avoid introducing new dependencies for qtbase5-dev.
   * Make debian/libqt5gui5.install a bit more verbose.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Jul 2019 16:06:41 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 04 Jul 2019 14:28:13 +0300
 
 qtbase-opensource-src (5.12.4+dfsg-2) experimental; urgency=medium
 
