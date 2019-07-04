@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.12.4+dfsg-4) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Jul 2019 22:29:41 +0300
+
 qtbase-opensource-src (5.12.4+dfsg-3) experimental; urgency=medium
 
   * Backport upstream patch to fix Qt WebEngine segfault with multiple
