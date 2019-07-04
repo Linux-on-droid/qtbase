@@ -1,4 +1,5 @@
 #! /usr/bin/dh-exec
+[!armel !armhf] usr/lib/*/qt5/plugins/xcbglintegrations/libqxcb-glx-integration.so
 [any-i386] usr/lib/*/sse2/libQt5Gui.so.*
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFSDeviceIntegration.so.*
 [kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.so.*
@@ -27,4 +28,3 @@ usr/lib/*/qt5/plugins/platforms/libqoffscreen.so
 usr/lib/*/qt5/plugins/platforms/libqvnc.so
 usr/lib/*/qt5/plugins/platforms/libqxcb.so
 usr/lib/*/qt5/plugins/xcbglintegrations/libqxcb-egl-integration.so
-usr/lib/*/qt5/plugins/xcbglintegrations/libqxcb-glx-integration.so

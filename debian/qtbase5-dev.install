@@ -1,4 +1,5 @@
 #! /usr/bin/dh-exec
+[!armel !armhf] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake
 [!armel !armhf] usr/lib/*/qt5/mkspecs/modules/qt_lib_glx_support_private.pri
 [kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake
 [kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake
@@ -1671,7 +1672,6 @@ usr/lib/*/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake
 usr/lib/*/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake
 usr/lib/*/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake
 usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake
 usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake
 usr/lib/*/cmake/Qt5Network/Qt5NetworkConfig.cmake
 usr/lib/*/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake
