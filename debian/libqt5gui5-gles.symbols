@@ -1,6 +1,6 @@
-# SymbolsHelper-Confirmed: 5.11.3 amd64
+# SymbolsHelper-Confirmed: 5.12.4 amd64 i386
 libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
-| libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-12-2
+| libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-12-4
 | libqt5gui5 #MINVER#
 | libqt5gui5-gles #MINVER#
 * Build-Depends-Package: qtbase5-dev
@@ -1324,6 +1324,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN13QRasterWindowD2Ev@Qt_5 5.9.0~beta3
  _ZN13QShaderFormat10setVersionERK14QVersionNumber@Qt_5 5.10.0
  _ZN13QShaderFormat13setExtensionsERK11QStringList@Qt_5 5.10.0
+ _ZN13QShaderFormat13setShaderTypeENS_10ShaderTypeE@Qt_5 5.12.4
  _ZN13QShaderFormat6setApiENS_3ApiE@Qt_5 5.10.0
  _ZN13QShaderFormat9setVendorERK7QString@Qt_5 5.10.0
  _ZN13QShaderFormatC1Ev@Qt_5 5.10.0
@@ -1687,7 +1688,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN14QWindowPrivate15connectToScreenEP7QScreen@Qt_5_PRIVATE_API 5.4.0 1
  _ZN14QWindowPrivate16clearFocusObjectEv@Qt_5_PRIVATE_API 5.2.0~rc1 1
  _ZN14QWindowPrivate16updateVisibilityEv@Qt_5_PRIVATE_API 5.1.0 1
- _ZN14QWindowPrivate17screenForGeometryERK5QRect@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN14QWindowPrivate17setTopLevelScreenEP7QScreenb@Qt_5_PRIVATE_API 5.4.0 1
  _ZN14QWindowPrivate21updateSiblingPositionENS_15SiblingPositionE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN14QWindowPrivate26emitScreenChangedRecursionEP7QScreen@Qt_5_PRIVATE_API 5.4.0 1
@@ -1802,9 +1802,11 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN15QHighDpiScaling17m_screenFactorSetE@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling17m_usePixelDensityE@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling18initHighDpiScalingEv@Qt_5_PRIVATE_API 5.6.0~beta 1
+ _ZN15QHighDpiScaling19mapPositionToGlobalERK6QPointS2_PK7QWindow@Qt_5_PRIVATE_API 5.12.4 1
  _ZN15QHighDpiScaling19mapPositionToNativeERK6QPointPK15QPlatformScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling20updateHighDpiScalingEv@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling21m_globalScalingActiveE@Qt_5_PRIVATE_API 5.6.0~beta 1
+ _ZN15QHighDpiScaling21mapPositionFromGlobalERK6QPointS2_PK7QWindow@Qt_5_PRIVATE_API 5.12.4 1
  _ZN15QHighDpiScaling21mapPositionFromNativeERK6QPointPK15QPlatformScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling27m_pixelDensityScalingActiveE@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling6factorEPK15QPlatformScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
@@ -1812,6 +1814,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN15QHighDpiScaling6factorEPK7QWindow@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling6originEPK15QPlatformScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling6originEPK7QScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
+ _ZN15QHighDpiScaling6originEPK7QWindow@Qt_5_PRIVATE_API 5.12.4 1
  _ZN15QHighDpiScaling8m_activeE@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling8m_factorE@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QImageIOHandler11jumpToImageEi@Qt_5 5.0.2
@@ -3309,7 +3312,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN22QGuiApplicationPrivate25createPlatformIntegrationEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate25processPlatformPanelEventEPN29QWindowSystemInterfacePrivate18PlatformPanelEventE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate26processGeometryChangeEventEPN29QWindowSystemInterfacePrivate19GeometryChangeEventE@Qt_5_PRIVATE_API 5.0.2 1
- _ZN22QGuiApplicationPrivate27mouse_double_click_distanceE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate27notifyLayoutDirectionChangeEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN22QGuiApplicationPrivate27processScreenGeometryChangeEPN29QWindowSystemInterfacePrivate19ScreenGeometryEventE@Qt_5_PRIVATE_API 5.11.2 1
  _ZN22QGuiApplicationPrivate28sendApplicationPaletteChangeEbPKc@Qt_5_PRIVATE_API 5.12.2 1
@@ -3628,6 +3630,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  (optional=templinst)_ZN22QWindowSystemInterface17handleExposeEventINS_19SynchronousDeliveryEEEvP7QWindowRK7QRegion@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface17handleExposeEventINS_20AsynchronousDeliveryEEEvP7QWindowRK7QRegion@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface17handleNativeEventEP7QWindowRK10QByteArrayPvPl@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN22QWindowSystemInterface17handleScreenAddedEP15QPlatformScreenb@Qt_5_PRIVATE_API 5.12.3 1
  _ZN22QWindowSystemInterface17handleTabletEventEP7QWindowRK7QPointFS4_ii6QFlagsIN2Qt11MouseButtonEEdiiddixS5_INS6_16KeyboardModifierEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface17handleTabletEventEP7QWindowbRK7QPointFS4_iidiiddix6QFlagsIN2Qt16KeyboardModifierEE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface17handleTabletEventEP7QWindowmRK7QPointFS4_ii6QFlagsIN2Qt11MouseButtonEEdiiddixS5_INS6_16KeyboardModifierEE@Qt_5_PRIVATE_API 5.9.0~beta 1
@@ -3636,6 +3639,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN22QWindowSystemInterface18handleGestureEventEP7QWindowP12QTouchDevicemN2Qt17NativeGestureTypeER7QPointFS7_@Qt_5_PRIVATE_API 5.10.0 1
  _ZN22QWindowSystemInterface19handleFileOpenEventERK4QUrl@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface19handleFileOpenEventERK7QString@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN22QWindowSystemInterface19handleScreenRemovedEP15QPlatformScreen@Qt_5_PRIVATE_API 5.12.3 1
  _ZN22QWindowSystemInterface19handleShortcutEventEP7QWindowmi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface19registerTouchDeviceEPK12QTouchDevice@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface20handleGeometryChangeINS_15DefaultDeliveryEEEvP7QWindowRK5QRect@Qt_5_PRIVATE_API 5.10.0 1
@@ -3673,6 +3677,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN22QWindowSystemInterface26handleFrameStrutMouseEventEP7QWindowRK7QPointFS4_6QFlagsIN2Qt11MouseButtonEES7_N6QEvent4TypeES5_INS6_16KeyboardModifierEENS6_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
  _ZN22QWindowSystemInterface26handleFrameStrutMouseEventEP7QWindowmRK7QPointFS4_6QFlagsIN2Qt11MouseButtonEES5_INS6_16KeyboardModifierEENS6_16MouseEventSourceE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface26handleFrameStrutMouseEventEP7QWindowmRK7QPointFS4_6QFlagsIN2Qt11MouseButtonEES7_N6QEvent4TypeES5_INS6_16KeyboardModifierEENS6_16MouseEventSourceE@Qt_5_PRIVATE_API 5.11.0~rc1 1
+ _ZN22QWindowSystemInterface26handlePrimaryScreenChangedEP15QPlatformScreen@Qt_5_PRIVATE_API 5.12.3 1
  _ZN22QWindowSystemInterface26handleScreenGeometryChangeEP7QScreenRK5QRectS4_@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface28handleSafeAreaMarginsChangedINS_15DefaultDeliveryEEEvP7QWindow@Qt_5_PRIVATE_API 5.10.1 1
  (optional=templinst)_ZN22QWindowSystemInterface28handleSafeAreaMarginsChangedINS_19SynchronousDeliveryEEEvP7QWindow@Qt_5_PRIVATE_API 5.10.1 1
@@ -4117,6 +4122,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN29QWindowSystemInterfacePrivate12eventHandlerE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN29QWindowSystemInterfacePrivate13eventAcceptedE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN29QWindowSystemInterfacePrivate13eventsFlushedE@Qt_5_PRIVATE_API 5.9.0~beta 1
+ _ZN29QWindowSystemInterfacePrivate15clearPointIdMapEv@Qt_5_PRIVATE_API 5.12.3 1
  _ZN29QWindowSystemInterfacePrivate15flushEventMutexE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN29QWindowSystemInterfacePrivate19GeometryChangeEventC1EP7QWindowRK5QRect@Qt_5_PRIVATE_API 5.10.0 1
  _ZN29QWindowSystemInterfacePrivate19GeometryChangeEventC2EP7QWindowRK5QRect@Qt_5_PRIVATE_API 5.10.0 1
@@ -5723,6 +5729,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZNK13QRasterWindow10redirectedEP6QPoint@Qt_5 5.4.0
  _ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE@Qt_5 5.4.0
  _ZNK13QShaderFormat10extensionsEv@Qt_5 5.10.0
+ _ZNK13QShaderFormat10shaderTypeEv@Qt_5 5.12.4
  _ZNK13QShaderFormat3apiEv@Qt_5 5.10.0
  _ZNK13QShaderFormat6vendorEv@Qt_5 5.10.0
  _ZNK13QShaderFormat7isValidEv@Qt_5 5.10.0
@@ -5957,6 +5964,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZNK14QWindowPrivate12shareContextEv@Qt_5_PRIVATE_API 5.10.0 1
  _ZNK14QWindowPrivate14globalPositionEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK14QWindowPrivate14topLevelWindowEN7QWindow12AncestorModeE@Qt_5_PRIVATE_API 5.12.2 1
+ _ZNK14QWindowPrivate17screenForGeometryERK5QRect@Qt_5_PRIVATE_API 5.12.4 1
  _ZNK14QWindowPrivate25closestAcceptableGeometryERK6QRectF@Qt_5_PRIVATE_API 5.4.1 1
  _ZNK15QFontEngineQPF210glyphIndexEj@Qt_5_PRIVATE_API 5.4.0 1
  _ZNK15QFontEngineQPF212maxCharWidthEv@Qt_5_PRIVATE_API 5.4.0 1
