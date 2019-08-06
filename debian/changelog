@@ -3,9 +3,12 @@ qtbase-opensource-src (5.12.4+dfsg-5) UNRELEASED; urgency=medium
   * Move examples manifest files into the examples package.
     Please see bug: #933597: qt3d5-examples: qt examples
     missing important files
-  * Move qhp .tags files into -dev package as they are needed
-    at build time for qhp generation.
   * Add breaks/replaces for moved files.
+  * Fix "please consider packaging doxygen .tags files with -dev
+    package, not -doc"
+    - Move qhp .tags files into -dev package as they are needed
+    at build time for qhp generation.
+    (Closes: #922707)
 
  -- Scarlett Moore <sgmoore@kde.org>  Tue, 06 Aug 2019 07:12:06 -0700
 
