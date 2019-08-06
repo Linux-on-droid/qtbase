@@ -1,1 +1,11 @@
 usr/lib/*/qt5/examples
+usr/share/qt5/doc/qtconcurrent/examples-manifest.xml
+usr/share/qt5/doc/qtcore/examples-manifest.xml
+usr/share/qt5/doc/qtdbus/examples-manifest.xml
+usr/share/qt5/doc/qtgui/examples-manifest.xml
+usr/share/qt5/doc/qtnetwork/examples-manifest.xml
+usr/share/qt5/doc/qtopengl/examples-manifest.xml
+usr/share/qt5/doc/qtsql/examples-manifest.xml
+usr/share/qt5/doc/qttestlib/examples-manifest.xml
+usr/share/qt5/doc/qtwidgets/examples-manifest.xml
+usr/share/qt5/doc/qtxml/examples-manifest.xml
