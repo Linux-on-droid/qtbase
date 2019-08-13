@@ -1,5 +1,7 @@
 qtbase-opensource-src (5.11.3+dfsg1-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Tell dh_strip_nondeterminism to ignore .png files (closes: #934215).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 13 Aug 2019 14:05:28 +0300
 
