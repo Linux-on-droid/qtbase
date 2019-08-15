@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.11.3+dfsg1-4) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 15 Aug 2019 14:15:49 +0300
+
 qtbase-opensource-src (5.11.3+dfsg1-3) unstable; urgency=medium
 
   * Tell dh_strip_nondeterminism to ignore .png files (closes: #934215).
