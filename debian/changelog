@@ -2,6 +2,7 @@ qtbase-opensource-src (5.11.3+dfsg1-4) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Backport upstream patch to fix build with GCC 9 (closes: #925812).
+  * Backport upstream patch to silence some GCC 9 warnings.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 15 Aug 2019 14:15:49 +0300
 

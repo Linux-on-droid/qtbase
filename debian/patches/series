@@ -6,6 +6,7 @@ mysql_free_results_when_qsqlquery_finished_is_called.patch
 qprintdialog_duplex.diff
 raw_printers.diff
 qrandom_gcc9.diff
+gcc9_warnings.diff
 
 # Debian specific.
 gnukfreebsd.diff
