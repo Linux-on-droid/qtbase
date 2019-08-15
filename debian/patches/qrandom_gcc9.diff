@@ -1,0 +1,14 @@
+Description: fix compile issue with gcc 9
+Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/patch/?id=a52d7861edfb5956
+Last-Update: 2019-08-15
+
+--- a/src/corelib/global/qrandom.cpp
++++ b/src/corelib/global/qrandom.cpp
+@@ -218,6 +218,7 @@ struct QRandomGenerator::SystemGenerator
+ #endif // Q_OS_WINRT
+ 
+     static SystemGenerator &self();
++    typedef quint32 result_type;
+     void generate(quint32 *begin, quint32 *end) Q_DECL_NOEXCEPT_EXPR(FillBufferNoexcept);
+ 
+     // For std::mersenne_twister_engine implementations that use something

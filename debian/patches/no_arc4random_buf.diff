@@ -14,7 +14,7 @@ Last-Update: 2017-12-07
  #  include "qdeadlinetimer.h"
  #  include "qhashfunctions.h"
  
-@@ -258,7 +258,7 @@ static void fallback_fill(quint32 *, qsi
+@@ -259,7 +259,7 @@ static void fallback_fill(quint32 *, qsi
      // no fallback necessary, getentropy cannot fail under normal circumstances
      Q_UNREACHABLE();
  }
