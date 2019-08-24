@@ -1,5 +1,6 @@
 qtbase-opensource-src (5.12.4+dfsg-5) UNRELEASED; urgency=medium
 
+  [ Scarlett Moore ]
   * Move examples manifest files into the examples package.
     Please see bug: #933597: qt3d5-examples: qt examples
     missing important files
@@ -9,6 +10,9 @@ qtbase-opensource-src (5.12.4+dfsg-5) UNRELEASED; urgency=medium
     - Move qhp .tags files into -dev package as they are needed
     at build time for qhp generation.
     (Closes: #922707)
+
+  [ Dmitry Shachnev ]
+  * Merge 5.11.3+dfsg1-3 and -4 uploads from unstable.
 
  -- Scarlett Moore <sgmoore@kde.org>  Tue, 06 Aug 2019 07:12:06 -0700
 
@@ -128,6 +132,21 @@ qtbase-opensource-src (5.12.2+dfsg-1) experimental; urgency=medium
   * Add new files from upstream.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Fri, 15 Mar 2019 20:47:10 +0300
+
+qtbase-opensource-src (5.11.3+dfsg1-4) unstable; urgency=medium
+
+  * Backport upstream patch to fix build with GCC 9 (closes: #925812).
+  * Backport upstream patch to silence some GCC 9 warnings.
+  * Update debian/libqt5network5.symbols from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 15 Aug 2019 17:15:39 +0300
+
+qtbase-opensource-src (5.11.3+dfsg1-3) unstable; urgency=medium
+
+  * Tell dh_strip_nondeterminism to ignore .png files (closes: #934215).
+  * Update symbols files from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 13 Aug 2019 14:21:20 +0300
 
 qtbase-opensource-src (5.11.3+dfsg1-2) unstable; urgency=medium
 
