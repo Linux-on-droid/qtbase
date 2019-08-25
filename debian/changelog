@@ -2,6 +2,7 @@ qtbase-opensource-src (5.12.4+dfsg-5) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Merge 5.11.3+dfsg1-3 and -4 uploads from unstable.
+  * Update symbols files from the current build logs with GCC 9.
 
  -- Scarlett Moore <sgmoore@kde.org>  Tue, 06 Aug 2019 07:12:06 -0700
 
