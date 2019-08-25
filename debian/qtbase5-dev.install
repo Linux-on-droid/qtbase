@@ -1838,12 +1838,3 @@ usr/share/qt5/doc/global/template/style/offline-simple.css
 usr/share/qt5/doc/global/template/style/offline.css
 usr/share/qt5/doc/global/template/style/online.css
 usr/share/qt5/doc/global/template/style/theqtcompany.png
-usr/share/qt5/doc/qtconcurrent/qtconcurrent.tags
-usr/share/qt5/doc/qtcore/qtcore.tags
-usr/share/qt5/doc/qtgui/qtgui.tags
-usr/share/qt5/doc/qtnetwork/qtnetwork.tags
-usr/share/qt5/doc/qtprintsupport/qtprintsupport.tags
-usr/share/qt5/doc/qtsql/qtsql.tags
-usr/share/qt5/doc/qttestlib/qttestlib.tags
-usr/share/qt5/doc/qtwidgets/qtwidgets.tags
-usr/share/qt5/doc/qtxml/qtxml.tags
