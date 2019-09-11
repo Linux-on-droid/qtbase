@@ -2,7 +2,6 @@
 mysql_free_results_when_qsqlquery_finished_is_called.patch
 qdockwidget_undocked_notification.diff
 docs_fixes.diff
-hidpi_crash.diff
 
 # Debian specific.
 gnukfreebsd.diff
