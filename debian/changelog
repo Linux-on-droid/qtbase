@@ -5,6 +5,7 @@ qtbase-opensource-src (5.12.5+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files from the current build logs with GCC 9.
   * New upstream release.
   * Drop hidpi_crash.diff, applied in the new release.
+  * Refresh debian/patches/docs_fixes.diff.
 
  -- Scarlett Moore <sgmoore@kde.org>  Tue, 06 Aug 2019 07:12:06 -0700
 

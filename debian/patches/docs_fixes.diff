@@ -749,7 +749,7 @@ Last-Update: 2019-06-15
          characters remain in the signature, it returns \c true.
 --- a/src/gui/accessible/qaccessible.h
 +++ b/src/gui/accessible/qaccessible.h
-@@ -966,8 +966,10 @@ protected:
+@@ -967,8 +967,10 @@ protected:
      int m_lastColumn;
  };
  
@@ -819,7 +819,7 @@ Last-Update: 2019-06-15
  
 --- a/src/network/kernel/qhostinfo.cpp
 +++ b/src/network/kernel/qhostinfo.cpp
-@@ -305,25 +305,6 @@ int QHostInfo::lookupHost(const QString
+@@ -331,25 +331,6 @@ int QHostInfo::lookupHost(const QString
  */
  
  /*!
@@ -845,7 +845,7 @@ Last-Update: 2019-06-15
      \fn template<typename Functor> int QHostInfo::lookupHost(const QString &name, Functor functor)
  
      \since 5.9
-@@ -359,6 +340,16 @@ int QHostInfo::lookupHost(const QString
+@@ -389,6 +370,16 @@ int QHostInfo::lookupHost(const QString
      thread of \a context. The context's thread must have a running Qt
      event loop.
  
