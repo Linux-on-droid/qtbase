@@ -163,6 +163,7 @@ usr/lib/*/qt5/mkspecs/features/android/android.prf
 usr/lib/*/qt5/mkspecs/features/android/android_deployment_settings.prf
 usr/lib/*/qt5/mkspecs/features/android/resolve_target.prf
 usr/lib/*/qt5/mkspecs/features/android/sdk.prf
+usr/lib/*/qt5/mkspecs/features/android/spec_post.prf
 usr/lib/*/qt5/mkspecs/features/benchmark.prf
 usr/lib/*/qt5/mkspecs/features/build_pass.prf
 usr/lib/*/qt5/mkspecs/features/cmake_functions.prf
@@ -249,6 +250,7 @@ usr/lib/*/qt5/mkspecs/features/qt_module_headers.prf
 usr/lib/*/qt5/mkspecs/features/qt_module_pris.prf
 usr/lib/*/qt5/mkspecs/features/qt_parts.prf
 usr/lib/*/qt5/mkspecs/features/qt_plugin.prf
+usr/lib/*/qt5/mkspecs/features/qt_prefix_build_check.prf
 usr/lib/*/qt5/mkspecs/features/qt_targets.prf
 usr/lib/*/qt5/mkspecs/features/qt_test_helper.prf
 usr/lib/*/qt5/mkspecs/features/qt_tool.prf

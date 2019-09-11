@@ -6,6 +6,7 @@ qtbase-opensource-src (5.12.5+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Drop hidpi_crash.diff, applied in the new release.
   * Refresh debian/patches/docs_fixes.diff.
+  * Add two new files to debian/qt5-qmake.install.
 
  -- Scarlett Moore <sgmoore@kde.org>  Tue, 06 Aug 2019 07:12:06 -0700
 
