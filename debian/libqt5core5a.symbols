@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.4 amd64 i386
+# SymbolsHelper-Confirmed: 5.12.5 amd64 i386
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-12-4
 * Build-Depends-Package: qtbase5-dev
@@ -73,6 +73,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  (subst)_Z19qCalculateBlockSize{size_t}{size_t}{size_t}@Qt_5 5.7.1
  _Z19qSetGlobalQHashSeedi@Qt_5 5.6.0~beta
  _Z19qcoreVariantHandlerv@Qt_5 5.0.2
+ _Z20processOpenModeFlags6QFlagsIN9QIODevice12OpenModeFlagEE@Qt_5 5.12.5
  _Z20qEnvironmentVariablePKc@Qt_5 5.10.0
  _Z20qEnvironmentVariablePKcRK7QString@Qt_5 5.10.0
  _Z20qt_qFindChild_helperPK7QObjectRK7QStringRK11QMetaObject6QFlagsIN2Qt15FindChildOptionEE@Qt_5 5.0.2
@@ -2375,6 +2376,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN23QOperatingSystemVersion12OSXMavericksE@Qt_5 5.9.0~beta
  _ZN23QOperatingSystemVersion13AndroidKitKatE@Qt_5 5.9.0~beta
  _ZN23QOperatingSystemVersion13AndroidNougatE@Qt_5 5.9.0~beta
+ _ZN23QOperatingSystemVersion13MacOSCatalinaE@Qt_5 5.12.5
  _ZN23QOperatingSystemVersion15AndroidLollipopE@Qt_5 5.9.0~beta
  _ZN23QOperatingSystemVersion15MacOSHighSierraE@Qt_5 5.9.1
  _ZN23QOperatingSystemVersion16AndroidJellyBeanE@Qt_5 5.9.0~beta

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.4 amd64 i386
+# SymbolsHelper-Confirmed: 5.12.5 amd64 i386
 libQt5Widgets.so.5 libqt5widgets5 #MINVER#
 | libqt5widgets5 #MINVER#, qtbase-abi-5-12-4
 * Build-Depends-Package: qtbase5-dev
@@ -2104,7 +2104,6 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN14QTabBarPrivate7refreshEv@Qt_5_PRIVATE_API 5.10.0 1
  _ZN14QTabBarPrivate9layoutTabEi@Qt_5_PRIVATE_API 5.10.0 1
  _ZN14QWidgetPrivate10allWidgetsE@Qt_5_PRIVATE_API 5.0.2 1
- (subst)_ZN14QWidgetPrivate10create_sysE{quintptr}bb@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate10drawWidgetEP12QPaintDeviceRK7QRegionRK6QPointiP8QPainterP19QWidgetBackingStore@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate10scrollRectERK5QRectii@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate10scroll_sysEii@Qt_5_PRIVATE_API 5.0.2 1
@@ -2204,6 +2203,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN14QWidgetPrivate31activateChildLayoutsRecursivelyEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate36invalidateGraphicsEffectsRecursivelyEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate4initEP7QWidget6QFlagsIN2Qt10WindowTypeEE@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN14QWidgetPrivate6createEv@Qt_5_PRIVATE_API 5.12.5 1
  _ZN14QWidgetPrivate6mapperE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsIN7QWidget10RenderFlagEE@Qt_5_PRIVATE_API 5.3.0 1
  (optional=templinst)_ZN14QWidgetPrivate6updateI5QRectEEvT_@Qt_5_PRIVATE_API 5.10.1 1
@@ -2216,6 +2216,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN14QWidgetPrivate9lower_sysEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate9raise_sysEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate9setOpaqueEb@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN14QWidgetPrivate9setScreenEP7QScreen@Qt_5_PRIVATE_API 5.12.5 1
  _ZN14QWidgetPrivateC1Ei@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivateC2Ei@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivateD0Ev@Qt_5_PRIVATE_API 5.0.2 1

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.4 amd64 i386
+# SymbolsHelper-Confirmed: 5.12.5 amd64 i386
 libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
 | libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-12-4
 | libqt5gui5 #MINVER#
@@ -463,7 +463,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN11QFocusEventD2Ev@Qt_5 5.0.2
  _ZN11QFontEngine11boundingBoxEjRK10QTransform@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QFontEngine13setGlyphCacheEPKvP21QFontEngineGlyphCache@Qt_5_PRIVATE_API 5.0.2 1
- _ZN11QFontEngine14bitmapForGlyphEj6QFixedRK10QTransform@Qt_5_PRIVATE_API 5.1.0 1
+ _ZN11QFontEngine14bitmapForGlyphEj6QFixedRK10QTransformRK6QColor@Qt_5_PRIVATE_API 5.12.5 1
  _ZN11QFontEngine15GlyphCacheEntryC1ERKS0_@Qt_5_PRIVATE_API 5.3.0 1
  _ZN11QFontEngine15GlyphCacheEntryC1Ev@Qt_5_PRIVATE_API 5.3.0 1
  _ZN11QFontEngine15GlyphCacheEntryC2ERKS0_@Qt_5_PRIVATE_API 5.3.0 1
@@ -489,10 +489,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN11QFontEngine19alphaRGBMapForGlyphEj6QFixedRK10QTransform@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QFontEngine20removeGlyphFromCacheEj@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QFontEngine21getTrueTypeGlyphIndexEPKhij@Qt_5_PRIVATE_API 5.5.1 1
- _ZN11QFontEngine22lockedAlphaMapForGlyphEj6QFixedNS_11GlyphFormatERK10QTransformP6QPoint@Qt_5_PRIVATE_API 5.0.2 1
- _ZN11QFontEngine22unlockAlphaMapForGlyphEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QFontEngine33convertToPostscriptFontFamilyNameERK10QByteArray@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QFontEngine7getCMapEPKhjPbPi@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN11QFontEngine9glyphDataEj6QFixedNS_11GlyphFormatERK10QTransform@Qt_5_PRIVATE_API 5.12.5 1
  _ZN11QFontEngineC1ENS_4TypeE@Qt_5_PRIVATE_API 5.3.0 1
  _ZN11QFontEngineC2ENS_4TypeE@Qt_5_PRIVATE_API 5.3.0 1
  _ZN11QFontEngineD0Ev@Qt_5_PRIVATE_API 5.0.2 1
@@ -1458,14 +1457,12 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN14QDistanceFieldC1EP18QDistanceFieldData@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceFieldC1ERK12QPainterPathjb@Qt_5_PRIVATE_API 5.5.0 1
  _ZN14QDistanceFieldC1ERK8QRawFontjb@Qt_5_PRIVATE_API 5.2.0~alpha1 1
- _ZN14QDistanceFieldC1ERKS_@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceFieldC1Eii@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceFieldC1Ev@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceFieldC2EP11QFontEnginejb@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceFieldC2EP18QDistanceFieldData@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceFieldC2ERK12QPainterPathjb@Qt_5_PRIVATE_API 5.5.0 1
  _ZN14QDistanceFieldC2ERK8QRawFontjb@Qt_5_PRIVATE_API 5.2.0~alpha1 1
- _ZN14QDistanceFieldC2ERKS_@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceFieldC2Eii@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDistanceFieldC2Ev@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QDragMoveEventC1ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE@Qt_5 5.0.2
@@ -1795,6 +1792,9 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN15QGuiApplicationD2Ev@Qt_5 5.0.2
  _ZN15QHighDpiScaling10logicalDpiEv@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling12m_logicalDpiE@Qt_5_PRIVATE_API 5.6.0~beta 1
+ _ZN15QHighDpiScaling14scaleAndOriginEPK15QPlatformScreenP6QPoint@Qt_5_PRIVATE_API 5.12.5 1
+ _ZN15QHighDpiScaling14scaleAndOriginEPK7QScreenP6QPoint@Qt_5_PRIVATE_API 5.12.5 1
+ _ZN15QHighDpiScaling14scaleAndOriginEPK7QWindowP6QPoint@Qt_5_PRIVATE_API 5.12.5 1
  _ZN15QHighDpiScaling15screenSubfactorEPK15QPlatformScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling15setGlobalFactorEd@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling15setScreenFactorEP7QScreend@Qt_5_PRIVATE_API 5.6.0~beta 1
@@ -1808,12 +1808,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN15QHighDpiScaling21mapPositionFromGlobalERK6QPointS2_PK7QWindow@Qt_5_PRIVATE_API 5.12.4 1
  _ZN15QHighDpiScaling21mapPositionFromNativeERK6QPointPK15QPlatformScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling27m_pixelDensityScalingActiveE@Qt_5_PRIVATE_API 5.6.0~beta 1
- _ZN15QHighDpiScaling6factorEPK15QPlatformScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
- _ZN15QHighDpiScaling6factorEPK7QScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
- _ZN15QHighDpiScaling6factorEPK7QWindow@Qt_5_PRIVATE_API 5.6.0~beta 1
- _ZN15QHighDpiScaling6originEPK15QPlatformScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
- _ZN15QHighDpiScaling6originEPK7QScreen@Qt_5_PRIVATE_API 5.6.0~beta 1
- _ZN15QHighDpiScaling6originEPK7QWindow@Qt_5_PRIVATE_API 5.12.4 1
  _ZN15QHighDpiScaling8m_activeE@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QHighDpiScaling8m_factorE@Qt_5_PRIVATE_API 5.6.0~beta 1
  _ZN15QImageIOHandler11jumpToImageEi@Qt_5 5.0.2
@@ -3954,8 +3948,8 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN24QOpenGLTextureGlyphCache17resizeTextureDataEii@Qt_5_PRIVATE_API 5.0.2 1
  _ZN24QOpenGLTextureGlyphCache18setupVertexAttribsEv@Qt_5_PRIVATE_API 5.3.0 1
  _ZN24QOpenGLTextureGlyphCache5clearEv@Qt_5_PRIVATE_API 5.0.2 1
- _ZN24QOpenGLTextureGlyphCacheC1EN11QFontEngine11GlyphFormatERK10QTransform@Qt_5_PRIVATE_API 5.3.0 1
- _ZN24QOpenGLTextureGlyphCacheC2EN11QFontEngine11GlyphFormatERK10QTransform@Qt_5_PRIVATE_API 5.3.0 1
+ _ZN24QOpenGLTextureGlyphCacheC1EN11QFontEngine11GlyphFormatERK10QTransformRK6QColor@Qt_5_PRIVATE_API 5.12.5 1
+ _ZN24QOpenGLTextureGlyphCacheC2EN11QFontEngine11GlyphFormatERK10QTransformRK6QColor@Qt_5_PRIVATE_API 5.12.5 1
  _ZN24QOpenGLTextureGlyphCacheD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN24QOpenGLTextureGlyphCacheD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN24QOpenGLTextureGlyphCacheD2Ev@Qt_5_PRIVATE_API 5.0.2 1
@@ -5462,7 +5456,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZNK10QZipWriter6existsEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK10QZipWriter6statusEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK11QFocusEvent6reasonEv@Qt_5 5.0.2
- _ZNK11QFontEngine10glyphCacheEPKvNS_11GlyphFormatERK10QTransform@Qt_5_PRIVATE_API 5.3.0 1
+ _ZNK11QFontEngine10glyphCacheEPKvNS_11GlyphFormatERK10QTransformRK6QColor@Qt_5_PRIVATE_API 5.12.5 1
  _ZNK11QFontEngine10glyphCountEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK11QFontEngine10propertiesEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK11QFontEngine12getSfntTableEj@Qt_5_PRIVATE_API 5.0.2 1
