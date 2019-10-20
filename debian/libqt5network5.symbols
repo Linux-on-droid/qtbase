@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.4 amd64 i386
+# SymbolsHelper-Confirmed: 5.12.5 alpha arm64 armel armhf hurd-i386 ia64 kfreebsd-i386 m68k mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sh4 sparc64 x32
 libQt5Network.so.5 libqt5network5 #MINVER#
 | libqt5network5 #MINVER#, qtbase-abi-5-12-5
 * Build-Depends-Package: qtbase5-dev
@@ -1388,9 +1388,11 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  (optional=templinst|subst)_ZNSt11_Deque_baseIjSaIjEE17_M_initialize_mapE{size_t}@Qt_5 5.8.0
  (optional=templinst)_ZNSt11_Deque_baseIjSaIjEED1Ev@Qt_5 5.8.0
  (optional=templinst)_ZNSt11_Deque_baseIjSaIjEED2Ev@Qt_5 5.8.0
+ (optional=templinst|arch=arm64 sh4|subst)_ZNSt15_Deque_iteratorIjRjPjEpLE{ssize_t}@Qt_5 5.12.5
  (optional=templinst)_ZNSt5dequeIjSaIjEE13_M_insert_auxIJRKjEEESt15_Deque_iteratorIjRjPjES8_DpOT_@Qt_5 5.8.0
  (optional=templinst)_ZNSt5dequeIjSaIjEE16_M_push_back_auxIJRKjEEEvDpOT_@Qt_5 5.9.1
  (optional=templinst|subst)_ZNSt5dequeIjSaIjEE17_M_reallocate_mapE{size_t}b@Qt_5 5.8.0
+ (optional=templinst|arch=alpha armel armhf powerpc ppc64 ppc64el s390x)_ZNSt5dequeIjSaIjEE5clearEv@Qt_5 5.12.5
  (optional=templinst)_ZNSt5dequeIjSaIjEE8_M_eraseESt15_Deque_iteratorIjRjPjE@Qt_5 5.8.0
  (optional=templinst)_ZNSt5dequeIjSaIjEE8_M_eraseESt15_Deque_iteratorIjRjPjES5_@Qt_5 5.8.0
  (optional=templinst)_ZNSt6vectorIhSaIhEE12emplace_backIJhEEERhDpOT_@Qt_5 5.9.1
@@ -1401,9 +1403,9 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  (optional=templinst)_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_@Qt_5 5.12.4
  (optional=templinst)_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Qt_5 5.10.0
  (optional=templinst)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.9.1
- (optional=templinst|arch=i386)_ZSt13move_backwardIjESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_@Qt_5 5.11.1
- (optional=templinst|arch=i386)_ZSt4moveIjESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_@Qt_5 5.11.1
- (optional=templinst|arch=armel armhf hurd-i386 i386 kfreebsd-i386 m68k mips mipsel powerpc)_ZSt4swapIN8QVariant7PrivateEENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS6_ESt18is_move_assignableIS6_EEE5valueEvE4typeERS6_SG_@Qt_5 5.11.3
+ (optional=templinst|arch=alpha armel armhf hurd-i386 i386 ia64 kfreebsd-i386 m68k mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64 x32)_ZSt13move_backwardIjESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_@Qt_5 5.11.1
+ (optional=templinst|arch=alpha armel armhf hurd-i386 i386 ia64 kfreebsd-i386 m68k mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64)_ZSt4moveIjESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_@Qt_5 5.11.1
+ (optional=templinst|arch=armel armhf hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc)_ZSt4swapIN8QVariant7PrivateEENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS6_ESt18is_move_assignableIS6_EEE5valueEvE4typeERS6_SG_@Qt_5 5.11.3
  _ZTI10QDnsLookup@Qt_5 5.0.2
  _ZTI10QSslSocket@Qt_5 5.0.2
  _ZTI10QTcpServer@Qt_5 5.0.2
