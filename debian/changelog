@@ -1,3 +1,10 @@
+qtbase-opensource-src-gles (5.12.5+dfsg-1) unstable; urgency=medium
+
+  * Merge qtbase-opensource-src 5.12.5+dfsg-2 upload.
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 21 Oct 2019 18:24:59 +0300
+
 qtbase-opensource-src (5.12.5+dfsg-2) unstable; urgency=medium
 
   * Update symbols files from buildds’ logs.
