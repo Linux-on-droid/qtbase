@@ -282,3 +282,6 @@ override_dh_makeshlibs:
 	dh_makeshlibs -V -XlibQt5EglFSDeviceIntegration -XlibQt5EglFsKmsSupport -XlibQt5XcbQpa
 
 override_dh_auto_test:
+
+override_dh_strip_nondeterminism:
+	dh_strip_nondeterminism --verbose -X.png

@@ -1,3 +1,24 @@
+qtbase-opensource-src (5.12.5+dfsg-2) unstable; urgency=medium
+
+  * Update symbols files from buildds’ logs.
+  * Add support for PostgreSQL 12 (closes: #941763).
+  * Bump Standards-Version to 4.4.1, no changes needed.
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 20 Oct 2019 22:33:00 +0300
+
+qtbase-opensource-src (5.12.5+dfsg-1) experimental; urgency=medium
+
+  * Merge 5.11.3+dfsg1-3 and -4 uploads from unstable.
+  * New upstream release.
+  * Drop hidpi_crash.diff, applied in the new release.
+  * Refresh debian/patches/docs_fixes.diff.
+  * Add two new files to debian/qt5-qmake.install.
+  * Update symbols files from the current build logs.
+  * Bump ABI version to qtbase-abi-5-12-5.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 13 Sep 2019 10:35:33 +0300
+
 qtbase-opensource-src-gles (5.12.4+dfsg-1) experimental; urgency=medium
 
   * Merge qtbase-opensource-src 5.12.4+dfsg-4 upload.
@@ -128,6 +149,21 @@ qtbase-opensource-src (5.12.2+dfsg-1) experimental; urgency=medium
   * Add new files from upstream.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Fri, 15 Mar 2019 20:47:10 +0300
+
+qtbase-opensource-src (5.11.3+dfsg1-4) unstable; urgency=medium
+
+  * Backport upstream patch to fix build with GCC 9 (closes: #925812).
+  * Backport upstream patch to silence some GCC 9 warnings.
+  * Update debian/libqt5network5.symbols from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 15 Aug 2019 17:15:39 +0300
+
+qtbase-opensource-src (5.11.3+dfsg1-3) unstable; urgency=medium
+
+  * Tell dh_strip_nondeterminism to ignore .png files (closes: #934215).
+  * Update symbols files from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 13 Aug 2019 14:21:20 +0300
 
 qtbase-opensource-src (5.11.3+dfsg1-2) unstable; urgency=medium
 
