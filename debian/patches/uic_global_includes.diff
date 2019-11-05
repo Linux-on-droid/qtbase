@@ -1,0 +1,63 @@
+Description: Ignore non-existent .ui file dependencies
+ Commit 80dea664 broke .ui files with global includes that are not part
+ of the project, because we blindly added every file path that falls
+ out of 'uic -d' as dependency.
+ .
+ Introduce the extra compiler CONFIG flag dep_existing_only to bring
+ back the old behavior that ignores non-existent dependencies and set
+ it for uic.
+Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=90779d96adfa51a3
+Last-Update: 2019-11-05
+
+--- a/mkspecs/features/uic.prf
++++ b/mkspecs/features/uic.prf
+@@ -9,7 +9,7 @@ uic.depend_command = $$QMAKE_UIC_DEP -d
+ uic.output = $$UI_DIR/$${QMAKE_MOD_UIC}${QMAKE_FILE_BASE}$${first(QMAKE_EXT_H)}
+ uic.input = FORMS
+ uic.variable_out = GENERATED_FILES
+-uic.CONFIG += no_link target_predeps dep_lines
++uic.CONFIG += no_link target_predeps dep_lines dep_existing_only
+ uic.name = UIC ${QMAKE_FILE_IN}
+ silent:uic.commands = @echo uic ${QMAKE_FILE_IN} && $$uic.commands
+ QMAKE_EXTRA_COMPILERS += uic
+--- a/qmake/doc/src/qmake-manual.qdoc
++++ b/qmake/doc/src/qmake-manual.qdoc
+@@ -4729,6 +4729,10 @@
+         \li The dependencies for the output only get generated from the depends
+             member and from nowhere else.
+     \row
++        \li dep_existing_only
++        \li Every dependency that is a result of .depend_command is checked for
++            existence. Non-existing dependencies are ignored.
++    \row
+         \li dep_lines
+         \li The output from the .depend_command is interpreted to be one file
+             per line. The default is to split on whitespace and is maintained
+--- a/qmake/generators/makefile.cpp
++++ b/qmake/generators/makefile.cpp
+@@ -1984,6 +1984,7 @@ MakefileGenerator::writeExtraCompilerTar
+             }
+             t << endl;
+         }
++        const bool existingDepsOnly = config.contains("dep_existing_only");
+         QStringList tmp_dep = project->values(ProKey(*it + ".depends")).toQStringList();
+         if (config.indexOf("combine") != -1) {
+             if (tmp_out.contains(QRegExp("(^|[^$])\\$\\{QMAKE_(?!VAR_)"))) {
+@@ -2025,6 +2026,8 @@ MakefileGenerator::writeExtraCompilerTar
+                                             warn_msg(WarnDeprecated, ".depend_command for extra compiler %s"
+                                                                      " prints paths relative to source directory",
+                                                                      (*it).toLatin1().constData());
++                                        else if (existingDepsOnly)
++                                            file.clear();
+                                         else
+                                             file = absFile;  // fallback for generated resources
+                                     } else {
+@@ -2110,6 +2113,8 @@ MakefileGenerator::writeExtraCompilerTar
+                                         warn_msg(WarnDeprecated, ".depend_command for extra compiler %s"
+                                                                  " prints paths relative to source directory",
+                                                                  (*it).toLatin1().constData());
++                                    else if (existingDepsOnly)
++                                        file.clear();
+                                     else
+                                         file = absFile;  // fallback for generated resources
+                                 } else {
