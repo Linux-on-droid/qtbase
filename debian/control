@@ -422,6 +422,9 @@ Description: Qt 5 base development programs
  This package contains the development programs used for building Qt 5
  applications, such as moc, qdbuscpp2xml, qdbusxml2cpp, rcc,
  syncqt and uic.
+ .
+ We do not recommend depending on this package directly. Please depend
+ on qtbase5-dev instead.
 
 Package: qt5-qmake-bin
 Architecture: any
