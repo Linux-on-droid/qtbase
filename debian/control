@@ -332,7 +332,8 @@ Package: qtbase5-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
-Depends: libgl-dev [!armel !armhf],
+Depends: libegl-dev,
+         libgl-dev [!armel !armhf],
          libgles-dev [armel armhf],
          libglu1-mesa-dev [!armel !armhf] | libglu-dev [!armel !armhf],
          libqt5concurrent5 (= ${binary:Version}),
@@ -354,7 +355,6 @@ Depends: libgl-dev [!armel !armhf],
 Recommends: libqt5opengl5-dev (= ${binary:Version})
 Suggests: default-libmysqlclient-dev,
           firebird-dev,
-          libegl1-mesa-dev,
           libpq-dev,
           libsqlite3-dev,
           unixodbc-dev

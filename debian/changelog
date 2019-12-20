@@ -5,6 +5,7 @@ qtbase-opensource-src (5.12.5+dfsg-3) UNRELEASED; urgency=medium
     includes. Thanks to Alexander Volkov for the pointer!
   * Stop depending on libgl1-mesa-dev and libgles2-mesa-dev, which are
     transitional packages in mesa ≥ 19.3.0~rc6-1.
+  * Also make qtbase5-dev explicitly depend on libegl-dev.
   * Move the compatibility symlinks from qtbase5-dev-tools to qtbase5-dev
     (closes: #939653).
 
