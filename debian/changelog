@@ -1,15 +1,14 @@
-qtbase-opensource-src (5.12.5+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.5+dfsg-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport upstream patch to fix uic handling of .ui files with global
     includes. Thanks to Alexander Volkov for the pointer!
   * Stop depending on libgl1-mesa-dev and libgles2-mesa-dev, which are
     transitional packages in mesa ≥ 19.3.0~rc6-1.
-  * Also make qtbase5-dev explicitly depend on libegl-dev.
+  * Also make qtbase5-dev explicitly depend on libegl-dev (closes: #947117).
   * Move the compatibility symlinks from qtbase5-dev-tools to qtbase5-dev
     (closes: #939653).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 05 Nov 2019 17:16:34 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 21 Dec 2019 14:30:03 +0300
 
 qtbase-opensource-src (5.12.5+dfsg-2) unstable; urgency=medium
 
