@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.12.5+dfsg-5) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 22 Dec 2019 09:30:42 +0100
+
 qtbase-opensource-src (5.12.5+dfsg-4) unstable; urgency=medium
 
   * Build-depend on libdrm-dev and libxcb-glx0-dev, to fix FTBFS.
