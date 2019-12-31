@@ -4,6 +4,9 @@ qtbase-opensource-src (5.12.5+dfsg-5) UNRELEASED; urgency=medium
   * Limit the libdrm-dev build dependency as linux-any, as it is only useful
     on Linux. (Closes: #947675)
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to add RISC-V detection.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 22 Dec 2019 09:30:42 +0100
 
 qtbase-opensource-src (5.12.5+dfsg-4) unstable; urgency=medium
