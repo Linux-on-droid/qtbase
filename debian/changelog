@@ -1,14 +1,22 @@
-qtbase-opensource-src (5.12.5+dfsg-5) UNRELEASED; urgency=medium
-
-  [ Pino Toscano ]
-  * Limit the libdrm-dev build dependency as linux-any, as it is only useful
-    on Linux.
+qtbase-opensource-src (5.12.5+dfsg-6) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Split the doxygen .tags files into a new qtbase5-doc-dev package,
     see #922707.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 22 Dec 2019 09:30:42 +0100
+
+qtbase-opensource-src (5.12.5+dfsg-5) unstable; urgency=medium
+
+  [ Pino Toscano ]
+  * Limit the libdrm-dev build dependency as linux-any, as it is only useful
+    on Linux. (Closes: #947675)
+
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to add RISC-V detection.
+  * Update debian/libqt5network5.symbols from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 31 Dec 2019 14:19:15 +0300
 
 qtbase-opensource-src (5.12.5+dfsg-4) unstable; urgency=medium
 

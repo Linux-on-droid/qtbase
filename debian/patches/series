@@ -4,6 +4,7 @@ qdockwidget_undocked_notification.diff
 docs_fixes.diff
 postgresql_12.diff
 uic_global_includes.diff
+riscv.diff
 
 # Debian specific.
 gnukfreebsd.diff
