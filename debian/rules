@@ -59,6 +59,8 @@ platform_arg = $(platform_os)-g++
 ifneq ($(DEB_BUILD_ARCH),$(DEB_HOST_ARCH))
 platform_arg = $(platform_os)-$(DEB_HOST_GNU_CPU)-$(DEB_HOST_ARCH_LIBC)$(filter-out base,$(DEB_HOST_ARCH_ABI))-g++
 endif
+
+# Refuse cross building with a qmake whose version differs from the package.
 ifneq (,$(filter cross,$(DEB_BUILD_PROFILES)))
 extra_configure_opts += -external-hostbindir /usr/lib/qt5/bin
 endif
