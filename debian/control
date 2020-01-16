@@ -66,6 +66,7 @@ Build-Depends: debhelper (>= 11),
                libxrender-dev,
                pkg-kde-tools (>= 0.15.17~),
                publicsuffix,
+               qt5-qmake-bin <cross>,
                unixodbc-dev,
                zlib1g-dev
 Build-Depends-Indep: qdoc-qt5 (>= 5.12) <!nodoc>,
