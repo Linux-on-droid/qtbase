@@ -3,6 +3,9 @@ qtbase-opensource-src (5.12.5+dfsg-6) unstable; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Split the doxygen .tags files into a new qtbase5-doc-dev package,
     see #922707.
+  * Make relevant development packages depend upon
+    qtbase5-dev | qtbase5-gles-dev. This allows building packages with either of
+    them (Closes: #949028).
 
   [ Helmut Grohne ]
   * Improve cross building: (Closes: #876131)
