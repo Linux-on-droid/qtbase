@@ -13,7 +13,7 @@ qtbase-opensource-src (5.12.5+dfsg-6) unstable; urgency=medium
     + Pass a cross platform_arg.
     + Verify that the qmake self-dependency exactly matches the version.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 22 Dec 2019 09:30:42 +0100
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 22 Jan 2020 14:54:20 -0300
 
 qtbase-opensource-src (5.12.5+dfsg-5) unstable; urgency=medium
 
