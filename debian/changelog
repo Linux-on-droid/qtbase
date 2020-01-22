@@ -8,6 +8,11 @@ qtbase-opensource-src (5.12.5+dfsg-5) unstable; urgency=medium
   * Backport upstream patch to add RISC-V detection.
   * Update debian/libqt5network5.symbols from buildds’ logs.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Make relevant development packages depend upon
+    qtbase5-dev | qtbase5-gles-dev. This allows building packages with either of
+    them (Closes: #949028).
+
  -- Dmitry Shachnev <mitya57@debian.org>  Tue, 31 Dec 2019 14:19:15 +0300
 
 qtbase-opensource-src (5.12.5+dfsg-4) unstable; urgency=medium
