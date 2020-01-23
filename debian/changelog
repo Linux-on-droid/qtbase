@@ -1,6 +1,9 @@
-qtbase-opensource-src (5.12.5+dfsg-7) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.5+dfsg-7) unstable; urgency=medium
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 23 Jan 2020 09:07:48 -0300
+  * Changeless upload to allow arch:all binary packages being built after
+    passing NEW queue.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 23 Jan 2020 09:08:39 -0300
 
 qtbase-opensource-src (5.12.5+dfsg-6) unstable; urgency=medium
 
