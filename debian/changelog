@@ -1,3 +1,20 @@
+qtbase-opensource-src (5.12.5+dfsg-6) unstable; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Split the doxygen .tags files into a new qtbase5-doc-dev package,
+    see #922707.
+  * Make relevant development packages depend upon
+    qtbase5-dev | qtbase5-gles-dev. This allows building packages with either of
+    them (Closes: #949028).
+
+  [ Helmut Grohne ]
+  * Improve cross building: (Closes: #876131)
+    + Pass --external-hostbindir to use the native qmake.
+    + Pass a cross platform_arg.
+    + Verify that the qmake self-dependency exactly matches the version.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 22 Jan 2020 14:54:20 -0300
+
 qtbase-opensource-src (5.12.5+dfsg-5) unstable; urgency=medium
 
   [ Pino Toscano ]

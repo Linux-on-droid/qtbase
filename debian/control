@@ -66,6 +66,7 @@ Build-Depends: debhelper (>= 11),
                libxrender-dev,
                pkg-kde-tools (>= 0.15.17~),
                publicsuffix,
+               qt5-qmake-bin <cross>,
                unixodbc-dev,
                zlib1g-dev
 Build-Depends-Indep: qdoc-qt5 (>= 5.12) <!nodoc>,
@@ -382,7 +383,7 @@ Multi-Arch: same
 Section: libdevel
 Depends: libinput-dev [linux-any],
          libxkbcommon-dev,
-         qtbase5-dev (= ${binary:Version}),
+         qtbase5-dev (= ${binary:Version}) | qtbase5-gles-dev (>= ${source:Upstream-Version}),
          ${misc:Depends}
 Breaks: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
 Replaces: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
@@ -400,7 +401,7 @@ Architecture: any
 Multi-Arch: same
 Section: libdevel
 Depends: libqt5opengl5 (= ${binary:Version}),
-         qtbase5-dev (= ${binary:Version}),
+         qtbase5-dev (= ${binary:Version}) | qtbase5-gles-dev (>= ${source:Upstream-Version}),
          ${misc:Depends}
 Breaks: qtbase5-dev (<< 5.11.3+dfsg-4~)
 Replaces: qtbase5-dev (<< 5.11.3+dfsg-4~)
@@ -483,7 +484,9 @@ Package: qt5-default
 Architecture: any
 Multi-Arch: same
 Section: libdevel
-Depends: qtbase5-dev, qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}
+Depends: qtbase5-dev (= ${binary:Version}) | qtbase5-gles-dev (>= ${source:Upstream-Version}),
+         qtchooser (>= 55-gc9562a1-1~),
+         ${misc:Depends}
 Conflicts: qt4-default
 Suggests: qt5-qmake, qtbase5-dev-tools
 Description: Qt 5 development defaults package
@@ -521,3 +524,16 @@ Description: Qt 5 base HTML documentation
  .
  This package contains the HTML documentation for the Qt 5 base
  libraries.
+
+Package: qtbase5-doc-dev
+Build-Profiles: <!nodoc>
+Architecture: all
+Section: libdevel
+Depends: ${misc:Depends}
+Breaks: qtbase5-doc-html (<< 5.12.5+dfsg-5~)
+Replaces: qtbase5-doc-html (<< 5.12.5+dfsg-5~)
+Description: Qt 5 base tags files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the doxygen tags files for the qtbase documentation.
