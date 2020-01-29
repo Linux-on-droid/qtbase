@@ -1,5 +1,4 @@
 # Backported from upstream.
-uic_global_includes.diff
 riscv.diff
 
 # Debian specific.
