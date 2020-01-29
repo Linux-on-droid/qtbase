@@ -16,6 +16,9 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
     - qdoc_default_incdirs.diff
   * Add libmd4c-dev as a build dependency, required for markdown support.
 
+  [ Dmitry Shachnev ]
+  * Update path to qbytearray/rfc3252.txt in Files-Excluded list.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jan 2020 21:51:33 -0300
 
 qtbase-opensource-src (5.12.5+dfsg-7) unstable; urgency=medium
