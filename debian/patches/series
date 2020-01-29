@@ -1,5 +1,4 @@
 # Backported from upstream.
-riscv.diff
 
 # Debian specific.
 gnukfreebsd.diff
