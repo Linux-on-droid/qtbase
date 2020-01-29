@@ -9,6 +9,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
     - postgresql_12.diff
     - uic_global_includes.diff
     - riscv.diff
+  * Refresh gnukfreebsd.diff.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jan 2020 21:51:33 -0300
 
