@@ -2,6 +2,8 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
+  * Remove patches already applied upstream:
+    - mysql_free_results_when_qsqlquery_finished_is_called.patch
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jan 2020 21:51:33 -0300
 
