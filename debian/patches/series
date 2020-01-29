@@ -1,5 +1,4 @@
 # Backported from upstream.
-postgresql_12.diff
 uic_global_includes.diff
 riscv.diff
 

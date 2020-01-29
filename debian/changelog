@@ -6,6 +6,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
     - mysql_free_results_when_qsqlquery_finished_is_called.patch
     - qdockwidget_undocked_notification.diff
     - docs_fixes.diff
+    - postgresql_12.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jan 2020 21:51:33 -0300
 
