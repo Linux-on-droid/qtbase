@@ -13,6 +13,8 @@ qtbase-opensource-src (5.12.5+dfsg-8) UNRELEASED; urgency=medium
   * Backport fixes for two vulnerabilities:
     - CVE-2020-0569: Do not load plugin from the CWD.
     - CVE-2020-0570: Qt tries to load invalid library from CWD.
+  * Make Qt 5 the default configuration in qtchooser, by installing the
+    qt-default/qtchooser/default.conf symlink in libqt5core5a package.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Jan 2020 13:08:57 +0300
 
