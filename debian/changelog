@@ -18,6 +18,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Update path to qbytearray/rfc3252.txt in Files-Excluded list.
+  * Install the qt-default/qtchooser/default.conf symlink here.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jan 2020 21:51:33 -0300
 
