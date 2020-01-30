@@ -10,6 +10,9 @@ qtbase-opensource-src (5.12.5+dfsg-8) UNRELEASED; urgency=medium
   * Remove explicit libqt5gui5 | libqt5gui5-gles dependencies from the
     platformtheme packages. Rely on ${shlibs:Depends} instead.
   * Override the remaining version-substvar-for-external-package error.
+  * Backport fixes for two vulnerabilities:
+    - CVE-2020-0569: Do not load plugin from the CWD.
+    - CVE-2020-0570: Qt tries to load invalid library from CWD.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Jan 2020 13:08:57 +0300
 
