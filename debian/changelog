@@ -1,5 +1,12 @@
 qtbase-opensource-src (5.12.5+dfsg-8) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Revert adding alternative qtbase5-gles-dev dependencies:
+    - For qtbase5-private-dev: it is wrong, those who need private headers
+      and OpenGL ES specific API should use qtbase5-private-gles-dev, not
+      qtbase5-private-dev.
+    - For libqt5opengl5-dev: it does not help, libqt5opengl5 uses desktop
+      OpenGL specific symbols, so it is not installable with libqt5gui5-gles.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Jan 2020 13:08:57 +0300
 

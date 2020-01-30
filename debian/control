@@ -383,7 +383,7 @@ Multi-Arch: same
 Section: libdevel
 Depends: libinput-dev [linux-any],
          libxkbcommon-dev,
-         qtbase5-dev (= ${binary:Version}) | qtbase5-gles-dev (>= ${source:Upstream-Version}),
+         qtbase5-dev (= ${binary:Version}),
          ${misc:Depends}
 Breaks: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
 Replaces: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
@@ -401,7 +401,7 @@ Architecture: any
 Multi-Arch: same
 Section: libdevel
 Depends: libqt5opengl5 (= ${binary:Version}),
-         qtbase5-dev (= ${binary:Version}) | qtbase5-gles-dev (>= ${source:Upstream-Version}),
+         qtbase5-dev (= ${binary:Version}),
          ${misc:Depends}
 Breaks: qtbase5-dev (<< 5.11.3+dfsg-4~)
 Replaces: qtbase5-dev (<< 5.11.3+dfsg-4~)
