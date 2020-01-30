@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.12.5+dfsg-8) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.5+dfsg-8) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Revert adding alternative qtbase5-gles-dev dependencies:
     - For qtbase5-private-dev: it is wrong, those who need private headers
       and OpenGL ES specific API should use qtbase5-private-gles-dev, not
@@ -17,7 +16,7 @@ qtbase-opensource-src (5.12.5+dfsg-8) UNRELEASED; urgency=medium
     qt-default/qtchooser/default.conf symlink in libqt5core5a package.
   * Bump Standards-Version to 4.5.0, no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Jan 2020 13:08:57 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 31 Jan 2020 00:03:38 +0300
 
 qtbase-opensource-src (5.12.5+dfsg-7) unstable; urgency=medium
 
