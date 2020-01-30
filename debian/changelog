@@ -7,6 +7,8 @@ qtbase-opensource-src (5.12.5+dfsg-8) UNRELEASED; urgency=medium
       qtbase5-private-dev.
     - For libqt5opengl5-dev: it does not help, libqt5opengl5 uses desktop
       OpenGL specific symbols, so it is not installable with libqt5gui5-gles.
+  * Remove explicit libqt5gui5 | libqt5gui5-gles dependencies from the
+    platformtheme packages. Rely on ${shlibs:Depends} instead.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Jan 2020 13:08:57 +0300
 
