@@ -73,7 +73,7 @@ Build-Depends: debhelper (>= 11),
 Build-Depends-Indep: qdoc-qt5 (>= 5.12) <!nodoc>,
                      qhelpgenerator-qt5 (>= 5.12.4~) <!nodoc>,
                      qtattributionsscanner-qt5 <!nodoc>
-Standards-Version: 4.4.1
+Standards-Version: 4.5.0
 Homepage: https://www.qt.io/developers/
 Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qtbase.git
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtbase
@@ -116,9 +116,7 @@ Package: qt5-gtk-platformtheme
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: libqt5gui5 (= ${binary:Version}) | libqt5gui5-gles (>= ${source:Upstream-Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 GTK+ 3 platform theme
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -142,9 +140,7 @@ Package: qt5-xdgdesktopportal-platformtheme
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: libqt5gui5 (= ${binary:Version}) | libqt5gui5-gles (>= ${source:Upstream-Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 XDG Desktop Portal platform theme
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -386,7 +382,7 @@ Multi-Arch: same
 Section: libdevel
 Depends: libinput-dev [linux-any],
          libxkbcommon-dev,
-         qtbase5-dev (= ${binary:Version}) | qtbase5-gles-dev (>= ${source:Upstream-Version}),
+         qtbase5-dev (= ${binary:Version}),
          ${misc:Depends}
 Breaks: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
 Replaces: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
@@ -404,7 +400,7 @@ Architecture: any
 Multi-Arch: same
 Section: libdevel
 Depends: libqt5opengl5 (= ${binary:Version}),
-         qtbase5-dev (= ${binary:Version}) | qtbase5-gles-dev (>= ${source:Upstream-Version}),
+         qtbase5-dev (= ${binary:Version}),
          ${misc:Depends}
 Breaks: qtbase5-dev (<< 5.11.3+dfsg-4~)
 Replaces: qtbase5-dev (<< 5.11.3+dfsg-4~)
