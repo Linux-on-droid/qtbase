@@ -70,8 +70,8 @@ Build-Depends: debhelper (>= 11),
                qt5-qmake-bin <cross>,
                unixodbc-dev,
                zlib1g-dev
-Build-Depends-Indep: qdoc-qt5 (>= 5.12) <!nodoc>,
-                     qhelpgenerator-qt5 (>= 5.12.4~) <!nodoc>,
+Build-Depends-Indep: qdoc-qt5 (>= 5.14~) <!nodoc>,
+                     qhelpgenerator-qt5 (>= 5.14~) <!nodoc>,
                      qtattributionsscanner-qt5 <!nodoc>
 Standards-Version: 4.5.0
 Homepage: https://www.qt.io/developers/
