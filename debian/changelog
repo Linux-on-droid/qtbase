@@ -15,6 +15,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
     - nonlinux_utime.diff
     - qdoc_default_incdirs.diff
   * Add libmd4c-dev as a build dependency, required for markdown support.
+  * Bump ABI version to qtbase-abi-5-14-1.
 
   [ Dmitry Shachnev ]
   * Update path to qbytearray/rfc3252.txt in Files-Excluded list.
