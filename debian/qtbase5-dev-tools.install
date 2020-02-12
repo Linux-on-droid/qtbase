@@ -6,4 +6,5 @@ usr/lib/qt5/bin/qlalr
 usr/lib/qt5/bin/qvkgen
 usr/lib/qt5/bin/rcc
 usr/lib/qt5/bin/syncqt.pl
+usr/lib/qt5/bin/tracegen
 usr/lib/qt5/bin/uic

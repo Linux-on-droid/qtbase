@@ -5,11 +5,7 @@ usr/lib/*/qt5/mkspecs/aix-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/aix-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/android-clang/qmake.conf
 usr/lib/*/qt5/mkspecs/android-clang/qplatformdefs.h
-usr/lib/*/qt5/mkspecs/android-g++/qmake.conf
-usr/lib/*/qt5/mkspecs/android-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/common/aix/qplatformdefs.h
-usr/lib/*/qt5/mkspecs/common/android-base-head.conf
-usr/lib/*/qt5/mkspecs/common/android-base-tail.conf
 usr/lib/*/qt5/mkspecs/common/android/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/common/angle.conf
 usr/lib/*/qt5/mkspecs/common/bsd/bsd.conf
@@ -52,6 +48,8 @@ usr/lib/*/qt5/mkspecs/common/qcc-base-qnx-x86.conf
 usr/lib/*/qt5/mkspecs/common/qcc-base-qnx.conf
 usr/lib/*/qt5/mkspecs/common/qcc-base.conf
 usr/lib/*/qt5/mkspecs/common/qnx/qplatformdefs.h
+usr/lib/*/qt5/mkspecs/common/rtems-base.conf
+usr/lib/*/qt5/mkspecs/common/rtems/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/common/sanitize.conf
 usr/lib/*/qt5/mkspecs/common/shell-unix.conf
 usr/lib/*/qt5/mkspecs/common/shell-win32.conf
@@ -63,6 +61,7 @@ usr/lib/*/qt5/mkspecs/common/uikit/clang.conf
 usr/lib/*/qt5/mkspecs/common/uikit/qmake.conf
 usr/lib/*/qt5/mkspecs/common/unix.conf
 usr/lib/*/qt5/mkspecs/common/watchos.conf
+usr/lib/*/qt5/mkspecs/common/windows-desktop.conf
 usr/lib/*/qt5/mkspecs/common/windows-vulkan.conf
 usr/lib/*/qt5/mkspecs/common/winrt_winphone/assets/logo_150x150.png
 usr/lib/*/qt5/mkspecs/common/winrt_winphone/assets/logo_30x30.png
@@ -121,6 +120,8 @@ usr/lib/*/qt5/mkspecs/devices/linux-imx6-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/devices/linux-imx6-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/devices/linux-imx7-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/devices/linux-imx7-g++/qplatformdefs.h
+usr/lib/*/qt5/mkspecs/devices/linux-imx8-g++/qmake.conf
+usr/lib/*/qt5/mkspecs/devices/linux-imx8-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/devices/linux-jetson-tk1-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/devices/linux-jetson-tk1-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/devices/linux-jetson-tk1-pro-g++/qmake.conf
@@ -144,6 +145,8 @@ usr/lib/*/qt5/mkspecs/devices/linux-rasp-pi3-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/devices/linux-rasp-pi3-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/devices/linux-rasp-pi3-vc4-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/devices/linux-rasp-pi3-vc4-g++/qplatformdefs.h
+usr/lib/*/qt5/mkspecs/devices/linux-rasp-pi4-v3d-g++/qmake.conf
+usr/lib/*/qt5/mkspecs/devices/linux-rasp-pi4-v3d-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/devices/linux-rcar-h2-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/devices/linux-rcar-h2-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/devices/linux-rcar-m3-g++/qmake.conf
@@ -161,6 +164,8 @@ usr/lib/*/qt5/mkspecs/devices/linux-tinkerboard-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/dummy/qmake.conf
 usr/lib/*/qt5/mkspecs/features/android/android.prf
 usr/lib/*/qt5/mkspecs/features/android/android_deployment_settings.prf
+usr/lib/*/qt5/mkspecs/features/android/default_pre.prf
+usr/lib/*/qt5/mkspecs/features/android/resolve_config.prf
 usr/lib/*/qt5/mkspecs/features/android/resolve_target.prf
 usr/lib/*/qt5/mkspecs/features/android/sdk.prf
 usr/lib/*/qt5/mkspecs/features/android/spec_post.prf
@@ -170,6 +175,7 @@ usr/lib/*/qt5/mkspecs/features/cmake_functions.prf
 usr/lib/*/qt5/mkspecs/features/cmdline.prf
 usr/lib/*/qt5/mkspecs/features/configure.prf
 usr/lib/*/qt5/mkspecs/features/configure_base.prf
+usr/lib/*/qt5/mkspecs/features/coverage.prf
 usr/lib/*/qt5/mkspecs/features/create_cmake.prf
 usr/lib/*/qt5/mkspecs/features/ctest_testcase.prf
 usr/lib/*/qt5/mkspecs/features/ctest_testcase_common.prf
@@ -177,12 +183,15 @@ usr/lib/*/qt5/mkspecs/features/ctest_testcase_installed.prf
 usr/lib/*/qt5/mkspecs/features/data/cmake/ExtraSourceIncludes.cmake.in
 usr/lib/*/qt5/mkspecs/features/data/cmake/Qt5BasicConfig.cmake.in
 usr/lib/*/qt5/mkspecs/features/data/cmake/Qt5ConfigVersion.cmake.in
+usr/lib/*/qt5/mkspecs/features/data/cmake/Qt5ImportPlugin.cpp.in
 usr/lib/*/qt5/mkspecs/features/data/cmake/Qt5PluginTarget.cmake.in
 usr/lib/*/qt5/mkspecs/features/data/configure.json
 usr/lib/*/qt5/mkspecs/features/data/dummy.cpp
 usr/lib/*/qt5/mkspecs/features/data/dumpvcvars.bat
 usr/lib/*/qt5/mkspecs/features/data/mac/objc_namespace.sh
 usr/lib/*/qt5/mkspecs/features/data/macros.cpp
+usr/lib/*/qt5/mkspecs/features/data/testserver/Dockerfile
+usr/lib/*/qt5/mkspecs/features/data/testserver/docker-compose-common.yml
 usr/lib/*/qt5/mkspecs/features/data/unix/findclasslist.pl
 usr/lib/*/qt5/mkspecs/features/dbusadaptors.prf
 usr/lib/*/qt5/mkspecs/features/dbuscommon.pri
@@ -212,6 +221,7 @@ usr/lib/*/qt5/mkspecs/features/mac/asset_catalogs.prf
 usr/lib/*/qt5/mkspecs/features/mac/default_post.prf
 usr/lib/*/qt5/mkspecs/features/mac/default_pre.prf
 usr/lib/*/qt5/mkspecs/features/mac/mac.prf
+usr/lib/*/qt5/mkspecs/features/mac/no_warn_empty_obj_files.prf
 usr/lib/*/qt5/mkspecs/features/mac/objective_c.prf
 usr/lib/*/qt5/mkspecs/features/mac/rez.prf
 usr/lib/*/qt5/mkspecs/features/mac/sdk.mk
@@ -258,6 +268,9 @@ usr/lib/*/qt5/mkspecs/features/qt_tracepoints.prf
 usr/lib/*/qt5/mkspecs/features/resolve_config.prf
 usr/lib/*/qt5/mkspecs/features/resolve_target.prf
 usr/lib/*/qt5/mkspecs/features/resources.prf
+usr/lib/*/qt5/mkspecs/features/resources_functions.prf
+usr/lib/*/qt5/mkspecs/features/rtti.prf
+usr/lib/*/qt5/mkspecs/features/rtti_off.prf
 usr/lib/*/qt5/mkspecs/features/sanitizer.prf
 usr/lib/*/qt5/mkspecs/features/silent.prf
 usr/lib/*/qt5/mkspecs/features/simd.prf
@@ -297,10 +310,13 @@ usr/lib/*/qt5/mkspecs/features/unix/x11.prf
 usr/lib/*/qt5/mkspecs/features/unix/x11inc.prf
 usr/lib/*/qt5/mkspecs/features/unix/x11lib.prf
 usr/lib/*/qt5/mkspecs/features/unix/x11sm.prf
+usr/lib/*/qt5/mkspecs/features/unsupported/testserver.prf
 usr/lib/*/qt5/mkspecs/features/use_c_linker.prf
 usr/lib/*/qt5/mkspecs/features/vxworks.prf
 usr/lib/*/qt5/mkspecs/features/warn_off.prf
 usr/lib/*/qt5/mkspecs/features/warn_on.prf
+usr/lib/*/qt5/mkspecs/features/wasm/default_pre.prf
+usr/lib/*/qt5/mkspecs/features/wasm/emcc_ver.prf
 usr/lib/*/qt5/mkspecs/features/wasm/wasm.prf
 usr/lib/*/qt5/mkspecs/features/wayland-scanner.prf
 usr/lib/*/qt5/mkspecs/features/win32/console.prf
@@ -310,8 +326,6 @@ usr/lib/*/qt5/mkspecs/features/win32/idcidl.prf
 usr/lib/*/qt5/mkspecs/features/win32/msvc_mp.prf
 usr/lib/*/qt5/mkspecs/features/win32/opengl.prf
 usr/lib/*/qt5/mkspecs/features/win32/qt_dll.prf
-usr/lib/*/qt5/mkspecs/features/win32/rtti.prf
-usr/lib/*/qt5/mkspecs/features/win32/rtti_off.prf
 usr/lib/*/qt5/mkspecs/features/win32/separate_debug_info.prf
 usr/lib/*/qt5/mkspecs/features/win32/stl.prf
 usr/lib/*/qt5/mkspecs/features/win32/stl_off.prf
@@ -347,6 +361,10 @@ usr/lib/*/qt5/mkspecs/linux-aarch64-gnu-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/linux-aarch64-gnu-g++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/linux-arm-gnueabi-g++/qmake.conf
 usr/lib/*/qt5/mkspecs/linux-arm-gnueabi-g++/qplatformdefs.h
+usr/lib/*/qt5/mkspecs/linux-clang-32/qmake.conf
+usr/lib/*/qt5/mkspecs/linux-clang-32/qplatformdefs.h
+usr/lib/*/qt5/mkspecs/linux-clang-libc++-32/qmake.conf
+usr/lib/*/qt5/mkspecs/linux-clang-libc++-32/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/linux-clang-libc++/qmake.conf
 usr/lib/*/qt5/mkspecs/linux-clang-libc++/qplatformdefs.h
 usr/lib/*/qt5/mkspecs/linux-clang/qmake.conf
