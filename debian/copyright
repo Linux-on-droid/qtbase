@@ -1392,6 +1392,7 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/corelib/text/qstringalgorithms.h
        src/corelib/text/qstringview.cpp
        src/corelib/thread/qlocking_p.h
+       src/corelib/tools/qcontainertools_impl.h
        src/corelib/tools/qscopeguard.h
        src/gui/opengl/qopengldebug.cpp
        src/gui/opengl/qopengldebug.h
@@ -1500,11 +1501,6 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/tools/tracegen/tracegen.cpp
        tests/auto/corelib/itemmodels/qconcatenatetablesproxymodel/tst_qconcatenatetablesproxymodel.cpp
 Copyright: 2011-2019 Klarälvdalens Datakonsult AB, a KDAB Group company
-License: LGPL-3 or GPL-2
-
-Files: src/corelib/tools/qcontainertools_impl.h
-Copyright: 2018 Klarälvdalens Datakonsult AB, a KDAB Group company
-           2018 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/kernel/qsharedmemory_posix.cpp

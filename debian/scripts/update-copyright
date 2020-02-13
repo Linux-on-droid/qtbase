@@ -174,7 +174,7 @@ def read_input(root_directory):
         if license not in data:
             data[license] = {}
         license_dict = data[license]
-        authors_tuple = tuple(sorted(author[2] for author in authors))
+        authors_tuple = tuple(sorted({author[2] for author in authors}))
         if authors_tuple not in license_dict:
             license_dict[authors_tuple] = CopyrightInfo()
         license_dict[authors_tuple].add_file(authors, filename)

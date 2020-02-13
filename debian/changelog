@@ -21,6 +21,8 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Update path to qbytearray/rfc3252.txt in Files-Excluded list.
   * Update debian/copyright using debian/scripts/update-copyright.
+  * debian/scripts/update-copyright: Correctly handle repeating authors
+    in the same file.
 
   [ Alexander Volkov ]
   * Update install files for the new version.
