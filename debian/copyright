@@ -163,6 +163,18 @@ Copyright: 2016 Keith Gardner <kreios4004@gmail.com>
            2016 The Qt Company Ltd.
 License: BSD-3-clause
 
+Files: tests/auto/cmake/mockplugins/mock1plugin/qmock1plugin.h
+       tests/auto/cmake/mockplugins/mock2plugin/qmock2plugin.h
+       tests/auto/cmake/mockplugins/mock3plugin/qmock3plugin.h
+       tests/auto/cmake/mockplugins/mock4plugin/qmock4plugin.h
+       tests/auto/cmake/mockplugins/mock5plugin/qmock5plugin.h
+       tests/auto/cmake/mockplugins/mock6plugin/qmock6plugin.h
+       tests/auto/cmake/mockplugins/mockplugins1/qmockplugin.h
+       tests/auto/cmake/mockplugins/mockplugins3/qmockauxplugin.h
+       tests/auto/cmake/test_import_plugins/main.cpp
+Copyright: 2018 Kitware, Inc.
+License: BSD-3-clause
+
 Files: examples/widgets/itemviews/flattreeview/main.cpp
        src/corelib/doc/snippets/code/src_corelib_tools_qscopeguard.cpp
        src/corelib/doc/snippets/code/src_corelib_tools_qstringiterator.cpp
@@ -226,11 +238,11 @@ License: GFDL-NIV-1.3
 
 Files: src/testlib/doc/src/qttestlib-manual.qdoc
 Copyright: 2016 Intel Corporation
-           2016 The Qt Company Ltd.
+           2019 The Qt Company Ltd.
 License: GFDL-NIV-1.3
 
-Files: src/corelib/tools/qscopeguard.qdoc
-       src/corelib/tools/qstringiterator.qdoc
+Files: src/corelib/text/qstringiterator.qdoc
+       src/corelib/tools/qscopeguard.qdoc
 Copyright: 2014-2018 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: GFDL-NIV-1.3
 
@@ -241,10 +253,13 @@ License: GFDL-NIV-1.3
 
 ## GPL-3
 
-Files: src/plugins/platforms/wasm/main.cpp
+Files: src/corelib/time/qcalendar.cpp
+       src/plugins/platforms/wasm/main.cpp
        src/plugins/platforms/wasm/qtloader.js
        src/plugins/platforms/wasm/qwasmbackingstore.cpp
        src/plugins/platforms/wasm/qwasmbackingstore.h
+       src/plugins/platforms/wasm/qwasmclipboard.cpp
+       src/plugins/platforms/wasm/qwasmclipboard.h
        src/plugins/platforms/wasm/qwasmcompositor.cpp
        src/plugins/platforms/wasm/qwasmcompositor.h
        src/plugins/platforms/wasm/qwasmcursor.cpp
@@ -257,10 +272,14 @@ Files: src/plugins/platforms/wasm/main.cpp
        src/plugins/platforms/wasm/qwasmfontdatabase.h
        src/plugins/platforms/wasm/qwasmintegration.cpp
        src/plugins/platforms/wasm/qwasmintegration.h
+       src/plugins/platforms/wasm/qwasmoffscreensurface.cpp
+       src/plugins/platforms/wasm/qwasmoffscreensurface.h
        src/plugins/platforms/wasm/qwasmopenglcontext.cpp
        src/plugins/platforms/wasm/qwasmopenglcontext.h
        src/plugins/platforms/wasm/qwasmscreen.cpp
        src/plugins/platforms/wasm/qwasmscreen.h
+       src/plugins/platforms/wasm/qwasmservices.cpp
+       src/plugins/platforms/wasm/qwasmservices.h
        src/plugins/platforms/wasm/qwasmstylepixmaps_p.h
        src/plugins/platforms/wasm/qwasmtheme.cpp
        src/plugins/platforms/wasm/qwasmtheme.h
@@ -269,11 +288,13 @@ Files: src/plugins/platforms/wasm/main.cpp
        tests/testserver/apache2/apache2.sh
        tests/testserver/common/ssl.sh
        tests/testserver/common/startup.sh
+       tests/testserver/cyrus/cyrus.sh
        tests/testserver/danted/danted.sh
        tests/testserver/ftp-proxy/ftp-proxy.sh
+       tests/testserver/iptables/iptables.sh
        tests/testserver/squid/squid.sh
        tests/testserver/vsftpd/vsftpd.sh
-Copyright: 2018 The Qt Company Ltd.
+Copyright: 2018-2019 The Qt Company Ltd.
 License: GPL-3
 
 ## GPL-3 with Qt-1.0 exception
@@ -298,8 +319,8 @@ Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
            2016 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/android/runtests_androiddeployqt.pl
-Copyright: 2012-2013 BogDan Vatra <bogdan@kde.org>
+Files: src/tools/androidtestrunner/main.cpp
+Copyright: 2019 BogDan Vatra <bogdan@kde.org>
            2016 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
@@ -319,7 +340,7 @@ Files: tests/auto/corelib/io/qlockfile/qlockfiletesthelper/qlockfile_test_helper
 Copyright: 2012-2014 David Faure <faure@kde.org>
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/corelib/tools/qregularexpression/tst_qregularexpression.cpp
+Files: tests/auto/corelib/text/qregularexpression/tst_qregularexpression.cpp
 Copyright: 2015 Giuseppe D'Angelo <dangelog@gmail.com>
            2015 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: GPL-3 with Qt-1.0 exception
@@ -339,7 +360,7 @@ Copyright: 2014 Governikus GmbH & Co. KG.
            2016 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/corelib/tools/qbytedatabuffer/tst_qbytedatabuffer.cpp
+Files: tests/auto/corelib/text/qbytedatabuffer/tst_qbytedatabuffer.cpp
        tests/benchmarks/network/access/qnetworkreply_from_cache/tst_qnetworkreply_from_cache.cpp
 Copyright: 2012 Hewlett-Packard Development Company, L.P.
 License: GPL-3 with Qt-1.0 exception
@@ -356,6 +377,7 @@ Files: src/tools/moc/cbordevice.h
        tests/auto/corelib/plugin/qpluginloader/fakeplugin.cpp
        tests/auto/corelib/plugin/qpluginloader/machtest/generate-bad.pl
        tests/auto/corelib/plugin/qpluginloader/machtest/ppcconverter.pl
+       tests/auto/corelib/plugin/qpluginloader/staticplugin/main.cpp
        tests/auto/corelib/thread/qatomicinteger/tst_qatomicinteger.cpp
        tests/auto/corelib/tools/qsharedpointer/nontracked.cpp
        tests/auto/corelib/tools/qsharedpointer/nontracked.h
@@ -395,6 +417,9 @@ Files: configure
        qmake/generators/unix/unixmake2.cpp
        qmake/main.cpp
        src/tools/moc/main.cpp
+       src/tools/rcc/main.cpp
+       src/tools/rcc/rcc.cpp
+       src/tools/rcc/rcc.h
        tests/auto/corelib/codecs/qtextcodec/tst_qtextcodec.cpp
        tests/auto/corelib/codecs/utf8/tst_utf8.cpp
        tests/auto/corelib/codecs/utf8/utf8data.cpp
@@ -413,18 +438,18 @@ Files: configure
        tests/auto/corelib/kernel/qtimer/tst_qtimer.cpp
        tests/auto/corelib/plugin/qplugin/tst_qplugin.cpp
        tests/auto/corelib/plugin/qpluginloader/tst_qpluginloader.cpp
+       tests/auto/corelib/text/qbytearray/tst_qbytearray.cpp
+       tests/auto/corelib/text/qstring/tst_qstring.cpp
+       tests/auto/corelib/text/qstringref/tst_qstringref.cpp
        tests/auto/corelib/thread/qatomicint/tst_qatomicint.cpp
        tests/auto/corelib/thread/qatomicpointer/tst_qatomicpointer.cpp
        tests/auto/corelib/thread/qmutex/tst_qmutex.cpp
        tests/auto/corelib/thread/qthreadpool/tst_qthreadpool.cpp
-       tests/auto/corelib/tools/qbytearray/tst_qbytearray.cpp
-       tests/auto/corelib/tools/qdate/tst_qdate.cpp
-       tests/auto/corelib/tools/qdatetime/tst_qdatetime.cpp
+       tests/auto/corelib/time/qdate/tst_qdate.cpp
+       tests/auto/corelib/time/qdatetime/tst_qdatetime.cpp
        tests/auto/corelib/tools/qsharedpointer/forwarddeclared.cpp
        tests/auto/corelib/tools/qsharedpointer/forwarddeclared.h
        tests/auto/corelib/tools/qsharedpointer/tst_qsharedpointer.cpp
-       tests/auto/corelib/tools/qstring/tst_qstring.cpp
-       tests/auto/corelib/tools/qstringref/tst_qstringref.cpp
        tests/auto/dbus/qdbusabstractadaptor/qmyserver/qmyserver.cpp
        tests/auto/dbus/qdbusabstractadaptor/tst_qdbusabstractadaptor.cpp
        tests/auto/dbus/qdbusabstractinterface/qpinger/qpinger.cpp
@@ -445,10 +470,10 @@ Files: configure
        tests/auto/network/socket/qudpsocket/tst_qudpsocket.cpp
        tests/auto/other/compiler/tst_compiler.cpp
        tests/auto/testlib/selftests/tst_selftests.cpp
-       tests/benchmarks/corelib/tools/qbytearray/main.cpp
+       tests/benchmarks/corelib/text/qbytearray/main.cpp
        tests/benchmarks/corelib/tools/qhash/main.cpp
-Copyright: 2016-2018 Intel Corporation
-           2016-2018 The Qt Company Ltd.
+Copyright: 2016-2019 Intel Corporation
+           2016-2019 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/corelib/global/qglobalstatic/tst_qglobalstatic.cpp
@@ -525,13 +550,12 @@ Files: tests/auto/cmake/test(needsquoting)dirname/mywidget.cpp
        tests/auto/corelib/itemmodels/qidentityproxymodel/tst_qidentityproxymodel.cpp
        tests/auto/corelib/itemmodels/qsortfilterproxymodel_recursive/tst_qsortfilterproxymodel_recursive.cpp
        tests/auto/corelib/kernel/qsignalblocker/tst_qsignalblocker.cpp
+       tests/auto/corelib/text/qlatin1string/tst_qlatin1string.cpp
+       tests/auto/corelib/text/qstringiterator/tst_qstringiterator.cpp
+       tests/auto/corelib/text/qstringview/tst_qstringview.cpp
        tests/auto/corelib/tools/containerapisymmetry/tst_containerapisymmetry.cpp
-       tests/auto/corelib/tools/qlatin1string/tst_qlatin1string.cpp
        tests/auto/corelib/tools/qpair/tst_qpair.cpp
        tests/auto/corelib/tools/qscopeguard/tst_qscopeguard.cpp
-       tests/auto/corelib/tools/qstringapisymmetry/tst_qstringapisymmetry.cpp
-       tests/auto/corelib/tools/qstringiterator/tst_qstringiterator.cpp
-       tests/auto/corelib/tools/qstringview/tst_qstringview.cpp
        tests/auto/gui/util/qshadergenerator/tst_qshadergenerator.cpp
        tests/auto/gui/util/qshadergraph/tst_qshadergraph.cpp
        tests/auto/gui/util/qshadergraphloader/tst_qshadergraphloader.cpp
@@ -545,12 +569,13 @@ Files: tests/auto/cmake/test(needsquoting)dirname/mywidget.cpp
        tests/auto/tools/qdbuscpp2xml/test1.h
        tests/auto/tools/qdbuscpp2xml/tst_qdbuscpp2xml.cpp
        tests/auto/widgets/kernel/qwidgetmetatype/tst_qwidgetmetatype.cpp
-       tests/benchmarks/corelib/tools/qtimezone/main.cpp
+       tests/benchmarks/corelib/time/qtimezone/main.cpp
        tests/benchmarks/gui/painting/qcolor/tst_qcolor.cpp
        tests/manual/cocoa/menus/main.cpp
        tests/manual/qmetatype/declare_metatype_noninline.cpp
        tests/manual/qmetatype/declare_metatype_noninline.h
        tests/manual/qmetatype/tst_qmetatype.cpp
+       tests/manual/widgets/itemviews/qconcatenatetablesproxymodel/main.cpp
        tests/manual/widgets/itemviews/tableview-span-navigation/main.cpp
        util/glgen/codegenerator.cpp
        util/glgen/codegenerator.h
@@ -567,6 +592,11 @@ Files: tests/auto/cmake/test(needsquoting)dirname/mywidget.cpp
        util/glgen/xmlspecparser.cpp
        util/glgen/xmlspecparser.h
 Copyright: 2011-2018 Klarälvdalens Datakonsult AB, a KDAB Group company
+License: GPL-3 with Qt-1.0 exception
+
+Files: tests/auto/corelib/text/qstringapisymmetry/tst_qstringapisymmetry.cpp
+Copyright: 2015 Klarälvdalens Datakonsult AB, a KDAB Group company
+           2019 Mail.ru Group.
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/gui/util/qregularexpressionvalidator/tst_qregularexpressionvalidator.cpp
@@ -601,10 +631,10 @@ Files: src/tools/moc/moc.cpp
        tests/auto/corelib/kernel/qobject/tst_qobject.cpp
        tests/auto/tools/moc/tst_moc.cpp
 Copyright: 2013-2016 Olivier Goffart <ogoffart@woboq.com>
-           2016 The Qt Company Ltd.
+           2016-2020 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/corelib/tools/qdatetime/tst_qdatetime_mac.mm
+Files: tests/auto/corelib/time/qdatetime/tst_qdatetime_mac.mm
 Copyright: 2014 Petroules Corporation.
            2016 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
@@ -632,7 +662,7 @@ Files: tests/auto/testlib/selftests/tuplediagnostics/tst_tuplediagnostics.cpp
 Copyright: 2017 Samuel Gaist <samuel.gaist@edeltech.ch>
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/corelib/tools/qbytearray/tst_qbytearray_mac.mm
+Files: tests/auto/corelib/text/qbytearray/tst_qbytearray_mac.mm
 Copyright: 2014 Samuel Gaist <samuel.gaist@edeltech.ch>
            2016 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
@@ -649,9 +679,10 @@ Copyright: 2016 The Qt Company Ltd.
            2012 Thorbjørn Lund Martsum <tmartsum@gmail.com>
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/corelib/tools/qbytearraylist/tst_qbytearraylist.cpp
-Copyright: 2016 The Qt Company Ltd.
-           2014 by Southwest Research Institute (R)
+Files: tests/auto/corelib/global/qfloat16/tst_qfloat16.cpp
+       tests/auto/corelib/text/qbytearraylist/tst_qbytearraylist.cpp
+Copyright: 2016-2019 The Qt Company Ltd.
+           2014-2016 by Southwest Research Institute (R)
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/benchmarks/widgets/itemviews/qheaderview/qheaderviewbench.cpp
@@ -676,22 +707,18 @@ Files: tests/benchmarks/widgets/itemviews/qheaderview/qheaderviewbench.cpp
 Copyright: 2012-2013 Thorbjørn Lund Martsum <tmartsum@gmail.com>
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/corelib/global/qfloat16/tst_qfloat16.cpp
-Copyright: 2016 by Southwest Research Institute (R)
-License: GPL-3 with Qt-1.0 exception
-
 ## LGPL-3 or GPL-2
 
-Files: src/corelib/tools/qcollator_macx.cpp
-       src/corelib/tools/qcollator_posix.cpp
-       src/corelib/tools/qcollator_win.cpp
+Files: src/corelib/text/qcollator_macx.cpp
+       src/corelib/text/qcollator_posix.cpp
+       src/corelib/text/qcollator_win.cpp
 Copyright: 2013 Aleix Pol Gonzalez <aleixpol@kde.org>
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/tools/qcollator.cpp
-       src/corelib/tools/qcollator.h
-       src/corelib/tools/qcollator_icu.cpp
-       src/corelib/tools/qcollator_p.h
+Files: src/corelib/text/qcollator.cpp
+       src/corelib/text/qcollator.h
+       src/corelib/text/qcollator_icu.cpp
+       src/corelib/text/qcollator_p.h
 Copyright: 2013 Aleix Pol Gonzalez <aleixpol@kde.org>
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
@@ -853,6 +880,7 @@ Files: src/android/jar/src/org/qtproject/qt5/android/EditContextView.java
        src/plugins/platforms/android/androidplatformplugin.cpp
        src/plugins/platforms/android/androidsurfaceclient.h
        src/plugins/platforms/android/extract.cpp
+       src/plugins/platforms/android/main.cpp
        src/plugins/platforms/android/qandroidassetsfileenginehandler.cpp
        src/plugins/platforms/android/qandroidassetsfileenginehandler.h
        src/plugins/platforms/android/qandroideventdispatcher.cpp
@@ -876,7 +904,7 @@ Files: src/android/jar/src/org/qtproject/qt5/android/EditContextView.java
        src/plugins/platforms/android/qandroidplatformtheme.h
        src/plugins/styles/android/qandroidstyle.cpp
        src/plugins/styles/android/qandroidstyle_p.h
-Copyright: 2012-2018 BogDan Vatra <bogdan@kde.org>
+Copyright: 2012-2019 BogDan Vatra <bogdan@kde.org>
 License: LGPL-3 or GPL-2
 
 Files: src/android/jar/src/org/qtproject/qt5/android/EditPopupMenu.java
@@ -922,43 +950,6 @@ Files: src/testlib/qteamcitylogger.cpp
 Copyright: 2016 Borgar Ovsthus
 License: LGPL-3 or GPL-2
 
-Files: src/plugins/platforms/mirclient/qmirclientappstatecontroller.cpp
-       src/plugins/platforms/mirclient/qmirclientappstatecontroller.h
-       src/plugins/platforms/mirclient/qmirclientbackingstore.cpp
-       src/plugins/platforms/mirclient/qmirclientbackingstore.h
-       src/plugins/platforms/mirclient/qmirclientclipboard.cpp
-       src/plugins/platforms/mirclient/qmirclientclipboard.h
-       src/plugins/platforms/mirclient/qmirclientcursor.cpp
-       src/plugins/platforms/mirclient/qmirclientcursor.h
-       src/plugins/platforms/mirclient/qmirclientdebugextension.cpp
-       src/plugins/platforms/mirclient/qmirclientdebugextension.h
-       src/plugins/platforms/mirclient/qmirclientdesktopwindow.cpp
-       src/plugins/platforms/mirclient/qmirclientdesktopwindow.h
-       src/plugins/platforms/mirclient/qmirclientglcontext.cpp
-       src/plugins/platforms/mirclient/qmirclientglcontext.h
-       src/plugins/platforms/mirclient/qmirclientinput.cpp
-       src/plugins/platforms/mirclient/qmirclientinput.h
-       src/plugins/platforms/mirclient/qmirclientintegration.cpp
-       src/plugins/platforms/mirclient/qmirclientintegration.h
-       src/plugins/platforms/mirclient/qmirclientlogging.h
-       src/plugins/platforms/mirclient/qmirclientnativeinterface.cpp
-       src/plugins/platforms/mirclient/qmirclientnativeinterface.h
-       src/plugins/platforms/mirclient/qmirclientorientationchangeevent_p.h
-       src/plugins/platforms/mirclient/qmirclientplatformservices.cpp
-       src/plugins/platforms/mirclient/qmirclientplatformservices.h
-       src/plugins/platforms/mirclient/qmirclientplugin.cpp
-       src/plugins/platforms/mirclient/qmirclientplugin.h
-       src/plugins/platforms/mirclient/qmirclientscreen.cpp
-       src/plugins/platforms/mirclient/qmirclientscreen.h
-       src/plugins/platforms/mirclient/qmirclientscreenobserver.cpp
-       src/plugins/platforms/mirclient/qmirclientscreenobserver.h
-       src/plugins/platforms/mirclient/qmirclienttheme.cpp
-       src/plugins/platforms/mirclient/qmirclienttheme.h
-       src/plugins/platforms/mirclient/qmirclientwindow.cpp
-       src/plugins/platforms/mirclient/qmirclientwindow.h
-Copyright: 2014-2016 Canonical, Ltd.
-License: LGPL-3 or GPL-2
-
 Files: mkspecs/common/android/qplatformdefs.h
        src/corelib/kernel/qsharedmemory_android.cpp
        src/corelib/kernel/qsystemsemaphore_android.cpp
@@ -995,8 +986,9 @@ Files: src/platformsupport/themes/genericunix/dbusmenu/qdbusmenubar.cpp
 Copyright: 2016 Dmitry Shachnev <mitya57@gmail.com>
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/tools/qtimezoneprivate_android.cpp
+Files: src/corelib/time/qtimezoneprivate_android.cpp
 Copyright: 2014 Drew Parsons <dparsons@emerall.com>
+           2019 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/tools/qhash.cpp
@@ -1005,12 +997,12 @@ Copyright: 2012 Giuseppe D'Angelo <dangelog@gmail.com>
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/tools/qregularexpression.h
+Files: src/corelib/text/qregularexpression.h
 Copyright: 2012 Giuseppe D'Angelo <dangelog@gmail.com>
            2012 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/tools/qregularexpression.cpp
+Files: src/corelib/text/qregularexpression.cpp
 Copyright: 2016 Giuseppe D'Angelo <dangelog@gmail.com>
            2016 Klarälvdalens Datakonsult AB, a KDAB Group company
            2016 The Qt Company Ltd.
@@ -1054,7 +1046,7 @@ Files: mkspecs/common/integrity/qplatformdefs.h
 Copyright: 2015 Green Hills Software
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/tools/qstring_mips_dsp_asm.S
+Files: src/corelib/text/qstring_mips_dsp_asm.S
        src/gui/image/qimage_mips_dspr2.cpp
        src/gui/image/qimage_mips_dspr2_asm.S
        src/gui/painting/qdrawhelper_mips_dsp.cpp
@@ -1099,9 +1091,9 @@ Files: config.tests/avx512/avx512.cpp
        src/corelib/serialization/qcborvalue.h
        src/corelib/serialization/qcborvalue_p.h
        src/corelib/serialization/qjsoncbor.cpp
+       src/corelib/text/qstring_compat.cpp
+       src/corelib/text/qstringalgorithms_p.h
        src/corelib/thread/qfutex_p.h
-       src/corelib/tools/qstring_compat.cpp
-       src/corelib/tools/qstringalgorithms_p.h
        src/corelib/tools/qvector_msvc.cpp
        src/dbus/dbus_minimal_p.h
        src/network/kernel/qnetworkdatagram.cpp
@@ -1119,7 +1111,7 @@ Files: config.tests/avx512/avx512.cpp
        tests/auto/corelib/serialization/qcborstreamwriter/tst_qcborstreamwriter.cpp
        tests/auto/corelib/serialization/qcborvalue/tst_qcborvalue.cpp
        tests/auto/corelib/serialization/qcborvalue_json/tst_qcborvalue_json.cpp
-Copyright: 2015-2018 Intel Corporation
+Copyright: 2015-2019 Intel Corporation
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/io/qstorageinfo_unix.cpp
@@ -1134,6 +1126,13 @@ Copyright: 2016 Intel Corporation
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
+Files: src/corelib/text/qstring.cpp
+       src/corelib/text/qstring.h
+Copyright: 2016-2018 Intel Corporation
+           2019 Mail.ru Group.
+           2016 The Qt Company Ltd.
+License: LGPL-3 or GPL-2
+
 Files: src/corelib/global/qlogging.cpp
        src/corelib/kernel/qmetatype.h
        src/corelib/kernel/qobject.cpp
@@ -1143,7 +1142,7 @@ Files: src/corelib/global/qlogging.cpp
        src/corelib/thread/qreadwritelock.cpp
 Copyright: 2016-2018 Intel Corporation
            2012-2016 Olivier Goffart <ogoffart@woboq.com>
-           2016 The Qt Company Ltd.
+           2016-2019 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/io/qfilesystemengine_unix.cpp
@@ -1168,6 +1167,7 @@ Files: bin/syncqt.pl
        src/corelib/global/qnumeric_p.h
        src/corelib/global/qprocessordetection.h
        src/corelib/global/qsysinfo.h
+       src/corelib/global/qsystemdetection.h
        src/corelib/global/qtypeinfo.h
        src/corelib/io/qdebug.cpp
        src/corelib/io/qdebug.h
@@ -1178,6 +1178,7 @@ Files: bin/syncqt.pl
        src/corelib/io/qprocess_p.h
        src/corelib/io/qprocess_unix.cpp
        src/corelib/io/qprocess_win.cpp
+       src/corelib/io/qresource.cpp
        src/corelib/io/qstandardpaths.cpp
        src/corelib/io/qtemporarydir.cpp
        src/corelib/io/qtemporaryfile.cpp
@@ -1200,12 +1201,21 @@ Files: bin/syncqt.pl
        src/corelib/plugin/qlibrary.cpp
        src/corelib/plugin/qlibrary_p.h
        src/corelib/plugin/qlibrary_unix.cpp
+       src/corelib/plugin/qplugin.h
        src/corelib/plugin/qpluginloader.cpp
        src/corelib/serialization/qjson_p.h
        src/corelib/serialization/qjsonparser.cpp
        src/corelib/serialization/qjsonwriter.cpp
        src/corelib/serialization/qtextstream.cpp
        src/corelib/serialization/qtextstream_p.h
+       src/corelib/text/qbytearray.cpp
+       src/corelib/text/qbytearray.h
+       src/corelib/text/qlocale.cpp
+       src/corelib/text/qlocale_p.h
+       src/corelib/text/qlocale_tools.cpp
+       src/corelib/text/qlocale_win.cpp
+       src/corelib/text/qstringlist.h
+       src/corelib/text/qstringliteral.h
        src/corelib/thread/qatomic.cpp
        src/corelib/thread/qatomic.h
        src/corelib/thread/qatomic_msvc.h
@@ -1215,26 +1225,16 @@ Files: bin/syncqt.pl
        src/corelib/thread/qthread_p.h
        src/corelib/thread/qthread_unix.cpp
        src/corelib/thread/qwaitcondition_unix.cpp
+       src/corelib/time/qdatetime.cpp
+       src/corelib/time/qdatetime.h
+       src/corelib/time/qdatetime_p.h
        src/corelib/tools/qarraydata.cpp
        src/corelib/tools/qbitarray.cpp
-       src/corelib/tools/qbytearray.cpp
-       src/corelib/tools/qbytearray.h
-       src/corelib/tools/qdatetime.cpp
-       src/corelib/tools/qdatetime.h
-       src/corelib/tools/qdatetime_p.h
        src/corelib/tools/qlist.cpp
-       src/corelib/tools/qlocale.cpp
-       src/corelib/tools/qlocale_p.h
-       src/corelib/tools/qlocale_tools.cpp
-       src/corelib/tools/qlocale_win.cpp
        src/corelib/tools/qsharedpointer.cpp
        src/corelib/tools/qsharedpointer_impl.h
        src/corelib/tools/qsimd.cpp
        src/corelib/tools/qsimd_p.h
-       src/corelib/tools/qstring.cpp
-       src/corelib/tools/qstring.h
-       src/corelib/tools/qstringlist.h
-       src/corelib/tools/qstringliteral.h
        src/dbus/qdbus_symbols.cpp
        src/dbus/qdbus_symbols_p.h
        src/dbus/qdbusabstractadaptor.cpp
@@ -1258,7 +1258,9 @@ Files: bin/syncqt.pl
        src/dbus/qdbusutil_p.h
        src/gui/kernel/qguiapplication.cpp
        src/gui/painting/qdrawhelper.cpp
+       src/gui/painting/qdrawhelper_avx2.cpp
        src/gui/painting/qdrawhelper_sse2.cpp
+       src/gui/painting/qdrawhelper_ssse3.cpp
        src/network/kernel/qhostaddress.cpp
        src/network/kernel/qhostaddress.h
        src/network/kernel/qnetworkinterface.cpp
@@ -1278,11 +1280,11 @@ Files: bin/syncqt.pl
        src/testlib/qtest.h
        src/testlib/qtestcase.cpp
        src/widgets/kernel/qwidget.cpp
-Copyright: 2015-2019 Intel Corporation
-           2016-2018 The Qt Company Ltd.
+Copyright: 2015-2020 Intel Corporation
+           2016-2020 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/tools/qbytearraylist.h
+Files: src/corelib/text/qbytearraylist.h
 Copyright: 2016 Intel Corporation
            2016 The Qt Company Ltd.
            2014 by Southwest Research Institute (R)
@@ -1293,6 +1295,12 @@ Files: src/corelib/thread/qatomic_cxx11.h
        src/corelib/thread/qgenericatomic.h
 Copyright: 2016-2018 Intel Corporation
            2011 Thiago Macieira <thiago@kde.org>
+License: LGPL-3 or GPL-2
+
+Files: src/corelib/global/qfloat16tables.cpp
+       util/qfloat16-tables/gen_qfloat16_tables.cpp
+Copyright: 2019 Intel Corporation
+           2016 by Southwest Research Institute (R)
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/io/qstorageinfo.cpp
@@ -1322,18 +1330,17 @@ Files: src/network/kernel/qdnslookup.cpp
        src/network/ssl/qsslkey_qt.cpp
        src/network/ssl/qsslsocket_mac.cpp
        src/network/ssl/qsslsocket_mac_p.h
+       src/network/ssl/qsslsocket_qt.cpp
 Copyright: 2012-2014 Jeremy Lainé <jeremy.laine@m4x.org>
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/tools/qtimezone.cpp
-       src/corelib/tools/qtimezone.h
-       src/corelib/tools/qtimezoneprivate.cpp
-       src/corelib/tools/qtimezoneprivate_data_p.h
-       src/corelib/tools/qtimezoneprivate_icu.cpp
-       src/corelib/tools/qtimezoneprivate_mac.mm
-       src/corelib/tools/qtimezoneprivate_p.h
-       src/corelib/tools/qtimezoneprivate_tz.cpp
-       src/corelib/tools/qtimezoneprivate_win.cpp
+Files: src/corelib/time/qtimezone.cpp
+       src/corelib/time/qtimezone.h
+       src/corelib/time/qtimezoneprivate.cpp
+       src/corelib/time/qtimezoneprivate_icu.cpp
+       src/corelib/time/qtimezoneprivate_p.h
+       src/corelib/time/qtimezoneprivate_tz.cpp
+       src/corelib/time/qtimezoneprivate_win.cpp
        src/gui/painting/qpagelayout.cpp
        src/gui/painting/qpagelayout.h
        src/gui/painting/qpagesize.cpp
@@ -1349,13 +1356,15 @@ Files: src/corelib/tools/qtimezone.cpp
 Copyright: 2013-2014 John Layt <jlayt@kde.org>
 License: LGPL-3 or GPL-2
 
-Files: src/plugins/printsupport/cups/qcupsprintersupport.cpp
+Files: src/corelib/time/qtimezoneprivate_data_p.h
+       src/corelib/time/qtimezoneprivate_mac.mm
+       src/plugins/printsupport/cups/qcupsprintersupport.cpp
        src/plugins/printsupport/cups/qcupsprintersupport_p.h
        src/plugins/printsupport/windows/qwindowsprintdevice.cpp
        src/plugins/printsupport/windows/qwindowsprintdevice.h
        src/printsupport/kernel/qplatformprintdevice.h
-Copyright: 2014 John Layt <jlayt@kde.org>
-           2016-2018 The Qt Company Ltd.
+Copyright: 2013-2014 John Layt <jlayt@kde.org>
+           2016-2019 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/platformsupport/input/evdevtouch/qevdevtouchfilter_p.h
@@ -1365,22 +1374,25 @@ License: LGPL-3 or GPL-2
 Files: src/platformsupport/input/evdevtouch/qevdevtouchhandler.cpp
        src/platformsupport/input/evdevtouch/qevdevtouchhandler_p.h
 Copyright: 2016 Jolla Ltd, author: <gunnar.sletta@jollamobile.com>
-           2016 The Qt Company Ltd.
+           2016-2019 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: mkspecs/haiku-g++/qplatformdefs.h
        src/3rdparty/pcre2/import_from_pcre2_tarball.sh
        src/corelib/global/qhooks.cpp
        src/corelib/global/qhooks_p.h
+       src/corelib/global/qmemory_p.h
        src/corelib/global/qtrace_p.h
        src/corelib/global/qtypetraits.h
        src/corelib/io/qstandardpaths_haiku.cpp
+       src/corelib/itemmodels/qconcatenatetablesproxymodel.cpp
+       src/corelib/itemmodels/qconcatenatetablesproxymodel.h
        src/corelib/itemmodels/qidentityproxymodel.cpp
        src/corelib/itemmodels/qidentityproxymodel.h
+       src/corelib/text/qstringalgorithms.h
+       src/corelib/text/qstringview.cpp
+       src/corelib/thread/qlocking_p.h
        src/corelib/tools/qscopeguard.h
-       src/corelib/tools/qstringalgorithms.h
-       src/corelib/tools/qstringview.cpp
-       src/corelib/tools/qstringview.h
        src/gui/opengl/qopengldebug.cpp
        src/gui/opengl/qopengldebug.h
        src/gui/opengl/qopenglfunctions_1_0.cpp
@@ -1442,6 +1454,11 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/gui/util/qshadernodeport_p.h
        src/gui/util/qshadernodesloader.cpp
        src/gui/util/qshadernodesloader_p.h
+       src/platformsupport/input/shared/devicehandlerlist_p.h
+       src/platformsupport/input/shared/qevdevutil.cpp
+       src/platformsupport/input/shared/qevdevutil_p.h
+       src/plugins/platforms/android/qandroidplatformfiledialoghelper.cpp
+       src/plugins/platforms/android/qandroidplatformfiledialoghelper.h
        src/plugins/platforms/haiku/main.cpp
        src/plugins/platforms/haiku/main.h
        src/plugins/platforms/haiku/qhaikuapplication.cpp
@@ -1481,7 +1498,13 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/tools/tracegen/qtheaders.cpp
        src/tools/tracegen/qtheaders.h
        src/tools/tracegen/tracegen.cpp
-Copyright: 2011-2018 Klarälvdalens Datakonsult AB, a KDAB Group company
+       tests/auto/corelib/itemmodels/qconcatenatetablesproxymodel/tst_qconcatenatetablesproxymodel.cpp
+Copyright: 2011-2019 Klarälvdalens Datakonsult AB, a KDAB Group company
+License: LGPL-3 or GPL-2
+
+Files: src/corelib/tools/qcontainertools_impl.h
+Copyright: 2018 Klarälvdalens Datakonsult AB, a KDAB Group company
+           2018 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/kernel/qsharedmemory_posix.cpp
@@ -1489,6 +1512,11 @@ Files: src/corelib/kernel/qsharedmemory_posix.cpp
 Copyright: 2015 Klarälvdalens Datakonsult AB, a KDAB Group company
            2015 Konstantin Ritt <ritt.ks@gmail.com>
            2016 The Qt Company Ltd.
+License: LGPL-3 or GPL-2
+
+Files: src/corelib/text/qstringview.h
+Copyright: 2017 Klarälvdalens Datakonsult AB, a KDAB Group company
+           2019 Mail.ru Group.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/mimetypes/qmimedatabase.cpp
@@ -1499,10 +1527,10 @@ Files: src/corelib/mimetypes/qmimedatabase.cpp
        src/corelib/mimetypes/qmimetype.cpp
        src/corelib/mimetypes/qmimetype.h
        src/corelib/plugin/quuid.cpp
+       src/corelib/text/qstringiterator_p.h
        src/corelib/thread/qthread.h
        src/corelib/tools/qhash.h
        src/corelib/tools/qhashfunctions.h
-       src/corelib/tools/qstringiterator_p.h
        src/gui/kernel/qplatformmenu.h
        src/gui/kernel/qplatformsystemtrayicon.cpp
        src/gui/kernel/qplatformsystemtrayicon.h
@@ -1569,6 +1597,19 @@ Copyright: 2013 Laszlo Papp <lpapp@kde.org>
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
+Files: src/corelib/itemmodels/qtransposeproxymodel.cpp
+       src/corelib/itemmodels/qtransposeproxymodel.h
+       src/corelib/itemmodels/qtransposeproxymodel_p.h
+       tests/auto/corelib/itemmodels/qtransposeproxymodel/tst_qtransposeproxymodel.cpp
+Copyright: 2018 Luca Beldi <v.ronin@yahoo.it>
+License: LGPL-3 or GPL-2
+
+Files: src/corelib/text/qstringmatcher.cpp
+       src/corelib/text/qstringmatcher.h
+Copyright: 2019 Mail.ru Group.
+           2016 The Qt Company Ltd.
+License: LGPL-3 or GPL-2
+
 Files: src/platformsupport/themes/genericunix/dbustray/qdbustraytypes.cpp
        src/platformsupport/themes/genericunix/dbustray/qdbustraytypes_p.h
 Copyright: 2009 Marco Martin <notmart@gmail.com>
@@ -1626,7 +1667,7 @@ Files: src/corelib/kernel/qmetaobject.cpp
        src/widgets/widgets/qdockarealayout.cpp
        src/widgets/widgets/qmainwindowlayout.cpp
 Copyright: 2013-2016 Olivier Goffart <ogoffart@woboq.com>
-           2016-2017 The Qt Company Ltd.
+           2016-2019 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/plugins/platforms/eglfs/deviceintegration/eglfs_kms_egldevice/qeglfskmsegldevice.cpp
@@ -1687,9 +1728,15 @@ Files: src/platformsupport/edid/qedidparser.cpp
 Copyright: 2017 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
 License: LGPL-3 or GPL-2
 
-Files: mkspecs/qnx-aarch64le-qcc/qplatformdefs.h
+Files: examples/widgets/qnx/foreignwindows/collector.cpp
+       examples/widgets/qnx/foreignwindows/collector.h
+       examples/widgets/qnx/foreignwindows/main.cpp
+       mkspecs/qnx-aarch64le-qcc/qplatformdefs.h
        mkspecs/qnx-x86-64-qcc/qplatformdefs.h
-Copyright: 2016 QNX Software Systems. All rights reserved.
+       src/plugins/platforms/qnx/qqnxforeignwindow.cpp
+       src/plugins/platforms/qnx/qqnxforeignwindow.h
+       src/plugins/platforms/qnx/qqnxscreentraits.h
+Copyright: 2016-2018 QNX Software Systems. All rights reserved.
 License: LGPL-3 or GPL-2
 
 Files: src/plugins/platformthemes/xdgdesktopportal/main.cpp
@@ -1706,10 +1753,13 @@ License: LGPL-3 or GPL-2
 
 Files: src/corelib/tools/qcryptographichash.cpp
        src/corelib/tools/qcryptographichash.h
+       src/network/ssl/qocspresponse.cpp
+       src/network/ssl/qocspresponse.h
+       src/network/ssl/qocspresponse_p.h
        src/network/ssl/qsslcertificate_openssl.cpp
        src/network/ssl/qsslkey_openssl.cpp
-Copyright: 2013-2016 Richard J. Moore <rich@kde.org>
-           2016-2017 The Qt Company Ltd.
+Copyright: 2011-2016 Richard J. Moore <rich@kde.org>
+           2016-2019 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/plugins/generic/tuiotouch/main.cpp
@@ -1763,9 +1813,11 @@ Copyright: 2016 The Qt Company Ltd.
            2011 Thiago Macieira <thiago@kde.org>
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/tools/qbytearraylist.cpp
-Copyright: 2016 The Qt Company Ltd.
-           2014 by Southwest Research Institute (R)
+Files: src/corelib/global/qfloat16.cpp
+       src/corelib/global/qfloat16.h
+       src/corelib/text/qbytearraylist.cpp
+Copyright: 2016-2019 The Qt Company Ltd.
+           2014-2016 by Southwest Research Institute (R)
 License: LGPL-3 or GPL-2
 
 Files: src/network/ssl/qsslsocket_mac_shared.cpp
@@ -1773,12 +1825,44 @@ Copyright: 2016 The Qt Company Ltd.
            2015 ownCloud Inc
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/global/qfloat16.cpp
-       src/corelib/global/qfloat16.h
-       src/corelib/global/qfloat16_p.h
-       src/tools/qfloat16-tables/gen_qfloat16_tables.cpp
-Copyright: 2016 by Southwest Research Institute (R)
+Files: src/plugins/platforms/android/androidcontentfileengine.cpp
+       src/plugins/platforms/android/androidcontentfileengine.h
+Copyright: 2019 Volker Krause <vkrause@kde.org>
 License: LGPL-3 or GPL-2
+
+## LGPL-3 or GPL-2+
+
+Files: src/gui/rhi/cs_tdr_p.h
+       src/gui/rhi/qrhi.cpp
+       src/gui/rhi/qrhi_p.h
+       src/gui/rhi/qrhi_p_p.h
+       src/gui/rhi/qrhid3d11.cpp
+       src/gui/rhi/qrhid3d11_p.h
+       src/gui/rhi/qrhid3d11_p_p.h
+       src/gui/rhi/qrhigles2.cpp
+       src/gui/rhi/qrhigles2_p.h
+       src/gui/rhi/qrhigles2_p_p.h
+       src/gui/rhi/qrhimetal.mm
+       src/gui/rhi/qrhimetal_p.h
+       src/gui/rhi/qrhimetal_p_p.h
+       src/gui/rhi/qrhinull.cpp
+       src/gui/rhi/qrhinull_p.h
+       src/gui/rhi/qrhinull_p_p.h
+       src/gui/rhi/qrhiprofiler.cpp
+       src/gui/rhi/qrhiprofiler_p.h
+       src/gui/rhi/qrhiprofiler_p_p.h
+       src/gui/rhi/qrhivulkan.cpp
+       src/gui/rhi/qrhivulkan_p.h
+       src/gui/rhi/qrhivulkan_p_p.h
+       src/gui/rhi/qrhivulkanext_p.h
+       src/gui/rhi/qshader.cpp
+       src/gui/rhi/qshader_p.h
+       src/gui/rhi/qshader_p_p.h
+       src/gui/rhi/qshaderdescription.cpp
+       src/gui/rhi/qshaderdescription_p.h
+       src/gui/rhi/qshaderdescription_p_p.h
+Copyright: 2018-2019 The Qt Company Ltd.
+License: LGPL-3 or GPL-2+
 
 ## END AUTO GENERATED BLOCK
 
