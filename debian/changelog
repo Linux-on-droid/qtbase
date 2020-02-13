@@ -21,6 +21,9 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Update path to qbytearray/rfc3252.txt in Files-Excluded list.
 
+  [ Alexander Volkov ]
+  * Update install files for the new version.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jan 2020 21:51:33 -0300
 
 qtbase-opensource-src (5.12.5+dfsg-8) unstable; urgency=medium
