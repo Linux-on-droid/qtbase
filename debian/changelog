@@ -31,6 +31,9 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   [ Alexander Volkov ]
   * Update install files for the new version.
 
+  [ Helmut Grohne ]
+  * qmake cross wrapper should pass QMAKE_STRIP. (Closes: #950507)
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jan 2020 21:51:33 -0300
 
 qtbase-opensource-src (5.12.5+dfsg-8) unstable; urgency=medium
