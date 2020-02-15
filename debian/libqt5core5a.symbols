@@ -6299,6 +6299,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  qt_disable_lowpriority_timers@Qt_5 5.0.2
  qt_removeObject@Qt_5 5.0.2
  qt_resourceFeatureZlib@Qt_5 5.14.1
+ qt_resourceFeatureZstd@Qt_5 5.14.1
  qt_signal_spy_callback_set@Qt_5 5.0.2
  qt_sine_table@Qt_5 5.0.2
  qt_startup_hook@Qt_5 5.0.2

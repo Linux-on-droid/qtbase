@@ -24,6 +24,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   * debian/scripts/update-copyright: Correctly handle repeating authors
     in the same file.
   * Update symbols files from the current build logs.
+  * Build-depend on libzstd-dev.
 
   [ Alexander Volkov ]
   * Update install files for the new version.
