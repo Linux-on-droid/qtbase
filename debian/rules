@@ -124,6 +124,7 @@ endif
 	            -compile-examples \
 	            -no-directfb \
 	            -no-use-gold-linker \
+	            -no-mimetype-database \
 	            $(extra_configure_opts) \
 	            $(cpu_opt) \
 	            QMAKE_CFLAGS="$(CFLAGS)" \
