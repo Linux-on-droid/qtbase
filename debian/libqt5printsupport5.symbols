@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.2 amd64
+# SymbolsHelper-Confirmed: 5.14.1 amd64 i386
 libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
 | libqt5printsupport5 #MINVER#, qtbase-qbi-5-14-1
 * Build-Depends-Package: qtbase5-dev
@@ -6,6 +6,8 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  Qt_5.10@Qt_5.10 5.10.0
  Qt_5.11@Qt_5.11 5.11.0~rc1
  Qt_5.12@Qt_5.12 5.12.0
+ Qt_5.13@Qt_5.13 5.14.1
+ Qt_5.14@Qt_5.14 5.14.1
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -304,8 +306,10 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZNK12QPrinterInfo11printerNameEv@Qt_5 5.0.2
  _ZNK12QPrinterInfo12makeAndModelEv@Qt_5 5.0.2
  _ZNK12QPrinterInfo15defaultPageSizeEv@Qt_5 5.3.0
+ _ZNK12QPrinterInfo16defaultColorModeEv@Qt_5 5.14.1
  _ZNK12QPrinterInfo17defaultDuplexModeEv@Qt_5 5.4.0
  _ZNK12QPrinterInfo18supportedPageSizesEv@Qt_5 5.3.0
+ _ZNK12QPrinterInfo19supportedColorModesEv@Qt_5 5.14.1
  _ZNK12QPrinterInfo19supportedPaperSizesEv@Qt_5 5.0.2
  _ZNK12QPrinterInfo20supportedDuplexModesEv@Qt_5 5.4.0
  _ZNK12QPrinterInfo20supportedResolutionsEv@Qt_5 5.3.0

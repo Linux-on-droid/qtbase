@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.2 amd64 armhf i386
+# SymbolsHelper-Confirmed: 5.14.1 amd64 i386
 libQt5Test.so.5 libqt5test5 #MINVER#
 | libqt5test5 #MINVER#, qtbase-qbi-5-14-1
 * Build-Depends-Package: qtbase5-dev
@@ -6,6 +6,8 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  Qt_5.10@Qt_5.10 5.10.0
  Qt_5.11@Qt_5.11 5.11.0~rc1
  Qt_5.12@Qt_5.12 5.12.0
+ Qt_5.13@Qt_5.13 5.14.1
+ Qt_5.14@Qt_5.14 5.14.1
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -50,10 +52,16 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN11QTestResult5resetEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QTestResult6verifyEbPKcS1_S1_i@Qt_5_PRIVATE_API 5.0.2 1
  _ZN11QTestResult7addSkipEPKcS1_i@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN11QTestResult7compareEbPKc11QStringViewRK13QLatin1StringS1_S1_S1_i@Qt_5_PRIVATE_API 5.14.1 1
+ _ZN11QTestResult7compareEbPKc11QStringViewS2_S1_S1_S1_i@Qt_5_PRIVATE_API 5.14.1 1
  _ZN11QTestResult7compareEbPKcPcS2_S1_S1_S1_i@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN11QTestResult7compareEbPKcRK13QLatin1String11QStringViewS1_S1_S1_i@Qt_5_PRIVATE_API 5.14.1 1
+ _ZN11QTestResult7compareEbPKcddS1_S1_S1_i@Qt_5_PRIVATE_API 5.14.1 1
+ _ZN11QTestResult7compareEbPKcffS1_S1_S1_i@Qt_5_PRIVATE_API 5.14.1 1
+ _ZN11QTestResult7compareEbPKciiS1_S1_S1_i@Qt_5_PRIVATE_API 5.14.1 1
+ _ZN11QTestResult7compareEbPKcjjS1_S1_S1_i@Qt_5_PRIVATE_API 5.14.1 1
  _ZN12QTestPrivate14parseBlackListEv@Qt_5 5.6.0~beta
  _ZN12QTestPrivate15checkBlackListsEPKcS1_@Qt_5 5.6.0~beta
- _ZN12QTestPrivate17parseGpuBlackListEv@Qt_5 5.6.0~beta
  _ZN12QTestPrivate17qtestMouseButtonsE@Qt_5 5.11.0~rc1
  _ZN14QTestEventLoop11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.0.2
  _ZN14QTestEventLoop11qt_metacastEPKc@Qt_5 5.0.2
@@ -103,6 +111,7 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN5QTest15toPrettyUnicodeE11QStringView@Qt_5 5.10.0
  _ZN5QTest15toPrettyUnicodeEPKti@Qt_5 5.3.0
  _ZN5QTest16qExtractTestDataERK7QString@Qt_5 5.5.0
+ _ZN5QTest16qtest_qParseArgsEiPKPKcb@Qt_5 5.14.1
  _ZN5QTest16qtest_qParseArgsEiPPcb@Qt_5 5.0.2
  _ZN5QTest17addColumnInternalEiPKc@Qt_5 5.0.2
  _ZN5QTest17currentTestFailedEv@Qt_5 5.0.2
@@ -137,11 +146,18 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN5QTest6qSleepEi@Qt_5 5.0.2
  _ZN5QTest7qVerifyEbPKcS1_S1_i@Qt_5 5.0.2
  _ZN5QTest8qCleanupEv@Qt_5 5.10.0
+ _ZN5QTest8qCompareE11QStringViewRK13QLatin1StringPKcS5_S5_i@Qt_5 5.14.1
+ _ZN5QTest8qCompareE11QStringViewS0_PKcS2_S2_i@Qt_5 5.14.1
+ _ZN5QTest8qCompareERK13QLatin1String11QStringViewPKcS5_S5_i@Qt_5 5.14.1
+ _ZN5QTest8qCompareERK8qfloat16S2_PKcS4_S4_i@Qt_5 5.14.1
  _ZN5QTest8qCompareERKdS1_PKcS3_S3_i@Qt_5 5.0.2
  _ZN5QTest8qCompareERKfS1_PKcS3_S3_i@Qt_5 5.0.2
+ _ZN5QTest8qCompareEiiPKcS1_S1_i@Qt_5 5.14.1
+ _ZN5QTest8qCompareEjjPKcS1_S1_i@Qt_5 5.14.1
  _ZN5QTest8testTagsE@Qt_5 5.0.2
  _ZN5QTest8toStringEPKc@Qt_5 5.0.2
  _ZN5QTest8toStringEPKv@Qt_5 5.0.2
+ (optional=templinst)_ZN5QTest8toStringI8qfloat16EEPcRKT_@Qt_5 5.14.1
  (optional=templinst)_ZN5QTest8toStringIaEEPcRKT_@Qt_5 5.6.0~beta
  (optional=templinst)_ZN5QTest8toStringIbEEPcRKT_@Qt_5 5.0.2
  (optional=templinst)_ZN5QTest8toStringIcEEPcRKT_@Qt_5 5.0.2
@@ -226,4 +242,3 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZTS24QAbstractItemModelTester@Qt_5 5.11.0~rc1
  _ZTV14QTestEventLoop@Qt_5 5.0.2
  _ZTV24QAbstractItemModelTester@Qt_5 5.11.0~rc1
- qgpu_features_ptr@Qt_5 5.5.0

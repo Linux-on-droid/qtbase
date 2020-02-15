@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.2 amd64
+# SymbolsHelper-Confirmed: 5.14.1 amd64 i386
 libQt5DBus.so.5 libqt5dbus5 #MINVER#
 | libqt5dbus5 #MINVER#, qtbase-qbi-5-14-1
 * Build-Depends-Package: qtbase5-dev
@@ -6,6 +6,8 @@ libQt5DBus.so.5 libqt5dbus5 #MINVER#
  Qt_5.10@Qt_5.10 5.10.0
  Qt_5.11@Qt_5.11 5.11.0~rc1
  Qt_5.12@Qt_5.12 5.12.0
+ Qt_5.13@Qt_5.13 5.14.1
+ Qt_5.14@Qt_5.14 5.14.1
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -24,6 +26,7 @@ libQt5DBus.so.5 libqt5dbus5 #MINVER#
  _Z24qDBusParametersForMethodRK5QListI10QByteArrayER7QVectorIiER7QString@Qt_5 5.2.0~alpha1
  _Z26qDBusGenerateMetaObjectXml7QStringPK11QMetaObjectS2_i@Qt_5 5.0.2
  _ZN10QDBusError11errorStringENS_9ErrorTypeE@Qt_5 5.0.2
+ _ZN10QDBusError16staticMetaObjectE@Qt_5 5.14.1
  _ZN10QDBusErrorC1ENS_9ErrorTypeERK7QString@Qt_5 5.0.2
  _ZN10QDBusErrorC1EPK9DBusError@Qt_5 5.0.2
  _ZN10QDBusErrorC1ERK12QDBusMessage@Qt_5 5.0.2
@@ -205,6 +208,7 @@ libQt5DBus.so.5 libqt5dbus5 #MINVER#
  _ZN21QDBusPendingReplyDataD1Ev@Qt_5 5.0.2
  _ZN21QDBusPendingReplyDataD2Ev@Qt_5 5.0.2
  _ZN22QDBusAbstractInterface10setTimeoutEi@Qt_5 5.0.2
+ (subst)_ZN22QDBusAbstractInterface11doAsyncCallERK7QStringPK8QVariant{size_t}@Qt_5 5.14.1
  _ZN22QDBusAbstractInterface11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.0.2
  _ZN22QDBusAbstractInterface11qt_metacastEPKc@Qt_5 5.0.2
  _ZN22QDBusAbstractInterface13connectNotifyERK11QMetaMethod@Qt_5 5.0.2
@@ -217,6 +221,7 @@ libQt5DBus.so.5 libqt5dbus5 #MINVER#
  _ZN22QDBusAbstractInterface25asyncCallWithArgumentListERK7QStringRK5QListI8QVariantE@Qt_5 5.0.2
  _ZN22QDBusAbstractInterface4callEN5QDBus8CallModeERK7QStringRK8QVariantS7_S7_S7_S7_S7_S7_S7_@Qt_5 5.0.2
  _ZN22QDBusAbstractInterface4callERK7QStringRK8QVariantS5_S5_S5_S5_S5_S5_S5_@Qt_5 5.0.2
+ (subst)_ZN22QDBusAbstractInterface6doCallEN5QDBus8CallModeERK7QStringPK8QVariant{size_t}@Qt_5 5.14.1
  _ZN22QDBusAbstractInterface9asyncCallERK7QStringRK8QVariantS5_S5_S5_S5_S5_S5_S5_@Qt_5 5.0.2
  _ZN22QDBusAbstractInterfaceC1ER29QDBusAbstractInterfacePrivateP7QObject@Qt_5 5.0.2
  _ZN22QDBusAbstractInterfaceC1ERK7QStringS2_PKcRK15QDBusConnectionP7QObject@Qt_5 5.0.2
@@ -361,6 +366,7 @@ libQt5DBus.so.5 libqt5dbus5 #MINVER#
  _ZNK15QDBusMetaObject16propertyMetaTypeEi@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK15QDBusMetaObject19inputTypesForMethodEi@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK15QDBusMetaObject20outputTypesForMethodEi@Qt_5_PRIVATE_API 5.0.2 1
+ _ZNK15QDBusObjectPathcv8QVariantEv@Qt_5 5.14.1
  _ZNK16QDBusPendingCall10isFinishedEv@Qt_5 5.0.2
  _ZNK16QDBusPendingCall5errorEv@Qt_5 5.0.2
  _ZNK16QDBusPendingCall5replyEv@Qt_5 5.0.2
@@ -393,6 +399,7 @@ libQt5DBus.so.5 libqt5dbus5 #MINVER#
  _ZNK24QDBusConnectionInterface12serviceOwnerERK7QString@Qt_5 5.0.2
  _ZNK24QDBusConnectionInterface19isServiceRegisteredERK7QString@Qt_5 5.0.2
  _ZNK24QDBusConnectionInterface22registeredServiceNamesEv@Qt_5 5.0.2
+ _ZNK24QDBusConnectionInterface23activatableServiceNamesEv@Qt_5 5.14.1
  _ZTI11QDBusServer@Qt_5 5.0.2
  _ZTI14QDBusInterface@Qt_5 5.0.2
  _ZTI16QDBusPendingCall@Qt_5 5.0.2
