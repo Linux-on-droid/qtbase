@@ -31,6 +31,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   * Add more tags files to debian/qtbase5-doc-dev.install.
   * Update to debhelper compat level 12, use the new syntax.
   * Stop passing -V to dh_makeshlibs, it is now the default behavior.
+  * Manually update the non-generated part of debian/copyright.
 
   [ Alexander Volkov ]
   * Update install files for the new version.

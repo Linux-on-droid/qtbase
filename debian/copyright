@@ -26,34 +26,33 @@ Files-Excluded: bin/licheck*
 # Manual rules for The Qt Company copyrights
 
 Files: *
-Copyright: 2016-2017 The Qt Company Ltd.
+Copyright: 2016-2020 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
-Files: configure
-       configure.bat
-       qmake/*
+Files: qmake/*
+       src/corelib/debug_script.py
        src/tools/*
        tests/*
        util/*
-Copyright: 2016-2017 The Qt Company Ltd.
+Copyright: 2016-2020 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
-Files: examples/*
-       doc/src/snippets/*
+Files: doc/src/snippets/*
+       examples/*
        qmake/doc/snippets/*
        src/*/doc/snippets/*
-       tests/manual/xembed*
-       tests/manual/qlocale/*
-       tests/manual/qtbug-52641/main.cpp
-       tests/manual/windowtransparency/*
        src/winmain/qtmain_win.cpp
        src/winmain/qtmain_winrt.cpp
-       tests/auto/corelib/global/qglobalstatic/tst_qglobalstatic.cpp
-Copyright: 2016-2017 The Qt Company Ltd.
+       tests/manual/qtabbar/main.cpp
+       tests/manual/rhi/*
+       tests/manual/touchGraphicsItem/main.cpp
+       tests/manual/wasm/*
+       tests/manual/widgets/widgets/defaultUpMenuBar/main.cpp
+Copyright: 2016-2019 The Qt Company Ltd.
 License: BSD-3-clause
 
 Files: *.qdoc
-Copyright: 2016-2017 The Qt Company Ltd.
+Copyright: 2016-2019 The Qt Company Ltd.
 License: GFDL-NIV-1.3
 
 # Debian packaging copyright
@@ -66,7 +65,7 @@ Copyright: 2007-2013 Fathi Boudra <fabo@debian.org>
            2005-2007 Brian Nelson <pyro@debian.org>
            2012-2013 Zoltán Balogh <zoltan.balogh@canonical.com>
            2012-2013 Timo Jyrinki <timo.jyrinki@canonical.com>
-           2013-2017 Dmitry Shachnev <mitya57@debian.org>
+           2013-2020 Dmitry Shachnev <mitya57@debian.org>
            2018 Simon Quigley <tsimonq2@ubuntu.com>
 License: LGPL-3 or GPL-2+
 
@@ -1865,6 +1864,11 @@ License: LGPL-3 or GPL-2+
 
 # Manual rules for some files with non-standard licenses
 
+Files: src/corelib/io/qurltlds_p.h
+Copyright: 2007 Jo Hermans <jo.hermans@gmail.com>
+           2007-2019 https://github.com/publicsuffix/list contributors
+License: MPL-2.0 or GPL-2+ or LGPL-2.1+
+
 Files: tests/auto/corelib/serialization/qxmlstream/XML-Test-Suite/*
 Copyright: 1994-2002 World Wide Web Consortium
                      (Massachusetts Institute of Technology,
@@ -1925,16 +1929,13 @@ License: W3C
  associated documentation will at all times remain with copyright
  holders.
 
-Files: tests/auto/corelib/tools/qchar/data/NormalizationTest.txt
-       tests/auto/corelib/tools/qtextboundaryfinder/data/*.txt
+Files: src/corelib/text/qlocale_data_p.h
+       src/corelib/text/qunicodetables.cpp
+       tests/auto/corelib/text/qchar/data/NormalizationTest.txt
+       tests/auto/corelib/text/qtextboundaryfinder/data/*.txt
        util/unicode/data/*.txt
-Copyright: 1991-2012 Unicode, Inc.
+Copyright: 1991-2017 Unicode, Inc.
 License: Unicode
- COPYRIGHT AND PERMISSION NOTICE
- .
- Copyright © 1991-2012 Unicode, Inc. All rights reserved.
- Distributed under the Terms of Use in http://www.unicode.org/copyright.html.
- .
  Permission is hereby granted, free of charge, to any person obtaining a
  copy of the Unicode data files and any associated documentation (the "Data
  Files") or Unicode software and any associated documentation (the "Software")
@@ -1968,8 +1969,8 @@ License: Unicode
 
 Files: src/testlib/3rdparty/callgrind_p.h
        src/testlib/3rdparty/valgrind_p.h
-Copyright: 2003-2007 Josef Weidendorfer
-           2000-2008 Julian Seward
+Copyright: 2003-2017 Josef Weidendorfer
+           2000-2017 Julian Seward
 License: Hybrid-BSD
 
 Files: src/3rdparty/xcb/include/xcb/xcb_bitops.h
@@ -1985,14 +1986,12 @@ Files: src/3rdparty/xcb/include/xcb/xcb_bitops.h
        src/3rdparty/xcb/xcb-util-renderutil/util.c
        src/3rdparty/xcb/xcb-util-wm/icccm.c
 Copyright: 2000 Keith Packard
-           2006 Jamey Sharp
+           2006-2008 Jamey Sharp <jamey@minilop.net>
            2007-2008 Vincent Torri <vtorri@univ-evry.fr>
-           2007 Bart Massey
+           2007-2008 Bart Massey <bart@cs.pdx.edu>
            2008-2009 Julien Danjou <julien@danjou.info>
            2008 Arnaud Fontaine <arnau@debian.org>
-           2008 Bart Massey <bart@cs.pdx.edu>
            2008 Ian Osgood <iano@quirkster.com>
-           2008 Jamey Sharp <jamey@minilop.net>
            2008 Josh Triplett <josh@freedesktop.org>
            2008 Ulrich Eckhardt <doomster@knuut.de>
 License: Expat
@@ -2037,7 +2036,7 @@ Copyright: 2001 Robert Penner
 License: BSD-3-clause
 
 Files: src/3rdparty/forkfd/*
-Copyright: 2016 Intel Corporation
+Copyright: 2016-2019 Intel Corporation
            2015 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com
 License: Expat
 
@@ -2050,7 +2049,7 @@ Copyright: 1998-2005 David Turner
 License: Harfbuzz
 
 Files: src/3rdparty/harfbuzz-ng/*
-Copyright: 2010-2013 Google, Inc.
+Copyright: 2010-2017 Google, Inc.
            2012-2015 Mozilla Foundation
            2011 Codethink Limited
            2008-2010 Nokia Corporation and/or its subsidiary(-ies)
@@ -2063,6 +2062,7 @@ Copyright: 2010-2013 Google, Inc.
            2004-2010 Red Hat, Inc.
            2015 The Qt Company Ltd.
            2015 Konstantin Ritt
+           2016 Igalia S.L.
 License: Harfbuzz
 
 License: Harfbuzz
@@ -2085,18 +2085,18 @@ License: Harfbuzz
  PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 Files: src/3rdparty/freetype/*
-Copyright: 1996-2018 David Turner, Robert Wilhelm, and Werner Lemberg
-           1996-2009 Just van Rossum
-           2002-2012 Roberto Alameda
+Copyright: 1996-2019 David Turner, Robert Wilhelm, and Werner Lemberg
+           1996-2019 Just van Rossum
+           2002-2019 Roberto Alameda
            2003 Huw D M Davies for Codeweavers
-           2003-2012 Masatake YAMATO, Redhat K.K.
-           2004-2012 Albert Chin-A-Young
-           2004-2012 Suzuki Toshiya
+           2003-2019 Masatake YAMATO, Redhat K.K.
+           2004-2019 Albert Chin-A-Young
+           2004-2019 Suzuki Toshiya
            2007 Dmitry Timoshkov for Codeweavers
-           2007-2011 Rahul Bhalerao <rahul.bhalerao@redhat.com>
-           2007-2012 Derek Clegg, Michael Toftdal
-           2009-2011 Oran Agra, Mickey Gabel
-           2010, 2012 Joel Klinghed
+           2007-2019 Rahul Bhalerao <rahul.bhalerao@redhat.com>
+           2007-2019 Derek Clegg, Michael Toftdal
+           2009-2018 Oran Agra, Mickey Gabel
+           2010-2019 Joel Klinghed
 License: GPL-2+ or FTL
 
 Files: src/3rdparty/freetype/src/pcf/*
@@ -2130,7 +2130,7 @@ License: ICC
  profile.
 
 Files: src/3rdparty/libjpeg/*
-Copyright: 2009-2018 D. R. Commander
+Copyright: 2009-2019 D. R. Commander
            2011-2016 Siarhei Siamashka
            2015-2016, 2018 Matthieu Darbois
            2015 Intel Corporation
@@ -2141,56 +2141,40 @@ Copyright: 2009-2018 D. R. Commander
            2009 Pierre Ossman for Cendio AB
            1999-2006 MIYASAKA Masaru
            1991-2016 Thomas G. Lane, Guido Vollbeding
+           2019 Arm Limited
 License: libjpeg and BSD-3-clause and Zlib
 
 Files: src/3rdparty/libpng/*
-Copyright: 1998-2018 Glenn Randers-Pehrson
-           2000-2017 Simon-Pierre Cadieux
-           2000-2017 Eric S. Raymond
-           2000-2017 Mans Rullgard
-           2000-2017 Cosmin Truta
-           2000-2017 Gilles Vollant
-           2000-2017 James Yu
-           2000-2017 Mandar Sahastrabuddhe
-           1998-2000 Tom Lane
-           1998-2000 Willem van Schaik
+Copyright: 1995-2019 The PNG Reference Library Authors.
+           2018-2019 Cosmin Truta
+           2000-2018 Glenn Randers-Pehrson
            1996-1997 Andreas Dilger
-           1996-1997 John Bowler
-           1996-1997 Kevin Bracey
-           1996-1997 Sam Bushell
-           1996-1997 Magnus Holmgren
-           1996-1997 Greg Roelofs
-           1996-1997 Tom Tanner
-           1995-1996 Dave Martindale
-           1995-1996 Paul Schmidt
-           1995-1996 Tim Wegner
            1995-1996 Guy Eric Schalnat, Group 42, Inc.
 License: libpng
- The PNG Reference Library is supplied "AS IS".  The Contributing Authors
- and Group 42, Inc. disclaim all warranties, expressed or implied,
- including, without limitation, the warranties of merchantability and of
- fitness for any purpose.  The Contributing Authors and Group 42, Inc.
- assume no liability for direct, indirect, incidental, special, exemplary,
- or consequential damages, which may result from the use of the PNG
- Reference Library, even if advised of the possibility of such damage.
+ The software is supplied "as is", without warranty of any kind,
+ express or implied, including, without limitation, the warranties
+ of merchantability, fitness for a particular purpose, title, and
+ non-infringement.  In no event shall the Copyright owners, or
+ anyone distributing the software, be liable for any damages or
+ other liability, whether in contract, tort or otherwise, arising
+ from, out of, or in connection with the software, or the use or
+ other dealings in the software, even if advised of the possibility
+ of such damage.
  .
- Permission is hereby granted to use, copy, modify, and distribute this
- source code, or portions hereof, for any purpose, without fee, subject
- to the following restrictions:
+ Permission is hereby granted to use, copy, modify, and distribute
+ this software, or portions hereof, for any purpose, without fee,
+ subject to the following restrictions:
  .
- 1. The origin of this source code must not be misrepresented.
+ 1. The origin of this software must not be misrepresented; you
+    must not claim that you wrote the original software.  If you
+    use this software in a product, an acknowledgment in the product
+    documentation would be appreciated, but is not required.
  .
- 2. Altered versions must be plainly marked as such and must not
-    be misrepresented as being the original source.
+ 2. Altered source versions must be plainly marked as such, and must
+    not be misrepresented as being the original software.
  .
  3. This Copyright notice may not be removed or altered from any
     source or altered source distribution.
- .
- The Contributing Authors and Group 42, Inc. specifically permit, without
- fee, and encourage the use of this source code as a component to
- supporting the PNG file format in commercial products.  If you use this
- source code in a product, acknowledgment is not required but would be
- appreciated.
 
 Files: src/3rdparty/md4/* src/3rdparty/md5/*
 Copyright: -
@@ -2202,10 +2186,8 @@ Copyright: 2005 The Android Open Source Project
 License: Apache-2.0
 
 Files: src/3rdparty/pcre2/src/*
-Copyright: 1997-2018 University of Cambridge
-           2007-2012 Google Inc.
-           2009-2018 Zoltan Herczeg
-           2013-2013 Tilera Corporation
+Copyright: 1997-2019 University of Cambridge
+           2009-2019 Zoltan Herczeg
 License: BSD-3-clause
 
 Files: src/3rdparty/pcre2/src/sljit/*
@@ -2231,7 +2213,7 @@ Copyright: Guido Bertoni, Joan Daemen, Michaël Peeters and Gilles Van Assche
 License: CC0-1.0
 
 Files: src/3rdparty/sha3/brg_endian.h
-Copyright: 1998-2008, Brian Gladman, Worcester, UK
+Copyright: 1998-2013, Brian Gladman, Worcester, UK
 License: brg-endian
  The redistribution and use of this software (with or without changes)
  is allowed without the payment of fees or royalties provided that:
@@ -2252,10 +2234,11 @@ License: brg-endian
  and/or fitness for purpose.
 
 Files: src/3rdparty/tinycbor/*
-Copyright: 2016-2018 Intel Corporation
+Copyright: 2016-2019 Intel Corporation
 License: Expat
 
 Files: src/3rdparty/wasm/DejaVuSans.ttf
+       src/3rdparty/wasm/DejaVuSansMono.ttf
 Copyright: 2003 Bitstream, Inc.
            2006 Tavmjong Bah
            American Mathematical Society
@@ -2271,7 +2254,29 @@ Copyright: 1995-2017 Jean-loup Gailly
            1995-2017 Mark Adler
 License: Zlib
 
+Files: src/3rdparty/md4c/*
+Copyright: 2016-2019 Martin Mitáš
+License: Expat
+
+Files: src/3rdparty/VulkanMemoryAllocator/*
+Copyright: 2017-2018 Advanced Micro Devices, Inc.
+License: Expat
+
 # License texts
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; either version 2.1 of the
+ License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public
+ License version 2.1 can be found in /usr/share/common-licenses/LGPL-2.1.
 
 License: LGPL-3
  This program is free software: you can redistribute it and/or modify
@@ -2881,3 +2886,16 @@ License: Zlib
  2. Altered source versions must be plainly marked as such, and must not be
     misrepresented as being the original software.
  3. This notice may not be removed or altered from any source distribution.
+
+License: MPL-2.0
+ The contents of this file are subject to the Mozilla Public License Version
+ 2.0 (the "License"); you may not use this file except in compliance with
+ the License.
+ .
+ Software distributed under the License is distributed on an "AS IS" basis,
+ WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ for the specific language governing rights and limitations under the
+ License.
+ .
+ On Debian systems, the complete text of the Mozilla Public License Version
+ 2.0 can be found in /usr/share/common-licenses/MPL-2.0.
