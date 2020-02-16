@@ -29,6 +29,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
     shared-mime-info (as suggested by upstream).
   * Add one more RFC file to Files-Excluded.
   * Add more tags files to debian/qtbase5-doc-dev.install.
+  * Update to debhelper compat level 12, use the new syntax.
 
   [ Alexander Volkov ]
   * Update install files for the new version.
