@@ -28,6 +28,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   * Build with -no-mimetype-database, and make libqt5core5a depend on
     shared-mime-info (as suggested by upstream).
   * Add one more RFC file to Files-Excluded.
+  * Add more tags files to debian/qtbase5-doc-dev.install.
 
   [ Alexander Volkov ]
   * Update install files for the new version.
