@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.14.1+dfsg-1) experimental; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
@@ -39,7 +39,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   [ Helmut Grohne ]
   * qmake cross wrapper should pass QMAKE_STRIP. (Closes: #950507)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jan 2020 21:51:33 -0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 16 Feb 2020 21:38:21 +0300
 
 qtbase-opensource-src (5.12.5+dfsg-8) unstable; urgency=medium
 
