@@ -30,6 +30,7 @@ qtbase-opensource-src (5.14.1+dfsg-1) UNRELEASED; urgency=medium
   * Add one more RFC file to Files-Excluded.
   * Add more tags files to debian/qtbase5-doc-dev.install.
   * Update to debhelper compat level 12, use the new syntax.
+  * Stop passing -V to dh_makeshlibs, it is now the default behavior.
 
   [ Alexander Volkov ]
   * Update install files for the new version.
