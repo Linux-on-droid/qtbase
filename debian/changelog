@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.14.1+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.14.1+dfsg-3) experimental; urgency=medium
 
   [ Jonathan Riddell ]
   * Make qtbase5-private-dev depend upon libfontconfig1-dev as expected by
@@ -7,7 +7,7 @@ qtbase-opensource-src (5.14.1+dfsg-3) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Make libmd4c a private dependency of Qt GUI.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 17 Feb 2020 13:46:18 -0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 18 Feb 2020 00:26:25 +0300
 
 qtbase-opensource-src (5.14.1+dfsg-2) experimental; urgency=medium
 
