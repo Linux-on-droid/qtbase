@@ -1,0 +1,16 @@
+Description: make libmd4c a private dependency of Qt GUI
+Author: Dmitry Shachnev <mitya57@debian.org>
+Forwarded: https://codereview.qt-project.org/c/qt/qtbase/+/290940
+Last-Update: 2020-02-17
+
+--- a/src/gui/text/text.pri
++++ b/src/gui/text/text.pri
+@@ -99,7 +99,7 @@ qtConfig(textodfwriter) {
+ 
+ qtConfig(textmarkdownreader) {
+     qtConfig(system-textmarkdownreader) {
+-        QMAKE_USE += libmd4c
++        QMAKE_USE_PRIVATE += libmd4c
+     } else {
+         include($$PWD/../../3rdparty/md4c.pri)
+     }

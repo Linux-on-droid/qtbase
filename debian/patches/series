@@ -1,5 +1,8 @@
 # Backported from upstream.
 
+# Forwarded upstream.
+md4c_private.diff
+
 # Debian specific.
 gnukfreebsd.diff
 no_htmlinfo_example.diff
