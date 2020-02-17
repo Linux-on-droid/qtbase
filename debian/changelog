@@ -1,5 +1,9 @@
 qtbase-opensource-src (5.14.1+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Jonathan Riddell ]
+  * Make qtbase5-dev depend upon libfontconfig1-dev as expected by
+    Qt5FontDatabaseSupportConfig.cmake.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 17 Feb 2020 13:46:18 -0300
 
 qtbase-opensource-src (5.14.1+dfsg-2) experimental; urgency=medium
