@@ -333,8 +333,7 @@ Package: qtbase5-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
-Depends: libfontconfig1-dev,,
-         libegl-dev,
+Depends: libegl-dev,
          libgl-dev [!armel !armhf],
          libgles-dev [armel armhf],
          libglu1-mesa-dev [!armel !armhf] | libglu-dev [!armel !armhf],
