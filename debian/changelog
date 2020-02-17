@@ -1,5 +1,7 @@
 qtbase-opensource-src (5.14.1+dfsg-2) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Update debian/libqt5core5a.symbols from buildds’ logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 17 Feb 2020 11:33:52 +0300
 
