@@ -19,10 +19,11 @@ Build-Depends: debhelper (>= 11),
                libcups2-dev,
                libdbus-1-dev,
                libdouble-conversion-dev,
+               libdrm-dev [linux-any],
                libfontconfig1-dev,
                libfreetype6-dev,
                libgbm-dev [linux-any kfreebsd-any],
-               libgles2-mesa-dev | libgles2-dev,
+               libgles-dev,
                libglib2.0-dev,
                libglu1-mesa-dev | libglu-dev,
                libgtk-3-dev,
@@ -45,6 +46,7 @@ Build-Depends: debhelper (>= 11),
                libvulkan-dev [linux-any],
                libx11-dev,
                libx11-xcb-dev,
+               libxcb-glx0-dev,
                libxcb-icccm4-dev,
                libxcb-image0-dev,
                libxcb-keysyms1-dev,
@@ -66,9 +68,10 @@ Build-Depends: debhelper (>= 11),
                libxrender-dev,
                pkg-kde-tools (>= 0.15.17~),
                publicsuffix,
+               qt5-qmake-bin <cross>,
                unixodbc-dev,
                zlib1g-dev
-Standards-Version: 4.4.1
+Standards-Version: 4.5.0
 Homepage: https://www.qt.io/developers/
 Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qtbase.git -b gles/master
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtbase
@@ -99,7 +102,8 @@ Architecture: any
 Conflicts: qtbase5-dev
 Multi-Arch: same
 Section: libdevel
-Depends: libgles2-mesa-dev | libgles2-dev,
+Depends: libegl-dev,
+         libgles-dev,
          libqt5concurrent5 (>= ${source:Upstream-Version}),
          libqt5core5a (>= ${source:Upstream-Version}),
          libqt5dbus5 (>= ${source:Upstream-Version}),
@@ -119,14 +123,14 @@ Depends: libgles2-mesa-dev | libgles2-dev,
 Recommends: libqt5opengl5-dev (>= ${source:Upstream-Version})
 Suggests: default-libmysqlclient-dev,
           firebird-dev,
-          libegl1-mesa-dev,
-          libgl1-mesa-dev,
           libpq-dev,
           libsqlite3-dev,
           unixodbc-dev
 Breaks: qt5-qmake (<< 5.11.3+dfsg-3~),
+        qtbase5-dev-tools (<< 5.12.5+dfsg-3~),
         qtbase5-private-gles-dev (<< 5.12.2+dfsg-1~)
 Replaces: qt5-qmake (<< 5.11.3+dfsg-3~),
+          qtbase5-dev-tools (<< 5.12.5+dfsg-3~),
           qtbase5-private-gles-dev (<< 5.12.2+dfsg-1~)
 Description: Qt 5 base development files — OpenGL ES variant
  Qt is a cross-platform C++ application framework. Qt's primary feature

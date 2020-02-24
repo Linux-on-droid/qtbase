@@ -1,3 +1,77 @@
+qtbase-opensource-src (5.12.5+dfsg-8) unstable; urgency=medium
+
+  * Revert adding alternative qtbase5-gles-dev dependencies:
+    - For qtbase5-private-dev: it is wrong, those who need private headers
+      and OpenGL ES specific API should use qtbase5-private-gles-dev, not
+      qtbase5-private-dev.
+    - For libqt5opengl5-dev: it does not help, libqt5opengl5 uses desktop
+      OpenGL specific symbols, so it is not installable with libqt5gui5-gles.
+  * Remove explicit libqt5gui5 | libqt5gui5-gles dependencies from the
+    platformtheme packages. Rely on ${shlibs:Depends} instead.
+  * Override the remaining version-substvar-for-external-package error.
+  * Backport fixes for two vulnerabilities:
+    - CVE-2020-0569: Do not load plugin from the CWD.
+    - CVE-2020-0570: Qt tries to load invalid library from CWD.
+  * Make Qt 5 the default configuration in qtchooser, by installing the
+    qt-default/qtchooser/default.conf symlink in libqt5core5a package.
+  * Bump Standards-Version to 4.5.0, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 31 Jan 2020 00:03:38 +0300
+
+qtbase-opensource-src (5.12.5+dfsg-7) unstable; urgency=medium
+
+  * Changeless upload to allow arch:all binary packages being built after
+    passing NEW queue.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 23 Jan 2020 09:08:39 -0300
+
+qtbase-opensource-src (5.12.5+dfsg-6) unstable; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Split the doxygen .tags files into a new qtbase5-doc-dev package,
+    see #922707.
+  * Make relevant development packages depend upon
+    qtbase5-dev | qtbase5-gles-dev. This allows building packages with either of
+    them (Closes: #949028).
+
+  [ Helmut Grohne ]
+  * Improve cross building: (Closes: #876131)
+    + Pass --external-hostbindir to use the native qmake.
+    + Pass a cross platform_arg.
+    + Verify that the qmake self-dependency exactly matches the version.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 22 Jan 2020 14:54:20 -0300
+
+qtbase-opensource-src (5.12.5+dfsg-5) unstable; urgency=medium
+
+  [ Pino Toscano ]
+  * Limit the libdrm-dev build dependency as linux-any, as it is only useful
+    on Linux. (Closes: #947675)
+
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to add RISC-V detection.
+  * Update debian/libqt5network5.symbols from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 31 Dec 2019 14:19:15 +0300
+
+qtbase-opensource-src (5.12.5+dfsg-4) unstable; urgency=medium
+
+  * Build-depend on libdrm-dev and libxcb-glx0-dev, to fix FTBFS.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 22 Dec 2019 00:28:25 +0300
+
+qtbase-opensource-src (5.12.5+dfsg-3) unstable; urgency=medium
+
+  * Backport upstream patch to fix uic handling of .ui files with global
+    includes. Thanks to Alexander Volkov for the pointer!
+  * Stop depending on libgl1-mesa-dev and libgles2-mesa-dev, which are
+    transitional packages in mesa ≥ 19.3.0~rc6-1.
+  * Also make qtbase5-dev explicitly depend on libegl-dev (closes: #947117).
+  * Move the compatibility symlinks from qtbase5-dev-tools to qtbase5-dev
+    (closes: #939653).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 21 Dec 2019 14:30:03 +0300
+
 qtbase-opensource-src-gles (5.12.5+dfsg-1) unstable; urgency=medium
 
   * Merge qtbase-opensource-src 5.12.5+dfsg-2 upload.

@@ -3,6 +3,10 @@ mysql_free_results_when_qsqlquery_finished_is_called.patch
 qdockwidget_undocked_notification.diff
 docs_fixes.diff
 postgresql_12.diff
+uic_global_includes.diff
+riscv.diff
+CVE-2020-0569.diff
+CVE-2020-0570.diff
 
 # Debian specific.
 gnukfreebsd.diff

@@ -45,14 +45,17 @@ ifeq ($(DEB_HOST_ARCH_CPU),i386)
 	cpu_opt = -no-sse2 -no-pch
 endif
 
-ifeq ($(DEB_HOST_ARCH_OS),linux)
-	platform_arg = linux-g++
-else ifeq ($(DEB_HOST_ARCH_OS),hurd)
-	platform_arg = hurd-g++
-else ifeq ($(DEB_HOST_ARCH_OS),kfreebsd)
-	platform_arg = gnukfreebsd-g++
-else
-	$(error Unknown qmake mkspec for $(DEB_HOST_ARCH_OS))
+mkspec_osmap_kfreebsd = gnukfreebsd
+platform_os = $(or $(mkspec_osmap_$(DEB_HOST_ARCH_OS)),$(DEB_HOST_ARCH_OS))
+platform_arg = $(platform_os)-g++
+
+ifneq ($(DEB_BUILD_ARCH),$(DEB_HOST_ARCH))
+platform_arg = $(platform_os)-$(DEB_HOST_GNU_CPU)-$(DEB_HOST_ARCH_LIBC)$(filter-out base,$(DEB_HOST_ARCH_ABI))-g++
+endif
+
+# Refuse cross building with a qmake whose version differs from the package.
+ifneq (,$(filter cross,$(DEB_BUILD_PROFILES)))
+extra_configure_opts += -external-hostbindir /usr/lib/qt5/bin
 endif
 
 ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
@@ -65,6 +68,9 @@ endif
 	dh $@ --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
+ifneq (,$(filter cross,$(DEB_BUILD_PROFILES)))
+	test "`dpkg-query -f '$${Version}' -W qt5-qmake-bin`" = "$(DEB_VERSION)"
+endif
 	MAKEFLAGS="-j$(NUMJOBS) ${CXXFLAGS:%=EXTRA_CXXFLAGS+=%} ${LDFLAGS:%=EXTRA_LFLAGS+=%}" \
 	        ./configure \
 	            -confirm-license \
