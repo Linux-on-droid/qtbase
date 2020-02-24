@@ -1,4 +1,4 @@
-qtbase-opensource-src-gles (5.12.5+dfsg-2) UNRELEASED; urgency=medium
+qtbase-opensource-src-gles (5.12.5+dfsg-2) unstable; urgency=medium
 
   * Merge qtbase-opensource-src 5.12.5+dfsg-2 upload.
     - Fixes FTBFS (closes: #952000).
