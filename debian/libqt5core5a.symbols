@@ -1466,6 +1466,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN16QXmlStreamReader18skipCurrentElementEv@Qt_5 5.0.2
  _ZN16QXmlStreamReader20readNextStartElementEv@Qt_5 5.0.2
  _ZN16QXmlStreamReader22setNamespaceProcessingEb@Qt_5 5.0.2
+ _ZN16QXmlStreamReader23setEntityExpansionLimitEi@Qt_5 5.12.5
  _ZN16QXmlStreamReader28addExtraNamespaceDeclarationERK30QXmlStreamNamespaceDeclaration@Qt_5 5.0.2
  _ZN16QXmlStreamReader29addExtraNamespaceDeclarationsERK7QVectorI30QXmlStreamNamespaceDeclarationE@Qt_5 5.0.2
  _ZN16QXmlStreamReader5clearEv@Qt_5 5.0.2
@@ -4567,6 +4568,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK16QXmlStreamReader16documentEncodingEv@Qt_5 5.0.2
  _ZNK16QXmlStreamReader18entityDeclarationsEv@Qt_5 5.0.2
  _ZNK16QXmlStreamReader19namespaceProcessingEv@Qt_5 5.0.2
+ _ZNK16QXmlStreamReader20entityExpansionLimitEv@Qt_5 5.12.5
  _ZNK16QXmlStreamReader20isStandaloneDocumentEv@Qt_5 5.0.2
  _ZNK16QXmlStreamReader20notationDeclarationsEv@Qt_5 5.0.2
  _ZNK16QXmlStreamReader21namespaceDeclarationsEv@Qt_5 5.0.2
