@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.12.5+dfsg-9) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.5+dfsg-9) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Backport upstream patch to add an expansion limit for XML entities
@@ -8,7 +8,7 @@ qtbase-opensource-src (5.12.5+dfsg-9) UNRELEASED; urgency=medium
   [ Helmut Grohne ]
   * qmake cross wrapper should pass QMAKE_STRIP. (Closes: #950507)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2020 12:24:14 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 27 Feb 2020 16:52:19 +0300
 
 qtbase-opensource-src (5.12.5+dfsg-8) unstable; urgency=medium
 
