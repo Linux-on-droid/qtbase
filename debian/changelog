@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.12.5+dfsg-9) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2020 12:24:14 +0300
+
 qtbase-opensource-src (5.12.5+dfsg-8) unstable; urgency=medium
 
   * Revert adding alternative qtbase5-gles-dev dependencies:
