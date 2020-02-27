@@ -3,6 +3,7 @@ qtbase-opensource-src (5.12.5+dfsg-9) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Backport upstream patch to add an expansion limit for XML entities
     (CVE-2015-9541, closes: #951066).
+    - Add two new symbols to debian/libqt5core5a.symbols.
 
   [ Helmut Grohne ]
   * qmake cross wrapper should pass QMAKE_STRIP. (Closes: #950507)
