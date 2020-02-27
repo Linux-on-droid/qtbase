@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.12.5+dfsg-9) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to add an expansion limit for XML entities
+    (CVE-2015-9541, closes: #951066).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2020 12:24:14 +0300
 

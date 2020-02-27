@@ -7,6 +7,7 @@ uic_global_includes.diff
 riscv.diff
 CVE-2020-0569.diff
 CVE-2020-0570.diff
+CVE-2015-9541.diff
 
 # Debian specific.
 gnukfreebsd.diff
