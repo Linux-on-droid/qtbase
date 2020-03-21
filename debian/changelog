@@ -2,6 +2,7 @@ qtbase-opensource-src (5.14.1+dfsg-4) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Merge 5.12.5+dfsg-9 upload from unstable.
+  * Drop armv4.diff. The armel baseline is armv5te now (see #882174).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2020 18:47:48 +0300
 

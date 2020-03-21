@@ -10,6 +10,5 @@ no_htmlinfo_example.diff
 remove_privacy_breaches.diff
 link_fbclient.diff
 gnukfreebsd_linker_warnings.diff
-armv4.diff
 nonlinux_utime.diff
 qdoc_default_incdirs.diff
