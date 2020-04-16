@@ -6,6 +6,7 @@ qtbase-opensource-src (5.14.2+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Drop debian/patches/md4c_private.diff, applied upstream.
   * Refresh debian/patches/CVE-2015-9541.diff.
+  * Update debian/libqt5gui5.symbols from ia64 buildd’s log.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2020 18:47:48 +0300
 

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.14.1 amd64 i386
+# SymbolsHelper-Confirmed: 5.14.1 amd64 i386 ia64
 libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
 | libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-14-1
 | libqt5gui5 #MINVER#
@@ -7833,6 +7833,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZNK9QVector4D6lengthEv@Qt_5 5.0.2
  _ZNK9QVector4Dcv8QVariantEv@Qt_5 5.0.2
  (optional=templinst)_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Qt_5 5.12.2
+ (optional=templinst|arch=ia64)_ZNSt7__cxx1110_List_baseIN11QFontEngine15GlyphCacheEntryESaIS2_EE8_M_clearEv@Qt_5_PRIVATE_API 5.14.1 1
  (optional=templinst|arch=armel armhf hurd-i386 i386 kfreebsd-i386 m68k mips mipsel powerpc powerpcspe)_ZSt4swapIN8QVariant7PrivateEENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS6_ESt18is_move_assignableIS6_EEE5valueEvE4typeERS6_SG_@Qt_5 5.9.1
  _ZTI10QBasicDrag@Qt_5_PRIVATE_API 5.1.0 1
  _ZTI10QBlittable@Qt_5_PRIVATE_API 5.0.2 1
