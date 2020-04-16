@@ -1,0 +1,21 @@
+Description: fix iteration in source check in error case
+ It was accessing the deleted current element in a potentially
+ reallocated container.
+Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=37df81b788ebe700
+Last-Update: 2020-04-16
+
+--- a/src/corelib/kernel/qeventdispatcher_glib.cpp
++++ b/src/corelib/kernel/qeventdispatcher_glib.cpp
+@@ -86,9 +86,10 @@ static gboolean socketNotifierSourceChec
+                      p->pollfd.fd, t[int(p->socketNotifier->type())]);
+             // ### note, modifies src->pollfds!
+             p->socketNotifier->setEnabled(false);
++            i--;
++        } else {
++            pending = pending || ((p->pollfd.revents & p->pollfd.events) != 0);
+         }
+-
+-        pending = ((p->pollfd.revents & p->pollfd.events) != 0);
+     }
+ 
+     return pending;

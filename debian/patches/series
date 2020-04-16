@@ -9,6 +9,7 @@ CVE-2020-0569.diff
 CVE-2020-0570.diff
 CVE-2015-9541.diff
 enable_a11y_on_linux.diff
+qeventdispatcher_glib_use_after_free.diff
 
 # Debian specific.
 gnukfreebsd.diff
