@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.12.5+dfsg-10) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Enable accessibility on Linux when org.a11y.Status IsEnabled is true.
+    Thanks to Samuel Thibault (closes: #948676).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 16 Apr 2020 13:26:48 +0300
 
