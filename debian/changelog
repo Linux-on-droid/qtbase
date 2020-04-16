@@ -1,12 +1,11 @@
-qtbase-opensource-src (5.12.5+dfsg-10) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.12.5+dfsg-10) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Enable accessibility on Linux when org.a11y.Status IsEnabled is true.
     Thanks to Samuel Thibault (closes: #948676).
   * Backport upstream patch to fix use-after-free in GLib event dispatcher
     (closes: #953401).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 16 Apr 2020 13:26:48 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 16 Apr 2020 20:05:12 +0300
 
 qtbase-opensource-src (5.12.5+dfsg-9) unstable; urgency=medium
 
