@@ -1,7 +1,7 @@
 qtbase-opensource-src (5.14.1+dfsg-4) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
-  * Merge 5.12.5+dfsg-9 upload from unstable.
+  * Merge 5.12.5+dfsg-10 upload from unstable.
   * Drop armv4.diff. The armel baseline is armv5te now (see #882174).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2020 18:47:48 +0300
@@ -65,6 +65,15 @@ qtbase-opensource-src (5.14.1+dfsg-1) experimental; urgency=medium
   * qmake cross wrapper should pass QMAKE_STRIP. (Closes: #950507)
 
  -- Dmitry Shachnev <mitya57@debian.org>  Sun, 16 Feb 2020 21:38:21 +0300
+
+qtbase-opensource-src (5.12.5+dfsg-10) unstable; urgency=medium
+
+  * Enable accessibility on Linux when org.a11y.Status IsEnabled is true.
+    Thanks to Samuel Thibault (closes: #948676).
+  * Backport upstream patch to fix use-after-free in GLib event dispatcher
+    (closes: #953401).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 16 Apr 2020 20:05:12 +0300
 
 qtbase-opensource-src (5.12.5+dfsg-9) unstable; urgency=medium
 
