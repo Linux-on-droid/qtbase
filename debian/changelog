@@ -9,6 +9,7 @@ qtbase-opensource-src (5.14.2+dfsg-1) UNRELEASED; urgency=medium
   * Update debian/libqt5gui5.symbols from ia64 buildd’s log.
   * Backport upstream patch fixing QLibrary deadlock affecting Krita.
   * Bump ABI version to qtbase-abi-5-14-2.
+  * Drop unused Lintian override for libqt5core5a package.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2020 18:47:48 +0300
 
