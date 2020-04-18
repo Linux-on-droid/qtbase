@@ -10,6 +10,7 @@ qtbase-opensource-src (5.14.2+dfsg-1) UNRELEASED; urgency=medium
   * Backport upstream patch fixing QLibrary deadlock affecting Krita.
   * Bump ABI version to qtbase-abi-5-14-2.
   * Drop unused Lintian override for libqt5core5a package.
+  * Remove build paths from prl files, for reproducible builds.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2020 18:47:48 +0300
 

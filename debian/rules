@@ -294,6 +294,10 @@ endif
 	sed -i 's,bin/env perl,bin/perl,' debian/tmp/usr/lib/qt5/bin/*.pl \
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/features/data/unix/findclasslist.pl
 
+	# Reproducible builds: remove build paths from .prl files.
+	sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/libQt5*.prl \
+		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/examples/widgets/tools/plugandpaint/plugins/libpnp_basictools.prl
+
 override_dh_auto_install-indep:
 	dh_auto_build -- INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
