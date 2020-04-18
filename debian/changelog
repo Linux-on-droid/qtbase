@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.14.2+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.14.2+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Merge 5.12.5+dfsg-10 upload from unstable.
   * Drop armv4.diff. The armel baseline is armv5te now (see #882174).
   * New upstream release.
@@ -12,7 +11,7 @@ qtbase-opensource-src (5.14.2+dfsg-1) UNRELEASED; urgency=medium
   * Drop unused Lintian override for libqt5core5a package.
   * Remove build paths from prl files, for reproducible builds.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2020 18:47:48 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 18 Apr 2020 20:50:59 +0300
 
 qtbase-opensource-src (5.14.1+dfsg-3) experimental; urgency=medium
 
