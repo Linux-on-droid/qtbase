@@ -11,6 +11,9 @@ qtbase-opensource-src (5.14.2+dfsg-2) UNRELEASED; urgency=medium
     build not only on Linux.
   * Mark few Linux-only symbols as linux-any.
 
+  [ Dmitry Shachnev ]
+  * Mark QStringRef::compare symbol as optional=inline (closes: #957730).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Apr 2020 23:37:00 +0200
 
 qtbase-opensource-src (5.14.2+dfsg-1) experimental; urgency=medium

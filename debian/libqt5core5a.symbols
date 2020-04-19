@@ -4056,7 +4056,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK10QStringRef6toUIntEPbi@Qt_5 5.1.0
  _ZNK10QStringRef6toUcs4Ev@Qt_5 5.0.2
  _ZNK10QStringRef6toUtf8Ev@Qt_5 5.0.2
- _ZNK10QStringRef7compareE13QLatin1StringN2Qt15CaseSensitivityE@Qt_5 5.10.0
+ (optional=inline)_ZNK10QStringRef7compareE13QLatin1StringN2Qt15CaseSensitivityE@Qt_5 5.10.0
  _ZNK10QStringRef7indexOfE13QLatin1StringiN2Qt15CaseSensitivityE@Qt_5 5.0.2
  _ZNK10QStringRef7indexOfE5QChariN2Qt15CaseSensitivityE@Qt_5 5.0.2
  _ZNK10QStringRef7indexOfERK7QStringiN2Qt15CaseSensitivityE@Qt_5 5.0.2
