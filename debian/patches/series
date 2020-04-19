@@ -11,3 +11,5 @@ link_fbclient.diff
 gnukfreebsd_linker_warnings.diff
 nonlinux_utime.diff
 qdoc_default_incdirs.diff
+path_max.diff
+qstorageinfo_linux.diff
