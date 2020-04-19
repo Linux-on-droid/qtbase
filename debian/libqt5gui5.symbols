@@ -2079,8 +2079,8 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  (arch=linux-any)_ZN15QVulkanInstance19getInstanceProcAddrEPKc@Qt_5 5.11.1
  (arch=linux-any)_ZN15QVulkanInstance19supportedExtensionsEv@Qt_5 5.11.1
  (arch=linux-any)_ZN15QVulkanInstance20resetDeviceFunctionsEP10VkDevice_T@Qt_5 5.11.1
- (subst)_ZN15QVulkanInstance23removeDebugOutputFilterEPFbj26VkDebugReportObjectTypeEXT{uint64_t}{size_t}iPKcS2_E@Qt_5 5.14.1
- (subst)_ZN15QVulkanInstance24installDebugOutputFilterEPFbj26VkDebugReportObjectTypeEXT{uint64_t}{size_t}iPKcS2_E@Qt_5 5.14.1
+ (subst|arch=linux-any)_ZN15QVulkanInstance23removeDebugOutputFilterEPFbj26VkDebugReportObjectTypeEXT{uint64_t}{size_t}iPKcS2_E@Qt_5 5.14.1
+ (subst|arch=linux-any)_ZN15QVulkanInstance24installDebugOutputFilterEPFbj26VkDebugReportObjectTypeEXT{uint64_t}{size_t}iPKcS2_E@Qt_5 5.14.1
  (arch=linux-any)_ZN15QVulkanInstance6createEv@Qt_5 5.11.1
  (arch=linux-any)_ZN15QVulkanInstance7destroyEv@Qt_5 5.11.1
  (arch=linux-any)_ZN15QVulkanInstance8setFlagsE6QFlagsINS_4FlagEE@Qt_5 5.11.1
@@ -4035,7 +4035,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN23QPlatformSystemTrayIconD1Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN23QPlatformSystemTrayIconD2Ev@Qt_5_PRIVATE_API 5.9.0~beta 1
  (arch=linux-any)_ZN23QPlatformVulkanInstance13presentQueuedEP7QWindow@Qt_5_PRIVATE_API 5.11.1 1
- (subst)_ZN23QPlatformVulkanInstance15setDebugFiltersERK7QVectorIPFbj26VkDebugReportObjectTypeEXT{uint64_t}{size_t}iPKcS3_EE@Qt_5_PRIVATE_API 5.14.1 1
+ (subst|arch=linux-any)_ZN23QPlatformVulkanInstance15setDebugFiltersERK7QVectorIPFbj26VkDebugReportObjectTypeEXT{uint64_t}{size_t}iPKcS3_EE@Qt_5_PRIVATE_API 5.14.1 1
  (arch=linux-any)_ZN23QPlatformVulkanInstanceC1Ev@Qt_5_PRIVATE_API 5.11.1 1
  (arch=linux-any)_ZN23QPlatformVulkanInstanceC2Ev@Qt_5_PRIVATE_API 5.11.1 1
  (arch=linux-any)_ZN23QPlatformVulkanInstanceD0Ev@Qt_5_PRIVATE_API 5.11.1 1
