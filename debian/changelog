@@ -3,6 +3,8 @@ qtbase-opensource-src (5.14.2+dfsg-2) UNRELEASED; urgency=medium
   [ Pino Toscano ]
   * Add the libkrb5-dev build dependency to support SPNEGO/GSSAPI authentication
     in QtNetwork.
+  * Explicitly add the pkg-config build dependency, as right now it is pulled
+    by other packages.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Apr 2020 23:37:00 +0200
 
