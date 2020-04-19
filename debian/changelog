@@ -7,6 +7,8 @@ qtbase-opensource-src (5.14.2+dfsg-2) UNRELEASED; urgency=medium
     by other packages.
   * Avoid two unconditional PATH_MAX occurrences to build on Hurd; patches
     path_max.diff, and qstorageinfo_linux.diff.
+  * Install the QtInputSupport development files on any architecture, as it is
+    build not only on Linux.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Apr 2020 23:37:00 +0200
 

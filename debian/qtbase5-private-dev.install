@@ -24,24 +24,13 @@
 [kfreebsd-any linux-any] usr/lib/*/cmake/Qt5KmsSupport/Qt5KmsSupportConfigVersion.cmake
 [kfreebsd-any linux-any] usr/lib/*/libQt5KmsSupport.a
 [kfreebsd-any linux-any] usr/lib/*/libQt5KmsSupport.prl
-[linux-any] usr/include/*/qt5/QtInputSupport/5.*/*
-[linux-any] usr/include/*/qt5/QtInputSupport/QIntegrityHIDManager
-[linux-any] usr/include/*/qt5/QtInputSupport/QtInputSupport
-[linux-any] usr/include/*/qt5/QtInputSupport/QtInputSupportDepends
-[linux-any] usr/include/*/qt5/QtInputSupport/QtInputSupportVersion
-[linux-any] usr/include/*/qt5/QtInputSupport/qintegrityhidmanager.h
-[linux-any] usr/include/*/qt5/QtInputSupport/qtinputsupportversion.h
 [linux-any] usr/include/*/qt5/QtVulkanSupport/5.*/*
 [linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupport
 [linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportDepends
 [linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportVersion
 [linux-any] usr/include/*/qt5/QtVulkanSupport/qtvulkansupportversion.h
-[linux-any] usr/lib/*/cmake/Qt5InputSupport/Qt5InputSupportConfig.cmake
-[linux-any] usr/lib/*/cmake/Qt5InputSupport/Qt5InputSupportConfigVersion.cmake
 [linux-any] usr/lib/*/cmake/Qt5VulkanSupport/Qt5VulkanSupportConfig.cmake
 [linux-any] usr/lib/*/cmake/Qt5VulkanSupport/Qt5VulkanSupportConfigVersion.cmake
-[linux-any] usr/lib/*/libQt5InputSupport.a
-[linux-any] usr/lib/*/libQt5InputSupport.prl
 [linux-any] usr/lib/*/libQt5VulkanSupport.a
 [linux-any] usr/lib/*/libQt5VulkanSupport.prl
 usr/include/*/qt5/QtAccessibilitySupport/5.*/*
@@ -82,6 +71,13 @@ usr/include/*/qt5/QtFontDatabaseSupport/QtFontDatabaseSupportDepends
 usr/include/*/qt5/QtFontDatabaseSupport/QtFontDatabaseSupportVersion
 usr/include/*/qt5/QtFontDatabaseSupport/qtfontdatabasesupportversion.h
 usr/include/*/qt5/QtGui/5.*/*
+usr/include/*/qt5/QtInputSupport/5.*/*
+usr/include/*/qt5/QtInputSupport/QIntegrityHIDManager
+usr/include/*/qt5/QtInputSupport/QtInputSupport
+usr/include/*/qt5/QtInputSupport/QtInputSupportDepends
+usr/include/*/qt5/QtInputSupport/QtInputSupportVersion
+usr/include/*/qt5/QtInputSupport/qintegrityhidmanager.h
+usr/include/*/qt5/QtInputSupport/qtinputsupportversion.h
 usr/include/*/qt5/QtLinuxAccessibilitySupport/5.*/*
 usr/include/*/qt5/QtLinuxAccessibilitySupport/QtLinuxAccessibilitySupport
 usr/include/*/qt5/QtLinuxAccessibilitySupport/QtLinuxAccessibilitySupportDepends
@@ -130,6 +126,8 @@ usr/lib/*/cmake/Qt5FbSupport/Qt5FbSupportConfig.cmake
 usr/lib/*/cmake/Qt5FbSupport/Qt5FbSupportConfigVersion.cmake
 usr/lib/*/cmake/Qt5FontDatabaseSupport/Qt5FontDatabaseSupportConfig.cmake
 usr/lib/*/cmake/Qt5FontDatabaseSupport/Qt5FontDatabaseSupportConfigVersion.cmake
+usr/lib/*/cmake/Qt5InputSupport/Qt5InputSupportConfig.cmake
+usr/lib/*/cmake/Qt5InputSupport/Qt5InputSupportConfigVersion.cmake
 usr/lib/*/cmake/Qt5LinuxAccessibilitySupport/Qt5LinuxAccessibilitySupportConfig.cmake
 usr/lib/*/cmake/Qt5LinuxAccessibilitySupport/Qt5LinuxAccessibilitySupportConfigVersion.cmake
 usr/lib/*/cmake/Qt5PlatformCompositorSupport/Qt5PlatformCompositorSupportConfig.cmake
@@ -156,6 +154,8 @@ usr/lib/*/libQt5FbSupport.a
 usr/lib/*/libQt5FbSupport.prl
 usr/lib/*/libQt5FontDatabaseSupport.a
 usr/lib/*/libQt5FontDatabaseSupport.prl
+usr/lib/*/libQt5InputSupport.a
+usr/lib/*/libQt5InputSupport.prl
 usr/lib/*/libQt5LinuxAccessibilitySupport.a
 usr/lib/*/libQt5LinuxAccessibilitySupport.prl
 usr/lib/*/libQt5PlatformCompositorSupport.a
