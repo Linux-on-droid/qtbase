@@ -2,6 +2,7 @@ qtbase-opensource-src-gles (5.14.2+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Merge qtbase-opensource-src 5.14.2+dfsg-2 upload.
+  * Override version-substvar-for-external-package Lintian errors.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 12 May 2020 14:34:12 +0300
 
