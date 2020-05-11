@@ -1,12 +1,7 @@
 # Backported from upstream.
-mysql_free_results_when_qsqlquery_finished_is_called.patch
-qdockwidget_undocked_notification.diff
-docs_fixes.diff
-postgresql_12.diff
-uic_global_includes.diff
-riscv.diff
-CVE-2020-0569.diff
-CVE-2020-0570.diff
+CVE-2015-9541.diff
+enable_a11y_on_linux.diff
+fix_qlibrary_deadlock.diff
 
 # Debian specific.
 gnukfreebsd.diff
@@ -14,6 +9,7 @@ no_htmlinfo_example.diff
 remove_privacy_breaches.diff
 link_fbclient.diff
 gnukfreebsd_linker_warnings.diff
-armv4.diff
 nonlinux_utime.diff
 qdoc_default_incdirs.diff
+path_max.diff
+qstorageinfo_linux.diff

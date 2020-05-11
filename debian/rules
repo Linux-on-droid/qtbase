@@ -116,6 +116,7 @@ endif
 	            -accessibility \
 	            -no-directfb \
 	            -no-use-gold-linker \
+	            -no-mimetype-database \
 	            -opengl es2 \
 	            $(extra_configure_opts) \
 	            $(cpu_opt) \
@@ -285,7 +286,7 @@ override_dh_installchangelogs:
 	fi
 
 override_dh_makeshlibs:
-	dh_makeshlibs -V -XlibQt5EglFSDeviceIntegration -XlibQt5EglFsKmsSupport -XlibQt5XcbQpa
+	dh_makeshlibs -XlibQt5EglFSDeviceIntegration -XlibQt5EglFsKmsSupport -XlibQt5XcbQpa
 
 override_dh_auto_test:
 

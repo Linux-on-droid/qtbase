@@ -1,3 +1,117 @@
+qtbase-opensource-src (5.14.2+dfsg-2) experimental; urgency=medium
+
+  [ Pino Toscano ]
+  * Add the libkrb5-dev build dependency to support SPNEGO/GSSAPI authentication
+    in QtNetwork.
+  * Explicitly add the pkg-config build dependency, as right now it is pulled
+    by other packages.
+  * Avoid two unconditional PATH_MAX occurrences to build on Hurd; patches
+    path_max.diff, and qstorageinfo_linux.diff.
+  * Install the QtInputSupport development files on any architecture, as it is
+    built not only on Linux.
+  * Mark few Linux-only symbols as linux-any.
+
+  [ Dmitry Shachnev ]
+  * Mark QStringRef::compare symbol as optional=inline (closes: #957730).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 28 Apr 2020 14:44:22 +0300
+
+qtbase-opensource-src (5.14.2+dfsg-1) experimental; urgency=medium
+
+  * Merge 5.12.5+dfsg-10 upload from unstable.
+  * Drop armv4.diff. The armel baseline is armv5te now (see #882174).
+  * New upstream release.
+  * Drop debian/patches/md4c_private.diff, applied upstream.
+  * Refresh debian/patches/CVE-2015-9541.diff.
+  * Update debian/libqt5gui5.symbols from ia64 buildd’s log.
+  * Backport upstream patch fixing QLibrary deadlock affecting Krita.
+  * Bump ABI version to qtbase-abi-5-14-2.
+  * Drop unused Lintian override for libqt5core5a package.
+  * Remove build paths from prl files, for reproducible builds.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 18 Apr 2020 20:50:59 +0300
+
+qtbase-opensource-src (5.14.1+dfsg-3) experimental; urgency=medium
+
+  [ Jonathan Riddell ]
+  * Make qtbase5-private-dev depend upon libfontconfig1-dev as expected by
+    Qt5FontDatabaseSupportConfig.cmake.
+
+  [ Dmitry Shachnev ]
+  * Make libmd4c a private dependency of Qt GUI.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 18 Feb 2020 00:26:25 +0300
+
+qtbase-opensource-src (5.14.1+dfsg-2) experimental; urgency=medium
+
+  * Update debian/libqt5core5a.symbols from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 17 Feb 2020 11:34:34 +0300
+
+qtbase-opensource-src (5.14.1+dfsg-1) experimental; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
+    - Bump ABI version to qtbase-abi-5-14-1.
+    - Bump Build-Depends-Indep versions.
+  * Remove patches already applied upstream:
+    - mysql_free_results_when_qsqlquery_finished_is_called.patch
+    - qdockwidget_undocked_notification.diff
+    - docs_fixes.diff
+    - postgresql_12.diff
+    - uic_global_includes.diff
+    - riscv.diff
+  * Refresh patches:
+    - gnukfreebsd.diff
+    - gnukfreebsd_linker_warnings.diff
+    - nonlinux_utime.diff
+    - qdoc_default_incdirs.diff
+  * Add libmd4c-dev as a build dependency, required for markdown support.
+
+  [ Dmitry Shachnev ]
+  * Update path to qbytearray/rfc3252.txt in Files-Excluded list.
+  * Update debian/copyright using debian/scripts/update-copyright.
+  * debian/scripts/update-copyright: Correctly handle repeating authors
+    in the same file.
+  * Update symbols files from the current build logs.
+  * Build-depend on libzstd-dev.
+  * Build with -no-mimetype-database, and make libqt5core5a depend on
+    shared-mime-info (as suggested by upstream).
+  * Add one more RFC file to Files-Excluded.
+  * Add more tags files to debian/qtbase5-doc-dev.install.
+  * Update to debhelper compat level 12, use the new syntax.
+  * Stop passing -V to dh_makeshlibs, it is now the default behavior.
+  * Manually update the non-generated part of debian/copyright.
+
+  [ Alexander Volkov ]
+  * Update install files for the new version.
+
+  [ Helmut Grohne ]
+  * qmake cross wrapper should pass QMAKE_STRIP. (Closes: #950507)
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 16 Feb 2020 21:38:21 +0300
+
+qtbase-opensource-src (5.12.5+dfsg-10) unstable; urgency=medium
+
+  * Enable accessibility on Linux when org.a11y.Status IsEnabled is true.
+    Thanks to Samuel Thibault (closes: #948676).
+  * Backport upstream patch to fix use-after-free in GLib event dispatcher
+    (closes: #953401).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 16 Apr 2020 20:05:12 +0300
+
+qtbase-opensource-src (5.12.5+dfsg-9) unstable; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to add an expansion limit for XML entities
+    (CVE-2015-9541, closes: #951066).
+    - Add two new symbols to debian/libqt5core5a.symbols.
+
+  [ Helmut Grohne ]
+  * qmake cross wrapper should pass QMAKE_STRIP. (Closes: #950507)
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 27 Feb 2020 16:52:19 +0300
+
 qtbase-opensource-src-gles (5.12.5+dfsg-2) unstable; urgency=medium
 
   * Merge qtbase-opensource-src 5.12.5+dfsg-8 upload.

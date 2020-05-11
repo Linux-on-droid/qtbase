@@ -8,9 +8,13 @@ Forwarded: https://codereview.qt-project.org/163214 (rejected)
 Bug: https://bugs.debian.org/827935
 Last-Update: 2019-03-02
 
+---
+ src/corelib/configure.json |    3 +++
+ 1 file changed, 3 insertions(+)
+
 --- a/src/corelib/configure.json
 +++ b/src/corelib/configure.json
-@@ -285,6 +285,7 @@
+@@ -331,6 +331,7 @@
              "label": "O_CLOEXEC",
              "type": "compile",
              "test": {
@@ -18,7 +22,7 @@ Last-Update: 2019-03-02
                  "head": "#define _GNU_SOURCE 1",
                  "include": [ "sys/types.h", "sys/socket.h", "fcntl.h", "unistd.h" ],
                  "main": [
-@@ -340,6 +341,7 @@
+@@ -386,6 +387,7 @@
                  "include": "sys/stat.h",
                  "main": "futimens(-1, 0);",
                  "qmake": [
@@ -26,7 +30,7 @@ Last-Update: 2019-03-02
                      "# Block futimens() on Apple platforms unless it's available on ALL",
                      "# deployment targets. This simplifies the logic at the call site",
                      "# dramatically, as it isn't strictly needed compared to futimes().",
-@@ -367,6 +369,7 @@
+@@ -413,6 +415,7 @@
              "label": "getentropy()",
              "type": "compile",
              "test": {
