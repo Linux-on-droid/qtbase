@@ -278,6 +278,9 @@ endif
 	sed -i 's,-fdebug-prefix-map=$(CURDIR)=. ,,' \
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/qmodule.pri
 
+	# Reproducible builds: remove build paths from .prl files.
+	sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/libQt5*.prl
+
 override_dh_installchangelogs:
 	if [ -f $(upstream_changes) ] ; then \
 		dh_installchangelogs $(upstream_changes); \
