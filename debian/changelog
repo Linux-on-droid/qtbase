@@ -1,7 +1,8 @@
 qtbase-opensource-src (5.14.2+dfsg-3) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
-  * Build with -no-feature-relocatable, to fix paths on usr-merged systems.
+  * Build with -no-feature-relocatable, to fix paths on usr-merged systems
+    (closes: #961554).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 19 May 2020 23:37:42 +0300
 
