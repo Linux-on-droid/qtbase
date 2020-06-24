@@ -1,3 +1,10 @@
+qtbase-opensource-src-gles (5.14.2+dfsg-3) unstable; urgency=medium
+
+  * Merge qtbase-opensource-src 5.14.2+dfsg-3 upload.
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 24 Jun 2020 13:28:41 +0300
+
 qtbase-opensource-src (5.14.2+dfsg-3) unstable; urgency=medium
 
   * Build with -no-feature-relocatable, to fix paths on usr-merged systems
