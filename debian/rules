@@ -117,6 +117,7 @@ endif
 	            -no-directfb \
 	            -no-use-gold-linker \
 	            -no-mimetype-database \
+	            -no-feature-relocatable \
 	            -opengl es2 \
 	            $(extra_configure_opts) \
 	            $(cpu_opt) \
