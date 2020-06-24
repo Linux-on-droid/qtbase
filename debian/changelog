@@ -1,11 +1,11 @@
-qtbase-opensource-src (5.14.2+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.14.2+dfsg-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Build with -no-feature-relocatable, to fix paths on usr-merged systems
     (closes: #961554).
   * Update debian/libqt5core5a.symbols for hurd-i386.
+  * Upload to unstable.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 19 May 2020 23:37:42 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 24 Jun 2020 11:21:08 +0300
 
 qtbase-opensource-src (5.14.2+dfsg-2) experimental; urgency=medium
 
