@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.14.1 amd64 arm64 armel armhf i386 mips64el mipsel ppc64el riscv64 s390x sparc64
+# SymbolsHelper-Confirmed: 5.14.2 hurd-i386
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-14-2
 * Build-Depends-Package: qtbase5-dev
@@ -22,7 +22,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _Z10forcepointR11QTextStream@Qt_5 5.0.2
  _Z10noshowbaseR11QTextStream@Qt_5 5.0.2
  _Z10qHBNewFacePvPF8HB_ErrorS_jPhPjE@Qt_5 5.0.2
- (subst|arch=amd64 i386 x32)_Z10qRandomCpuPv{qptrdiff}@Qt_5 5.14.1
+ (subst|arch=amd64 hurd-i386 i386 x32)_Z10qRandomCpuPv{qptrdiff}@Qt_5 5.14.2
  _Z10qShapeItemP14HB_ShaperItem_@Qt_5 5.0.2
  _Z10qTerminatev@Qt_5 5.0.2
  (arch=sh4)_Z10qvsnprintfPcjPKc13__va_list_tag@Qt_5 5.4.2
