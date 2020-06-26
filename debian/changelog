@@ -1,10 +1,9 @@
-qtbase-opensource-src (5.14.2+dfsg-4) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.14.2+dfsg-4) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Restore debian/patches/armv4.diff, it is still needed for clang
     (see https://bugs.debian.org/963709#20 for details).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Jun 2020 12:08:07 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 26 Jun 2020 19:47:18 +0300
 
 qtbase-opensource-src (5.14.2+dfsg-3) unstable; urgency=medium
 
