@@ -2,6 +2,7 @@
 CVE-2015-9541.diff
 enable_a11y_on_linux.diff
 fix_qlibrary_deadlock.diff
+moc_handle_includes.diff
 
 # Debian specific.
 gnukfreebsd.diff
@@ -14,4 +15,3 @@ nonlinux_utime.diff
 qdoc_default_incdirs.diff
 path_max.diff
 qstorageinfo_linux.diff
-moc_handle_includes.diff
