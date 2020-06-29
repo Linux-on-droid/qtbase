@@ -1,0 +1,32 @@
+Description: moc: handle include directives in enums
+ When including files, moc inserts a MOC_INCLUDE_BEGIN and
+ MOC_INCLUDE_END token into the token stream. Those are already handled
+ in the toplevel Moc::parse function, but parseEnum lacked support so
+ far.
+Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=98cb33115089eebc
+Last-Update: 2020-06-29
+
+--- a/src/tools/moc/moc.cpp
++++ b/src/tools/moc/moc.cpp
+@@ -280,11 +280,21 @@ bool Moc::parseEnum(EnumDef *def)
+     }
+     if (!test(LBRACE))
+         return false;
++    auto handleInclude = [this]() {
++        if (test(MOC_INCLUDE_BEGIN))
++            currentFilenames.push(symbol().unquotedLexem());
++        if (test(NOTOKEN)) {
++            next(MOC_INCLUDE_END);
++            currentFilenames.pop();
++        }
++    };
+     do {
+         if (lookup() == RBRACE) // accept trailing comma
+             break;
++        handleInclude();
+         next(IDENTIFIER);
+         def->values += lexem();
++        handleInclude();
+         skipCxxAttributes();
+     } while (test(EQ) ? until(COMMA) : test(COMMA));
+     next(RBRACE);
