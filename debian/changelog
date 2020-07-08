@@ -4,6 +4,8 @@ qtbase-opensource-src (5.14.2+dfsg-5) UNRELEASED; urgency=medium
   * Backport upstream patch for moc to handle include directives in enums
     (closes: #963955).
   * Stop using -isystem flag in qmake (closes: #958479).
+  * Clarify warning message about PIC/PIE, thanks Daniel Kahn Gillmor
+    (closes: #879014).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 29 Jun 2020 15:39:27 +0300
 
