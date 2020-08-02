@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.14.1 amd64 i386
+# SymbolsHelper-Confirmed: 5.14.2 amd64 i386
 libQt5Widgets.so.5 libqt5widgets5 #MINVER#
 | libqt5widgets5 #MINVER#, qtbase-abi-5-14-2
 * Build-Depends-Package: qtbase5-dev
@@ -2221,9 +2221,6 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZN14QWidgetPrivate6createEv@Qt_5_PRIVATE_API 5.12.5 1
  _ZN14QWidgetPrivate6mapperE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsIN7QWidget10RenderFlagEE@Qt_5_PRIVATE_API 5.3.0 1
- (optional=templinst)_ZN14QWidgetPrivate6updateI5QRectEEvT_@Qt_5_PRIVATE_API 5.10.1 1
- (optional=templinst)_ZN14QWidgetPrivate6updateI7QRegionEEvT_@Qt_5_PRIVATE_API 5.10.1 1
- (optional=templinst)_ZN14QWidgetPrivate7repaintI7QRegionEEvT_@Qt_5_PRIVATE_API 5.10.1 1
  _ZN14QWidgetPrivate8hide_sysEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QWidgetPrivate8moveRectERK5QRectii@Qt_5_PRIVATE_API 5.0.2 1
  (subst)_ZN14QWidgetPrivate8setWinIdE{quintptr}@Qt_5_PRIVATE_API 5.0.2 1
@@ -7901,10 +7898,8 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  _ZNK9QUndoView5groupEv@Qt_5 5.0.2
  _ZNK9QUndoView5stackEv@Qt_5 5.0.2
  _ZNK9QUndoView9cleanIconEv@Qt_5 5.0.2
- (optional=templinst|subst|arch=!alpha !x32)_ZNSt17_Temporary_bufferIP5QRectS0_EC1ES1_{ssize_t}@Qt_5 5.12.4
- (optional=templinst|subst|arch=!alpha !x32)_ZNSt17_Temporary_bufferIP5QRectS0_EC2ES1_{ssize_t}@Qt_5 5.12.4
- (optional=templinst)_ZNSt3_V28__rotateIP5QRectEET_S3_S3_S3_St26random_access_iterator_tag@Qt_5 5.7.0
- (optional=templinst)_ZNSt3_V28__rotateIPiEET_S2_S2_S2_St26random_access_iterator_tag@Qt_5 5.7.0
+ (optional=templinst|subst|arch=!alpha !amd64 !x32)_ZNSt17_Temporary_bufferIP5QRectS0_EC1ES1_{ssize_t}@Qt_5 5.12.4
+ (optional=templinst|subst|arch=!alpha !amd64 !x32)_ZNSt17_Temporary_bufferIP5QRectS0_EC2ES1_{ssize_t}@Qt_5 5.12.4
  (optional=templinst)_ZNSt6vectorIN18QWidgetLineControl7CommandESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5_PRIVATE_API 5.9.1 1
  (optional=templinst)_ZNSt6vectorIN18QWidgetLineControl7CommandESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5_PRIVATE_API 5.10.1 1
  (optional=templinst)_ZNSt6vectorIN18QWidgetLineControl7CommandESaIS1_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS1_S3_EES7_@Qt_5_PRIVATE_API 5.7.1 1
