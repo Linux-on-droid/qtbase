@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.14.2+dfsg-5) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.14.2+dfsg-5) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport upstream patch for moc to handle include directives in enums
     (closes: #963955).
   * Stop using -isystem flag in qmake (closes: #958479).
@@ -9,7 +8,7 @@ qtbase-opensource-src (5.14.2+dfsg-5) UNRELEASED; urgency=medium
   * Update symbols files for GCC 10.
   * Update libqt5gui5.lintian-overrides for tag renames in Lintian 2.79.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 29 Jun 2020 15:39:27 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 02 Aug 2020 11:49:03 +0300
 
 qtbase-opensource-src (5.14.2+dfsg-4) unstable; urgency=medium
 
