@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.14.2+dfsg-6) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 18 Aug 2020 16:14:45 +0300
+
 qtbase-opensource-src (5.14.2+dfsg-5) unstable; urgency=medium
 
   * Backport upstream patch for moc to handle include directives in enums
