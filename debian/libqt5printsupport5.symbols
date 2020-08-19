@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.14.2 amd64 i386
+# SymbolsHelper-Confirmed: 5.14.2 amd64 i386 ia64 riscv64
 libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
 | libqt5printsupport5 #MINVER#, qtbase-abi-5-14-2
 * Build-Depends-Package: qtbase5-dev
@@ -433,6 +433,7 @@ libQt5PrintSupport.so.5 libqt5printsupport5 #MINVER#
  _ZNK8QPrinter9paperRectEv@Qt_5 5.0.2
  _ZNK8QPrinter9paperSizeENS_4UnitE@Qt_5 5.0.2
  _ZNK8QPrinter9paperSizeEv@Qt_5 5.0.2
+ (optional=templinst|arch=ia64 riscv64)_ZNSt6vectorISt4pairIiiESaIS1_EE12emplace_backIJS1_EEERS1_DpOT_@Qt_5 5.14.2
  (optional=templinst)_ZNSt6vectorISt4pairIiiESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5 5.11.0~rc1
  _ZTI12QPrintDialog@Qt_5 5.0.2
  _ZTI12QPrintEngine@Qt_5 5.0.2
