@@ -6,6 +6,7 @@ moc_handle_includes.diff
 no_isystem.diff
 clarify_pic_message.diff
 CVE-2020-17507.diff
+CVE-2020-13962.diff
 
 # Debian specific.
 gnukfreebsd.diff
