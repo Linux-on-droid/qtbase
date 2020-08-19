@@ -1,13 +1,12 @@
-qtbase-opensource-src (5.14.2+dfsg-6) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.14.2+dfsg-6) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport upstream patch to fix buffer overflow in XBM parser
     (CVE-2020-17507, closes: #968444).
   * Backport upstream patch to handle SSL_shutdown's errors properly
     (CVE-2020-13962).
   * Update symbols files from buildds’ logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 18 Aug 2020 16:14:45 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 19 Aug 2020 20:40:32 +0300
 
 qtbase-opensource-src (5.14.2+dfsg-5) unstable; urgency=medium
 
