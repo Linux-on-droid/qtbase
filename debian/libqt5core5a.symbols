@@ -1,6 +1,6 @@
 # SymbolsHelper-Confirmed: 5.14.2 amd64 armel armhf hppa hurd-i386 i386 ia64 m68k mipsel powerpc riscv64 sh4 x32
 libQt5Core.so.5 libqt5core5a #MINVER#
-| libqt5core5a #MINVER#, qtbase-abi-5-14-2
+| libqt5core5a #MINVER#, qtbase-abi-5-15-1
 * Build-Depends-Package: qtbase5-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
  Qt_5.10@Qt_5.10 5.10.0
