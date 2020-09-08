@@ -1,2 +1,1 @@
-#! /usr/bin/dh-exec
 usr/share/qtchooser/qt5-${DEB_HOST_MULTIARCH}.conf usr/lib/${DEB_HOST_MULTIARCH}/qt-default/qtchooser/default.conf

@@ -1,4 +1,3 @@
-#! /usr/bin/dh-exec
 usr/lib/qt5/bin/fixqt4headers.pl usr/lib/${DEB_HOST_MULTIARCH}/qt5/bin/fixqt4headers.pl
 usr/lib/qt5/bin/moc              usr/lib/${DEB_HOST_MULTIARCH}/qt5/bin/moc
 usr/lib/qt5/bin/qdbuscpp2xml     usr/lib/${DEB_HOST_MULTIARCH}/qt5/bin/qdbuscpp2xml
