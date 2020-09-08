@@ -2,6 +2,15 @@ qtbase-opensource-src (5.15.1+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
+  * Drop all patches that have been included in the new release:
+    - CVE-2015-9541.diff
+    - CVE-2020-17507.diff
+    - CVE-2020-13962.diff
+    - enable_a11y_on_linux.diff
+    - fix_qlibrary_deadlock.diff
+    - moc_handle_includes.diff
+    - no_isystem.diff
+    - clarify_pic_message.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 08 Sep 2020 15:42:13 +0300
 
