@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.14.2 amd64 armel armhf hurd-i386 i386 ia64 m68k mipsel powerpc riscv64 sh4 x32
+# SymbolsHelper-Confirmed: 5.14.2 amd64 armel armhf hppa hurd-i386 i386 ia64 m68k mipsel powerpc riscv64 sh4 x32
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-14-2
 * Build-Depends-Package: qtbase5-dev
@@ -522,7 +522,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN11QJsonObject7compactEv@Qt_5 5.0.2
  _ZN11QJsonObject7detach2Ej@Qt_5 5.6.1
  (optional=templinst)_ZN11QJsonObject8insertAtI11QStringViewEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
- (optional=templinst|arch=armel armhf hurd-i386 i386 ia64 m68k mipsel powerpc riscv64 sh4 x32)_ZN11QJsonObject8insertAtI13QLatin1StringEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
+ (optional=templinst|arch=armel armhf hppa hurd-i386 i386 m68k mipsel powerpc sh4 x32)_ZN11QJsonObject8insertAtI13QLatin1StringEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
  (optional=templinst)_ZN11QJsonObject8insertAtI7QStringEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
  _ZN11QJsonObject8removeAtEi@Qt_5 5.14.1
  _ZN11QJsonObjectC1EPN12QJsonPrivate4DataEPNS0_6ObjectE@Qt_5 5.0.2
@@ -1550,6 +1550,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  (subst)_ZN17QCborStreamReader7addDataEPKc{qptrdiff}@Qt_5 5.12.2
  _ZN17QCborStreamReader7addDataERK10QByteArray@Qt_5 5.12.2
  _ZN17QCborStreamReader7reparseEv@Qt_5 5.12.2
+ (optional=inline|arch=ia64)_ZN17QCborStreamReader8preparseEv@Qt_5 5.14.2
  _ZN17QCborStreamReader9lastErrorEv@Qt_5 5.12.2
  _ZN17QCborStreamReader9setDeviceEP9QIODevice@Qt_5 5.12.2
  _ZN17QCborStreamReaderC1EP9QIODevice@Qt_5 5.12.2
@@ -4056,7 +4057,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK10QStringRef6toUIntEPbi@Qt_5 5.1.0
  _ZNK10QStringRef6toUcs4Ev@Qt_5 5.0.2
  _ZNK10QStringRef6toUtf8Ev@Qt_5 5.0.2
- (optional=inline|arch=armel armhf hurd-i386 i386 ia64 m68k mipsel powerpc riscv64 sh4 x32)_ZNK10QStringRef7compareE13QLatin1StringN2Qt15CaseSensitivityE@Qt_5 5.10.0
+ (optional=inline|arch=armel armhf hppa hurd-i386 i386 m68k mipsel powerpc sh4 x32)_ZNK10QStringRef7compareE13QLatin1StringN2Qt15CaseSensitivityE@Qt_5 5.10.0
  _ZNK10QStringRef7indexOfE13QLatin1StringiN2Qt15CaseSensitivityE@Qt_5 5.0.2
  _ZNK10QStringRef7indexOfE5QChariN2Qt15CaseSensitivityE@Qt_5 5.0.2
  _ZNK10QStringRef7indexOfERK7QStringiN2Qt15CaseSensitivityE@Qt_5 5.0.2
@@ -5371,7 +5372,6 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK7QString3argEdici5QChar@Qt_5 5.0.2
  _ZNK7QString3argExii5QChar@Qt_5 5.0.2
  _ZNK7QString3argEyii5QChar@Qt_5 5.0.2
- (optional=templinst|arch=ia64 riscv64)_ZNK7QString3argIJRKS_S_EEENSt9enable_ifIXaagesZT_Li2EsrSt7is_sameIN9QtPrivate8BoolListIJXspsrNS_33is_convertible_to_view_or_qstringIT_EE5valueELb1EEEENS6_IJLb1EXspsrS9_5valueEEEEE5valueES_E4typeEDpOS8_@Qt_5 5.14.2
  _ZNK7QString3midEii@Qt_5 5.0.2
  _ZNK7QString4leftEi@Qt_5 5.0.2
  _ZNK7QString5countE5QCharN2Qt15CaseSensitivityE@Qt_5 5.0.2
@@ -5799,23 +5799,20 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK9QtPrivate18ResultIteratorBase9batchSizeEv@Qt_5 5.0.2
  _ZNK9QtPrivate18ResultIteratorBaseeqERKS0_@Qt_5 5.0.2
  _ZNK9QtPrivate18ResultIteratorBaseneERKS0_@Qt_5 5.0.2
- (optional=templinst|arch=riscv64)_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv@Qt_5 5.10.0
- (optional=templinst|arch=ia64)_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv@Qt_5 5.14.2
- (optional=templinst|arch=ia64 riscv64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_ED1Ev@Qt_5 5.14.2
- (optional=templinst|arch=ia64 riscv64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_ED2Ev@Qt_5 5.14.2
+ (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_EC1ES1_l@Qt_5 5.14.2
+ (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_EC2ES1_l@Qt_5 5.14.2
+ (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIPiiEC1ES0_l@Qt_5 5.14.2
+ (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIPiiEC2ES0_l@Qt_5 5.14.2
  (optional=templinst|arch=armel armhf hppa hurd-i386 i386 kfreebsd-i386 m68k mipsel powerpc sh4 x32)_ZNSt23mersenne_twister_engineIjLj32ELj624ELj397ELj31ELj2567483615ELj11ELj4294967295ELj7ELj2636928640ELj15ELj4022730752ELj18ELj1812433253EE11_M_gen_randEv@Qt_5 5.11.1
  (optional=templinst|arch=alpha amd64 arm64 ia64 mips64el ppc64 ppc64el riscv64 s390x sparc64)_ZNSt23mersenne_twister_engineIjLm32ELm624ELm397ELm31ELj2567483615ELm11ELj4294967295ELm7ELj2636928640ELm15ELj4022730752ELm18ELj1812433253EE11_M_gen_randEv@Qt_5 5.11.3
  (optional=templinst|subst)_ZNSt23mersenne_twister_engineIjL{size_t}32EL{size_t}624EL{size_t}397EL{size_t}31ELj2567483615EL{size_t}11ELj4294967295EL{size_t}7ELj2636928640EL{size_t}15ELj4022730752EL{size_t}18ELj1812433253EE4seedIN16QRandomGenerator15SystemGeneratorEEENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt7is_sameINSt9remove_cvINSt16remove_referenceIT_E4typeEE4typeES0_EESt11is_unsignedINSA_11result_typeEES6_ISt14is_convertibleISA_jEEEE5valueEvE4typeERSA_@Qt_5 5.12.4
  (optional=templinst|subst)_ZNSt23mersenne_twister_engineIjL{size_t}32EL{size_t}624EL{size_t}397EL{size_t}31ELj2567483615EL{size_t}11ELj4294967295EL{size_t}7ELj2636928640EL{size_t}15ELj4022730752EL{size_t}18ELj1812433253EE4seedISt8seed_seqEENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt7is_sameINSt9remove_cvINSt16remove_referenceIT_E4typeEE4typeES0_EESt11is_unsignedINS9_11result_typeEES5_ISt14is_convertibleIS9_jEEEE5valueEvE4typeERS9_@Qt_5 5.12.4
- (optional=templinst|arch=ia64 riscv64)_ZNSt3_V28__rotateIP21QPersistentModelIndexEET_S3_S3_S3_St26random_access_iterator_tag@Qt_5 5.14.2
- (optional=templinst|arch=ia64 riscv64)_ZNSt3_V28__rotateIPiEET_S2_S2_S2_St26random_access_iterator_tag@Qt_5 5.14.2
  (optional=templinst|subst)_ZNSt6vectorIP16QCalendarBackendSaIS1_EE17_M_default_appendE{size_t}@Qt_5_PRIVATE_API 5.14.1 1
  (optional=templinst)_ZNSt6vectorIP16QCalendarBackendSaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5_PRIVATE_API 5.14.1 1
  (optional=templinst)_ZNSt6vectorISt10unique_ptrIA_KcSt14default_deleteIS2_EESaIS5_EE17_M_realloc_insertIJRPcEEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_@Qt_5 5.14.1
- (optional=templinst|arch=ia64 riscv64)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.14.2
+ (optional=templinst|arch=ia64)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.14.2
  (optional=templinst|subst)_ZSt17__rotate_adaptiveIP21QPersistentModelIndexS1_{ssize_t}ET_S2_S2_S2_T1_S3_T0_S3_@Qt_5 5.0.2
  (optional=templinst|subst)_ZSt17__rotate_adaptiveIPiS0_{ssize_t}ET_S1_S1_S1_T1_S2_T0_S2_@Qt_5 5.0.2
- (optional=templinst|arch=ia64)_ZSt20get_temporary_bufferIiESt4pairIPT_lEl@Qt_5 5.11.3
  _ZTI10QEventLoop@Qt_5 5.0.2
  _ZTI10QException@Qt_5 5.0.2
  _ZTI10QTextCodec@Qt_5 5.0.2

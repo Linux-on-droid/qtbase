@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.14.2 i386
+# SymbolsHelper-Confirmed: 5.14.2 i386 ia64
 libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
 | libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-14-2
 | libqt5gui5 #MINVER#
@@ -4903,7 +4903,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN6QColor13setNamedColorE13QLatin1String@Qt_5 5.8.0
  _ZN6QColor13setNamedColorERK7QString@Qt_5 5.0.2
  (optional=templinst|arch=ia64)_ZN6QColor18setColorFromStringI11QStringViewEEbT_@Qt_5 5.11.3
- (optional=templinst|arch=ia64)_ZN6QColor18setColorFromStringI13QLatin1StringEEbT_@Qt_5 5.11.3
  _ZN6QColor6setHslEiiii@Qt_5 5.0.2
  _ZN6QColor6setHsvEiiii@Qt_5 5.0.2
  _ZN6QColor6setRedEi@Qt_5 5.0.2
@@ -7833,7 +7832,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZNK9QVector4D6lengthEv@Qt_5 5.0.2
  _ZNK9QVector4Dcv8QVariantEv@Qt_5 5.0.2
  (optional=templinst)_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Qt_5 5.12.2
- (optional=templinst|arch=ia64)_ZNSt7__cxx1110_List_baseIN11QFontEngine15GlyphCacheEntryESaIS2_EE8_M_clearEv@Qt_5_PRIVATE_API 5.14.1 1
  _ZTI10QBasicDrag@Qt_5_PRIVATE_API 5.1.0 1
  _ZTI10QBlittable@Qt_5_PRIVATE_API 5.0.2 1
  _ZTI10QClipboard@Qt_5 5.0.2
