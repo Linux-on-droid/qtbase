@@ -18,6 +18,7 @@ qtbase-opensource-src (5.15.1+dfsg-1) UNRELEASED; urgency=medium
     - Use ${DEB_HOST_MULTIARCH} substitution.
     - Stop using dh-exec for .links files, as debhelper now supports
       substitutions natively.
+  * Bump qttools build-dependencies to 5.15.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 08 Sep 2020 15:42:13 +0300
 
