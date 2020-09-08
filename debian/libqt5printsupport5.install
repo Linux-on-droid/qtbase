@@ -1,2 +1,2 @@
-usr/lib/*/libQt5PrintSupport.so.*
-usr/lib/*/qt5/plugins/printsupport/libcupsprintersupport.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5PrintSupport.so.*
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/printsupport/libcupsprintersupport.so

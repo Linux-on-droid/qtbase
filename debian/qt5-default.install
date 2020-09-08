@@ -1,1 +1,1 @@
-usr/lib/*/qtchooser/default.conf
+usr/lib/${DEB_HOST_MULTIARCH}/qtchooser/default.conf

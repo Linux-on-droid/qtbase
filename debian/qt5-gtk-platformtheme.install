@@ -1,1 +1,1 @@
-usr/lib/*/qt5/plugins/platformthemes/libqgtk3.so
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/platformthemes/libqgtk3.so

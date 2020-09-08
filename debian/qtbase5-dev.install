@@ -1,30 +1,30 @@
 #! /usr/bin/dh-exec
-[!armel !armhf] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake
-[!armel !armhf] usr/lib/*/qt5/mkspecs/modules/qt_lib_glx_support_private.pri
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5EglFsKmsSupport/Qt5EglFsKmsSupportConfig.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5EglFsKmsSupport/Qt5EglFsKmsSupportConfigVersion.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/*/libQt5EglFSDeviceIntegration.prl
-[kfreebsd-any linux-any] usr/lib/*/libQt5EglFSDeviceIntegration.so
-[kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.prl
-[kfreebsd-any linux-any] usr/lib/*/libQt5EglFsKmsSupport.so
-[kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri
-[kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri
-[kfreebsd-any linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_kms_support_private.pri
-[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake
-[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake
-[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake
-[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake
-[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake
-[linux-any] usr/lib/*/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake
-[linux-any] usr/lib/*/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake
-[linux-any] usr/lib/*/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake
-[linux-any] usr/lib/*/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri
+[!armel !armhf] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake
+[!armel !armhf] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_glx_support_private.pri
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFsKmsSupport/Qt5EglFsKmsSupportConfig.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFsKmsSupport/Qt5EglFsKmsSupportConfigVersion.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFSDeviceIntegration.prl
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFSDeviceIntegration.so
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFsKmsSupport.prl
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFsKmsSupport.so
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_kms_support_private.pri
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri
 usr/include/*/qt5/QtConcurrent/QtConcurrent
 usr/include/*/qt5/QtConcurrent/QtConcurrentDepends
 usr/include/*/qt5/QtConcurrent/QtConcurrentFilter
@@ -1662,127 +1662,127 @@ usr/include/*/qt5/QtXml/qtxml-config.h
 usr/include/*/qt5/QtXml/qtxmlglobal.h
 usr/include/*/qt5/QtXml/qtxmlversion.h
 usr/include/*/qt5/QtXml/qxml.h
-usr/lib/*/cmake/Qt5/Qt5Config.cmake
-usr/lib/*/cmake/Qt5/Qt5ConfigVersion.cmake
-usr/lib/*/cmake/Qt5/Qt5ModuleLocation.cmake
-usr/lib/*/cmake/Qt5Concurrent/Qt5ConcurrentConfig.cmake
-usr/lib/*/cmake/Qt5Concurrent/Qt5ConcurrentConfigVersion.cmake
-usr/lib/*/cmake/Qt5Core/Qt5CTestMacros.cmake
-usr/lib/*/cmake/Qt5Core/Qt5CoreConfig.cmake
-usr/lib/*/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
-usr/lib/*/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake
-usr/lib/*/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
-usr/lib/*/cmake/Qt5Core/Qt5CoreMacros.cmake
-usr/lib/*/cmake/Qt5DBus/Qt5DBusConfig.cmake
-usr/lib/*/cmake/Qt5DBus/Qt5DBusConfigExtras.cmake
-usr/lib/*/cmake/Qt5DBus/Qt5DBusConfigVersion.cmake
-usr/lib/*/cmake/Qt5DBus/Qt5DBusMacros.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5GuiConfig.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake
-usr/lib/*/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake
-usr/lib/*/cmake/Qt5Network/Qt5NetworkConfig.cmake
-usr/lib/*/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake
-usr/lib/*/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake
-usr/lib/*/cmake/Qt5OpenGLExtensions/Qt5OpenGLExtensionsConfig.cmake
-usr/lib/*/cmake/Qt5OpenGLExtensions/Qt5OpenGLExtensionsConfigVersion.cmake
-usr/lib/*/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake
-usr/lib/*/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5PrintSupport/Qt5PrintSupport_QCupsPrinterSupportPlugin.cmake
-usr/lib/*/cmake/Qt5Sql/Qt5SqlConfig.cmake
-usr/lib/*/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake
-usr/lib/*/cmake/Qt5Test/Qt5TestConfig.cmake
-usr/lib/*/cmake/Qt5Test/Qt5TestConfigExtras.cmake
-usr/lib/*/cmake/Qt5Test/Qt5TestConfigVersion.cmake
-usr/lib/*/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake
-usr/lib/*/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake
-usr/lib/*/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake
-usr/lib/*/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake
-usr/lib/*/cmake/Qt5Xml/Qt5XmlConfig.cmake
-usr/lib/*/cmake/Qt5Xml/Qt5XmlConfigVersion.cmake
-usr/lib/*/libQt5Concurrent.prl
-usr/lib/*/libQt5Concurrent.so
-usr/lib/*/libQt5Core.prl
-usr/lib/*/libQt5Core.so
-usr/lib/*/libQt5DBus.prl
-usr/lib/*/libQt5DBus.so
-usr/lib/*/libQt5Gui.prl
-usr/lib/*/libQt5Gui.so
-usr/lib/*/libQt5Network.prl
-usr/lib/*/libQt5Network.so
-usr/lib/*/libQt5OpenGLExtensions.a
-usr/lib/*/libQt5OpenGLExtensions.prl
-usr/lib/*/libQt5PrintSupport.prl
-usr/lib/*/libQt5PrintSupport.so
-usr/lib/*/libQt5Sql.prl
-usr/lib/*/libQt5Sql.so
-usr/lib/*/libQt5Test.prl
-usr/lib/*/libQt5Test.so
-usr/lib/*/libQt5Widgets.prl
-usr/lib/*/libQt5Widgets.so
-usr/lib/*/libQt5XcbQpa.prl
-usr/lib/*/libQt5XcbQpa.so
-usr/lib/*/libQt5Xml.prl
-usr/lib/*/libQt5Xml.so
-usr/lib/*/pkgconfig/Qt5Concurrent.pc
-usr/lib/*/pkgconfig/Qt5Core.pc
-usr/lib/*/pkgconfig/Qt5DBus.pc
-usr/lib/*/pkgconfig/Qt5Gui.pc
-usr/lib/*/pkgconfig/Qt5Network.pc
-usr/lib/*/pkgconfig/Qt5OpenGLExtensions.pc
-usr/lib/*/pkgconfig/Qt5PrintSupport.pc
-usr/lib/*/pkgconfig/Qt5Sql.pc
-usr/lib/*/pkgconfig/Qt5Test.pc
-usr/lib/*/pkgconfig/Qt5Widgets.pc
-usr/lib/*/pkgconfig/Qt5Xml.pc
-usr/lib/*/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_concurrent.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_concurrent_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_core.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_core_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_dbus.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_dbus_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_edid_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_egl_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_fb_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_fontdatabase_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_gui.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_gui_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_input_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_network.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_network_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_opengl_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_openglextensions.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_openglextensions_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_platformcompositor_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_printsupport.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_printsupport_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_service_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_sql.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_sql_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_testlib.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_testlib_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_theme_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_widgets.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_widgets_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_xkbcommon_support_private.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_xml.pri
-usr/lib/*/qt5/mkspecs/modules/qt_lib_xml_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5/Qt5Config.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5/Qt5ConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5/Qt5ModuleLocation.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Concurrent/Qt5ConcurrentConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Concurrent/Qt5ConcurrentConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Core/Qt5CTestMacros.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Core/Qt5CoreConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Core/Qt5CoreMacros.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5DBus/Qt5DBusConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5DBus/Qt5DBusConfigExtras.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5DBus/Qt5DBusConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5DBus/Qt5DBusMacros.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5GuiConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Network/Qt5NetworkConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5OpenGLExtensions/Qt5OpenGLExtensionsConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5OpenGLExtensions/Qt5OpenGLExtensionsConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5PrintSupport/Qt5PrintSupport_QCupsPrinterSupportPlugin.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Sql/Qt5SqlConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Test/Qt5TestConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Test/Qt5TestConfigExtras.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Test/Qt5TestConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Xml/Qt5XmlConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Xml/Qt5XmlConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Concurrent.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Concurrent.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Core.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Core.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5DBus.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5DBus.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Gui.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Gui.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Network.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Network.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5OpenGLExtensions.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5OpenGLExtensions.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5PrintSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5PrintSupport.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Sql.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Sql.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Test.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Test.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Widgets.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Widgets.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5XcbQpa.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5XcbQpa.so
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Xml.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Xml.so
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Concurrent.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Core.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5DBus.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Gui.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Network.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5OpenGLExtensions.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5PrintSupport.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Sql.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Test.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Widgets.pc
+usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Xml.pc
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_concurrent.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_concurrent_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_core.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_core_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_dbus.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_dbus_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_edid_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_egl_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_fb_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_fontdatabase_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_gui.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_gui_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_input_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_network.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_network_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_opengl_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_openglextensions.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_openglextensions_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_platformcompositor_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_printsupport.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_printsupport_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_service_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_sql.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_sql_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_testlib.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_testlib_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_theme_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_widgets.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_widgets_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_xkbcommon_support_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_xml.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_xml_private.pri
 usr/share/qt5/doc/config/exampleurl-qt3d.qdocconf
 usr/share/qt5/doc/config/exampleurl-qtactiveqt.qdocconf
 usr/share/qt5/doc/config/exampleurl-qtandroidextras.qdocconf

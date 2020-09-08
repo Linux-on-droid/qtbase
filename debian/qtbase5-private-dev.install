@@ -4,10 +4,10 @@
 [!armel !armhf] usr/include/*/qt5/QtGlxSupport/QtGlxSupportDepends
 [!armel !armhf] usr/include/*/qt5/QtGlxSupport/QtGlxSupportVersion
 [!armel !armhf] usr/include/*/qt5/QtGlxSupport/qtglxsupportversion.h
-[!armel !armhf] usr/lib/*/cmake/Qt5GlxSupport/Qt5GlxSupportConfig.cmake
-[!armel !armhf] usr/lib/*/cmake/Qt5GlxSupport/Qt5GlxSupportConfigVersion.cmake
-[!armel !armhf] usr/lib/*/libQt5GlxSupport.a
-[!armel !armhf] usr/lib/*/libQt5GlxSupport.prl
+[!armel !armhf] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5GlxSupport/Qt5GlxSupportConfig.cmake
+[!armel !armhf] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5GlxSupport/Qt5GlxSupportConfigVersion.cmake
+[!armel !armhf] usr/lib/${DEB_HOST_MULTIARCH}/libQt5GlxSupport.a
+[!armel !armhf] usr/lib/${DEB_HOST_MULTIARCH}/libQt5GlxSupport.prl
 [kfreebsd-any linux-any] usr/include/*/qt5/QtEglFSDeviceIntegration/5.*/*
 [kfreebsd-any linux-any] usr/include/*/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegration
 [kfreebsd-any linux-any] usr/include/*/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegrationDepends
@@ -18,21 +18,21 @@
 [kfreebsd-any linux-any] usr/include/*/qt5/QtKmsSupport/QtKmsSupportDepends
 [kfreebsd-any linux-any] usr/include/*/qt5/QtKmsSupport/QtKmsSupportVersion
 [kfreebsd-any linux-any] usr/include/*/qt5/QtKmsSupport/qtkmssupportversion.h
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5EglFSDeviceIntegration/Qt5EglFSDeviceIntegrationConfig.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5EglFSDeviceIntegration/Qt5EglFSDeviceIntegrationConfigVersion.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5KmsSupport/Qt5KmsSupportConfig.cmake
-[kfreebsd-any linux-any] usr/lib/*/cmake/Qt5KmsSupport/Qt5KmsSupportConfigVersion.cmake
-[kfreebsd-any linux-any] usr/lib/*/libQt5KmsSupport.a
-[kfreebsd-any linux-any] usr/lib/*/libQt5KmsSupport.prl
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFSDeviceIntegration/Qt5EglFSDeviceIntegrationConfig.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFSDeviceIntegration/Qt5EglFSDeviceIntegrationConfigVersion.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5KmsSupport/Qt5KmsSupportConfig.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5KmsSupport/Qt5KmsSupportConfigVersion.cmake
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5KmsSupport.a
+[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5KmsSupport.prl
 [linux-any] usr/include/*/qt5/QtVulkanSupport/5.*/*
 [linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupport
 [linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportDepends
 [linux-any] usr/include/*/qt5/QtVulkanSupport/QtVulkanSupportVersion
 [linux-any] usr/include/*/qt5/QtVulkanSupport/qtvulkansupportversion.h
-[linux-any] usr/lib/*/cmake/Qt5VulkanSupport/Qt5VulkanSupportConfig.cmake
-[linux-any] usr/lib/*/cmake/Qt5VulkanSupport/Qt5VulkanSupportConfigVersion.cmake
-[linux-any] usr/lib/*/libQt5VulkanSupport.a
-[linux-any] usr/lib/*/libQt5VulkanSupport.prl
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5VulkanSupport/Qt5VulkanSupportConfig.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5VulkanSupport/Qt5VulkanSupportConfigVersion.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5VulkanSupport.a
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5VulkanSupport.prl
 usr/include/*/qt5/QtAccessibilitySupport/5.*/*
 usr/include/*/qt5/QtAccessibilitySupport/QtAccessibilitySupport
 usr/include/*/qt5/QtAccessibilitySupport/QtAccessibilitySupportDepends
@@ -110,59 +110,59 @@ usr/include/*/qt5/QtXkbCommonSupport/QtXkbCommonSupportDepends
 usr/include/*/qt5/QtXkbCommonSupport/QtXkbCommonSupportVersion
 usr/include/*/qt5/QtXkbCommonSupport/qtxkbcommonsupportversion.h
 usr/include/*/qt5/QtXml/5.*/*
-usr/lib/*/cmake/Qt5AccessibilitySupport/Qt5AccessibilitySupportConfig.cmake
-usr/lib/*/cmake/Qt5AccessibilitySupport/Qt5AccessibilitySupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5Bootstrap/Qt5BootstrapConfig.cmake
-usr/lib/*/cmake/Qt5Bootstrap/Qt5BootstrapConfigVersion.cmake
-usr/lib/*/cmake/Qt5DeviceDiscoverySupport/Qt5DeviceDiscoverySupportConfig.cmake
-usr/lib/*/cmake/Qt5DeviceDiscoverySupport/Qt5DeviceDiscoverySupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5EdidSupport/Qt5EdidSupportConfig.cmake
-usr/lib/*/cmake/Qt5EdidSupport/Qt5EdidSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5EglSupport/Qt5EglSupportConfig.cmake
-usr/lib/*/cmake/Qt5EglSupport/Qt5EglSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5EventDispatcherSupport/Qt5EventDispatcherSupportConfig.cmake
-usr/lib/*/cmake/Qt5EventDispatcherSupport/Qt5EventDispatcherSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5FbSupport/Qt5FbSupportConfig.cmake
-usr/lib/*/cmake/Qt5FbSupport/Qt5FbSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5FontDatabaseSupport/Qt5FontDatabaseSupportConfig.cmake
-usr/lib/*/cmake/Qt5FontDatabaseSupport/Qt5FontDatabaseSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5InputSupport/Qt5InputSupportConfig.cmake
-usr/lib/*/cmake/Qt5InputSupport/Qt5InputSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5LinuxAccessibilitySupport/Qt5LinuxAccessibilitySupportConfig.cmake
-usr/lib/*/cmake/Qt5LinuxAccessibilitySupport/Qt5LinuxAccessibilitySupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5PlatformCompositorSupport/Qt5PlatformCompositorSupportConfig.cmake
-usr/lib/*/cmake/Qt5PlatformCompositorSupport/Qt5PlatformCompositorSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5ServiceSupport/Qt5ServiceSupportConfig.cmake
-usr/lib/*/cmake/Qt5ServiceSupport/Qt5ServiceSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5ThemeSupport/Qt5ThemeSupportConfig.cmake
-usr/lib/*/cmake/Qt5ThemeSupport/Qt5ThemeSupportConfigVersion.cmake
-usr/lib/*/cmake/Qt5XcbQpa/Qt5XcbQpaConfig.cmake
-usr/lib/*/cmake/Qt5XcbQpa/Qt5XcbQpaConfigVersion.cmake
-usr/lib/*/cmake/Qt5XkbCommonSupport/Qt5XkbCommonSupportConfig.cmake
-usr/lib/*/cmake/Qt5XkbCommonSupport/Qt5XkbCommonSupportConfigVersion.cmake
-usr/lib/*/libQt5AccessibilitySupport.a
-usr/lib/*/libQt5AccessibilitySupport.prl
-usr/lib/*/libQt5DeviceDiscoverySupport.a
-usr/lib/*/libQt5DeviceDiscoverySupport.prl
-usr/lib/*/libQt5EdidSupport.a
-usr/lib/*/libQt5EdidSupport.prl
-usr/lib/*/libQt5EglSupport.a
-usr/lib/*/libQt5EglSupport.prl
-usr/lib/*/libQt5EventDispatcherSupport.a
-usr/lib/*/libQt5EventDispatcherSupport.prl
-usr/lib/*/libQt5FbSupport.a
-usr/lib/*/libQt5FbSupport.prl
-usr/lib/*/libQt5FontDatabaseSupport.a
-usr/lib/*/libQt5FontDatabaseSupport.prl
-usr/lib/*/libQt5InputSupport.a
-usr/lib/*/libQt5InputSupport.prl
-usr/lib/*/libQt5LinuxAccessibilitySupport.a
-usr/lib/*/libQt5LinuxAccessibilitySupport.prl
-usr/lib/*/libQt5PlatformCompositorSupport.a
-usr/lib/*/libQt5PlatformCompositorSupport.prl
-usr/lib/*/libQt5ServiceSupport.a
-usr/lib/*/libQt5ServiceSupport.prl
-usr/lib/*/libQt5ThemeSupport.a
-usr/lib/*/libQt5ThemeSupport.prl
-usr/lib/*/libQt5XkbCommonSupport.a
-usr/lib/*/libQt5XkbCommonSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5AccessibilitySupport/Qt5AccessibilitySupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5AccessibilitySupport/Qt5AccessibilitySupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Bootstrap/Qt5BootstrapConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Bootstrap/Qt5BootstrapConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5DeviceDiscoverySupport/Qt5DeviceDiscoverySupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5DeviceDiscoverySupport/Qt5DeviceDiscoverySupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EdidSupport/Qt5EdidSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EdidSupport/Qt5EdidSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglSupport/Qt5EglSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglSupport/Qt5EglSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EventDispatcherSupport/Qt5EventDispatcherSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EventDispatcherSupport/Qt5EventDispatcherSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5FbSupport/Qt5FbSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5FbSupport/Qt5FbSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5FontDatabaseSupport/Qt5FontDatabaseSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5FontDatabaseSupport/Qt5FontDatabaseSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5InputSupport/Qt5InputSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5InputSupport/Qt5InputSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5LinuxAccessibilitySupport/Qt5LinuxAccessibilitySupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5LinuxAccessibilitySupport/Qt5LinuxAccessibilitySupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5PlatformCompositorSupport/Qt5PlatformCompositorSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5PlatformCompositorSupport/Qt5PlatformCompositorSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5ServiceSupport/Qt5ServiceSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5ServiceSupport/Qt5ServiceSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5ThemeSupport/Qt5ThemeSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5ThemeSupport/Qt5ThemeSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5XcbQpa/Qt5XcbQpaConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5XcbQpa/Qt5XcbQpaConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5XkbCommonSupport/Qt5XkbCommonSupportConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5XkbCommonSupport/Qt5XkbCommonSupportConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5AccessibilitySupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5AccessibilitySupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5DeviceDiscoverySupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5DeviceDiscoverySupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5EdidSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5EdidSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5EventDispatcherSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5EventDispatcherSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5FbSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5FbSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5FontDatabaseSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5FontDatabaseSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5InputSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5InputSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5LinuxAccessibilitySupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5LinuxAccessibilitySupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5PlatformCompositorSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5PlatformCompositorSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5ServiceSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5ServiceSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5ThemeSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5ThemeSupport.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5XkbCommonSupport.a
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5XkbCommonSupport.prl
