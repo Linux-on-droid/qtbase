@@ -89,6 +89,8 @@ usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/devices/freebsd-generic-clang/qmake.co
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/devices/freebsd-generic-clang/qplatformdefs.h
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/devices/freebsd-rasp-pi-clang/qmake.conf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/devices/freebsd-rasp-pi-clang/qplatformdefs.h
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/devices/integrity-armv8-SA8155P/qmake.conf
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/devices/integrity-armv8-SA8155P/qplatformdefs.h
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/devices/integrity-armv8-drive-cx/qmake.conf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/devices/integrity-armv8-drive-cx/qplatformdefs.h
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/devices/integrity-armv8-msm8996au/qmake.conf
@@ -228,6 +230,7 @@ usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/mac/sdk.mk
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/mac/sdk.prf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/mac/toolchain.prf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/mac/unsupported/objc_namespace.prf
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/metatypes.prf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/moc.prf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/no_debug_info.prf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/plugin_bundle.prf
@@ -409,7 +412,7 @@ usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/macx-ios-clang/Default-568h@2x.png
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/macx-ios-clang/Info.plist.app
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/macx-ios-clang/Info.plist.dSYM.in
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/macx-ios-clang/Info.plist.lib
-usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/macx-ios-clang/LaunchScreen.xib
+usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/macx-ios-clang/LaunchScreen.storyboard
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/macx-ios-clang/features/default_post.prf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/macx-ios-clang/qmake.conf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/macx-ios-clang/qplatformdefs.h

@@ -285,6 +285,7 @@ usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/QSignalMapper
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/QSignalTransition
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/QSize
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/QSizeF
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/QSocketDescriptor
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/QSocketNotifier
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/QSortFilterProxyModel
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/QSpecialInteger
@@ -417,6 +418,8 @@ usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/qcborarray.h
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/qcborcommon.h
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/qcbormap.h
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/qcborstream.h
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/qcborstreamreader.h
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/qcborstreamwriter.h
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/qcborvalue.h
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/qchar.h
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtCore/qcollator.h
@@ -1068,6 +1071,7 @@ usr/include/${DEB_HOST_MULTIARCH}/qt5/QtNetwork/QNetworkReply
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtNetwork/QNetworkRequest
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtNetwork/QNetworkSession
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtNetwork/QOcspResponse
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtNetwork/QPasswordDigestor
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtNetwork/QSctpServer
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtNetwork/QSctpSocket
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtNetwork/QSsl
@@ -1439,6 +1443,7 @@ usr/include/${DEB_HOST_MULTIARCH}/qt5/QtWidgets/QStyleOptionTabBarBase
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtWidgets/QStyleOptionTabBarBaseV2
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtWidgets/QStyleOptionTabV2
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtWidgets/QStyleOptionTabV3
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtWidgets/QStyleOptionTabV4
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtWidgets/QStyleOptionTabWidgetFrame
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtWidgets/QStyleOptionTabWidgetFrameV2
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtWidgets/QStyleOptionTitleBar
@@ -1734,6 +1739,9 @@ usr/lib/${DEB_HOST_MULTIARCH}/libQt5XcbQpa.prl
 usr/lib/${DEB_HOST_MULTIARCH}/libQt5XcbQpa.so
 usr/lib/${DEB_HOST_MULTIARCH}/libQt5Xml.prl
 usr/lib/${DEB_HOST_MULTIARCH}/libQt5Xml.so
+usr/lib/${DEB_HOST_MULTIARCH}/metatypes/qt5core_metatypes.json
+usr/lib/${DEB_HOST_MULTIARCH}/metatypes/qt5gui_metatypes.json
+usr/lib/${DEB_HOST_MULTIARCH}/metatypes/qt5widgets_metatypes.json
 usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Concurrent.pc
 usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5Core.pc
 usr/lib/${DEB_HOST_MULTIARCH}/pkgconfig/Qt5DBus.pc
