@@ -242,8 +242,12 @@ Copyright: 2016 Intel Corporation
 License: GFDL-NIV-1.3
 
 Files: src/corelib/text/qstringiterator.qdoc
-       src/corelib/tools/qscopeguard.qdoc
-Copyright: 2014-2018 Klarälvdalens Datakonsult AB, a KDAB Group company
+Copyright: 2014 Klarälvdalens Datakonsult AB, a KDAB Group company
+License: GFDL-NIV-1.3
+
+Files: src/corelib/tools/qscopeguard.qdoc
+Copyright: 2018 Klarälvdalens Datakonsult AB, a KDAB Group company
+           2019 The Qt Company Ltd.
 License: GFDL-NIV-1.3
 
 Files: examples/widgets/doc/mousebuttons.qdoc
@@ -280,6 +284,8 @@ Files: src/corelib/time/qcalendar.cpp
        src/plugins/platforms/wasm/qwasmscreen.h
        src/plugins/platforms/wasm/qwasmservices.cpp
        src/plugins/platforms/wasm/qwasmservices.h
+       src/plugins/platforms/wasm/qwasmstring.cpp
+       src/plugins/platforms/wasm/qwasmstring.h
        src/plugins/platforms/wasm/qwasmstylepixmaps_p.h
        src/plugins/platforms/wasm/qwasmtheme.cpp
        src/plugins/platforms/wasm/qwasmtheme.h
@@ -294,7 +300,7 @@ Files: src/corelib/time/qcalendar.cpp
        tests/testserver/iptables/iptables.sh
        tests/testserver/squid/squid.sh
        tests/testserver/vsftpd/vsftpd.sh
-Copyright: 2018-2019 The Qt Company Ltd.
+Copyright: 2018-2020 The Qt Company Ltd.
 License: GPL-3
 
 ## GPL-3 with Qt-1.0 exception
@@ -327,6 +333,11 @@ License: GPL-3 with Qt-1.0 exception
 Files: tests/manual/xembed-raster/gtk-embedder.py
        tests/manual/xembed-widgets/gtk-embedder.py
 Copyright: 2013 Canonical, Ltd.
+License: GPL-3 with Qt-1.0 exception
+
+Files: tests/benchmarks/corelib/time/qtimezone/main.cpp
+Copyright: 2019 Crimson AS <info@crimson.no>
+           2018 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/corelib/io/qlockfile/qlockfiletesthelper/qlockfile_test_helper.cpp
@@ -365,7 +376,10 @@ Files: tests/auto/corelib/text/qbytedatabuffer/tst_qbytedatabuffer.cpp
 Copyright: 2012 Hewlett-Packard Development Company, L.P.
 License: GPL-3 with Qt-1.0 exception
 
-Files: src/tools/moc/cbordevice.h
+Files: src/corelib/mimetypes/mime/generate.bat
+       src/corelib/mimetypes/mime/generate.pl
+       src/corelib/mimetypes/mime/hexdump.ps1
+       src/tools/moc/cbordevice.h
        tests/auto/corelib/global/qglobal/qglobal.c
        tests/auto/corelib/global/qrandomgenerator/tst_qrandomgenerator.cpp
        tests/auto/corelib/io/qipaddress/tst_qipaddress.cpp
@@ -396,12 +410,18 @@ Files: src/tools/moc/cbordevice.h
        tests/manual/qstorageinfo/printvolumes.cpp
        tests/manual/qsysinfo/main.cpp
        util/includemocs/includemocs.pl
-Copyright: 2016-2018 Intel Corporation
+Copyright: 2016-2019 Intel Corporation
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/network/kernel/qdnslookup/tst_qdnslookup.cpp
 Copyright: 2016 Intel Corporation
            2012 Jeremy Lainé <jeremy.laine@m4x.org>
+License: GPL-3 with Qt-1.0 exception
+
+Files: tests/auto/corelib/tools/qsharedpointer/tst_qsharedpointer.cpp
+Copyright: 2020 Intel Corporation
+           2019 Klarälvdalens Datakonsult AB.
+           2019 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
 Files: src/tools/moc/generator.cpp
@@ -428,6 +448,7 @@ Files: configure
        tests/auto/corelib/io/qdebug/tst_qdebug.cpp
        tests/auto/corelib/io/qdir/tst_qdir.cpp
        tests/auto/corelib/io/qfile/tst_qfile.cpp
+       tests/auto/corelib/io/qprocess/testProcessCrash/main.cpp
        tests/auto/corelib/io/qprocess/tst_qprocess.cpp
        tests/auto/corelib/io/qresourceengine/tst_qresourceengine.cpp
        tests/auto/corelib/io/qtemporaryfile/tst_qtemporaryfile.cpp
@@ -449,7 +470,6 @@ Files: configure
        tests/auto/corelib/time/qdatetime/tst_qdatetime.cpp
        tests/auto/corelib/tools/qsharedpointer/forwarddeclared.cpp
        tests/auto/corelib/tools/qsharedpointer/forwarddeclared.h
-       tests/auto/corelib/tools/qsharedpointer/tst_qsharedpointer.cpp
        tests/auto/dbus/qdbusabstractadaptor/qmyserver/qmyserver.cpp
        tests/auto/dbus/qdbusabstractadaptor/tst_qdbusabstractadaptor.cpp
        tests/auto/dbus/qdbusabstractinterface/qpinger/qpinger.cpp
@@ -472,8 +492,8 @@ Files: configure
        tests/auto/testlib/selftests/tst_selftests.cpp
        tests/benchmarks/corelib/text/qbytearray/main.cpp
        tests/benchmarks/corelib/tools/qhash/main.cpp
-Copyright: 2016-2019 Intel Corporation
-           2016-2019 The Qt Company Ltd.
+Copyright: 2016-2020 Intel Corporation
+           2016-2020 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/corelib/global/qglobalstatic/tst_qglobalstatic.cpp
@@ -555,7 +575,6 @@ Files: tests/auto/cmake/test(needsquoting)dirname/mywidget.cpp
        tests/auto/corelib/text/qstringview/tst_qstringview.cpp
        tests/auto/corelib/tools/containerapisymmetry/tst_containerapisymmetry.cpp
        tests/auto/corelib/tools/qpair/tst_qpair.cpp
-       tests/auto/corelib/tools/qscopeguard/tst_qscopeguard.cpp
        tests/auto/gui/util/qshadergenerator/tst_qshadergenerator.cpp
        tests/auto/gui/util/qshadergraph/tst_qshadergraph.cpp
        tests/auto/gui/util/qshadergraphloader/tst_qshadergraphloader.cpp
@@ -569,7 +588,6 @@ Files: tests/auto/cmake/test(needsquoting)dirname/mywidget.cpp
        tests/auto/tools/qdbuscpp2xml/test1.h
        tests/auto/tools/qdbuscpp2xml/tst_qdbuscpp2xml.cpp
        tests/auto/widgets/kernel/qwidgetmetatype/tst_qwidgetmetatype.cpp
-       tests/benchmarks/corelib/time/qtimezone/main.cpp
        tests/benchmarks/gui/painting/qcolor/tst_qcolor.cpp
        tests/manual/cocoa/menus/main.cpp
        tests/manual/qmetatype/declare_metatype_noninline.cpp
@@ -595,14 +613,15 @@ Copyright: 2011-2018 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/corelib/text/qstringapisymmetry/tst_qstringapisymmetry.cpp
-Copyright: 2015 Klarälvdalens Datakonsult AB, a KDAB Group company
+Copyright: 2019 Klarälvdalens Datakonsult AB, a KDAB Group company
            2019 Mail.ru Group.
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/gui/util/qregularexpressionvalidator/tst_qregularexpressionvalidator.cpp
+Files: tests/auto/corelib/tools/qscopeguard/tst_qscopeguard.cpp
+       tests/auto/gui/util/qregularexpressionvalidator/tst_qregularexpressionvalidator.cpp
        tests/auto/widgets/widgets/qframe/tst_qframe.cpp
-Copyright: 2012-2014 Klarälvdalens Datakonsult AB, a KDAB Group company
-           2016 The Qt Company Ltd.
+Copyright: 2012-2018 Klarälvdalens Datakonsult AB, a KDAB Group company
+           2016-2019 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/corelib/kernel/qmath/tst_qmath.cpp
@@ -658,8 +677,9 @@ Files: tests/auto/corelib/tools/qmessageauthenticationcode/tst_qmessageauthentic
 Copyright: 2013 Ruslan Nigmatullin <euroelessar@yandex.ru>
 License: GPL-3 with Qt-1.0 exception
 
-Files: tests/auto/testlib/selftests/tuplediagnostics/tst_tuplediagnostics.cpp
-Copyright: 2017 Samuel Gaist <samuel.gaist@edeltech.ch>
+Files: tests/auto/other/sessionmanagement_macos/tst_sessionmanagement_macos.mm
+       tests/auto/testlib/selftests/tuplediagnostics/tst_tuplediagnostics.cpp
+Copyright: 2017-2019 Samuel Gaist <samuel.gaist@edeltech.ch>
 License: GPL-3 with Qt-1.0 exception
 
 Files: tests/auto/corelib/text/qbytearray/tst_qbytearray_mac.mm
@@ -712,7 +732,7 @@ License: GPL-3 with Qt-1.0 exception
 Files: src/corelib/text/qcollator_macx.cpp
        src/corelib/text/qcollator_posix.cpp
        src/corelib/text/qcollator_win.cpp
-Copyright: 2013 Aleix Pol Gonzalez <aleixpol@kde.org>
+Copyright: 2020 Aleix Pol Gonzalez <aleixpol@kde.org>
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/text/qcollator.cpp
@@ -720,7 +740,7 @@ Files: src/corelib/text/qcollator.cpp
        src/corelib/text/qcollator_icu.cpp
        src/corelib/text/qcollator_p.h
 Copyright: 2013 Aleix Pol Gonzalez <aleixpol@kde.org>
-           2016 The Qt Company Ltd.
+           2016-2020 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/network/socket/qsctpserver.cpp
@@ -814,17 +834,10 @@ Files: mkspecs/common/qnx/qplatformdefs.h
 Copyright: 2011-2014 BlackBerry Limited (formerly Research In Motion)
 License: LGPL-3 or GPL-2
 
-Files: src/network/ssl/qsslcontext_openssl11.cpp
+Files: src/network/ssl/qsslcontext_openssl.cpp
 Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
            2014 Governikus GmbH & Co. KG.
            2016 Richard J. Moore <rich@kde.org>
-           2017 The Qt Company Ltd.
-License: LGPL-3 or GPL-2
-
-Files: src/network/ssl/qsslcontext_openssl.cpp
-       src/network/ssl/qsslcontext_opensslpre11.cpp
-Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
-           2014 Governikus GmbH & Co. KG.
            2017 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
@@ -846,8 +859,7 @@ Copyright: 2011-2012 BlackBerry Limited (formerly Research In Motion)
            2017 QNX Software Systems. All rights reserved.
 License: LGPL-3 or GPL-2
 
-Files: src/network/ssl/qsslsocket_openssl11_symbols_p.h
-       src/network/ssl/qsslsocket_openssl_symbols.cpp
+Files: src/network/ssl/qsslsocket_openssl_symbols.cpp
 Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
            2016 Richard J. Moore <rich@kde.org>
            2017 The Qt Company Ltd.
@@ -863,7 +875,6 @@ Files: src/network/access/qhttpnetworkconnectionchannel.cpp
        src/network/ssl/qsslcontext_openssl_p.h
        src/network/ssl/qsslsocket.cpp
        src/network/ssl/qsslsocket_openssl_symbols_p.h
-       src/network/ssl/qsslsocket_opensslpre11_symbols_p.h
 Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
            2016-2017 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
@@ -957,6 +968,12 @@ Files: mkspecs/common/android/qplatformdefs.h
 Copyright: 2012 Collabora Ltd, author <robin.burchell@collabora.co.uk>
 License: LGPL-3 or GPL-2
 
+Files: src/corelib/time/qtimezoneprivate_tz.cpp
+Copyright: 2019 Crimson AS <info@crimson.no>
+           2013 John Layt <jlayt@kde.org>
+           2020 The Qt Company Ltd.
+License: LGPL-3 or GPL-2
+
 Files: src/corelib/io/qlockfile.h
        src/corelib/io/qlockfile_p.h
        src/corelib/io/qsavefile.cpp
@@ -988,7 +1005,7 @@ License: LGPL-3 or GPL-2
 
 Files: src/corelib/time/qtimezoneprivate_android.cpp
 Copyright: 2014 Drew Parsons <dparsons@emerall.com>
-           2019 The Qt Company Ltd.
+           2020 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/tools/qhash.cpp
@@ -998,13 +1015,13 @@ Copyright: 2012 Giuseppe D'Angelo <dangelog@gmail.com>
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/text/qregularexpression.h
-Copyright: 2012 Giuseppe D'Angelo <dangelog@gmail.com>
-           2012 Klarälvdalens Datakonsult AB, a KDAB Group company
+Copyright: 2020 Giuseppe D'Angelo <dangelog@gmail.com>
+           2020 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/text/qregularexpression.cpp
-Copyright: 2016 Giuseppe D'Angelo <dangelog@gmail.com>
-           2016 Klarälvdalens Datakonsult AB, a KDAB Group company
+Copyright: 2020 Giuseppe D'Angelo <dangelog@gmail.com>
+           2020 Klarälvdalens Datakonsult AB, a KDAB Group company
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
@@ -1022,14 +1039,7 @@ Copyright: 2014 Governikus GmbH & Co. KG.
            2016 Richard J. Moore <rich@kde.org>
 License: LGPL-3 or GPL-2
 
-Files: src/network/ssl/qsslsocket_openssl11.cpp
-Copyright: 2014 Governikus GmbH & Co. KG.
-           2016 Richard J. Moore <rich@kde.org>
-           2017 The Qt Company Ltd.
-License: LGPL-3 or GPL-2
-
 Files: src/network/ssl/qsslsocket_openssl.cpp
-       src/network/ssl/qsslsocket_opensslpre11.cpp
 Copyright: 2014 Governikus GmbH & Co. KG.
            2017 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
@@ -1044,6 +1054,11 @@ Files: mkspecs/common/integrity/qplatformdefs.h
        src/plugins/platforms/integrity/qintegrityhidmanager.cpp
        src/plugins/platforms/integrity/qintegrityhidmanager.h
 Copyright: 2015 Green Hills Software
+License: LGPL-3 or GPL-2
+
+Files: src/plugins/platforms/ios/qiosdocumentpickercontroller.h
+       src/plugins/platforms/ios/qiosdocumentpickercontroller.mm
+Copyright: 2020 Harald Meyer.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/text/qstring_mips_dsp_asm.S
@@ -1085,8 +1100,10 @@ Files: config.tests/avx512/avx512.cpp
        src/corelib/serialization/qcbordiagnostic.cpp
        src/corelib/serialization/qcbormap.cpp
        src/corelib/serialization/qcbormap.h
-       src/corelib/serialization/qcborstream.cpp
-       src/corelib/serialization/qcborstream.h
+       src/corelib/serialization/qcborstreamreader.cpp
+       src/corelib/serialization/qcborstreamreader.h
+       src/corelib/serialization/qcborstreamwriter.cpp
+       src/corelib/serialization/qcborstreamwriter.h
        src/corelib/serialization/qcborvalue.cpp
        src/corelib/serialization/qcborvalue.h
        src/corelib/serialization/qcborvalue_p.h
@@ -1107,11 +1124,12 @@ Files: config.tests/avx512/avx512.cpp
        src/testlib/qcsvbenchmarklogger.cpp
        src/testlib/qcsvbenchmarklogger_p.h
        src/xml/qtxmlglobal.h
+       tests/auto/corelib/serialization/cborlargedatavalidation.cpp
        tests/auto/corelib/serialization/qcborstreamreader/tst_qcborstreamreader.cpp
        tests/auto/corelib/serialization/qcborstreamwriter/tst_qcborstreamwriter.cpp
        tests/auto/corelib/serialization/qcborvalue/tst_qcborvalue.cpp
        tests/auto/corelib/serialization/qcborvalue_json/tst_qcborvalue_json.cpp
-Copyright: 2015-2019 Intel Corporation
+Copyright: 2015-2020 Intel Corporation
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/io/qstorageinfo_unix.cpp
@@ -1126,11 +1144,25 @@ Copyright: 2016 Intel Corporation
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
+Files: src/corelib/mimetypes/qmimeprovider.cpp
+       src/corelib/text/qbytearray.cpp
+Copyright: 2016-2019 Intel Corporation
+           2018-2019 Klarälvdalens Datakonsult AB, a KDAB Group company
+           2018-2019 The Qt Company Ltd.
+License: LGPL-3 or GPL-2
+
+Files: src/corelib/tools/qsharedpointer.cpp
+       src/corelib/tools/qsharedpointer_impl.h
+Copyright: 2020 Intel Corporation
+           2019 Klarälvdalens Datakonsult AB.
+           2019-2020 The Qt Company Ltd.
+License: LGPL-3 or GPL-2
+
 Files: src/corelib/text/qstring.cpp
        src/corelib/text/qstring.h
 Copyright: 2016-2018 Intel Corporation
            2019 Mail.ru Group.
-           2016 The Qt Company Ltd.
+           2016-2020 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/global/qlogging.cpp
@@ -1142,7 +1174,7 @@ Files: src/corelib/global/qlogging.cpp
        src/corelib/thread/qreadwritelock.cpp
 Copyright: 2016-2018 Intel Corporation
            2012-2016 Olivier Goffart <ogoffart@woboq.com>
-           2016-2019 The Qt Company Ltd.
+           2016-2020 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/io/qfilesystemengine_unix.cpp
@@ -1179,6 +1211,7 @@ Files: bin/syncqt.pl
        src/corelib/io/qprocess_unix.cpp
        src/corelib/io/qprocess_win.cpp
        src/corelib/io/qresource.cpp
+       src/corelib/io/qresource.h
        src/corelib/io/qstandardpaths.cpp
        src/corelib/io/qtemporarydir.cpp
        src/corelib/io/qtemporaryfile.cpp
@@ -1203,12 +1236,15 @@ Files: bin/syncqt.pl
        src/corelib/plugin/qlibrary_unix.cpp
        src/corelib/plugin/qplugin.h
        src/corelib/plugin/qpluginloader.cpp
+       src/corelib/serialization/qbinaryjson_p.h
+       src/corelib/serialization/qcborcommon.cpp
+       src/corelib/serialization/qcborcommon_p.h
+       src/corelib/serialization/qcborstream.h
        src/corelib/serialization/qjson_p.h
        src/corelib/serialization/qjsonparser.cpp
        src/corelib/serialization/qjsonwriter.cpp
        src/corelib/serialization/qtextstream.cpp
        src/corelib/serialization/qtextstream_p.h
-       src/corelib/text/qbytearray.cpp
        src/corelib/text/qbytearray.h
        src/corelib/text/qlocale.cpp
        src/corelib/text/qlocale_p.h
@@ -1231,8 +1267,6 @@ Files: bin/syncqt.pl
        src/corelib/tools/qarraydata.cpp
        src/corelib/tools/qbitarray.cpp
        src/corelib/tools/qlist.cpp
-       src/corelib/tools/qsharedpointer.cpp
-       src/corelib/tools/qsharedpointer_impl.h
        src/corelib/tools/qsimd.cpp
        src/corelib/tools/qsimd_p.h
        src/dbus/qdbus_symbols.cpp
@@ -1336,10 +1370,8 @@ License: LGPL-3 or GPL-2
 
 Files: src/corelib/time/qtimezone.cpp
        src/corelib/time/qtimezone.h
-       src/corelib/time/qtimezoneprivate.cpp
        src/corelib/time/qtimezoneprivate_icu.cpp
        src/corelib/time/qtimezoneprivate_p.h
-       src/corelib/time/qtimezoneprivate_tz.cpp
        src/corelib/time/qtimezoneprivate_win.cpp
        src/gui/painting/qpagelayout.cpp
        src/gui/painting/qpagelayout.h
@@ -1356,7 +1388,8 @@ Files: src/corelib/time/qtimezone.cpp
 Copyright: 2013-2014 John Layt <jlayt@kde.org>
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/time/qtimezoneprivate_data_p.h
+Files: src/corelib/time/qtimezoneprivate.cpp
+       src/corelib/time/qtimezoneprivate_data_p.h
        src/corelib/time/qtimezoneprivate_mac.mm
        src/plugins/printsupport/cups/qcupsprintersupport.cpp
        src/plugins/printsupport/cups/qcupsprintersupport_p.h
@@ -1392,8 +1425,9 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/corelib/text/qstringalgorithms.h
        src/corelib/text/qstringview.cpp
        src/corelib/thread/qlocking_p.h
+       src/corelib/thread/qwaitcondition_p.h
        src/corelib/tools/qcontainertools_impl.h
-       src/corelib/tools/qscopeguard.h
+       src/corelib/tools/qduplicatetracker_p.h
        src/gui/opengl/qopengldebug.cpp
        src/gui/opengl/qopengldebug.h
        src/gui/opengl/qopenglfunctions_1_0.cpp
@@ -1427,7 +1461,6 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/gui/opengl/qopenglpixeltransferoptions.cpp
        src/gui/opengl/qopenglpixeltransferoptions.h
        src/gui/opengl/qopenglqueryhelper_p.h
-       src/gui/opengl/qopengltexture.cpp
        src/gui/opengl/qopengltexture.h
        src/gui/opengl/qopengltexture_p.h
        src/gui/opengl/qopengltexturehelper.cpp
@@ -1500,7 +1533,7 @@ Files: mkspecs/haiku-g++/qplatformdefs.h
        src/tools/tracegen/qtheaders.h
        src/tools/tracegen/tracegen.cpp
        tests/auto/corelib/itemmodels/qconcatenatetablesproxymodel/tst_qconcatenatetablesproxymodel.cpp
-Copyright: 2011-2019 Klarälvdalens Datakonsult AB, a KDAB Group company
+Copyright: 2011-2020 Klarälvdalens Datakonsult AB, a KDAB Group company
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/kernel/qsharedmemory_posix.cpp
@@ -1518,7 +1551,6 @@ License: LGPL-3 or GPL-2
 Files: src/corelib/mimetypes/qmimedatabase.cpp
        src/corelib/mimetypes/qmimedatabase.h
        src/corelib/mimetypes/qmimedatabase_p.h
-       src/corelib/mimetypes/qmimeprovider.cpp
        src/corelib/mimetypes/qmimeprovider_p.h
        src/corelib/mimetypes/qmimetype.cpp
        src/corelib/mimetypes/qmimetype.h
@@ -1527,6 +1559,7 @@ Files: src/corelib/mimetypes/qmimedatabase.cpp
        src/corelib/thread/qthread.h
        src/corelib/tools/qhash.h
        src/corelib/tools/qhashfunctions.h
+       src/corelib/tools/qscopeguard.h
        src/gui/kernel/qplatformmenu.h
        src/gui/kernel/qplatformsystemtrayicon.cpp
        src/gui/kernel/qplatformsystemtrayicon.h
@@ -1556,6 +1589,7 @@ Files: src/corelib/mimetypes/qmimedatabase.cpp
        src/gui/opengl/qopenglfunctions_4_4_core.h
        src/gui/opengl/qopenglfunctions_4_5_compatibility.h
        src/gui/opengl/qopenglfunctions_4_5_core.h
+       src/gui/opengl/qopengltexture.cpp
        src/gui/opengl/qopenglversionfunctions.cpp
        src/gui/opengl/qopenglversionfunctions.h
        src/gui/util/qvalidator.cpp
@@ -1569,14 +1603,14 @@ Files: src/corelib/mimetypes/qmimedatabase.cpp
        src/plugins/platforms/cocoa/qcocoasystemtrayicon.h
        src/plugins/platforms/cocoa/qcocoasystemtrayicon.mm
        src/testlib/qabstractitemmodeltester.cpp
-Copyright: 2012-2017 Klarälvdalens Datakonsult AB, a KDAB Group company
-           2016-2018 The Qt Company Ltd.
+Copyright: 2012-2018 Klarälvdalens Datakonsult AB, a KDAB Group company
+           2016-2020 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/gui/text/qharfbuzzng.cpp
        src/gui/text/qharfbuzzng_p.h
 Copyright: 2013 Konstantin Ritt <ritt.ks@gmail.com>
-           2016 The Qt Company Ltd.
+           2016-2019 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/platformheaders/waylandfunctions/qwaylandwindowfunctions.h
@@ -1713,7 +1747,7 @@ Copyright: 2014 Petroules Corporation.
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
-Files: src/corelib/kernel/qcore_mac_objc.mm
+Files: src/corelib/kernel/qcore_mac.mm
 Copyright: 2014 Petroules Corporation.
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
@@ -1774,6 +1808,11 @@ License: LGPL-3 or GPL-2
 Files: src/corelib/tools/qmessageauthenticationcode.cpp
        src/corelib/tools/qmessageauthenticationcode.h
 Copyright: 2013 Ruslan Nigmatullin <euroelessar@yandex.ru>
+License: LGPL-3 or GPL-2
+
+Files: src/plugins/platforms/cocoa/qcocoasessionmanager.cpp
+       src/plugins/platforms/cocoa/qcocoasessionmanager.h
+Copyright: 2019 Samuel Gaist <samuel.gaist@edeltech.ch>
 License: LGPL-3 or GPL-2
 
 Files: src/gui/kernel/qplatformsessionmanager.cpp
