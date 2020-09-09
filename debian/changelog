@@ -21,6 +21,7 @@ qtbase-opensource-src (5.15.1+dfsg-1) UNRELEASED; urgency=medium
   * Bump qttools build-dependencies to 5.15.
   * Bump ABI version to qtbase-abi-5-15-1.
   * Update debian/copyright using debian/scripts/update-copyright.
+  * Manually update non-generated part of debian/copyright.
   * Update install files for the new release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 08 Sep 2020 15:42:13 +0300
