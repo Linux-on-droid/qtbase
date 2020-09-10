@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.15.1+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.1+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Drop all patches that have been included in the new release:
     - CVE-2015-9541.diff
@@ -25,7 +24,7 @@ qtbase-opensource-src (5.15.1+dfsg-1) UNRELEASED; urgency=medium
   * Update install files for the new release.
   * Update symbols files from the current build log.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 08 Sep 2020 15:42:13 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 10 Sep 2020 14:41:18 +0300
 
 qtbase-opensource-src (5.14.2+dfsg-6) unstable; urgency=medium
 
