@@ -23,6 +23,7 @@ qtbase-opensource-src (5.15.1+dfsg-1) UNRELEASED; urgency=medium
   * Update debian/copyright using debian/scripts/update-copyright.
   * Manually update non-generated part of debian/copyright.
   * Update install files for the new release.
+  * Update symbols files from the current build log.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 08 Sep 2020 15:42:13 +0300
 
