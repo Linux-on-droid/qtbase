@@ -1,3 +1,60 @@
+qtbase-opensource-src (5.15.1+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop all patches that have been included in the new release:
+    - CVE-2015-9541.diff
+    - CVE-2020-17507.diff
+    - CVE-2020-13962.diff
+    - enable_a11y_on_linux.diff
+    - fix_qlibrary_deadlock.diff
+    - moc_handle_includes.diff
+    - no_isystem.diff
+    - clarify_pic_message.diff
+  * Refresh other patches.
+  * Update symbols files from buildds’ logs.
+  * Update to debhelper compat level 13.
+    - Drop dh_missing override, --fail-missing is now default behavior.
+    - Use ${DEB_HOST_MULTIARCH} substitution.
+    - Stop using dh-exec for .links files, as debhelper now supports
+      substitutions natively.
+  * Bump qttools build-dependencies to 5.15.
+  * Bump ABI version to qtbase-abi-5-15-1.
+  * Update debian/copyright using debian/scripts/update-copyright.
+  * Manually update non-generated part of debian/copyright.
+  * Update install files for the new release.
+  * Update symbols files from the current build log.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 10 Sep 2020 14:41:18 +0300
+
+qtbase-opensource-src (5.14.2+dfsg-6) unstable; urgency=medium
+
+  * Backport upstream patch to fix buffer overflow in XBM parser
+    (CVE-2020-17507, closes: #968444).
+  * Backport upstream patch to handle SSL_shutdown's errors properly
+    (CVE-2020-13962).
+  * Update symbols files from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 19 Aug 2020 20:40:32 +0300
+
+qtbase-opensource-src (5.14.2+dfsg-5) unstable; urgency=medium
+
+  * Backport upstream patch for moc to handle include directives in enums
+    (closes: #963955).
+  * Stop using -isystem flag in qmake (closes: #958479).
+  * Clarify warning message about PIC/PIE, thanks Daniel Kahn Gillmor
+    (closes: #879014).
+  * Update symbols files for GCC 10.
+  * Update libqt5gui5.lintian-overrides for tag renames in Lintian 2.79.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 02 Aug 2020 11:49:03 +0300
+
+qtbase-opensource-src (5.14.2+dfsg-4) unstable; urgency=medium
+
+  * Restore debian/patches/armv4.diff, it is still needed for clang
+    (see https://bugs.debian.org/963709#20 for details).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 26 Jun 2020 19:47:18 +0300
+
 qtbase-opensource-src-gles (5.14.2+dfsg-3) unstable; urgency=medium
 
   * Merge qtbase-opensource-src 5.14.2+dfsg-3 upload.

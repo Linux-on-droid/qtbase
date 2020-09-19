@@ -39,7 +39,7 @@ ifeq ($(DEB_HOST_ARCH),ia64)
 endif
 
 # Compile without sse2 support on i386
-# Do not use pre compiled headers in order to be able to rebuild the gui
+# Do not use precompiled headers in order to be able to rebuild the gui
 # submodule.
 ifeq ($(DEB_HOST_ARCH_CPU),i386)
 	cpu_opt = -no-sse2 -no-pch
@@ -220,7 +220,7 @@ ifeq ($(DEB_HOST_ARCH_CPU),i386)
 	cd $(CURDIR)/src/corelib; $(MAKE) clean; ../../bin/qmake -config sse2; $(MAKE)
 	cp -av lib/libQt5Core.so.* debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/sse2/
 
-	# gui on turn doesn't needs it, and actually fails if done.
+	# gui on turn doesn't need it, and actually fails if done.
 	cd $(CURDIR)/src/gui; ../../bin/qmake -config sse2; $(MAKE)
 	cp -av lib/libQt5Gui.so.* debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/sse2/
 endif
@@ -249,7 +249,7 @@ endif
 	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/cmake/Qt5Gui/Q*ThemePlugin.cmake
 	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/cmake/Qt5Sql/Q*DriverPlugin.cmake
 
-	# There is also no need to install libQtBootstrap. As it's name indicates it's
+	# There is also no need to install libQtBootstrap. As its name indicates it's
 	# only used to bootstrap qt.
 	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/libQt5Bootstrap*
 	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/pkgconfig/Qt5Bootstrap.pc

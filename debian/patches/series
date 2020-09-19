@@ -1,7 +1,4 @@
 # Backported from upstream.
-CVE-2015-9541.diff
-enable_a11y_on_linux.diff
-fix_qlibrary_deadlock.diff
 
 # Debian specific.
 gnukfreebsd.diff
@@ -9,6 +6,7 @@ no_htmlinfo_example.diff
 remove_privacy_breaches.diff
 link_fbclient.diff
 gnukfreebsd_linker_warnings.diff
+armv4.diff
 nonlinux_utime.diff
 qdoc_default_incdirs.diff
 path_max.diff

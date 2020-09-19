@@ -22,7 +22,7 @@ Last-Update: 2018-02-22
  #    else
 --- a/src/corelib/io/qfilesystemengine_unix.cpp
 +++ b/src/corelib/io/qfilesystemengine_unix.cpp
-@@ -1375,7 +1375,7 @@ bool QFileSystemEngine::setFileTime(int
+@@ -1595,7 +1595,7 @@ bool QFileSystemEngine::setFileTime(int
          return false;
      }
  
