@@ -296,3 +296,6 @@ override_dh_auto_test:
 
 override_dh_strip_nondeterminism:
 	dh_strip_nondeterminism --verbose -X.png
+
+override_dh_missing:
+	dh_missing --list-missing

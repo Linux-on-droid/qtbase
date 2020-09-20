@@ -3,6 +3,7 @@ qtbase-opensource-src-gles (5.15.1+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Merge qtbase-opensource-src 5.15.1+dfsg-1 upload.
   * Bump qtbase build-dependencies to 5.15.1.
+  * Call dh_missing with --list-missing, we do not install all files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 19 Sep 2020 20:51:39 +0300
 
