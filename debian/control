@@ -483,28 +483,6 @@ Description: Qt 5 base examples
  .
  This package contains Qt base 5 examples.
 
-Package: qt5-default
-Architecture: any
-Multi-Arch: same
-Section: libdevel
-Depends: qtbase5-dev (= ${binary:Version}) | qtbase5-gles-dev (>= ${source:Upstream-Version}),
-         qtchooser (>= 55-gc9562a1-1~),
-         ${misc:Depends}
-Conflicts: qt4-default
-Suggests: qt5-qmake, qtbase5-dev-tools
-Description: Qt 5 development defaults package
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package sets Qt 5 to be the default Qt version to be used when
- using development binaries like qmake. It provides a default
- configuration for qtchooser, but does not prevent alternative Qt
- installations from being used.
- .
- This package should not be used for building Debian packages. Take a
- look at https://qt-kde-team.pages.debian.net/packagingqtbasedstuff.html for
- more information.
-
 Package: qtbase5-doc
 Build-Profiles: <!nodoc>
 Architecture: all
