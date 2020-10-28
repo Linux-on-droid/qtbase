@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.1 amd64 i386
+# SymbolsHelper-Confirmed: 5.15.1 amd64 arm64 armel armhf i386 ia64 m68k mips64el mipsel powerpc ppc64el riscv64 sh4 sparc64 x32
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-15-1
 * Build-Depends-Package: qtbase5-dev
@@ -520,6 +520,8 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN11QJsonObject4takeE13QLatin1String@Qt_5 5.14.1
  _ZN11QJsonObject4takeERK7QString@Qt_5 5.0.2
  _ZN11QJsonObject5eraseENS_8iteratorE@Qt_5 5.0.2
+ (optional=templinst|arch=ia64)_ZN11QJsonObject6atImplI11QStringViewEE13QJsonValueRefT_@Qt_5 5.15.1
+ (optional=templinst|arch=ia64)_ZN11QJsonObject6atImplI13QLatin1StringEE13QJsonValueRefT_@Qt_5 5.15.1
  _ZN11QJsonObject6detachEj@Qt_5 5.0.2
  _ZN11QJsonObject6insertE11QStringViewRK10QJsonValue@Qt_5 5.14.1
  _ZN11QJsonObject6insertE13QLatin1StringRK10QJsonValue@Qt_5 5.14.1
@@ -529,9 +531,11 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN11QJsonObject6removeERK7QString@Qt_5 5.0.2
  _ZN11QJsonObject7compactEv@Qt_5 5.0.2
  _ZN11QJsonObject7detach2Ej@Qt_5 5.6.1
- (optional=templinst|arch=amd64)_ZN11QJsonObject8insertAtI11QStringViewEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
- (optional=templinst|arch=amd64 armel armhf hppa hurd-i386 m68k mipsel powerpc sh4 x32)_ZN11QJsonObject8insertAtI13QLatin1StringEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
+ (optional=templinst|arch=amd64 arm64 ia64 m68k mips64el ppc64el riscv64 sh4 sparc64 x32)_ZN11QJsonObject8insertAtI11QStringViewEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
+ (optional=templinst|arch=amd64 arm64 hppa hurd-i386 ia64 m68k mips64el ppc64el riscv64 sh4 sparc64 x32)_ZN11QJsonObject8insertAtI13QLatin1StringEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
  _ZN11QJsonObject8removeAtEi@Qt_5 5.14.1
+ (optional=templinst|arch=ia64)_ZN11QJsonObject8takeImplI11QStringViewEE10QJsonValueT_@Qt_5 5.15.1
+ (optional=templinst|arch=ia64)_ZN11QJsonObject8takeImplI13QLatin1StringEE10QJsonValueT_@Qt_5 5.15.1
  _ZN11QJsonObjectC1EOS_@Qt_5 5.15.1
  _ZN11QJsonObjectC1EP21QCborContainerPrivate@Qt_5 5.15.1
  _ZN11QJsonObjectC1ERKS_@Qt_5 5.0.2
@@ -4189,6 +4193,8 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK11QJsonObject9constFindE11QStringView@Qt_5 5.14.1
  _ZNK11QJsonObject9constFindE13QLatin1String@Qt_5 5.7.0
  _ZNK11QJsonObject9constFindERK7QString@Qt_5 5.0.2
+ (optional=templinst|arch=ia64)_ZNK11QJsonObject9valueImplI11QStringViewEE10QJsonValueT_@Qt_5 5.15.1
+ (optional=templinst|arch=ia64)_ZNK11QJsonObject9valueImplI13QLatin1StringEE10QJsonValueT_@Qt_5 5.15.1
  _ZNK11QJsonObjecteqERKS_@Qt_5 5.0.2
  _ZNK11QJsonObjectixERK7QString@Qt_5 5.0.2
  _ZNK11QJsonObjectneERKS_@Qt_5 5.0.2
@@ -5910,7 +5916,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  (optional=templinst)_ZNSt6vectorIP16QCalendarBackendSaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5_PRIVATE_API 5.14.1 1
  (optional=templinst)_ZNSt6vectorISt10unique_ptrIA_KcSt14default_deleteIS2_EESaIS5_EE17_M_realloc_insertIJRPcEEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_@Qt_5 5.14.1
  (optional=templinst|arch=ia64)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.14.2
- (optional=templinst)_ZNSt8__detail16_Hashtable_allocINSt3pmr21polymorphic_allocatorINS_10_Hash_nodeI7QStringLb0EEEEEE18_M_deallocate_nodeEPS5_@Qt_5 5.15.1
+ (optional=templinst|arch=!ia64)_ZNSt8__detail16_Hashtable_allocINSt3pmr21polymorphic_allocatorINS_10_Hash_nodeI7QStringLb0EEEEEE18_M_deallocate_nodeEPS5_@Qt_5 5.15.1
  (optional=templinst|subst)_ZSt17__rotate_adaptiveIP21QPersistentModelIndexS1_{ssize_t}ET_S2_S2_S2_T1_S3_T0_S3_@Qt_5 5.0.2
  (optional=templinst|subst)_ZSt17__rotate_adaptiveIPiS0_{ssize_t}ET_S1_S1_S1_T1_S2_T0_S2_@Qt_5 5.0.2
  _ZTI10QEventLoop@Qt_5 5.0.2
