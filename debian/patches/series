@@ -1,4 +1,5 @@
 # Backported from upstream.
+emit_geometry_changed.diff
 
 # Debian specific.
 gnukfreebsd.diff
@@ -11,3 +12,4 @@ nonlinux_utime.diff
 qdoc_default_incdirs.diff
 path_max.diff
 qstorageinfo_linux.diff
+cross_build_mysql.diff
