@@ -1,5 +1,6 @@
 # Backported from upstream.
 emit_geometry_changed.diff
+qlineedit_fix_cursor_drawing_issues.diff
 
 # Debian specific.
 gnukfreebsd.diff
