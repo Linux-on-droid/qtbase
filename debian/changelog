@@ -1,8 +1,11 @@
-qtbase-opensource-src (5.15.1+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lu Yaning ]
   * Backport qlineedit_fix_cursor_drawing_issues.diff, fixing stale pixels left
     behind while entering Chinese on English environments.
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 04 Nov 2020 11:53:04 -0300
 
