@@ -4,6 +4,7 @@ qtbase-opensource-src (5.15.2+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Drop emit_geometry_changed.diff, included in the new release.
   * Bump ABI version to qtbase-abi-5-15-2.
+  * Update debian/libqt5core5a.symbols for hppa.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 04 Nov 2020 11:53:04 -0300
 

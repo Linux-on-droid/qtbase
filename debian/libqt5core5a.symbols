@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.1 amd64 arm64 armel armhf i386 ia64 m68k mips64el mipsel powerpc ppc64el riscv64 sh4 sparc64 x32
+# SymbolsHelper-Confirmed: 5.15.1 amd64 arm64 armel armhf hppa i386 ia64 m68k mips64el mipsel powerpc ppc64el riscv64 sh4 sparc64 x32
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-15-2
 * Build-Depends-Package: qtbase5-dev
@@ -531,7 +531,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN11QJsonObject6removeERK7QString@Qt_5 5.0.2
  _ZN11QJsonObject7compactEv@Qt_5 5.0.2
  _ZN11QJsonObject7detach2Ej@Qt_5 5.6.1
- (optional=templinst|arch=amd64 arm64 ia64 m68k mips64el ppc64el riscv64 sh4 sparc64 x32)_ZN11QJsonObject8insertAtI11QStringViewEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
+ (optional=templinst|arch=amd64 arm64 hppa ia64 m68k mips64el ppc64el riscv64 sh4 sparc64 x32)_ZN11QJsonObject8insertAtI11QStringViewEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
  (optional=templinst|arch=amd64 arm64 hppa hurd-i386 ia64 m68k mips64el ppc64el riscv64 sh4 sparc64 x32)_ZN11QJsonObject8insertAtI13QLatin1StringEENS_8iteratorEiT_RK10QJsonValueb@Qt_5 5.14.1
  _ZN11QJsonObject8removeAtEi@Qt_5 5.14.1
  (optional=templinst|arch=ia64)_ZN11QJsonObject8takeImplI11QStringViewEE10QJsonValueT_@Qt_5 5.15.1
