@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.15.1+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Remove debian/source/lintian-overrides. The remaining override
+    is not needed since we removed qt5-default package.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 19 Nov 2020 21:30:28 +0300
 

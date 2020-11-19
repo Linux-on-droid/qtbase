@@ -1,2 +1,0 @@
-# We are using ${source:Upstream-Version} here, and qtbase5-gles-dev upstream version matches ours.
-qtbase-opensource-src source: version-substvar-for-external-package qt5-default -> qtbase5-gles-dev
