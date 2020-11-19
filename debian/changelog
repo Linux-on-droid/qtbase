@@ -1,13 +1,12 @@
-qtbase-opensource-src (5.15.1+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.1+dfsg-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Remove debian/source/lintian-overrides. The remaining override
     is not needed since we removed qt5-default package.
   * Update debian/libqt5core5a.symbols for hppa.
   * Backport upstream patch to fix issues with debugging applications
     that use QProcess (closes: #974602).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 19 Nov 2020 21:30:28 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 19 Nov 2020 21:39:27 +0300
 
 qtbase-opensource-src (5.15.1+dfsg-2) unstable; urgency=medium
 
