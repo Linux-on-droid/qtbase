@@ -1,5 +1,6 @@
 # Backported from upstream.
 emit_geometry_changed.diff
+clone_sigchld.diff
 
 # Debian specific.
 gnukfreebsd.diff

@@ -1,0 +1,52 @@
+Description: ask clone() to use the SIGCHLD as the termination signal
+ Because of these lines in the Linux kernel (kernel/fork.c, see [1][3]):
+ .
+     if (clone_flags & CLONE_VFORK)
+         trace = PTRACE_EVENT_VFORK;
+     else if (args->exit_signal != SIGCHLD)
+         trace = PTRACE_EVENT_CLONE;
+     else
+         trace = PTRACE_EVENT_FORK;
+ .
+ Without CLONE_VFORK (which we can't use), if the exit signal isn't
+ SIGCHLD, the debugger will get a PTRACE_EVENT_CLONE, which makes it
+ think the process we're starting is a thread, not a new process. Both
+ gdb and lldb remain attached to the child and when it later performs an
+ execve(), they get mightily confused. See gdb bug report[5].
+ .
+ The idea of not having an exit_signal was so that no SIGCHLD would be
+ delivered to the parent process in the first place. That way, some
+ misguided SIGCHLD handler (*cough* GLib *cough*) wouldn't reap our
+ processes. Unfortunately, what I didn't realize was that the kernel
+ sends SIGCHLD anyway (see [2][4]), so this defensive measure didn't
+ actually work. Consequently, we can pass SIGCHLD to clone() and get the
+ debuggers working again.
+ .
+ [1] https://code.woboq.org/linux/linux/kernel/fork.c.html#_do_fork
+ [2] https://code.woboq.org/linux/linux/kernel/signal.c.html#do_notify_parent
+ [3] https://elixir.bootlin.com/linux/v5.8/source/kernel/fork.c#L2432
+ [4] https://elixir.bootlin.com/linux/v5.8/source/kernel/signal.c#L1925
+ [5] https://sourceware.org/bugzilla/show_bug.cgi?id=26562
+Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=a82032351c921c3d
+Last-Update: 2020-11-19
+
+--- a/src/3rdparty/forkfd/forkfd_linux.c
++++ b/src/3rdparty/forkfd/forkfd_linux.c
+@@ -147,7 +147,7 @@ int system_forkfd(int flags, pid_t *ppid
+     }
+ 
+     *system = 1;
+-    unsigned long cloneflags = CLONE_PIDFD;
++    unsigned long cloneflags = CLONE_PIDFD | SIGCHLD;
+     pid = sys_clone(cloneflags, &pidfd);
+     if (ppid)
+         *ppid = pid;
+@@ -171,7 +171,7 @@ int system_forkfd_wait(int ffd, struct f
+ {
+     siginfo_t si;
+     int ret;
+-    int options = __WALL | convertForkfdWaitFlagsToWaitFlags(ffdoptions);
++    int options = convertForkfdWaitFlagsToWaitFlags(ffdoptions);
+ 
+     if ((options & WNOHANG) == 0) {
+         /* check if the file descriptor is non-blocking */
