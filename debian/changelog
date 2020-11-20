@@ -9,6 +9,7 @@ qtbase-opensource-src (5.15.2+dfsg-1) UNRELEASED; urgency=medium
   * Update debian/copyright using debian/scripts/update-copyright.
   * Add a patch to loosen xcb-util requirement from 0.3.9 to 0.3.8
     (see #975259).
+  * Build-depend on libxcb-util0-dev.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 20 Nov 2020 15:26:57 +0300
 
