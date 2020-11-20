@@ -112,8 +112,6 @@ usr/include/${DEB_HOST_MULTIARCH}/qt5/QtXkbCommonSupport/qtxkbcommonsupportversi
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtXml/5.*/*
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5AccessibilitySupport/Qt5AccessibilitySupportConfig.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5AccessibilitySupport/Qt5AccessibilitySupportConfigVersion.cmake
-usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Bootstrap/Qt5BootstrapConfig.cmake
-usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Bootstrap/Qt5BootstrapConfigVersion.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5DeviceDiscoverySupport/Qt5DeviceDiscoverySupportConfig.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5DeviceDiscoverySupport/Qt5DeviceDiscoverySupportConfigVersion.cmake
 usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EdidSupport/Qt5EdidSupportConfig.cmake
