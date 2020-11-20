@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.15.2+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Drop two patches that are included in the new release:
     - emit_geometry_changed.diff
@@ -13,7 +12,7 @@ qtbase-opensource-src (5.15.2+dfsg-1) UNRELEASED; urgency=medium
   * Update debian/qtbase5-private-dev.install for the new release.
   * Update symbols files for the new release.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 20 Nov 2020 15:26:57 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 20 Nov 2020 16:08:35 +0300
 
 qtbase-opensource-src (5.15.1+dfsg-3) unstable; urgency=medium
 
