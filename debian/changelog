@@ -11,6 +11,7 @@ qtbase-opensource-src (5.15.2+dfsg-1) UNRELEASED; urgency=medium
     (see #975259).
   * Build-depend on libxcb-util0-dev.
   * Update debian/qtbase5-private-dev.install for the new release.
+  * Update symbols files for the new release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 20 Nov 2020 15:26:57 +0300
 

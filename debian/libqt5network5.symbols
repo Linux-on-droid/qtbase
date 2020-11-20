@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.1 amd64 i386
+# SymbolsHelper-Confirmed: 5.15.2 amd64
 libQt5Network.so.5 libqt5network5 #MINVER#
 | libqt5network5 #MINVER#, qtbase-abi-5-15-2
 * Build-Depends-Package: qtbase5-dev
@@ -21,6 +21,7 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  Qt_5@Qt_5 5.6.0~beta
  Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.0~beta 1
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Qt_5 5.0.2
+ _Z24qt_ForceTlsSecurityLevelv@Qt_5 5.15.2
  _Z35qNetworkConfigurationManagerPrivatev@Qt_5 5.0.2
  _Z5qHashRK12QHostAddressj@Qt_5 5.0.2
  _Z5qHashRK13QOcspResponsej@Qt_5 5.14.1
