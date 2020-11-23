@@ -1,3 +1,7 @@
+qtbase-opensource-src (5.15.1+dfsg-4) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 23 Nov 2020 15:13:30 -0300
+
 qtbase-opensource-src (5.15.1+dfsg-3) unstable; urgency=medium
 
   * Remove debian/source/lintian-overrides. The remaining override
