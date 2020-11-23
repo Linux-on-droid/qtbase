@@ -1,5 +1,9 @@
 qtbase-opensource-src (5.15.1+dfsg-4) UNRELEASED; urgency=medium
 
+  [ Alexander Volkov ]
+  * Backport upstream patch xcb_screens_uaf.patch in order to fix
+    use-after-free in the xcb plugin.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 23 Nov 2020 15:13:30 -0300
 
 qtbase-opensource-src (5.15.1+dfsg-3) unstable; urgency=medium

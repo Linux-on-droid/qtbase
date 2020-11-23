@@ -1,6 +1,7 @@
 # Backported from upstream.
 emit_geometry_changed.diff
 clone_sigchld.diff
+xcb_screens_uaf.patch
 
 # Debian specific.
 gnukfreebsd.diff
