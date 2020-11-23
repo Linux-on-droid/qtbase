@@ -22,6 +22,14 @@ qtbase-opensource-src (5.15.2+dfsg-1) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Fri, 20 Nov 2020 16:08:35 +0300
 
+qtbase-opensource-src (5.15.1+dfsg-4) unstable; urgency=medium
+
+  [ Alexander Volkov ]
+  * Backport upstream patch xcb_screens_uaf.patch in order to fix
+    use-after-free in the xcb plugin.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 23 Nov 2020 15:16:00 -0300
+
 qtbase-opensource-src (5.15.1+dfsg-3) unstable; urgency=medium
 
   * Remove debian/source/lintian-overrides. The remaining override
