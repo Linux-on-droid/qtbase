@@ -1,3 +1,37 @@
+qtbase-opensource-src (5.15.2+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop two patches that are included in the new release:
+    - emit_geometry_changed.diff
+    - clone_sigchld.diff
+  * Bump ABI version to qtbase-abi-5-15-2.
+  * Update debian/copyright using debian/scripts/update-copyright.
+  * Add a patch to loosen xcb-util requirement from 0.3.9 to 0.3.8
+    (see #975259).
+  * Build-depend on libxcb-util0-dev.
+  * Update debian/qtbase5-private-dev.install for the new release.
+  * Update symbols files for the new release.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 20 Nov 2020 16:08:35 +0300
+
+qtbase-opensource-src (5.15.1+dfsg-4) unstable; urgency=medium
+
+  [ Alexander Volkov ]
+  * Backport upstream patch xcb_screens_uaf.patch in order to fix
+    use-after-free in the xcb plugin.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 23 Nov 2020 15:16:00 -0300
+
+qtbase-opensource-src (5.15.1+dfsg-3) unstable; urgency=medium
+
+  * Remove debian/source/lintian-overrides. The remaining override
+    is not needed since we removed qt5-default package.
+  * Update debian/libqt5core5a.symbols for hppa.
+  * Backport upstream patch to fix issues with debugging applications
+    that use QProcess (closes: #974602).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 19 Nov 2020 21:39:27 +0300
+
 qtbase-opensource-src-gles (5.15.1+dfsg-2) unstable; urgency=medium
 
   * Set Build-Depends-Package field to qtbase5-gles-dev.

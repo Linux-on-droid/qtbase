@@ -451,6 +451,7 @@ Files: configure
        tests/auto/corelib/io/qprocess/testProcessCrash/main.cpp
        tests/auto/corelib/io/qprocess/tst_qprocess.cpp
        tests/auto/corelib/io/qresourceengine/tst_qresourceengine.cpp
+       tests/auto/corelib/io/qstandardpaths/tst_qstandardpaths.cpp
        tests/auto/corelib/io/qtemporaryfile/tst_qtemporaryfile.cpp
        tests/auto/corelib/io/qurl/tst_qurl.cpp
        tests/auto/corelib/io/qurlinternal/tst_qurlinternal.cpp
@@ -1213,6 +1214,7 @@ Files: bin/syncqt.pl
        src/corelib/io/qresource.cpp
        src/corelib/io/qresource.h
        src/corelib/io/qstandardpaths.cpp
+       src/corelib/io/qstandardpaths_unix.cpp
        src/corelib/io/qtemporarydir.cpp
        src/corelib/io/qtemporaryfile.cpp
        src/corelib/io/qurl.cpp

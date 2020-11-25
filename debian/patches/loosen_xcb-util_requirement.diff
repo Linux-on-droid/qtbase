@@ -1,0 +1,24 @@
+Description: loosen xcb-util requirement to 0.3.8
+ Debian has an ancient version, but there are no major changes between
+ 0.3.8 and 0.3.9.
+ .
+ Drop this patch when https://bugs.debian.org/975259 is fixed.
+Author: Dmitry Shachnev <mitya57@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-11-19
+
+--- a/src/gui/configure.json
++++ b/src/gui/configure.json
+@@ -602,10 +602,10 @@
+             "use": "xcb"
+         },
+         "xcb_util": {
+-            "label": "XCB Util >= 0.3.9",
++            "label": "XCB Util >= 0.3.8",
+             "headers": "xcb/xcb_util.h",
+             "sources": [
+-                { "type": "pkgConfig", "args": "xcb-util >= 0.3.9" },
++                { "type": "pkgConfig", "args": "xcb-util >= 0.3.8" },
+                 "-lxcb-util"
+             ],
+             "use": "xcb"

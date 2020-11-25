@@ -1,6 +1,6 @@
-# SymbolsHelper-Confirmed: 5.15.1 amd64 i386
+# SymbolsHelper-Confirmed: 5.15.2 amd64
 libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
-| libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-1
+| libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-2
 | libqt5gui5 #MINVER#
 | libqt5gui5-gles #MINVER#
 * Build-Depends-Package: qtbase5-gles-dev
@@ -3852,7 +3852,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  (optional=templinst)_ZN22QWindowSystemInterface24handleWindowStateChangedINS_19SynchronousDeliveryEEEvP7QWindow6QFlagsIN2Qt11WindowStateEEi@Qt_5_PRIVATE_API 5.10.0 1
  (optional=templinst)_ZN22QWindowSystemInterface24handleWindowStateChangedINS_20AsynchronousDeliveryEEEvP7QWindow6QFlagsIN2Qt11WindowStateEEi@Qt_5_PRIVATE_API 5.10.0 1
  _ZN22QWindowSystemInterface24nonUserInputEventsQueuedEv@Qt_5_PRIVATE_API 5.9.0 1
- _ZN22QWindowSystemInterface24setPlatformFiltersEventsEb@Qt_5_PRIVATE_API 5.12.2 1
  _ZN22QWindowSystemInterface24windowSystemEventsQueuedEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN22QWindowSystemInterface25handleEnterWhatsThisEventEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN22QWindowSystemInterface25handleWindowScreenChangedINS_15DefaultDeliveryEEEvP7QWindowP7QScreen@Qt_5_PRIVATE_API 5.11.1 1
@@ -4372,7 +4371,6 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN29QWindowSystemInterfacePrivate20getWindowSystemEventEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN29QWindowSystemInterfacePrivate21fromNativeTouchPointsERK5QListIN22QWindowSystemInterface10TouchPointEEPK7QWindowhPN6QEvent4TypeE@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZN29QWindowSystemInterfacePrivate21peekWindowSystemEventENS_9EventTypeE@Qt_5_PRIVATE_API 5.9.0~beta 1
- _ZN29QWindowSystemInterfacePrivate21platformFiltersEventsE@Qt_5_PRIVATE_API 5.12.2 1
  _ZN29QWindowSystemInterfacePrivate22windowSystemEventQueueE@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN29QWindowSystemInterfacePrivate23handleWindowSystemEventIN22QWindowSystemInterface15DefaultDeliveryEEEbPNS_17WindowSystemEventE@Qt_5_PRIVATE_API 5.9.0~beta 1
  (optional=templinst)_ZN29QWindowSystemInterfacePrivate23handleWindowSystemEventIN22QWindowSystemInterface19SynchronousDeliveryEEEbPNS_17WindowSystemEventE@Qt_5_PRIVATE_API 5.9.0~beta 1
