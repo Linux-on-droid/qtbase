@@ -77,7 +77,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Indep: qdoc-qt5 (>= 5.15~) <!nodoc>,
                      qhelpgenerator-qt5 (>= 5.15~) <!nodoc>,
                      qtattributionsscanner-qt5 <!nodoc>
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 Homepage: https://www.qt.io/developers/
 Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qtbase.git
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtbase
