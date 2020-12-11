@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.15.2+dfsg-2) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-2) unstable; urgency=medium
 
   [ Alexander Volkov ]
   * Backport upstream patch xcb_screens_uaf.patch in order to fix
@@ -8,13 +8,14 @@ qtbase-opensource-src (5.15.2+dfsg-2) UNRELEASED; urgency=medium
   * Build with libxcb-util-dev 0.4.0 which Debian now has.
     - Drop loosen_xcb-util_requirement.diff, no longer needed.
   * Bump Standards-Version to 4.5.1, no changes needed.
+  * Upload to unstable.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Build the experimental XCB native painting engine. This has been disabled
     as a default by upstream, but our X2Go users do really benefit from it if
     they export QT_XCB_NATIVE_PAINTING (Closes: #976274).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 23 Nov 2020 15:10:47 -0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 11 Dec 2020 11:31:30 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-1) experimental; urgency=medium
 
