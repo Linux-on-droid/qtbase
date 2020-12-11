@@ -118,6 +118,7 @@ endif
 	            -no-use-gold-linker \
 	            -no-mimetype-database \
 	            -no-feature-relocatable \
+	            -xcb-native-painting \
 	            -opengl es2 \
 	            $(extra_configure_opts) \
 	            $(cpu_opt) \
