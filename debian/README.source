@@ -22,7 +22,6 @@ steps if you want to rebuild the whole Qt stack from scratch:
 
 * Build only arch-dependent packages from these sources:
   - qtbase-opensource-src
-  - qtxmlpatterns-opensource-src
   - qtdeclarative-opensource-src
   - qtlocation-opensource-src
   - qtsensors-opensource-src
