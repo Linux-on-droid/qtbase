@@ -5,6 +5,7 @@ qtbase-opensource-src (5.15.2+dfsg-3) UNRELEASED; urgency=medium
     from QMetaObjectPrivate::connect.
   * Backport upstream changes to add #include <limits> for GCC 11.
   * Update debian/watch: use format 4, and track only 5.15.x releases.
+  * Update debian/libqt5core5a.symbols for hurd-i386.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Jan 2021 15:30:33 +0300
 
