@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.15.2+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix memory leak in QNetworkAccessManager
+    from QMetaObjectPrivate::connect.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Jan 2021 15:30:33 +0300
 

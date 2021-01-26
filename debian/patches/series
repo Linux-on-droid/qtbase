@@ -1,5 +1,6 @@
 # Backported from upstream.
 xcb_screens_uaf.patch
+qnam_connect_memory_leak.diff
 
 # Debian specific.
 gnukfreebsd.diff
