@@ -1,13 +1,12 @@
-qtbase-opensource-src (5.15.2+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport upstream patch to fix memory leak in QNetworkAccessManager
     from QMetaObjectPrivate::connect.
   * Backport upstream changes to add #include <limits> for GCC 11.
   * Update debian/watch: use format 4, and track only 5.15.x releases.
   * Update debian/libqt5core5a.symbols for hurd-i386.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Jan 2021 15:30:33 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 26 Jan 2021 20:17:11 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-2) unstable; urgency=medium
 
