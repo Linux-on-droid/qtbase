@@ -1,10 +1,21 @@
 qtbase-opensource-src-gles (5.15.2+dfsg-3) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
+  * Merge qtbase-opensource-src 5.15.2+dfsg-3 upload.
   * Remove libxcb-glx0-dev build-dependency, not needed for -gles variant.
     Thanks to Helmut Grohne for noticing it!
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Jan 2021 21:26:12 +0300
+
+qtbase-opensource-src (5.15.2+dfsg-3) unstable; urgency=medium
+
+  * Backport upstream patch to fix memory leak in QNetworkAccessManager
+    from QMetaObjectPrivate::connect.
+  * Backport upstream changes to add #include <limits> for GCC 11.
+  * Update debian/watch: use format 4, and track only 5.15.x releases.
+  * Update debian/libqt5core5a.symbols for hurd-i386.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 26 Jan 2021 20:17:11 +0300
 
 qtbase-opensource-src-gles (5.15.2+dfsg-2) unstable; urgency=medium
 
