@@ -1,11 +1,10 @@
-qtbase-opensource-src-gles (5.15.2+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src-gles (5.15.2+dfsg-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Merge qtbase-opensource-src 5.15.2+dfsg-3 upload.
   * Remove libxcb-glx0-dev build-dependency, not needed for -gles variant.
     Thanks to Helmut Grohne for noticing it!
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Jan 2021 21:26:12 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 27 Jan 2021 20:24:23 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-3) unstable; urgency=medium
 
