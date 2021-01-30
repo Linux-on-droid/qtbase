@@ -109,6 +109,7 @@ Breaks: libqt5egldeviceintegration5 (<< 5.6.0~beta+dfsg-5~),
         libqt5xcbqpa5 (<< 5.6.0~beta+dfsg-5~)
 Replaces: libqt5egldeviceintegration5 (<< 5.6.0~beta+dfsg-5~),
           libqt5xcbqpa5 (<< 5.6.0~beta+dfsg-5~)
+Conflicts: libqt5gui5-gles
 Suggests: qt5-image-formats-plugins, qtwayland5
 Description: Qt 5 GUI module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -370,6 +371,7 @@ Breaks: qt5-qmake (<< 5.11.3+dfsg-3~),
 Replaces: qt5-qmake (<< 5.11.3+dfsg-3~),
           qtbase5-dev-tools (<< 5.12.5+dfsg-3~),
           qtbase5-private-dev (<< 5.11.3+dfsg-5~)
+Conflicts: qtbase5-gles-dev
 Description: Qt 5 base development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -391,6 +393,7 @@ Depends: libfontconfig1-dev,
          ${misc:Depends}
 Breaks: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
 Replaces: qt5-qmake (<< 5.11.3+dfsg-3~), qtbase5-dev (<< 5.11.2+dfsg-4~)
+Conflicts: qtbase5-private-gles-dev
 Description: Qt 5 base private development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
