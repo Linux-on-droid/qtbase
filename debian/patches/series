@@ -2,6 +2,7 @@
 xcb_screens_uaf.patch
 qnam_connect_memory_leak.diff
 gcc_11_limits.diff
+qiodevice_readline_memory.diff
 
 # Debian specific.
 gnukfreebsd.diff

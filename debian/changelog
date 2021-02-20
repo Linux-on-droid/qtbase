@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.15.2+dfsg-5) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix allocated memory of QByteArray returned by
+    QIODevice::readLine (closes: #982882).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 20 Feb 2021 20:24:14 +0300
 
