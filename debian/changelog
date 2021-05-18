@@ -1,5 +1,7 @@
 qtbase-opensource-src (5.15.2+dfsg-6) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to adjust QMimeDatabase behavior (LP: #1857824).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 18 May 2021 20:59:22 +0300
 

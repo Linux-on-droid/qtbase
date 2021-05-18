@@ -1,0 +1,85 @@
+Description: adjust QMimeDatabase implementation
+ When multiple globs match, and the result from magic sniffing is
+ unrelated to any of those globs, globs have priority and one of them
+ should be picked up.
+ .
+ This change also optimizes QMimeBinaryProvider::addFileNameMatches
+ to have the same logic as xdgmime for glob matching:
+ literals > extensions > other globs
+ As soon as one category matches, we can stop there.
+ This makes no difference in the overall results, in practice.
+Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=0cbbba2aa5b47224
+Last-Update: 2021-05-18
+
+--- a/src/corelib/mimetypes/qmimedatabase.cpp
++++ b/src/corelib/mimetypes/qmimedatabase.cpp
+@@ -389,20 +389,23 @@ QMimeType QMimeDatabasePrivate::mimeType
+         // Disambiguate conflicting extensions (if magic matching found something)
+         if (candidateByData.isValid() && magicAccuracy > 0) {
+             const QString sniffedMime = candidateByData.name();
+-            // If the sniffedMime matches a glob match, use it
++            // If the sniffedMime matches a highest-weight glob match, use it
+             if (candidatesByName.m_matchingMimeTypes.contains(sniffedMime)) {
+                 *accuracyPtr = 100;
+                 return candidateByData;
+             }
+-            for (const QString &m : qAsConst(candidatesByName.m_matchingMimeTypes)) {
++            for (const QString &m : qAsConst(candidatesByName.m_allMatchingMimeTypes)) {
+                 if (inherits(m, sniffedMime)) {
+                     // We have magic + pattern pointing to this, so it's a pretty good match
+                     *accuracyPtr = 100;
+                     return mimeTypeForName(m);
+                 }
+             }
+-            *accuracyPtr = magicAccuracy;
+-            return candidateByData;
++            if (candidatesByName.m_allMatchingMimeTypes.isEmpty()) {
++                // No glob, use magic
++                *accuracyPtr = magicAccuracy;
++                return candidateByData;
++            }
+         }
+     }
+ 
+--- a/src/corelib/mimetypes/qmimeglobpattern.cpp
++++ b/src/corelib/mimetypes/qmimeglobpattern.cpp
+@@ -83,7 +83,10 @@ void QMimeGlobMatchResult::addMatch(cons
+     }
+     if (!m_matchingMimeTypes.contains(mimeType)) {
+         m_matchingMimeTypes.append(mimeType);
+-        m_allMatchingMimeTypes.append(mimeType);
++        if (replace)
++            m_allMatchingMimeTypes.prepend(mimeType); // highest-weight first
++        else
++            m_allMatchingMimeTypes.append(mimeType);
+         m_knownSuffixLength = knownSuffixLength;
+     }
+ }
+--- a/src/corelib/mimetypes/qmimeprovider.cpp
++++ b/src/corelib/mimetypes/qmimeprovider.cpp
+@@ -244,15 +244,18 @@ void QMimeBinaryProvider::addFileNameMat
+     const QString lowerFileName = fileName.toLower();
+     // Check literals (e.g. "Makefile")
+     matchGlobList(result, m_cacheFile, m_cacheFile->getUint32(PosLiteralListOffset), fileName);
+-    // Check complex globs (e.g. "callgrind.out[0-9]*")
+-    matchGlobList(result, m_cacheFile, m_cacheFile->getUint32(PosGlobListOffset), fileName);
+     // Check the very common *.txt cases with the suffix tree
+-    const int reverseSuffixTreeOffset = m_cacheFile->getUint32(PosReverseSuffixTreeOffset);
+-    const int numRoots = m_cacheFile->getUint32(reverseSuffixTreeOffset);
+-    const int firstRootOffset = m_cacheFile->getUint32(reverseSuffixTreeOffset + 4);
+-    matchSuffixTree(result, m_cacheFile, numRoots, firstRootOffset, lowerFileName, lowerFileName.length() - 1, false);
++    if (result.m_matchingMimeTypes.isEmpty()) {
++        const int reverseSuffixTreeOffset = m_cacheFile->getUint32(PosReverseSuffixTreeOffset);
++        const int numRoots = m_cacheFile->getUint32(reverseSuffixTreeOffset);
++        const int firstRootOffset = m_cacheFile->getUint32(reverseSuffixTreeOffset + 4);
++        matchSuffixTree(result, m_cacheFile, numRoots, firstRootOffset, lowerFileName, lowerFileName.length() - 1, false);
++        if (result.m_matchingMimeTypes.isEmpty())
++            matchSuffixTree(result, m_cacheFile, numRoots, firstRootOffset, fileName, fileName.length() - 1, true);
++    }
++    // Check complex globs (e.g. "callgrind.out[0-9]*" or "README*")
+     if (result.m_matchingMimeTypes.isEmpty())
+-        matchSuffixTree(result, m_cacheFile, numRoots, firstRootOffset, fileName, fileName.length() - 1, true);
++        matchGlobList(result, m_cacheFile, m_cacheFile->getUint32(PosGlobListOffset), fileName);
+ }
+ 
+ void QMimeBinaryProvider::matchGlobList(QMimeGlobMatchResult &result, CacheFile *cacheFile, int off, const QString &fileName)
