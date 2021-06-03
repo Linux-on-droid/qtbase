@@ -1,10 +1,10 @@
-qtbase-opensource-src (5.15.2+dfsg-7) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-7) unstable; urgency=medium
 
   [ Lu Yaning ]
   * Backport upstream patch to fix invalid pointer return with
     QGridLayout::itemAt(-1): fix-invalid-pointer-return-with-QGridLayout.diff
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 Jun 2021 09:40:39 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 03 Jun 2021 09:55:29 -0300
 
 qtbase-opensource-src (5.15.2+dfsg-6) unstable; urgency=medium
 
