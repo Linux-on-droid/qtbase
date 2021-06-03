@@ -4,6 +4,7 @@ qnam_connect_memory_leak.diff
 gcc_11_limits.diff
 qiodevice_readline_memory.diff
 mime_globs.diff
+fix-invalid-pointer-return-with-QGridLayout.diff
 
 # Debian specific.
 gnukfreebsd.diff
@@ -17,4 +18,3 @@ qdoc_default_incdirs.diff
 path_max.diff
 qstorageinfo_linux.diff
 cross_build_mysql.diff
-fix-invalid-pointer-return-with-QGridLayout.diff
