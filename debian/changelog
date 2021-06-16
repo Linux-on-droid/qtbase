@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.15.2+dfsg-8) UNRELEASED; urgency=medium
 
+  [ Lu Yaning ]
+  * Backport upstream patch to fix misplacement of placeholder text in
+    QLineEdit with RTL content.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 12 Jun 2021 20:32:46 +0300
 
