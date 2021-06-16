@@ -1,9 +1,5 @@
 qtbase-opensource-src (5.15.2+dfsg-8) UNRELEASED; urgency=medium
 
-  [ Dmitry Shachnev ]
-  * Remove the qmimeprovider.cpp part of mime_globs.diff. It is unrelated to
-    the original purpose of that patch, and causes problems with all/allfiles
-    MIME type (closes: #989744).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 12 Jun 2021 20:32:46 +0300
 
