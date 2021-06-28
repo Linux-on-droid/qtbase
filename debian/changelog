@@ -4,6 +4,11 @@ qtbase-opensource-src (5.15.2+dfsg-8) UNRELEASED; urgency=medium
   * Backport upstream patch to fix misplacement of placeholder text in
     QLineEdit with RTL content.
 
+  [ Dmitry Shachnev ]
+  * Remove the qmimeprovider.cpp part of mime_globs.diff. It is unrelated
+    to the original purpose of that patch, and causes various problems
+    (closes: #989255, #989744).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 12 Jun 2021 20:32:46 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-7) unstable; urgency=medium
