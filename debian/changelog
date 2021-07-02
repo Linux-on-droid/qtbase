@@ -1,10 +1,9 @@
-qtbase-opensource-src (5.15.2+dfsg-9) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-9) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Revert adding fix-misplacement-of-placeholder-text-in-QLineEdit.diff.
     Unfortunately it causes a regression (see QTBUG-94824).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 02 Jul 2021 18:55:04 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 02 Jul 2021 18:58:04 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-8) unstable; urgency=medium
 
