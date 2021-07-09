@@ -1,5 +1,9 @@
 qtbase-opensource-src (5.15.2+dfsg-10) UNRELEASED; urgency=medium
 
+  [ Lu Yaning ]
+  * Restore fix-misplacement-of-placeholder-text-in-QLineEdit.diff.
+  * Backport upstream patch to fix the regression with placement of
+    placeholder text in QLineEdits with action icons.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 10 Aug 2021 14:22:02 +0300
 

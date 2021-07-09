@@ -5,6 +5,8 @@ gcc_11_limits.diff
 qiodevice_readline_memory.diff
 mime_globs.diff
 fix-invalid-pointer-return-with-QGridLayout.diff
+fix-misplacement-of-placeholder-text-in-QLineEdit.diff
+fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
 
 # Debian specific.
 gnukfreebsd.diff
