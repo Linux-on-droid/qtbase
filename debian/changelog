@@ -8,6 +8,8 @@ qtbase-opensource-src (5.15.2+dfsg-10) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Backport upstream patch to fix icon display on checkable QPushButtons
     with Fusion style (closes: #991255).
+  * Backport upstream patch to remove MySQL version checks, which led to
+    wrong conclusions with MariaDB Connector ≥ 3.2.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 10 Aug 2021 14:22:02 +0300
 

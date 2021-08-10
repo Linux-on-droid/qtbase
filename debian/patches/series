@@ -8,6 +8,7 @@ fix-invalid-pointer-return-with-QGridLayout.diff
 fix-misplacement-of-placeholder-text-in-QLineEdit.diff
 fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
 fusion_checkable_qpushbutton.diff
+mysql_remove_version_checks.diff
 
 # Debian specific.
 gnukfreebsd.diff
