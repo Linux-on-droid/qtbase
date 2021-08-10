@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.15.2+dfsg-10) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 10 Aug 2021 14:22:02 +0300
+
 qtbase-opensource-src (5.15.2+dfsg-9) unstable; urgency=medium
 
   * Revert adding fix-misplacement-of-placeholder-text-in-QLineEdit.diff.
