@@ -5,6 +5,10 @@ qtbase-opensource-src (5.15.2+dfsg-10) UNRELEASED; urgency=medium
   * Backport upstream patch to fix the regression with placement of
     placeholder text in QLineEdits with action icons.
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix icon display on checkable QPushButtons
+    with Fusion style (closes: #991255).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 10 Aug 2021 14:22:02 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-9) unstable; urgency=medium

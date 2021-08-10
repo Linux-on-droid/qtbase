@@ -7,6 +7,7 @@ mime_globs.diff
 fix-invalid-pointer-return-with-QGridLayout.diff
 fix-misplacement-of-placeholder-text-in-QLineEdit.diff
 fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
+fusion_checkable_qpushbutton.diff
 
 # Debian specific.
 gnukfreebsd.diff
