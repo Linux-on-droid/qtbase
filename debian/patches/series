@@ -9,6 +9,7 @@ fix-misplacement-of-placeholder-text-in-QLineEdit.diff
 fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
 fusion_checkable_qpushbutton.diff
 mysql_remove_version_checks.diff
+full_width_selection_rtl.diff
 
 # Debian specific.
 gnukfreebsd.diff
