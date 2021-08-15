@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.15.2+dfsg-10) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-10) unstable; urgency=medium
 
   [ Lu Yaning ]
   * Restore fix-misplacement-of-placeholder-text-in-QLineEdit.diff.
@@ -13,7 +13,7 @@ qtbase-opensource-src (5.15.2+dfsg-10) UNRELEASED; urgency=medium
   * Backport upstream patch to fix QTextFormat::FullWidthSelection for
     right-to-left text layouts.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 10 Aug 2021 14:22:02 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 15 Aug 2021 21:32:57 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-9) unstable; urgency=medium
 
