@@ -493,6 +493,7 @@ Build-Profiles: <!nodoc>
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: Qt 5 base documentation
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -504,6 +505,7 @@ Build-Profiles: <!nodoc>
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: Qt 5 base HTML documentation
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -518,6 +520,7 @@ Section: libdevel
 Depends: ${misc:Depends}
 Breaks: qtbase5-doc-html (<< 5.12.5+dfsg-5~)
 Replaces: qtbase5-doc-html (<< 5.12.5+dfsg-5~)
+Multi-Arch: foreign
 Description: Qt 5 base tags files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
