@@ -3,6 +3,10 @@ qtbase-opensource-src (5.15.2+dfsg-11) UNRELEASED; urgency=medium
   * Apply multi-arch hints.
     + qtbase5-doc, qtbase5-doc-dev, qtbase5-doc-html: Add Multi-Arch: foreign.
 
+  [ Lu Yaning ]
+  * Backport upstream patch to fix recursion crash when calling
+    setStyleSheet with `qproperty-styleSheet`: fix_recursion_crash.diff.
+
  -- Debian Janitor <janitor@jelmer.uk>  Fri, 27 Aug 2021 23:06:45 -0000
 
 qtbase-opensource-src (5.15.2+dfsg-10) unstable; urgency=medium
