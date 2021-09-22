@@ -13,11 +13,14 @@ Change-Id: I79c51192a939b0b62e5b1d0dcc90d38f79e28222
 Reviewed-by: Jarek Kobus <jaroslaw.kobus@qt.io>
 ---
 
-diff --git a/src/widgets/styles/qstylesheetstyle.cpp b/src/widgets/styles/qstylesheetstyle.cpp
-index b02e401..226c1ec 100644
+---
+ src/widgets/styles/qstylesheetstyle.cpp                             |    3 +
+ tests/auto/widgets/styles/qstylesheetstyle/tst_qstylesheetstyle.cpp |   18 ++++++++++
+ 2 files changed, 21 insertions(+)
+
 --- a/src/widgets/styles/qstylesheetstyle.cpp
 +++ b/src/widgets/styles/qstylesheetstyle.cpp
-@@ -2670,6 +2670,9 @@
+@@ -2626,6 +2626,9 @@ void QStyleSheetStyle::setProperties(QWi
          default: v = decl.d->values.at(0).variant; break;
          }
  
@@ -27,11 +30,9 @@ index b02e401..226c1ec 100644
          w->setProperty(propertyL1, v);
      }
  }
-diff --git a/tests/auto/widgets/styles/qstylesheetstyle/tst_qstylesheetstyle.cpp b/tests/auto/widgets/styles/qstylesheetstyle/tst_qstylesheetstyle.cpp
-index 6c4c7d5..2750017 100644
 --- a/tests/auto/widgets/styles/qstylesheetstyle/tst_qstylesheetstyle.cpp
 +++ b/tests/auto/widgets/styles/qstylesheetstyle/tst_qstylesheetstyle.cpp
-@@ -92,6 +92,7 @@
+@@ -94,6 +94,7 @@ private slots:
      void layoutSpacing();
  #endif
      void qproperty();
@@ -39,7 +40,7 @@ index 6c4c7d5..2750017 100644
      void palettePropagation_data();
      void palettePropagation();
      void fontPropagation_data();
-@@ -672,6 +673,23 @@
+@@ -677,6 +678,23 @@ void tst_QStyleSheetStyle::qproperty()
      QCOMPARE(pb.isChecked(), false);
  }
  
