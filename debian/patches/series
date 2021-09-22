@@ -10,7 +10,6 @@ fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
 fusion_checkable_qpushbutton.diff
 mysql_remove_version_checks.diff
 full_width_selection_rtl.diff
-fix_recursion_crash.diff
 xcb_add_a_timeout_control_when_reading_INCR_property.diff
 
 # Debian specific.

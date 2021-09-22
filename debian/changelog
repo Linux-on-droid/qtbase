@@ -3,10 +3,6 @@ qtbase-opensource-src (5.15.2+dfsg-11) UNRELEASED; urgency=medium
   * Apply multi-arch hints.
     + qtbase5-doc, qtbase5-doc-dev, qtbase5-doc-html: Add Multi-Arch: foreign.
 
-  [ Lu Yaning ]
-  * Backport upstream patch to fix recursion crash when calling
-    setStyleSheet with `qproperty-styleSheet`: fix_recursion_crash.diff.
-
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Backport upstream patch
     xcb_add_a_timeout_control_when_reading_INCR_property.diff in order to fix
