@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.15.2+dfsg-11) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-11) unstable; urgency=medium
 
   * Apply multi-arch hints.
     + qtbase5-doc, qtbase5-doc-dev, qtbase5-doc-html: Add Multi-Arch: foreign.
@@ -9,7 +9,7 @@ qtbase-opensource-src (5.15.2+dfsg-11) UNRELEASED; urgency=medium
     timestamp issue on QXcbConnection,
     https://bugreports.qt.io/browse/QTBUG-56595
 
- -- Debian Janitor <janitor@jelmer.uk>  Fri, 27 Aug 2021 23:06:45 -0000
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 22 Sep 2021 15:07:55 -0300
 
 qtbase-opensource-src (5.15.2+dfsg-10) unstable; urgency=medium
 
