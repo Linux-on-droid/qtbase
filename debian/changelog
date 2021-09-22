@@ -7,6 +7,12 @@ qtbase-opensource-src (5.15.2+dfsg-11) UNRELEASED; urgency=medium
   * Backport upstream patch to fix recursion crash when calling
     setStyleSheet with `qproperty-styleSheet`: fix_recursion_crash.diff.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport upstream patch
+    xcb_add_a_timeout_control_when_reading_INCR_property.patch in order to fix
+    timestamp issue on QXcbConnection,
+    https://bugreports.qt.io/browse/QTBUG-56595
+
  -- Debian Janitor <janitor@jelmer.uk>  Fri, 27 Aug 2021 23:06:45 -0000
 
 qtbase-opensource-src (5.15.2+dfsg-10) unstable; urgency=medium
