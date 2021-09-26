@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.15.2+dfsg-13) UNRELEASED; urgency=medium
 
+  [ Lu YaNing ]
+  * Backport upstream patch to fix recursion crash when calling
+    setStyleSheet with `qproperty-styleSheet`: fix_recursion_crash.diff.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2021 16:20:31 +0300
 

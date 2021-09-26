@@ -11,6 +11,7 @@ fusion_checkable_qpushbutton.diff
 mysql_remove_version_checks.diff
 full_width_selection_rtl.diff
 xcb_add_a_timeout_control_when_reading_INCR_property.diff
+fix_recursion_crash.diff
 
 # Debian specific.
 gnukfreebsd.diff
