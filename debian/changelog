@@ -1,3 +1,88 @@
+qtbase-opensource-src (5.15.2+dfsg-12) unstable; urgency=medium
+
+  * Add a patch to properly cast types for EGL X11 tests (Closes: #994906).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 23 Sep 2021 10:02:33 -0300
+
+qtbase-opensource-src (5.15.2+dfsg-11) unstable; urgency=medium
+
+  * Apply multi-arch hints.
+    + qtbase5-doc, qtbase5-doc-dev, qtbase5-doc-html: Add Multi-Arch: foreign.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport upstream patch
+    xcb_add_a_timeout_control_when_reading_INCR_property.diff in order to fix
+    timestamp issue on QXcbConnection,
+    https://bugreports.qt.io/browse/QTBUG-56595
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 22 Sep 2021 15:07:55 -0300
+
+qtbase-opensource-src (5.15.2+dfsg-10) unstable; urgency=medium
+
+  [ Lu Yaning ]
+  * Restore fix-misplacement-of-placeholder-text-in-QLineEdit.diff.
+  * Backport upstream patch to fix the regression with placement of
+    placeholder text in QLineEdits with action icons.
+
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix icon display on checkable QPushButtons
+    with Fusion style (closes: #991255).
+  * Backport upstream patch to remove MySQL version checks, which led to
+    wrong conclusions with MariaDB Connector ≥ 3.2.
+  * Backport upstream patch to fix QTextFormat::FullWidthSelection for
+    right-to-left text layouts.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 15 Aug 2021 21:32:57 +0300
+
+qtbase-opensource-src (5.15.2+dfsg-9) unstable; urgency=medium
+
+  * Revert adding fix-misplacement-of-placeholder-text-in-QLineEdit.diff.
+    Unfortunately it causes a regression (see QTBUG-94824).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 02 Jul 2021 18:58:04 +0300
+
+qtbase-opensource-src (5.15.2+dfsg-8) unstable; urgency=medium
+
+  [ Lu Yaning ]
+  * Backport upstream patch to fix misplacement of placeholder text in
+    QLineEdit with RTL content.
+
+  [ Dmitry Shachnev ]
+  * Remove the qmimeprovider.cpp part of mime_globs.diff. It is unrelated
+    to the original purpose of that patch, and causes various problems
+    (closes: #989255, #989744, #990129).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 28 Jun 2021 20:38:59 +0300
+
+qtbase-opensource-src (5.15.2+dfsg-7) unstable; urgency=medium
+
+  [ Lu Yaning ]
+  * Backport upstream patch to fix invalid pointer return with
+    QGridLayout::itemAt(-1): fix-invalid-pointer-return-with-QGridLayout.diff
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 03 Jun 2021 09:55:29 -0300
+
+qtbase-opensource-src (5.15.2+dfsg-6) unstable; urgency=medium
+
+  * Backport upstream patch to adjust QMimeDatabase behavior (LP: #1857824).
+  * Make qtbase5-dev break qt5-default (see #976389, LP: #1920130).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 29 May 2021 12:04:21 +0300
+
+qtbase-opensource-src (5.15.2+dfsg-5) unstable; urgency=medium
+
+  * Backport upstream patch to fix allocated memory of QByteArray returned by
+    QIODevice::readLine (closes: #982882).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 21 Feb 2021 20:00:31 +0300
+
+qtbase-opensource-src (5.15.2+dfsg-4) unstable; urgency=medium
+
+  * Add Conflicts: against the -gles packages, to make that relation mutual.
+    (Thanks to David Kalnischkies for the suggestion; see also #976389.)
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 01 Feb 2021 21:21:48 +0300
+
 qtbase-opensource-src-gles (5.15.2+dfsg-4) unstable; urgency=medium
 
   * Make libqt5gui5-gles and qtbase5-gles-dev break qt5-default (closes:

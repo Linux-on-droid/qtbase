@@ -131,7 +131,7 @@ Suggests: default-libmysqlclient-dev,
           libpq-dev,
           libsqlite3-dev,
           unixodbc-dev
-Breaks: qt5-default,
+Breaks: qt5-default (<< 5.15.1+dfsg-2~),
         qt5-qmake (<< 5.11.3+dfsg-3~),
         qtbase5-dev-tools (<< 5.12.5+dfsg-3~),
         qtbase5-private-gles-dev (<< 5.12.2+dfsg-1~)
