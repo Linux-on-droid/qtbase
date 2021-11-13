@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.2 amd64
+# SymbolsHelper-Confirmed: 5.15.2 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 m68k mipsel powerpc ppc64 ppc64el s390x sh4 sparc64 x32
 libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
 | libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-2
 | libqt5gui5 #MINVER#
@@ -2163,6 +2163,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN16QFontEngineMultiD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN16QFontEngineMultiD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN16QFontEngineMultiD2Ev@Qt_5_PRIVATE_API 5.0.2 1
+ (optional=inline|arch=!ia64 !mips64el !riscv64)_ZN16QOpenGLFunctions17glBindFramebufferEjj@Qt_5 5.15.2
  _ZN16QOpenGLFunctions25initializeOpenGLFunctionsEv@Qt_5 5.0.2
  _ZN16QOpenGLFunctionsC1EP14QOpenGLContext@Qt_5 5.0.2
  _ZN16QOpenGLFunctionsC1Ev@Qt_5 5.0.2
