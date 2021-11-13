@@ -4,6 +4,10 @@ qtbase-opensource-src (5.15.2+dfsg-13) UNRELEASED; urgency=medium
   * Backport upstream patch to fix recursion crash when calling
     setStyleSheet with `qproperty-styleSheet`: fix_recursion_crash.diff.
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to treat MYSQL_FIELD as read-only, to fix issues
+    with MariaDB server 10.6 (closes: #999595).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2021 16:20:31 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-12) unstable; urgency=medium
