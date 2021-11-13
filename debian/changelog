@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.15.2+dfsg-13) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2021 16:20:31 +0300
+
 qtbase-opensource-src (5.15.2+dfsg-12) unstable; urgency=medium
 
   * Add a patch to properly cast types for EGL X11 tests (Closes: #994906).
