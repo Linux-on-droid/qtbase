@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.15.2+dfsg-13) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-13) unstable; urgency=medium
 
   [ Lu YaNing ]
   * Backport upstream patch to fix recursion crash when calling
@@ -10,7 +10,7 @@ qtbase-opensource-src (5.15.2+dfsg-13) UNRELEASED; urgency=medium
   * Update symbols files from buildds’ and the current build logs.
   * Bump Standards-Version to 4.6.0, no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2021 16:20:31 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 14 Nov 2021 16:34:39 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-12) unstable; urgency=medium
 
