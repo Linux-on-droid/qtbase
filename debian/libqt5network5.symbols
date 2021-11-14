@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.2 amd64
+# SymbolsHelper-Confirmed: 5.15.2 amd64 i386
 libQt5Network.so.5 libqt5network5 #MINVER#
 | libqt5network5 #MINVER#, qtbase-abi-5-15-2
 * Build-Depends-Package: qtbase5-dev
@@ -1461,7 +1461,6 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  (optional=templinst)_ZNSt11_Deque_baseIjSaIjEED2Ev@Qt_5 5.8.0
  (optional=templinst)_ZNSt5dequeIjSaIjEE16_M_push_back_auxIJRKjEEEvDpOT_@Qt_5 5.9.1
  (optional=templinst|subst)_ZNSt5dequeIjSaIjEE17_M_reallocate_mapE{size_t}b@Qt_5 5.8.0
- (optional=templinst)_ZNSt5dequeIjSaIjEE6insertESt15_Deque_iteratorIjRKjPS3_ES4_@Qt_5 5.14.2
  (optional=templinst)_ZNSt5dequeIjSaIjEE8_M_eraseESt15_Deque_iteratorIjRjPjE@Qt_5 5.8.0
  (optional=templinst)_ZNSt5dequeIjSaIjEE8_M_eraseESt15_Deque_iteratorIjRjPjES5_@Qt_5 5.8.0
  (optional=templinst)_ZNSt6vectorIN24QNetworkReplyImplPrivate21InternalNotificationsESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_@Qt_5 5.14.1
@@ -1472,9 +1471,9 @@ libQt5Network.so.5 libqt5network5 #MINVER#
  (optional=templinst)_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Qt_5 5.10.0
  (optional=templinst)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.9.1
  (optional=templinst)_ZSt14__copy_move_a1ILb1EPjjEN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS4_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSA_PSA_EE6__typeES4_S4_SD_@Qt_5 5.14.2
- (optional=templinst)_ZSt15__copy_move_ditILb1EjRjPjSt15_Deque_iteratorIjS0_S1_EET3_S2_IT0_T1_T2_ES8_S4_@Qt_5 5.14.2
+ (optional=templinst|arch=!amd64)_ZSt15__copy_move_ditILb1EjRjPjSt15_Deque_iteratorIjS0_S1_EET3_S2_IT0_T1_T2_ES8_S4_@Qt_5 5.14.2
  (optional=templinst)_ZSt23__copy_move_backward_a1ILb1EPjjEN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS4_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSA_PSA_EE6__typeES4_S4_SD_@Qt_5 5.14.2
- (optional=templinst)_ZSt24__copy_move_backward_ditILb1EjRjPjSt15_Deque_iteratorIjS0_S1_EET3_S2_IT0_T1_T2_ES8_S4_@Qt_5 5.14.2
+ (optional=templinst|arch=!amd64)_ZSt24__copy_move_backward_ditILb1EjRjPjSt15_Deque_iteratorIjS0_S1_EET3_S2_IT0_T1_T2_ES8_S4_@Qt_5 5.14.2
  _ZTI10QDnsLookup@Qt_5 5.0.2
  _ZTI10QSslSocket@Qt_5 5.0.2
  _ZTI10QTcpServer@Qt_5 5.0.2
