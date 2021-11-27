@@ -4191,8 +4191,6 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZNK11QJsonObject9constFindE11QStringView@Qt_5 5.14.1
  _ZNK11QJsonObject9constFindE13QLatin1String@Qt_5 5.7.0
  _ZNK11QJsonObject9constFindERK7QString@Qt_5 5.0.2
- (optional=templinst|arch=ia64)_ZNK11QJsonObject9valueImplI11QStringViewEE10QJsonValueT_@Qt_5 5.15.1
- (optional=templinst|arch=ia64)_ZNK11QJsonObject9valueImplI13QLatin1StringEE10QJsonValueT_@Qt_5 5.15.1
  _ZNK11QJsonObjecteqERKS_@Qt_5 5.0.2
  _ZNK11QJsonObjectixERK7QString@Qt_5 5.0.2
  _ZNK11QJsonObjectneERKS_@Qt_5 5.0.2
@@ -5902,8 +5900,6 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  (optional=templinst|subst)_ZNSt10_HashtableI7QStringS0_NSt3pmr21polymorphic_allocatorIS0_EENSt8__detail9_IdentityESt8equal_toIS0_ESt4hashIS0_ENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb1ELb1EEEE9_M_rehashE{size_t}RK{size_t}@Qt_5 5.15.1
  (optional=templinst)_ZNSt10_HashtableI7QStringS0_NSt3pmr21polymorphic_allocatorIS0_EENSt8__detail9_IdentityESt8equal_toIS0_ESt4hashIS0_ENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb1ELb1EEEED1Ev@Qt_5 5.15.1
  (optional=templinst)_ZNSt10_HashtableI7QStringS0_NSt3pmr21polymorphic_allocatorIS0_EENSt8__detail9_IdentityESt8equal_toIS0_ESt4hashIS0_ENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb1ELb1EEEED2Ev@Qt_5 5.15.1
- (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_EC1ES1_l@Qt_5 5.14.2
- (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIP21QPersistentModelIndexS0_EC2ES1_l@Qt_5 5.14.2
  (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIPiiEC1ES0_l@Qt_5 5.14.2
  (optional=templinst|arch=ia64)_ZNSt17_Temporary_bufferIPiiEC2ES0_l@Qt_5 5.14.2
  (optional=templinst|arch=armel armhf hppa hurd-i386 i386 kfreebsd-i386 m68k mipsel powerpc sh4 x32)_ZNSt23mersenne_twister_engineIjLj32ELj624ELj397ELj31ELj2567483615ELj11ELj4294967295ELj7ELj2636928640ELj15ELj4022730752ELj18ELj1812433253EE11_M_gen_randEv@Qt_5 5.11.1
@@ -5915,6 +5911,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  (optional=templinst)_ZNSt6vectorISt10unique_ptrIA_KcSt14default_deleteIS2_EESaIS5_EE17_M_realloc_insertIJRPcEEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_@Qt_5 5.14.1
  (optional=templinst|arch=ia64)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Qt_5 5.14.2
  (optional=templinst|arch=!ia64)_ZNSt8__detail16_Hashtable_allocINSt3pmr21polymorphic_allocatorINS_10_Hash_nodeI7QStringLb0EEEEEE18_M_deallocate_nodeEPS5_@Qt_5 5.15.1
+ (optional=templinst|arch=ia64)_ZNSt8seed_seq8generateIPjEEvT_S2_@Qt_5 5.15.2
  (optional=templinst|subst)_ZSt17__rotate_adaptiveIP21QPersistentModelIndexS1_{ssize_t}ET_S2_S2_S2_T1_S3_T0_S3_@Qt_5 5.0.2
  (optional=templinst|subst)_ZSt17__rotate_adaptiveIPiS0_{ssize_t}ET_S1_S1_S1_T1_S2_T0_S2_@Qt_5 5.0.2
  _ZTI10QEventLoop@Qt_5 5.0.2
