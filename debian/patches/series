@@ -13,6 +13,7 @@ full_width_selection_rtl.diff
 xcb_add_a_timeout_control_when_reading_INCR_property.diff
 fix_recursion_crash.diff
 mysql_field_readonly.diff
+CVE-2021-38593.diff
 
 # Debian specific.
 gnukfreebsd.diff
