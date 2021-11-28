@@ -1,12 +1,11 @@
-qtbase-opensource-src (5.15.2+dfsg-14) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-14) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport four upstream commits to fix massive memory consumption when
     rendering specially crafted SVG files (CVE-2021-38593, LP: #1950193).
   * Update symbols files from buildds’ logs.
   * Override some source-is-missing and unpack-message-for-orig warnings.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Nov 2021 21:06:09 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 28 Nov 2021 17:12:50 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-13) unstable; urgency=medium
 
