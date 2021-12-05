@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.15.2+dfsg-15) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2021 17:23:13 +0300
+
 qtbase-opensource-src (5.15.2+dfsg-14) unstable; urgency=medium
 
   * Backport four upstream commits to fix massive memory consumption when
