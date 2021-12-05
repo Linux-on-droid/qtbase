@@ -14,6 +14,7 @@ xcb_add_a_timeout_control_when_reading_INCR_property.diff
 fix_recursion_crash.diff
 mysql_field_readonly.diff
 CVE-2021-38593.diff
+openssl3.diff
 
 # Debian specific.
 gnukfreebsd.diff
