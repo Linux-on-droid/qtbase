@@ -285,7 +285,7 @@ endif
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
 
 	# See https://bugs.debian.org/914019
-	sed -i 's,-fdebug-prefix-map=$(CURDIR)=. ,,' \
+	sed -i 's,-fdebug-prefix-map=$(CURDIR)=. ,,; s,-ffile-prefix-map=$(CURDIR)=. ,,' \
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/qmodule.pri
 
 	# Policy § 10.4. Remove this if https://bugs.debian.org/904409 gets fixed.
