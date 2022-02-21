@@ -15,6 +15,7 @@ fix_recursion_crash.diff
 mysql_field_readonly.diff
 CVE-2021-38593.diff
 openssl3.diff
+CVE-2022-25255.diff
 
 # Debian specific.
 gnukfreebsd.diff

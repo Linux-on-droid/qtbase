@@ -3,6 +3,8 @@ qtbase-opensource-src (5.15.2+dfsg-15) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Backport upstream changes to improve support for OpenSSL 3.0.
   * Replace -ffile-prefix-map in qmodule.pri.
+  * Backport upstream patch to make QProcess not search for executables in
+    CWD unless explicitly told so (CVE-2022-25255).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2021 17:23:13 +0300
 
