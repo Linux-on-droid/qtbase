@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.15.2+dfsg-15) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.2+dfsg-15) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport upstream changes to improve support for OpenSSL 3.0.
     - Don't hardcode libssl version in Depends, fill it dynamically.
   * Replace -ffile-prefix-map in qmodule.pri.
@@ -8,7 +7,7 @@ qtbase-opensource-src (5.15.2+dfsg-15) UNRELEASED; urgency=medium
     CWD unless explicitly told so (CVE-2022-25255).
   * Update some Lintian overrides.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2021 17:23:13 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 22 Feb 2022 00:00:28 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-14) unstable; urgency=medium
 
