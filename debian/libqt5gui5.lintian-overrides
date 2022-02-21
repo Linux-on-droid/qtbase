@@ -3,7 +3,7 @@
 libqt5gui5: symbols-declares-dependency-on-other-package qtbase-abi-*
 # This is an alternative dependency, as libqt5gui5-gles provides the same ABI.
 # Symbols which are present only in libqt5gui5 do not get this dependency.
-libqt5gui5: symbols-declares-dependency-on-other-package libqt5gui5-gles #MINVER#
+libqt5gui5: symbols-declares-dependency-on-other-package libqt5gui5-gles (libQt5Gui.so.5)
 # libQt5EglDeviceIntegration and libQt5XcbQpa are actually private libraries
 # *only* used by their respective platforms plugins. Sadly instead of being
 # installed into a proper place like /usr/lib/<arch-triplet>/qt5/ they are

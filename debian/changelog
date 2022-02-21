@@ -6,6 +6,7 @@ qtbase-opensource-src (5.15.2+dfsg-15) UNRELEASED; urgency=medium
   * Replace -ffile-prefix-map in qmodule.pri.
   * Backport upstream patch to make QProcess not search for executables in
     CWD unless explicitly told so (CVE-2022-25255).
+  * Update some Lintian overrides.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2021 17:23:13 +0300
 
