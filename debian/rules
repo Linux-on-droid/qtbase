@@ -14,6 +14,7 @@ export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags -
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell getconf LFS_CFLAGS)
 export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 export PKG_CONFIG := /usr/bin/$(DEB_HOST_GNU_TYPE)-pkg-config
+sslpkgname := $(shell dpkg-query --show '--showformat=$${Depends}' libssl-dev | cut -d ' ' -f1)
 
 # Upstream changelog
 upstream_changes := dist/changes-$(shell echo $(DEB_VERSION_UPSTREAM) | sed -e 's/+dfsg//' | sed -e 's/+git.*//')
@@ -313,3 +314,6 @@ override_dh_auto_test:
 
 override_dh_strip_nondeterminism:
 	dh_strip_nondeterminism --verbose -X.png
+
+execute_after_dh_shlibdeps-arch:
+	echo libssl:Depends=$(sslpkgname) >> debian/libqt5network5.substvars
