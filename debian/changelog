@@ -7,6 +7,7 @@ qtbase-opensource-src (5.15.3+dfsg-1) UNRELEASED; urgency=medium
     - xcb_screens_uaf.patch
     - qnam_connect_memory_leak.diff
     - qiodevice_readline_memory.diff
+  * Remove most of gcc_11_limits.diff, only one change left.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 Mar 2022 22:13:09 +0300
 
