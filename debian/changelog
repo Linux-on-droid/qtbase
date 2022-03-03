@@ -1,3 +1,10 @@
+qtbase-opensource-src (5.15.3+dfsg-1) UNRELEASED; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 Mar 2022 22:13:09 +0300
+
 qtbase-opensource-src (5.15.2+dfsg-15) unstable; urgency=medium
 
   * Backport upstream changes to improve support for OpenSSL 3.0.
