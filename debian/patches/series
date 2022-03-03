@@ -1,8 +1,5 @@
 # Backported from upstream.
-xcb_screens_uaf.patch
-qnam_connect_memory_leak.diff
 gcc_11_limits.diff
-qiodevice_readline_memory.diff
 mime_globs.diff
 fix-invalid-pointer-return-with-QGridLayout.diff
 fix-misplacement-of-placeholder-text-in-QLineEdit.diff
