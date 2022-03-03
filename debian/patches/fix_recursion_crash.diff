@@ -10,7 +10,7 @@ Last-Update: 2021-11-13
 
 --- a/src/widgets/styles/qstylesheetstyle.cpp
 +++ b/src/widgets/styles/qstylesheetstyle.cpp
-@@ -2626,6 +2626,9 @@ void QStyleSheetStyle::setProperties(QWi
+@@ -2640,6 +2640,9 @@ void QStyleSheetStyle::setProperties(QWi
          default: v = decl.d->values.at(0).variant; break;
          }
  
@@ -30,7 +30,7 @@ Last-Update: 2021-11-13
      void palettePropagation_data();
      void palettePropagation();
      void fontPropagation_data();
-@@ -677,6 +678,23 @@ void tst_QStyleSheetStyle::qproperty()
+@@ -678,6 +679,23 @@ void tst_QStyleSheetStyle::qproperty()
      QCOMPARE(pb.isChecked(), false);
  }
  

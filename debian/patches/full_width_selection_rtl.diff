@@ -9,7 +9,7 @@ Last-Update: 2021-08-15
 
 --- a/src/gui/text/qtextlayout.cpp
 +++ b/src/gui/text/qtextlayout.cpp
-@@ -1169,10 +1169,17 @@ void QTextLayout::draw(QPainter *p, cons
+@@ -1173,10 +1173,17 @@ void QTextLayout::draw(QPainter *p, cons
                  QRectF fullLineRect(tl.rect());
                  fullLineRect.translate(position);
                  fullLineRect.setRight(QFIXED_MAX);
