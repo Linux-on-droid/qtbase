@@ -38,7 +38,7 @@ Files: qmake/*
        src/tools/*
        tests/*
        util/*
-Copyright: 2016-2020 The Qt Company Ltd.
+Copyright: 2016-2021 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
 Files: doc/src/snippets/*
@@ -1373,7 +1373,6 @@ License: LGPL-3 or GPL-2
 Files: src/corelib/time/qtimezone.cpp
        src/corelib/time/qtimezone.h
        src/corelib/time/qtimezoneprivate_icu.cpp
-       src/corelib/time/qtimezoneprivate_p.h
        src/corelib/time/qtimezoneprivate_win.cpp
        src/gui/painting/qpagelayout.cpp
        src/gui/painting/qpagelayout.h
@@ -1393,13 +1392,14 @@ License: LGPL-3 or GPL-2
 Files: src/corelib/time/qtimezoneprivate.cpp
        src/corelib/time/qtimezoneprivate_data_p.h
        src/corelib/time/qtimezoneprivate_mac.mm
+       src/corelib/time/qtimezoneprivate_p.h
        src/plugins/printsupport/cups/qcupsprintersupport.cpp
        src/plugins/printsupport/cups/qcupsprintersupport_p.h
        src/plugins/printsupport/windows/qwindowsprintdevice.cpp
        src/plugins/printsupport/windows/qwindowsprintdevice.h
        src/printsupport/kernel/qplatformprintdevice.h
 Copyright: 2013-2014 John Layt <jlayt@kde.org>
-           2016-2019 The Qt Company Ltd.
+           2016-2021 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/platformsupport/input/evdevtouch/qevdevtouchfilter_p.h
