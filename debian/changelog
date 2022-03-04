@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.15.3+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.3+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Update debian/watch for new file names.
   * Drop patches that are included in the new release:
@@ -15,7 +14,7 @@ qtbase-opensource-src (5.15.3+dfsg-1) UNRELEASED; urgency=medium
   * Exclude one more RFC file from the tarball.
   * Stop adding -Wl,--as-needed explicitly.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 Mar 2022 22:13:09 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 04 Mar 2022 21:00:06 +0300
 
 qtbase-opensource-src (5.15.2+dfsg-15) unstable; urgency=medium
 
