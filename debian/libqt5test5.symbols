@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.1 amd64 i386
+# SymbolsHelper-Confirmed: 5.15.3 amd64 i386
 libQt5Test.so.5 libqt5test5 #MINVER#
 | libqt5test5 #MINVER#, qtbase-abi-5-15-3
 * Build-Depends-Package: qtbase5-dev
@@ -64,9 +64,19 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN12QTestPrivate14parseBlackListEv@Qt_5 5.6.0~beta
  _ZN12QTestPrivate15checkBlackListsEPKcS1_@Qt_5 5.6.0~beta
  _ZN12QTestPrivate17qtestMouseButtonsE@Qt_5 5.11.0~rc1
+ _ZN12QTestPrivate22generateTestIdentifierEP15QTestCharBufferi@Qt_5 5.15.3
  _ZN14QTestEventLoop11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.0.2
  _ZN14QTestEventLoop11qt_metacastEPKc@Qt_5 5.0.2
  _ZN14QTestEventLoop16staticMetaObjectE@Qt_5 5.0.2
+ _ZN19QAbstractTestLogger10addMessageE9QtMsgTypeRK18QMessageLogContextRK7QString@Qt_5_PRIVATE_API 5.15.3 1
+ _ZN19QAbstractTestLogger11stopLoggingEv@Qt_5_PRIVATE_API 5.15.3 1
+ _ZN19QAbstractTestLogger12outputStringEPKc@Qt_5_PRIVATE_API 5.15.3 1
+ _ZN19QAbstractTestLogger12startLoggingEv@Qt_5_PRIVATE_API 5.15.3 1
+ _ZN19QAbstractTestLoggerC1EPKc@Qt_5_PRIVATE_API 5.15.3 1
+ _ZN19QAbstractTestLoggerC2EPKc@Qt_5_PRIVATE_API 5.15.3 1
+ _ZN19QAbstractTestLoggerD0Ev@Qt_5_PRIVATE_API 5.15.3 1
+ _ZN19QAbstractTestLoggerD1Ev@Qt_5_PRIVATE_API 5.15.3 1
+ _ZN19QAbstractTestLoggerD2Ev@Qt_5_PRIVATE_API 5.15.3 1
  _ZN20QBenchmarkGlobalData14createMeasurerEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN20QBenchmarkGlobalData26adjustMedianIterationCountEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN20QBenchmarkGlobalData7currentE@Qt_5_PRIVATE_API 5.0.2 1
@@ -212,6 +222,7 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN8QTestLog9addBXFailEPKcS1_i@Qt_5_PRIVATE_API 5.12.2 1
  _ZN8QTestLog9addBXPassEPKcS1_i@Qt_5_PRIVATE_API 5.12.2 1
  _ZN8QTestLog9addLoggerENS_7LogModeEPKc@Qt_5_PRIVATE_API 5.0.2 1
+ _ZN8QTestLog9addLoggerEP19QAbstractTestLogger@Qt_5_PRIVATE_API 5.15.3 1
  _ZN8QTestLog9failCountEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN8QTestLog9passCountEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN8QTestLog9skipCountEv@Qt_5_PRIVATE_API 5.0.2 1
@@ -228,6 +239,8 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZNK10QTestTable8testDataEi@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK10QTestTable9dataCountEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZNK14QTestEventLoop10metaObjectEv@Qt_5 5.0.2
+ _ZNK19QAbstractTestLogger17filterUnprintableEPc@Qt_5_PRIVATE_API 5.15.3 1
+ _ZNK19QAbstractTestLogger17isLoggingToStdoutEv@Qt_5_PRIVATE_API 5.15.3 1
  _ZNK24QAbstractItemModelTester10metaObjectEv@Qt_5 5.11.0~rc1
  _ZNK24QAbstractItemModelTester20failureReportingModeEv@Qt_5 5.11.0~rc1
  _ZNK24QAbstractItemModelTester5modelEv@Qt_5 5.11.0~rc1
@@ -240,8 +253,11 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  (optional=templinst)_ZNSt8_Rb_treeI10QByteArrayS0_St9_IdentityIS0_ESt4lessIS0_ESaIS0_EE16_M_insert_uniqueIRKS0_EESt4pairISt17_Rb_tree_iteratorIS0_EbEOT_@Qt_5 5.4.0
  (optional=templinst)_ZNSt8_Rb_treeI10QByteArrayS0_St9_IdentityIS0_ESt4lessIS0_ESaIS0_EE4findERKS0_@Qt_5 5.4.0
  _ZTI14QTestEventLoop@Qt_5 5.0.2
+ _ZTI19QAbstractTestLogger@Qt_5_PRIVATE_API 5.15.3 1
  _ZTI24QAbstractItemModelTester@Qt_5 5.11.0~rc1
  _ZTS14QTestEventLoop@Qt_5 5.0.2
+ _ZTS19QAbstractTestLogger@Qt_5_PRIVATE_API 5.15.3 1
  _ZTS24QAbstractItemModelTester@Qt_5 5.11.0~rc1
  _ZTV14QTestEventLoop@Qt_5 5.0.2
+ _ZTV19QAbstractTestLogger@Qt_5_PRIVATE_API 5.15.3 1
  _ZTV24QAbstractItemModelTester@Qt_5 5.11.0~rc1

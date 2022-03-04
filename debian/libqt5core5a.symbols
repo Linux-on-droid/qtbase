@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.2 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 ia64 m68k mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sh4 sparc64 x32
+# SymbolsHelper-Confirmed: 5.15.3 amd64 i386
 libQt5Core.so.5 libqt5core5a #MINVER#
 | libqt5core5a #MINVER#, qtbase-abi-5-15-3
 * Build-Depends-Package: qtbase5-dev
@@ -1108,6 +1108,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN14QObjectPrivate10ConnectionD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QObjectPrivate10ConnectionD2Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QObjectPrivate10disconnectEPK7QObjectiPPv@Qt_5_PRIVATE_API 5.2.0~alpha1 1
+ _ZN14QObjectPrivate10disconnectEPK7QObjectiS2_PPv@Qt_5_PRIVATE_API 5.15.3 1
  _ZN14QObjectPrivate11connectImplEPK7QObjectiS2_PPvPN9QtPrivate15QSlotObjectBaseEN2Qt14ConnectionTypeEPKiPK11QMetaObject@Qt_5_PRIVATE_API 5.2.0~alpha1 1
  _ZN14QObjectPrivate13addConnectionEiPNS_10ConnectionE@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QObjectPrivate14ConnectionData14deleteOrphanedEPNS_24ConnectionOrSignalVectorE@Qt_5_PRIVATE_API 5.14.1 1
@@ -1119,6 +1120,7 @@ libQt5Core.so.5 libqt5core5a #MINVER#
  _ZN14QObjectPrivate19moveToThread_helperEv@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QObjectPrivate20setThreadData_helperEP11QThreadDataS1_@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QObjectPrivate7connectEPK7QObjectiPN9QtPrivate15QSlotObjectBaseEN2Qt14ConnectionTypeE@Qt_5_PRIVATE_API 5.2.0~alpha1 1
+ _ZN14QObjectPrivate7connectEPK7QObjectiS2_PN9QtPrivate15QSlotObjectBaseEN2Qt14ConnectionTypeE@Qt_5_PRIVATE_API 5.15.3 1
  _ZN14QObjectPrivateC1Ei@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QObjectPrivateC2Ei@Qt_5_PRIVATE_API 5.0.2 1
  _ZN14QObjectPrivateD0Ev@Qt_5_PRIVATE_API 5.0.2 1
