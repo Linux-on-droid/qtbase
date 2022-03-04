@@ -12,7 +12,7 @@ include /usr/share/dpkg/pkg-info.mk
 export PATH := $(PATH):$(shell pwd)/bin
 export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell getconf LFS_CFLAGS)
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell getconf LFS_CFLAGS)
-export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
+export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 export PKG_CONFIG := /usr/bin/$(DEB_HOST_GNU_TYPE)-pkg-config
 sslpkgname := $(shell dpkg-query --show '--showformat=$${Depends}' libssl-dev | cut -d ' ' -f1)
 
