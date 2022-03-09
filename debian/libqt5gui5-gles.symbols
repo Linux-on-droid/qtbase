@@ -1,6 +1,6 @@
-# SymbolsHelper-Confirmed: 5.15.2 amd64
+# SymbolsHelper-Confirmed: 5.15.3 amd64 i386
 libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
-| libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-2
+| libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-3
 | libqt5gui5 #MINVER#
 | libqt5gui5-gles #MINVER#
 * Build-Depends-Package: qtbase5-gles-dev
@@ -2164,6 +2164,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN16QFontEngineMultiD0Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN16QFontEngineMultiD1Ev@Qt_5_PRIVATE_API 5.0.2 1
  _ZN16QFontEngineMultiD2Ev@Qt_5_PRIVATE_API 5.0.2 1
+ (optional=inline|arch=!ia64)_ZN16QOpenGLFunctions17glBindFramebufferEjj@Qt_5 5.15.2
  _ZN16QOpenGLFunctions25initializeOpenGLFunctionsEv@Qt_5 5.0.2
  _ZN16QOpenGLFunctionsC1EP14QOpenGLContext@Qt_5 5.0.2
  _ZN16QOpenGLFunctionsC1Ev@Qt_5 5.0.2
@@ -6299,6 +6300,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZNK14QWindowPrivate14globalPositionEv@Qt_5_PRIVATE_API 5.9.0~beta 1
  _ZNK14QWindowPrivate14topLevelWindowEN7QWindow12AncestorModeE@Qt_5_PRIVATE_API 5.12.2 1
  _ZNK14QWindowPrivate17screenForGeometryERK5QRect@Qt_5_PRIVATE_API 5.12.4 1
+ (optional=inline|arch=ia64)_ZNK14QWindowPrivate24windowRecreationRequiredEP7QScreen@Qt_5_PRIVATE_API 5.15.2 1
  _ZNK14QWindowPrivate25closestAcceptableGeometryERK6QRectF@Qt_5_PRIVATE_API 5.4.1 1
  _ZNK15QColorTransform3mapE7QRgba64@Qt_5 5.14.1
  _ZNK15QColorTransform3mapERK6QColor@Qt_5 5.14.1
@@ -7614,6 +7616,8 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZNK9QVector4D16toVector3DAffineEv@Qt_5 5.0.2
  _ZNK9QVector4D6lengthEv@Qt_5 5.0.2
  _ZNK9QVector4Dcv8QVariantEv@Qt_5 5.0.2
+ (optional=templinst|subst)_ZNSt6vectorIiSaIiEE14_M_fill_assignE{size_t}RKi@Qt_5 5.15.3
+ (optional=templinst|subst)_ZNSt6vectorIiSaIiEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPiS1_EE{size_t}RKi@Qt_5 5.15.3
  (optional=templinst)_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Qt_5 5.12.2
  _ZTI10QBasicDrag@Qt_5_PRIVATE_API 5.1.0 1
  _ZTI10QBlittable@Qt_5_PRIVATE_API 5.0.2 1

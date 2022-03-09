@@ -1,8 +1,5 @@
 # Backported from upstream.
-xcb_screens_uaf.patch
-qnam_connect_memory_leak.diff
 gcc_11_limits.diff
-qiodevice_readline_memory.diff
 mime_globs.diff
 fix-invalid-pointer-return-with-QGridLayout.diff
 fix-misplacement-of-placeholder-text-in-QLineEdit.diff
@@ -11,6 +8,11 @@ fusion_checkable_qpushbutton.diff
 mysql_remove_version_checks.diff
 full_width_selection_rtl.diff
 xcb_add_a_timeout_control_when_reading_INCR_property.diff
+fix_recursion_crash.diff
+mysql_field_readonly.diff
+CVE-2021-38593.diff
+openssl3.diff
+CVE-2022-25255.diff
 
 # Debian specific.
 gnukfreebsd.diff

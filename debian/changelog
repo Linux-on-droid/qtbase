@@ -1,3 +1,55 @@
+qtbase-opensource-src (5.15.3+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update debian/watch for new file names.
+  * Drop patches that are included in the new release:
+    - xcb_screens_uaf.patch
+    - qnam_connect_memory_leak.diff
+    - qiodevice_readline_memory.diff
+  * Remove most of gcc_11_limits.diff, only one change left.
+  * Refresh other patches.
+  * Update debian/copyright.
+  * Bump ABI version to qtbase-abi-5-15-3.
+  * Update symbols files from the current build logs.
+  * Exclude one more RFC file from the tarball.
+  * Stop adding -Wl,--as-needed explicitly.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 04 Mar 2022 21:00:06 +0300
+
+qtbase-opensource-src (5.15.2+dfsg-15) unstable; urgency=medium
+
+  * Backport upstream changes to improve support for OpenSSL 3.0.
+    - Don't hardcode libssl version in Depends, fill it dynamically.
+  * Replace -ffile-prefix-map in qmodule.pri.
+  * Backport upstream patch to make QProcess not search for executables in
+    CWD unless explicitly told so (CVE-2022-25255).
+  * Update some Lintian overrides.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 22 Feb 2022 00:00:28 +0300
+
+qtbase-opensource-src (5.15.2+dfsg-14) unstable; urgency=medium
+
+  * Backport four upstream commits to fix massive memory consumption when
+    rendering specially crafted SVG files (CVE-2021-38593, LP: #1950193).
+  * Update symbols files from buildds’ logs.
+  * Override some source-is-missing and unpack-message-for-orig warnings.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 28 Nov 2021 17:12:50 +0300
+
+qtbase-opensource-src (5.15.2+dfsg-13) unstable; urgency=medium
+
+  [ Lu YaNing ]
+  * Backport upstream patch to fix recursion crash when calling
+    setStyleSheet with `qproperty-styleSheet`: fix_recursion_crash.diff.
+
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to treat MYSQL_FIELD as read-only, to fix issues
+    with MariaDB server 10.6 (closes: #999595).
+  * Update symbols files from buildds’ and the current build logs.
+  * Bump Standards-Version to 4.6.0, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 14 Nov 2021 16:34:39 +0300
+
 qtbase-opensource-src-gles (5.15.2+dfsg-5) unstable; urgency=medium
 
   * Merge qtbase-opensource-src 5.15.2+dfsg-12 upload.

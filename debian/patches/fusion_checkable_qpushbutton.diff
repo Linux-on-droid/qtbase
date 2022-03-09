@@ -10,7 +10,7 @@ Last-Update: 2021-08-10
 
 --- a/src/widgets/styles/qfusionstyle.cpp
 +++ b/src/widgets/styles/qfusionstyle.cpp
-@@ -1771,14 +1771,6 @@ void QFusionStyle::drawControl(ControlEl
+@@ -1772,14 +1772,6 @@ void QFusionStyle::drawControl(ControlEl
              proxy()->drawControl(CE_PushButtonLabel, &subopt, painter, widget);
          }
          break;

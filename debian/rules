@@ -12,8 +12,9 @@ include /usr/share/dpkg/pkg-info.mk
 export PATH := $(PATH):$(shell pwd)/bin
 export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell getconf LFS_CFLAGS)
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(shell getconf LFS_CFLAGS)
-export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
+export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
 export PKG_CONFIG := /usr/bin/$(DEB_HOST_GNU_TYPE)-pkg-config
+sslpkgname := $(shell dpkg-query --show '--showformat=$${Depends}' libssl-dev | cut -d ' ' -f1)
 
 # Upstream changelog
 upstream_changes := dist/changes-$(shell echo $(DEB_VERSION_UPSTREAM) | sed -e 's/+dfsg//' | sed -e 's/+git.*//')
@@ -277,7 +278,7 @@ endif
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
 
 	# See https://bugs.debian.org/914019
-	sed -i 's,-fdebug-prefix-map=$(CURDIR)=. ,,' \
+	sed -i 's,-fdebug-prefix-map=$(CURDIR)=. ,,; s,-ffile-prefix-map=$(CURDIR)=. ,,' \
 		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/qmodule.pri
 
 	# Reproducible builds: remove build paths from .prl files.

@@ -28,7 +28,7 @@ Reviewed-by: Tor Arne Vestbø <tor.arne.vestbo@qt.io>
 
 --- a/src/plugins/platforms/xcb/qxcbclipboard.cpp
 +++ b/src/plugins/platforms/xcb/qxcbclipboard.cpp
-@@ -829,6 +829,8 @@ QByteArray QXcbClipboard::clipboardReadI
+@@ -835,6 +835,8 @@ QByteArray QXcbClipboard::clipboardReadI
          alloc_error = buf.size() != nbytes+1;
      }
  
@@ -37,7 +37,7 @@ Reviewed-by: Tor Arne Vestbø <tor.arne.vestbo@qt.io>
      for (;;) {
          connection()->flush();
          xcb_generic_event_t *ge = waitForClipboardEvent(win, XCB_PROPERTY_NOTIFY);
-@@ -864,9 +866,11 @@ QByteArray QXcbClipboard::clipboardReadI
+@@ -870,9 +872,11 @@ QByteArray QXcbClipboard::clipboardReadI
                  tmp_buf.resize(0);
                  offset += length;
              }
