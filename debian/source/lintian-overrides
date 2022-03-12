@@ -1,11 +1,11 @@
 # These files are test binary data
-qtbase-opensource-src source: source-is-missing tests/auto/corelib/plugin/qpluginloader/elftest/corrupt2.elf64.so
-qtbase-opensource-src source: source-is-missing tests/auto/corelib/plugin/qpluginloader/elftest/debugobj.so
+qtbase-opensource-src-gles source: source-is-missing tests/auto/corelib/plugin/qpluginloader/elftest/corrupt2.elf64.so
+qtbase-opensource-src-gles source: source-is-missing tests/auto/corelib/plugin/qpluginloader/elftest/debugobj.so
 
 # These are not static libraries, despite the .a extension
-qtbase-opensource-src source: unpack-message-for-orig * ar failed for */tests/auto/corelib/io/qdir/types/a.a
-qtbase-opensource-src source: unpack-message-for-orig * ar failed for */tests/auto/corelib/io/qdir/types/b.a
-qtbase-opensource-src source: unpack-message-for-orig * ar failed for */tests/auto/corelib/io/qdir/types/c.a
+qtbase-opensource-src-gles source: unpack-message-for-orig * ar failed for */tests/auto/corelib/io/qdir/types/a.a
+qtbase-opensource-src-gles source: unpack-message-for-orig * ar failed for */tests/auto/corelib/io/qdir/types/b.a
+qtbase-opensource-src-gles source: unpack-message-for-orig * ar failed for */tests/auto/corelib/io/qdir/types/c.a
 
 # ${source:Upstream-Version} is the same for normal qtbase and qtbase-gles
 qtbase-opensource-src-gles source: version-substvar-for-external-package Depends (line *) ${source:Upstream-Version} qtbase5-gles-dev -> *
