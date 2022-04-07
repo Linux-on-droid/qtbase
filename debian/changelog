@@ -4,6 +4,9 @@ qtbase-opensource-src (5.15.3+dfsg-2) UNRELEASED; urgency=medium
   * Backport upstream patch to fix qtconcurrentthreadengine.h with GCC 11.
     - Closes: #1008391
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix parsing include inside enum (LP: #1968074).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 02 Apr 2022 00:58:27 +0200
 
 qtbase-opensource-src (5.15.3+dfsg-1) experimental; urgency=medium

@@ -14,6 +14,7 @@ CVE-2021-38593.diff
 openssl3.diff
 CVE-2022-25255.diff
 gcc-11-qtconcurrentthreadengine.diff
+moc_handle_include.diff
 
 # Debian specific.
 gnukfreebsd.diff
