@@ -5,6 +5,7 @@ qtbase-opensource-src (5.15.4+dfsg-1) UNRELEASED; urgency=medium
   * Drop patches that are included in the new release:
     - fix-invalid-pointer-return-with-QGridLayout.diff
     - gcc-11-qtconcurrentthreadengine.diff
+  * Refresh other patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 12 May 2022 23:59:17 +0300
 

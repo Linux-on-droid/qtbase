@@ -10,7 +10,7 @@ Last-Update: 2021-11-13
 
 --- a/src/widgets/styles/qstylesheetstyle.cpp
 +++ b/src/widgets/styles/qstylesheetstyle.cpp
-@@ -2640,6 +2640,9 @@ void QStyleSheetStyle::setProperties(QWi
+@@ -2646,6 +2646,9 @@ void QStyleSheetStyle::setProperties(QWi
          default: v = decl.d->values.at(0).variant; break;
          }
  
