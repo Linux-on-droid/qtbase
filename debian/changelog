@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.15.4+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.4+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Drop patches that are included in the new release:
     - fix-invalid-pointer-return-with-QGridLayout.diff
@@ -9,7 +8,7 @@ qtbase-opensource-src (5.15.4+dfsg-1) UNRELEASED; urgency=medium
   * Bump ABI version to qtbase-abi-5-15-4.
   * Update debian/copyright.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 12 May 2022 23:59:17 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 13 May 2022 17:14:31 +0300
 
 qtbase-opensource-src (5.15.3+dfsg-2) experimental; urgency=medium
 
