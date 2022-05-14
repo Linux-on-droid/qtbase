@@ -1,3 +1,26 @@
+qtbase-opensource-src (5.15.4+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop patches that are included in the new release:
+    - fix-invalid-pointer-return-with-QGridLayout.diff
+    - gcc-11-qtconcurrentthreadengine.diff
+  * Refresh other patches.
+  * Bump ABI version to qtbase-abi-5-15-4.
+  * Update debian/copyright.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 13 May 2022 17:14:31 +0300
+
+qtbase-opensource-src (5.15.3+dfsg-2) experimental; urgency=medium
+
+  [ Andrea Pappacoda ]
+  * Backport upstream patch to fix qtconcurrentthreadengine.h with GCC 11.
+    - Closes: #1008391
+
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix parsing include inside enum (LP: #1968074).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 07 Apr 2022 18:50:52 +0300
+
 qtbase-opensource-src-gles (5.15.3+dfsg-1) experimental; urgency=medium
 
   * Merge qtbase-opensource-src 5.15.3+dfsg-1 upload.

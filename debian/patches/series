@@ -1,7 +1,6 @@
 # Backported from upstream.
 gcc_11_limits.diff
 mime_globs.diff
-fix-invalid-pointer-return-with-QGridLayout.diff
 fix-misplacement-of-placeholder-text-in-QLineEdit.diff
 fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
 fusion_checkable_qpushbutton.diff
@@ -13,6 +12,7 @@ mysql_field_readonly.diff
 CVE-2021-38593.diff
 openssl3.diff
 CVE-2022-25255.diff
+moc_handle_include.diff
 
 # Debian specific.
 gnukfreebsd.diff
