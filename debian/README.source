@@ -36,11 +36,8 @@ Note: the docs packages should not be a problem when bootstrapping a new
 Debian architecture, because the arch-independent packages are already available
 in Debian archive.
 
-Marking private symbols
------------------------
-
-After each symbols update, run pkgkde-mark-qt5-private symbols helper script
-from pkg-kde-tools ≥ 0.15.21.
+Managing private ABI version
+----------------------------
 
 When upstream ABI breaks, update qtbase-abi-x-y-z version in debian/control
 and in the symbols files.
