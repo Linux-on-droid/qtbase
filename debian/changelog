@@ -4,6 +4,7 @@ qtbase-opensource-src (5.15.4+dfsg-2) UNRELEASED; urgency=medium
   * Install QtXcbQpa private headers needed for deepin-qt5dxcb-plugin,
     to avoid modifying it for every new Qt version.
   * Use symver directive to catch all private symbols at once.
+  * Bump Standards-Version to 4.6.1, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 14 May 2022 15:05:19 +0300
 
