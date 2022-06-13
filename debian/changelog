@@ -1,3 +1,18 @@
+qtbase-opensource-src (5.15.4+dfsg-3) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 13 Jun 2022 21:00:47 +0300
+
+qtbase-opensource-src (5.15.4+dfsg-2) experimental; urgency=medium
+
+  * Install QtXcbQpa private headers needed for deepin-qt5dxcb-plugin,
+    to avoid modifying it for every new Qt version.
+  * Use symver directive to catch all private symbols at once.
+  * Bump Standards-Version to 4.6.1, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 16 May 2022 14:42:53 +0300
+
 qtbase-opensource-src-gles (5.15.4+dfsg-1) experimental; urgency=medium
 
   * Merge qtbase-opensource-src 5.15.4+dfsg-1 upload.
