@@ -1,5 +1,4 @@
 # Backported from upstream.
-gcc_11_limits.diff
 mime_globs.diff
 fix-misplacement-of-placeholder-text-in-QLineEdit.diff
 fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
@@ -9,7 +8,6 @@ full_width_selection_rtl.diff
 xcb_add_a_timeout_control_when_reading_INCR_property.diff
 fix_recursion_crash.diff
 mysql_field_readonly.diff
-CVE-2021-38593.diff
 openssl3.diff
 CVE-2022-25255.diff
 moc_handle_include.diff

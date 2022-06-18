@@ -2,6 +2,9 @@ qtbase-opensource-src (5.15.5+dfsg-1) UNRELEASED; urgency=medium
 
   [ Simon Quigley ]
   * New upstream release.
+  * Remove reverse-applicable upstream patches:
+    - gcc_11_limits.diff
+    - CVE-2021-38593.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 17 Jun 2022 19:52:14 -0500
 
