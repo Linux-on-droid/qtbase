@@ -9,7 +9,7 @@ Last-Update: 2022-04-07
 
 --- a/src/tools/moc/moc.cpp
 +++ b/src/tools/moc/moc.cpp
-@@ -305,10 +305,9 @@ bool Moc::parseEnum(EnumDef *def)
+@@ -306,10 +306,9 @@ bool Moc::parseEnum(EnumDef *def)
              return IncludeState::NoInclude;
      };
      do {
