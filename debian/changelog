@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.15.5+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.5+dfsg-1) experimental; urgency=medium
 
-  [ Simon Quigley ]
   * New upstream release.
     - Bump ABI version to 5.15.5.
   * Remove reverse-applicable upstream patches:
@@ -8,7 +7,7 @@ qtbase-opensource-src (5.15.5+dfsg-1) UNRELEASED; urgency=medium
     - CVE-2021-38593.diff
   * Refresh existing patches.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 17 Jun 2022 19:52:14 -0500
+ -- Simon Quigley <tsimonq2@debian.org>  Fri, 17 Jun 2022 22:08:50 -0500
 
 qtbase-opensource-src (5.15.4+dfsg-3) unstable; urgency=medium
 
