@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.3 amd64 i386
+# SymbolsHelper-Confirmed: 5.15.5 amd64 arm64 armel armhf hppa hurd-i386 i386 ia64 m68k mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sh4 sparc64 x32
 libQt5Test.so.5 libqt5test5 #MINVER#
 | libqt5test5 #MINVER#, qtbase-abi-5-15-5
 * Build-Depends-Package: qtbase5-dev
@@ -102,6 +102,7 @@ libQt5Test.so.5 libqt5test5 #MINVER#
  _ZN5QTest8testTagsE@Qt_5 5.0.2
  _ZN5QTest8toStringEPKc@Qt_5 5.0.2
  _ZN5QTest8toStringEPKv@Qt_5 5.0.2
+ _ZN5QTest8toStringEPVKv@Qt_5 5.15.5
  (optional=templinst)_ZN5QTest8toStringI8qfloat16EEPcRKT_@Qt_5 5.14.1
  (optional=templinst)_ZN5QTest8toStringIaEEPcRKT_@Qt_5 5.6.0~beta
  (optional=templinst)_ZN5QTest8toStringIbEEPcRKT_@Qt_5 5.0.2
