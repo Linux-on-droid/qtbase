@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.15.4+dfsg-5) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Add a patch to update signature of SSL_CTX_set_options for OpenSSL 3
+    (LP: #1981807). Thanks Michael Saxl!
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 07 Aug 2022 16:33:10 +0300
 
