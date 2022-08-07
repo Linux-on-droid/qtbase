@@ -13,6 +13,7 @@ openssl3.diff
 CVE-2022-25255.diff
 moc_handle_include.diff
 remove_limit_on_number_of_streams.diff
+openssl_set_options.diff
 
 # Debian specific.
 gnukfreebsd.diff
