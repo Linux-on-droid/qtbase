@@ -3,7 +3,7 @@ qtbase-opensource-src (5.15.5+dfsg-3) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Merge 5.15.4+dfsg-5 upload from unstable.
   * Update Lintian overrides.
-  * Update debian/libqt5core5a.symbols for hppa and sparc64.
+  * Update symbols files from buildds' logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 07 Aug 2022 17:11:19 +0300
 
