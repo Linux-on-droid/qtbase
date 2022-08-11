@@ -3,6 +3,7 @@ qtbase-opensource-src-gles (5.15.5+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Merge qtbase-opensource-src 5.15.5+dfsg-3 upload.
   * Bump qtbase build-dependencies to 5.15.5.
+  * Update debian/source/lintian-overrides for Lintian pointed hints.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 11 Aug 2022 11:04:22 +0300
 
