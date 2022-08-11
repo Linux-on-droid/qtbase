@@ -2149,7 +2149,7 @@ License: ICC
  profile.
 
 Files: src/3rdparty/libjpeg/src/*
-Copyright: 2009-2020 D. R. Commander
+Copyright: 2009-2021 D. R. Commander
            2011-2016 Siarhei Siamashka
            2015-2016, 2018 Matthieu Darbois
            2015 Intel Corporation
@@ -2159,8 +2159,9 @@ Copyright: 2009-2020 D. R. Commander
            2009-2011 Nokia Corporation and/or its subsidiary(-ies)
            2009-2012 Pierre Ossman for Cendio AB
            1999-2006 MIYASAKA Masaru
-           1991-2017 Thomas G. Lane, Guido Vollbeding
-           2019 Arm Limited
+           1991-2020 Thomas G. Lane, Guido Vollbeding
+           2018 Matthias Räncker
+           2019-2020 Arm Limited
 License: libjpeg and BSD-3-clause and Zlib
 
 Files: src/3rdparty/libpng/*.c
@@ -2206,8 +2207,8 @@ Copyright: 2005 The Android Open Source Project
 License: Apache-2.0
 
 Files: src/3rdparty/pcre2/src/*
-Copyright: 1997-2020 University of Cambridge
-           2009-2020 Zoltan Herczeg
+Copyright: 1997-2021 University of Cambridge
+           2009-2021 Zoltan Herczeg
 License: BSD-3-clause
 
 Files: src/3rdparty/pcre2/src/sljit/*

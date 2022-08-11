@@ -8,8 +8,8 @@ Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=971604
 Forwarded: not-needed
 Reviewed-by: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 
---- qtbase-opensource-src-5.14.2+dfsg.orig/src/plugins/sqldrivers/configure.json
-+++ qtbase-opensource-src-5.14.2+dfsg/src/plugins/sqldrivers/configure.json
+--- a/src/plugins/sqldrivers/configure.json
++++ b/src/plugins/sqldrivers/configure.json
 @@ -67,6 +67,7 @@
              },
              "headers": "mysql.h",

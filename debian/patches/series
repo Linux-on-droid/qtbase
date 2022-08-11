@@ -1,5 +1,4 @@
 # Backported from upstream.
-gcc_11_limits.diff
 mime_globs.diff
 fix-misplacement-of-placeholder-text-in-QLineEdit.diff
 fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
@@ -13,6 +12,8 @@ CVE-2021-38593.diff
 openssl3.diff
 CVE-2022-25255.diff
 moc_handle_include.diff
+remove_limit_on_number_of_streams.diff
+openssl_set_options.diff
 
 # Debian specific.
 gnukfreebsd.diff
