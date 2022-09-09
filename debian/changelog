@@ -2,6 +2,15 @@ qtbase-opensource-src (5.15.6+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
+  * Drop patches that are included in the new release:
+    - fix-misplacement-of-placeholder-text-in-QLineEdit.diff
+    - fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
+    - mysql_remove_version_checks.diff
+    - full_width_selection_rtl.diff
+    - xcb_add_a_timeout_control_when_reading_INCR_property.diff
+    - CVE-2021-38593.diff
+    - moc_handle_include.diff
+    - remove_limit_on_number_of_streams.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 09 Sep 2022 21:53:55 +0300
 
