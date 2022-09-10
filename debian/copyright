@@ -882,7 +882,6 @@ Copyright: 2014 BlackBerry Limited (formerly Research In Motion)
 License: LGPL-3 or GPL-2
 
 Files: src/android/jar/src/org/qtproject/qt5/android/EditContextView.java
-       src/android/jar/src/org/qtproject/qt5/android/ExtractStyle.java
        src/android/jar/src/org/qtproject/qt5/android/QtMessageDialogHelper.java
        src/android/jar/src/org/qtproject/qt5/android/QtThread.java
        src/plugins/platforms/android/androidjniclipboard.cpp
@@ -892,7 +891,6 @@ Files: src/android/jar/src/org/qtproject/qt5/android/EditContextView.java
        src/plugins/platforms/android/androidjnimenu.h
        src/plugins/platforms/android/androidplatformplugin.cpp
        src/plugins/platforms/android/androidsurfaceclient.h
-       src/plugins/platforms/android/extract.cpp
        src/plugins/platforms/android/main.cpp
        src/plugins/platforms/android/qandroidassetsfileenginehandler.cpp
        src/plugins/platforms/android/qandroidassetsfileenginehandler.h
@@ -934,7 +932,8 @@ Copyright: 2012-2017 BogDan Vatra <bogdan@kde.org>
            2016 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
-Files: src/android/jar/src/org/qtproject/qt5/android/QtEditText.java
+Files: src/android/jar/src/org/qtproject/qt5/android/ExtractStyle.java
+       src/android/jar/src/org/qtproject/qt5/android/QtEditText.java
        src/android/jar/src/org/qtproject/qt5/android/QtInputConnection.java
        src/android/jar/src/org/qtproject/qt5/android/QtLayout.java
        src/android/jar/src/org/qtproject/qt5/android/QtNative.java
@@ -943,6 +942,7 @@ Files: src/android/jar/src/org/qtproject/qt5/android/QtEditText.java
        src/android/jar/src/org/qtproject/qt5/android/QtSurface.java
        src/plugins/platforms/android/androidjnimain.cpp
        src/plugins/platforms/android/androidjnimain.h
+       src/plugins/platforms/android/extract.cpp
        src/plugins/platforms/android/qandroidplatformbackingstore.cpp
        src/plugins/platforms/android/qandroidplatformbackingstore.h
        src/plugins/platforms/android/qandroidplatformdialoghelpers.cpp
@@ -955,7 +955,7 @@ Files: src/android/jar/src/org/qtproject/qt5/android/QtEditText.java
        src/plugins/platforms/android/qandroidplatformwindow.cpp
        src/plugins/platforms/android/qandroidplatformwindow.h
 Copyright: 2012-2016 BogDan Vatra <bogdan@kde.org>
-           2016-2018 The Qt Company Ltd.
+           2016-2021 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/testlib/qteamcitylogger.cpp
@@ -2104,18 +2104,20 @@ License: Harfbuzz
  PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 Files: src/3rdparty/freetype/*
-Copyright: 1996-2019 David Turner, Robert Wilhelm, and Werner Lemberg
-           1996-2019 Just van Rossum
-           2002-2019 Roberto Alameda
+Copyright: 1996-2020 David Turner, Robert Wilhelm, and Werner Lemberg
+           1996-2020 Just van Rossum
+           2002-2020 Roberto Alameda
            2003 Huw D M Davies for Codeweavers
-           2003-2019 Masatake YAMATO, Redhat K.K.
-           2004-2019 Albert Chin-A-Young
-           2004-2019 Suzuki Toshiya
+           2003-2020 Masatake YAMATO, Redhat K.K.
+           2004-2020 Albert Chin-A-Young
+           2004-2020 Suzuki Toshiya
            2007 Dmitry Timoshkov for Codeweavers
-           2007-2019 Rahul Bhalerao <rahul.bhalerao@redhat.com>
-           2007-2019 Derek Clegg, Michael Toftdal
-           2009-2018 Oran Agra, Mickey Gabel
-           2010-2019 Joel Klinghed
+           2007-2020 Rahul Bhalerao <rahul.bhalerao@redhat.com>
+           2007-2020 Derek Clegg, Michael Toftdal
+           2009-2020 Oran Agra, Mickey Gabel
+           2010-2020 Joel Klinghed
+           2013-2020 Google, Inc.
+           2019-2020 Nikhil Ramakrishnan
 License: GPL-2+ or FTL
 
 Files: src/3rdparty/freetype/src/pcf/*
