@@ -13,6 +13,7 @@ Files-Excluded: bin/licheck*
                 tests/auto/network/access/qnetworkreply/bigfile
                 tests/auto/network/access/qnetworkreply/resource
                 tests/auto/network/access/qnetworkreply/rfc3252.txt
+                tests/benchmarks/widgets/graphicsview/qgraphicsview/benchapps/chipTest/chip.debug
                 tests/manual/network_stresstest/qtest
                 tests/testserver/apache2/testdata/www/htdocs/protected/rfc3252.txt
                 tests/testserver/apache2/testdata/www/htdocs/rfcs/rfc2616.html
