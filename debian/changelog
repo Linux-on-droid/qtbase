@@ -11,6 +11,7 @@ qtbase-opensource-src (5.15.6+dfsg-1) UNRELEASED; urgency=medium
     - CVE-2021-38593.diff
     - moc_handle_include.diff
     - remove_limit_on_number_of_streams.diff
+  * Update symbols files from buildds’ logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 09 Sep 2022 21:53:55 +0300
 
