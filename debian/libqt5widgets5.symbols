@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.3 amd64 i386
+# SymbolsHelper-Confirmed: 5.15.6 amd64 i386
 libQt5Widgets.so.5 libqt5widgets5 #MINVER#
 | libqt5widgets5 #MINVER#, qtbase-abi-5-15-6
 * Build-Depends-Package: qtbase5-dev
@@ -6813,6 +6813,7 @@ libQt5Widgets.so.5 libqt5widgets5 #MINVER#
  (optional=templinst|subst|arch=!alpha !amd64 !arm64 !ppc64 !s390x !x32)_ZNSt17_Temporary_bufferIP5QRectS0_EC1ES1_{ssize_t}@Qt_5 5.12.4
  (optional=templinst|subst|arch=!alpha !amd64 !arm64 !ppc64 !s390x !x32)_ZNSt17_Temporary_bufferIP5QRectS0_EC2ES1_{ssize_t}@Qt_5 5.12.4
  (optional=templinst)_ZNSt6vectorISt10unique_ptrI20QPlatformTextureListSt14default_deleteIS1_EESaIS4_EE17_M_realloc_insertIJS4_EEEvN9__gnu_cxx17__normal_iteratorIPS4_S6_EEDpOT_@Qt_5 5.14.1
+ (optional=templinst|subst)_ZNSt8__detail16_Hashtable_allocINSt3pmr21polymorphic_allocatorINS_10_Hash_nodeIP15QTreeWidgetItemLb0EEEEEE19_M_allocate_bucketsE{size_t}@Qt_5 5.15.6
  _ZTI10QBoxLayout@Qt_5 5.0.2
  _ZTI10QCompleter@Qt_5 5.0.2
  _ZTI10QLCDNumber@Qt_5 5.0.2
