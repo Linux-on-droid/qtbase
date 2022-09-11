@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.15.6+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.6+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Drop patches that are included in the new release:
     - fix-misplacement-of-placeholder-text-in-QLineEdit.diff
@@ -18,7 +17,7 @@ qtbase-opensource-src (5.15.6+dfsg-1) UNRELEASED; urgency=medium
   * Update debian/copyright (automatically and manually).
   * Exclude chip.debug compiled binary from the tarball.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 09 Sep 2022 21:53:55 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 11 Sep 2022 11:44:12 +0300
 
 qtbase-opensource-src (5.15.5+dfsg-3) experimental; urgency=medium
 
