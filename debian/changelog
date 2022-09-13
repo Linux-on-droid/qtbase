@@ -1,3 +1,24 @@
+qtbase-opensource-src (5.15.6+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop patches that are included in the new release:
+    - fix-misplacement-of-placeholder-text-in-QLineEdit.diff
+    - fix-placement-of-placeholder-text-in-QLineEdits-with-action-icons.diff
+    - mysql_remove_version_checks.diff
+    - full_width_selection_rtl.diff
+    - xcb_add_a_timeout_control_when_reading_INCR_property.diff
+    - CVE-2021-38593.diff
+    - moc_handle_include.diff
+    - remove_limit_on_number_of_streams.diff
+  * Update symbols files from buildds’ and current build logs.
+  * Revert removal of QtConcurrent::ThreadEngineBase::startBlocking(),
+    which is part of public API and used in the wild.
+  * Bump ABI version to qtbase-abi-5-15-6.
+  * Update debian/copyright (automatically and manually).
+  * Exclude chip.debug compiled binary from the tarball.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 11 Sep 2022 11:44:12 +0300
+
 qtbase-opensource-src-gles (5.15.5+dfsg-1) experimental; urgency=medium
 
   * Merge qtbase-opensource-src 5.15.5+dfsg-3 upload.
