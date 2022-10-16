@@ -1,5 +1,9 @@
 qtbase-opensource-src (5.15.6+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix misplaced menus with Wayland on GNOME.
+  * Backport upstream patch to use Wayland platform plugin on GNOME Wayland
+    sessions by default (closes: #954781).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 16 Oct 2022 11:29:07 +0300
 
