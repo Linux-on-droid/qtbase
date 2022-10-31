@@ -1,3 +1,10 @@
+qtbase-opensource-src (5.15.7+dfsg-1) UNRELEASED; urgency=medium
+
+  [ Simon Quigley ]
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 31 Oct 2022 12:36:52 -0500
+
 qtbase-opensource-src (5.15.6+dfsg-3) experimental; urgency=medium
 
   * Backport upstream patch to fix misplaced menus with Wayland on GNOME.
