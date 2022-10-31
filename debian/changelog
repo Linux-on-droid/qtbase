@@ -3,6 +3,7 @@ qtbase-opensource-src (5.15.7+dfsg-1) UNRELEASED; urgency=medium
   [ Simon Quigley ]
   * New upstream release (5.15.7).
     - Refresh existing patches.
+    - Update symbols from amd64 build logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 31 Oct 2022 12:36:52 -0500
 
