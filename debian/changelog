@@ -1,13 +1,12 @@
-qtbase-opensource-src (5.15.6+dfsg-4) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.6+dfsg-4) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Revert upstream commit which caused graphical glitches in some apps.
     Backport upstream patch to fix the original issue in a better way.
     Thanks to Alexander Kernozhitsky and Alexis Murzeau for the pointers!
     (closes: #1022748, #1023580)
-  * Update debian/libqt5core5a.symbols for ia64 and sparc64.
+  * Upload to unstable.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Nov 2022 15:02:03 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 24 Nov 2022 20:38:09 +0300
 
 qtbase-opensource-src (5.15.6+dfsg-3) experimental; urgency=medium
 
