@@ -6,6 +6,8 @@ mysql_field_readonly.diff
 openssl3.diff
 CVE-2022-25255.diff
 openssl_set_options.diff
+revert_wm_state.diff
+recreate_xcb_window.diff
 
 # Debian specific.
 gnukfreebsd.diff
