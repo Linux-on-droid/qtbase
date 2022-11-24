@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.15.6+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.6+dfsg-4) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Revert upstream commit which caused graphical glitches in some apps.
@@ -8,6 +8,15 @@ qtbase-opensource-src (5.15.6+dfsg-3) UNRELEASED; urgency=medium
   * Update debian/libqt5core5a.symbols for ia64 and sparc64.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Nov 2022 15:02:03 +0300
+
+qtbase-opensource-src (5.15.6+dfsg-3) experimental; urgency=medium
+
+  * Backport upstream patch to fix misplaced menus with Wayland on GNOME.
+  * Backport upstream patch to use Wayland platform plugin on GNOME Wayland
+    sessions by default (closes: #954781).
+  * Update debian/libqt5core5a.symbols for ia64 and sparc64.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 24 Oct 2022 00:43:06 +0300
 
 qtbase-opensource-src (5.15.6+dfsg-2) unstable; urgency=medium
 
