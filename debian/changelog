@@ -3,6 +3,7 @@ qtbase-opensource-src (5.15.6+dfsg-5) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Promote qtwayland5 from Suggests to Recommends (closes: #998698).
   * Make libqt5gui5 suggest qgnomeplatform-qt5 (closes: #1024976).
+  * Backport upstream patch to fix Alt+` shortcut on non-US layouts.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2022 20:01:06 +0300
 
