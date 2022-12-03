@@ -1,5 +1,7 @@
 qtbase-opensource-src (5.15.6+dfsg-5) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Promote qtwayland5 from Suggests to Recommends (closes: #998698).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2022 20:01:06 +0300
 
