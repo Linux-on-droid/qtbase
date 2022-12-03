@@ -110,7 +110,7 @@ Breaks: libqt5egldeviceintegration5 (<< 5.6.0~beta+dfsg-5~),
 Replaces: libqt5egldeviceintegration5 (<< 5.6.0~beta+dfsg-5~),
           libqt5xcbqpa5 (<< 5.6.0~beta+dfsg-5~)
 Conflicts: libqt5gui5-gles
-Suggests: qt5-image-formats-plugins
+Suggests: qgnomeplatform-qt5, qt5-image-formats-plugins
 Description: Qt 5 GUI module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
