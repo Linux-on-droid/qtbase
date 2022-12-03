@@ -7,6 +7,27 @@ qtbase-opensource-src (5.15.7+dfsg-1) experimental; urgency=medium
 
  -- Simon Quigley <tsimonq2@debian.org>  Tue, 01 Nov 2022 16:07:09 -0500
 
+qtbase-opensource-src (5.15.6+dfsg-5) unstable; urgency=medium
+
+  * Promote qtwayland5 from Suggests to Recommends (closes: #998698).
+  * Make libqt5gui5 suggest qgnomeplatform-qt5 (closes: #1024976).
+  * Backport upstream patch to fix Alt+` shortcut on non-US layouts.
+  * Build-Depends: Drop versioned constraint on dpkg-dev, libharfbuzz-dev and
+    pkg-kde-tools (thanks Debian Janitor).
+  * Drop Breaks/Replaces unnecessary since buster (thanks Debian Janitor).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 03 Dec 2022 20:38:46 +0300
+
+qtbase-opensource-src (5.15.6+dfsg-4) unstable; urgency=medium
+
+  * Revert upstream commit which caused graphical glitches in some apps.
+    Backport upstream patch to fix the original issue in a better way.
+    Thanks to Alexander Kernozhitsky and Alexis Murzeau for the pointers!
+    (closes: #1022748, #1023580)
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 24 Nov 2022 20:38:09 +0300
+
 qtbase-opensource-src (5.15.6+dfsg-3) experimental; urgency=medium
 
   * Backport upstream patch to fix misplaced menus with Wayland on GNOME.
