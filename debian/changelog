@@ -6,6 +6,7 @@ qtbase-opensource-src (5.15.6+dfsg-5) UNRELEASED; urgency=medium
   * Backport upstream patch to fix Alt+` shortcut on non-US layouts.
   * Build-Depends: Drop versioned constraint on dpkg-dev, libharfbuzz-dev and
     pkg-kde-tools (thanks Debian Janitor).
+  * Drop Breaks/Replaces unnecessary since buster (thanks Debian Janitor).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2022 20:01:06 +0300
 
