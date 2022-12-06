@@ -19,7 +19,7 @@ Last-Update: 2022-08-07
      // Tell OpenSSL to release memory early
 --- a/src/network/ssl/qsslsocket_openssl.cpp
 +++ b/src/network/ssl/qsslsocket_openssl.cpp
-@@ -528,9 +528,9 @@ static void q_loadCiphersForConnection(S
+@@ -535,9 +535,9 @@ static void q_loadCiphersForConnection(S
  // Defined in qsslsocket.cpp
  void q_setDefaultDtlsCiphers(const QList<QSslCipher> &ciphers);
  
@@ -68,7 +68,7 @@ Last-Update: 2022-08-07
  #ifdef TLS1_3_VERSION
 --- a/src/network/ssl/qsslsocket_openssl_symbols_p.h
 +++ b/src/network/ssl/qsslsocket_openssl_symbols_p.h
-@@ -244,7 +244,7 @@ Q_AUTOTEST_EXPORT void q_OPENSSL_sk_push
+@@ -245,7 +245,7 @@ Q_AUTOTEST_EXPORT void q_OPENSSL_sk_push
  Q_AUTOTEST_EXPORT void q_OPENSSL_sk_free(OPENSSL_STACK *a);
  Q_AUTOTEST_EXPORT void * q_OPENSSL_sk_value(OPENSSL_STACK *a, int b);
  int q_SSL_session_reused(SSL *a);

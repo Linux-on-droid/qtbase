@@ -1,6 +1,6 @@
 # SymbolsHelper-Confirmed: 5.15.4 amd64 hppa powerpc ppc64 s390x sparc64
 libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
-| libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-6
+| libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-7
 | libqt5gui5 #MINVER#
 | libqt5gui5-gles #MINVER#
 * Build-Depends-Package: qtbase5-gles-dev
@@ -931,7 +931,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN13QFontDatabase25removeAllApplicationFontsEv@Qt_5 5.0.2
  _ZN13QFontDatabase26addApplicationFontFromDataERK10QByteArray@Qt_5 5.0.2
  _ZN13QFontDatabase29supportsThreadedFontRenderingEv@Qt_5 5.2.0~beta1
- _ZN13QFontDatabase8findFontERK8QFontDefi@Qt_5 5.5.0
+ _ZN13QFontDatabase8findFontERK8QFontDefib@Qt_5 5.15.7
  _ZN13QFontDatabaseC1Ev@Qt_5 5.0.2
  _ZN13QFontDatabaseC2Ev@Qt_5 5.0.2
  _ZN13QFontMetricsFC1ERK12QFontMetrics@Qt_5 5.0.2
