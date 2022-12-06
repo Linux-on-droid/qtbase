@@ -1,10 +1,9 @@
-qtbase-opensource-src-gles (5.15.7+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src-gles (5.15.7+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Merge qtbase-opensource-src 5.15.7+dfsg-1 and 5.15.6+dfsg-5 uploads.
   * Bump qtbase build-dependencies to 5.15.7.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 06 Dec 2022 14:32:44 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 06 Dec 2022 14:36:13 +0300
 
 qtbase-opensource-src (5.15.7+dfsg-1) experimental; urgency=medium
 
