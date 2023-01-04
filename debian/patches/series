@@ -11,6 +11,7 @@ gnome_wayland.diff
 revert_wm_state.diff
 recreate_xcb_window.diff
 fix_alt_backtick.diff
+qxcbwindow_set_geometry.diff
 
 # Debian specific.
 gnukfreebsd.diff
