@@ -2,6 +2,7 @@ qtbase-opensource-src (5.15.8+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
+  * Refresh and rebase patches for the new release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 04 Jan 2023 11:34:28 +0300
 

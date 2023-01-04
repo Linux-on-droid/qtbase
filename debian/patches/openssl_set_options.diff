@@ -19,7 +19,7 @@ Last-Update: 2022-08-07
      // Tell OpenSSL to release memory early
 --- a/src/network/ssl/qsslsocket_openssl.cpp
 +++ b/src/network/ssl/qsslsocket_openssl.cpp
-@@ -535,9 +535,9 @@ static void q_loadCiphersForConnection(S
+@@ -550,9 +550,9 @@ static void q_loadCiphersForConnection(S
  // Defined in qsslsocket.cpp
  void q_setDefaultDtlsCiphers(const QList<QSslCipher> &ciphers);
  
@@ -46,7 +46,7 @@ Last-Update: 2022-08-07
  struct QSslErrorEntry {
      int code;
      int depth;
-@@ -164,7 +170,7 @@ public:
+@@ -171,7 +177,7 @@ public:
      QVector<QSslError> ocspErrors;
      QByteArray ocspResponseDer;
  
