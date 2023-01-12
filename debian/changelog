@@ -1,10 +1,9 @@
-qtbase-opensource-src (5.15.7+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.7+dfsg-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport upstream patch to fix deletion order in QImageReader/Writer
     destructors.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 12 Jan 2023 15:38:41 +0400
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 12 Jan 2023 15:43:32 +0400
 
 qtbase-opensource-src (5.15.7+dfsg-2) unstable; urgency=medium
 
