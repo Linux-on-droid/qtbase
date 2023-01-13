@@ -67,7 +67,7 @@ Copyright: 2007-2013 Fathi Boudra <fabo@debian.org>
            2005-2007 Brian Nelson <pyro@debian.org>
            2012-2013 Zoltán Balogh <zoltan.balogh@canonical.com>
            2012-2013 Timo Jyrinki <timo.jyrinki@canonical.com>
-           2013-2022 Dmitry Shachnev <mitya57@debian.org>
+           2013-2023 Dmitry Shachnev <mitya57@debian.org>
            2018 Simon Quigley <tsimonq2@ubuntu.com>
 License: LGPL-3 or GPL-2+
 
@@ -2060,6 +2060,10 @@ Copyright: 2016-2020 Intel Corporation
            2015 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com
 License: Expat
 
+Files: src/3rdparty/gradle/*
+Copyright: 2021 Gradle Inc.
+License: Apache-2.0
+
 Files: src/3rdparty/harfbuzz/*
 Copyright: 1998-2005 David Turner
            1998-2004 Werner Lemberg
@@ -2165,6 +2169,7 @@ Copyright: 2009-2021 D. R. Commander
            1991-2020 Thomas G. Lane, Guido Vollbeding
            2018 Matthias Räncker
            2019-2020 Arm Limited
+           2021 Alex Richardson
 License: libjpeg and BSD-3-clause and Zlib
 
 Files: src/3rdparty/libpng/*.c

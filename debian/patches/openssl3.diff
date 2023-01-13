@@ -123,7 +123,7 @@ Last-Update: 2021-12-09
  DEFINEFUNC3(BIGNUM *, BN_bin2bn, const unsigned char *s, s, int len, len, BIGNUM *ret, ret, return nullptr, return)
  
  #ifndef OPENSSL_NO_EC
-@@ -861,7 +866,6 @@ bool q_resolveOpenSslSymbols()
+@@ -868,7 +873,6 @@ bool q_resolveOpenSslSymbols()
      RESOLVEFUNC(EVP_PKEY_CTX_new)
      RESOLVEFUNC(EVP_PKEY_param_check)
      RESOLVEFUNC(EVP_PKEY_CTX_free)
@@ -131,7 +131,7 @@ Last-Update: 2021-12-09
      RESOLVEFUNC(RSA_bits)
      RESOLVEFUNC(OPENSSL_sk_new_null)
      RESOLVEFUNC(OPENSSL_sk_push)
-@@ -1100,7 +1104,15 @@ bool q_resolveOpenSslSymbols()
+@@ -1107,7 +1111,15 @@ bool q_resolveOpenSslSymbols()
      RESOLVEFUNC(SSL_version)
      RESOLVEFUNC(SSL_get_error)
      RESOLVEFUNC(SSL_get_peer_cert_chain)
@@ -147,7 +147,7 @@ Last-Update: 2021-12-09
      RESOLVEFUNC(SSL_get_verify_result)
      RESOLVEFUNC(SSL_new)
      RESOLVEFUNC(SSL_get_SSL_CTX)
-@@ -1199,9 +1211,7 @@ bool q_resolveOpenSslSymbols()
+@@ -1206,9 +1218,7 @@ bool q_resolveOpenSslSymbols()
      RESOLVEFUNC(DH_free)
      RESOLVEFUNC(d2i_DHparams)
      RESOLVEFUNC(i2d_DHparams)

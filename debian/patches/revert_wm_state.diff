@@ -8,7 +8,7 @@ Description: revert "xcb: implement missing bits from ICCCM 4.1.4 WM_STATE handl
  .
  This change also reverts 28138aa80a14279a72af2818f5bbbaa670283964.
 Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=d27a6235246764be
-Last-Update: 2022-11-24
+Last-Update: 2023-01-04
 
 --- a/src/plugins/platforms/xcb/qxcbwindow.cpp
 +++ b/src/plugins/platforms/xcb/qxcbwindow.cpp
@@ -78,7 +78,7 @@ Last-Update: 2022-11-24
      if (event->window == m_window) {
          m_mapped = false;
          QWindowSystemInterface::handleExposeEvent(window(), QRegion());
--        if (!m_isWmManagedWindow) {
+-        if (!m_isWmManagedWindow || parent()) {
 -            m_wmStateValid = true;
 -            handleDeferredTasks();
 -        }
