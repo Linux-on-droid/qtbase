@@ -1,5 +1,7 @@
 qtbase-opensource-src (5.15.8+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Use ${DEB_HOST_GNU_TYPE} substitution in debian/qt5-qmake.install.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 31 Jan 2023 19:35:03 +0400
 
