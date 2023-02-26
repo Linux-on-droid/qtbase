@@ -13,6 +13,7 @@ recreate_xcb_window.diff
 fix_alt_backtick.diff
 image_deletion_order.diff
 qxcbwindow_set_geometry.diff
+CVE-2023-24607.diff
 
 # Debian specific.
 gnukfreebsd.diff
