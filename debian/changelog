@@ -5,6 +5,7 @@ qtbase-opensource-src (5.15.8+dfsg-3) UNRELEASED; urgency=medium
   * Add upstream patch to fix denial-of-service in Qt SQL ODBC plugin
     (CVE-2023-24607, closes: #1031872).
   * Update debian/libqt5gui5.symbols from s390x build log.
+  * Amend image_deletion_order.diff from one more upstream commit.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 31 Jan 2023 19:35:03 +0400
 
