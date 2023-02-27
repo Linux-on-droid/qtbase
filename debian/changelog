@@ -1,13 +1,12 @@
-qtbase-opensource-src (5.15.8+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.8+dfsg-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Use ${DEB_HOST_GNU_TYPE} substitution in debian/qt5-qmake.install.
   * Add upstream patch to fix denial-of-service in Qt SQL ODBC plugin
     (CVE-2023-24607, closes: #1031872).
   * Update debian/libqt5gui5.symbols from s390x build log.
   * Amend image_deletion_order.diff from one more upstream commit.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 31 Jan 2023 19:35:03 +0400
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 27 Feb 2023 11:28:53 +0300
 
 qtbase-opensource-src (5.15.8+dfsg-2) unstable; urgency=medium
 
