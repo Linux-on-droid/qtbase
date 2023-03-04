@@ -1,11 +1,10 @@
-qtbase-opensource-src (5.15.8+dfsg-4) UNRELEASED; urgency=medium
+qtbase-opensource-src-gles (5.15.8+dfsg-2) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Merge qtbase-opensource-src 5.15.8+dfsg-3 upload.
   * Compare only upstream version of qt5-qmake-bin when cross-building
     (closes: #1029082).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 04 Mar 2023 14:10:33 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 04 Mar 2023 14:39:27 +0300
 
 qtbase-opensource-src (5.15.8+dfsg-3) unstable; urgency=medium
 
