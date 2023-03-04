@@ -1,3 +1,10 @@
+qtbase-opensource-src (5.15.8+dfsg-4) UNRELEASED; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Merge qtbase-opensource-src 5.15.8+dfsg-3 upload.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 04 Mar 2023 14:10:33 +0300
+
 qtbase-opensource-src (5.15.8+dfsg-3) unstable; urgency=medium
 
   * Use ${DEB_HOST_GNU_TYPE} substitution in debian/qt5-qmake.install.
