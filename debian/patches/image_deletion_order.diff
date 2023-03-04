@@ -2,8 +2,10 @@ Description: fix deletion order in QImageReader/Writer destructors
  The device would be deleted before the image format handler, and hence
  be a dangling pointer that could easily cause a crash if the handler
  or codec would access it on destruction, e.g. for cleanup.
-Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=f091026be1deb4b4
-Last-Update: 2023-01-12
+Origin: upstream, commits
+ https://code.qt.io/cgit/qt/qtbase.git/commit/?id=f091026be1deb4b4
+ https://code.qt.io/cgit/qt/qtbase.git/commit/?id=5633cb69f68ca3d3
+Last-Update: 2023-02-26
 
 --- a/src/gui/image/qimagereader.cpp
 +++ b/src/gui/image/qimagereader.cpp
@@ -18,6 +20,21 @@ Last-Update: 2023-01-12
  }
  
  /*!
+@@ -774,12 +774,12 @@ bool QImageReader::decideFormatFromConte
+ */
+ void QImageReader::setDevice(QIODevice *device)
+ {
++    delete d->handler;
++    d->handler = nullptr;
+     if (d->device && d->deleteDevice)
+         delete d->device;
+     d->device = device;
+     d->deleteDevice = false;
+-    delete d->handler;
+-    d->handler = nullptr;
+     d->text.clear();
+ }
+ 
 --- a/src/gui/image/qimagewriter.cpp
 +++ b/src/gui/image/qimagewriter.cpp
 @@ -349,9 +349,9 @@ QImageWriter::QImageWriter(const QString
@@ -31,3 +48,19 @@ Last-Update: 2023-01-12
      delete d;
  }
  
+@@ -396,13 +396,13 @@ QByteArray QImageWriter::format() const
+ */
+ void QImageWriter::setDevice(QIODevice *device)
+ {
++    delete d->handler;
++    d->handler = nullptr;
+     if (d->device && d->deleteDevice)
+         delete d->device;
+ 
+     d->device = device;
+     d->deleteDevice = false;
+-    delete d->handler;
+-    d->handler = nullptr;
+ }
+ 
+ /*!
