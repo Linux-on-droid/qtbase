@@ -70,7 +70,7 @@ endif
 
 override_dh_auto_configure:
 ifneq (,$(filter cross,$(DEB_BUILD_PROFILES)))
-	test "`dpkg-query -f '$${Version}' -W qt5-qmake-bin`" = "$(DEB_VERSION)"
+	test "`dpkg-query -f '$${source:Upstream-Version}' -W qt5-qmake-bin`" = "$(DEB_VERSION_UPSTREAM)"
 endif
 	MAKEFLAGS="-j$(NUMJOBS) ${CXXFLAGS:%=EXTRA_CXXFLAGS+=%} ${LDFLAGS:%=EXTRA_LFLAGS+=%}" \
 	        ./configure \
