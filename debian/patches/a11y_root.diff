@@ -1,0 +1,50 @@
+Description: fix accessibility on XCB when running as root
+ Accessibility actually works when running applications as root, but we
+ would never properly connect, since the enabledChanged signal would be
+ emitted from the constructor in this case.
+ Only applications running as root would be affected, because all other
+ applications would go through the asynchronous pattern of getting the
+ bus address from dbus instead.
+ Since running apps as root won't let them access the session bus, the
+ xatom is the way to go.
+Origin: https://codereview.qt-project.org/c/qt/qtbase/+/205196
+Bug: https://bugs.debian.org/1033995
+Last-Update: 2023-04-09
+
+--- a/src/platformsupport/linuxaccessibility/bridge.cpp
++++ b/src/platformsupport/linuxaccessibility/bridge.cpp
+@@ -65,6 +65,7 @@ QSpiAccessibleBridge::QSpiAccessibleBrid
+ {
+     dbusConnection = new DBusConnection();
+     connect(dbusConnection, SIGNAL(enabledChanged(bool)), this, SLOT(enabledChanged(bool)));
++    dbusConnection->init();
+ }
+ 
+ void QSpiAccessibleBridge::enabledChanged(bool enabled)
+--- a/src/platformsupport/linuxaccessibility/dbusconnection.cpp
++++ b/src/platformsupport/linuxaccessibility/dbusconnection.cpp
+@@ -69,6 +69,14 @@ QT_BEGIN_NAMESPACE
+ DBusConnection::DBusConnection(QObject *parent)
+     : QObject(parent), m_a11yConnection(QString()), m_enabled(false)
+ {
++}
++
++/**
++    \internal
++    Connect to the accessibility dbus service.
++*/
++void DBusConnection::init()
++{
+     // Start monitoring if "org.a11y.Bus" is registered as DBus service.
+     QDBusConnection c = QDBusConnection::sessionBus();
+     if (!c.isConnected()) {
+--- a/src/platformsupport/linuxaccessibility/dbusconnection_p.h
++++ b/src/platformsupport/linuxaccessibility/dbusconnection_p.h
+@@ -67,6 +67,7 @@ class DBusConnection : public QObject
+ public:
+     DBusConnection(QObject *parent = nullptr);
+     QDBusConnection connection() const;
++    void init();
+     bool isEnabled() const { return m_enabled; }
+ 
+ Q_SIGNALS:

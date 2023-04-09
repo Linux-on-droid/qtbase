@@ -1,5 +1,8 @@
 qtbase-opensource-src (5.15.8+dfsg-4) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Add a patch to fix accessibility on XCB when running as root
+    (closes: #1033995).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 09 Apr 2023 21:16:59 +0300
 
