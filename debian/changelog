@@ -1,10 +1,9 @@
-qtbase-opensource-src (5.15.8+dfsg-6) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.8+dfsg-6) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Use the new, fixed version of a11y_root.diff from Samuel Thibault
     (again closes: #1033995).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 11 Apr 2023 14:16:30 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 11 Apr 2023 14:25:22 +0300
 
 qtbase-opensource-src (5.15.8+dfsg-5) unstable; urgency=medium
 
