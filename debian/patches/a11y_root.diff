@@ -10,18 +10,24 @@ Description: fix accessibility on XCB when running as root
  bus address from dbus instead.
 Origin: https://codereview.qt-project.org/c/qt/qtbase/+/205196
 Bug: https://bugs.debian.org/1033995
-Last-Update: 2023-04-11
+Last-Update: 2023-04-12
 
 --- a/src/platformsupport/linuxaccessibility/bridge.cpp
 +++ b/src/platformsupport/linuxaccessibility/bridge.cpp
-@@ -65,6 +65,10 @@ QSpiAccessibleBridge::QSpiAccessibleBrid
+@@ -65,6 +65,16 @@ QSpiAccessibleBridge::QSpiAccessibleBrid
  {
      dbusConnection = new DBusConnection();
      connect(dbusConnection, SIGNAL(enabledChanged(bool)), this, SLOT(enabledChanged(bool)));
 +    // Now that we have connected the signal, make sure we didn't miss a change,
 +    // e.g. when running as root or when AT_SPI_BUS_ADDRESS is set by hand.
-+    if (dbusConnection->isEnabled())
-+        enabledChanged(true);
++    // But do that only on next loop, once dbus is really settled.
++    QMetaObject::invokeMethod(
++        this,
++        [this] {
++            if (dbusConnection->isEnabled())
++                enabledChanged(true);
++        },
++        Qt::QueuedConnection);
  }
- 
+
  void QSpiAccessibleBridge::enabledChanged(bool enabled)
