@@ -29,5 +29,5 @@ Last-Update: 2023-04-12
 +        },
 +        Qt::QueuedConnection);
  }
-
+ 
  void QSpiAccessibleBridge::enabledChanged(bool enabled)
