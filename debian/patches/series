@@ -4,7 +4,6 @@ fusion_checkable_qpushbutton.diff
 fix_recursion_crash.diff
 mysql_field_readonly.diff
 openssl3.diff
-CVE-2022-25255.diff
 openssl_set_options.diff
 qmenu_set_transient_parent.diff
 gnome_wayland.diff
