@@ -10,6 +10,7 @@ qtbase-opensource-src (5.15.9+dfsg-1) UNRELEASED; urgency=medium
     - libfontconfig1-dev => libfontconfig-dev
     - libfreetype6-dev => libfreetype-dev
   * Update a11y_root.diff to the version which was applied upstream.
+  * Drop qt5-flatpak-platformtheme transitional package.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 13 Apr 2023 20:25:28 +0300
 
