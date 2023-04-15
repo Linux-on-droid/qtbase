@@ -345,8 +345,7 @@ Suggests: default-libmysqlclient-dev,
           libpq-dev,
           libsqlite3-dev,
           unixodbc-dev
-Breaks: qt5-default (<< 5.15.1+dfsg-2~), qtbase5-dev-tools (<< 5.12.5+dfsg-3~)
-Replaces: qtbase5-dev-tools (<< 5.12.5+dfsg-3~)
+Breaks: qt5-default (<< 5.15.1+dfsg-2~)
 Conflicts: qtbase5-gles-dev
 Description: Qt 5 base development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -487,8 +486,6 @@ Build-Profiles: <!nodoc>
 Architecture: all
 Section: libdevel
 Depends: ${misc:Depends}
-Breaks: qtbase5-doc-html (<< 5.12.5+dfsg-5~)
-Replaces: qtbase5-doc-html (<< 5.12.5+dfsg-5~)
 Multi-Arch: foreign
 Description: Qt 5 base tags files
  Qt is a cross-platform C++ application framework. Qt's primary feature
