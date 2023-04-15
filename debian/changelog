@@ -6,7 +6,7 @@ qtbase-opensource-src (5.15.9+dfsg-1) UNRELEASED; urgency=medium
   * Refresh other patches.
   * Bump ABI version to qtbase-abi-5-15-9.
   * Update debian/copyright using debian/scripts/update-copyright.
-  * Fix use of transitional packages in Build-Depends:
+  * Fix use of transitional packages in Build-Depends and Depends:
     - libfontconfig1-dev => libfontconfig-dev
     - libfreetype6-dev => libfreetype-dev
   * Update a11y_root.diff to the version which was applied upstream.
