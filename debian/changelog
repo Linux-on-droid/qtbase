@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.15.9+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.9+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Drop CVE-2022-25255.diff, included in the new release.
   * Refresh other patches.
@@ -13,7 +12,7 @@ qtbase-opensource-src (5.15.9+dfsg-1) UNRELEASED; urgency=medium
   * Drop qt5-flatpak-platformtheme transitional package.
   * Drop Breaks/Replaces for pre-Bullseye versions.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 13 Apr 2023 20:25:28 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 15 Apr 2023 15:40:16 +0300
 
 qtbase-opensource-src (5.15.8+dfsg-7) unstable; urgency=medium
 
