@@ -2156,11 +2156,11 @@ License: ICC
  profile.
 
 Files: src/3rdparty/libjpeg/src/*
-Copyright: 2009-2021 D. R. Commander
+Copyright: 2009-2022 D. R. Commander
            2011-2016 Siarhei Siamashka
            2015-2016, 2018 Matthieu Darbois
            2015 Intel Corporation
-           2015-2020 Google, Inc.
+           2015-2022 Google, Inc.
            2013-2014 MIPS Technologies, Inc.
            2013-2014 Linaro Limited
            2009-2011 Nokia Corporation and/or its subsidiary(-ies)
@@ -2278,8 +2278,8 @@ License: Bitstream
 
 Files: src/3rdparty/freetype/src/gzip/*
        src/3rdparty/zlib/src/*
-Copyright: 1995-2017 Jean-loup Gailly
-           1995-2017 Mark Adler
+Copyright: 1995-2022 Jean-loup Gailly
+           1995-2022 Mark Adler
 License: Zlib
 
 Files: src/3rdparty/md4c/*
