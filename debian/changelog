@@ -4,6 +4,8 @@ qtbase-opensource-src (5.15.9+dfsg-2) UNRELEASED; urgency=medium
   * Bump years for 3rdparty copyright.
   * Backport upstream patch to stop using O_PATH in OpenFile portal
     (LP: #1876237).
+  * Add a patch to fix capitalization error in auto-generated qdbusmacros.h
+    include (LP: #2016703).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 May 2023 14:20:00 +0300
 

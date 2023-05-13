@@ -15,6 +15,7 @@ qxcbwindow_set_geometry.diff
 CVE-2023-24607.diff
 a11y_root.diff
 dont_use_O_PATH.diff
+fix_qdbusmacros_h.diff
 
 # Debian specific.
 gnukfreebsd.diff
