@@ -366,6 +366,22 @@ Depends: libfontconfig-dev,
          libxkbcommon-dev,
          qtbase5-dev (= ${binary:Version}),
          ${misc:Depends}
+Suggests: libatspi2.0-dev,
+          libcups2-dev,
+          libdouble-conversion-dev,
+          libdrm-dev [linux-any],
+          libharfbuzz-dev,
+          libicu-dev,
+          libqt5opengl5-dev (= ${binary:Version}),
+          libssl-dev,
+          libxcb-image0-dev,
+          libxcb-keysyms1-dev,
+          libxcb-randr0-dev,
+          libxcb-sync-dev,
+          libxcb-xfixes0-dev,
+          libxcb-xinerama0-dev,
+          libxcb-xkb-dev,
+          libxkbcommon-x11-dev
 Conflicts: qtbase5-private-gles-dev
 Description: Qt 5 base private development files
  Qt is a cross-platform C++ application framework. Qt's primary feature

@@ -6,6 +6,8 @@ qtbase-opensource-src (5.15.9+dfsg-2) UNRELEASED; urgency=medium
     (LP: #1876237).
   * Add a patch to fix capitalization error in auto-generated qdbusmacros.h
     include (LP: #2016703).
+  * Make qtbase5-private-dev suggest packages providing includes which are
+    used by some of its headers (closes: #1034830).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 May 2023 14:20:00 +0300
 
