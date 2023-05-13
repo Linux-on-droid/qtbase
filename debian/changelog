@@ -1,5 +1,7 @@
 qtbase-opensource-src (5.15.8+dfsg-8) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Add back Breaks/Replaces for libqtcore4 (closes: #1035790).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 May 2023 14:06:42 +0300
 
