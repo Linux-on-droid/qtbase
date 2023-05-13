@@ -1,0 +1,39 @@
+Description: OpenFile portal: do not use O_PATH fds
+ Using O_PATH requires correctly specifying whether the fd is writable or
+ not. Stating that the fd is writable without it actually being writable
+ results into rejection on xdg-desktop-portal side. Other implementations
+ like xdg-open or gtk have also moved away from O_PATH fds so this will
+ make a matching implementation and avoid possible rejections from xdp.
+Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=03cbcba7b2b0e42a
+Last-Update: 2023-05-13
+
+--- a/src/platformsupport/services/genericunix/qgenericunixservices.cpp
++++ b/src/platformsupport/services/genericunix/qgenericunixservices.cpp
+@@ -203,8 +203,7 @@ static inline QDBusMessage xdgDesktopPor
+     // handle_token (s) -  A string that will be used as the last element of the @handle.
+     // writable (b) - Whether to allow the chosen application to write to the file.
+ 
+-#ifdef O_PATH
+-    const int fd = qt_safe_open(QFile::encodeName(url.toLocalFile()), O_PATH);
++    const int fd = qt_safe_open(QFile::encodeName(url.toLocalFile()), O_RDONLY);
+     if (fd != -1) {
+         QDBusMessage message = QDBusMessage::createMethodCall(QLatin1String("org.freedesktop.portal.Desktop"),
+                                                               QLatin1String("/org/freedesktop/portal/desktop"),
+@@ -214,16 +213,13 @@ static inline QDBusMessage xdgDesktopPor
+         QDBusUnixFileDescriptor descriptor;
+         descriptor.giveFileDescriptor(fd);
+ 
+-        const QVariantMap options = {{QLatin1String("writable"), true}};
++        const QVariantMap options = {};
+ 
+         // FIXME parent_window_id
+         message << QString() << QVariant::fromValue(descriptor) << options;
+ 
+         return QDBusConnection::sessionBus().call(message);
+     }
+-#else
+-    Q_UNUSED(url)
+-#endif
+ 
+     return QDBusMessage::createError(QDBusError::InternalError, qt_error_string());
+ }
