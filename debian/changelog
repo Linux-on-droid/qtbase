@@ -27,6 +27,12 @@ qtbase-opensource-src (5.15.9+dfsg-1) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Sat, 15 Apr 2023 15:40:16 +0300
 
+qtbase-opensource-src (5.15.8+dfsg-8) unstable; urgency=medium
+
+  * Add back Breaks/Replaces for libqtcore4 (closes: #1035790).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 13 May 2023 14:12:14 +0300
+
 qtbase-opensource-src (5.15.8+dfsg-7) unstable; urgency=medium
 
   * Update a11y_root.diff. This time the code waits for Qt loop to process the
