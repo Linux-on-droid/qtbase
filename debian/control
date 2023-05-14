@@ -85,9 +85,9 @@ Conflicts: libqt5gui5
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: fontconfig, ${misc:Depends}, ${shlibs:Depends}
-Recommends: libqt5svg5, qt5-gtk-platformtheme
+Recommends: libqt5svg5, qt5-gtk-platformtheme, qtwayland5
 Breaks: qt5-default
-Suggests: qt5-image-formats-plugins, qtwayland5
+Suggests: qgnomeplatform-qt5, qt5-image-formats-plugins
 Description: Qt 5 GUI module — OpenGL ES variant
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -157,7 +157,6 @@ Suggests: libatspi2.0-dev,
           libdrm-dev [linux-any],
           libharfbuzz-dev,
           libicu-dev,
-          libqt5opengl5-dev (= ${binary:Version}),
           libssl-dev,
           libxcb-image0-dev,
           libxcb-keysyms1-dev,
