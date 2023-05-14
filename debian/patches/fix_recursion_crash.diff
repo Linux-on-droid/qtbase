@@ -30,7 +30,7 @@ Last-Update: 2021-11-13
      void palettePropagation_data();
      void palettePropagation();
      void fontPropagation_data();
-@@ -678,6 +679,23 @@ void tst_QStyleSheetStyle::qproperty()
+@@ -680,6 +681,23 @@ void tst_QStyleSheetStyle::qproperty()
      QCOMPARE(pb.isChecked(), false);
  }
  

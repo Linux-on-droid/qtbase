@@ -495,7 +495,7 @@ Files: configure
        tests/auto/testlib/selftests/tst_selftests.cpp
        tests/benchmarks/corelib/text/qbytearray/main.cpp
        tests/benchmarks/corelib/tools/qhash/main.cpp
-Copyright: 2016-2020 Intel Corporation
+Copyright: 2016-2022 Intel Corporation
            2016-2021 The Qt Company Ltd.
 License: GPL-3 with Qt-1.0 exception
 
@@ -930,7 +930,7 @@ Files: src/android/jar/src/org/qtproject/qt5/android/QtActivityDelegate.java
        src/plugins/platforms/android/qandroidinputcontext.cpp
 Copyright: 2012-2017 BogDan Vatra <bogdan@kde.org>
            2016 Olivier Goffart <ogoffart@woboq.com>
-           2016 The Qt Company Ltd.
+           2016-2022 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/android/jar/src/org/qtproject/qt5/android/ExtractStyle.java
@@ -956,7 +956,7 @@ Files: src/android/jar/src/org/qtproject/qt5/android/ExtractStyle.java
        src/plugins/platforms/android/qandroidplatformwindow.cpp
        src/plugins/platforms/android/qandroidplatformwindow.h
 Copyright: 2012-2016 BogDan Vatra <bogdan@kde.org>
-           2016-2021 The Qt Company Ltd.
+           2016-2022 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/testlib/qteamcitylogger.cpp
@@ -1318,8 +1318,8 @@ Files: bin/syncqt.pl
        src/testlib/qtest.h
        src/testlib/qtestcase.cpp
        src/widgets/kernel/qwidget.cpp
-Copyright: 2015-2020 Intel Corporation
-           2016-2020 The Qt Company Ltd.
+Copyright: 2015-2022 Intel Corporation
+           2016-2022 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/text/qbytearraylist.h
@@ -2156,11 +2156,11 @@ License: ICC
  profile.
 
 Files: src/3rdparty/libjpeg/src/*
-Copyright: 2009-2021 D. R. Commander
+Copyright: 2009-2022 D. R. Commander
            2011-2016 Siarhei Siamashka
            2015-2016, 2018 Matthieu Darbois
            2015 Intel Corporation
-           2015-2020 Google, Inc.
+           2015-2022 Google, Inc.
            2013-2014 MIPS Technologies, Inc.
            2013-2014 Linaro Limited
            2009-2011 Nokia Corporation and/or its subsidiary(-ies)
@@ -2278,8 +2278,8 @@ License: Bitstream
 
 Files: src/3rdparty/freetype/src/gzip/*
        src/3rdparty/zlib/src/*
-Copyright: 1995-2017 Jean-loup Gailly
-           1995-2017 Mark Adler
+Copyright: 1995-2022 Jean-loup Gailly
+           1995-2022 Mark Adler
 License: Zlib
 
 Files: src/3rdparty/md4c/*

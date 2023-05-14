@@ -19,8 +19,8 @@ Build-Depends: debhelper-compat (= 13),
                libdbus-1-dev,
                libdouble-conversion-dev,
                libdrm-dev [linux-any],
-               libfontconfig1-dev,
-               libfreetype6-dev,
+               libfontconfig-dev,
+               libfreetype-dev,
                libgbm-dev [linux-any kfreebsd-any],
                libgles-dev,
                libglib2.0-dev,
@@ -150,11 +150,27 @@ Architecture: any
 Conflicts: qtbase5-private-dev
 Multi-Arch: same
 Section: libdevel
-Depends: libfontconfig1-dev,
+Depends: libfontconfig-dev,
          libinput-dev [linux-any],
          libxkbcommon-dev,
          qtbase5-gles-dev (= ${binary:Version}),
          ${misc:Depends}
+Suggests: libatspi2.0-dev,
+          libcups2-dev,
+          libdouble-conversion-dev,
+          libdrm-dev [linux-any],
+          libharfbuzz-dev,
+          libicu-dev,
+          libqt5opengl5-dev (= ${binary:Version}),
+          libssl-dev,
+          libxcb-image0-dev,
+          libxcb-keysyms1-dev,
+          libxcb-randr0-dev,
+          libxcb-sync-dev,
+          libxcb-xfixes0-dev,
+          libxcb-xinerama0-dev,
+          libxcb-xkb-dev,
+          libxkbcommon-x11-dev
 Description: Qt 5 base private development files — OpenGL ES variant
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.

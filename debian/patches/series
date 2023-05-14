@@ -4,7 +4,6 @@ fusion_checkable_qpushbutton.diff
 fix_recursion_crash.diff
 mysql_field_readonly.diff
 openssl3.diff
-CVE-2022-25255.diff
 openssl_set_options.diff
 qmenu_set_transient_parent.diff
 gnome_wayland.diff
@@ -14,6 +13,9 @@ fix_alt_backtick.diff
 image_deletion_order.diff
 qxcbwindow_set_geometry.diff
 CVE-2023-24607.diff
+a11y_root.diff
+dont_use_O_PATH.diff
+fix_qdbusmacros_h.diff
 
 # Debian specific.
 gnukfreebsd.diff
