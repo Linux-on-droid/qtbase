@@ -16,6 +16,7 @@ qxcbwindow_set_geometry.diff
 CVE-2023-24607.diff
 qshapedpixmapwindow_no_tooltip.diff
 cve-2023-32763.diff
+CVE-2023-32762.patch
 
 # Debian specific.
 gnukfreebsd.diff
