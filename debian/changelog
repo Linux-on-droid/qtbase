@@ -1,9 +1,8 @@
-qtbase-opensource-src (5.15.8+dfsg-10) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.8+dfsg-10) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add patch to fix CVE-2023-32763.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 22 May 2023 11:01:24 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 22 May 2023 11:07:29 -0300
 
 qtbase-opensource-src (5.15.8+dfsg-9) unstable; urgency=medium
 
