@@ -1,5 +1,8 @@
 qtbase-opensource-src-gles (5.15.8+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Add a patch to fix CVE-2023-32763: buffer overflow in Qt SVG
+    (closes: #1036702).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 24 May 2023 20:46:18 +0300
 
