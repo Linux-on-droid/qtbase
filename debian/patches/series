@@ -17,6 +17,7 @@ CVE-2023-24607.diff
 qshapedpixmapwindow_no_tooltip.diff
 CVE-2023-32763.diff
 CVE-2023-32762.diff
+CVE-2023-33285.diff
 
 # Debian specific.
 gnukfreebsd.diff

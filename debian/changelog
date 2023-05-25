@@ -2,6 +2,7 @@ qtbase-opensource-src (5.15.8+dfsg-11) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Rename the patches for consistency and add DEP-3 headers.
+  * Add a patch to fix buffer overflow in QDnsLookup (CVE-2023-33285).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 25 May 2023 11:57:13 +0300
 
