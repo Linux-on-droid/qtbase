@@ -1,5 +1,9 @@
 qtbase-opensource-src (5.15.8+dfsg-12) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Backport upstream patch to fix CVE-2023-34410 (closes: #1037210).
+    - Note: this is the second patch related to that CVE; the first one
+      is for Schannel code which is Windows-only, so we don't need it.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 07 Jun 2023 23:42:55 +0300
 
