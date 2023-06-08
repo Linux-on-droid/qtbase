@@ -2,6 +2,11 @@ qtbase-opensource-src (5.15.10+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
+  * Drop patches, included in the new release:
+    - fix_recursion_crash.diff
+    - mysql_field_readonly.diff
+    - revert_wm_state.diff
+    - recreate_xcb_window.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 08 Jun 2023 21:26:48 +0300
 
