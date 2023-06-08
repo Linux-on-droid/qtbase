@@ -1,3 +1,9 @@
+qtbase-opensource-src (5.15.9+dfsg-3) experimental; urgency=medium
+
+  * Merge 5.15.8+dfsg-12 upload from unstable, bringing CVE fixes.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 08 Jun 2023 10:46:52 +0300
+
 qtbase-opensource-src (5.15.9+dfsg-2) experimental; urgency=medium
 
   * Bump years for 3rdparty copyright.
