@@ -1,6 +1,4 @@
-Description: SQL/ODBC: add another check to detect unicode availability in
- driver
- 
+Description: SQL/ODBC: add another check to detect unicode availability in driver
  Since ODBC does not have a direct way finding out if unicode is
  supported by the underlying driver the ODBC plugin does some checks. As
  a last resort a sql statement is executed which returns a string. But

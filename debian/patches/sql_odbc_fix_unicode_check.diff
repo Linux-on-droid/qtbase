@@ -4,7 +4,7 @@ Description: QSQL/ODBC: fix regression (trailing NUL)
  exposed callers to the append(0), which changes the size() of the
  result QVLA. Callers that don't rely on NUL-termination (all?) now saw
  an additional training NUL.
- 
+ .
  Fix by not NUL-terminating, and changing the only user of SQL_NTS to
  use an explicit length.
 Origin: upstream, https://code.qt.io/cgit/qt/qtbase.git/commit/?id=9020034b3b6a3a81
