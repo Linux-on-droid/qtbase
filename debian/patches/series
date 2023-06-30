@@ -19,6 +19,8 @@ CVE-2023-32763.diff
 CVE-2023-32762.diff
 CVE-2023-33285.diff
 CVE-2023-34410.diff
+sql_odbc_more_unicode_checks.diff
+sql_odbc_fix_unicode_check.diff
 
 # Debian specific.
 gnukfreebsd.diff
