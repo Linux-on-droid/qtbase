@@ -1,9 +1,9 @@
-qtbase-opensource-src (5.15.8+dfsg-13) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.8+dfsg-13) unstable; urgency=medium
 
   [ Alexander Volkov ]
   * Backport upstream patches to fix regression caused by CVE-2023-24607.diff.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 30 Jun 2023 20:33:02 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 05 Jul 2023 23:13:01 +0300
 
 qtbase-opensource-src (5.15.8+dfsg-12) unstable; urgency=medium
 
