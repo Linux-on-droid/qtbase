@@ -1,3 +1,10 @@
+qtbase-opensource-src (5.15.10+dfsg-2) unstable; urgency=medium
+
+  * Merge 5.15.8+dfsg-13 upload from unstable.
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 08 Jul 2023 09:54:13 +0300
+
 qtbase-opensource-src-gles (5.15.10+dfsg-1) experimental; urgency=medium
 
   * Merge qtbase-opensource-src 5.15.10+dfsg-1 upload.
@@ -58,6 +65,13 @@ qtbase-opensource-src (5.15.9+dfsg-1) experimental; urgency=medium
   * Drop Breaks/Replaces for pre-Bullseye versions.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Sat, 15 Apr 2023 15:40:16 +0300
+
+qtbase-opensource-src (5.15.8+dfsg-13) unstable; urgency=medium
+
+  [ Alexander Volkov ]
+  * Backport upstream patches to fix regression caused by CVE-2023-24607.diff.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 05 Jul 2023 23:13:01 +0300
 
 qtbase-opensource-src (5.15.8+dfsg-12) unstable; urgency=medium
 
