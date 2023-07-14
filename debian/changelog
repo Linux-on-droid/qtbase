@@ -4,6 +4,7 @@ qtbase-opensource-src (5.15.10+dfsg-3) UNRELEASED; urgency=medium
   * Drop the support for the dead GNU/kFreeBSD:
     - drop the patches gnukfreebsd.diff, and nonlinux_utime.diff, as they only
       apply changes to that OS
+      - drop installed files added by them
     - drop the kfreebsd-any qualifiers from the firebird-dev, and libgbm-dev
       build dependencies
     - drop the kfreebsd-any qualifiers from binary packages

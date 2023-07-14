@@ -344,8 +344,6 @@ usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/freebsd-clang/qmake.conf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/freebsd-clang/qplatformdefs.h
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/freebsd-g++/qmake.conf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/freebsd-g++/qplatformdefs.h
-usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/gnukfreebsd-g++/qmake.conf
-usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/gnukfreebsd-g++/qplatformdefs.h
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/haiku-g++/qmake.conf
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/haiku-g++/qplatformdefs.h
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/hpuxi-g++-64/qmake.conf
