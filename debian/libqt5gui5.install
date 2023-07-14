@@ -7,14 +7,14 @@
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/egldeviceintegrations/libqeglfs-kms-egldevice-integration.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/egldeviceintegrations/libqeglfs-kms-integration.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/egldeviceintegrations/libqeglfs-x11-integration.so
-[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/platforms/libqeglfs.so
-[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/platforms/libqminimalegl.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/generic/libqevdevkeyboardplugin.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/generic/libqevdevmouseplugin.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/generic/libqevdevtabletplugin.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/generic/libqevdevtouchplugin.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/generic/libqlibinputplugin.so
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/platforms/libqeglfs.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/platforms/libqlinuxfb.so
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/platforms/libqminimalegl.so
 usr/lib/${DEB_HOST_MULTIARCH}/libQt5Gui.so.*
 usr/lib/${DEB_HOST_MULTIARCH}/libQt5XcbQpa.so.*
 usr/lib/${DEB_HOST_MULTIARCH}/qt5/plugins/generic/libqtuiotouchplugin.so
