@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.15.10+dfsg-3) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 14 Jul 2023 20:58:48 +0200
+
 qtbase-opensource-src (5.15.10+dfsg-2) unstable; urgency=medium
 
   * Merge 5.15.8+dfsg-13 upload from unstable.
