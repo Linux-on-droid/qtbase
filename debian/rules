@@ -37,7 +37,7 @@ else
 	extra_configure_opts += -opengl desktop
 endif
 
-ifneq ($(DEB_HOST_ARCH_OS),$(findstring $(DEB_HOST_ARCH_OS), linux kfreebsd))
+ifneq ($(DEB_HOST_ARCH_OS),$(findstring $(DEB_HOST_ARCH_OS), linux))
 	extra_configure_opts += -no-eglfs
 endif
 
@@ -53,7 +53,6 @@ ifeq ($(DEB_HOST_ARCH_CPU),i386)
 	cpu_opt = -no-sse2 -no-pch
 endif
 
-mkspec_osmap_kfreebsd = gnukfreebsd
 platform_os = $(or $(mkspec_osmap_$(DEB_HOST_ARCH_OS)),$(DEB_HOST_ARCH_OS))
 platform_arg = $(platform_os)-g++
 

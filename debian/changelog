@@ -1,5 +1,14 @@
 qtbase-opensource-src (5.15.10+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Drop the support for the dead GNU/kFreeBSD:
+    - drop the patches gnukfreebsd.diff, and nonlinux_utime.diff, as they only
+      apply changes to that OS
+    - drop the kfreebsd-any qualifiers from the firebird-dev, and libgbm-dev
+      build dependencies
+    - drop the kfreebsd-any qualifiers from binary packages
+    - drop the kfreebsd-any qualifiers in install files
+    - drop the kfreebsd qualifiers in symbols files
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 14 Jul 2023 20:58:48 +0200
 

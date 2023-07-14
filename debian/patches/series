@@ -21,13 +21,11 @@ dont_use_O_PATH.diff
 fix_qdbusmacros_h.diff
 
 # Debian specific.
-gnukfreebsd.diff
 no_htmlinfo_example.diff
 remove_privacy_breaches.diff
 link_fbclient.diff
 gnukfreebsd_linker_warnings.diff
 armv4.diff
-nonlinux_utime.diff
 qdoc_default_incdirs.diff
 path_max.diff
 qstorageinfo_linux.diff
