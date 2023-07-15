@@ -19,6 +19,7 @@ sql_odbc_fix_unicode_check.diff
 a11y_root.diff
 dont_use_O_PATH.diff
 fix_qdbusmacros_h.diff
+CVE-2023-38197.diff
 
 # Debian specific.
 no_htmlinfo_example.diff
