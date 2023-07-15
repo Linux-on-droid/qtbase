@@ -15,6 +15,8 @@ qtbase-opensource-src (5.15.10+dfsg-3) UNRELEASED; urgency=medium
     - drop mips, and powerpcspe qualifiers, as those architectures are long dead
 
   [ Dmitry Shachnev ]
+  * Backport upstream patches to make QXmlStreamReaderPrivate::fastScanName
+    indicate parsing status to callers (CVE-2023-37369).
   * Backport upstream patch to make QXmlStreamReader raise error on unexpected
     tokens (CVE-2023-38197, closes: #1041105).
 
