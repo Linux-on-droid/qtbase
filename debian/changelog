@@ -13,6 +13,7 @@ qtbase-opensource-src (5.15.10+dfsg-3) UNRELEASED; urgency=medium
   * More changes to symbols files:
     - set a symbol as linux-any, as it is Linux-specific
     - drop mips, and powerpcspe qualifiers, as those architectures are long dead
+  * Remove 2 obsolete maintscript entries in 2 files.
 
   [ Dmitry Shachnev ]
   * Backport upstream patches to make QXmlStreamReaderPrivate::fastScanName
