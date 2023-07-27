@@ -1,4 +1,4 @@
-qtbase-opensource-src (5.15.10+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.10+dfsg-3) unstable; urgency=medium
 
   [ Pino Toscano ]
   * Drop the support for the dead GNU/kFreeBSD:
@@ -21,7 +21,7 @@ qtbase-opensource-src (5.15.10+dfsg-3) UNRELEASED; urgency=medium
   * Backport upstream patch to make QXmlStreamReader raise error on unexpected
     tokens (CVE-2023-38197, closes: #1041105).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 14 Jul 2023 20:58:48 +0200
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 27 Jul 2023 23:01:32 +0300
 
 qtbase-opensource-src (5.15.10+dfsg-2) unstable; urgency=medium
 
