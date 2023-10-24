@@ -1,10 +1,9 @@
-qtbase-opensource-src (5.15.10+dfsg-4) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.10+dfsg-4) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Backport upstream patch to fix build with libxkbcommon 1.6.0.
   * Update symbols files from buildds’ logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Oct 2023 21:23:24 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 24 Oct 2023 14:07:10 +0300
 
 qtbase-opensource-src (5.15.10+dfsg-3) unstable; urgency=medium
 
