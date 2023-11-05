@@ -22,6 +22,7 @@ fix_qdbusmacros_h.diff
 CVE-2023-37369.diff
 CVE-2023-38197.diff
 libxkbcommon_1.6.0.diff
+loongarch.diff
 
 # Debian specific.
 no_htmlinfo_example.diff
