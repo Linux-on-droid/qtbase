@@ -30,7 +30,7 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(no_pch_architectures)))
 	extra_configure_opts += -no-pch
 endif
 
-ifneq ($(DEB_HOST_ARCH_OS),$(findstring $(DEB_HOST_ARCH_OS), linux kfreebsd))
+ifneq ($(DEB_HOST_ARCH_OS),$(findstring $(DEB_HOST_ARCH_OS), linux))
 	extra_configure_opts += -no-eglfs
 endif
 
@@ -46,7 +46,6 @@ ifeq ($(DEB_HOST_ARCH_CPU),i386)
 	cpu_opt = -no-sse2 -no-pch
 endif
 
-mkspec_osmap_kfreebsd = gnukfreebsd
 platform_os = $(or $(mkspec_osmap_$(DEB_HOST_ARCH_OS)),$(DEB_HOST_ARCH_OS))
 platform_arg = $(platform_os)-g++
 
@@ -132,26 +131,6 @@ override_dh_auto_clean:
 
 	# Extra stuff missed by confclean/distclean
 
-	# Misc. files
-	rm -f \
-	  config.status \
-	  config.tests/.qmake.cache \
-	  examples/dbus/*/Makefile.* \
-	  mkspecs/qconfig.pri \
-	  src/corelib/global/qconfig.* \
-	;
-
-	# Misc. directories
-	rm -rf \
-	  doc-build/ \
-	  doc/html/ \
-	  doc/qch/ \
-	  examples/tools/plugandpaint/plugins/ \
-	  examples/tools/styleplugin/styles/ \
-	  lib/ \
-	  plugins/ \
-	;
-
 	# Leftover dirs
 	find -depth -type d \( -false \
 	  -o -name debug-shared \
@@ -190,12 +169,6 @@ override_dh_auto_clean:
 	find $(CURDIR) -type f -perm /u+x,g+x,o+x -exec file -i '{}' \; \
 	| grep -e application/x-executable \
 	| cut -d ':' -f 1 | xargs rm -f
-
-	# Generated on build
-	rm -vf debian/stamp-makefile-build-tools
-
-	# more leftovers
-	rm -f .device.vars .qmake.vars
 
 override_dh_auto_build-arch:
 	# Bootstrap corelibs in order to be able to build the helper tools to

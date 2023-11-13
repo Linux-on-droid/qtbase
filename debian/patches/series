@@ -19,15 +19,17 @@ sql_odbc_fix_unicode_check.diff
 a11y_root.diff
 dont_use_O_PATH.diff
 fix_qdbusmacros_h.diff
+CVE-2023-37369.diff
+CVE-2023-38197.diff
+libxkbcommon_1.6.0.diff
+loongarch.diff
 
 # Debian specific.
-gnukfreebsd.diff
 no_htmlinfo_example.diff
 remove_privacy_breaches.diff
 link_fbclient.diff
 gnukfreebsd_linker_warnings.diff
 armv4.diff
-nonlinux_utime.diff
 qdoc_default_incdirs.diff
 path_max.diff
 qstorageinfo_linux.diff

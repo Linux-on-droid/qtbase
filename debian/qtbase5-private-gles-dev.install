@@ -1,27 +1,27 @@
 #! /usr/bin/dh-exec
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/5.*/*
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegration
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegrationDepends
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegrationVersion
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/qteglfsdeviceintegrationversion.h
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/5.*/*
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/QtKmsSupport
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/QtKmsSupportDepends
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/QtKmsSupportVersion
-[kfreebsd-any linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/qtkmssupportversion.h
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFSDeviceIntegration/Qt5EglFSDeviceIntegrationConfig.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFSDeviceIntegration/Qt5EglFSDeviceIntegrationConfigVersion.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5KmsSupport/Qt5KmsSupportConfig.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5KmsSupport/Qt5KmsSupportConfigVersion.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5KmsSupport.a
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5KmsSupport.prl
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/5.*/*
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegration
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegrationDepends
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/QtEglFSDeviceIntegrationVersion
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtEglFSDeviceIntegration/qteglfsdeviceintegrationversion.h
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/5.*/*
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/QtKmsSupport
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/QtKmsSupportDepends
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/QtKmsSupportVersion
+[linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtKmsSupport/qtkmssupportversion.h
 [linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtVulkanSupport/5.*/*
 [linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtVulkanSupport/QtVulkanSupport
 [linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtVulkanSupport/QtVulkanSupportDepends
 [linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtVulkanSupport/QtVulkanSupportVersion
 [linux-any] usr/include/${DEB_HOST_MULTIARCH}/qt5/QtVulkanSupport/qtvulkansupportversion.h
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFSDeviceIntegration/Qt5EglFSDeviceIntegrationConfig.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFSDeviceIntegration/Qt5EglFSDeviceIntegrationConfigVersion.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5KmsSupport/Qt5KmsSupportConfig.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5KmsSupport/Qt5KmsSupportConfigVersion.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5VulkanSupport/Qt5VulkanSupportConfig.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5VulkanSupport/Qt5VulkanSupportConfigVersion.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5KmsSupport.a
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5KmsSupport.prl
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5VulkanSupport.a
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5VulkanSupport.prl
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtAccessibilitySupport/5.*/*

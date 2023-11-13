@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.15.8 s390x
+# SymbolsHelper-Confirmed: 5.15.10 powerpc s390x
 libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
 | libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-10
 | libqt5gui5 #MINVER#
@@ -96,7 +96,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _Z31QT_DISTANCEFIELD_HIGHGLYPHCOUNTv@Qt_5 5.8.0
  (arch=arm64)_Z31qt_convert_rgb888_to_rgb32_neonPjPKhi@Qt_5 5.6.0~beta
  _Z32qGamma_correct_back_to_linear_csP6QImage@Qt_5 5.0.2
- (optional=gccinternal|arch=amd64 kfreebsd-amd64 x32)_Z32qt_convert_rgb888_to_rgb32_ssse3PjPKhi@Qt_5 5.0.2
+ (optional=gccinternal|arch=amd64 x32)_Z32qt_convert_rgb888_to_rgb32_ssse3PjPKhi@Qt_5 5.0.2
  _Z33hb_qt_font_get_use_design_metricsP9hb_font_t@Qt_5 5.2.0
  _Z33hb_qt_font_set_use_design_metricsP9hb_font_tj@Qt_5 5.2.0
  _Z34qt_sort_families_by_writing_systemN5QChar6ScriptERK11QStringList@Qt_5 5.10.1
@@ -1563,7 +1563,7 @@ libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
  _ZN16QDoubleValidatorD0Ev@Qt_5 5.0.2
  _ZN16QDoubleValidatorD1Ev@Qt_5 5.0.2
  _ZN16QDoubleValidatorD2Ev@Qt_5 5.0.2
- (optional=inline|arch=!hppa !ia64)_ZN16QOpenGLFunctions17glBindFramebufferEjj@Qt_5 5.15.2
+ (optional=inline|arch=!hppa !ia64 !powerpc !s390x)_ZN16QOpenGLFunctions17glBindFramebufferEjj@Qt_5 5.15.2
  _ZN16QOpenGLFunctions25initializeOpenGLFunctionsEv@Qt_5 5.0.2
  _ZN16QOpenGLFunctionsC1EP14QOpenGLContext@Qt_5 5.0.2
  _ZN16QOpenGLFunctionsC1Ev@Qt_5 5.0.2

@@ -1,27 +1,27 @@
 #! /usr/bin/dh-exec
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFsKmsSupport/Qt5EglFsKmsSupportConfig.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFsKmsSupport/Qt5EglFsKmsSupportConfigVersion.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFSDeviceIntegration.prl
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFSDeviceIntegration.so
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFsKmsSupport.prl
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFsKmsSupport.so
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri
-[kfreebsd-any linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_kms_support_private.pri
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFsKmsSupport/Qt5EglFsKmsSupportConfig.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5EglFsKmsSupport/Qt5EglFsKmsSupportConfigVersion.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFSDeviceIntegration.prl
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFSDeviceIntegration.so
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFsKmsSupport.prl
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/libQt5EglFsKmsSupport.so
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_kms_support_private.pri
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtConcurrent/QtConcurrent
 usr/include/${DEB_HOST_MULTIARCH}/qt5/QtConcurrent/QtConcurrentDepends
