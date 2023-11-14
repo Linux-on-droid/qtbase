@@ -8,6 +8,7 @@ qtbase-opensource-src (5.15.11+dfsg-1) UNRELEASED; urgency=medium
   * Refresh other patches.
   * Bump ABI version to qtbase-abi-5-15-11.
   * Update debian/copyright.
+  * Override two source-is-missing Lintian warnings.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 14 Nov 2023 14:08:31 +0300
 

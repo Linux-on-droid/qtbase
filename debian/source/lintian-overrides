@@ -16,3 +16,7 @@ qtbase-opensource-src source: unpack-message-for-orig * ar failed for */tests/au
 qtbase-opensource-src source: unpack-message-for-source ar failed for tests/auto/corelib/io/qdir/types/a.a
 qtbase-opensource-src source: unpack-message-for-source ar failed for tests/auto/corelib/io/qdir/types/b.a
 qtbase-opensource-src source: unpack-message-for-source ar failed for tests/auto/corelib/io/qdir/types/c.a
+
+# These files are not without source, they just have long lines
+qtbase-opensource-src source: source-is-missing [examples/widgets/richtext/textedit/example.html]
+qtbase-opensource-src source: source-is-missing [tests/auto/corelib/text/qtextboundaryfinder/data/WordBreakTest.html]
