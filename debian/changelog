@@ -1,3 +1,10 @@
+qtbase-opensource-src (5.15.11+dfsg-1) UNRELEASED; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 14 Nov 2023 14:08:31 +0300
+
 qtbase-opensource-src (5.15.10+dfsg-5) unstable; urgency=medium
 
   * Add a patch to support LoongArch (closes: #1054569). Thanks Dandan Zhang!
