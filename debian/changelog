@@ -2,6 +2,9 @@ qtbase-opensource-src (5.15.11+dfsg-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
+  * Drop patches, included in the new release:
+    - openssl_set_options.diff
+    - revert_startBlocking_removal.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 14 Nov 2023 14:08:31 +0300
 

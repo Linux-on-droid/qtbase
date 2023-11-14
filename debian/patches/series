@@ -2,7 +2,6 @@
 mime_globs.diff
 fusion_checkable_qpushbutton.diff
 openssl3.diff
-openssl_set_options.diff
 qmenu_set_transient_parent.diff
 gnome_wayland.diff
 fix_alt_backtick.diff
@@ -35,4 +34,3 @@ path_max.diff
 qstorageinfo_linux.diff
 cross_build_mysql.diff
 cast_types_for_egl_x11_test.diff
-revert_startBlocking_removal.diff
