@@ -1,12 +1,11 @@
-qtbase-opensource-src-gles (5.15.10+dfsg-3) UNRELEASED; urgency=medium
+qtbase-opensource-src-gles (5.15.10+dfsg-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Merge qtbase-opensource-src 5.15.10+dfsg-5 upload.
     - Fixes CVE-2023-38197 (closes: #1041106).
     - Fixes FTBFS with libxkbcommon 1.6.0 (closes: #1054700).
     - Fixes FTBFS after successful build (closes: #1049198).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 14 Nov 2023 00:22:43 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 14 Nov 2023 13:52:43 +0300
 
 qtbase-opensource-src (5.15.10+dfsg-5) unstable; urgency=medium
 
