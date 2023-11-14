@@ -7,6 +7,7 @@ qtbase-opensource-src (5.15.11+dfsg-1) UNRELEASED; urgency=medium
     - revert_startBlocking_removal.diff
   * Refresh other patches.
   * Bump ABI version to qtbase-abi-5-15-11.
+  * Update debian/copyright.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 14 Nov 2023 14:08:31 +0300
 

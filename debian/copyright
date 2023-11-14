@@ -1374,7 +1374,6 @@ License: LGPL-3 or GPL-2
 
 Files: src/corelib/time/qtimezone.cpp
        src/corelib/time/qtimezone.h
-       src/corelib/time/qtimezoneprivate_icu.cpp
        src/corelib/time/qtimezoneprivate_win.cpp
        src/gui/painting/qpagelayout.cpp
        src/gui/painting/qpagelayout.h
@@ -1393,6 +1392,7 @@ License: LGPL-3 or GPL-2
 
 Files: src/corelib/time/qtimezoneprivate.cpp
        src/corelib/time/qtimezoneprivate_data_p.h
+       src/corelib/time/qtimezoneprivate_icu.cpp
        src/corelib/time/qtimezoneprivate_mac.mm
        src/corelib/time/qtimezoneprivate_p.h
        src/plugins/printsupport/cups/qcupsprintersupport.cpp
@@ -2109,20 +2109,22 @@ License: Harfbuzz
  PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 Files: src/3rdparty/freetype/*
-Copyright: 1996-2020 David Turner, Robert Wilhelm, and Werner Lemberg
-           1996-2020 Just van Rossum
-           2002-2020 Roberto Alameda
+Copyright: 1996-2022 David Turner, Robert Wilhelm, and Werner Lemberg
+           1996-2022 Just van Rossum
+           2002-2022 Roberto Alameda
            2003 Huw D M Davies for Codeweavers
-           2003-2020 Masatake YAMATO, Redhat K.K.
-           2004-2020 Albert Chin-A-Young
-           2004-2020 Suzuki Toshiya
+           2003-2022 Masatake YAMATO, Redhat K.K.
+           2004-2022 Albert Chin-A-Young
+           2004-2022 Suzuki Toshiya
            2007 Dmitry Timoshkov for Codeweavers
-           2007-2020 Rahul Bhalerao <rahul.bhalerao@redhat.com>
-           2007-2020 Derek Clegg, Michael Toftdal
-           2009-2020 Oran Agra, Mickey Gabel
-           2010-2020 Joel Klinghed
-           2013-2020 Google, Inc.
-           2019-2020 Nikhil Ramakrishnan
+           2007-2022 Rahul Bhalerao <rahul.bhalerao@redhat.com>
+           2007-2022 Derek Clegg, Michael Toftdal
+           2009-2022 Oran Agra, Mickey Gabel
+           2010-2022 Joel Klinghed
+           2013-2022 Google, Inc.
+           2019-2022 Nikhil Ramakrishnan
+           2018-2022 Armin Hasitzka
+           2022 Moazin Khatti
 License: GPL-2+ or FTL
 
 Files: src/3rdparty/freetype/src/pcf/*
