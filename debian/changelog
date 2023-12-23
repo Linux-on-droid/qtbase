@@ -1,12 +1,11 @@
-qtbase-opensource-src (5.15.12+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.12+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Drop fix_alt_backtick.diff, included in the new release.
   * Bump ABI version to qtbase-abi-5-15-12.
   * Update debian/copyright for src/3rdparty/libpng.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 23 Dec 2023 13:59:02 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 23 Dec 2023 14:48:57 +0300
 
 qtbase-opensource-src (5.15.11+dfsg-1) experimental; urgency=medium
 
