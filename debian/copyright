@@ -2176,8 +2176,8 @@ License: libjpeg and BSD-3-clause and Zlib
 
 Files: src/3rdparty/libpng/*.c
        src/3rdparty/libpng/*.h
-Copyright: 1995-2019 The PNG Reference Library Authors.
-           2018-2019 Cosmin Truta
+Copyright: 1995-2022 The PNG Reference Library Authors.
+           2018-2022 Cosmin Truta
            2000-2018 Glenn Randers-Pehrson
            1996-1997 Andreas Dilger
            1995-1996 Guy Eric Schalnat, Group 42, Inc.
