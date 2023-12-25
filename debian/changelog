@@ -1,3 +1,25 @@
+qtbase-opensource-src (5.15.12+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop fix_alt_backtick.diff, included in the new release.
+  * Bump ABI version to qtbase-abi-5-15-12.
+  * Update debian/copyright for src/3rdparty/libpng.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 23 Dec 2023 14:48:57 +0300
+
+qtbase-opensource-src (5.15.11+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop patches, included in the new release:
+    - openssl_set_options.diff
+    - revert_startBlocking_removal.diff
+  * Refresh other patches.
+  * Bump ABI version to qtbase-abi-5-15-11.
+  * Update debian/copyright.
+  * Override two source-is-missing Lintian warnings.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 14 Nov 2023 18:38:23 +0300
+
 qtbase-opensource-src-gles (5.15.10+dfsg-3) unstable; urgency=medium
 
   * Merge qtbase-opensource-src 5.15.10+dfsg-5 upload.

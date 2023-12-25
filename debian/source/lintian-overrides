@@ -17,6 +17,10 @@ qtbase-opensource-src-gles source: unpack-message-for-source ar failed for tests
 qtbase-opensource-src-gles source: unpack-message-for-source ar failed for tests/auto/corelib/io/qdir/types/b.a
 qtbase-opensource-src-gles source: unpack-message-for-source ar failed for tests/auto/corelib/io/qdir/types/c.a
 
+# These files are not without source, they just have long lines
+qtbase-opensource-src-gles source: source-is-missing [examples/widgets/richtext/textedit/example.html]
+qtbase-opensource-src-gles source: source-is-missing [tests/auto/corelib/text/qtextboundaryfinder/data/WordBreakTest.html]
+
 # ${source:Upstream-Version} is the same for normal qtbase and qtbase-gles
 qtbase-opensource-src-gles source: version-substvar-for-external-package Depends ${source:Upstream-Version} qtbase5-gles-dev -> * [debian/control:*]
 qtbase-opensource-src-gles source: version-substvar-for-external-package Recommends ${source:Upstream-Version} qtbase5-gles-dev -> * [debian/control:*]
