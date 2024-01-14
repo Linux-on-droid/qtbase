@@ -20,6 +20,13 @@ qtbase-opensource-src (5.15.11+dfsg-1) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Tue, 14 Nov 2023 18:38:23 +0300
 
+qtbase-opensource-src (5.15.10+dfsg-6) unstable; urgency=medium
+
+  * Backport upstream patches to fix incorrect integer overflow check in
+    HPack (CVE-2023-51714, closes: #1060694).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 13 Jan 2024 19:53:52 +0300
+
 qtbase-opensource-src (5.15.10+dfsg-5) unstable; urgency=medium
 
   * Add a patch to support LoongArch (closes: #1054569). Thanks Dandan Zhang!
