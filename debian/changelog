@@ -1,3 +1,8 @@
+qtbase-opensource-src (5.15.10+dfsg-7) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 17 Feb 2024 15:02:25 +0300
+
 qtbase-opensource-src (5.15.10+dfsg-6) unstable; urgency=medium
 
   * Backport upstream patches to fix incorrect integer overflow check in
