@@ -27,6 +27,13 @@ qtbase-opensource-src (5.15.11+dfsg-1) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Tue, 14 Nov 2023 18:38:23 +0300
 
+qtbase-opensource-src (5.15.10+dfsg-7) unstable; urgency=medium
+
+  * Backport upstream patch to fix potential buffer overflow when reading
+    KTX images (CVE-2024-25580, closes: #1064053).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 17 Feb 2024 15:11:37 +0300
+
 qtbase-opensource-src (5.15.10+dfsg-6) unstable; urgency=medium
 
   * Backport upstream patches to fix incorrect integer overflow check in
