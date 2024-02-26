@@ -24,6 +24,7 @@ CVE-2023-38197.diff
 libxkbcommon_1.6.0.diff
 loongarch.diff
 CVE-2023-51714.diff
+CVE-2024-25580.diff
 
 # Debian specific.
 no_htmlinfo_example.diff
