@@ -1,3 +1,10 @@
+qtbase-opensource-src-gles (5.15.10+dfsg-5) unstable; urgency=medium
+
+  * Merge qtbase-opensource-src 5.15.10+dfsg-7 upload.
+    - Fixes CVE-2024-25580 (closes: #1064054).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 26 Feb 2024 11:26:43 +0300
+
 qtbase-opensource-src (5.15.10+dfsg-7) unstable; urgency=medium
 
   * Backport upstream patch to fix potential buffer overflow when reading
