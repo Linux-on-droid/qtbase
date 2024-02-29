@@ -1,0 +1,3 @@
+# To help Ubuntu in their releases we also renamed libqt5core5 to libqt5core5t64.
+libqt5core5t64: package-name-doesnt-match-sonames libQt5Core5
+libqt5core5t64: package-name-doesnt-match-sonames libqt5core5a
