@@ -8,9 +8,10 @@ Uploaders: Sune Vuorela <sune@debian.org>,
            Timo Jyrinki <timo@debian.org>,
            Dmitry Shachnev <mitya57@debian.org>,
            Simon Quigley <tsimonq2@debian.org>
-Build-Depends: dpkg-dev (>= 1.22.5), dpkg-dev (>= 1.22.5), debhelper-compat (= 13),
+Build-Depends: debhelper-compat (= 13),
                default-libmysqlclient-dev,
                dh-exec,
+               dpkg-dev (>= 1.22.5),
                firebird-dev [linux-any],
                freetds-dev,
                libasound2-dev [linux-any],
@@ -88,7 +89,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 X-Time64-Compat: libqt5core5a
-Provides: ${t64:Provides}, qtbase-abi-5-15-10
+Provides: qtbase-abi-5-15-10, ${t64:Provides}
 Depends: shared-mime-info, ${misc:Depends}, ${shlibs:Depends}
 Recommends: qttranslations5-l10n
 Suggests: libthai0
