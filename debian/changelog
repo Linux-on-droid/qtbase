@@ -9,6 +9,7 @@ qtbase-opensource-src (5.15.13+dfsg-1) UNRELEASED; urgency=medium
     - qxcbwindow_set_geometry.diff
     - CVE-2023-24607.diff
   * Refresh other patches.
+  * Bump ABI version to qtbase-abi-5-15-13.
   * Run wrap-and-sort.
   * Fix Lintian overrides.
 

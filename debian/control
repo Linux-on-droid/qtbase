@@ -89,7 +89,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 X-Time64-Compat: libqt5core5a
-Provides: qtbase-abi-5-15-12, ${t64:Provides}
+Provides: qtbase-abi-5-15-13, ${t64:Provides}
 Depends: shared-mime-info, ${misc:Depends}, ${shlibs:Depends}
 Recommends: qttranslations5-l10n
 Suggests: libthai0
