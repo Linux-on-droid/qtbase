@@ -4,6 +4,10 @@ qtbase-opensource-src (5.15.13+dfsg-1) UNRELEASED; urgency=medium
   * Merge 5.15.10+dfsg-7.2 upload from unstable.
     - Acknowledge NMUs, thanks Benjamin Drung and Steve Langasek!
   * New upstream release.
+  * Drop patches, included in the new release:
+    - image_deletion_order.diff
+    - qxcbwindow_set_geometry.diff
+    - CVE-2023-24607.diff
   * Run wrap-and-sort.
   * Fix Lintian overrides.
 
