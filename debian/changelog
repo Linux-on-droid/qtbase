@@ -1,6 +1,5 @@
-qtbase-opensource-src (5.15.13+dfsg-1) UNRELEASED; urgency=medium
+qtbase-opensource-src (5.15.13+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Merge 5.15.10+dfsg-7.2 upload from unstable.
     - Acknowledge NMUs, thanks Benjamin Drung and Steve Langasek!
   * New upstream release.
@@ -14,7 +13,7 @@ qtbase-opensource-src (5.15.13+dfsg-1) UNRELEASED; urgency=medium
   * Run wrap-and-sort.
   * Fix Lintian overrides.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 09 Mar 2024 12:54:32 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 09 Mar 2024 14:24:14 +0300
 
 qtbase-opensource-src (5.15.12+dfsg-3) experimental; urgency=medium
 
