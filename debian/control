@@ -11,6 +11,7 @@ Uploaders: Sune Vuorela <sune@debian.org>,
 Build-Depends: debhelper-compat (= 13),
                default-libmysqlclient-dev,
                dh-exec,
+               dpkg-dev (>= 1.22.5),
                firebird-dev [linux-any],
                freetds-dev,
                libasound2-dev [linux-any],
@@ -81,11 +82,14 @@ Homepage: https://www.qt.io/developers/
 Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qtbase.git
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtbase
 
-Package: libqt5core5a
+Package: libqt5core5t64
+Replaces: libqt5core5a
+Breaks: libqt5core5a (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Provides: qtbase-abi-5-15-12
+X-Time64-Compat: libqt5core5a
+Provides: qtbase-abi-5-15-12, ${t64:Provides}
 Depends: shared-mime-info, ${misc:Depends}, ${shlibs:Depends}
 Recommends: qttranslations5-l10n
 Suggests: libthai0
@@ -95,7 +99,10 @@ Description: Qt 5 core module
  .
  The QtCore module contains core non-GUI functionality.
 
-Package: libqt5gui5
+Package: libqt5gui5t64
+Provides: ${t64:Provides}
+Replaces: libqt5gui5
+Breaks: libqt5gui5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -133,7 +140,10 @@ Description: Qt 5 XDG Desktop Portal platform theme
  This package provides the XDG Desktop portal platform theme, which makes
  Qt use native file dialogs on Flatpak/Snap based environments.
 
-Package: libqt5network5
+Package: libqt5network5t64
+Provides: ${t64:Provides}
+Replaces: libqt5network5
+Breaks: libqt5network5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -145,7 +155,10 @@ Description: Qt 5 network module
  The QtNetwork module offers classes that allow you to write TCP/IP clients and
  servers. It provides classes to make network programming easier and portable.
 
-Package: libqt5opengl5
+Package: libqt5opengl5t64
+Provides: ${t64:Provides}
+Replaces: libqt5opengl5
+Breaks: libqt5opengl5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -160,7 +173,10 @@ Description: Qt 5 OpenGL module
  OpenGL is a standard API for rendering 3D graphics. OpenGL only deals with 3D
  rendering and provides little or no support for GUI programming issues.
 
-Package: libqt5sql5
+Package: libqt5sql5t64
+Provides: ${t64:Provides}
+Replaces: libqt5sql5
+Breaks: libqt5sql5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -239,7 +255,10 @@ Description: Qt 5 Firebird database driver
  Install it if you intend to use or write Qt programs that are to access a
  Firebird/InterBase DB.
 
-Package: libqt5xml5
+Package: libqt5xml5t64
+Provides: ${t64:Provides}
+Replaces: libqt5xml5
+Breaks: libqt5xml5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -251,7 +270,10 @@ Description: Qt 5 XML module
  The QtXml module provides a stream reader and writer for XML documents,
  and C++ implementations of SAX and DOM.
 
-Package: libqt5dbus5
+Package: libqt5dbus5t64
+Provides: ${t64:Provides}
+Replaces: libqt5dbus5
+Breaks: libqt5dbus5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -267,7 +289,10 @@ Description: Qt 5 D-Bus module
  applications by exporting objects, as well as use services exported by those
  applications by placing calls and accessing properties.
 
-Package: libqt5test5
+Package: libqt5test5t64
+Provides: ${t64:Provides}
+Replaces: libqt5test5
+Breaks: libqt5test5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -279,7 +304,10 @@ Description: Qt 5 test module
  The QtTest module provides classes for unit testing Qt applications and
  libraries.
 
-Package: libqt5concurrent5
+Package: libqt5concurrent5t64
+Provides: ${t64:Provides}
+Replaces: libqt5concurrent5
+Breaks: libqt5concurrent5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -291,7 +319,10 @@ Description: Qt 5 concurrent module
  The QtConcurrent module contains functionality to support concurrent execution
  of program code.
 
-Package: libqt5widgets5
+Package: libqt5widgets5t64
+Provides: ${t64:Provides}
+Replaces: libqt5widgets5
+Breaks: libqt5widgets5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -302,7 +333,10 @@ Description: Qt 5 widgets module
  .
  The QtWidgets module extends QtGui with C++ widget functionality.
 
-Package: libqt5printsupport5
+Package: libqt5printsupport5t64
+Provides: ${t64:Provides}
+Replaces: libqt5printsupport5
+Breaks: libqt5printsupport5 (<< ${source:Version})
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -323,16 +357,16 @@ Depends: libegl-dev,
          libgl-dev [!armel !armhf],
          libgles-dev [armel armhf],
          libglu1-mesa-dev [!armel !armhf] | libglu-dev [!armel !armhf],
-         libqt5concurrent5 (= ${binary:Version}),
-         libqt5core5a (= ${binary:Version}),
-         libqt5dbus5 (= ${binary:Version}),
-         libqt5gui5 (= ${binary:Version}),
-         libqt5network5 (= ${binary:Version}),
-         libqt5printsupport5 (= ${binary:Version}),
-         libqt5sql5 (= ${binary:Version}),
-         libqt5test5 (= ${binary:Version}),
-         libqt5widgets5 (= ${binary:Version}),
-         libqt5xml5 (= ${binary:Version}),
+         libqt5concurrent5t64 (= ${binary:Version}),
+         libqt5core5t64 (= ${binary:Version}),
+         libqt5dbus5t64 (= ${binary:Version}),
+         libqt5gui5t64 (= ${binary:Version}),
+         libqt5network5t64 (= ${binary:Version}),
+         libqt5printsupport5t64 (= ${binary:Version}),
+         libqt5sql5t64 (= ${binary:Version}),
+         libqt5test5t64 (= ${binary:Version}),
+         libqt5widgets5t64 (= ${binary:Version}),
+         libqt5xml5t64 (= ${binary:Version}),
          libvulkan-dev [linux-any],
          libxext-dev,
          qt5-qmake (= ${binary:Version}),
@@ -396,7 +430,7 @@ Package: libqt5opengl5-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
-Depends: libqt5opengl5 (= ${binary:Version}),
+Depends: libqt5opengl5t64 (= ${binary:Version}),
          qtbase5-dev (= ${binary:Version}),
          ${misc:Depends}
 Provides: libqt5opengl5-desktop-dev (= ${binary:Version}) [!armel !armhf]
