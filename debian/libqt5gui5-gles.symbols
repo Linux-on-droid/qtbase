@@ -1,7 +1,7 @@
 # SymbolsHelper-Confirmed: 5.15.10 powerpc s390x
-libQt5Gui.so.5 libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#
-| libqt5gui5 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-10
-| libqt5gui5 #MINVER#
+libQt5Gui.so.5 libqt5gui5t64 #MINVER# | libqt5gui5-gles #MINVER#
+| libqt5gui5t64 #MINVER# | libqt5gui5-gles #MINVER#, qtbase-abi-5-15-10
+| libqt5gui5t64 #MINVER#
 | libqt5gui5-gles #MINVER#
 * Build-Depends-Package: qtbase5-gles-dev
  Qt_5.0@Qt_5.0 5.6.0~beta
