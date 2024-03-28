@@ -28,7 +28,7 @@ Files-Excluded: bin/licheck*
 # Manual rules for The Qt Company copyrights
 
 Files: *
-Copyright: 2016-2020 The Qt Company Ltd.
+Copyright: 2016-2023 The Qt Company Ltd.
 License: LGPL-3 or GPL-2
 
 Files: *.qdoc
@@ -1387,7 +1387,7 @@ Files: src/corelib/time/qtimezone.cpp
        src/printsupport/kernel/qprint_p.h
        src/printsupport/kernel/qprintdevice.cpp
        src/printsupport/kernel/qprintdevice_p.h
-Copyright: 2013-2014 John Layt <jlayt@kde.org>
+Copyright: 2013-2020 John Layt <jlayt@kde.org>
 License: LGPL-3 or GPL-2
 
 Files: src/corelib/time/qtimezoneprivate.cpp
@@ -1852,6 +1852,12 @@ Copyright: 2016 The Qt Company Ltd.
            2011 Thiago Macieira <thiago@kde.org>
 License: LGPL-3 or GPL-2
 
+Files: src/plugins/platforms/android/androidcontentfileengine.cpp
+       src/plugins/platforms/android/androidcontentfileengine.h
+Copyright: 2022 The Qt Company Ltd.
+           2019 Volker Krause <vkrause@kde.org>
+License: LGPL-3 or GPL-2
+
 Files: src/corelib/global/qfloat16.cpp
        src/corelib/global/qfloat16.h
        src/corelib/text/qbytearraylist.cpp
@@ -1862,11 +1868,6 @@ License: LGPL-3 or GPL-2
 Files: src/network/ssl/qsslsocket_mac_shared.cpp
 Copyright: 2016 The Qt Company Ltd.
            2015 ownCloud Inc
-License: LGPL-3 or GPL-2
-
-Files: src/plugins/platforms/android/androidcontentfileengine.cpp
-       src/plugins/platforms/android/androidcontentfileengine.h
-Copyright: 2019 Volker Krause <vkrause@kde.org>
 License: LGPL-3 or GPL-2
 
 ## LGPL-3 or GPL-2+
@@ -2158,9 +2159,9 @@ License: ICC
  profile.
 
 Files: src/3rdparty/libjpeg/src/*
-Copyright: 2009-2022 D. R. Commander
+Copyright: 2009-2023 D. R. Commander
            2011-2016 Siarhei Siamashka
-           2015-2016, 2018 Matthieu Darbois
+           2015-2022 Matthieu Darbois
            2015 Intel Corporation
            2015-2022 Google, Inc.
            2013-2014 MIPS Technologies, Inc.
@@ -2222,7 +2223,7 @@ Copyright: 1997-2022 University of Cambridge
 License: BSD-3-clause
 
 Files: src/3rdparty/pcre2/src/sljit/*
-Copyright: 2009-2020 Zoltan Herczeg <hzmester@freemail.hu>
+Copyright: 2009-2022 Zoltan Herczeg <hzmester@freemail.hu>
 License: BSD-2-clause
 
 Files: src/3rdparty/pixman/*

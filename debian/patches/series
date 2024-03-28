@@ -4,9 +4,6 @@ fusion_checkable_qpushbutton.diff
 openssl3.diff
 qmenu_set_transient_parent.diff
 gnome_wayland.diff
-image_deletion_order.diff
-qxcbwindow_set_geometry.diff
-CVE-2023-24607.diff
 qshapedpixmapwindow_no_tooltip.diff
 CVE-2023-32763.diff
 CVE-2023-32762.diff

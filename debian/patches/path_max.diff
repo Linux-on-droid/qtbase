@@ -7,7 +7,7 @@ Last-Update: 2020-04-19
 
 --- a/src/corelib/io/qfilesystemengine_unix.cpp
 +++ b/src/corelib/io/qfilesystemengine_unix.cpp
-@@ -689,7 +689,11 @@ QFileSystemEntry QFileSystemEngine::cano
+@@ -690,7 +690,11 @@ QFileSystemEntry QFileSystemEngine::cano
      Q_UNUSED(data);
      return QFileSystemEntry(slowCanonicalized(absoluteName(entry).filePath()));
  #else
