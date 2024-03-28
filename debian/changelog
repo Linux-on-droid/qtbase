@@ -27,6 +27,55 @@ qtbase-opensource-src (5.15.11+dfsg-1) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Tue, 14 Nov 2023 18:38:23 +0300
 
+qtbase-opensource-src-gles (5.15.10+dfsg-6) unstable; urgency=medium
+
+  * Merge qtbase-opensource-src 5.15.10+dfsg-7.2 upload.
+  * Update qtbase binary package names for 64-bit time_t transition.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 23 Mar 2024 00:17:29 +0300
+
+qtbase-opensource-src (5.15.10+dfsg-7.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix extraneous X-Time64-Compat declarations.  Closes: #1065154.
+
+ -- Steve Langasek <vorlon@debian.org>  Sun, 03 Mar 2024 09:03:16 +0000
+
+qtbase-opensource-src (5.15.10+dfsg-7.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Rename libraries for 64-bit time_t transition.  Closes: #1062946
+
+ -- Benjamin Drung <bdrung@debian.org>  Thu, 29 Feb 2024 23:11:00 +0000
+
+qtbase-opensource-src-gles (5.15.10+dfsg-5) unstable; urgency=medium
+
+  * Merge qtbase-opensource-src 5.15.10+dfsg-7 upload.
+    - Fixes CVE-2024-25580 (closes: #1064054).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 26 Feb 2024 11:26:43 +0300
+
+qtbase-opensource-src (5.15.10+dfsg-7) unstable; urgency=medium
+
+  * Backport upstream patch to fix potential buffer overflow when reading
+    KTX images (CVE-2024-25580, closes: #1064053).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 17 Feb 2024 15:11:37 +0300
+
+qtbase-opensource-src-gles (5.15.10+dfsg-4) unstable; urgency=medium
+
+  * Merge qtbase-opensource-src 5.15.10+dfsg-6 upload.
+    - Fixes CVE-2023-51714 (closes: #1060695).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 11 Feb 2024 21:44:36 +0300
+
+qtbase-opensource-src (5.15.10+dfsg-6) unstable; urgency=medium
+
+  * Backport upstream patches to fix incorrect integer overflow check in
+    HPack (CVE-2023-51714, closes: #1060694).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 13 Jan 2024 19:53:52 +0300
+
 qtbase-opensource-src-gles (5.15.10+dfsg-3) unstable; urgency=medium
 
   * Merge qtbase-opensource-src 5.15.10+dfsg-5 upload.
