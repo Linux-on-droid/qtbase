@@ -80,14 +80,16 @@ Homepage: https://www.qt.io/developers/
 Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qtbase.git -b gles/master
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtbase
 
-Package: libqt5gui5-gles
+Package: libqt5gui5t64
+Provides: ${t64:Provides}
+Replaces: libqt5gui5
+Breaks: libqt5gui5 (<< ${source:Version})
 Architecture: any
-Conflicts: libqt5gui5, libqt5gui5t64
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: fontconfig, ${misc:Depends}, ${shlibs:Depends}
 Recommends: libqt5svg5, qt5-gtk-platformtheme, qtwayland5
-Breaks: qt5-default
+Conflicts: libqt5gui5-gles
 Suggests: qgnomeplatform-qt5, qt5-image-formats-plugins
 Description: Qt 5 GUI module — OpenGL ES variant
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -98,9 +100,8 @@ Description: Qt 5 GUI module — OpenGL ES variant
  This package provides a version of Qt GUI library built against OpenGL ES,
  for use on embedded/mobile devices.
 
-Package: qtbase5-gles-dev
+Package: qtbase5-dev
 Architecture: any
-Conflicts: qtbase5-dev
 Multi-Arch: same
 Section: libdevel
 Depends: libegl-dev,
@@ -108,7 +109,7 @@ Depends: libegl-dev,
          libqt5concurrent5t64 (>= ${source:Upstream-Version}),
          libqt5core5t64 (>= ${source:Upstream-Version}),
          libqt5dbus5t64 (>= ${source:Upstream-Version}),
-         libqt5gui5-gles (= ${binary:Version}),
+         libqt5gui5t64 (= ${binary:Version}),
          libqt5network5t64 (>= ${source:Upstream-Version}),
          libqt5printsupport5t64 (>= ${source:Upstream-Version}),
          libqt5sql5t64 (>= ${source:Upstream-Version}),
@@ -142,15 +143,14 @@ Description: Qt 5 base development files — OpenGL ES variant
  If you are interested in packaging Qt 5 stuff please take a look at
  https://qt-kde-team.pages.debian.net/packagingqtbasedstuff.html
 
-Package: qtbase5-private-gles-dev
+Package: qtbase5-private-dev
 Architecture: any
-Conflicts: qtbase5-private-dev
 Multi-Arch: same
 Section: libdevel
 Depends: libfontconfig-dev,
          libinput-dev [linux-any],
          libxkbcommon-dev,
-         qtbase5-gles-dev (= ${binary:Version}),
+         qtbase5-dev (= ${binary:Version}),
          ${misc:Depends}
 Suggests: libatspi2.0-dev,
           libcups2-dev,
